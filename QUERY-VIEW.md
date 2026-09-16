@@ -50,6 +50,10 @@ Center panel (response document mode):
 - No pagination; the document is one continuous scroll.
 
 Explorer (left):
+- **Collapsible tree, two levels**: Juz rows collapse/expand their surahs;
+  surah rows expand to show their sections. A vertical guide line connects
+  children to their parent. Default state: only the path to the active item
+  is expanded.
 - While a response document is open, shows it as the selected item under
   "Recent queries" (plus the normal Juz tree above it).
 

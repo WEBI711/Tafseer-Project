@@ -31,8 +31,18 @@
               justify-content:space-between;align-items:center;gap:10px;flex:none}
   .side .brand{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
   .side .scroll{overflow-y:auto;padding:6px 12px 24px}
-  .juz{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
-       padding:16px 8px 6px;font-weight:600;font-family:var(--f-ui)}
+  .node .row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;
+             font-size:15.5px;color:var(--ink-soft);cursor:pointer}
+  .node .row:hover{background:rgba(255,255,255,.55)}
+  .node .row small{margin-left:auto;color:#a89a80;font-size:11px;font-family:var(--f-ui);
+                   font-variant-numeric:tabular-nums}
+  .jt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
+      font-weight:600;font-family:var(--f-ui)}
+  .caret{width:12px;flex:none;font-family:var(--f-ui);font-size:9px;color:#a89a80;
+         transition:transform .15s;text-align:center}
+  .node.closed>.row .caret{transform:rotate(-90deg)}
+  .node.closed>.kids{display:none}
+  .kids{margin-left:13px;border-left:1px solid var(--rule);padding-left:5px}
   .item{padding:8px 10px;border-radius:6px;font-size:15.5px;color:var(--ink-soft);display:flex;
         justify-content:space-between;gap:8px;cursor:pointer;align-items:baseline}
   .item:hover{background:rgba(255,255,255,.55)}
@@ -144,17 +154,43 @@
       <button class="icon-btn" data-collapse="left" title="Hide explorer">‹</button>
     </div>
     <div class="scroll">
-      <div class="juz">Juz 1</div>
-      <div class="item"><span>Surah 1 · Al-Fatihah</span><small>7</small></div>
-      <div class="item sub on"><span>The Request for Guidance</span><small>1:1–7</small></div>
-      <div class="item"><span>Surah 2 · Al-Baqarah</span><small>286</small></div>
-      <div class="item sub"><span>Claim of the Qur'an</span><small>2:1–5</small></div>
-      <div class="item sub"><span>Hypocrisy &amp; Its Signs</span><small>2:8–20</small></div>
-      <div class="item sub"><span>The Children of Israel</span><small>2:40–141</small></div>
-      <div class="item sub"><span>Ibrahim &amp; the House</span><small>2:124–129</small></div>
-      <div class="juz">Juz 2</div>
-      <div class="item"><span>Surah 2 · continued</span><small>142+</small></div>
-      <div class="item"><span>Surah 3 · Al-Imran</span><small>200</small></div>
+      <div class="node closed">
+        <div class="row"><span class="caret">▾</span><span class="jt">Juz 1</span><small>2 surahs</small></div>
+        <div class="kids">
+          <div class="node closed">
+            <div class="row"><span class="caret">▾</span><span>Surah 1 · Al-Fatihah</span><small>7</small></div>
+            <div class="kids">
+              <div class="item sub on"><span>The Request for Guidance</span><small>1:1–7</small></div>
+            </div>
+          </div>
+          <div class="node closed">
+            <div class="row"><span class="caret">▾</span><span>Surah 2 · Al-Baqarah</span><small>286</small></div>
+            <div class="kids">
+              <div class="item sub"><span>Claim of the Qur'an</span><small>2:1–5</small></div>
+              <div class="item sub"><span>Hypocrisy &amp; Its Signs</span><small>2:8–20</small></div>
+              <div class="item sub"><span>The Children of Israel</span><small>2:40–141</small></div>
+              <div class="item sub"><span>Ibrahim &amp; the House</span><small>2:124–129</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="node closed">
+        <div class="row"><span class="caret">▾</span><span class="jt">Juz 2</span><small>2 surahs</small></div>
+        <div class="kids">
+          <div class="node closed">
+            <div class="row"><span class="caret">▾</span><span>Surah 2 · continued</span><small>142+</small></div>
+            <div class="kids">
+              <div class="item sub"><span>Dhikr &amp; Gratitude</span><small>2:152</small></div>
+            </div>
+          </div>
+          <div class="node closed">
+            <div class="row"><span class="caret">▾</span><span>Surah 3 · Al-Imran</span><small>200</small></div>
+            <div class="kids">
+              <div class="item sub"><span>The Family of Imran</span><small>3:33–63</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </aside>
 
@@ -271,6 +307,8 @@
   document.querySelectorAll('[data-collapse]').forEach(b => b.addEventListener('click', () => {
     app.classList.toggle(b.dataset.collapse + '-hidden');
   }));
+  document.querySelectorAll('.node > .row').forEach(r =>
+    r.addEventListener('click', () => r.parentElement.classList.toggle('closed')));
 </script>
 </body>
 </html>
