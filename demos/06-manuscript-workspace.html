@@ -71,9 +71,12 @@
   .ayah-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
           border:1px solid var(--emerald-soft);border-radius:50%;font-size:13px;color:var(--emerald);
           margin-right:12px;flex:none;font-variant-numeric:tabular-nums;font-family:var(--f-ui)}
-  .ayah{display:flex;align-items:flex-start;margin:0 0 18px}
+  .ayah{margin:0 0 52px}
+  .vrow{display:flex;align-items:center;gap:18px;min-width:0}
+  .vrow .ayah-n{margin:0}
+  .vrow .ar{flex:1;min-width:0;margin:16px 0}
   .ayah .body{flex:1;min-width:0}
-  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:0 0 18px;color:var(--emerald)}
+  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:16px 0;color:var(--emerald)}
   .translation{font-size:20px;margin:0 0 22px}
   .commentary p{margin:0 0 18px;color:#3a332a}
   .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
@@ -184,9 +187,11 @@
       <div class="orn"><span>۞</span></div>
 
       <div class="ayah">
-        <span class="ayah-n">1</span>
-        <div class="body">
+        <div class="vrow">
+          <span class="ayah-n">1</span>
           <p class="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        </div>
+        <div class="body">
           <p class="translation">In the name of Allah, the Most Merciful, the Most Compassionate.</p>
           <div class="commentary">
             <p>Before beginning anything, one should adopt the principle of reciting the Basmalah. One of the most important benefits is that when one begins something by reciting Allah's name, the act is brought under His protection and is granted blessing.</p>
@@ -195,9 +200,11 @@
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">2</span>
-        <div class="body">
+        <div class="vrow">
+          <span class="ayah-n">2</span>
           <p class="ar">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+        </div>
+        <div class="body">
           <p class="translation">All praise and thanks belong to Allah, the Lord of the entire universe.</p>
           <div class="commentary">
             <p>The nature of this surah is that of a du'a — one that begins with praise, moves through declaration, and ends in request. Praise first, then asking: the order itself is the teaching.</p>
@@ -207,9 +214,11 @@
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">3</span>
-        <div class="body">
+        <div class="vrow">
+          <span class="ayah-n">3</span>
           <p class="ar">الرَّحْمَٰنِ الرَّحِيمِ</p>
+        </div>
+        <div class="body">
           <p class="translation">The Most Merciful, the Most Compassionate.</p>
           <div class="commentary">
             <p>The root of Ar-Rahman and Ar-Rahim is ra-ha-meem, which literally means the 'womb' — carrying the sense of nurturing tenderness that envelops and sustains.</p>

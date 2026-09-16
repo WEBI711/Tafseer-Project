@@ -65,31 +65,34 @@
         display:flex;gap:28px;flex-wrap:wrap;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
         color:var(--ink-soft);font-family:var(--f-ui)}
   .meta b{font-weight:600;color:var(--ink);letter-spacing:.02em;text-transform:none;font-size:14.5px;font-family:var(--f-body)}
-  .juz-head{margin:72px 0 6px;display:flex;align-items:baseline;gap:16px}
-  .juz-head:first-of-type{margin-top:0}
-  .juz-head .jt{font-size:22px;font-weight:400;flex:none}
-  .juz-head .jt small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a89a80;
-                      font-family:var(--f-ui);display:block;margin-bottom:2px}
-  .juz-head .st{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#a89a80;font-family:var(--f-ui)}
+  .juz-band{margin:88px 0 40px;padding:22px 0 18px;text-align:center;
+            border-top:1px solid var(--emerald-soft);border-bottom:1px solid var(--emerald-soft);
+            background:linear-gradient(to bottom,rgba(201,216,210,.16),transparent)}
+  .juz-band:first-of-type{margin-top:0}
+  .juz-band .jl{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--emerald);
+                font-weight:600;font-family:var(--f-ui)}
+  .juz-band .jn{font-family:var(--f-ar);font-size:24px;margin-top:3px}
+  .juz-band .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a89a80;
+                font-family:var(--f-ui);margin-top:5px}
   .surah-head{margin:44px 0 6px;padding-top:20px;border-top:1px dashed var(--rule);
               display:flex;align-items:baseline;gap:14px}
   .surah-head .sn{font-size:24px;font-weight:400}
   .surah-head .sar{font-family:var(--f-ar);font-size:20px;color:var(--emerald);direction:rtl}
   .surah-head .ss{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#a89a80;
                   font-family:var(--f-ui);margin-left:auto}
-  .orn{display:flex;align-items:center;gap:14px;margin:18px 0 30px;color:var(--emerald)}
-  .orn::before,.orn::after{content:"";height:1px;background:var(--emerald-soft);flex:1}
-  .orn span{font-family:var(--f-ar);font-size:18px;color:var(--emerald)}
   .ayah-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
           border:1px solid var(--emerald-soft);border-radius:50%;font-size:13px;color:var(--emerald);
           margin-right:12px;flex:none;font-variant-numeric:tabular-nums;font-family:var(--f-ui)}
-  .ayah{display:flex;align-items:flex-start;margin:0 0 18px}
+  .ayah{margin:0 0 52px}
+  .vrow{display:flex;align-items:center;gap:18px;min-width:0}
+  .vrow .ayah-n{margin:0}
+  .vrow .ar{flex:1;min-width:0;margin:16px 0}
   .ayah .body{flex:1;min-width:0}
-  .vhead{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-family:var(--f-ui)}
+  .vhead{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-family:var(--f-ui)}
   .vhead .ref{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
   .score{font-size:10px;letter-spacing:.08em;color:var(--emerald);background:rgba(201,216,210,.4);
          border:1px solid var(--emerald-soft);border-radius:999px;padding:2px 8px;font-variant-numeric:tabular-nums}
-  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:0 0 18px;color:var(--emerald)}
+  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:16px 0;color:var(--emerald)}
   .translation{font-size:20px;margin:0 0 22px}
   .commentary p{margin:0 0 18px;color:#3a332a}
   .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
@@ -200,11 +203,11 @@
       </div>
 
       <!-- ================= JUZ 2 ================= -->
-      <div class="juz-head">
-        <div class="jt"><small>Juz 2</small>Al-Baqarah</div>
-        <span class="st">2 ayat matched</span>
+      <div class="juz-band">
+        <div class="jl">Juz 2</div>
+        <div class="jn">الجزء الثاني</div>
+        <div class="st">Al-Baqarah · 2 ayat matched</div>
       </div>
-      <div class="orn"><span>۞</span></div>
 
       <div class="surah-head">
         <span class="sn">Surah 2 · Al-Baqarah</span><span class="sar">البقرة</span>
@@ -212,36 +215,36 @@
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">180</span>
-        <div class="body">
-          <div class="vhead"><span class="ref">2:180 · Bequests</span><span class="score">0.94</span></div>
+        <div class="vhead"><span class="ref">2:180 · Bequests</span><span class="score">0.94</span></div>
+        <div class="vrow">
+          <span class="ayah-n">180</span>
           <p class="ar">كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ لِلْوَالِدَيْنِ وَالْأَقْرَبِينَ بِالْمَعْرُوفِ ۖ حَقًّا عَلَى الْمُتَّقِينَ</p>
+        </div>
           <p class="translation">Prescribed for you, when death approaches any of you and he leaves behind wealth, is the bequest for his parents and near relatives according to what is fair — a duty upon the righteous.</p>
           <div class="commentary">
             <p>This verse establishes the bequest (wasiyyah) as the earliest framework for passing on wealth. The command was later supplemented by the detailed shares of Surah An-Nisa, but its principle remains: what one leaves behind is a trust, and disposing of it fairly is an act of taqwa.</p>
             <blockquote class="pull">The bequest is not a favour to the heir — it is a right owed to the family, and withholding it is described as among the sins.</blockquote>
           </div>
-        </div>
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">240</span>
-        <div class="body">
-          <div class="vhead"><span class="ref">2:240 · Provision for widows</span><span class="score">0.81</span></div>
+        <div class="vhead"><span class="ref">2:240 · Provision for widows</span><span class="score">0.81</span></div>
+        <div class="vrow">
+          <span class="ayah-n">240</span>
           <p class="ar">وَالَّذِينَ يُتَوَفَّوْنَ مِنكُمْ وَيَذَرُونَ أَزْوَاجًا وَصِيَّةً لِّأَزْوَاجِهِم مَّتَاعًا إِلَى الْحَوْلِ غَيْرَ إِخْرَاجٍ</p>
+        </div>
           <p class="translation">And those of you who pass away and leave wives behind — a bequest for their wives of provision for a year without being turned out.</p>
           <div class="commentary">
             <p>Here the bequest takes a specific form: securing the widow's maintenance for a full year. The verse shows inheritance law in the Qur'an begins with protection of the most vulnerable heirs before it allocates fixed shares.</p>
           </div>
-        </div>
       </div>
 
       <!-- ================= JUZ 4 ================= -->
-      <div class="juz-head">
-        <div class="jt"><small>Juz 4</small>An-Nisa</div>
-        <span class="st">2 ayat matched</span>
+      <div class="juz-band">
+        <div class="jl">Juz 4</div>
+        <div class="jn">الجزء الرابع</div>
+        <div class="st">An-Nisa · 2 ayat matched</div>
       </div>
-      <div class="orn"><span>۞</span></div>
 
       <div class="surah-head">
         <span class="sn">Surah 4 · An-Nisa</span><span class="sar">النساء</span>
@@ -249,48 +252,48 @@
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">11</span>
-        <div class="body">
-          <div class="vhead"><span class="ref">4:11 · Fixed shares — children &amp; parents</span><span class="score">0.97</span></div>
+        <div class="vhead"><span class="ref">4:11 · Fixed shares — children &amp; parents</span><span class="score">0.97</span></div>
+        <div class="vrow">
+          <span class="ayah-n">11</span>
           <p class="ar">يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ الْأُنثَيَيْنِ ۚ فَإِن كُنَّ نِسَاءً فَوْقَ اثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ ۖ وَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ</p>
+        </div>
           <p class="translation">Allah instructs you concerning your children: for the male is a share equal to that of two females. If there are only daughters, two or more, they receive two-thirds of what he leaves; if only one, she receives half.</p>
           <div class="commentary">
             <p>This is the cornerstone verse of the law of shares (faraid). The opening — "Allah instructs you" — frames inheritance not as custom but as divine allocation: the estate belongs to the distribution Allah decrees, not to the wishes of the heirs. Each share named here is a ceiling set by revelation, and the commentary walks through each case in turn.</p>
             <div class="note"><h4>Note</h4>The verse continues with the shares of the deceased's parents — one-sixth each where the deceased left children — completing the inner circle of heirs before more distant kin are considered.</div>
           </div>
-        </div>
       </div>
 
       <div class="ayah">
-        <span class="ayah-n">12</span>
-        <div class="body">
-          <div class="vhead"><span class="ref">4:12 · Fixed shares — spouses &amp; siblings</span><span class="score">0.93</span></div>
+        <div class="vhead"><span class="ref">4:12 · Fixed shares — spouses &amp; siblings</span><span class="score">0.93</span></div>
+        <div class="vrow">
+          <span class="ayah-n">12</span>
           <p class="ar">وَلَكُمْ نِصْفُ مَا تَرَكَ أَزْوَاجُكُمْ إِن لَّمْ يَكُن لَّهُنَّ وَلَدٌ ۚ فَإِن كَانَ لَهُنَّ وَلَدٌ فَلَكُمُ الرُّبُعُ مِمَّا تَرَكْنَ</p>
+        </div>
           <p class="translation">And for you is half of what your wives leave if they have no child; but if they have a child, then for you is a fourth of what they leave.</p>
           <div class="commentary">
             <p>The mirror verse: the husband's share of his wife's estate, then the wife's share of her husband's. The presence or absence of children changes the share — the law adjusts to the shape of the family rather than applying a flat rule. This responsiveness is repeated throughout the passage and trains the reader to see inheritance as a system, not a list.</p>
           </div>
-        </div>
       </div>
 
       <!-- ================= JUZ 5 ================= -->
-      <div class="juz-head">
-        <div class="jt"><small>Juz 5</small>An-Nisa · continued</div>
-        <span class="st">1 ayah matched</span>
+      <div class="juz-band">
+        <div class="jl">Juz 5</div>
+        <div class="jn">الجزء الخامس</div>
+        <div class="st">An-Nisa · continued · 1 ayah matched</div>
       </div>
-      <div class="orn"><span>۞</span></div>
 
       <div class="ayah">
-        <span class="ayah-n">176</span>
-        <div class="body">
-          <div class="vhead"><span class="ref">4:176 · Al-Kalalah — those leaving no ascendant or descendant</span><span class="score">0.90</span></div>
+        <div class="vhead"><span class="ref">4:176 · Al-Kalalah — those leaving no ascendant or descendant</span><span class="score">0.90</span></div>
+        <div class="vrow">
+          <span class="ayah-n">176</span>
           <p class="ar">يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلَالَةِ ۚ إِنِ امْرُؤٌ هَلَكَ لَيْسَ لَهُ وَلَدٌ وَهُوَ أَخُو لِأُخْتٍ فَلَهَا نِصْفُ مَا تَرَكَ</p>
+        </div>
           <p class="translation">They ask you for a ruling. Say: Allah gives you a ruling concerning al-kalalah — if a man dies having no child but has a sister, she receives half of what he left.</p>
           <div class="commentary">
             <p>The final verse of the surah answers a question the community itself asked, and its placement is deliberate: the surah that opens with family law closes by completing it. Al-kalalah — one who leaves neither parent nor child — is the hardest case, and the Qur'an resolves it by revelation rather than leaving it to tribal custom.</p>
             <blockquote class="pull">"Allah makes clear to you the law, lest you go astray" — the closing words of the surah are its summary: inheritance is guidance, and deviating from the revealed shares is the astray-ness it warns against.</blockquote>
           </div>
-        </div>
       </div>
 
       <div class="endmark">۞<small>End of response · 5 of 267 passages</small></div>
