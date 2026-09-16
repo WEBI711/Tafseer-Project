@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo 6 — Manuscript Workspace · full app</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f1e6; --paper-2:#efe8d9; --ink:#2a241c; --ink-soft:#5b5145;
+    --rule:#d8cdb8; --accent:#8a6a3b; --accent-soft:#c9b48c;
+    --emerald:#3d6b5e; --emerald-soft:#c9d8d2;
+    --f-body:"Newsreader",Georgia,serif; --f-ar:"Amiri",serif; --f-ui:"Inter",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);
+       font-size:19px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow:hidden}
+  .app{display:grid;grid-template-columns:268px 1fr 400px;height:100vh;
+       transition:grid-template-columns .25s ease}
+  .app.left-hidden{grid-template-columns:0 1fr 400px}
+  .app.right-hidden{grid-template-columns:268px 1fr 0}
+  .app.left-hidden.right-hidden{grid-template-columns:0 1fr 0}
+
+  /* ---------- explorer (left) ---------- */
+  .side{background:var(--paper-2);border-right:1px solid var(--rule);overflow:hidden;
+        display:flex;flex-direction:column;min-width:0}
+  .app.left-hidden .side{border-right-color:transparent}
+  .side .head{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
+              justify-content:space-between;align-items:center;gap:10px;flex:none}
+  .side .brand{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .side .scroll{overflow-y:auto;padding:6px 12px 24px}
+  .juz{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
+       padding:16px 8px 6px;font-weight:600;font-family:var(--f-ui)}
+  .item{padding:8px 10px;border-radius:6px;font-size:15.5px;color:var(--ink-soft);display:flex;
+        justify-content:space-between;gap:8px;cursor:pointer;align-items:baseline}
+  .item:hover{background:rgba(255,255,255,.55)}
+  .item.on{color:var(--accent);background:rgba(201,180,140,.22)}
+  .item small{color:#a89a80;font-size:11px;font-family:var(--f-ui);font-variant-numeric:tabular-nums}
+  .item.sub{margin-left:18px;font-size:14.5px;padding-top:5px;padding-bottom:5px}
+  .item.sub::before{content:"";width:5px;height:5px;border:1px solid var(--emerald-soft);
+                    border-radius:50%;flex:none;align-self:center}
+  .item.sub.on::before{background:var(--emerald);border-color:var(--emerald)}
+  .item.on{color:var(--emerald);background:rgba(201,216,210,.35)}
+
+  /* ---------- reader (center) ---------- */
+  .main{overflow-y:auto;min-width:0}
+  .main .top{position:sticky;top:0;z-index:5;background:rgba(246,241,230,.94);backdrop-filter:blur(8px);
+             border-bottom:1px solid var(--rule);padding:12px 20px;display:flex;
+             justify-content:space-between;align-items:center;gap:12px}
+  .crumb{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-family:var(--f-ui)}
+  .crumb b{color:var(--accent);font-weight:600}
+  .icon-btn{background:0;border:1px solid var(--rule);border-radius:7px;width:30px;height:30px;
+            color:var(--ink-soft);cursor:pointer;font-size:14px;line-height:1;flex:none;font-family:var(--f-ui)}
+  .icon-btn:hover{border-color:var(--accent-soft);color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 40px 120px}
+  .kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:26px;font-family:var(--f-ui)}
+  h1{font-weight:400;font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.015em;margin:0 0 10px}
+  h1 .ar{display:block;font-family:var(--f-ar);font-size:.78em;color:var(--accent);direction:rtl}
+  .lede{font-size:21px;font-style:italic;color:var(--ink-soft);margin:22px 0 8px;max-width:56ch}
+  .meta{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin:30px 0 46px;
+        display:flex;gap:28px;flex-wrap:wrap;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+        color:var(--ink-soft);font-family:var(--f-ui)}
+  .meta b{font-weight:600;color:var(--ink);letter-spacing:.02em;text-transform:none;font-size:14.5px;font-family:var(--f-body)}
+  h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);
+             font-weight:600;margin:64px 0 6px;font-family:var(--f-ui)}
+  .orn{display:flex;align-items:center;gap:14px;margin:18px 0 34px;color:var(--emerald)}
+  .orn::before,.orn::after{content:"";height:1px;background:var(--emerald-soft);flex:1}
+  .orn span{font-family:var(--f-ar);font-size:18px;color:var(--emerald)}
+  .ayah-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+          border:1px solid var(--emerald-soft);border-radius:50%;font-size:13px;color:var(--emerald);
+          margin-right:12px;flex:none;font-variant-numeric:tabular-nums;font-family:var(--f-ui)}
+  .ayah{display:flex;align-items:flex-start;margin:0 0 18px}
+  .ayah .body{flex:1;min-width:0}
+  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:0 0 18px;color:var(--emerald)}
+  .translation{font-size:20px;margin:0 0 22px}
+  .commentary p{margin:0 0 18px;color:#3a332a}
+  .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
+      padding:6px 12px 0 0;color:var(--accent)}
+  .pull{border-left:2px solid var(--accent-soft);padding:4px 0 4px 24px;margin:30px 0;
+        font-size:21px;font-style:italic;color:var(--ink-soft)}
+  .note{background:var(--paper-2);border:1px solid var(--rule);padding:18px 22px;margin:28px 0;font-size:16.5px}
+  .note h4{margin:0 0 8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+           color:var(--accent);font-family:var(--f-ui)}
+
+  /* ---------- chat (right) ---------- */
+  .chat{background:var(--paper-2);border-left:1px solid var(--rule);display:flex;flex-direction:column;
+        overflow:hidden;min-width:0}
+  .app.right-hidden .chat{border-left-color:transparent}
+  .chat .ch{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
+            justify-content:space-between;align-items:center;flex:none}
+  .chat .ch b{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .chat .ch span{font-size:11px;color:#a89a80;font-family:var(--f-ui);text-transform:uppercase;letter-spacing:.1em}
+  .thread{flex:1;overflow-y:auto;padding:22px 22px 10px;display:flex;flex-direction:column;gap:26px}
+  .q{font-size:19px;font-style:italic;border-left:2px solid var(--accent-soft);padding-left:18px;color:var(--ink)}
+  .a p{margin:0 0 16px;color:#3a332a;font-size:16.5px}
+  .citeblock{background:var(--paper);border-left:2px solid var(--accent);padding:15px 18px;margin:0 0 12px;cursor:pointer}
+  .citeblock:hover{background:#fbf8f0}
+  .citeblock b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+               color:var(--accent);margin-bottom:6px;font-weight:600;font-family:var(--f-ui)}
+  .citeblock p{margin:0;font-size:15.5px;font-style:italic;color:var(--ink-soft)}
+  .citeblock small{display:block;margin-top:8px;font-size:11.5px;font-style:normal;letter-spacing:.08em;
+                   text-transform:uppercase;color:#a89a80;font-family:var(--f-ui)}
+  .suggest{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 0}
+  .suggest button{background:0;border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px;
+                  font-family:var(--f-body);font-size:14px;color:var(--accent);cursor:pointer}
+  .suggest button:hover{background:rgba(201,180,140,.18)}
+  .composer{border-top:1px solid var(--rule);padding:16px 18px;flex:none}
+  .composer .box{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--rule);
+                 border-radius:999px;padding:6px 6px 6px 18px}
+  .composer input{flex:1;min-width:0;border:0;background:0;font-family:var(--f-body);font-size:16px;
+                  color:var(--ink);outline:0}
+  .composer input::placeholder{color:#b8a98d;font-style:italic}
+  .composer button{background:var(--ink);color:var(--paper);border:0;border-radius:999px;
+                   padding:9px 18px;font-family:var(--f-ui);font-size:11px;letter-spacing:.12em;
+                   text-transform:uppercase;cursor:pointer}
+
+  /* ---------- collapse rails ---------- */
+  .edge{position:fixed;top:50%;transform:translateY(-50%);z-index:9;width:26px;height:64px;
+        background:var(--paper-2);border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;
+        font-size:14px;font-family:var(--f-ui);display:none;align-items:center;justify-content:center}
+  .edge:hover{color:var(--accent)}
+  .edge.left{left:0;border-radius:0 8px 8px 0;border-left:0}
+  .edge.right{right:0;border-radius:8px 0 0 8px;border-right:0}
+  .app.left-hidden .edge.left{display:flex}
+  .app.right-hidden .edge.right{display:flex}
+  .toggle{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;background:var(--ink);color:var(--paper);
+          padding:9px 16px;border-radius:999px;font-family:var(--f-ui);font-size:11px;
+          letter-spacing:.12em;text-transform:uppercase;text-decoration:none;z-index:20}
+  @media(max-width:1100px){.app{grid-template-columns:0 1fr 0}.side,.chat{display:none}
+    .edge.left,.edge.right{display:none}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+  <aside class="side">
+    <div class="head">
+      <span class="brand">Tafseer</span>
+      <button class="icon-btn" data-collapse="left" title="Hide explorer">‹</button>
+    </div>
+    <div class="scroll">
+      <div class="juz">Juz 1</div>
+      <div class="item"><span>Surah 1 · Al-Fatihah</span><small>7</small></div>
+      <div class="item sub on"><span>The Request for Guidance</span><small>1:1–7</small></div>
+      <div class="item"><span>Surah 2 · Al-Baqarah</span><small>286</small></div>
+      <div class="item sub"><span>Claim of the Qur'an</span><small>2:1–5</small></div>
+      <div class="item sub"><span>Hypocrisy &amp; Its Signs</span><small>2:8–20</small></div>
+      <div class="item sub"><span>The Children of Israel</span><small>2:40–141</small></div>
+      <div class="item sub"><span>Ibrahim &amp; the House</span><small>2:124–129</small></div>
+      <div class="juz">Juz 2</div>
+      <div class="item"><span>Surah 2 · continued</span><small>142+</small></div>
+      <div class="item"><span>Surah 3 · Al-Imran</span><small>200</small></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="top">
+      <span class="crumb">Juz 1 / Surah 1 / <b>The Request for Guidance</b></span>
+      <span style="display:flex;gap:8px">
+        <button class="icon-btn" data-collapse="left" title="Toggle explorer">☰</button>
+        <button class="icon-btn" data-collapse="right" title="Toggle chat">💬</button>
+      </span>
+    </div>
+    <div class="wrap">
+      <div class="kicker">Juz 1 · Surah 1</div>
+      <h1>Al-Fatihah<span class="ar">الفاتحة</span></h1>
+      <p class="lede">The Opening — a supplication Allah taught us to ask for guidance, placed at the very threshold of the Book.</p>
+      <div class="meta">
+        <div>Revelation<br><b>Makki</b></div>
+        <div>Ayat<br><b>7</b></div>
+        <div>Theme<br><b>Guidance</b></div>
+        <div>Source<br><b>Taleem al-Quran</b></div>
+      </div>
+
+      <h2 class="section">The Name</h2>
+      <div class="orn"><span>۞</span></div>
+      <div class="commentary">
+        <p>This Surah is named Al-Fatihah because of its subject-matter. Fatihah is opening, whether of a book, a door, or a matter. Other names include Al-Hamd (The Praise), As-Salah (The Prayer), and Ash-Shifa (The Healing).</p>
+      </div>
+
+      <h2 class="section">Group 1 · The Request for Guidance</h2>
+      <div class="orn"><span>۞</span></div>
+
+      <div class="ayah">
+        <span class="ayah-n">1</span>
+        <div class="body">
+          <p class="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="translation">In the name of Allah, the Most Merciful, the Most Compassionate.</p>
+          <div class="commentary">
+            <p>Before beginning anything, one should adopt the principle of reciting the Basmalah. One of the most important benefits is that when one begins something by reciting Allah's name, the act is brought under His protection and is granted blessing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">2</span>
+        <div class="body">
+          <p class="ar">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+          <p class="translation">All praise and thanks belong to Allah, the Lord of the entire universe.</p>
+          <div class="commentary">
+            <p>The nature of this surah is that of a du'a — one that begins with praise, moves through declaration, and ends in request. Praise first, then asking: the order itself is the teaching.</p>
+            <blockquote class="pull">Al-Hamd means all praise and all thanks belong to Allah exclusively — recognised by the tongue, the heart, and the limbs.</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">3</span>
+        <div class="body">
+          <p class="ar">الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="translation">The Most Merciful, the Most Compassionate.</p>
+          <div class="commentary">
+            <p>The root of Ar-Rahman and Ar-Rahim is ra-ha-meem, which literally means the 'womb' — carrying the sense of nurturing tenderness that envelops and sustains.</p>
+            <div class="note"><h4>Note</h4>His mercy precedes His judgement: the attributes of mercy are named before the Master of the Day of Judgement is introduced.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="chat">
+    <div class="ch">
+      <b>Ask the tafseer</b>
+      <button class="icon-btn" data-collapse="right" title="Hide chat">›</button>
+    </div>
+    <div class="thread">
+      <div class="q">Why does Al-Fatihah open with praise before making a request?</div>
+      <div class="a">
+        <p>The surah is structured as a du'a, and the order is deliberate: it establishes the correct posture before asking. Praise and gratitude come first, then the declaration of worship, and only then the request for guidance — so the ask emerges from recognition rather than demand.</p>
+        <div class="citeblock">
+          <b>1:2 · Al-Fatihah</b>
+          <p>"The nature of this surah is that of a du'a — a prayer that begins with the praise…"</p>
+          <small>Taleem al-Quran · para 2 of commentary</small>
+        </div>
+        <div class="citeblock">
+          <b>1:5 · Al-Fatihah</b>
+          <p>"This is our declaration to Allah to worship Him alone and turn for help to Him alone."</p>
+          <small>Taleem al-Quran · para 1 of commentary</small>
+        </div>
+        <div class="suggest">
+          <button>Compare with 2:1</button><button>Show all sources</button><button>Related themes</button>
+        </div>
+      </div>
+    </div>
+    <div class="composer">
+      <div class="box">
+        <input placeholder="Ask about the tafseer…">
+        <button>Send</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<button class="edge left" data-collapse="left" title="Show explorer">›</button>
+<button class="edge right" data-collapse="right" title="Show chat">‹</button>
+<a class="toggle" href="index.html">All demos</a>
+
+<script>
+  const app = document.getElementById('app');
+  document.querySelectorAll('[data-collapse]').forEach(b => b.addEventListener('click', () => {
+    app.classList.toggle(b.dataset.collapse + '-hidden');
+  }));
+</script>
+</body>
+</html>
