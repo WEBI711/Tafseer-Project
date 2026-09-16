@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo 7 — Query Response · full app</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f1e6; --paper-2:#efe8d9; --ink:#2a241c; --ink-soft:#5b5145;
+    --rule:#d8cdb8; --accent:#8a6a3b; --accent-soft:#c9b48c;
+    --emerald:#3d6b5e; --emerald-soft:#c9d8d2;
+    --f-body:"Newsreader",Georgia,serif; --f-ar:"Amiri",serif; --f-ui:"Inter",sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);
+       font-size:19px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow:hidden}
+  .app{display:grid;grid-template-columns:268px 1fr 400px;height:100vh;
+       transition:grid-template-columns .25s ease}
+  .app.left-hidden{grid-template-columns:0 1fr 400px}
+  .app.right-hidden{grid-template-columns:268px 1fr 0}
+  .app.left-hidden.right-hidden{grid-template-columns:0 1fr 0}
+
+  /* ---------- explorer (left) ---------- */
+  .side{background:var(--paper-2);border-right:1px solid var(--rule);overflow:hidden;
+        display:flex;flex-direction:column;min-width:0}
+  .app.left-hidden .side{border-right-color:transparent}
+  .side .head{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
+              justify-content:space-between;align-items:center;gap:10px;flex:none}
+  .side .brand{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .side .scroll{overflow-y:auto;padding:6px 12px 24px}
+  .juz{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
+       padding:16px 8px 6px;font-weight:600;font-family:var(--f-ui)}
+  .juz.queries{color:var(--emerald)}
+  .item{padding:8px 10px;border-radius:6px;font-size:15.5px;color:var(--ink-soft);display:flex;
+        justify-content:space-between;gap:8px;cursor:pointer;align-items:baseline}
+  .item:hover{background:rgba(255,255,255,.55)}
+  .item.on{color:var(--emerald);background:rgba(201,216,210,.35)}
+  .item small{color:#a89a80;font-size:11px;font-family:var(--f-ui);font-variant-numeric:tabular-nums}
+  .item.sub{margin-left:18px;font-size:14.5px;padding-top:5px;padding-bottom:5px}
+  .item.sub::before{content:"";width:5px;height:5px;border:1px solid var(--emerald-soft);
+                    border-radius:50%;flex:none;align-self:center}
+  .item.sub.on::before{background:var(--emerald);border-color:var(--emerald)}
+  .item.q{font-style:italic;font-size:14.5px}
+
+  /* ---------- reader (center) ---------- */
+  .main{overflow-y:auto;min-width:0}
+  .main .top{position:sticky;top:0;z-index:5;background:rgba(246,241,230,.94);backdrop-filter:blur(8px);
+             border-bottom:1px solid var(--rule);padding:12px 20px;display:flex;
+             justify-content:space-between;align-items:center;gap:12px}
+  .crumb{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-family:var(--f-ui)}
+  .crumb b{color:var(--emerald);font-weight:600}
+  .crumb .count{color:#a89a80;letter-spacing:.06em;text-transform:none;margin-left:8px}
+  .icon-btn{background:0;border:1px solid var(--rule);border-radius:7px;width:30px;height:30px;
+            color:var(--ink-soft);cursor:pointer;font-size:14px;line-height:1;flex:none;font-family:var(--f-ui)}
+  .icon-btn:hover{border-color:var(--accent-soft);color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 40px 120px}
+  .kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--emerald);margin-bottom:26px;font-family:var(--f-ui)}
+  h1{font-weight:400;font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.015em;margin:0 0 10px}
+  h1 .ar{display:block;font-family:var(--f-ar);font-size:.72em;color:var(--emerald);direction:rtl}
+  .lede{font-size:21px;font-style:italic;color:var(--ink-soft);margin:22px 0 8px;max-width:56ch}
+  .meta{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin:30px 0 46px;
+        display:flex;gap:28px;flex-wrap:wrap;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+        color:var(--ink-soft);font-family:var(--f-ui)}
+  .meta b{font-weight:600;color:var(--ink);letter-spacing:.02em;text-transform:none;font-size:14.5px;font-family:var(--f-body)}
+  .juz-head{margin:72px 0 6px;display:flex;align-items:baseline;gap:16px}
+  .juz-head:first-of-type{margin-top:0}
+  .juz-head .jt{font-size:22px;font-weight:400;flex:none}
+  .juz-head .jt small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a89a80;
+                      font-family:var(--f-ui);display:block;margin-bottom:2px}
+  .juz-head .st{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#a89a80;font-family:var(--f-ui)}
+  .surah-head{margin:44px 0 6px;padding-top:20px;border-top:1px dashed var(--rule);
+              display:flex;align-items:baseline;gap:14px}
+  .surah-head .sn{font-size:24px;font-weight:400}
+  .surah-head .sar{font-family:var(--f-ar);font-size:20px;color:var(--emerald);direction:rtl}
+  .surah-head .ss{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#a89a80;
+                  font-family:var(--f-ui);margin-left:auto}
+  .orn{display:flex;align-items:center;gap:14px;margin:18px 0 30px;color:var(--emerald)}
+  .orn::before,.orn::after{content:"";height:1px;background:var(--emerald-soft);flex:1}
+  .orn span{font-family:var(--f-ar);font-size:18px;color:var(--emerald)}
+  .ayah-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+          border:1px solid var(--emerald-soft);border-radius:50%;font-size:13px;color:var(--emerald);
+          margin-right:12px;flex:none;font-variant-numeric:tabular-nums;font-family:var(--f-ui)}
+  .ayah{display:flex;align-items:flex-start;margin:0 0 18px}
+  .ayah .body{flex:1;min-width:0}
+  .vhead{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-family:var(--f-ui)}
+  .vhead .ref{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .score{font-size:10px;letter-spacing:.08em;color:var(--emerald);background:rgba(201,216,210,.4);
+         border:1px solid var(--emerald-soft);border-radius:999px;padding:2px 8px;font-variant-numeric:tabular-nums}
+  .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:0 0 18px;color:var(--emerald)}
+  .translation{font-size:20px;margin:0 0 22px}
+  .commentary p{margin:0 0 18px;color:#3a332a}
+  .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
+      padding:6px 12px 0 0;color:var(--accent)}
+  .note{background:var(--paper-2);border:1px solid var(--rule);padding:18px 22px;margin:28px 0;font-size:16.5px}
+  .note h4{margin:0 0 8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+           color:var(--accent);font-family:var(--f-ui)}
+  .endmark{margin:80px 0 0;text-align:center;color:var(--accent-soft);font-family:var(--f-ar);font-size:22px}
+  .endmark small{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.2em;
+                 text-transform:uppercase;color:#a89a80;margin-top:6px}
+
+  /* ---------- chat (right) ---------- */
+  .chat{background:var(--paper-2);border-left:1px solid var(--rule);display:flex;flex-direction:column;
+        overflow:hidden;min-width:0}
+  .app.right-hidden .chat{border-left-color:transparent}
+  .chat .ch{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
+            justify-content:space-between;align-items:center;flex:none}
+  .chat .ch b{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .chat .ch span{font-size:11px;color:#a89a80;font-family:var(--f-ui);text-transform:uppercase;letter-spacing:.1em}
+  .thread{flex:1;overflow-y:auto;padding:22px 22px 10px;display:flex;flex-direction:column;gap:26px}
+  .q{font-size:19px;font-style:italic;border-left:2px solid var(--accent-soft);padding-left:18px;color:var(--ink)}
+  .q .rendered{display:inline-block;font-family:var(--f-ui);font-style:normal;font-size:10.5px;
+               letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);margin-left:10px;cursor:pointer}
+  .a p{margin:0 0 16px;color:#3a332a;font-size:16.5px}
+  .refine{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-soft);font-family:var(--f-ui);
+          background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:9px 13px;margin:0 0 14px}
+  .refine .dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);flex:none}
+  .citeblock{background:var(--paper);border-left:2px solid var(--accent);padding:15px 18px;margin:0 0 12px;cursor:pointer}
+  .citeblock:hover{background:#fbf8f0}
+  .citeblock b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+               color:var(--accent);margin-bottom:6px;font-weight:600;font-family:var(--f-ui)}
+  .citeblock p{margin:0;font-size:15.5px;font-style:italic;color:var(--ink-soft)}
+  .citeblock small{display:block;margin-top:8px;font-size:11.5px;font-style:normal;letter-spacing:.08em;
+                   text-transform:uppercase;color:#a89a80;font-family:var(--f-ui)}
+  .suggest{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 0}
+  .suggest button{background:0;border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px;
+                  font-family:var(--f-body);font-size:14px;color:var(--accent);cursor:pointer}
+  .suggest button:hover{background:rgba(201,180,140,.18)}
+  .suggest button.refinebtn{border-color:var(--emerald-soft);color:var(--emerald)}
+  .suggest button.refinebtn:hover{background:rgba(201,216,210,.3)}
+  .composer{border-top:1px solid var(--rule);padding:16px 18px;flex:none}
+  .composer .box{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--rule);
+                 border-radius:999px;padding:6px 6px 6px 18px}
+  .composer input{flex:1;min-width:0;border:0;background:0;font-family:var(--f-body);font-size:16px;
+                  color:var(--ink);outline:0}
+  .composer input::placeholder{color:#b8a98d;font-style:italic}
+  .composer button{background:var(--ink);color:var(--paper);border:0;border-radius:999px;
+                   padding:9px 18px;font-family:var(--f-ui);font-size:11px;letter-spacing:.12em;
+                   text-transform:uppercase;cursor:pointer}
+
+  /* ---------- collapse rails ---------- */
+  .edge{position:fixed;top:50%;transform:translateY(-50%);z-index:9;width:26px;height:64px;
+        background:var(--paper-2);border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;
+        font-size:14px;font-family:var(--f-ui);display:none;align-items:center;justify-content:center}
+  .edge:hover{color:var(--accent)}
+  .edge.left{left:0;border-radius:0 8px 8px 0;border-left:0}
+  .edge.right{right:0;border-radius:8px 0 0 8px;border-right:0}
+  .app.left-hidden .edge.left{display:flex}
+  .app.right-hidden .edge.right{display:flex}
+  .toggle{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;background:var(--ink);color:var(--paper);
+          padding:9px 16px;border-radius:999px;font-family:var(--f-ui);font-size:11px;
+          letter-spacing:.12em;text-transform:uppercase;text-decoration:none;z-index:20}
+  @media(max-width:1100px){.app{grid-template-columns:0 1fr 0}.side,.chat{display:none}
+    .edge.left,.edge.right{display:none}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+  <aside class="side">
+    <div class="head">
+      <span class="brand">Tafseer</span>
+      <button class="icon-btn" data-collapse="left" title="Hide explorer">‹</button>
+    </div>
+    <div class="scroll">
+      <div class="juz queries">Recent queries</div>
+      <div class="item q on"><span>“inheritance laws”</span><small>5</small></div>
+      <div class="item q"><span>“mercy before judgement”</span><small>4</small></div>
+      <div class="juz">Juz 1</div>
+      <div class="item"><span>Surah 1 · Al-Fatihah</span><small>7</small></div>
+      <div class="item sub"><span>The Request for Guidance</span><small>1:1–7</small></div>
+      <div class="item"><span>Surah 2 · Al-Baqarah</span><small>286</small></div>
+      <div class="item sub"><span>Claim of the Qur'an</span><small>2:1–5</small></div>
+      <div class="item sub"><span>The Children of Israel</span><small>2:40–141</small></div>
+      <div class="juz">Juz 2</div>
+      <div class="item"><span>Surah 2 · continued</span><small>142+</small></div>
+      <div class="item"><span>Surah 3 · Al-Imran</span><small>200</small></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="top">
+      <span class="crumb">Query / <b>“inheritance laws”</b><span class="count">5 ayat · 2 surahs · 3 juz</span></span>
+      <span style="display:flex;gap:8px">
+        <button class="icon-btn" data-collapse="left" title="Toggle explorer">☰</button>
+        <button class="icon-btn" data-collapse="right" title="Toggle chat">💬</button>
+      </span>
+    </div>
+    <div class="wrap">
+      <div class="kicker">Query response · rendered from 4 tafsir works</div>
+      <h1>Inheritance &amp; Bequests<span class="ar">المَوَارِيث وَالوَصِيَّة</span></h1>
+      <p class="lede">Every ayah the corpus connects to inheritance — ordered through the Book itself, with the commentary that surrounds each verse kept intact.</p>
+      <div class="meta">
+        <div>Matches<br><b>5 ayat</b></div>
+        <div>Juz<br><b>3</b></div>
+        <div>Surahs<br><b>2</b></div>
+        <div>Order<br><b>Canonical</b></div>
+      </div>
+
+      <!-- ================= JUZ 2 ================= -->
+      <div class="juz-head">
+        <div class="jt"><small>Juz 2</small>Al-Baqarah</div>
+        <span class="st">2 ayat matched</span>
+      </div>
+      <div class="orn"><span>۞</span></div>
+
+      <div class="surah-head">
+        <span class="sn">Surah 2 · Al-Baqarah</span><span class="sar">البقرة</span>
+        <span class="ss">Madani · 286 ayat</span>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">180</span>
+        <div class="body">
+          <div class="vhead"><span class="ref">2:180 · Bequests</span><span class="score">0.94</span></div>
+          <p class="ar">كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ لِلْوَالِدَيْنِ وَالْأَقْرَبِينَ بِالْمَعْرُوفِ ۖ حَقًّا عَلَى الْمُتَّقِينَ</p>
+          <p class="translation">Prescribed for you, when death approaches any of you and he leaves behind wealth, is the bequest for his parents and near relatives according to what is fair — a duty upon the righteous.</p>
+          <div class="commentary">
+            <p>This verse establishes the bequest (wasiyyah) as the earliest framework for passing on wealth. The command was later supplemented by the detailed shares of Surah An-Nisa, but its principle remains: what one leaves behind is a trust, and disposing of it fairly is an act of taqwa.</p>
+            <blockquote class="pull">The bequest is not a favour to the heir — it is a right owed to the family, and withholding it is described as among the sins.</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">240</span>
+        <div class="body">
+          <div class="vhead"><span class="ref">2:240 · Provision for widows</span><span class="score">0.81</span></div>
+          <p class="ar">وَالَّذِينَ يُتَوَفَّوْنَ مِنكُمْ وَيَذَرُونَ أَزْوَاجًا وَصِيَّةً لِّأَزْوَاجِهِم مَّتَاعًا إِلَى الْحَوْلِ غَيْرَ إِخْرَاجٍ</p>
+          <p class="translation">And those of you who pass away and leave wives behind — a bequest for their wives of provision for a year without being turned out.</p>
+          <div class="commentary">
+            <p>Here the bequest takes a specific form: securing the widow's maintenance for a full year. The verse shows inheritance law in the Qur'an begins with protection of the most vulnerable heirs before it allocates fixed shares.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= JUZ 4 ================= -->
+      <div class="juz-head">
+        <div class="jt"><small>Juz 4</small>An-Nisa</div>
+        <span class="st">2 ayat matched</span>
+      </div>
+      <div class="orn"><span>۞</span></div>
+
+      <div class="surah-head">
+        <span class="sn">Surah 4 · An-Nisa</span><span class="sar">النساء</span>
+        <span class="ss">Madani · 176 ayat</span>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">11</span>
+        <div class="body">
+          <div class="vhead"><span class="ref">4:11 · Fixed shares — children &amp; parents</span><span class="score">0.97</span></div>
+          <p class="ar">يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ الْأُنثَيَيْنِ ۚ فَإِن كُنَّ نِسَاءً فَوْقَ اثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ ۖ وَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ</p>
+          <p class="translation">Allah instructs you concerning your children: for the male is a share equal to that of two females. If there are only daughters, two or more, they receive two-thirds of what he leaves; if only one, she receives half.</p>
+          <div class="commentary">
+            <p>This is the cornerstone verse of the law of shares (faraid). The opening — "Allah instructs you" — frames inheritance not as custom but as divine allocation: the estate belongs to the distribution Allah decrees, not to the wishes of the heirs. Each share named here is a ceiling set by revelation, and the commentary walks through each case in turn.</p>
+            <div class="note"><h4>Note</h4>The verse continues with the shares of the deceased's parents — one-sixth each where the deceased left children — completing the inner circle of heirs before more distant kin are considered.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ayah">
+        <span class="ayah-n">12</span>
+        <div class="body">
+          <div class="vhead"><span class="ref">4:12 · Fixed shares — spouses &amp; siblings</span><span class="score">0.93</span></div>
+          <p class="ar">وَلَكُمْ نِصْفُ مَا تَرَكَ أَزْوَاجُكُمْ إِن لَّمْ يَكُن لَّهُنَّ وَلَدٌ ۚ فَإِن كَانَ لَهُنَّ وَلَدٌ فَلَكُمُ الرُّبُعُ مِمَّا تَرَكْنَ</p>
+          <p class="translation">And for you is half of what your wives leave if they have no child; but if they have a child, then for you is a fourth of what they leave.</p>
+          <div class="commentary">
+            <p>The mirror verse: the husband's share of his wife's estate, then the wife's share of her husband's. The presence or absence of children changes the share — the law adjusts to the shape of the family rather than applying a flat rule. This responsiveness is repeated throughout the passage and trains the reader to see inheritance as a system, not a list.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= JUZ 5 ================= -->
+      <div class="juz-head">
+        <div class="jt"><small>Juz 5</small>An-Nisa · continued</div>
+        <span class="st">1 ayah matched</span>
+      </div>
+      <div class="orn"><span>۞</span></div>
+
+      <div class="ayah">
+        <span class="ayah-n">176</span>
+        <div class="body">
+          <div class="vhead"><span class="ref">4:176 · Al-Kalalah — those leaving no ascendant or descendant</span><span class="score">0.90</span></div>
+          <p class="ar">يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلَالَةِ ۚ إِنِ امْرُؤٌ هَلَكَ لَيْسَ لَهُ وَلَدٌ وَهُوَ أَخُو لِأُخْتٍ فَلَهَا نِصْفُ مَا تَرَكَ</p>
+          <p class="translation">They ask you for a ruling. Say: Allah gives you a ruling concerning al-kalalah — if a man dies having no child but has a sister, she receives half of what he left.</p>
+          <div class="commentary">
+            <p>The final verse of the surah answers a question the community itself asked, and its placement is deliberate: the surah that opens with family law closes by completing it. Al-kalalah — one who leaves neither parent nor child — is the hardest case, and the Qur'an resolves it by revelation rather than leaving it to tribal custom.</p>
+            <blockquote class="pull">"Allah makes clear to you the law, lest you go astray" — the closing words of the surah are its summary: inheritance is guidance, and deviating from the revealed shares is the astray-ness it warns against.</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="endmark">۞<small>End of response · 5 of 267 passages</small></div>
+    </div>
+  </main>
+
+  <section class="chat">
+    <div class="ch">
+      <b>Ask the tafseer</b>
+      <button class="icon-btn" data-collapse="right" title="Hide chat">›</button>
+    </div>
+    <div class="thread">
+      <div class="q">Show me everything related to inheritance laws<span class="rendered">rendered in reader ↗</span></div>
+      <div class="a">
+        <p>The corpus connects five ayat to inheritance across three juz. I've rendered them in the reader as one continuous document, ordered through the Book — Juz 2's bequest verses first, then the fixed shares of An-Nisa in Juz 4, and the closing ruling on al-kalalah in Juz 5. The full commentary around each verse is included so nothing is read out of context.</p>
+        <div class="citeblock">
+          <b>4:11 · An-Nisa</b>
+          <p>"The opening — 'Allah instructs you' — frames inheritance not as custom but as divine allocation…"</p>
+          <small>Taleem al-Quran · commentary on 4:11</small>
+        </div>
+        <div class="citeblock">
+          <b>4:176 · An-Nisa</b>
+          <p>"Al-kalalah — one who leaves neither parent nor child — is the hardest case…"</p>
+          <small>Tafsir Ibn Kathir · commentary on 4:176</small>
+        </div>
+        <div class="suggest">
+          <button class="refinebtn">Only Al-Baqarah</button>
+          <button class="refinebtn">Hide commentary</button>
+          <button class="refinebtn">Include hadith sources</button>
+        </div>
+        <div class="refine"><span class="dot"></span>Refining the document in the reader</div>
+        <div class="q" style="font-size:17px">Just the fixed-share verses</div>
+        <p style="font-size:15.5px;color:var(--ink-soft)">The reader now shows 4:11 and 4:12 only — the same document, narrowed.</p>
+      </div>
+    </div>
+    <div class="composer">
+      <div class="box">
+        <input placeholder="Refine this, or ask something new…">
+        <button>Send</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<button class="edge left" data-collapse="left" title="Show explorer">›</button>
+<button class="edge right" data-collapse="right" title="Show chat">‹</button>
+<a class="toggle" href="index.html">All demos</a>
+
+<script>
+  const app = document.getElementById('app');
+  document.querySelectorAll('[data-collapse]').forEach(b => b.addEventListener('click', () => {
+    app.classList.toggle(b.dataset.collapse + '-hidden');
+  }));
+</script>
+</body>
+</html>
