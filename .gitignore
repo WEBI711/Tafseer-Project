@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+
+# Node
+node_modules/
+
+# Build artifacts
+*.log
