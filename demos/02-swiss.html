@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo 2 — Swiss · full app</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fff; --ink:#000; --muted:#8a8a8a; --line:#e6e6e6; --accent:#e5341f;
+    --f-sans:"Inter",-apple-system,sans-serif; --f-mono:"JetBrains Mono",monospace; --f-ar:"Amiri",serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-sans);font-size:16px;
+       line-height:1.6;-webkit-font-smoothing:antialiased}
+  header{border-bottom:1px solid var(--ink);position:sticky;top:0;background:#fff;z-index:5}
+  .nav{max-width:1180px;margin:0 auto;padding:18px 32px;display:flex;justify-content:space-between;
+       align-items:baseline;gap:24px}
+  .nav .brand{font-weight:700;letter-spacing:-.02em;font-size:15px}
+  .nav nav{display:flex;gap:26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .nav nav button{background:0;border:0;font:inherit;letter-spacing:inherit;text-transform:inherit;
+                  color:var(--muted);cursor:pointer;padding:0}
+  .nav nav button.on{color:var(--ink)}
+  main{max-width:1180px;margin:0 auto;padding:0 32px}
+  .view{display:none}
+  .view.on{display:block}
+  .grid{display:grid;grid-template-columns:200px 1fr 240px;gap:56px}
+  @media(max-width:980px){.grid{grid-template-columns:1fr;gap:0}.rail,aside{border:0;padding-top:32px}}
+  .rail{padding:72px 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .rail .b{margin-bottom:22px}
+  .rail .lbl{display:block;margin-bottom:6px;font-size:10px;color:#bbb}
+  .rail .val{color:var(--ink);text-transform:none;letter-spacing:0;font-family:var(--f-mono);font-size:12px}
+  .rail ol{list-style:none;padding:0;margin:34px 0 0;counter-reset:s}
+  .rail ol li{counter-increment:s;padding:9px 0;border-top:1px solid var(--line);
+              font-family:var(--f-mono);font-size:11px;letter-spacing:0;cursor:pointer;color:var(--muted)}
+  .rail ol li::before{content:counter(s,decimal-leading-zero);color:#ccc;margin-right:10px}
+  .rail ol li.on{color:var(--ink);font-weight:500}
+  .rail ol li.on::before{color:var(--accent)}
+  article{padding:72px 0 140px;max-width:640px}
+  .eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--accent);margin-bottom:22px}
+  h1{font-size:clamp(40px,6.4vw,76px);line-height:.96;letter-spacing:-.045em;font-weight:600;margin:0 0 8px}
+  h1.sm{font-size:clamp(34px,5vw,58px)}
+  .sub{font-family:var(--f-ar);font-size:30px;direction:rtl;color:var(--muted);margin-bottom:36px}
+  .intro{font-size:19px;line-height:1.55;letter-spacing:-.01em;color:#333;max-width:52ch}
+  .hr{height:1px;background:var(--ink);margin:56px 0 64px}
+  h2{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:64px 0 30px}
+  h2 span{color:var(--ink);margin-right:12px}
+  .verse{display:grid;grid-template-columns:64px 1fr;padding:34px 0;border-top:1px solid var(--line)}
+  .num{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:6px}
+  .ar{font-family:var(--f-ar);font-size:32px;line-height:1.95;direction:rtl;text-align:right;margin:0 0 20px}
+  .tr{font-size:19px;letter-spacing:-.01em;font-weight:500;margin:0 0 18px;max-width:48ch}
+  .com{font-size:15.5px;line-height:1.7;color:#4a4a4a;max-width:58ch}
+  .com p{margin:0 0 16px}
+  .mark{background:linear-gradient(transparent 62%,#ffe9e5 62%)}
+  .callout{border:1px solid var(--ink);padding:20px 22px;margin:26px 0;font-size:14px;line-height:1.6}
+  .callout b{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;
+             text-transform:uppercase;margin-bottom:8px;color:var(--accent)}
+  aside{padding:72px 0 72px 32px;border-left:1px solid var(--line)}
+  aside h3{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+           color:var(--muted);font-weight:400;margin:0 0 16px}
+  .ref{display:block;font-size:13px;padding:11px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+  .ref small{display:block;color:var(--muted);font-size:11px;font-family:var(--f-mono);margin-top:3px}
+
+  /* browse */
+  .b-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0;
+          border-top:1px solid var(--ink);border-left:1px solid var(--line)}
+  .b-cell{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 20px;cursor:pointer}
+  .b-cell:hover{background:#fafafa}
+  .b-cell .no{font-family:var(--f-mono);font-size:11px;color:var(--accent);margin-bottom:12px}
+  .b-cell .nm{font-size:19px;font-weight:600;letter-spacing:-.02em}
+  .b-cell .ar{font-family:var(--f-ar);font-size:20px;direction:rtl;color:var(--muted);margin:6px 0 14px;line-height:1.5}
+  .b-cell .mt{font-family:var(--f-mono);font-size:11px;color:var(--muted);display:flex;justify-content:space-between}
+  .b-sec{border-top:1px solid var(--line);padding:14px 0;display:flex;gap:24px;align-items:baseline;cursor:pointer}
+  .b-sec .rng{font-family:var(--f-mono);font-size:11px;color:var(--accent);width:80px;flex:none}
+  .b-sec .t{font-size:15px;font-weight:500}
+  .b-sec:hover .t{text-decoration:underline}
+
+  /* search */
+  .s-bar{display:flex;align-items:center;gap:16px;border-bottom:2px solid var(--ink);padding:14px 0;margin-bottom:14px}
+  .s-bar input{flex:1;border:0;outline:0;font-family:var(--f-sans);font-size:26px;font-weight:500;
+               letter-spacing:-.03em;background:0}
+  .s-bar .k{font-family:var(--f-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);padding:4px 8px}
+  .s-modes{display:flex;gap:20px;font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;
+           text-transform:uppercase;color:var(--muted);margin-bottom:44px}
+  .s-modes button{background:0;border:0;font:inherit;letter-spacing:inherit;text-transform:inherit;
+                  color:inherit;cursor:pointer;padding:0}
+  .s-modes button.on{color:var(--ink);border-bottom:1px solid var(--accent)}
+  .res{display:grid;grid-template-columns:100px 1fr 60px;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
+  .res .rr{font-family:var(--f-mono);font-size:12px;color:var(--accent)}
+  .res .rr small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+  .res p{margin:0 0 12px;font-size:17px;letter-spacing:-.01em;line-height:1.55}
+  .res p em{background:linear-gradient(transparent 62%,#ffe9e5 62%);font-style:normal}
+  .res .src{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .res .sc{font-family:var(--f-mono);font-size:13px;text-align:right;font-weight:500}
+
+  /* chat */
+  .c-wrap{display:grid;grid-template-columns:1fr 320px;gap:0;border-top:1px solid var(--ink);margin-top:40px}
+  @media(max-width:900px){.c-wrap{grid-template-columns:1fr}}
+  .c-thread{padding:40px 48px 0 0;display:flex;flex-direction:column;gap:40px}
+  .c-side{border-left:1px solid var(--line);padding:40px 0 40px 32px}
+  .q{font-size:24px;font-weight:600;letter-spacing:-.03em;line-height:1.25;max-width:26ch}
+  .q::before{content:"Q";display:block;font-family:var(--f-mono);font-size:11px;color:var(--accent);
+             margin-bottom:12px;font-weight:400}
+  .a p{margin:0 0 18px;font-size:17px;line-height:1.62;color:#333;max-width:60ch}
+  .a p::first-letter{}
+  .refs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--ink)}
+  .refc{border-bottom:1px solid var(--line);padding:18px 0;display:grid;grid-template-columns:80px 1fr;gap:20px}
+  .refc .rn{font-family:var(--f-mono);font-size:11px;color:var(--accent);padding-top:3px}
+  .refc .rc{font-size:15px;letter-spacing:-.01em;color:#333}
+  .refc .rc small{display:block;font-family:var(--f-mono);font-size:10.5px;color:var(--muted);
+                  margin-top:8px;letter-spacing:.06em;text-transform:uppercase}
+  .c-side h3{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+             color:var(--muted);font-weight:400;margin:0 0 18px}
+  .c-side .sc-row{display:flex;justify-content:space-between;font-size:13px;padding:10px 0;
+                  border-top:1px solid var(--line)}
+  .c-side .sc-row span:last-child{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+  .c-compose{margin-top:44px;border-top:1px solid var(--ink);padding-top:18px;display:flex;gap:14px;align-items:center}
+  .c-compose input{flex:1;border:0;outline:0;font-family:var(--f-sans);font-size:17px;background:0}
+  .c-compose button{background:var(--ink);color:#fff;border:0;padding:11px 20px;font-family:var(--f-mono);
+                    font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+  .sugg{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .sugg button{background:0;border:1px solid var(--line);font-family:var(--f-mono);font-size:11px;
+               padding:7px 12px;cursor:pointer;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  footer{border-top:1px solid var(--ink);margin-top:0}
+  footer .in{max-width:1180px;margin:0 auto;padding:24px 32px;display:flex;justify-content:space-between;
+             font-family:var(--f-mono);font-size:11px;color:var(--muted);flex-wrap:wrap;gap:12px}
+  .toggle{position:fixed;right:20px;bottom:20px;background:var(--ink);color:#fff;padding:11px 18px;
+          border-radius:999px;font-family:var(--f-mono);font-size:11px;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">TAFSEER</div>
+    <nav>
+      <button data-view="read" class="on">Read</button>
+      <button data-view="browse">Browse</button>
+      <button data-view="search">Search</button>
+      <button data-view="chat">Chat</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ READ ============ -->
+  <section class="view on" id="view-read">
+    <div class="grid">
+      <div class="rail">
+        <div class="b"><span class="lbl">Juz</span><span class="val">01</span></div>
+        <div class="b"><span class="lbl">Surah</span><span class="val">01 / 114</span></div>
+        <div class="b"><span class="lbl">Ayat</span><span class="val">07</span></div>
+        <ol><li class="on">Opening — Guidance</li><li>The Straight Path</li><li>Those You Blessed</li></ol>
+      </div>
+      <article>
+        <div class="eyebrow">SURAH 01 — MAKKI</div>
+        <h1>Al-Fatihah</h1>
+        <div class="sub">الفاتحة</div>
+        <p class="intro">A prayer taught by Allah to those who seek guidance — placed at the threshold of the Book, recited in every unit of prayer.</p>
+        <div class="hr"></div>
+        <h2><span>01</span> The Basmalah</h2>
+        <div class="verse">
+          <div class="num">1:1</div>
+          <div>
+            <p class="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <p class="tr">In the name of Allah, the Most Merciful, the Most Compassionate.</p>
+            <div class="com"><p>Every matter of consequence begins with His name. <span class="mark">The Basmalah brings the act under His protection</span> and opens the door to blessing.</p></div>
+          </div>
+        </div>
+        <div class="verse">
+          <div class="num">1:2</div>
+          <div>
+            <p class="ar">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+            <p class="tr">All praise and thanks belong to Allah, Lord of the entire universe.</p>
+            <div class="com">
+              <p>Praise precedes request. The surah is structured as a du'a, and its order is itself instruction: recognise, then ask.</p>
+              <div class="callout"><b>Root</b> Al-Hamd — praise joined with gratitude, expressed by tongue, heart and limb.</div>
+            </div>
+          </div>
+        </div>
+        <div class="verse">
+          <div class="num">1:3—1:4</div>
+          <div>
+            <p class="ar">الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ</p>
+            <p class="tr">The Most Merciful, the Most Compassionate. Master of the Day of Judgement.</p>
+            <div class="com"><p>Mercy is named before mastery. The One who will judge is first introduced as the One who nurtures.</p></div>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <h3>Cross-refs</h3>
+        <a class="ref" href="#">2:1—2:5<small>Al-Baqarah · opening</small></a>
+        <a class="ref" href="#">15:87<small>Al-Hijr · the seven</small></a>
+        <a class="ref" href="#">1:6—1:7<small>same surah</small></a>
+        <h3 style="margin-top:40px">Sources</h3>
+        <a class="ref" href="#">Tafsir Ibn Kathir<small>primary</small></a>
+        <a class="ref" href="#">Mawdudi · Tafhim<small>thematic</small></a>
+        <a class="ref" href="#">Dr Israr Ahmed<small>lectures</small></a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ BROWSE ============ -->
+  <section class="view" id="view-browse">
+    <div class="grid" style="grid-template-columns:200px 1fr">
+      <div class="rail">
+        <div class="b"><span class="lbl">Corpus</span><span class="val">267 passages</span></div>
+        <ol><li class="on">Juz 01</li><li>Juz 02</li><li>Juz 03</li><li>All surahs</li></ol>
+      </div>
+      <article style="max-width:820px">
+        <div class="eyebrow">JUZ 01 — 02 SURAHS</div>
+        <h1 class="sm">Browse</h1>
+        <p class="intro" style="margin-bottom:48px">Two surahs indexed — 52 ayat and 13 sections, drawn from four tafsir works.</p>
+        <div class="b-grid">
+          <div class="b-cell"><div class="no">SURAH 01 · MAKKI</div>
+            <div class="nm">Al-Fatihah</div><div class="ar">الفاتحة</div>
+            <div class="mt"><span>7 AYAT</span><span>1 SEC</span></div></div>
+          <div class="b-cell"><div class="no">SURAH 02 · MADANI</div>
+            <div class="nm">Al-Baqarah</div><div class="ar">البقرة</div>
+            <div class="mt"><span>45 / 286</span><span>12 SEC</span></div></div>
+        </div>
+        <h2 style="margin-top:64px"><span>02</span> Al-Baqarah — sections</h2>
+        <div class="b-sec"><span class="rng">2:1—2:5</span><span class="t">Claim of the Qur'an &amp; the Three Groups</span></div>
+        <div class="b-sec"><span class="rng">2:6—2:7</span><span class="t">Warning is of No Use to the Rejecters</span></div>
+        <div class="b-sec"><span class="rng">2:8—2:20</span><span class="t">Hypocrisy &amp; Its Signs</span></div>
+        <div class="b-sec"><span class="rng">2:21—2:29</span><span class="t">Faith in the Unseen</span></div>
+        <div class="b-sec"><span class="rng">2:40—2:141</span><span class="t">The Children of Israel</span></div>
+        <div class="b-sec"><span class="rng">2:124—2:129</span><span class="t">Ibrahim &amp; the House</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SEARCH ============ -->
+  <section class="view" id="view-search">
+    <div style="padding:56px 0 0;max-width:820px">
+      <div class="eyebrow">SEARCH — 267 PASSAGES INDEXED</div>
+      <div class="s-bar">
+        <input value="mercy before judgement" spellcheck="false">
+        <span class="k">⌘K</span>
+      </div>
+      <div class="s-modes"><button class="on">Meaning</button><button>Keyword</button><button>Hybrid</button></div>
+
+      <div class="res">
+        <div class="rr">1:3<small>AL-FATIHAH</small></div>
+        <div><p>The root word for Ar-Rahman and Ar-Rahim is <em>ra-ha-meem</em>, which literally means the 'womb' — carrying the sense of nurturing tenderness.</p>
+          <div class="src">TALEEM AL-QURAN · MEANING</div></div>
+        <div class="sc">0.89</div>
+      </div>
+      <div class="res">
+        <div class="rr">1:4<small>AL-FATIHAH</small></div>
+        <div><p>The description of Allah as the Master of the Day of Judgement following the mention of <em>mercy</em> is deliberate — mercy is named before mastery.</p>
+          <div class="src">TALEEM AL-QURAN · MEANING</div></div>
+        <div class="sc">0.81</div>
+      </div>
+      <div class="res">
+        <div class="rr">2:37<small>AL-BAQARAH</small></div>
+        <div><p>Then Adam received words from his Lord, and He turned to him in <em>mercy</em> — He is the Ever-Relenting, the Most Merciful.</p>
+          <div class="src">TAFSIR IBN KATHIR · HYBRID</div></div>
+        <div class="sc">0.74</div>
+      </div>
+      <div class="res">
+        <div class="rr">2:64<small>AL-BAQARAH</small></div>
+        <div><p>Had it not been for the grace of Allah upon you and His <em>mercy</em>, you would have been among the losers.</p>
+          <div class="src">MAWDUDI · KEYWORD</div></div>
+        <div class="sc">0.68</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAT ============ -->
+  <section class="view" id="view-chat">
+    <div style="padding:56px 0 0">
+      <div class="eyebrow">CHAT — GROUNDED IN 267 PASSAGES</div>
+      <div class="c-wrap">
+        <div class="c-thread">
+          <div class="q">Why does Al-Fatihah open with praise before making a request?</div>
+          <div class="a">
+            <p>The surah is structured as a du'a, and the order is deliberate: it establishes the posture before the petition. Praise, then declaration, then request — so the ask emerges from recognition rather than demand.</p>
+            <div class="refs">
+              <div class="refc"><span class="rn">1:2</span>
+                <span class="rc">"The nature of this surah is that of a du'a — a prayer that begins with the praise…"
+                  <small>Taleem al-Quran · para 2</small></span></div>
+              <div class="refc"><span class="rn">1:5</span>
+                <span class="rc">"This is our declaration to Allah to worship Him alone and turn for help to Him alone."
+                  <small>Taleem al-Quran · para 1</small></span></div>
+            </div>
+            <div class="sugg"><button>Compare 2:1</button><button>All sources</button><button>Related themes</button></div>
+          </div>
+          <div class="c-compose">
+            <input placeholder="Ask about the tafseer…">
+            <button>Send</button>
+          </div>
+          <div class="sugg" style="margin-top:16px"><button>All surahs ▾</button><button>All sources ▾</button><button>All juz ▾</button></div>
+        </div>
+        <div class="c-side">
+          <h3>Searching</h3>
+          <div class="sc-row"><span>All passages</span><span>267</span></div>
+          <div class="sc-row"><span>All tafsir works</span><span>04</span></div>
+          <div class="sc-row"><span>Filters applied</span><span>none</span></div>
+          <h3 style="margin-top:40px">Indexed so far</h3>
+          <div class="sc-row"><span>Juz</span><span>01</span></div>
+          <div class="sc-row"><span>Surahs</span><span>02</span></div>
+          <div class="sc-row"><span>Ayat</span><span>52</span></div>
+          <h3 style="margin-top:40px">Sources in play</h3>
+          <div class="sc-row"><span>Taleem al-Quran</span><span>212</span></div>
+          <div class="sc-row"><span>Tafsir Ibn Kathir</span><span>31</span></div>
+          <div class="sc-row"><span>Mawdudi · Tafhim</span><span>18</span></div>
+          <div class="sc-row"><span>Dr Israr Ahmed</span><span>6</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="in"><span>DEMO 2 — SWISS / EDITORIAL</span><span>GRID · INTER · MONO LABELS</span></div></footer>
+<a class="toggle" href="index.html">All demos</a>
+
+<script>
+  const tabs = document.querySelectorAll('[data-view]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.toggle('on', x === t));
+    document.querySelectorAll('.view').forEach(v =>
+      v.classList.toggle('on', v.id === 'view-' + t.dataset.view));
+    window.scrollTo({top:0, behavior:'instant'});
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+TAFSEER — DESIGN CONCEPTS
+=========================
+
+HOW TO VIEW
+-----------
+1. Open this folder
+2. Double-click  index.html
+   (it will open in your web browser — Chrome, Safari or Edge)
+3. Click any of the five design cards
+
+Inside each design you can click the tabs at the top:
+    READ  ·  BROWSE  ·  SEARCH  ·  CHAT
+Every design shows all four, in its own visual style.
+
+
+WHAT YOU ARE LOOKING AT
+-----------------------
+Five different visual directions for the same product:
+a Qur'an study app that combines reading, browsing, searching
+and an AI chat that answers from the tafsir texts.
+
+All five use the same sample content, so they can be compared
+side by side.
+
+
+THE FIVE DIRECTIONS
+-------------------
+01  Manuscript     Warm parchment, classical serif, ornamental
+02  Swiss          Strict grid, monochrome, editorial clarity
+03  Marginalia     Quiet reading view, notes in the margin
+04  Night Study    Dark, low-contrast, amber accents
+05  Workspace      The full application shell
+
+Design 05 is the closest to the finished product shape.
+
+
+TWO NOTES
+---------
+- Text content is placeholder. The commentary shown is illustrative,
+  not the final published wording.
+- The pages load their typefaces from the internet. If you are
+  offline they will still work, using standard system fonts.
+
+
+FILES
+-----
+index.html          the menu page (start here)
+demos/              the five design pages
+
+
+QUESTIONS
+---------
+Please tell us which direction feels right, or which parts of
+different directions should be combined. Nothing is final yet —
+this stage is only about choosing a visual language.

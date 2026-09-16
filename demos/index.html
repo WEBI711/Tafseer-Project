@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tafseer — Design Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#faf9f6;--ink:#1a1a18;--soft:#6e6c65;--faint:#a5a29a;--rule:#e6e4de;--accent:#2f5d52;--accent-bg:#eaf1ef;
+        --ui:"Inter",sans-serif;--body:"Spectral",serif;--ar:"Amiri",serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:70px 32px 110px}
+  .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:16px}
+  h1{font-family:var(--body);font-size:clamp(34px,5vw,48px);font-weight:400;letter-spacing:-.02em;margin:0 0 12px}
+  p.lede{font-family:var(--body);font-size:19px;color:var(--soft);max-width:62ch;margin:0 0 52px;line-height:1.6}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+  a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--rule);
+         border-radius:12px;overflow:hidden;transition:box-shadow .18s,transform .18s,border-color .18s}
+  a.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.06);transform:translateY(-2px);border-color:#d8d5cd}
+  .thumb{height:150px;position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+  .thumb .t{position:absolute;font-family:var(--body);font-weight:400;letter-spacing:-.02em}
+  .body{padding:20px 22px 22px}
+  .body .n{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+  .body h3{font-size:16.5px;margin:0 0 8px;font-weight:600}
+  .body p{margin:0 0 14px;font-size:13.5px;line-height:1.6;color:var(--soft)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap}
+  .tag{font-size:10.5px;color:var(--accent);background:var(--accent-bg);padding:3px 8px;border-radius:5px}
+
+  /* thumbnails */
+  .t1{background:#f6f1e6}
+  .t1 .t{left:22px;top:26px;font-size:30px;color:#2a241c}
+  .t1 .ar{position:absolute;right:22px;top:30px;font-family:var(--ar);font-size:26px;color:#8a6a3b}
+  .t1 .l{position:absolute;left:22px;top:82px;width:110px;height:1px;background:#d8cdb8}
+  .t1 .l2{position:absolute;left:22px;top:104px;width:150px;height:6px;background:#e4dcc9;border-radius:3px}
+  .t2{background:#fff}
+  .t2 .t{left:18px;top:22px;font-size:34px;color:#000;font-family:var(--ui);font-weight:600;letter-spacing:-.05em}
+  .t2 .r{position:absolute;left:0;top:0;bottom:0;width:52px;border-right:1px solid #e6e6e6}
+  .t2 .a{position:absolute;left:66px;top:66px;width:12px;height:12px;background:#e5341f}
+  .t2 .l{position:absolute;left:66px;top:88px;width:170px;height:1px;background:#000}
+  .t3{background:#fbfaf7}
+  .t3 .t{left:22px;top:26px;font-size:28px;color:#1c1b18}
+  .t3 .m{position:absolute;right:20px;top:26px;width:80px;height:76px;background:#f4f2ec;border-radius:8px}
+  .t3 .l{position:absolute;left:22px;top:74px;width:120px;height:6px;background:#eae8e1;border-radius:3px}
+  .t3 .nav{position:absolute;left:22px;top:100px;width:60px;height:14px;border:1px solid #e8e5de;border-radius:999px}
+  .t4{background:#0d0f0e}
+  .t4 .t{left:22px;top:26px;font-size:28px;color:#e6e7e2;font-family:var(--ui)}
+  .t4 .ar{position:absolute;right:22px;top:28px;font-family:var(--ar);font-size:24px;color:#d8a94a}
+  .t4 .card1{position:absolute;left:22px;top:72px;width:180px;height:40px;background:#141716;border:1px solid #242927;border-radius:4px}
+  .t4 .card1::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:#6b5527}
+  .t4 .card2{position:absolute;left:22px;top:120px;width:180px;height:16px;background:#141716;border:1px solid #242927;border-radius:4px}
+  .t5{background:#f7f6f3}
+  .t5 .side{position:absolute;left:0;top:0;bottom:0;width:78px;background:#f0efeb;border-right:1px solid #e6e4de}
+  .t5 .chat{position:absolute;right:0;top:0;bottom:0;width:104px;background:#fff;border-left:1px solid #e6e4de}
+  .t5 .c{position:absolute;left:92px;top:20px;width:150px;height:34px;background:#fff;border:1px solid #e6e4de;border-radius:8px}
+  .t5 .c2{position:absolute;left:92px;top:62px;width:150px;height:60px;background:#fff;border:1px solid #e6e4de;border-radius:8px}
+  .t5 .bub{position:absolute;right:14px;top:26px;width:70px;height:26px;background:#2f5d52;border-radius:8px 8px 2px 8px}
+  .t5 .bub2{position:absolute;right:14px;top:62px;width:76px;height:40px;background:#eaf1ef;border-left:2px solid #2f5d52;border-radius:0 6px 6px 0}
+  footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--faint)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Design directions</div>
+  <h1>Tafseer — five visual languages</h1>
+  <p class="lede">Each demo is a single self-contained file with four working views — <b>Read · Browse · Search · Chat</b> — rendering the same corpus (Juz 1: Al-Fatihah &amp; Al-Baqarah, 52 ayat, 267 passages). Click the tabs in any demo to move between them and compare how each visual language handles the same jobs.</p>
+
+  <div class="grid">
+    <a class="card" href="01-manuscript.html">
+      <div class="thumb t1"><span class="t">Al-Fatihah</span><span class="ar">الفاتحة</span><div class="l"></div><div class="l2"></div></div>
+      <div class="body"><div class="n">Demo 01</div><h3>Manuscript</h3>
+        <p>Parchment ground, Newsreader serif, ornamental dividers, drop caps. Warm and classical — a printed study edition with tabs in its top bar and a contents rail.</p>
+        <div class="tags"><span class="tag">parchment</span><span class="tag">ornamental</span><span class="tag">editorial serif</span><span class="tag">top bar + contents rail</span></div></div>
+    </a>
+
+    <a class="card" href="02-swiss.html">
+      <div class="thumb t2"><div class="r"></div><span class="t">Al-Fatihah</span><div class="a"></div><div class="l"></div></div>
+      <div class="body"><div class="n">Demo 02</div><h3>Swiss / Editorial</h3>
+        <p>Strict grid, Inter + mono labels, hairline rules, one red accent. Maximum clarity — search results as a dense data table, chat with a scope sidebar.</p>
+        <div class="tags"><span class="tag">grid</span><span class="tag">mono labels</span><span class="tag">high contrast</span></div></div>
+    </a>
+
+    <a class="card" href="03-marginalia.html">
+      <div class="thumb t3"><span class="t">The Opening</span><div class="m"></div><div class="l"></div><div class="nav"></div></div>
+      <div class="body"><div class="n">Demo 03</div><h3>Marginalia</h3>
+        <p>Calm reading view with notes floated into the margin, reading progress bar, soft sage accents. Long-form attention first, tabs kept quiet.</p>
+        <div class="tags"><span class="tag">reading-first</span><span class="tag">side notes</span><span class="tag">soft</span><span class="tag">tabbed chrome</span></div></div>
+    </a>
+
+    <a class="card" href="04-night-study.html">
+      <div class="thumb t4"><span class="t">Al-Fatihah</span><span class="ar">الفاتحة</span><div class="card1"></div><div class="card2"></div></div>
+      <div class="body"><div class="n">Demo 04</div><h3>Night Study</h3>
+        <p>Dark, low-contrast ground with amber accents. Verse cards, root-study callouts, search results and chat as illuminated panels.</p>
+        <div class="tags"><span class="tag">dark</span><span class="tag">amber</span><span class="tag">low contrast</span><span class="tag">full nav</span></div></div>
+    </a>
+
+    <a class="card" href="05-workspace.html">
+      <div class="thumb t5"><div class="side"></div><div class="chat"></div><div class="c"></div><div class="c2"></div><div class="bub"></div><div class="bub2"></div></div>
+      <div class="body"><div class="n">Demo 05</div><h3>Study Workspace</h3>
+        <p>The full application shell: mode switcher, navigation tree, center pane that swaps between reading/browsing/searching, and chat with grounded citations persisting alongside.</p>
+        <div class="tags"><span class="tag">3-pane app</span><span class="tag">RAG chat</span><span class="tag">citations</span><span class="tag">mode switcher</span></div></div>
+    </a>
+  </div>
+
+  <footer>All pages are standalone HTML with working tab switching — open any file directly in a browser. No build step. Commentary text is illustrative placeholder, not source material.</footer>
+</div>
+</body>
+</html>
