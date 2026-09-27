@@ -135,6 +135,14 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
     }
     flushList();
     out.push(<BlockView block={b} key={b.ord} />);
+    // section headings take the demo's ornamental rule underneath
+    if (b.kind === "section_heading") {
+      out.push(
+        <div className="orn" key={`orn-${b.ord}`}>
+          <span>۞</span>
+        </div>,
+      );
+    }
   }
   flushList();
   return <>{out}</>;

@@ -39,9 +39,12 @@ export async function surahView(number: number): Promise<SurahView | null> {
   );
   if (!s) return null;
 
-  // The documents as written, in reading order (juz, then file). section_id is
-  // attached to section headings so the explorer can still jump to a section:
-  // the stored title is the tail of the heading paragraph.
+  // The documents as written, in reading order (juz, then file), each file's
+  // blocks in their own order. Ordering by the file's juz — not by each block's
+  // juz — matters: the bismillah and banner sit before the "JUZ n" line, so
+  // their own juz is null and sorting on it would move them to the end.
+  // section_id is attached to section headings so the explorer can still jump
+  // to a section: the stored title is the tail of the heading paragraph.
   const rows = await query<{
     source_file: string;
     juz: number | null;
@@ -52,9 +55,10 @@ export async function surahView(number: number): Promise<SurahView | null> {
     ref_ayah: number | null;
     section_id: number | null;
   }>(
-    `SELECT b.source_file, b.juz, b.ord, b.kind, b.text, b.ref_surah, b.ref_ayah,
+    `SELECT b.source_file, d.juz, b.ord, b.kind, b.text, b.ref_surah, b.ref_ayah,
             sec.id AS section_id
      FROM doc_block b
+     JOIN source_doc d ON d.source_file = b.source_file
      LEFT JOIN LATERAL (
        SELECT sc.id FROM section sc
        WHERE b.kind = 'section_heading' AND sc.source_file = b.source_file
@@ -62,7 +66,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
        ORDER BY sc.ord LIMIT 1
      ) sec ON true
      WHERE b.surah_number = $1
-     ORDER BY b.juz NULLS LAST, b.source_file, b.ord`,
+     ORDER BY d.juz, b.source_file, b.ord`,
     [number],
   );
 
