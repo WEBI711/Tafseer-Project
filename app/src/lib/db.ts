@@ -38,7 +38,7 @@ export async function tree(): Promise<TreeSurah[]> {
      FROM section sec
      JOIN surah s ON s.id = sec.surah_id
      WHERE sec.juz IS NOT NULL
-     ORDER BY sec.juz, s.number, sec.ord`,
+     ORDER BY sec.juz, s.number, sec.ord, sec.id`,
   );
 
   const out: TreeSurah[] = [];

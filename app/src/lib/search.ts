@@ -49,16 +49,23 @@ export async function surahView(number: number): Promise<SurahView | null> {
      LEFT JOIN commentary c ON c.ayah_id = a.id
      WHERE a.surah_id = $1
      GROUP BY a.id, a.number, a.text_ar, a.translation, sec.id, sec.title, sec.ord
-     ORDER BY sec.ord, a.ord`,
+     ORDER BY sec.juz NULLS LAST, sec.ord, sec.id, a.ord`,
     [s.id],
   );
 
+  // Ordered so each section's rows are contiguous: `ord` restarts per source
+  // file, so several sections can share it, and without sec.id in the sort the
+  // rows of two sections interleave and a section gets emitted twice.
+  const byId = new Map<number, SurahView["sections"][number]>();
   const sections: SurahView["sections"] = [];
   for (const r of rows) {
-    if (sections.length === 0 || sections[sections.length - 1].id !== r.section_id) {
-      sections.push({ id: r.section_id, title: r.section_title, ayahs: [] });
+    let section = byId.get(r.section_id);
+    if (!section) {
+      section = { id: r.section_id, title: r.section_title, ayahs: [] };
+      byId.set(r.section_id, section);
+      sections.push(section);
     }
-    sections[sections.length - 1].ayahs.push({
+    section.ayahs.push({
       number: r.number,
       text_ar: r.text_ar,
       translation: r.translation,
