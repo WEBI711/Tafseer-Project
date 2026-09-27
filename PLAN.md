@@ -54,6 +54,13 @@ Embeddings also on `ayah.translation`; every chunk carries metadata (juz, surah,
 - **Chat is global by default**: the AI chat queries the *entire* corpus — every surah, ayah and tafsir work — via vector search over all passages. It is never scoped to "the document you are reading." Narrowing (`only Ibn Kathir`, `only Juz 1`, `only this surah`) is an **optional user-applied filter** (a WHERE clause on top of the vector search), never a structural constraint implied by the UI. The "Ask AI about this ayah" affordance *seeds context* (pre-fills the question, boosts that passage in ranking) but still searches globally.
 - **Verbatim fidelity**: commentary/translation text stored in the DB must be the author's exact words from the source docx — no paraphrasing, rewriting, or "improving" at any stage (parse, load, or LLM chat answers). The LLM may *summarize* or *explain* in chat responses, but every cited quote shown to the user must be retrievable verbatim from the DB, traceable to its source file and ayah.
 - **Attribution**: every commentary row keeps `source_file`; the UI must always show which work (Taleem al-Quran, Ibn Kathir, Mawdudi, etc.) a passage comes from.
+- **No inferred text**: a field is either quoted from the source or left empty. The
+  source docs usually quote the Arabic once per section and then give translations
+  for several ayat, so an ayah's `text_ar` is only populated when an Arabic
+  paragraph directly precedes that ayah's `(s:a)` line. Ayat without it render
+  translation + commentary and no Arabic — never a neighbouring verse's words.
+  Font artifacts (private use area glyphs, invisible marks copied out of Word)
+  are stripped; they carry no text and render as empty boxes everywhere else.
 
 ## Key decisions made
 - Postgres over dedicated vector DB: corpus <1M chunks, hybrid queries need SQL filters + vectors in one place

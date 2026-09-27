@@ -74,7 +74,19 @@ src/app/globals.css               manuscript theme (ported from demos 06/07)
 
 ## Known gaps
 
+- Arabic coverage is partial by design: only 591 of 3,551 ayat have `text_ar`,
+  because the source docs quote Arabic once per section rather than per verse.
+  The rest render translation + commentary. Filling them would need a canonical
+  Quran text — an outside source, so it is a product decision, not a bug fix.
+- Some source paragraphs are run fragments Word joined without spaces
+  (`الٓرتِلۡكَ`), kept as-is because they are the author's characters.
 - Retrieval quality: commentary paragraphs are embedded, not `ayah.translation`
   (PLAN.md calls for both). Short keyword-heavy queries can rank loosely.
 - Chat latency follows the configured agent model; there is no caching.
 - No auth or per-user history — recent queries live in `localStorage`.
+
+## Data integrity
+
+`ingestion/tests/test_parse.py` pins the two bugs found during the first full
+ ingest: an ayah inheriting a neighbouring verse's Arabic, and font-artifact
+codepoints (private use area / invisible marks) reaching the database.

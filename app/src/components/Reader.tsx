@@ -280,9 +280,13 @@ function AyahBlock({
       )}
       <div className="vrow">
         <span className="ayah-n">{number}</span>
-        <p className="ar" dir="rtl">
-          {text_ar}
-        </p>
+        {/* Blank means the source doc quotes no Arabic for this ayah — it is
+            never borrowed from a neighbour. */}
+        {text_ar && (
+          <p className="ar" dir="rtl">
+            {text_ar}
+          </p>
+        )}
       </div>
       <div className="body">
         {translation && <p className="translation">{translation}</p>}

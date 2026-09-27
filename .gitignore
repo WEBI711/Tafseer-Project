@@ -20,3 +20,4 @@ node_modules/
 ~$*
 *.tsbuildinfo
 .env*.local
+source/Archive.zip

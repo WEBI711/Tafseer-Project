@@ -75,7 +75,8 @@ def load_docs(docs: list[dict]) -> dict:
                         INSERT INTO surah (number, name_en, intro, juz_id)
                         VALUES (%s, %s, %s, (SELECT id FROM juz WHERE number = %s))
                         ON CONFLICT (number) DO UPDATE
-                            SET name_en = EXCLUDED.name_en, intro = EXCLUDED.intro,
+                            SET name_en = EXCLUDED.name_en,
+                                intro = COALESCE(EXCLUDED.intro, surah.intro),
                                 juz_id = COALESCE(EXCLUDED.juz_id, surah.juz_id)
                         RETURNING id
                         """,
@@ -112,10 +113,10 @@ def load_docs(docs: list[dict]) -> dict:
                         for n_ord, note in enumerate(section.get("notes", [])):
                             cur.execute(
                                 """
-                                INSERT INTO commentary (surah_id, content, ord, source_file)
-                                VALUES (%s, %s, %s, %s) RETURNING id
+                                INSERT INTO commentary (surah_id, content, ord, source_file, juz)
+                                VALUES (%s, %s, %s, %s, %s) RETURNING id
                                 """,
-                                (surah_id, note, n_ord, doc["source_file"]),
+                                (surah_id, note, n_ord, doc["source_file"], doc["juz"]),
                             )
                             pending.append((cur.fetchone()[0], note))
                             stats["commentary"] += 1
@@ -146,10 +147,11 @@ def load_docs(docs: list[dict]) -> dict:
                             for c_ord, content in enumerate(ayah["commentary"]):
                                 cur.execute(
                                     """
-                                    INSERT INTO commentary (ayah_id, surah_id, content, ord, source_file)
-                                    VALUES (%s, %s, %s, %s, %s) RETURNING id
+                                    INSERT INTO commentary (ayah_id, surah_id, content, ord, source_file, juz)
+                                    VALUES (%s, %s, %s, %s, %s, %s) RETURNING id
                                     """,
-                                    (ayah_id, surah_id, content, c_ord, doc["source_file"]),
+                                    (ayah_id, surah_id, content, c_ord, doc["source_file"],
+                                     doc["juz"]),
                                 )
                                 pending.append((cur.fetchone()[0], content))
                                 stats["commentary"] += 1

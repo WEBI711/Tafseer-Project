@@ -36,7 +36,16 @@ def is_arabic(text: str) -> bool:
     return arabic / len(letters) > 0.5
 
 
+# Unicode artifacts that carry no text: private-use glyphs from the author's
+# Word fonts (they render as an empty box in every other font) and invisible
+# control characters that came along with copy-paste. ZWNJ/ZWJ are kept.
+ARTIFACT_RE = re.compile(
+    r"[\ue000-\uf8ff\u200b\u200e\u200f\u2060\ufeff\u00ad]"
+)
+
+
 def clean(text: str) -> str:
+    text = ARTIFACT_RE.sub("", text)
     return unicodedata.normalize("NFC", text.replace("\xa0", " ")).strip()
 
 
@@ -49,7 +58,13 @@ def parse_docx(path: Path) -> dict:
     }
     surah: dict | None = None
     section: dict | None = None
-    ayah: dict | None = None  # Arabic text seen, waiting for its (s:a) line
+    ayah: dict | None = None  # ayah currently collecting commentary
+    # Arabic paragraphs that have not been claimed by an ayah yet. Only text in
+    # here may become an ayah's `text_ar`: these docs often quote the Arabic
+    # once per section and then give translations for several ayat, and reusing
+    # the last verse's Arabic for the following ones would misattribute it.
+    pending_ar: str | None = None
+    arabic_open = False  # consecutive Arabic lines belong to the same quote
     intro: list[str] = []
     ayah_by_num: dict[int, dict] = {}  # first occurrence of each ayah wins
 
@@ -71,7 +86,8 @@ def parse_docx(path: Path) -> dict:
                 "intro": [],
                 "sections": [],
             }
-            section, ayah, intro = None, None, surah["intro"]
+            section, ayah, pending_ar, arabic_open = None, None, None, False
+            intro = surah["intro"]
             ayah_by_num = {}
             continue
 
@@ -81,13 +97,13 @@ def parse_docx(path: Path) -> dict:
         if m := GROUP_RE.match(text):
             section = {"title": clean(m.group(1)), "ayahs": [], "notes": []}
             surah["sections"].append(section)
-            ayah = None
+            ayah, pending_ar, arabic_open = None, None, False
             continue
 
         if m := RANGE_TITLE_RE.match(text):
             section = {"title": clean(m.group(1)), "ayahs": [], "notes": []}
             surah["sections"].append(section)
-            ayah = None
+            ayah, pending_ar, arabic_open = None, None, False
             continue
 
         if m := TRANSLATION_RE.match(text):
@@ -105,24 +121,28 @@ def parse_docx(path: Path) -> dict:
                 # summary restatement of an already-parsed ayah -> keep as reference commentary
                 ayah_by_num[num]["commentary"].append(f"[restatement] {text}")
                 ayah = None
+                arabic_open = False
                 continue
             ayah = {
                 "number": num,
-                "text_ar": (ayah["text_ar"] if ayah else None),
+                "text_ar": pending_ar,
                 "translation": clean(m.group(3)),
                 "commentary": [],
             }
+            pending_ar, arabic_open = None, False
             ayah_by_num[num] = ayah
             section["ayahs"].append(ayah)
             continue
 
         if is_arabic(text):
-            # Arabic line: start/append pending ayah text
-            if ayah and not ayah.get("translation"):
-                ayah["text_ar"] = clean(ayah.get("text_ar", "") + " " + text)
-            else:
-                ayah = {"number": None, "text_ar": text, "translation": None, "commentary": []}
+            # Arabic paragraph: may be the verse text for the next (s:a) line,
+            # never for a later, unrelated one.
+            pending_ar = f"{pending_ar} {text}" if arabic_open and pending_ar else text
+            arabic_open = True
             continue
+
+        # any other paragraph closes the Arabic quote window
+        arabic_open = False
 
         # plain prose -> commentary (surah intro / section note / ayah commentary)
         if ayah is not None and section is not None:
