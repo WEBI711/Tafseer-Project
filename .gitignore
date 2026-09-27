@@ -18,3 +18,5 @@ node_modules/
 
 # Office lock files
 ~$*
+*.tsbuildinfo
+.env*.local

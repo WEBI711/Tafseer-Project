@@ -62,6 +62,11 @@ def load_docs(docs: list[dict]) -> dict:
                         "INSERT INTO juz (number) VALUES (%s) ON CONFLICT (number) DO NOTHING",
                         (juz,),
                     )
+                    cur.execute(
+                        "INSERT INTO source_doc (source_file, juz) VALUES (%s, %s) "
+                        "ON CONFLICT (source_file) DO UPDATE SET juz = EXCLUDED.juz",
+                        (doc["source_file"], juz),
+                    )
                     stats["juz"].add(juz)
 
                 for surah in doc["surahs"]:
@@ -95,11 +100,11 @@ def load_docs(docs: list[dict]) -> dict:
                     for s_ord, section in enumerate(surah["sections"]):
                         cur.execute(
                             """
-                            INSERT INTO section (surah_id, title, ord, source_file)
-                            VALUES (%s, %s, %s, %s)
+                            INSERT INTO section (surah_id, title, ord, source_file, juz)
+                            VALUES (%s, %s, %s, %s, %s)
                             RETURNING id
                             """,
-                            (surah_id, section["title"], s_ord, doc["source_file"]),
+                            (surah_id, section["title"], s_ord, doc["source_file"], doc["juz"]),
                         )
                         section_id = cur.fetchone()[0]
                         stats["section"] += 1
