@@ -109,6 +109,32 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
   );
 }
 
+type SectionAyah = SurahView["sections"][number]["ayahs"][number];
+
+/**
+ * A verse the source lists without commentary or quoted Arabic is a listing, not
+ * a passage to read on its own. Consecutive ones render as one compact list; the
+ * commentary keeps belonging to whichever verse it was written under.
+ */
+type GroupedAyah =
+  | { kind: "list"; ayahs: SectionAyah[] }
+  | { kind: "block"; ayah: SectionAyah };
+
+function groupAyahs(ayahs: SectionAyah[]): GroupedAyah[] {
+  const out: GroupedAyah[] = [];
+  for (const a of ayahs) {
+    const listed = a.commentary.length === 0 && !a.text_ar;
+    const last = out[out.length - 1];
+    if (listed) {
+      if (last?.kind === "list") last.ayahs.push(a);
+      else out.push({ kind: "list", ayahs: [a] });
+    } else {
+      out.push({ kind: "block", ayah: a });
+    }
+  }
+  return out;
+}
+
 /* ---------------- reader mode ---------------- */
 
 function SurahDocument({
@@ -177,18 +203,34 @@ function SurahDocument({
             <div className="orn">
               <span>۞</span>
             </div>
-            {sec.ayahs.map((a) => (
-              <AyahBlock
-                key={`${sec.id}-${a.number}`}
-                id={`ayah-${surah.number}-${a.number}`}
-                highlight={activeSection === sec.id}
-                labelRuns={new Set(a.commentary.map((c) => c.source_file)).size > 1}
-                number={a.number}
-                text_ar={a.text_ar}
-                translation={a.translation}
-                commentary={a.commentary}
-              />
-            ))}
+            {groupAyahs(sec.ayahs).map((item) =>
+              item.kind === "list" ? (
+                // The author lists short verses one after another and comments on
+                // the group afterwards. Rendering them as a compact list keeps
+                // that shape instead of a column of near-empty verse blocks.
+                <div className="vlist" key={`list-${item.ayahs[0].number}`}>
+                  {item.ayahs.map((a) => (
+                    <p className="vitem" key={a.number} id={`ayah-${surah.number}-${a.number}`}>
+                      <span className="vnum">{a.number}</span>
+                      <span>{a.translation}</span>
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <AyahBlock
+                  key={`${sec.id}-${item.ayah.number}`}
+                  id={`ayah-${surah.number}-${item.ayah.number}`}
+                  highlight={activeSection === sec.id}
+                  labelRuns={
+                    new Set(item.ayah.commentary.map((c) => c.source_file)).size > 1
+                  }
+                  number={item.ayah.number}
+                  text_ar={item.ayah.text_ar}
+                  translation={item.ayah.translation}
+                  commentary={item.ayah.commentary}
+                />
+              ),
+            )}
           </section>
         );
       })}
@@ -337,12 +379,11 @@ function AyahBlock({
       </div>
       <div className="body">
         {translation && <p className="translation">{translation}</p>}
-        <div className="commentary">
-          <CommentaryRows rows={commentary} labelRuns={labelRuns} />
-          {commentary.length === 0 && (
-            <p className="empty">No commentary recorded for this ayah.</p>
-          )}
-        </div>
+        {commentary.length > 0 && (
+          <div className="commentary">
+            <CommentaryRows rows={commentary} labelRuns={labelRuns} />
+          </div>
+        )}
       </div>
     </div>
   );
