@@ -14,7 +14,8 @@ EMBED_DIM = 1536
 
 
 def embed_texts(texts: list[str]) -> list[list[float] | None]:
-    """Embed via an OpenAI-compatible API (OpenAI, OpenRouter, etc.)."""
+    """Embed via an OpenAI-compatible API (OpenAI, OpenRouter, etc.).
+    Batches by token estimate to stay under per-request limits."""
     key = os.getenv("OPENAI_API_KEY")
     if not key or not texts:
         return [None] * len(texts)
@@ -24,10 +25,25 @@ def embed_texts(texts: list[str]) -> list[list[float] | None]:
         api_key=key,
         base_url=os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1"),
     )
-    resp = client.embeddings.create(
-        model=os.getenv("EMBEDDING_MODEL", "text-embedding-3-small"), input=texts
-    )
-    return [d.embedding for d in resp.data]
+    model = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
+    # ~4 chars/token estimate; stay under 300k token & 2048 item/request caps
+    MAX_TOKENS = 200_000
+    MAX_ITEMS = 1000
+    chunks: list[list[int]] = [[]]  # indices per chunk
+    total = 0
+    for i, t in enumerate(texts):
+        est = max(1, len(t) // 4)
+        if (total + est > MAX_TOKENS or len(chunks[-1]) >= MAX_ITEMS) and chunks[-1]:
+            chunks.append([])
+            total = 0
+        chunks[-1].append(i)
+        total += est
+    out: list[list[float] | None] = [None] * len(texts)
+    for idxs in chunks:
+        resp = client.embeddings.create(model=model, input=[texts[i] for i in idxs])
+        for i, d in zip(idxs, resp.data):
+            out[i] = d.embedding
+    return out
 
 
 def load_docs(docs: list[dict]) -> dict:
@@ -51,30 +67,39 @@ def load_docs(docs: list[dict]) -> dict:
                 for surah in doc["surahs"]:
                     cur.execute(
                         """
-                        INSERT INTO surah (number, name_en, intro)
-                        VALUES (%s, %s, %s)
+                        INSERT INTO surah (number, name_en, intro, juz_id)
+                        VALUES (%s, %s, %s, (SELECT id FROM juz WHERE number = %s))
                         ON CONFLICT (number) DO UPDATE
-                            SET name_en = EXCLUDED.name_en, intro = EXCLUDED.intro
+                            SET name_en = EXCLUDED.name_en, intro = EXCLUDED.intro,
+                                juz_id = COALESCE(EXCLUDED.juz_id, surah.juz_id)
                         RETURNING id
                         """,
-                        (surah["number"], surah["name_en"], "\n\n".join(surah["intro"]) or None),
+                        (surah["number"], surah["name_en"],
+                         "\n\n".join(surah["intro"]) or None, doc["juz"]),
                     )
                     surah_id = cur.fetchone()[0]
                     stats["surah"] += 1
 
                     # surah-level notes (sections without ayat keep notes too)
-                    cur.execute("DELETE FROM section WHERE surah_id = %s", (surah_id,))
+                    # scoped to this source file: a surah spans multiple docx files
+                    # (e.g. Juz 1 and "Juz 3 Baqara end"), so files must coexist
                     cur.execute(
-                        "DELETE FROM commentary WHERE surah_id = %s", (surah_id,)
+                        "DELETE FROM section WHERE surah_id = %s AND source_file = %s",
+                        (surah_id, doc["source_file"]),
+                    )
+                    cur.execute(
+                        "DELETE FROM commentary WHERE surah_id = %s AND source_file = %s",
+                        (surah_id, doc["source_file"]),
                     )
 
                     for s_ord, section in enumerate(surah["sections"]):
                         cur.execute(
                             """
-                            INSERT INTO section (surah_id, title, ord) VALUES (%s, %s, %s)
+                            INSERT INTO section (surah_id, title, ord, source_file)
+                            VALUES (%s, %s, %s, %s)
                             RETURNING id
                             """,
-                            (surah_id, section["title"], s_ord),
+                            (surah_id, section["title"], s_ord, doc["source_file"]),
                         )
                         section_id = cur.fetchone()[0]
                         stats["section"] += 1

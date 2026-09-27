@@ -146,7 +146,7 @@ def _implicit_section(surah: dict) -> dict:
 
 def parse_directory(data_dir: str | Path) -> list[dict]:
     docs = []
-    for f in sorted(Path(data_dir).glob("*.docx")):
+    for f in sorted(Path(data_dir).rglob("*.docx")):
         if f.name.startswith("~$"):
             continue
         docs.append(parse_docx(f))
