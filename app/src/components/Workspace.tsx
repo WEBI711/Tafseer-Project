@@ -19,7 +19,11 @@ const RECENT_KEY = "tafseer.recent";
 export default function Workspace() {
   const [tree, setTree] = useState<TreeSurah[]>([]);
   const [surah, setSurah] = useState<SurahView | null>(null);
-  const [mode, setMode] = useState<"reader" | "query">("reader");
+  // What the reader is showing. Tracked explicitly: inferring it from the last
+  // chat message left the reader blank when a saved query was opened directly.
+  const [view, setView] = useState<{ kind: "reader" } | { kind: "query"; docId: string }>(
+    { kind: "reader" },
+  );
   const [active, setActive] = useState<{ surah?: number; sectionId?: number }>({});
   const [recent, setRecent] = useState<RecentQuery[]>([]);
   const [docs, setDocs] = useState<Record<string, ResponseDoc>>({});
@@ -43,8 +47,14 @@ export default function Workspace() {
     try {
       const saved = JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]");
       if (Array.isArray(saved)) {
-        setDocs(Object.fromEntries(saved.map((r: RecentQuery & { doc: ResponseDoc }) => [r.docId, r.doc])));
-        setRecent(saved.map(({ id, query, docId }: RecentQuery) => ({ id, query, docId })));
+        // drop entries whose document is missing (cache written by older code)
+        const valid = saved.filter((r: RecentQuery & { doc?: ResponseDoc }) => r.doc);
+        setDocs(
+          Object.fromEntries(
+            valid.map((r: RecentQuery & { doc: ResponseDoc }) => [r.docId, r.doc]),
+          ),
+        );
+        setRecent(valid.map(({ id, query, docId }: RecentQuery) => ({ id, query, docId })));
       }
     } catch {
       /* ignore malformed cache */
@@ -67,13 +77,13 @@ export default function Workspace() {
     async (number: number, sectionId?: number) => {
       const res = await fetch(`/api/surah/${number}`);
       if (!res.ok) return;
-      const view: SurahView = await res.json();
-      setSurah(view);
-      setMode("reader");
+      const opened: SurahView = await res.json();
+      setSurah(opened);
+      setView({ kind: "reader" });
       setActive({ surah: number, sectionId });
       setExpanded((prev) => {
         const next = new Set(prev);
-        const juz = view.juz;
+        const juz = opened.juz;
         if (juz) next.add(`juz:${juz}`);
         next.add(`surah:${number}`);
         return next;
@@ -90,9 +100,9 @@ export default function Workspace() {
   );
 
   const openDoc = useCallback((docId: string) => {
-    const doc = docsRef.current[docId];
-    if (!doc) return;
-    setMode("query");
+    if (!docsRef.current[docId]) return;
+    setView({ kind: "query", docId });
+    setActive({});
     mainRef.current?.scrollTo({ top: 0 });
   }, []);
 
@@ -140,7 +150,8 @@ export default function Workspace() {
               const doc: ResponseDoc = data.doc;
               docId = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
               setDocs((d) => ({ ...d, [docId]: doc }));
-              setMode("query");
+              setView({ kind: "query", docId });
+              setActive({});
               mainRef.current?.scrollTo({ top: 0 });
               patchLast((msg) => ({
                 ...msg,
@@ -202,7 +213,8 @@ export default function Workspace() {
       const doc: ResponseDoc = await res.json();
       const docId = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
       setDocs((d) => ({ ...d, [docId]: doc }));
-      setMode("query");
+      setView({ kind: "query", docId });
+      setActive({});
       mainRef.current?.scrollTo({ top: 0 });
       const label = filters.surah
         ? `Only Surah ${filters.surah}`
@@ -217,22 +229,19 @@ export default function Workspace() {
 
   const openRecent = useCallback(
     (r: RecentQuery) => {
-      setActive({});
       openDoc(r.docId);
     },
     [openDoc],
   );
 
+  const currentDoc = view.kind === "query" ? (docs[view.docId] ?? null) : null;
+
   return (
     <div className={`app${leftHidden ? " left-hidden" : ""}${rightHidden ? " right-hidden" : ""}`}>
       <Explorer
         tree={tree}
-        active={mode === "reader" ? active : {}}
-        activeQueryId={
-          mode === "query"
-            ? [...messages].reverse().find((m) => m.docId)?.docId
-            : undefined
-        }
+        active={view.kind === "reader" ? active : {}}
+        activeQueryId={view.kind === "query" ? view.docId : undefined}
         recent={recent}
         expanded={expanded}
         onToggle={(key) =>
@@ -248,9 +257,9 @@ export default function Workspace() {
       />
 
       <Reader
-        mode={mode}
+        mode={view.kind === "query" ? "query" : "reader"}
         surah={surah}
-        doc={docFromMessages(messages, docs)}
+        doc={currentDoc}
         activeSection={active.sectionId}
         ref={mainRef}
         tree={tree}
@@ -265,7 +274,7 @@ export default function Workspace() {
         onRefine={refine}
         onShowInReader={openDoc}
         onCollapse={() => setRightHidden(true)}
-        currentDoc={docFromMessages(messages, docs)}
+        currentDoc={currentDoc}
       />
 
       {leftHidden && (
@@ -280,15 +289,6 @@ export default function Workspace() {
       )}
     </div>
   );
-}
-
-/** The document currently on screen: the newest streamed response. */
-function docFromMessages(messages: Message[], docs: Record<string, ResponseDoc>) {
-  for (let i = messages.length - 1; i >= 0; i--) {
-    const id = messages[i].docId;
-    if (id && docs[id]) return docs[id];
-  }
-  return null;
 }
 
 export function workLabel(source?: string | null) {
