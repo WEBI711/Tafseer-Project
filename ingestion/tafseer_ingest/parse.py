@@ -54,6 +54,33 @@ def clean(text: str) -> str:
     return unicodedata.normalize("NFC", text.replace("\xa0", " ")).strip()
 
 
+def _all_runs_bold(p) -> bool:
+    """A heading in these docs is a paragraph whose runs are *all* bold.
+    Body paragraphs also contain bold runs for emphasis, so 'any bold' is not
+    a heading signal."""
+    runs = [r for r in p.runs if r.text.strip()]
+    return bool(runs) and all(bool(r.bold) for r in runs)
+
+
+def _block_kind(text: str, p, arabic: bool, is_translation: bool) -> str:
+    """Role of a paragraph in the source document, for faithful rendering."""
+    if p.style.name == "Title" and JUZ_RE.search(text):
+        return "juz_header"
+    if p.style.name != "Intense Quote" and SURAH_RE.search(text):
+        return "surah_header"
+    if GROUP_RE.match(text) or RANGE_TITLE_RE.match(text):
+        return "section_heading"
+    if is_translation:
+        return "translation"
+    if arabic:
+        return "arabic"
+    if p.style.name.startswith("List Paragraph"):
+        return "list_item"
+    if _all_runs_bold(p) and len(text) <= 90:
+        return "heading"
+    return "prose"
+
+
 def parse_docx(path: Path) -> dict:
     doc = Document(str(path))
     result = {
@@ -72,22 +99,47 @@ def parse_docx(path: Path) -> dict:
     arabic_open = False  # consecutive Arabic lines belong to the same quote
     intro: list[str] = []
     ayah_by_num: dict[int, dict] = {}  # first occurrence of each ayah wins
+    # Every paragraph, in document order, with its role and its verse reference.
+    # This is what the reader renders, so structure and wording stay the
+    # author's; the objects above are the derived view that search works on.
+    blocks: list[dict] = []
+    cur_surah: int | None = None
 
     for p in doc.paragraphs:
         text = clean(p.text)
         if not text:
             continue
 
-        if m := JUZ_RE.search(text):
-            result["juz"] = int(m.group(1))
+        m_juz = JUZ_RE.search(text)
+        m_surah = None if p.style.name == "Intense Quote" else SURAH_RE.search(text)
+        m_tr = TRANSLATION_RE.match(text)
+        arabic = is_arabic(text)
+
+        if m_juz:
+            result["juz"] = int(m_juz.group(1))
+        if m_surah:
+            cur_surah = int(m_surah.group(1))
+        blocks.append(
+            {
+                "ord": len(blocks),
+                "kind": _block_kind(text, p, arabic, m_tr is not None),
+                "text": text,
+                "surah_number": cur_surah,
+                "juz": result["juz"],
+                "ref_surah": int(m_tr.group(1)) if m_tr else None,
+                "ref_ayah": int(m_tr.group(2)) if m_tr else None,
+            }
+        )
+
+        if m_juz:
             continue
 
-        if p.style.name != "Intense Quote" and (m := SURAH_RE.search(text)):
+        if m_surah:
             if surah:
                 result["surahs"].append(surah)
             surah = {
-                "number": int(m.group(1)),
-                "name_en": clean(m.group(2)),
+                "number": int(m_surah.group(1)),
+                "name_en": clean(m_surah.group(2)),
                 "intro": [],
                 "sections": [],
             }
@@ -111,7 +163,8 @@ def parse_docx(path: Path) -> dict:
             ayah, pending_ar, arabic_open = None, None, False
             continue
 
-        if m := TRANSLATION_RE.match(text):
+        if m_tr:
+            m = m_tr
             ref_surah, num = int(m.group(1)), int(m.group(2))
             if surah and ref_surah != surah["number"]:
                 # cross-reference to another surah quoted inside commentary
@@ -139,7 +192,7 @@ def parse_docx(path: Path) -> dict:
             section["ayahs"].append(ayah)
             continue
 
-        if is_arabic(text):
+        if arabic:
             # Arabic paragraph: may be the verse text for the next (s:a) line,
             # never for a later, unrelated one.
             pending_ar = f"{pending_ar} {text}" if arabic_open and pending_ar else text
@@ -159,6 +212,15 @@ def parse_docx(path: Path) -> dict:
 
     if surah:
         result["surahs"].append(surah)
+
+    # Blocks before the first surah heading belong to that document's surah
+    # (the bismillah, the juz banner) — attribute them forwards so nothing in the
+    # document is dropped from the reading view.
+    first: int | None = next((b["surah_number"] for b in blocks if b["surah_number"]), None)
+    for b in blocks:
+        if b["surah_number"] is None:
+            b["surah_number"] = first
+    result["blocks"] = blocks
     return result
 
 

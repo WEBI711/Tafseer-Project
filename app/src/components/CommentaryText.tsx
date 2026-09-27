@@ -12,20 +12,30 @@ const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]/;
 export default function CommentaryText({
   content,
   className,
+  id,
+  dataKind,
+  dataOrd,
 }: {
   content: string;
   className?: string;
+  id?: string;
+  dataKind?: string;
+  dataOrd?: number;
 }) {
   const i = content.search(LATIN_RE);
   const head = i === -1 ? content : content.slice(0, i);
   const rest = i === -1 ? "" : content.slice(i);
 
   if (!ARABIC_RE.test(head)) {
-    return <p className={className}>{content}</p>;
+    return (
+      <p className={className} id={id} data-kind={dataKind} data-ord={dataOrd}>
+        {content}
+      </p>
+    );
   }
 
   return (
-    <p className={`ar-lead${className ? ` ${className}` : ""}`}>
+    <p className={`ar-lead${className ? ` ${className}` : ""}`} id={id} data-kind={dataKind} data-ord={dataOrd}>
       <span className="ar-inline">{head}</span>
       {rest}
     </p>

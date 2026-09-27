@@ -1,6 +1,14 @@
 import { query } from "./db";
 import { embed } from "./llm";
-import type { AyahBlock, Citation, Filters, ResponseDoc, ResponseGroup, SurahView } from "./types";
+import type {
+  AyahBlock,
+  Citation,
+  DocBlock,
+  Filters,
+  ResponseDoc,
+  ResponseGroup,
+  SurahView,
+} from "./types";
 
 export type { AyahBlock, Citation, Filters, ResponseDoc, ResponseGroup, SurahView };
 
@@ -19,8 +27,8 @@ const JUZ_AR = [
 
 /** Reader mode: one surah, sections -> ayat -> verbatim commentary. */
 export async function surahView(number: number): Promise<SurahView | null> {
-  const [s] = await query<{ id: number; number: number; name_en: string; juz: number; intro: string | null }>(
-    `SELECT id, number, name_en, intro,
+  const [s] = await query<{ id: number; number: number; name_en: string; juz: number }>(
+    `SELECT id, number, name_en,
             COALESCE(
               (SELECT min(juz) FROM section WHERE surah_id = surah.id AND juz IS NOT NULL),
               (SELECT number FROM juz WHERE id = surah.juz_id),
@@ -31,64 +39,51 @@ export async function surahView(number: number): Promise<SurahView | null> {
   );
   if (!s) return null;
 
+  // The documents as written, in reading order (juz, then file). section_id is
+  // attached to section headings so the explorer can still jump to a section:
+  // the stored title is the tail of the heading paragraph.
   const rows = await query<{
-    number: number;
-    text_ar: string | null;
-    translation: string | null;
-    section_id: number;
-    section_title: string;
-    commentary: { id: number; content: string; source_file: string | null }[];
+    source_file: string;
+    juz: number | null;
+    ord: number;
+    kind: DocBlock["kind"];
+    text: string;
+    ref_surah: number | null;
+    ref_ayah: number | null;
+    section_id: number | null;
   }>(
-    `SELECT a.number, a.text_ar, a.translation,
-            sec.id AS section_id, sec.title AS section_title,
-            COALESCE(json_agg(json_build_object('id', c.id, 'content', c.content,
-                                                'source_file', c.source_file)
-                              ORDER BY c.id) FILTER (WHERE c.id IS NOT NULL), '[]') AS commentary
-     FROM ayah a
-     JOIN section sec ON sec.id = a.section_id
-     LEFT JOIN commentary c ON c.ayah_id = a.id
-     WHERE a.surah_id = $1
-     GROUP BY a.id, a.number, a.text_ar, a.translation, sec.id, sec.title, sec.ord
-     ORDER BY sec.juz NULLS LAST, sec.ord, sec.id, a.ord`,
-    [s.id],
+    `SELECT b.source_file, b.juz, b.ord, b.kind, b.text, b.ref_surah, b.ref_ayah,
+            sec.id AS section_id
+     FROM doc_block b
+     LEFT JOIN LATERAL (
+       SELECT sc.id FROM section sc
+       WHERE b.kind = 'section_heading' AND sc.source_file = b.source_file
+         AND right(b.text, length(sc.title)) = sc.title
+       ORDER BY sc.ord LIMIT 1
+     ) sec ON true
+     WHERE b.surah_number = $1
+     ORDER BY b.juz NULLS LAST, b.source_file, b.ord`,
+    [number],
   );
 
-  // Ordered so each section's rows are contiguous: `ord` restarts per source
-  // file, so several sections can share it, and without sec.id in the sort the
-  // rows of two sections interleave and a section gets emitted twice.
-  const byId = new Map<number, SurahView["sections"][number]>();
-  const sections: SurahView["sections"] = [];
+  const documents: SurahView["documents"] = [];
   for (const r of rows) {
-    let section = byId.get(r.section_id);
-    if (!section) {
-      section = { id: r.section_id, title: r.section_title, ayahs: [] };
-      byId.set(r.section_id, section);
-      sections.push(section);
+    let doc = documents.find((d) => d.source_file === r.source_file);
+    if (!doc) {
+      doc = { source_file: r.source_file, juz: r.juz, blocks: [] };
+      documents.push(doc);
     }
-    section.ayahs.push({
-      number: r.number,
-      text_ar: r.text_ar,
-      translation: r.translation,
-      commentary: r.commentary,
+    doc.blocks.push({
+      ord: r.ord,
+      kind: r.kind,
+      text: r.text,
+      ref_surah: r.ref_surah,
+      ref_ayah: r.ref_ayah,
+      section_id: r.section_id,
     });
   }
 
-  // Surah-level notes (commentary with no ayah) are the author's own notes on
-  // the surah as a whole — kept verbatim, shown before the sections.
-  const notes = await query<{ id: number; content: string; source_file: string | null }>(
-    `SELECT id, content, source_file FROM commentary
-     WHERE surah_id = $1 AND ayah_id IS NULL ORDER BY ord`,
-    [s.id],
-  );
-
-  return {
-    number: s.number,
-    name_en: s.name_en,
-    juz: s.juz,
-    intro: s.intro,
-    notes,
-    sections,
-  };
+  return { number: s.number, name_en: s.name_en, juz: s.juz, documents };
 }
 
 type Hit = {

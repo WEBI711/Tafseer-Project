@@ -1,7 +1,7 @@
 "use client";
 
 import type { RefObject } from "react";
-import type { ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
+import type { DocBlock, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
 
@@ -9,7 +9,6 @@ type Props = {
   mode: "reader" | "query";
   surah: SurahView | null;
   doc: ResponseDoc | null;
-  activeSection?: number;
   ref: RefObject<HTMLElement | null>;
   tree: TreeSurah[];
   onToggleLeft: () => void;
@@ -20,7 +19,6 @@ export default function Reader({
   mode,
   surah,
   doc,
-  activeSection,
   ref,
   tree,
   onToggleLeft,
@@ -59,7 +57,7 @@ export default function Reader({
       <div className="wrap">
         {mode === "query"
           ? doc && <ResponseDocument doc={doc} tree={tree} />
-          : surah && <SurahDocument surah={surah} activeSection={activeSection} />}
+          : surah && <SurahDocument surah={surah} />}
       </div>
     </main>
   );
@@ -68,21 +66,6 @@ export default function Reader({
 /* ---------------- shared commentary rendering ---------------- */
 
 type Row = { id: number; content: string; source_file: string | null };
-
-/**
- * Attribution for a whole block (a section, or the surah's notes): one line,
- * once. Reading flow matters more than repeating the same file name under every
- * paragraph, and the line still names every file the block draws on.
- */
-function SourceLine({ rows }: { rows: Row[] }) {
-  const files = [...new Set(rows.map((r) => r.source_file))];
-  if (files.length === 0) return null;
-  return (
-    <span className="src sec">
-      {files.length > 1 ? "Sources" : "Source"} · {files.map(workLabel).join(" · ")}
-    </span>
-  );
-}
 
 /**
  * Consecutive passages from one file form a run. A run is only labelled when
@@ -109,133 +92,110 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
   );
 }
 
-type SectionAyah = SurahView["sections"][number]["ayahs"][number];
+/* ---------------- reader mode: the source document, block by block ---------------- */
 
-/**
- * A verse the source lists without commentary or quoted Arabic is a listing, not
- * a passage to read on its own. Consecutive ones render as one compact list; the
- * commentary keeps belonging to whichever verse it was written under.
- */
-type GroupedAyah =
-  | { kind: "list"; ayahs: SectionAyah[] }
-  | { kind: "block"; ayah: SectionAyah };
-
-function groupAyahs(ayahs: SectionAyah[]): GroupedAyah[] {
-  const out: GroupedAyah[] = [];
-  for (const a of ayahs) {
-    const listed = a.commentary.length === 0 && !a.text_ar;
-    const last = out[out.length - 1];
-    if (listed) {
-      if (last?.kind === "list") last.ayahs.push(a);
-      else out.push({ kind: "list", ayahs: [a] });
-    } else {
-      out.push({ kind: "block", ayah: a });
-    }
-  }
-  return out;
-}
-
-/* ---------------- reader mode ---------------- */
-
-function SurahDocument({
-  surah,
-  activeSection,
-}: {
-  surah: SurahView;
-  activeSection?: number;
-}) {
-  const ayat = surah.sections.reduce((n, s) => n + s.ayahs.length, 0);
-  const sources = new Set(
-    surah.sections.flatMap((s) => s.ayahs.flatMap((a) => a.commentary.map((c) => c.source_file))),
-  );
+function SurahDocument({ surah }: { surah: SurahView }) {
+  const multi = surah.documents.length > 1;
   return (
     <>
-      <div className="kicker">
-        Juz {surah.juz} · Surah {surah.number}
-      </div>
-      <h1>{surah.name_en}</h1>
-      <div className="meta">
-        <div>
-          Ayat<br />
-          <b>{ayat}</b>
-        </div>
-        <div>
-          Sections<br />
-          <b>{surah.sections.length}</b>
-        </div>
-        <div>
-          Sources<br />
-          <b>{sources.size}</b>
-        </div>
-      </div>
-
-      {surah.intro && (
-        <>
-          <h2 className="section">The Name</h2>
-          <div className="orn">
-            <span>۞</span>
-          </div>
-          <div className="commentary">
-            <CommentaryText content={surah.intro} />
-          </div>
-        </>
-      )}
-
-      {surah.notes.length > 0 && (
-        <>
-          <h2 className="section">Notes on the surah</h2>
-          <SourceLine rows={surah.notes} />
-          <div className="orn">
-            <span>۞</span>
-          </div>
-          <div className="commentary">
-            <CommentaryRows rows={surah.notes} />
-          </div>
-        </>
-      )}
-
-      {surah.sections.map((sec) => {
-        return (
-          <section key={sec.id} id={`sec-${sec.id}`}>
-            <h2 className="section">Group · {sec.title}</h2>
-            {/* one attribution line per section, not per paragraph */}
-            <SourceLine rows={sec.ayahs.flatMap((a) => a.commentary)} />
-            <div className="orn">
-              <span>۞</span>
-            </div>
-            {groupAyahs(sec.ayahs).map((item) =>
-              item.kind === "list" ? (
-                // The author lists short verses one after another and comments on
-                // the group afterwards. Rendering them as a compact list keeps
-                // that shape instead of a column of near-empty verse blocks.
-                <div className="vlist" key={`list-${item.ayahs[0].number}`}>
-                  {item.ayahs.map((a) => (
-                    <p className="vitem" key={a.number} id={`ayah-${surah.number}-${a.number}`}>
-                      <span className="vnum">{a.number}</span>
-                      <span>{a.translation}</span>
-                    </p>
-                  ))}
-                </div>
-              ) : (
-                <AyahBlock
-                  key={`${sec.id}-${item.ayah.number}`}
-                  id={`ayah-${surah.number}-${item.ayah.number}`}
-                  highlight={activeSection === sec.id}
-                  labelRuns={
-                    new Set(item.ayah.commentary.map((c) => c.source_file)).size > 1
-                  }
-                  number={item.ayah.number}
-                  text_ar={item.ayah.text_ar}
-                  translation={item.ayah.translation}
-                  commentary={item.ayah.commentary}
-                />
-              ),
-            )}
-          </section>
-        );
-      })}
+      {surah.documents.map((doc, i) => (
+        <section className="doc" key={doc.source_file} id={`doc-${i}`}>
+          {/* app chrome, not document text: keep attribution when a surah is
+              covered by more than one source file */}
+          {multi && <div className="doc-source">Source · {workLabel(doc.source_file)}</div>}
+          <DocumentBody blocks={doc.blocks} />
+        </section>
+      ))}
     </>
   );
+}
+
+function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
+  const out: React.ReactNode[] = [];
+  let list: DocBlock[] = [];
+
+  const flushList = () => {
+    if (list.length === 0) return;
+    out.push(
+      <ul className="doc-list" key={`list-${list[0].ord}`}>
+        {list.map((b) => (
+          <li key={b.ord} data-kind={b.kind} data-ord={b.ord}>
+            {b.text}
+          </li>
+        ))}
+      </ul>,
+    );
+    list = [];
+  };
+
+  for (const b of blocks) {
+    if (b.kind === "list_item") {
+      list.push(b);
+      continue;
+    }
+    flushList();
+    out.push(<BlockView block={b} key={b.ord} />);
+  }
+  flushList();
+  return <>{out}</>;
+}
+
+function BlockView({ block }: { block: DocBlock }) {
+  const sectionAnchor = block.section_id ? `sec-${block.section_id}` : undefined;
+  const ayahAnchor =
+    block.kind === "translation" && block.ref_ayah
+      ? `ayah-${block.ref_surah}-${block.ref_ayah}`
+      : undefined;
+  const id = sectionAnchor ?? ayahAnchor;
+  const meta = { "data-kind": block.kind, "data-ord": block.ord };
+
+  switch (block.kind) {
+    case "juz_header":
+      return (
+        <div className="doc-juz" id={id} {...meta}>
+          {block.text}
+        </div>
+      );
+    case "surah_header":
+      return (
+        <h1 className="doc-surah" id={id} {...meta}>
+          {block.text}
+        </h1>
+      );
+    case "section_heading":
+      return (
+        <h2 className="section" id={id} {...meta}>
+          {block.text}
+        </h2>
+      );
+    case "heading":
+      return (
+        <h3 className="doc-heading" id={id} {...meta}>
+          {block.text}
+        </h3>
+      );
+    case "arabic":
+      return (
+        <p className="ar" dir="rtl" id={id} {...meta}>
+          {block.text}
+        </p>
+      );
+    case "translation":
+      return (
+        <p className="translation" id={id} {...meta}>
+          {block.text}
+        </p>
+      );
+    default:
+      return (
+        <CommentaryText
+          content={block.text}
+          id={id}
+          dataKind={block.kind}
+          dataOrd={block.ord}
+        />
+      );
+  }
 }
 
 /* ---------------- query-response mode (QUERY-VIEW.md contract) ---------------- */

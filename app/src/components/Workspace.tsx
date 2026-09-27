@@ -260,7 +260,6 @@ export default function Workspace() {
         mode={view.kind === "query" ? "query" : "reader"}
         surah={surah}
         doc={currentDoc}
-        activeSection={active.sectionId}
         ref={mainRef}
         tree={tree}
         onToggleLeft={() => setLeftHidden((v) => !v)}

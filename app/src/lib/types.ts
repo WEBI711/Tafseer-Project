@@ -23,22 +23,41 @@ export type CommentaryRow = {
   source_file: string | null;
 };
 
+/** One paragraph of a source document, in order, with its role. */
+export type DocBlock = {
+  ord: number;
+  kind:
+    | "juz_header"
+    | "surah_header"
+    | "section_heading"
+    | "heading"
+    | "list_item"
+    | "arabic"
+    | "translation"
+    | "prose";
+  text: string;
+  ref_surah: number | null;
+  ref_ayah: number | null;
+  section_id: number | null;
+};
+
+/** One source docx, as it was written. */
+export type DocDocument = {
+  source_file: string;
+  juz: number | null;
+  blocks: DocBlock[];
+};
+
+/**
+ * Reader payload: the surah's source documents (one per docx, in reading
+ * order), each a faithful block sequence. The derived ayah/section view is not
+ * used here — the reader shows the document, not our model of it.
+ */
 export type SurahView = {
   number: number;
   name_en: string;
   juz: number;
-  intro: string | null;
-  notes: CommentaryRow[];
-  sections: {
-    id: number;
-    title: string;
-    ayahs: {
-      number: number;
-      text_ar: string | null;
-      translation: string | null;
-      commentary: CommentaryRow[];
-    }[];
-  }[];
+  documents: DocDocument[];
 };
 
 export type AyahBlock = {

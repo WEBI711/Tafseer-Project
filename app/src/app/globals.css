@@ -135,11 +135,21 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .endmark small{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.2em;
                text-transform:uppercase;color:#a89a80;margin-top:6px}
 .empty{color:#a89a80;font-style:italic;padding:8px 0}
-/* verses the source lists without commentary: one compact list, no apology */
-.vlist{margin:6px 0 40px;padding-left:2px}
-.vitem{display:flex;gap:14px;align-items:baseline;margin:0 0 12px;color:#3a332a;font-size:19px}
-.vitem .vnum{flex:none;min-width:26px;text-align:right;font-family:var(--f-ui);font-size:12px;
-             color:var(--emerald);font-variant-numeric:tabular-nums;padding-top:5px}
+
+/* ---------- source-document blocks (reader mode) ---------- */
+.doc + .doc{margin-top:96px;padding-top:56px;border-top:1px solid var(--rule)}
+.doc-source{font-family:var(--f-ui);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+            color:#a89a80;margin:0 0 34px}
+.doc-juz{margin:96px 0 26px;text-align:center;font-size:34px;font-weight:600;letter-spacing:.02em;
+         border-top:1px solid var(--accent-soft);border-bottom:1px solid var(--accent-soft);
+         padding:18px 0}
+.doc:first-child .doc-juz{margin-top:8px}
+.doc-surah{margin:0 0 46px;text-align:center;font-size:clamp(26px,3.2vw,34px);font-weight:600}
+.doc-heading{font-size:16px;font-weight:600;margin:40px 0 10px;color:var(--ink)}
+.doc-list{margin:0 0 26px;padding-left:26px}
+.doc-list li{margin:0 0 6px;font-size:19px;color:#3a332a}
+.doc .ar{margin:26px 0}
+.doc .translation{margin:0 0 14px}
 
 /* ---------- chat (right) ---------- */
 .chat{background:var(--paper-2);border-left:1px solid var(--rule);display:flex;flex-direction:column;
