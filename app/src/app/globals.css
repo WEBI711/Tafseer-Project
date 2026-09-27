@@ -120,7 +120,12 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .commentary>:first-child:has(p.ar-lead)::first-letter{
     float:none;font-size:1em;line-height:inherit;padding:0;color:var(--emerald)}
 .src{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
-     color:#a89a80;margin:-8px 0 18px}
+     color:#a89a80;margin:0 0 10px}
+.src.sec{margin:2px 0 0}
+/* commentary grouped in runs of one source file, labelled only when a passage
+   changes hands (95% of ayat have a single source, so labels stay rare) */
+.commentary .run{margin:0 0 24px}
+.commentary .run:last-child{margin-bottom:0}
 .pull{border-left:2px solid var(--accent-soft);padding:4px 0 4px 24px;margin:30px 0;
       font-size:21px;font-style:italic;color:var(--ink-soft)}
 .note{background:var(--paper-2);border:1px solid var(--rule);padding:18px 22px;margin:28px 0;font-size:16.5px}

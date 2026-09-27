@@ -65,6 +65,50 @@ export default function Reader({
   );
 }
 
+/* ---------------- shared commentary rendering ---------------- */
+
+type Row = { id: number; content: string; source_file: string | null };
+
+/**
+ * Attribution for a whole block (a section, or the surah's notes): one line,
+ * once. Reading flow matters more than repeating the same file name under every
+ * paragraph, and the line still names every file the block draws on.
+ */
+function SourceLine({ rows }: { rows: Row[] }) {
+  const files = [...new Set(rows.map((r) => r.source_file))];
+  if (files.length === 0) return null;
+  return (
+    <span className="src sec">
+      {files.length > 1 ? "Sources" : "Source"} · {files.map(workLabel).join(" · ")}
+    </span>
+  );
+}
+
+/**
+ * Consecutive passages from one file form a run. A run is only labelled when
+ * the block itself mixes files — 95% of ayat come from a single docx.
+ */
+function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean }) {
+  const runs: { file: string | null; rows: Row[] }[] = [];
+  for (const r of rows) {
+    const last = runs[runs.length - 1];
+    if (last && last.file === r.source_file) last.rows.push(r);
+    else runs.push({ file: r.source_file, rows: [r] });
+  }
+  return (
+    <>
+      {runs.map((run, ri) => (
+        <div className="run" key={ri}>
+          {labelRuns && <span className="src">Source · {workLabel(run.file)}</span>}
+          {run.rows.map((r, i) => (
+            <CommentaryText key={r.id || i} content={r.content} />
+          ))}
+        </div>
+      ))}
+    </>
+  );
+}
+
 /* ---------------- reader mode ---------------- */
 
 function SurahDocument({
@@ -114,41 +158,40 @@ function SurahDocument({
       {surah.notes.length > 0 && (
         <>
           <h2 className="section">Notes on the surah</h2>
+          <SourceLine rows={surah.notes} />
           <div className="orn">
             <span>۞</span>
           </div>
           <div className="commentary">
-            {surah.notes.map((n) => (
-              <div key={n.id}>
-                <CommentaryText content={n.content} />
-                <span className="src">Source · {workLabel(n.source_file)}</span>
-              </div>
-            ))}
+            <CommentaryRows rows={surah.notes} />
           </div>
         </>
       )}
 
-      {surah.sections.map((sec) => (
-        <section key={sec.id} id={`sec-${sec.id}`}>
-          <h2 className="section">
-            Group · {sec.title}
-          </h2>
-          <div className="orn">
-            <span>۞</span>
-          </div>
-          {sec.ayahs.map((a) => (
-            <AyahBlock
-              key={`${sec.id}-${a.number}`}
-              id={`ayah-${surah.number}-${a.number}`}
-              highlight={activeSection === sec.id}
-              number={a.number}
-              text_ar={a.text_ar}
-              translation={a.translation}
-              commentary={a.commentary}
-            />
-          ))}
-        </section>
-      ))}
+      {surah.sections.map((sec) => {
+        return (
+          <section key={sec.id} id={`sec-${sec.id}`}>
+            <h2 className="section">Group · {sec.title}</h2>
+            {/* one attribution line per section, not per paragraph */}
+            <SourceLine rows={sec.ayahs.flatMap((a) => a.commentary)} />
+            <div className="orn">
+              <span>۞</span>
+            </div>
+            {sec.ayahs.map((a) => (
+              <AyahBlock
+                key={`${sec.id}-${a.number}`}
+                id={`ayah-${surah.number}-${a.number}`}
+                highlight={activeSection === sec.id}
+                labelRuns={new Set(a.commentary.map((c) => c.source_file)).size > 1}
+                number={a.number}
+                text_ar={a.text_ar}
+                translation={a.translation}
+                commentary={a.commentary}
+              />
+            ))}
+          </section>
+        );
+      })}
     </>
   );
 }
@@ -229,6 +272,7 @@ function ResponseDocument({ doc, tree }: { doc: ResponseDoc; tree: TreeSurah[] }
                 id={`ayah-${g.surah}-${a.number}`}
                 ref_={`${g.surah}:${a.number}${a.section_title ? ` · ${a.section_title}` : ""}`}
                 score={a.score}
+                labelRuns={new Set(a.commentary.map((c) => c.source_file)).size > 1}
                 number={a.number}
                 text_ar={a.text_ar}
                 translation={a.translation}
@@ -261,15 +305,17 @@ function AyahBlock({
   commentary,
   ref_,
   score,
+  labelRuns = false,
 }: {
   id: string;
   number: number;
   text_ar: string | null;
   translation: string | null;
-  commentary: { id: number; content: string; source_file: string | null }[];
+  commentary: Row[];
   ref_?: string;
   score?: number;
   highlight?: boolean;
+  labelRuns?: boolean;
 }) {
   return (
     <div className="ayah" id={id}>
@@ -292,12 +338,7 @@ function AyahBlock({
       <div className="body">
         {translation && <p className="translation">{translation}</p>}
         <div className="commentary">
-          {commentary.map((c, i) => (
-            <div key={c.id || i}>
-              <CommentaryText content={c.content} />
-              <span className="src">Source · {workLabel(c.source_file)}</span>
-            </div>
-          ))}
+          <CommentaryRows rows={commentary} labelRuns={labelRuns} />
           {commentary.length === 0 && (
             <p className="empty">No commentary recorded for this ayah.</p>
           )}

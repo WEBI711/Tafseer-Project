@@ -67,8 +67,11 @@ src/app/globals.css               manuscript theme (ported from demos 06/07)
   summarise in chat but every quote is retrieved verbatim.
 - The response document is generated markup: the model chooses nothing about
   layout. It receives passages as context and streams prose only.
-- Every commentary block carries its `source_file`, shown as a source line so a
-  passage is always traceable to the docx it came from.
+- Every commentary block carries its `source_file`. Attribution is stated once
+  per section (and once for the surah's notes) instead of after every paragraph:
+  95% of ayat draw on a single docx, and repeating its name between paragraphs
+  broke the reading flow. Blocks that mix files list each source, and a passage
+  is labelled individually only when its own ayah mixes sources.
 - Surah-level notes (`commentary.ayah_id IS NULL`) render as "Notes on the
   surah"; multi-file surahs keep all their files' commentary.
 

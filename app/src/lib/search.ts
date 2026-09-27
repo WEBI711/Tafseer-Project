@@ -43,7 +43,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
             sec.id AS section_id, sec.title AS section_title,
             COALESCE(json_agg(json_build_object('id', c.id, 'content', c.content,
                                                 'source_file', c.source_file)
-                              ORDER BY c.ord) FILTER (WHERE c.id IS NOT NULL), '[]') AS commentary
+                              ORDER BY c.id) FILTER (WHERE c.id IS NOT NULL), '[]') AS commentary
      FROM ayah a
      JOIN section sec ON sec.id = a.section_id
      LEFT JOIN commentary c ON c.ayah_id = a.id
