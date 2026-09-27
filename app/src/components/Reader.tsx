@@ -3,6 +3,7 @@
 import type { RefObject } from "react";
 import type { ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
 import { workLabel } from "./Workspace";
+import CommentaryText from "./CommentaryText";
 
 type Props = {
   mode: "reader" | "query";
@@ -105,7 +106,7 @@ function SurahDocument({
             <span>۞</span>
           </div>
           <div className="commentary">
-            <p>{surah.intro}</p>
+            <CommentaryText content={surah.intro} />
           </div>
         </>
       )}
@@ -119,7 +120,7 @@ function SurahDocument({
           <div className="commentary">
             {surah.notes.map((n) => (
               <div key={n.id}>
-                <p>{n.content}</p>
+                <CommentaryText content={n.content} />
                 <span className="src">Source · {workLabel(n.source_file)}</span>
               </div>
             ))}
@@ -293,7 +294,7 @@ function AyahBlock({
         <div className="commentary">
           {commentary.map((c, i) => (
             <div key={c.id || i}>
-              <p>{c.content}</p>
+              <CommentaryText content={c.content} />
               <span className="src">Source · {workLabel(c.source_file)}</span>
             </div>
           ))}

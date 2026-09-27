@@ -109,6 +109,16 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .commentary p{margin:0 0 18px;color:#3a332a}
 .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
     padding:6px 12px 0 0;color:var(--accent)}
+/* A verse fragment quoted inside prose is Arabic, not an initial letter: it
+   reads right-to-left and verse-green, and must not become a drop cap. The
+   commentary items are wrapped for their source line, so the drop cap lands on
+   the wrapper — hence suppressing it on the wrapper that holds an Arabic-led
+   paragraph (both forms are matched: flat `p` and wrapped). */
+.ar-inline{font-family:var(--f-ar);font-size:1.1em;color:var(--emerald);
+           direction:rtl;unicode-bidi:isolate}
+.commentary>p.ar-lead::first-letter,
+.commentary>:first-child:has(p.ar-lead)::first-letter{
+    float:none;font-size:1em;line-height:inherit;padding:0;color:var(--emerald)}
 .src{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
      color:#a89a80;margin:-8px 0 18px}
 .pull{border-left:2px solid var(--accent-soft);padding:4px 0 4px 24px;margin:30px 0;

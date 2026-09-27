@@ -30,9 +30,14 @@ RANGE_TITLE_RE = re.compile(r"^\d{1,3}\s*[-–]\s*\d{1,3}\s+([A-Z][A-Z'’`\s,.:
 
 def is_arabic(text: str) -> bool:
     letters = [c for c in text if unicodedata.category(c).startswith("L")]
-    if len(letters) < 3:
+    if not letters:
         return False
     arabic = sum(1 for c in letters if ARABIC_RE.match(c))
+    # Disjoined-letter openings (طٰهٰ, يٰسٓ, حمٓ) are real verse text but carry
+    # only one or two letters once diacritics are excluded, so a ratio test
+    # would file them as prose. For such fragments every letter must be Arabic.
+    if len(letters) < 3:
+        return arabic == len(letters)
     return arabic / len(letters) > 0.5
 
 

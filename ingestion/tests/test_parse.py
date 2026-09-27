@@ -44,6 +44,16 @@ def build_docx() -> Path:
     return path
 
 
+def build_muqattaat_docx() -> Path:
+    """Surah 20 style opening: the disjoined letters are the whole verse text."""
+    doc = Document()
+    for line in ["JUZ 16", "SURAH 20 – TA HA", "GROUP 1: THE OPENING", "طه", "(20:1) Ta' Ha'"]:
+        doc.add_paragraph(line)
+    path = Path(tempfile.mkdtemp()) / "muqattaat.docx"
+    doc.save(str(path))
+    return path
+
+
 def main() -> int:
     parsed = parse_docx(build_docx())
     ayahs = {a["number"]: a for s in parsed["surahs"] for sec in s["sections"] for a in sec["ayahs"]}
@@ -53,6 +63,14 @@ def main() -> int:
     assert ayahs[3]["text_ar"] == AYAH_2_AR, ayahs[3]["text_ar"]
     assert ayahs[2]["translation"].startswith("All praise"), ayahs[2]
     assert ayahs[1]["commentary"] == ["Commentary on the first ayah."], ayahs[1]["commentary"]
+
+    # disjoined-letter openings must be read as verse text, not prose
+    solo = parse_docx(build_muqattaat_docx())
+    solo_ayahs = {
+        a["number"]: a for s in solo["surahs"] for sec in s["sections"] for a in sec["ayahs"]
+    }
+    assert solo_ayahs[1]["text_ar"] == "طه", solo_ayahs[1]
+    assert solo_ayahs[1]["commentary"] == [], solo_ayahs[1]
 
     blob = "".join(
         [a["text_ar"] or "" for a in ayahs.values()]
