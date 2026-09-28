@@ -15,7 +15,13 @@ CREATE TABLE IF NOT EXISTS doc_block (
                                    -- | translation | prose
     text          TEXT NOT NULL,
     ref_surah     INT,             -- for kind = translation
-    ref_ayah      INT
+    ref_ayah      INT,
+    -- the reader's fidelity invariants, enforced by the database itself:
+    -- one row per position within a file, and only the roles the parser emits.
+    CONSTRAINT doc_block_file_ord_unique UNIQUE (source_file, ord),
+    CONSTRAINT doc_block_kind_check CHECK (kind IN (
+        'juz_header', 'surah_header', 'section_heading', 'heading',
+        'list_item', 'arabic', 'translation', 'prose'))
 );
 
 CREATE INDEX IF NOT EXISTS doc_block_file_idx  ON doc_block (source_file, ord);
