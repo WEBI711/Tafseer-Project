@@ -46,6 +46,32 @@ def embed_texts(texts: list[str]) -> list[list[float] | None]:
     return out
 
 
+def store_blocks(cur, doc: dict) -> int:
+    """Replace this file's document blocks. Reads no embeddings — safe to re-run
+    on its own when only the structure is being refreshed."""
+    cur.execute("DELETE FROM doc_block WHERE source_file = %s", (doc["source_file"],))
+    rows = [
+        (
+            doc["source_file"],
+            b["juz"],
+            b["surah_number"],
+            b["ord"],
+            b["kind"],
+            b["text"],
+            b["ref_surah"],
+            b["ref_ayah"],
+        )
+        for b in doc.get("blocks", [])
+    ]
+    if rows:
+        cur.executemany(
+            "INSERT INTO doc_block (source_file, juz, surah_number, ord, kind, "
+            "text, ref_surah, ref_ayah) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+            rows,
+        )
+    return len(rows)
+
+
 def load_docs(docs: list[dict]) -> dict:
     """Upsert parsed documents. Returns counts."""
     # collect all commentary texts for one batched embedding call
@@ -70,26 +96,7 @@ def load_docs(docs: list[dict]) -> dict:
                     stats["juz"].add(juz)
 
                 # the document itself, in order: the reader renders this
-                cur.execute(
-                    "DELETE FROM doc_block WHERE source_file = %s", (doc["source_file"],)
-                )
-                cur.executemany(
-                    "INSERT INTO doc_block (source_file, juz, surah_number, ord, kind, "
-                    "text, ref_surah, ref_ayah) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
-                    [
-                        (
-                            doc["source_file"],
-                            b["juz"],
-                            b["surah_number"],
-                            b["ord"],
-                            b["kind"],
-                            b["text"],
-                            b["ref_surah"],
-                            b["ref_ayah"],
-                        )
-                        for b in doc.get("blocks", [])
-                    ],
-                )
+                store_blocks(cur, doc)
 
                 for surah in doc["surahs"]:
                     cur.execute(

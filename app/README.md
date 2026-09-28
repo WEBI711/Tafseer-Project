@@ -55,16 +55,18 @@ src/app/globals.css               manuscript theme (ported from demos 06/07)
 ## How the reader works
 
 The reader shows the **source document**, not our model of it. Ingestion stores
-every paragraph of every docx as a block — `juz_header`, `surah_header`,
-`section_heading`, `heading`, `list_item`, `arabic`, `translation`, `prose` — in
-document order (`doc_block`), and the reader renders those blocks in sequence.
+every paragraph and table of every docx as a block — `juz_header`,
+`surah_header`, `section_heading`, `heading`, `list_item`, `arabic`,
+`translation`, `table`, `prose` — in document order (`doc_block`), and the reader
+renders those blocks in sequence.
 Structure, wording, and order are the author's: the surah's own `JUZ 1` /
 `SURAH 2 – …` banners, sub-headings such as `Period of Revelation`, list items,
 the bismillah, Arabic the author quoted without attaching it to a verse.
 
-Acceptance check (`ingestion`): for every source file, the block sequence must
-equal the docx paragraph sequence, and the rendered DOM must equal the payload.
-Both are verified for all 167 files today.
+Acceptance check (`ingestion/tests/verify_source_fidelity.py`): for every source
+file the block sequence must equal the docx body sequence (paragraphs *and*
+tables). All 167 files pass today. See `../ingestion/README.md` for the full
+ingestion guide.
 
 The `ayah`/`section`/`commentary` tables are a **derived view** built for search
 and citation. Query-response mode renders from that view; reader mode does not.

@@ -16,6 +16,8 @@ import unicodedata
 from pathlib import Path
 
 from docx import Document
+from docx.table import Table
+from docx.text.paragraph import Paragraph
 
 ARABIC_RE = re.compile(r"[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]")
 TRANSLATION_RE = re.compile(r"^\((\d+):(\d+)\)\s*(.*)")
@@ -81,6 +83,23 @@ def _block_kind(text: str, p, arabic: bool, is_translation: bool) -> str:
     return "prose"
 
 
+def _table_text(table: Table) -> str:
+    """A table is content too: cells are kept as a JSON grid so the reader can
+    render the table the author wrote instead of dropping it."""
+    rows = [[clean(c.text) for c in row.cells] for row in table.rows]
+    return json.dumps(rows, ensure_ascii=False)
+
+
+def _body_items(doc):
+    """Paragraphs and tables in true document order. `doc.paragraphs` alone
+    silently skips everything inside a table."""
+    for child in doc.element.body.iterchildren():
+        if child.tag.endswith("}p"):
+            yield Paragraph(child, doc)
+        elif child.tag.endswith("}tbl"):
+            yield Table(child, doc)
+
+
 def parse_docx(path: Path) -> dict:
     doc = Document(str(path))
     result = {
@@ -105,7 +124,20 @@ def parse_docx(path: Path) -> dict:
     blocks: list[dict] = []
     cur_surah: int | None = None
 
-    for p in doc.paragraphs:
+    for p in _body_items(doc):
+        if isinstance(p, Table):
+            blocks.append(
+                {
+                    "ord": len(blocks),
+                    "kind": "table",
+                    "text": _table_text(p),
+                    "surah_number": cur_surah,
+                    "juz": result["juz"],
+                    "ref_surah": None,
+                    "ref_ayah": None,
+                }
+            )
+            continue
         text = clean(p.text)
         if not text:
             continue

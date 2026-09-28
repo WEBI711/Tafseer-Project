@@ -194,6 +194,8 @@ function BlockView({ block }: { block: DocBlock }) {
           {block.text}
         </p>
       );
+    case "table":
+      return <TableBlock block={block} id={id} meta={meta} />;
     default:
       return (
         <CommentaryText
@@ -204,6 +206,50 @@ function BlockView({ block }: { block: DocBlock }) {
         />
       );
   }
+}
+
+function TableBlock({
+  block,
+  id,
+  meta,
+}: {
+  block: DocBlock;
+  id?: string;
+  meta: Record<string, string | number>;
+}) {
+  // Cells are stored as a JSON grid so the table the author wrote survives.
+  let rows: string[][] = [];
+  try {
+    const parsed = JSON.parse(block.text);
+    if (Array.isArray(parsed)) rows = parsed.map((r) => (Array.isArray(r) ? r : [String(r)]));
+  } catch {
+    rows = [[block.text]];
+  }
+  if (rows.length === 0) return null;
+  const [head, ...body] = rows;
+
+  return (
+    <div className="doc-table-wrap" id={id} {...meta}>
+      <table className="doc-table">
+        <thead>
+          <tr>
+            {head.map((cell, i) => (
+              <th key={i}>{cell}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {body.map((row, ri) => (
+            <tr key={ri}>
+              {row.map((cell, ci) => (
+                <td key={ci}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
 /* ---------------- query-response mode (QUERY-VIEW.md contract) ---------------- */

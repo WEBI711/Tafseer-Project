@@ -26,6 +26,8 @@ Embeddings also on `ayah.translation`; every chunk carries metadata (juz, surah,
 ## Phases
 
 ### Phase 1 — Ingestion pipeline (foundation)
+
+Running it, and the rules it must keep, are documented in `ingestion/README.md`.
 1. Parser: docx → JSON, keyed on paragraph patterns:
    - Arabic line → ayah text; `(s:a)` line → translation; following paragraphs → commentary
    - `Title` style = Juz marker; `GROUP n:` = section boundary

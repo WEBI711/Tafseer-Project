@@ -34,6 +34,7 @@ export type DocBlock = {
     | "list_item"
     | "arabic"
     | "translation"
+    | "table"
     | "prose";
   text: string;
   ref_surah: number | null;
