@@ -54,7 +54,38 @@ def build_muqattaat_docx() -> Path:
     return path
 
 
+def build_mixed_fragment_docx() -> Path:
+    """A short line that is NOT all-Arabic (one stray glyph + a Latin letter).
+
+    The disjoined-letter rule requires fragments under 3 letters to be entirely
+    Arabic; a mixed fragment must fall through to commentary, never verse text.
+    """
+    doc = Document()
+    for line in [
+        "JUZ 16",
+        "SURAH 20 – TA HA",
+        "GROUP 1: THE OPENING",
+        AYAH_1_AR,
+        "(20:1) Ta' Ha'",
+        "Commentary on the first ayah.",
+        # stray font-artifact glyph next to a Latin letter: under the old ratio
+        # rule (arabic/letters > 0.5) this classified as Arabic verse text
+        "بA",
+        "(20:2) Commentary verse.",
+    ]:
+        doc.add_paragraph(line)
+    path = Path(tempfile.mkdtemp()) / "mixed_fragment.docx"
+    doc.save(str(path))
+    return path
+
+
 def main() -> int:
+    from tafseer_ingest.parse import is_arabic
+
+    # the short-fragment rule itself: all-Arabic stays verse text, one
+    # non-Arabic letter rejects the fragment (the old ratio test passed it)
+    assert is_arabic("حم"), "all-Arabic fragment must stay verse text"
+    assert not is_arabic("بA"), "mixed 2-letter fragment must not be verse text"
     parsed = parse_docx(build_docx())
     ayahs = {a["number"]: a for s in parsed["surahs"] for sec in s["sections"] for a in sec["ayahs"]}
 
@@ -71,6 +102,15 @@ def main() -> int:
     }
     assert solo_ayahs[1]["text_ar"] == "طه", solo_ayahs[1]
     assert solo_ayahs[1]["commentary"] == [], solo_ayahs[1]
+
+    # a stray mixed short line is commentary, and never verse text for the
+    # next ayah (the false positive the all-Arabic rule guards against)
+    mixed = parse_docx(build_mixed_fragment_docx())
+    mixed_ayahs = {
+        a["number"]: a for s in mixed["surahs"] for sec in s["sections"] for a in sec["ayahs"]
+    }
+    assert mixed_ayahs[2]["text_ar"] is None, mixed_ayahs[2]
+    assert "بA" in mixed_ayahs[1]["commentary"], mixed_ayahs[1]
 
     blob = "".join(
         [a["text_ar"] or "" for a in ayahs.values()]
