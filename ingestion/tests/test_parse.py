@@ -68,9 +68,11 @@ def build_mixed_fragment_docx() -> Path:
         AYAH_1_AR,
         "(20:1) Ta' Ha'",
         "Commentary on the first ayah.",
-        # stray font-artifact glyph next to a Latin letter: under the old ratio
-        # rule (arabic/letters > 0.5) this classified as Arabic verse text
+        # stray font-artifact glyphs next to Latin letters, in two shapes
+        # (Arabic-first and Latin-first): under the old ratio rule
+        # (arabic/letters > 0.5) both classified as Arabic verse text
         "بA",
+        "Aو",
         "(20:2) Commentary verse.",
     ]:
         doc.add_paragraph(line)
@@ -82,10 +84,12 @@ def build_mixed_fragment_docx() -> Path:
 def main() -> int:
     from tafseer_ingest.parse import is_arabic
 
-    # the short-fragment rule itself: all-Arabic stays verse text, one
-    # non-Arabic letter rejects the fragment (the old ratio test passed it)
-    assert is_arabic("حم"), "all-Arabic fragment must stay verse text"
-    assert not is_arabic("بA"), "mixed 2-letter fragment must not be verse text"
+    # the short-fragment rule itself: all-Arabic stays verse text, and ANY
+    # non-Arabic letter rejects the fragment — stray font artifacts arrive in
+    # many shapes, not just one
+    assert is_arabic("حم") and is_arabic("طه"), "all-Arabic fragments stay verse text"
+    for stray in ["بA", "Aب", "وX", "Xو", "بa", "aب"]:
+        assert not is_arabic(stray), f"stray glyph {stray!r} must not be verse text"
     parsed = parse_docx(build_docx())
     ayahs = {a["number"]: a for s in parsed["surahs"] for sec in s["sections"] for a in sec["ayahs"]}
 
@@ -111,6 +115,7 @@ def main() -> int:
     }
     assert mixed_ayahs[2]["text_ar"] is None, mixed_ayahs[2]
     assert "بA" in mixed_ayahs[1]["commentary"], mixed_ayahs[1]
+    assert "Aو" in mixed_ayahs[1]["commentary"], mixed_ayahs[1]
 
     blob = "".join(
         [a["text_ar"] or "" for a in ayahs.values()]
