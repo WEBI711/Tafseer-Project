@@ -1,3 +1,13 @@
+-- What this does, in plain terms: when a Tafsir document is loaded, every
+-- paragraph in it — headings, Arabic verses, translations, commentary,
+-- tables — is stored here as one row, in the exact order the author wrote
+-- it. The reader then displays that order as-is instead of re-guessing it
+-- from the search tables. Two rules keep the content trustworthy:
+--   1. UNIQUE (source_file, ord): exactly one row per position in a file —
+--      nothing duplicated, reordered, or lost.
+--   2. CHECK on kind: a row can only be one of the known paragraph types,
+--      so malformed or unknown content can't sneak into the database.
+
 -- The source document itself, paragraph by paragraph, in order.
 --
 -- The ayah/section/commentary tables are a derived view built for search and
