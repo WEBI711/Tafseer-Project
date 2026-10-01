@@ -1,4 +1,4 @@
-# Copy gitignored files listed in .worktreeinclude into new worktrees
-# so agents don't need npm install (366M node_modules is shared by copy).
-[hooks]
+# Copy gitignored files listed in .worktreeinclude (node_modules, .env.local)
+# into new worktrees so agents never need npm install.
+[projects."github.com/WEBI711/Tafseer-Project"]
 post-start = "wt step copy-ignored"
