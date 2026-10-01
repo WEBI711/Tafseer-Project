@@ -241,8 +241,6 @@ export default function Workspace() {
       <Explorer
         tree={tree}
         active={view.kind === "reader" ? active : {}}
-        activeQueryId={view.kind === "query" ? view.docId : undefined}
-        recent={recent}
         expanded={expanded}
         onToggle={(key) =>
           setExpanded((prev) => {
@@ -252,7 +250,6 @@ export default function Workspace() {
           })
         }
         onOpenSurah={openSurah}
-        onOpenRecent={openRecent}
         onCollapse={() => setLeftHidden(true)}
       />
 
@@ -274,6 +271,9 @@ export default function Workspace() {
         onShowInReader={openDoc}
         onCollapse={() => setRightHidden(true)}
         currentDoc={currentDoc}
+        recent={recent}
+        activeQueryId={view.kind === "query" ? view.docId : undefined}
+        onOpenRecent={openRecent}
       />
 
       {leftHidden && (

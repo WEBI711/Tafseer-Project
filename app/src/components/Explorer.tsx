@@ -1,29 +1,22 @@
 "use client";
 
 import type { TreeSurah } from "@/lib/types";
-import type { RecentQuery } from "./Workspace";
 
 type Props = {
   tree: TreeSurah[];
   active: { surah?: number; sectionId?: number };
-  activeQueryId?: string;
-  recent: RecentQuery[];
   expanded: Set<string>;
   onToggle: (key: string) => void;
   onOpenSurah: (number: number, sectionId?: number) => void;
-  onOpenRecent: (r: RecentQuery) => void;
   onCollapse: () => void;
 };
 
 export default function Explorer({
   tree,
   active,
-  activeQueryId,
-  recent,
   expanded,
   onToggle,
   onOpenSurah,
-  onOpenRecent,
   onCollapse,
 }: Props) {
   const juzGroups = tree.reduce<Record<number, TreeSurah[]>>((acc, s) => {
@@ -40,21 +33,6 @@ export default function Explorer({
         </button>
       </div>
       <div className="scroll">
-        {recent.length > 0 && (
-          <>
-            <div className="juz queries">Recent queries</div>
-            {recent.map((r) => (
-              <button
-                key={r.id}
-                className={`item q${r.docId === activeQueryId ? " on" : ""}`}
-                onClick={() => onOpenRecent(r)}
-              >
-                <span>“{r.query}”</span>
-              </button>
-            ))}
-          </>
-        )}
-
         {Object.entries(juzGroups).map(([juz, surahs]) => {
           const juzKey = `juz:${juz}`;
           const juzOpen = expanded.has(juzKey);
