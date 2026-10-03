@@ -1,0 +1,4 @@
+# Copy gitignored files listed in .worktreeinclude into new worktrees
+# so agents don't need npm install (366M node_modules is shared by copy).
+[hooks]
+post-start = "wt step copy-ignored"

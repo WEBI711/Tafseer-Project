@@ -50,7 +50,7 @@ export default function ChatPanel({
   return (
     <section className="chat">
       <div className="ch">
-        <b>Ask the tafseer</b>
+        <b>Search The Tafseer</b>
         <button className="icon-btn" onClick={onCollapse} title="Hide chat">
           ›
         </button>
