@@ -40,6 +40,7 @@ export default function ChatPanel({
   onCollapse,
 }: Props) {
   const [draft, setDraft] = useState("");
+  const [recentOpen, setRecentOpen] = useState(false);
   const last = messages[messages.length - 1];
   const showSuggestions = Boolean(last && last.role === "a" && !last.streaming && currentDoc);
 
@@ -65,8 +66,15 @@ export default function ChatPanel({
       <div className="thread">
         {recent.length > 0 && (
           <>
-            <div className="juz queries">Recent queries</div>
-            {recent.map((r) => (
+            <button
+              className="juz queries"
+              onClick={() => setRecentOpen((v) => !v)}
+              title={recentOpen ? "Hide recent queries" : "Show recent queries"}
+            >
+              <span className="caret">{recentOpen ? "▾" : "▸"}</span> Recent queries
+            </button>
+            {recentOpen &&
+              recent.map((r) => (
               <button
                 key={r.id}
                 className={`item q${r.docId === activeQueryId ? " on" : ""}`}
