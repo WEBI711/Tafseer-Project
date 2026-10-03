@@ -28,7 +28,9 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body)
      padding:16px 8px 6px;font-weight:600;font-family:var(--f-ui)}
 .juz.queries{color:var(--emerald)}
 button.juz.queries{background:0;border:0;text-align:left;width:100%;cursor:pointer;
-                  display:flex;align-items:center;gap:6px;font:inherit}
+                  display:flex;align-items:center;gap:6px;
+                  font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+                  font-weight:600;font-family:var(--f-ui)}
 .node .row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;
            font-size:15.5px;color:var(--ink-soft);cursor:pointer}
 .node .row:hover{background:rgba(255,255,255,.55)}
