@@ -18,8 +18,9 @@ export async function query<T = Record<string, unknown>>(
 export type { TreeSurah };
 
 export async function tree(): Promise<TreeSurah[]> {
-  // A surah is placed under every juz its sections came from, so Surah 2
-  // appears under Juz 1, 2 and 3 exactly as the source docs are divided.
+  // The tree mirrors the source layout: juz -> surah part -> sections, from
+  // the per-juz structured tables (FORMAT.md v7). A surah recurs under each
+  // juz whose folder holds a chunk of it.
   const rows = await query<{
     juz: number;
     number: number;
@@ -30,15 +31,16 @@ export async function tree(): Promise<TreeSurah[]> {
     from_ayah: number | null;
     to_ayah: number | null;
   }>(
-    `SELECT sec.juz, s.number, s.name_en,
-            (SELECT count(*)::int FROM ayah a WHERE a.surah_id = s.id) AS ayat,
-            sec.id, sec.title,
-            (SELECT min(a.number) FROM ayah a WHERE a.section_id = sec.id) AS from_ayah,
-            (SELECT max(a.number) FROM ayah a WHERE a.section_id = sec.id) AS to_ayah
+    `SELECT j.number AS juz, p.surah_number AS number, p.name_en,
+            (SELECT count(*)::int FROM ayah_unit u
+              JOIN section s2 ON s2.id = u.section_id
+              WHERE s2.part_id = p.id) AS ayat,
+            sec.id, sec.title, sec.from_ayah, sec.to_ayah
      FROM section sec
-     JOIN surah s ON s.id = sec.surah_id
-     WHERE sec.juz IS NOT NULL
-     ORDER BY sec.juz, s.number, sec.ord, sec.id`,
+     JOIN part p ON p.id = sec.part_id
+     JOIN juz j ON j.id = p.juz_id
+     WHERE sec.title IS NOT NULL AND sec.title NOT LIKE 'SURAH %'
+     ORDER BY j.number, p.ord, sec.ord`,
   );
 
   const out: TreeSurah[] = [];

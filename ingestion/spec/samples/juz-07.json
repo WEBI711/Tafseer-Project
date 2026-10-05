@@ -1,0 +1,2574 @@
+{
+  "juz": {
+    "number": 7,
+    "folder": "Juz 7",
+    "arabic_header": "وَإِذَا سَمِعُوا",
+    "arabic_header_translit": "Wa ’Idha Samiʿū",
+    "arabic_header_meaning": "\"And when they hear\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 7\nوَإِذَا سَمِعُوا\nWa ’Idha Samiʿū\n\"And when they hear\"\nSurah 5 – Al Ma’idah\n(5:83 till 5:120)\nSurah 6 – Al- An’am\n(6:1 Till 6:110)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 5,
+        "name_en": "Al Ma’idah",
+        "from_ayah": 83,
+        "to_ayah": 120
+      },
+      {
+        "surah_number": 6,
+        "name_en": "Al- An’am",
+        "from_ayah": 1,
+        "to_ayah": 110
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "check": "FORMAT.md §3",
+    "result": "fail",
+    "details": {
+      "captured_ayah_refs": {
+        "5": [
+          82,
+          83,
+          87,
+          88,
+          89,
+          90,
+          91,
+          100,
+          101,
+          102,
+          104,
+          105,
+          110,
+          112,
+          113,
+          114,
+          115,
+          116,
+          119,
+          120
+        ],
+        "6": [
+          1,
+          7,
+          8,
+          12,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          25,
+          29,
+          30,
+          32,
+          33,
+          35,
+          36,
+          38,
+          41,
+          44,
+          46,
+          48,
+          50,
+          51,
+          52,
+          54,
+          57,
+          59,
+          61,
+          63,
+          64,
+          68,
+          70,
+          71,
+          72,
+          84,
+          85,
+          86,
+          87,
+          88,
+          91,
+          93,
+          94,
+          100,
+          101,
+          102,
+          108,
+          109,
+          110
+        ]
+      },
+      "captured_outside_cp_range": {
+        "5": [
+          82
+        ]
+      },
+      "parts_vs_cp_ranges": "part ranges set equal to CP ranges (5:83-120, 6:1-110); Surah 5 also captures 5:82 outside the range",
+      "cp_surahs_all_have_parts": true,
+      "part_surahs_all_in_cp": true,
+      "note": "Surah 5: CP 83-120; captured refs [82, 83, 87, 88, 89, 90, 91, 100, 101, 102, 104, 105, 110, 112, 113, 114, 115, 116, 119, 120]. 5:82 captured but sits outside CP range (below from_ayah). Surah 6: CP 1-110; captured refs [1, 7, 8, 12, 14, 16, 17, 18, 19, 20, 21, 25, 29, 30, 32, 33, 35, 36, 38, 41, 44, 46, 48, 50, 51, 52, 54, 57, 59, 61, 63, 64, 68, 70, 71, 72, 84, 85, 86, 87, 88, 91, 93, 94, 100, 101, 102, 108, 109, 110]; boundary first=1 and last=110 match CP. Interior gaps (author comments selected ayat) are expected and not anomalies."
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 5,
+      "name_en": "AL MA’IDAH (THE TABLE SPREAD)",
+      "from_ayah": 83,
+      "to_ayah": 120,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - JUZ 7 - Surah 5 Al Maidah.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 7",
+      "extras": [],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "82-86 CHRISTIANS RECOGNIZE THE TRUTH AND BECOME MUSLIMS",
+          "ord": 1,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:82)",
+                "text": "You will surely find the most bitter towards the believers to be the Jews and polytheists and the most gracious to be those who call themselves Christian. That is because there are priests and monks among them and because they are not arrogant.",
+                "ref_surah": 5,
+                "from_ayah": 82,
+                "to_ayah": 82,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:83)",
+                "text": "When they listen to what has been revealed to the Messenger, you see their eyes overflowing with tears for recognizing the truth. They say, “Our Lord! We believe, so count us among the witnesses.",
+                "ref_surah": 5,
+                "from_ayah": 83,
+                "to_ayah": 83,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The meaning is not that they merely call themselves Christians, but that they are such sincere Christians that they appreciate Muslim virtues, as did the Abyssinians to whom Muslim refugees went during the persecution in Makkah."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": [
+            "Allah SWT states that He has cursed the disbelievers among the Children of Israel because they disobeyed Allah and they did not forbid each other from committing sins and the prohibitions."
+          ]
+        },
+        {
+          "title": "87-88 DO NOT MAKE HALAL THINGS HARAM ON YOUR OWN",
+          "ord": 2,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:87)",
+                "text": "O believers! Do not forbid the good things which Allah has made lawful for you, and do not transgress. Indeed, Allah does not like transgressors.",
+                "ref_surah": 5,
+                "from_ayah": 87,
+                "to_ayah": 87,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:88)",
+                "text": "But eat the lawful and good things that God provides for you. Be mindful of God, in whom you believe.",
+                "ref_surah": 5,
+                "from_ayah": 88,
+                "to_ayah": 88,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat embodies two directives:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The first is that man should not attribute to himself the authority to proclaim things either lawful or unlawful according to his own wishes. Only that which God has held to be lawful is lawful, and only that which God has declared unlawful is unlawful. If men were to declare certain things either lawful or unlawful on their own authority, they would not be following the law of God but their own laws."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The second directive is that they should not adopt the course of world-renunciation and abstention from worldly pleasures as the Christian monks, Hindu mendicants, and Buddhist bhikshus did. Religious-minded and virtuous people have always tended to consider their physical and carnal desires an impediment to spiritual growth. They have considered suffering, deprivation from worldly pleasures and abstention from the means of worldly sustenance to be acts of goodness and indispensable for achieving proximity to God. \nEven some of the Companions leaned in this direction. The Prophet (PBUH) once came to know that some Companions had resolved that they would fast without interruption, that instead of spending the night on their beds they would remain awake praying, that they would consume neither meat nor fat, and would have no (sexual) relations with women. The Prophet (PBUH) addressed the people on this subject and said: 'I have not been commanded to do so. Even your own self has rights against you. So, fast on certain days and refrain from fasting on others. Stay awake praying at night and also sleep. Look at me; I sleep as well as stay awake (praying); sometimes I fast and sometimes I don't. I consume meat as well as fat. Whosoever dislikes my way does not belong to me.' He then added: 'What has happened to people that they have prohibited for themselves women, good food, perfumes, sleep and the pleasures of the world, whereas I have not taught you to become monks and priests. In my religion there is neither abstention from women nor from meat, neither seclusion nor withdrawal."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "89 PENALTY FOR BREAKING THE OATH",
+          "ord": 3,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:89)",
+                "text": "Allah will not call you to account for your thoughtless oaths, but He will hold you accountable for deliberate oaths. The penalty for a broken oath is to feed ten poor people from what you normally feed your own family, or to clothe them, or to free a bondsperson. But if none of this is affordable, then you must fast three days. This is the penalty for breaking your oaths. So be mindful of your oaths. This is how Allah makes things clear to you, so perhaps you will be grateful.",
+                "ref_surah": 5,
+                "from_ayah": 89,
+                "to_ayah": 89,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara Ayat 224-226"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The general principles established are: (1) take no pointless oaths; (2) keep to your solemn oaths to the utmost of your ability; (3) where you are unable to do so, expiate your failure by feeding or clothing the poor, or obtaining some one's freedom, or if you have not the means, by fasting."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is from a spiritual aspect and not from a legal perspective."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A false oath taken is a major sin and there is no kaffara or penalty for it. One must ask Allah SWT for forgiveness."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: An oath is when a person swears by Allah SWT to do something – so making Allah SWT a witness."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "90-93 PROHIBITION OF INTOXICANTS (LIQUOR AND DRUGS) AND GAMBLING AND RASOOL'S DUTY IS ONLY TO PASS ON THE MESSAGE OF ALLAH",
+          "ord": 4,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:90)",
+                "text": "O believers! Intoxicants, gambling, idols, and drawing lots for decisions are all evil of Satan’s handiwork. So shun them so you may be successful.",
+                "ref_surah": 5,
+                "from_ayah": 90,
+                "to_ayah": 90,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:91)",
+                "text": "Satan’s plan is to stir up hostility and hatred between you with intoxicants and gambling and to prevent you from remembering Allah and praying. Will you not then abstain?",
+                "ref_surah": 5,
+                "from_ayah": 91,
+                "to_ayah": 91,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMAND"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Minus – Intoxicants, gambling, idols and drawing lots = Success"
+                },
+                {
+                  "kind": "prose",
+                  "text": "In this Ayat four things are categorically prohibited:\n(1) Intoxicants; \n(2) Games of chance or gambling;\n(3) Places holy for the worship of anyone else besides God, and altars for either sacrifices or offerings in the name of others than God;\n(4) Polytheistic divination by arrow-shooting."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Before the revelation of this last command, the Prophet (PBUH) had warned the people that intoxicants were highly displeasing to Allah SWT."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "It is reported by 'Abd Allah Ibn 'Umar that the Prophet (PBUH) said: 'God has cursed khamr (wine) and him who drinks it, him who provides it to others and him who buys or sells it, him who squeezes (the grapes) into wine and him who causes others to squeeze grapes (in order to make wine), him who carries it and him to whom it is carried.'"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "In a Friday sermon 'Umar defined khamr in the following manner: 'Whatever takes hold of the mind is khamr."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "According to another tradition the Prophet (PBUH) instructed not to eat at the table where intoxicating drinks were being taken."
+                },
+                {
+                  "kind": "prose",
+                  "text": "While divination by arrow-shooting essentially constitutes a game of chance there is nevertheless a certain difference between the two, since divination by arrow-shooting, in addition to being a game of chance, is also tainted with polytheistic beliefs and superstitions."
+                },
+                {
+                  "kind": "heading",
+                  "text": "FOUR AYAT’S IN THE QURAN ABOUT INTOXICANTS:"
+                },
+                {
+                  "kind": "heading",
+                  "text": "Prohibition of Intoxicants"
+                },
+                {
+                  "kind": "prose",
+                  "text": "They ask you ˹O Prophet˺ about intoxicants and gambling. Say, “There is great evil in both, as well as some benefit for people—but the evil outweighs the benefit.”(Quran, Al-Baqarah, 2:219)."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Prohibition of Alcohol For Attending Prayers"
+                },
+                {
+                  "kind": "prose",
+                  "text": "O believers! Do not approach prayer while intoxicated until you are aware of what you say, nor in a state of ˹full˺ impurity. (Quran, An-Nisa, 4:43)"
+                },
+                {
+                  "kind": "heading",
+                  "text": "Complete Prohibition of Alcohol"
+                },
+                {
+                  "kind": "prose",
+                  "text": "O believers! Intoxicants, gambling, idols, and drawing lots for decisions are all evil of Satan’s handiwork. So shun them so you may be successful. (Quran, Al-Maidah, 5:90)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Satan’s plan is to stir up hostility and hatred between you with intoxicants and gambling and to prevent you from remembering Allah and praying. Will you not then abstain? (Quran, 5:91)"
+                },
+                {
+                  "kind": "heading",
+                  "text": "THREE AYAT’S IN THE QURAN ABOUT GAMBLING:"
+                },
+                {
+                  "kind": "heading",
+                  "text": "Prohibition of Gambling:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "They ask you ˹O Prophet˺ about intoxicants and gambling. Say, “There is great evil in both, as well as some benefit for people—but the evil outweighs the benefit.”(Quran, Al-Baqarah, 2:219)."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Complete Prohibition of Gambling:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "O believers! Intoxicants, gambling, idols, and drawing lots for decisions are all evil of Satan’s handiwork. So shun them so you may be successful. (Quran, Al-Maidah, 5:90)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Satan’s plan is to stir up hostility and hatred between you with intoxicants and gambling and to prevent you from remembering Allah and praying. Will you not then abstain? (Quran, 5:91)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Both intoxicants and gambling stir up hatred/enmity among people, destroy relationships and prevent them from worshipping Allah."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "94-96 PROHIBITION OF HUNTING DURING HAJJ IHRAM (WEARING PILGRIM GARB) AND KAFFARAH (PENALTY) FOR HUNTING DURING HAJJ IHRAM",
+          "ord": 5,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Prohibiting Hunting Game in the Sacred Area and During the State of Ihram."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT puts us in situations where we can sin easily. We are often tested according to our inclinations. Ask Allah SWT for áfia’or safety from big tests."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "97-100 SACRED ELEMENTS OF HAJJ",
+          "ord": 6,
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "قُلْ لَّا يَسۡتَوِى الۡخَبِيۡثُ وَالطَّيِّبُ وَلَوۡ اَعۡجَبَكَ كَثۡرَةُ الۡخَبِيۡثِ ۚ فَاتَّقُوا اللّٰهَ يٰۤاُولِى الۡاَ لۡبَابِ لَعَلَّكُمۡ تُفۡلِحُوۡنَ"
+              ],
+              "translation": {
+                "ref": "(5:100)",
+                "text": "Say, ˹O Prophet,˺ “Good and evil are not equal, though you may be dazzled by the abundance of evil. So be mindful of Allah, O people of reason, so you may be successful.”",
+                "ref_surah": 5,
+                "from_ayah": 100,
+                "to_ayah": 100,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: A Bedouin stood up and said: “O Messenger of Allah, trading in wine used to be my job and I made some money from it, will that money be of any benefit to me if I used it in Allah’s obedience?” The Prophet, Allah bless him and give him peace, answered him: “It would not benefit you a bit if you were to spend it on pilgrimage, Jihad or charity, for Allah does not accept except that which is wholesome”. Confirming the words of His Messenger, Allah SWT revealed (Say: The evil and the good are not alike even though the plenty of the evil attract thee)."
+                },
+                {
+                  "kind": "heading",
+                  "text": "LEAVING IMPURE = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat articulates a standard of evaluation and judgement quite distinct from the standards employed by superficial people. For the latter, for instance, a hundred dollars are worth more than five dollars, since a hundred is more than five. But, according to this Ayat, if those hundred dollars have been earned in a manner entailing the disobedience of God the entire amount becomes unclean. If, on the contrary, a man earns five dollars while obeying God then this amount is clean; and anything which is unclean, whatever its quantity, cannot be worth that which is clean. A drop of perfume is more valuable than a heap of filth; a palmful of clean water is much more valuable than a huge cauldron brimming with urine."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A wise person should therefore be content with whatever he acquires by clean, permissible means, however small and humble its quantity may be. He should not reach out for what is prohibited, however large in quantity and glittering in appearance."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "101 – 104  DO NOT ASK QUESTIONS LIKE THE NATION OF MUSA (MOSES) AND SUPERSTITIONS ARE PROHIBITED IN ISLAM",
+          "ord": 7,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:101)",
+                "text": "You who believe, do not ask about matters which, if made known to you, might make things difficult for you– if you ask about them while the Quran is being revealed, they will be made known to you– for God has kept silent about them: God is most forgiving and forbearing.",
+                "ref_surah": 5,
+                "from_ayah": 101,
+                "to_ayah": 101,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat refers to good conduct that Allah SWT is teaching His believing servants, by forbidding them from asking about useless things. Since if they get the answers they sought, they might be troublesome for them and difficult on their ears."
+                },
+                {
+                  "kind": "prose",
+                  "text": "People used to ask the Prophet (PBUH) many questions which were of no practical relevance to either religious or day-to-day affairs. Once, for instance, a person asked the Prophet (PBUH) in the presence of a crowd: 'Who is my real father?' Likewise, many people used to ask unnecessary questions about legal matters. By these uncalled-for inquiries, they sought knowledge of matters which had for good reasons, been deliberately left undetermined by the Law-giver. In the Quran, for example. Pilgrimage had been declared obligatory. A person who became aware of this came to the Prophet (BUH) and inquired: 'Has it been made obligatory to perform it every year?' To this the Prophet (peace be on him) made no reply. When he inquired for the second time the Prophet (PBUH) again stayed silent. On being asked for the third time, he said: 'Pity on you! Had I uttered \"Yes\" in reply to your question, it would have become obligatory to perform it every year. And then you would not have been able to observe it and would have been guilty of disobedience.' Similar was the case of the cow in Surah Baqara. \n\nIn matters where the Law-giver (Allah SWT) has chosen to lay down certain injunctions only broadly, without any elaborate details, or quantitative specifications, He has done so not because of neglect or forgetfulness. Such seeming omissions are deliberate, and the reason is that He does not desire to place limitations upon people, but prefers to allow them latitude and ease in following His commandments. Now there are some people who make unnecessary inquiries, cause elaborately prescribed, inflexibly determined and restrictive regulations to be added to the Law. In the area of belief, the more detailed the doctrines to which people are required to subscribe, the more problematic it becomes to do so. Likewise, in legal matters, the greater the restriction, the greater the likelihood of violation."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:102)",
+                "text": "Before you, some people asked about things, then ignored [the answers].",
+                "ref_surah": 5,
+                "from_ayah": 102,
+                "to_ayah": 102,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Meaning, some people before your time asked such questions and they were given answers. Yet they did not benefit at all from that, for they asked about these things not to gain guidance, but only to mock and defy."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:104)",
+                "text": "When it is said to them, “Come to Allah’s revelations and to the Messenger,” they reply, “What we found our forefathers practicing is good enough for us.” ˹Would they still do so,˺ even if their forefathers had absolutely no knowledge or guidance?",
+                "ref_surah": 5,
+                "from_ayah": 104,
+                "to_ayah": 104,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Meaning, if they are called to Allah's religion, law and commandments and to avoid what He prohibited, they say, `The ways and practices that we found our fathers and forefathers following are good enough for us even though their fathers had no knowledge whatsoever and no guidance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The same is true today! The same arguments and justifications are held today."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:105)",
+                "text": "O believers! You are accountable only for yourselves. It will not harm you if someone chooses to deviate—as long as you are ˹rightly˺ guided. To Allah you will all return, and He will inform you of what you used to do.",
+                "ref_surah": 5,
+                "from_ayah": 105,
+                "to_ayah": 105,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "What is stressed here is that rather than occupying oneself unduly with examining faults in the belief and conduct of others, man should pay greater attention to a critical examination of his own conduct. His primary concern should be with his own faith and conduct. If a man is himself obedient to God, observes his duties to Him and to His creatures including his duty to promote what is good and forbid what is evil, and lives according to the dictates of righteousness and honesty, he has fulfilled his obligation and if others persist either in false beliefs or in moral corruption their errors cannot harm him. \n\nThis Ayat in no way means that a man should care only for his own salvation and should remain unconcerned with the reform of others. Abu Bakr removed this misconception in one of his sermons when he remarked: 'You recite this verse but interpret it erroneously. I have heard the Messenger of Allah (PBUH) say that when people see corruption but do not try to change it; and when they see a wrong-doer commit wrong but do not prevent him from doing so, it is not unlikely that God's chastisement will seize them all. By God, it is incumbent upon you that you bid what is good and forbid what is evil."
+                },
+                {
+                  "kind": "prose",
+                  "text": "For example, a father who has tried his absolute maximum to instill faith in his son but his son refuses then the blame will not fall on the father."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not go astray yourself by being harsh or over preaching others on the virtues of piety."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "108 – 109 LAST WILL AND TESTAMENT, AND TESTIMONY OF WITNESSES",
+          "ord": 8,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Testimony of Two Just Witnesses for the Final Will and Testament."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – One can only will 1/3 of your wealth. The rest must be distributed by Allah SWT’s law."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "109 – 115 FAVORS OF ALLAH UPON JESUS AND THE MIRACLES HE WAS GIVEN AND DISCIPLES OF JESUS ASKED FOR A TABLE SPREAD OF FOOD AS A MIRACLE",
+          "ord": 9,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:110)",
+                "text": "And ˹on Judgment Day˺ Allah will say, “O Jesus, son of Mary! Remember My favour upon you and your mother: how I supported you with the holy spirit so you spoke to people in ˹your˺ infancy and adulthood. How I taught you writing, wisdom, the Torah, and the Gospel. How you moulded a bird from clay—by My Will—and breathed into it and it became a ˹real˺ bird—by My Will. How you healed the blind and the lepers—by My Will. How you brought the dead to life—by My Will. How I prevented the Children of Israel from harming you when you came to them with clear proofs and the disbelievers among them said, “This is nothing but pure magic.”",
+                "ref_surah": 5,
+                "from_ayah": 110,
+                "to_ayah": 110,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Allah SWT is Reminding `Isa of the Favors that He Granted him"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah mentions how He blessed His servant and Messenger, `Isa, son of Maryam, and the miracles and extraordinary acts He granted him."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT used the past tense in these Ayat indicating that it is a forgone matter that will certainly occur."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:112)",
+                "text": "˹Remember˺ when the disciples asked, “O Jesus, son of Mary! Will your Lord be willing to send down to us a table spread with food from heaven?” Jesus answered, “Fear Allah if you are ˹truly˺ believers.”",
+                "ref_surah": 5,
+                "from_ayah": 112,
+                "to_ayah": 112,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:113)",
+                "text": "They said, “We ˹only˺ wish to eat from it to reassure our hearts, to verify you are indeed truthful to us, and to become its witnesses.”",
+                "ref_surah": 5,
+                "from_ayah": 113,
+                "to_ayah": 113,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:114)",
+                "text": "Jesus, son of Mary, prayed, “O Allah, our Lord! Send us from heaven a table spread with food as a feast for us—the first and last of us—and as a sign from You. Provide for us! You are indeed the Best Provider.”",
+                "ref_surah": 5,
+                "from_ayah": 114,
+                "to_ayah": 114,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:115)",
+                "text": "Allah answered, “I am sending it down to you. But whoever among you denies afterwards will be subjected to a torment I have never inflicted on anyone of My creation.”",
+                "ref_surah": 5,
+                "from_ayah": 115,
+                "to_ayah": 115,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is the story of the Ma'idah, the name of which this Surah bears -- Surah Al-Ma'idah.\nThis is also among the favors that Allah SWT granted Prophet Isa by accepting his request to send the Ma'idah (table spread of food) down, and in doing so gave clear proof and unequivocal evidence to his nation. But then once the miracle is shown the people did not then have an option to disbelieve or deviate. This kufur or disbleif is now much worse."
+                },
+                {
+                  "kind": "prose",
+                  "text": "With greater knowledge comes greater responsibility and greater accountability."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The issue here is desire. Once a thought comes then it must be fulfilled and fun must be had. Other important things are left behind. This is how Satan distracts us."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "116 – 120 TESTIMONY OF JESUS ON THE DAY OF JUDGEMENT ABOUT THE CHRISTIANS (116-120)",
+          "ord": 10,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:116)",
+                "text": "And ˹on Judgment Day˺ Allah will say, “O Jesus, son of Mary! Did you ever ask the people to worship you and your mother as gods besides Allah?” He will answer, “Glory be to You! How could I ever say what I had no right to say? If I had said such a thing, you would have certainly known it. You know what is ˹hidden˺ within me, but I do not know what is within You. Indeed, You ˹alone˺ are the Knower of all unseen.",
+                "ref_surah": 5,
+                "from_ayah": 116,
+                "to_ayah": 116,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Isa/Jesus refers to his humanity, limitations and servitude to Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "قَالَ اللّٰهُ هٰذَا يَوۡمُ يَـنۡفَعُ الصّٰدِقِيۡنَ صِدۡقُهُمۡؕ لَهُمۡ جَنّٰتٌ تَجۡرِىۡ مِنۡ تَحۡتِهَا الۡاَنۡهٰرُ خٰلِدِيۡنَ فِيۡهَاۤ اَبَدًا ؕ رَضِىَ اللّٰهُ عَنۡهُمۡ وَرَضُوۡا عَنۡهُ ؕ ذٰ لِكَ الۡـفَوۡزُ الۡعَظِيۡمُ"
+              ],
+              "translation": {
+                "ref": "(5:119)",
+                "text": "God will say, ‘This is a Day when the truthful will benefit from their truthfulness. They will have Gardens graced with flowing streams, there to remain for ever. God is pleased with them and they with Him: that is the supreme triumph.’",
+                "ref_surah": 5,
+                "from_ayah": 119,
+                "to_ayah": 119,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Those who hold on to the truth of Tauhid will benefit on the DoJ. After Prophets the faithful or truthful الصّٰدِقِيۡنَ صِدۡقُهُم will have a high status."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says for them is Heaven where they are free because on earth they lived a life full of constraints and restrictions, such as, not consuming riba, not having alcohol, etc etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This will be their supreme triumph."
+                },
+                {
+                  "kind": "prose",
+                  "text": "May we be of the truthful people on the DoJ. Ameen."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:120)",
+                "text": "To Allah belongs the dominion of the heavens and the earth and all that is in them and He has full power over everything.",
+                "ref_surah": 5,
+                "from_ayah": 120,
+                "to_ayah": 120,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ],
+          "intro": []
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "Definition of Success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 6,
+      "name_en": "AL-AN'AM (THE CATTLE)",
+      "from_ayah": 1,
+      "to_ayah": 110,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Juz 7 - The cattle surah 6.docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 7",
+      "extras": [
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH IS THE SAME ONE GOD ALMIGHTY IN BOTH HEAVEN AND EARTH (1-6)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "IF ALLAH HAD SENT A WRITTEN BOOK AND AND ANGEL WITH IT THE UNBELIEVERS STILL WOULD NOT HAVE BELIEVED (7-10)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH HAS DECREED MERCY FOR HIMSELF THAT IS WHY HE DOES NOT PUNISH ANY ONE IN THIS WORLD AND PUNISHMENT WILL BE ON THE DAY OF JUDGEMENT (11-18)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "AL-QURAN IS REVEALED TO ADMONISH AND TO DECLARE THAT THERE IS ONLY ONE GOD ALLAH (19-20)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PREJUDICE HAS MADE THE PEOPLE WORSHIP DEITIES OTHER THAN ALLAH (21-26)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "FOR SURE THERE IS A LIFE AFTER DEATH? (27-30)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THOSE WHO DENY PROPHET MUHAMMAD, IN FACT DENY ALLAH'S REVELATIONS (31-35)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THOSE WHO LISTEN WILL ACCEPT THE TRUTH AND USE YOUR COMMON SENSE TO LEARN FROM THE SIGNS OF NATURE AND DO YOU NOT CALL ALLAH ALONE IN REAL DISTRESS? (31-35)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PROSPERITY IN THIS WORLD IS NOT A REWARD BUT A RESPITE (42-45)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "WHO CAN RESTORE YOUR HEARING AND SIGHT IF ALLAH TAKES THEM AWAY? AND RASOOLS NEVER CLAIMED THAT THEY KNOW THE UNSEEN OR THAT THEY ARE ANGELS (46-50)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ADMONISH THE UNBELIEVERS WITH THIS AL-QURAN AND REAL BELIEF IS A FAVOR OF ALLAH AND IS IRRESPECTIVE OF WORLDLY STATUS (51-55)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH ALONE HAS THE AUTHORITY OF PASSING JUDGEMENT AND HE ALONE KNOWS THE UNSEEN (56-60)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH HAS APPOINTED GUARDIAN ANGLES OVER YOU (61-62)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH IS THE ONE WHO DELIVERS YOU FROM THE CALAMITIES (63-67)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT SIT WITH THOSE WHO ARGUE ABOUT ALLAH'S REVELATIONS (68-69)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT ASSOCIATE WITH THOSE WHO TAKE THEIR RELIGION AS A MATTER OF AMUSEMENT (70)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "BELIEVERS ARE COMMANDED TO BECOME MUSLIMS, TO ESTABLISH SALAH AND TO FEAR ALLAH ALONE (71-73)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "IBRAHIM LEARNED FAITH THROUGH THE STUDY OF NATURE WITH HIS COMMON SENSE (74-79)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ARGUMENTS OF MUSHRIKIN WITH IBRAHIM ABOUT ALLAH (80-82)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DESCENDANTS OF PROPHET IBRAHIM INCLUDING MUSA, ISA AND MUHAMMAD, NONE OF THEM WERE MUSHRIKIN (83-90)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALLAH IS THE ONE WHO REVEALED THE TAURAT AND AL-QURAN (91)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THOSE WHO INVENT A LIE AGAINST ALLAH WILL FACE A DISGRACEFUL PUNISHMENT (92-94)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "EXAMPLES FROM ALLAH'S CREATION ARE CLEARLY SPELLED OUT FOR THE UNDERSTANDING OF MANKIND (95-100)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "HOW COULD ALLAH HAVE A SON WITHOUT A SPOUSE? AND CLEAR PROOFS HAVE COME TO YOU IF ONLY YOU COULD CARE TO UNDERSTAND (101-107)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT INSULT THE DEITIES TO WHOM THE MUSHRIKIN OFFER THEIR WORSHIP AND GUIDANCE DEPEND ON THE ATTITUDE OF INDIVIDUALS (108-110)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALL RASOOLS OF ALLAH HAD OPPOSITION FROM SHAITAN AND HIS FOLLOWERS (111-115)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "EAT ONLY THAT MEAT ON WHICH ALLAH'S NAME HAS BEEN PRONOUNCED (116-121)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "WHEN GOOD AND BAD ARE TREATED ALIKE, CRIMINALS ARE APPOINTED AS THEIR RINGLEADERS (122-124)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "WHOMEVER ALLAH WANTS TO GUIDE, HE OPENS UP HIS CHEST TO ISLAM (125-127)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "JINNS, AND HUMAN BEINGS WHO ARE MISLED BY THEM, WILL ALL BE CAST INTO HELL (128-129)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ON THE DAY OF JUDGEMENT KAFIRS (UNBELIEVERS) WILL CONFESS THAT THEY WERE INDEED KAFIRS (130-135)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "MUSHRIKIN GIVE THEIR DEITIES PREFERENCE OVER ALLAH AND MUSHRIKIN FALSELY ATTRIBUTE THEIR SELF-IMPOSED PROHIBITIONS TO ALLAH (136-140)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "GIVE ZAKAH OF AGRICULTURE ON THE HARVEST DAY (141-142)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "FALSELY ATTRIBUTED PROHIBITION OF LIVESTOCK ARE CLARIFIED (143-144)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "CORRECT PROHIBITIONS OF LIVESTOCK ARE SPELLED OUT AND EXPLANATION OF THE JEWISH PROHIBITIONS OF LIVE STOCK (145-147)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "MUSHRIKIN' EXCUSE FOR BEING MUSHRIKIN (148-150)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "IN ISLAM FORBIDDEN THINGS ARE BASED ON FUNDAMENTAL MORAL PRINCIPLES (151-154)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THE BOOK OF ALLAH HAS COME TO YOU FOR YOUR GUIDANCE SO THAT THERE MAY BE NO EXCUSE ABOUT THE TRUE WORD OF ALLAH (155-158)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THOSE WHO DIVIDE THE RELIGION INTO SECTS ARE NOT MUSLIMS (159-160)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DECLARE, \"MY SALAH, MY DEVOTION, MY LIFE AND MY DEATH ARE ALL FOR ALLAH\" (161-165)"
+        }
+      ],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah takes its name from Ayat 136, 138 and 139.",
+          "items": null
+        },
+        {
+          "label": "Period of Revelation",
+          "text": "Revealed during the last year of the Holy Prophet's life at Makkah. Twelve years had passed since the Holy Prophet had been inviting the people to Islam. The antagonism and persecution by the Quraish had become savage and brutal. The majority of the Muslims had to leave their homes and migrate to Habash (Abyssinia). Above all, the two great supporters of the Holy Prophet. Abu Talib and Hazrat Khadijah, were no more to help and give strength to him.",
+          "items": null
+        },
+        {
+          "label": "Subject: Islamic Creed.",
+          "text": "This Surah mainly discusses: Tauhid and the negation of Shirk, Life-after-death, Prophethood and their practical application to human life.\n\nThis Surah is a pair with Surah Araf.\n\nAlthough these Ayat’s are directed towards the Mushriqueen of Mecca they are just as relevant to us today because the same excuses and reasoning for not accepting are given. Majority are lost in this world, happy with what they have.\n\nThe core theme of the entire Surah is that the Quraish and murshriqueen of Mecca were constantly pressurizing the Prophet for a miracle/s in order to believe. A miracle that they could see with their eyes similar to previous Prophets such as Prophet Isa/Jesus. It is Allah SWT’s decision that no such miracle will be shown.\n\nLesson: Belief of the unseen is a key part of Iman.",
+          "items": null
+        },
+        {
+          "label": "The Background of Makki Surahs",
+          "text": "As this is the first long Makki Surah in the order of the compilation of the Quran, it will be useful to explain the historical background of Makki Surahs.\n\nFirst of all, it should be noted that comparatively very little material is available in regard to the background of the revelation of Makki Surahs whereas the period of the revelation of all the Madani Surahs is known or can be determined with a little effort. Therefore, we have to depend on the internal evidence of these Surahs for determining the period of their revelation: for example, their subject matter, style and the direct or indirect references to events.\n\nThus, the history of the mission of the Holy Prophet at Makkah can be divided into four stages.\n\nThe first stage began with his appointment as a Messenger and ended with the proclamation of Prophethood three years later. During this period the Message was given secretly to some selected persons only, but the common people of Makkah were not aware of it.\n\nThe second stage lasted for two years after the proclamation of his Prophethood. It began with opposition by individuals: then it took the shape of antagonism, ridicule, derision, accusation, abuse, and false propaganda then gangs were formed to persecute those Muslims who were comparatively poor, weak' and helpless.\n\nThe third stage lasted for about six years from the beginning of the persecution to the death of Abu Talib and Hadrat Khadijah in the tenth year of Prophethood. During this period, the persecution of the Muslims became' so savage and brutal that many of them were forced to migrate to Habash. Social and economic boycott was applied against the Holy Prophet and the members of his family, and those Muslims who continued to stay in Makkah.\n\nThe fourth stage lasted for about three years from the tenth to the thirteenth year of Prophethood. This was a period of hard trials and grievous sufferings for the Holy Prophet and his followers. Life had become unendurable at Makkah and there appeared to be no place of refuge even outside it.\n\nIt was at this most critical time that Allah SWT opened the hearts of the Ansar of Yathrab where the Prophet (PBUH) and his companions then migrated.\n\nMakki Surah’s\n\nMain Topics: Tauhid (Negation of Shrik), AfterLife and Prophethood.\n\nBasic fundamental human character (of a Muslim) is described: Tell the truth, don’t steal, don’t be stingy, be charitable etc.\n\nStories of the Prophets and how nations were destroyed due to disobedience to Allah SWT.\n\nAudience: Mushriqeen of Mecca and the Prophet (PBUH). And thus by default all of us.\n\nMadani Surah’s:\n\nMain Topics: Above along with Shariah i.e. fasting, Hajj, how to enter a house etc.\n\nAudience: Muslim Ummah. People of the Book. Hypocrites.\n\nHere begins the Second Manzil and Second group of Quranic Ayat’s. 6 groups left in pairs of two. First group: Tauhid Second Group is Prophethood and Third Group is AfterLife.\n\nSurah Anám and Araf are Makki.",
+          "items": null
+        },
+        {
+          "label": "Introduction to sections:",
+          "text": "",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "1-6 ALLAH IS THE SAME ONE GOD ALMIGHTY IN BOTH HEAVEN AND EARTH",
+          "ord": 1,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:1)",
+                "text": "All praise is for Allah alone, Who created the heavens and the earth, and brought into being light and darkness, and yet those who have rejected the call of the Truth ascribe others to be equals to their Lord.",
+                "ref_surah": 6,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Tauhid and the negation of Shirk."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Alhamdulillah. God is the Creator of the heavens and the earth, He Who causes day to alternate with night. Then why should anyone prostrate themselves before others beside their Creator? Why should they offer their prayers and supplication to any but God?"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah Fatiha also begins the same way (AH) i.e. with the praise of Allah SWT as well as Surah Kahf and 23 Juz. So, every 7th Juz (with regular intervals) we see the beginning of the Surah with the praise of Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "7 – 10 IF ALLAH HAD SENT A WRITTEN BOOK AND AND ANGEL WITH IT THE UNBELIEVERS STILL WOULD NOT HAVE BELIEVED",
+          "ord": 2,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:7)",
+                "text": "Had We sent down to you ˹O Prophet˺ a revelation in writing and they were to touch it with their own hands, the disbelievers would still have said, “This is nothing but pure magic!”",
+                "ref_surah": 6,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The idolaters of Mecca said: ‘O Muhammad, by Allah we will not believe until you bring us a book from Allah along with four angels with it, bearing witness that it is from Allah and that you are His messenger’, and so this Ayat was revealed”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT describes the rebellion and stubbornness of the idolators in defying the truth and arguing against it, meaning, even if they saw this Message's descent and were eye-witnesses to that, the disbelievers would have said: “This is nothing but obvious magic!\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "This, in fact, this the core theme of the entire Surah. The Quraish and murshriqueen of Mecca were constantly pressurizing the Prophet for a miracle/s in order to believe. A miracle that they could see with their eyes similar to previous Prophets such as Prophet Isa/Jesus. It is Allah SWT’s decision that no such miracle will be shown."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:8)",
+                "text": "They say, “Why has no ˹visible˺ angel come with him?” Had We sent down an angel, the matter would have certainly been settled ˹at once˺, and they would have never been given more time ˹to repent˺.",
+                "ref_surah": 6,
+                "from_ayah": 8,
+                "to_ayah": 8,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Another excuse for not believing. The unbelievers maintained that if Muhammed (PBUH) has been gifted with prophethood, then an angel should have been sent down from heaven to announce that he was the Messenger of God, and that that people would be punished if they did not follow his directives."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT warns that this earthly life is a test of whether man is able to recognize the Ultimate Reality that remains concealed from human perception. Until God has decided to bring this test to a close, it is not possible to respond to such requests by sending angels to mankind in their true form."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara Ayat 210 and 228."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "11 – 18 ALLAH HAS DECREED MERCY FOR HIMSELF THAT IS WHY HE DOES NOT PUNISH ANY ONE IN THIS WORLD AND PUNISHMENT WILL BE ON THE DAY OF JUDGEMENT",
+          "ord": 3,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:12)",
+                "text": "Ask them: ''To whom belongs all that is in the heavens and on the earth?'' Say: ''Everything belongs to Allah.'' He has bound Himself to the exercise of mercy (and thus does not chastise you for your disobedience and excesses instantly). Surely, He will gather you all together on the Day of Resurrection - the coming of which is beyond doubt; but those who have courted their own ruin are not going to believe.",
+                "ref_surah": 6,
+                "from_ayah": 12,
+                "to_ayah": 12,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Despite knowing that Allah SWT is the Creator of everything/one still the disbelievers worship others."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has promised/mandated on Himself to show Mercy on those who Believe as well as those who deny. Everyone is given shelter, food etc., irrespective of their beliefs. But, on the DoJ everything will become clear."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:14)",
+                "text": "Say, ˹O Prophet,˺ “Will I take any guardian other than Allah, the Originator of the heavens and the earth, Who provides for all and is not in need of provision?” Say, “I have been commanded to be the first to submit and not be one of the polytheists.”",
+                "ref_surah": 6,
+                "from_ayah": 14,
+                "to_ayah": 14,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat contains a subtle sarcasm. Far from providing sustenance to their followers, the beings/false deities whom the polytheists set up -- beside God -- were dependent upon (others) for their sustenance. No Pharaoh can maintain the pomp and splendour connected with his godhead unless his subjects pay their tax dues and make him other offerings. No deity can attract worshippers unless some of its devotees make an idol, place it in some magnificent temple, and decorate it lavishly. All these counterfeit gods are totally dependent upon their own servants."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It is the Lord of the Universe alone Who is the True God, Whose godhead rests solely upon His own power; Who needs the help of no one."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:16)",
+                "text": "Whoever is spared the torment of that Day will have certainly been shown Allah’s mercy. And that is the absolute triumph.",
+                "ref_surah": 6,
+                "from_ayah": 16,
+                "to_ayah": 16,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "DEFINITION OF TRUE AND ULTIMATE SUCCESS: Being Spared the Day of Torment. Those are the ones that Allah SWT has truly shown mercy towards. That is the ultimate success."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:17)",
+                "text": "Should Allah touch you with affliction, there is none to remove it but He; and should He touch you with good, He has the power to do everything.",
+                "ref_surah": 6,
+                "from_ayah": 17,
+                "to_ayah": 17,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When Allah SWT barely ever touches us with any harm/suffering (bodily or circumstantial) then there is no cure, no one who can give relief, other than Allah SWT i.e. fever, disease, financial loss, dissolving of familial bonds or friendships etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And when Allah SWT barely ever touches us with any good that is because Allah SWT has power over all."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: With any difficulty ask Allah SWT for help and then when the suffering is over thank only Allah SWT. At times we get sick and upon being cured profusely thank the Dr. forgetting that all shifa is from Allah SWT. The Dr was a means of getting better.  Lastly, any suffering is also part of Allah’s mercy on us as it brings us closer to our Raab."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:18)",
+                "text": "He has the supreme hold over His servants. He is All-Wise, All-Aware.",
+                "ref_surah": 6,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is the One who is Dominant and All-Wise and All-Aware."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In Makki Quranic Ayats, Allah SWT is describing Himself, His Attributes, His Qualities. Therefore, these Ayat’s should not be read quickly. We should get to know our Raab."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "19- 20 AL-QURAN IS REVEALED TO ADMONISH AND TO DECLARE THAT THERE IS ONLY ONE GOD ALLAH",
+          "ord": 4,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:19)",
+                "text": "Ask ˹them, O Prophet˺, “Who is the best witness?” Say, “Allah is! He is a Witness between me and you. And this Quran has been revealed to me so that, with it, I may warn you and whoever it reaches. Do you ˹pagans˺ testify that there are other gods besides Allah?” ˹Then˺ say, “I will never testify ˹to this˺!” ˹And˺ say, “There is only One God. And I totally reject whatever ˹idols˺ you associate with Him.”",
+                "ref_surah": 6,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The chiefs of Mecca said: ‘O Muhammad, we see that no one believes in what you say concerning the matter of messenger ship. We have asked the Jews and Christians about you and they claim that there is no description or mention of you in their Scriptures. So, show us someone who will testify that you are a messenger, as you claim’. As a response, Allah SWT revealed this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "God Himself testifies as a witness that the Prophet (PBUH) has been designated by Him and the Quran has been revealed to him as a warning for all mankind. What greater testimony could anyone need?"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The disbelievers ask for miracles? See above Ayat 8"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:8)",
+                "text": "They say, “Why has no ˹visible˺ angel come with him?” Had We sent down an angel, the matter would have certainly been settled ˹at once˺, and they would have never been given more time ˹to repent˺.",
+                "ref_surah": 6,
+                "from_ayah": 8,
+                "to_ayah": 8,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Quran is a miracle to warn and give good news. Here the Prophets mandate has been specified. After the Prophet anyone who reaches the Quran (meaning has been given the blessing to read and understand) then that person must pass it forward."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT’s testimony is the greatest authentication therefore we do not need science or other antidotes to justify that the Quran is divine."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:20)",
+                "text": "Those to whom We gave the Scripture recognize him ˹to be a true prophet˺ as they recognize their own children. Those who have ruined themselves will never believe.",
+                "ref_surah": 6,
+                "from_ayah": 20,
+                "to_ayah": 20,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "From their Scriptures the Jews and the Christians knew that Muhammad was the Prophet and they knew this as clearly as they recognized their own children, yet, they choose to deny."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "21 – 26 PREJUDICE HAS MADE THE PEOPLE WORSHIP DEITIES OTHER THAN ALLAH",
+          "ord": 5,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:21)",
+                "text": "Who does more wrong than those who fabricate lies against Allah or deny His signs? Indeed, the wrongdoers will never succeed.",
+                "ref_surah": 6,
+                "from_ayah": 21,
+                "to_ayah": 21,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "DEFINITION OF FAILURE: (i) Anyone who makes up a lie against Allah SWT and (ii) denies His signs/proofs/evidences."
+                },
+                {
+                  "kind": "heading",
+                  "text": "2 HUGE CRIMES."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Be careful when declaring things as halal or haram. Or making up things in religion such as innovations, or saying that Allah SWT has a child or wife etc."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:25)",
+                "text": "There are some of them who ˹pretend to˺ listen to your recitation ˹of the Quran˺, but We have cast veils over their hearts—leaving them unable to comprehend it—and deafness in their ears. Even if they were to see every sign, they still would not believe in them. The disbelievers would ˹even˺ come to argue with you, saying, “This ˹Quran˺ is nothing but ancient fables!”",
+                "ref_surah": 6,
+                "from_ayah": 25,
+                "to_ayah": 25,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The refusal on the part of the elite of Mecca to obey the call to the Truth stems from their arrogance, stubbornness, and prejudice. For example, the Mushriqeen of Arabia refused to accept Islam because they knew it would mean accepting Muhammad as their Prophet –whom they considered beneath them."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“but We have cast veils over their hearts—leaving them unable to comprehend it—and deafness in their ears,”.. this means that the heart of that person has become sealed and when God describes it He does so by saying that He had sealed the heart of the person concerned because they deserved it due to their constant denial."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Islam means to surrender or submit. If people have even the slightest desire to change then Allah SWT would help. Seal is for those who constantly and stubbornly deny. They are away from religion and stop others."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "27 – 32 FOR SURE THERE IS A LIFE AFTER DEATH?",
+          "ord": 6,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:29)",
+                "text": "They say, ‘There is nothing beyond our life in this world: we shall not be raised from the dead.’",
+                "ref_surah": 6,
+                "from_ayah": 29,
+                "to_ayah": 29,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:30)",
+                "text": "But if only you could see when they will be detained before their Lord! He will ask ˹them˺, “Is this ˹Hereafter˺ not the truth?” They will cry, “Absolutely, by our Lord!” He will say, “Then taste the punishment for your disbelief.”",
+                "ref_surah": 6,
+                "from_ayah": 30,
+                "to_ayah": 30,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:32)",
+                "text": "The life of this world is nothing but a game and a distraction; the Home in the Hereafter is best for those who are aware of God. Why will you [people] not understand?",
+                "ref_surah": 6,
+                "from_ayah": 32,
+                "to_ayah": 32,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: “You only live once so enjoy yourself!” You may consider re-evaluating this popular statement."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The reality is that this world is nothing but a game and a distraction so do not get so entrenched in it that you neglect the end-game."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "33- 35 THOSE WHO DENY PROPHET MUHAMMAD, IN FACT DENY ALLAH'S REVELATIONS",
+          "ord": 7,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:33)",
+                "text": "(O Muhammad!) We know indeed that the things they say grieve you, though in truth it is not you whom they give the lie to, but it is the signs of Allah that these wrong-doers reject.",
+                "ref_surah": 6,
+                "from_ayah": 33,
+                "to_ayah": 33,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Before Prophet Muhammad (PBUH) began to preach the message of God, he was regarded as truthful, trustworthy and reliable. Only after he had begun to preach the message of God did they call him a liar, and they did so in respect of his prophetic mission. Abu Jahl, one of the Prophet (PBUH) staunchest enemies once said to the Prophet (PBUH): 'We do not disbelieve you. We disbelieve your message."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here God consoled the Prophet (PBUH) by telling him that by accusing him with falsehood the unbelievers were calling God untruthful. Since God has endured this accusation with mild forbearance, leaving them free to persist in their blasphemy, the Prophet (PBUH) need not feel undue disquiet."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:35)",
+                "text": "If you find their denial unbearable, then build—if you can—a tunnel through the earth or stairs to the sky to bring them a ˹more compelling˺ sign. Had Allah so willed, He could have guided them all. So do not be one of those ignorant ˹of this fact˺.",
+                "ref_surah": 6,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The Prophet (PBUH) saw that even though he had spent a long time admonishing his people, they did not seem inclined to heed his call. As a result, he sometimes wished for the appearance of some extraordinary sign/miracle from Allah SWT that would undermine the stubbornness of his people and lead them to accept his guidance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat embodies Allah's response to the Prophet's desire."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet (PBUH) is told not to be impatient and continue striving in conformity with God's directive. Had it been God's purpose to work miracles, He would have done so."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If the Prophet (PBUH) cannot bear patiently the disbeliever’s attitude of stubbornness and if he thought it necessary to make them witness a tangible sign of God, then he (Prophet) should muster all his strength and try to slice the earth, or climb a ladder to the heaven and bring forth a miracle powerful enough to change the unbelief of the unbelievers into belief however, in this regard he (the Prophet PBUH ) should not expect God to fulfil his wish, for such things have no place in God's scheme."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT could, instantaneously, make everyone the most devout Muslim, however, it is not His way to force people into submission. This world is a Test."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If Allah SWT did show a miracle or sign then there would be no opportunity left to err. It is in fact a mercy from Allah SWT that He gives nations time to repent and mend their ways."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Patience, Acceptance and Tolerance are required and eventually Allah SWT will change the situation."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "36 – 41 THOSE WHO LISTEN WILL ACCEPT THE TRUTH AND USE YOUR COMMON SENSE TO LEARN FROM THE SIGNS OF NATURE AND DO YOU NOT CALL ALLAH ALONE IN REAL DISTRESS?",
+          "ord": 8,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:36)",
+                "text": "Only the attentive will respond ˹to your call˺. As for the dead, Allah will raise them up, then to Him they will ˹all˺ be returned.",
+                "ref_surah": 6,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "‘Only the attentive will respond’…refers to those whose conscience are alive, who have not atrophied their intellect and reason, and who have not closed their hearts to the Truth out of irrational prejudice and menta! inflexibility."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In contrast to such people are those who are characterized as 'dead' - who blindly follow the old familiar beaten tracks, and can never deviate from the ways they have inherited, even when these ways are plainly at variance with the Truth."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Don’t live life as a living corpse."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:38)",
+                "text": "All living beings roaming the earth and winged birds soaring in the sky are communities like yourselves. We have left nothing out of the Record. Then to their Lord they will be gathered all together.",
+                "ref_surah": 6,
+                "from_ayah": 38,
+                "to_ayah": 38,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Miracle of all living things should be enough of a miracle or sign to understand that some greater power/force is at work. The Quran very eloquently elaborates/explains the signs of Allah SWT again and again and again."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:41)",
+                "text": "No! He is the only One you would call. And if He willed, He could remove the affliction that made you invoke Him. Only then will you forget whatever you associate with Him ˹in worship˺.”",
+                "ref_surah": 6,
+                "from_ayah": 41,
+                "to_ayah": 41,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Attention is now drawn towards another sign. That is, when either some great calamity befalls a man or when death starkly stares him in the face, it is only to God that he turns for refuge. On such occasions even the staunchest polytheists forget their false gods and cry out to the One True God, and even the most rabid atheists stretch out their hands in prayer to Him. This phenomenon is mentioned here in order to draw an instructive lesson. It shows that devotion to God and monotheism are ingrained in the human soul/fitra."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But when relief arrives you revert and forget."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "42 – 45 PROSPERITY IN THIS WORLD IS NOT A REWARD BUT A RESPITE",
+          "ord": 9,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:44)",
+                "text": "When they became oblivious to warnings, We showered them with everything they desired. But just as they became prideful of what they were given, We seized them by surprise, then they instantly fell into despair!",
+                "ref_surah": 6,
+                "from_ayah": 44,
+                "to_ayah": 44,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Al-Hasan Al-Basri said, \"Whomever Allah gives provision and he thinks that Allah is not testing him, has no wisdom. Whomever has little provision and thinks that Allah will not look at (provide for) him, has no wisdom.\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "Crisis/difficulties in life should remind us of our sins. However, when we continue to deny/sin then Allah SWT opens all kinds of doors of opportunity, well-being and prosperity for us. Meaning this was the clam before the storm. And then suddenly/unexpectedly punishment seizes us and we were caught with no hope of anything changing again."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Beware when life is running very smoothly."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – This theme links this Surah to the next Surah which is Surah Araf."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "46 – 50 WHO CAN RESTORE YOUR HEARING AND SIGHT IF ALLAH TAKES THEM AWAY? AND RASOOLS NEVER CLAIMED THAT THEY KNOW THE UNSEEN OR THAT THEY ARE ANGELS",
+          "ord": 10,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:46)",
+                "text": "Ask ˹them, O Prophet˺, “Imagine if Allah were to take away your hearing or sight, or seal your hearts—who else other than Allah could restore it?” See ˹O Prophet˺ how We vary the signs, yet they still turn away.",
+                "ref_surah": 6,
+                "from_ayah": 46,
+                "to_ayah": 46,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "If Allah SWT was to take away your hearing and sight literally as well as figuratively (intellect) or sealing of our hearts. Who is able to restore it other than Allah SWT?"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:48)",
+                "text": "We send messengers only to give good news and to warn, so for those who believe and do good deeds there will be no fear, nor will they grieve.",
+                "ref_surah": 6,
+                "from_ayah": 48,
+                "to_ayah": 48,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The basic purpose or mandate of a Prophet is: (i) to give good news (ii) to warn."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:50)",
+                "text": "Say, ˹O Prophet,˺ “I do not say to you that I possess Allah’s treasuries or know the unseen, nor do I claim to be an angel. I only follow what is revealed to me.” Say, “Are those blind ˹to the truth˺ equal to those who can see? Will you not then reflect?”",
+                "ref_surah": 6,
+                "from_ayah": 50,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet never claimed to have knowledge of the unseen, or to be able to perform miracles or be an angel. The Prophet was a human who was given Prophethood."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:51)",
+                "text": "Warn with this ˹Quran˺ those who are awed by the prospect of being gathered before their Lord—when they will have no protector or intercessor besides Him—so perhaps they will be mindful ˹of Him˺.",
+                "ref_surah": 6,
+                "from_ayah": 51,
+                "to_ayah": 51,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "For those who are deeply engrossed in the allures of earthly life such admonitions hardly matter. Likewise, such admonitions have no effect on those who feel that because of their attachment to some holy notable -- who will intercede on their behalf -- they will come to no harm in the Hereafter."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet (PBUH) is asked to attend to people who are susceptible to admonitions and can be expected to reform themselves – thus not waste time on those who constantly deny."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Although people believe in the Afterlife, they also believe that they will be saved by intercession via their Sanit, Pir, etc. This Ayat refutes such erroneous beliefs."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "51 – 55 ADMONISH THE UNBELIEVERS WITH THIS AL-QURAN AND REAL BELIEF IS A FAVOR OF ALLAH AND IS IRRESPECTIVE OF WORLDLY STATUS",
+          "ord": 11,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:52)",
+                "text": "And do not drive away those who invoke their Lord in the morning and the evening, seeking His pleasure all the time. You are by no means accountable for them just as they are by no means accountable for you. If you still drive them away, you will become among the wrong-doers.",
+                "ref_surah": 6,
+                "from_ayah": 52,
+                "to_ayah": 52,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet (PBUH) was the Messenger of Allah SWT but he was also a husband, father, leader of the community (among many different roles)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In a leadership role the Prophet in an attempt to expand his congregation overlooked those who although lower in social/economic status were in constant prayer morning and night."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here Allah SWT tells the Prophet (PBUH) that do not overlook those who are seeking their Lord constantly."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, a person’s Iman is what elevates him/her in the sight of Allah SWT not one’s socio-economic status."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Keep good company as that is what influences you and your choices most."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:54)",
+                "text": "When the believers in Our revelations come to you, say, “Peace be upon you! Your Lord has taken upon Himself to be Merciful. Whoever among you commits evil ignorantly ˹or recklessly˺ then repents afterwards and mends their ways, then Allah is truly All-Forgiving, Most Merciful.”",
+                "ref_surah": 6,
+                "from_ayah": 54,
+                "to_ayah": 54,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Repent and ask Allah SWT for forgiveness often. And do not commit that sin again."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Take the initiative to say “Salam”. And provide good/hopeful/encouraging words."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "56 – 60 ALLAH ALONE HAS THE AUTHORITY OF PASSING JUDGEMENT AND HE ALONE KNOWS THE UNSEEN",
+          "ord": 12,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:57)",
+                "text": "Say, ˹O Prophet,˺ “Indeed, I stand on a clear proof from my Lord—yet you have denied it. That ˹torment˺ you seek to hasten is not within my power. It is only Allah Who decides ˹its time˺. He declares the truth. And He is the Best of Judges.”",
+                "ref_surah": 6,
+                "from_ayah": 57,
+                "to_ayah": 57,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This alludes to God's punishment. The adversaries questioned why it was that they had openly rejected a Prophet sent by God, but had not been struck down by God's wrath? In fact, the Messenger of God and his followers face sufferings and humiliations whereas those who abuse and persecute him enjoy prosperity"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:59)",
+                "text": "With Him are the keys of the unseen—no one knows them except Him. And He knows what is in the land and sea. Not even a leaf falls without His knowledge, nor a grain in the darkness of the earth or anything—green or dry—but is ˹written˺ in a perfect Record.",
+                "ref_surah": 6,
+                "from_ayah": 59,
+                "to_ayah": 59,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Next time a leaf falls then know that this too is not an accident by from Allah SWT. And trust Allah SWT as He is aware and knows all."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "61 – 62 ALLAH HAS APPOINTED GUARDIAN ANGLES OVER YOU",
+          "ord": 13,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:61)",
+                "text": "He reigns supreme over all of His creation, and sends recording-angels, watching over you. When death comes to any of you, Our angels take their soul, never neglecting this duty.",
+                "ref_surah": 6,
+                "from_ayah": 61,
+                "to_ayah": 61,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The angels who guard us at all times and maintain a record of everything, i.e. all our movements, deeds and so on. Till death comes. This record will be opened or revealed on the DoJ. Here we find that a person is never alone."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "63 – 67 ALLAH IS THE ONE WHO DELIVERS YOU FROM THE CALAMITIES",
+          "ord": 14,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:63)",
+                "text": "Say, ˹O Prophet,˺ “Who rescues you from the darkest times on land and at sea? He ˹alone˺ you call upon with humility, openly and secretly: “If You rescue us from this, we will be ever grateful.”",
+                "ref_surah": 6,
+                "from_ayah": 63,
+                "to_ayah": 63,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:64)",
+                "text": "Say, “˹Only˺ Allah rescues you from this and any other distress, yet you associate others with Him ˹in worship˺.”",
+                "ref_surah": 6,
+                "from_ayah": 64,
+                "to_ayah": 64,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT alone possesses all power and authority, and has full control over the things which cause either benefit or harm you. For instance, whenever man is faced with a really hard time, and the resources he normally relies upon fail him, he instinctively turns to God. In spite of such a clear sign, people set up partners to God without any shred of evidence that anyone other than God has any share in His power and authority."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Reflect: Why did this happen to me? All our actions have a direct consequence on our lives. Thus, there is a direct connection between our actions and the circumstances we are in."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "68 – 69 DO NOT SIT WITH THOSE WHO ARGUE ABOUT ALLAH'S REVELATIONS",
+          "ord": 15,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:68)",
+                "text": "And when you come across those who ridicule Our revelations, do not sit with them unless they engage in a different topic. Should Satan make you forget, then once you remember, do not ˹continue to˺ sit with the wrongdoing people.",
+                "ref_surah": 6,
+                "from_ayah": 68,
+                "to_ayah": 68,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Nisa Ayat 140"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Prohibition of Sitting with Those Who Deny and Mock Allah's Ayat"
+                },
+                {
+                  "kind": "prose",
+                  "text": "No one is to sit with those who deny and distort Allah SWT’s Ayat’s then get up and leave. Then join them again after they have changed the subject. Thus, the instruction is not to leave completely but to get up and leave when such conversations take place so that we are not complicit by default. Meaning even if we don’t speak we are a witness to such talk."
+                },
+                {
+                  "kind": "prose",
+                  "text": "He has already revealed to you in the Book that when you hear Allah’s revelations being denied or ridiculed, then do not sit in that company unless they engage in a different topic, or else you will be like them. Surely Allah will gather the hypocrites and disbelievers all together in Hell."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(4:140)"
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "70 DO NOT ASSOCIATE WITH THOSE WHO TAKE THEIR RELIGION AS A MATTER OF AMUSEMENT",
+          "ord": 16,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:70)",
+                "text": "And leave those who take this faith ˹of Islam˺ as mere play and amusement and are deluded by ˹their˺ worldly life. Yet remind them by this ˹Quran˺, so no one should be ruined for their misdeeds. They will have no protector or intercessor other than Allah. Even if they were to offer every ˹possible˺ ransom, none will be accepted from them. Those are the ones who will be ruined for their misdeeds. They will have a boiling drink and painful punishment for their disbelief.",
+                "ref_surah": 6,
+                "from_ayah": 70,
+                "to_ayah": 70,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Ayat commands us to leave or ignore those who take Islam lightly, playfully. Meaning when the subject of religion comes up, they provide anecdotes, stories, light hearted humor to discuss and contradict what is said. However, in worldly life they are very serious about their businesses, jobs, money etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Remind them of the Quran that they have no protector or intercessor other than Allah SWT but only if they are willing to listen and not continue with their stubborn/obstinate attitude."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "71 – 73 BELIEVERS ARE COMMANDED TO BECOME MUSLIMS, TO ESTABLISH SALAH AND TO FEAR ALLAH ALONE",
+          "ord": 17,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:71)",
+                "text": "Ask ˹them, O Prophet˺, “Should we invoke, other than Allah, those ˹idols˺ which cannot benefit or harm us, and turn back to disbelief after Allah has guided us? ˹If we do so, we will be˺ like those disoriented by devils in the wilderness, while their companions call them to guidance, ˹saying˺, ‘Come to us!’ Say, ˹O Prophet,˺ “Allah’s guidance is the ˹only˺ true guidance. And we are commanded to submit to the Lord of all worlds,",
+                "ref_surah": 6,
+                "from_ayah": 71,
+                "to_ayah": 71,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:72)",
+                "text": "establish prayer, and be mindful of Him. To Him you will all be gathered together.",
+                "ref_surah": 6,
+                "from_ayah": 72,
+                "to_ayah": 72,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Command for Tauhid, Prayer and Taqwa."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: If the whole world got together to try to harm you or do you good it will not happen unless Allah SWT willed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "What does La Haula Wala Quwwata Illa Billah mean?"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The meaning of this phrase, La hawla wa la quwwata illa Billah, there is no power and no strength except with Allah, is a person's admission that he is unable to do anything without the help and support of Allah. Have complete belief in this phrase."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "74 – 79 IBRAHIM LEARNED FAITH THROUGH THE STUDY OF NATURE WITH HIS COMMON SENSE",
+          "ord": 18,
+          "ayah_units": [],
+          "intro": [
+            "Story of Ibrahim (PBUH) who encouraged his nation to reflect on nature so as to gain an understanding of who our Creator, Sustainer and Provider is -- Allah SWT only and solely.",
+            "Ibrahim (PBUH) is called Hanifa meaning the one who is fully focused, unwavering in his belief.",
+            "Thus, the importance of Tauhid is emphasized."
+          ]
+        },
+        {
+          "title": "80 – 82 ARGUMENTS OF MUSHRIKIN WITH IBRAHIM ABOUT ALLAH",
+          "ord": 19,
+          "ayah_units": [],
+          "intro": [
+            "Ibrahim (PBUH) stated that he was not afraid of the inanimate objects that could do him no harm – unless Allah SWT willed."
+          ]
+        },
+        {
+          "title": "83 – 90 DESCENDANTS OF PROPHET IBRAHIM INCLUDING MUSA, ISA AND MUHAMMAD, NONE OF THEM WERE MUSHRIKIN",
+          "ord": 20,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:84)",
+                "text": "And We bestowed upon Abraham (offspring) Ishaq (Isaac) and Ya'qub (Jacob) and each of them did We guide to the right way as We had earlier guided Noah to the right way; and (of his descendants We guided) Da''ud (David) and Sulayman (Solomon), Ayyub (Job), Yusuf (Joseph), Musa (Moses) and Harun (Aaron). Thus, do We reward those who do good.",
+                "ref_surah": 6,
+                "from_ayah": 84,
+                "to_ayah": 84,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Ibrahim Receives the News of Ishaq and Ya`qub During His Old Age\nAllah SWT states that after Ibrahim became old and his wife, Sarah had lost hope of having children, then Allah SWT gave them a son “Ishaq”. The angels came to Ibrahim on their way to the people of Prophet Lut (to destroy them) and they delivered the good news of a child to Ibrahim and his wife. Ibrahim's wife was amazed at the news,"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was a reward for Ibrahim who left his people and migrated from their land so that he could worship Allah alone. Allah compensated Ibrahim with better than his people and tribe when He gave him righteous children of his own, who would follow his religion, so that his eyes would be comforted by them."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When we leave something bad or some sin for Allah SWT then Allah replaces it with good/khair. So never fear when migrating or leaving riba etc."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:85)",
+                "text": "(And of his descendants We guided) Zakariya (Zachariah), Yahya (John), Isa (Jesus) and Ilyas (Elias): each one of them was of the righteous.",
+                "ref_surah": 6,
+                "from_ayah": 85,
+                "to_ayah": 85,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:86)",
+                "text": "(And of his descendants We guided) Isma''il (Ishmael), al-Yasa'' (Elisha), Yunus (Jonah), and Lut (Lot). And each one of them We favoured over all mankind.",
+                "ref_surah": 6,
+                "from_ayah": 86,
+                "to_ayah": 86,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:87)",
+                "text": "And also some of their forefathers, their offspring, and their brothers: We chose them and guided them on a straight path.",
+                "ref_surah": 6,
+                "from_ayah": 87,
+                "to_ayah": 87,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:88)",
+                "text": "This is Allah’s guidance with which He guides whoever He wills of His servants. Had they associated others with Him ˹in worship˺, their ˹good˺ deeds would have been wasted.",
+                "ref_surah": 6,
+                "from_ayah": 88,
+                "to_ayah": 88,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Had the Prophets not shunned polytheism and adhered to their exclusive and unadulterated devotion to God, they would certainly neither have had the honour of becoming the source of light and guidance to others nor of assuming the leadership of the pious and the God-fearing."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Take an example from the Prophets. Learn about their lives, ways, actions. 17 Prophets have been mentioned in this Surah."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "91 ALLAH IS THE ONE WHO REVEALED THE TAURAT AND AL-QURAN",
+          "ord": 21,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:91)",
+                "text": "And they have not shown Allah His proper reverence when they said, “Allah has revealed nothing to any human being.” Say, ˹O Prophet,˺ “Who then revealed the Book brought forth by Moses as a light and guidance for people, which you split into separate sheets—revealing some and hiding much? You have been taught ˹through this Quran˺ what neither you nor your forefathers knew.” Say, ˹O Prophet,˺ “Allah ˹revealed it˺!” Then leave them to amuse themselves with falsehood.",
+                "ref_surah": 6,
+                "from_ayah": 91,
+                "to_ayah": 91,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Since the Prophet (PBUH) had asserted that he was a Prophet and that a Book had been revealed to him, the unbelieving Quraysh and other polytheists of Arabia asked the Jews and the Christians - who believed in the Prophets and in the Scriptures – re: what had been revealed to Muhammad (PBUH)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "One might wonder how a Jew, who believes in the Torah as a revealed Book of God, could say that God had revealed nothing to anyone. At times stubbornness and bigotry cause people to resort to arguments which strike at the roots of their own belief. These people were bent upon denying the prophethood of Muhammad (peace be on him), and this fanaticism had come to dominate them so much that they went so far as to deny the very institution of prophethood."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Whoever says that God did not reveal knowledge of Reality and the code for man's guidance has committed a grave sin and injustice."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "92 – 94 THOSE WHO INVENT A LIE AGAINST ALLAH WILL FACE A DISGRACEFUL PUNISHMENT",
+          "ord": 22,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:93)",
+                "text": "Who could be more wicked than someone who invents a lie against God, or claims, ‘A revelation has come to me,’ when no revelation has been sent to him, or says, ‘I too can reveal something equal to God’s revelation’? If you could only see the wicked in their death agonies, as the angels stretch out their hands [to them], saying, ‘Give up your souls. Today you will be repaid with a humiliating punishment for saying false things about God and for arrogantly rejecting His revelations.’",
+                "ref_surah": 6,
+                "from_ayah": 93,
+                "to_ayah": 93,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "None is Worse Than One who Invents a Lie Against Allah and Claims that Revelation Came to Him and their’s will be an agonizing/painful death"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:94)",
+                "text": "˹Today˺ you have come back to Us all alone as We created you the first time—leaving behind everything We have provided you with. We do not see your intercessors with you—those you claimed were Allah’s partners ˹in worship˺. All your ties have been broken and all your claims have let you down.”",
+                "ref_surah": 6,
+                "from_ayah": 94,
+                "to_ayah": 94,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Again, the theme of intercessors is being mentioned. Thus, the importance of Tauhid and the complete nullification of shirk."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "95 – 100 EXAMPLES FROM ALLAH'S CREATION ARE CLEARLY SPELLED OUT FOR THE UNDERSTANDING OF MANKIND",
+          "ord": 23,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Examples of Allah SWT creation/signs include:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of a seed silting open and sprouting underground into a plant."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of a seamless and unending cycle of day and night."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of the sun, moon and stars. Used as guides for travel as well as many other things."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of the origination of the human race with all its diversity and the various stages of human life."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of rain."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The miracle of fruits including, dates, gardens of vine, olives and pomegranate."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:100)",
+                "text": "Yet they associate the jinn with Allah ˹in worship˺, even though He created them, and they falsely attribute to Him sons and daughters out of ignorance. Glorified and Exalted is He above what they claim!",
+                "ref_surah": 6,
+                "from_ayah": 100,
+                "to_ayah": 100,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Man's imagination and superstitious disposition, have often led to associations with God in His governance of the universe, for example, the deity of rain, and the deity of vegetation, the god of wealth and the god of health, and so on. Such beliefs are found among all the polytheistic nations of the world."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The ignorant Arabs considered angels to be the daughters of God. In the same way, other polytheistic nations wove a network of blood relationships with God, producing thereby a whole crop of gods and goddesses descended from the Creator."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Again, a complete negation of Shirk!"
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "101 – 107 HOW COULD ALLAH HAVE A SON WITHOUT A SPOUSE? AND CLEAR PROOFS HAVE COME TO YOU IF ONLY YOU COULD CARE TO UNDERSTAND",
+          "ord": 24,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:101)",
+                "text": "˹He is˺ the Originator of the heavens and earth. How could He have children when He has no mate? He created all things and has ˹perfect˺ knowledge of everything.",
+                "ref_surah": 6,
+                "from_ayah": 101,
+                "to_ayah": 101,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah said; بَدِيعُ السَّمَاوَاتِ وَالَارْضِ Meaning of Badi. Allah SWT is the Badi` of the heavens and the earth, meaning He originated, created, invented and brought them into existence -- without any precedence."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is where the word for innovation - Bid`ah - comes from it, because it is something that did not have a precedence."
+                },
+                {
+                  "kind": "prose",
+                  "text": "How can He have children when He has no wife! A child is the offspring of two compatible spouses. Allah SWT does not have an equal, none of His creatures are similar to Him, for He alone created the entire creation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah Maryam Ayat 88 to 90. Allah SWT gets very angry here."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:102)",
+                "text": "That is Allah—your Lord! There is no god ˹worthy of worship˺ except Him. ˹He is˺ the Creator of all things, so worship Him ˹alone˺. And He is the Maintainer of everything.",
+                "ref_surah": 6,
+                "from_ayah": 102,
+                "to_ayah": 102,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT’s encourages his servants to get to know him via His attributes and not make up your own description of what or who you think Allah SWT i.e. someone who has a wife, son, daughters etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah is Your Lord:  Who created everything and has neither a son nor a wife.\nNone has the right to be worshipped but He, the Creator of all things. So, worship Him.\nAlone without partners, and attest to His Oneness, affirming that there is no deity worthy of worship except Him. Allah has neither descendants, nor ascendants, wife, equal or rival.\nAnd He is the Guardian over all things meaning, Trustee, Watcher and Disposer of affairs for all things in existence, giving them provisions and protection by day and night."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Recognize your Raab via the attributes and traits He has given for Himself. This will increase your love and fear for your Raab."
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        },
+        {
+          "title": "108 – 110 DO NOT INSULT THE DEITIES TO WHOM THE MUSHRIKIN OFFER THEIR WORSHIP AND GUIDANCE DEPEND ON THE ATTITUDE OF INDIVIDUALS",
+          "ord": 25,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:108)",
+                "text": "˹O believers!˺ Do not insult what they invoke besides Allah or they will insult Allah spitefully out of ignorance. This is how We have made each people’s deeds appealing to them. Then to their Lord is their return, and He will inform them of what they used to do.",
+                "ref_surah": 6,
+                "from_ayah": 108,
+                "to_ayah": 108,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: “They [the idolaters] said: ‘O Muhammad, either you stop insulting our idols or we will insult your Lord’."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And so, Allah SWT revealed this Ayat warning Believers against disparaging their idols lest they wrongfully berate Allah SWT in ignorance”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet (PBUH) and his followers are admonished and not allowed to let their discussions lead them to be offensive to the beliefs of non-Muslims or to abuse their religious leaders and deities. Because then in retaliation the disbelievers will curse your Raab. And far from bringing people closer to the Truth, such an attitude is likely to alienate them from it further."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Basic but often overlooked phycology lesson that we must all heed not only while discussing religion but generally in life."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:109)",
+                "text": "They swear by God with their most solemn oaths that if a miraculous sign came to them they would believe in it. Say [Prophet], ‘Signs are in the power of God alone.’ What will make you [believers] realize that even if a sign came to them they still would not believe?",
+                "ref_surah": 6,
+                "from_ayah": 109,
+                "to_ayah": 109,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Again, the argument by the disbelievers to the Prophet that bring us a sign or miracle so that we can believe. Whereas, If someone wanted to believe then the birth of a child, a death, a fruit, these are all miracles from Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(6:110)",
+                "text": "We turn their hearts and eyes away ˹from the truth˺ as they refused to believe at first, leaving them to wander blindly in their defiance.",
+                "ref_surah": 6,
+                "from_ayah": 110,
+                "to_ayah": 110,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Important concept to understand. Example is our body, if we don’t use our limbs, they begin to atrophy, if we put a blind fold on our eyes for a while, we might lose our sight. Similarly, we are given the gift of fitra to recognize the truth but if we constantly refuse to accept then that gift is taken away and this is termed as the ‘sealing of the heart.’ May Allah SWT protect us from such a disastrous fate. Allah SWT has sealed up their eyes, hearing, intellect to Iman. This is the point of no return where no retraction is possible."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT makes easy for us all that we desire or strive towards. Remember any opportunity to do good comes but a few times so grab that opportunity and never refuse khair!"
+                }
+              ],
+              "extras": []
+            }
+          ],
+          "intro": []
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "TAUHID AND THE NEGATION OF SHIRK."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:1) All praise is for Allah alone, Who created the heavens and the earth, and brought into being light and darkness, and yet those who have rejected the call of the Truth ascribe others to be equals to their Lord."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:19) Ask ˹them, O Prophet˺, “Who is the best witness?” Say, “Allah is! He is a Witness between me and you. And this Quran has been revealed to me so that, with it, I may warn you and whoever it reaches. Do you ˹pagans˺ testify that there are other gods besides Allah?” ˹Then˺ say, “I will never testify ˹to this˺!” ˹And˺ say, “There is only One God. And I totally reject whatever ˹idols˺ you associate with Him.”"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:59) With Him are the keys of the unseen—no one knows them except Him. And He knows what is in the land and sea. Not even a leaf falls without His knowledge, nor a grain in the darkness of the earth or anything—green or dry—but is ˹written˺ in a perfect Record."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:71) Ask ˹them, O Prophet˺, “Should we invoke, other than Allah, those ˹idols˺ which cannot benefit or harm us, and turn back to disbelief after Allah has guided us? ˹If we do so, we will be˺ like those disoriented by devils in the wilderness, while their companions call them to guidance, ˹saying˺, ‘Come to us!’ Say, ˹O Prophet,˺ “Allah’s guidance is the ˹only˺ true guidance. And we are commanded to submit to the Lord of all worlds,"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:72) establish prayer, and be mindful of Him. To Him you will all be gathered together."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:94) ˹Today˺ you have come back to Us all alone as We created you the first time—leaving behind everything We have provided you with. We do not see your intercessors with you—those you claimed were Allah’s partners ˹in worship˺. All your ties have been broken and all your claims have let you down.”"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:101) ˹He is˺ the Originator of the heavens and earth. How could He have children when He has no mate? He created all things and has ˹perfect˺ knowledge of everything."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:102) That is Allah—your Lord! There is no god ˹worthy of worship˺ except Him. ˹He is˺ the Creator of all things, so worship Him ˹alone˺. And He is the Maintainer of everything."
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF TRUE AND ULTIMATE SUCCESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:16) Whoever is spared the torment of that Day will have certainly been shown Allah’s mercy. And that is the absolute triumph."
+            },
+            {
+              "kind": "prose",
+              "text": "Being Spared the Day of Torment. Those are the ones that Allah SWT has truly shown mercy towards."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:48) We send messengers only to give good news and to warn, so for those who believe and do good deeds there will be no fear, nor will they grieve."
+            },
+            {
+              "kind": "heading",
+              "text": "IMAN + GOOD DEEDS = SUCCESS"
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF FAILURE"
+            },
+            {
+              "kind": "heading",
+              "text": "THOSE WHO INVENT/FABRICATE A LIE AGAINST ALLAH WILL FACE A DISGRACEFUL PUNISHMENT"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:21) Who does more wrong than those who fabricate lies against Allah or deny His signs? Indeed, the wrongdoers will never succeed."
+            },
+            {
+              "kind": "prose",
+              "text": "(i) Anyone who makes up a lie against Allah SWT and (ii) denies His signs/proofs/evidences."
+            },
+            {
+              "kind": "heading",
+              "text": "2 HUGE CRIMES."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:93) Who could be more wicked than someone who invents a lie against God, or claims, ‘A revelation has come to me,’ when no revelation has been sent to him, or says, ‘I too can reveal something equal to God’s revelation’? If you could only see the wicked in their death agonies, as the angels stretch out their hands [to them], saying, ‘Give up your souls. Today you will be repaid with a humiliating punishment for saying false things about God and for arrogantly rejecting His revelations."
+            },
+            {
+              "kind": "heading",
+              "text": "PROSPERITY IN THIS WORLD IS NOT A REWARD BUT A RESPITE"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:44) When they became oblivious to warnings, We showered them with everything they desired. But just as they became prideful of what they were given, We seized them by surprise, then they instantly fell into despair!"
+            },
+            {
+              "kind": "heading",
+              "text": "REPENT AND ASK ALLAH SWT FOR FORGIVENESS OFTEN."
+            },
+            {
+              "kind": "translation",
+              "text": "(6:54) When the believers in Our revelations come to you, say, “Peace be upon you! Your Lord has taken upon Himself to be Merciful. Whoever among you commits evil ignorantly ˹or recklessly˺ then repents afterwards and mends their ways, then Allah is truly All-Forgiving, Most Merciful.”"
+            },
+            {
+              "kind": "heading",
+              "text": "ALLAH HAS APPOINTED GUARDIAN ANGLES OVER YOU"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:61) He reigns supreme over all of His creation, and sends recording-angels, watching over you. When death comes to any of you, Our angels take their soul, never neglecting this duty."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION OF ASSOCIATING WITH THOSE WHO DENY AND MOCK ALLAH'S AYAT"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:68) And when you come across those who ridicule Our revelations, do not sit with them unless they engage in a different topic. Should Satan make you forget, then once you remember, do not ˹continue to˺ sit with the wrongdoing people."
+            },
+            {
+              "kind": "prose",
+              "text": "Also see Surah Nisa Ayat 140"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:70) And leave those who take this faith ˹of Islam˺ as mere play and amusement and are deluded by ˹their˺ worldly life. Yet remind them by this ˹Quran˺, so no one should be ruined for their misdeeds. They will have no protector or intercessor other than Allah. Even if they were to offer every ˹possible˺ ransom, none will be accepted from them. Those are the ones who will be ruined for their misdeeds. They will have a boiling drink and painful punishment for their disbelief."
+            },
+            {
+              "kind": "heading",
+              "text": "DO NOT INSULT THE DEITIES TO WHOM THE MUSHRIKIN OFFER THEIR WORSHIP AND GUIDANCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(6:108) ˹O believers!˺ Do not insult what they invoke besides Allah or they will insult Allah spitefully out of ignorance. This is how We have made each people’s deeds appealing to them. Then to their Lord is their return, and He will inform them of what they used to do."
+            },
+            {
+              "kind": "prose",
+              "text": "Lesson: Basic but often overlooked key principle that we must all abide by not only while discussing religion but generally in life, for example, do not insult anyone’s parents if you do not want your parents insulted."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 - JUZ 7 - Surah 5 Al Maidah.docx",
+      "location": "(5:82)",
+      "description": "boundary mismatch: CP states Al Ma'idah (5:83 till 5:120), but the body's first unit is (5:82) (section title '82-86 CHRISTIANS RECOGNIZE THE TRUTH...'); 5:82 is captured outside the CP range. 5:83 is also quoted. CP's from_ayah (83) is inside the body but one captured ayah sits below it.",
+      "severity": "high"
+    },
+    {
+      "id": "a2",
+      "file": "3 - Juz 7 - The cattle surah 6.docx",
+      "location": "section-title index (List Paragraph block)",
+      "description": "index vs body mismatch: the section-title index lists 40 titles, but this juz-7 chunk only bodies 25 of them (up to '108-110'); the remaining 15 titles cover 6:116-165, i.e. the continuation chunk in Juz 8. Per §2 rule 10 the index block is stored in part.extras; the unrepeated titles are not anomalies of selection but of chunking.",
+      "severity": "low"
+    },
+    {
+      "id": "a3",
+      "file": "2 - JUZ 7 - Surah 5 Al Maidah.docx",
+      "location": "sections '94-96' and '108-109'",
+      "description": "sections with no numbered ayah: '94-96 PROHIBITION OF HUNTING...' and '108-109 LAST WILL AND TESTAMENT...' contain a bold sub-heading plus a Lesson/FYI prose paragraph but no (s:a) translation. Since Section.intro is prose-only, the mixed preamble is held in a translation-less preamble AyahUnit (translation=null) so the heading/lesson kinds survive.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "3 - Juz 7 - The cattle surah 6.docx",
+      "location": "section '19-20' unit (6:8)",
+      "description": "duplicate restatement: 6:8 is quoted again inside the 6:19 block as an illustrative cross-reference. Captured as its own ayah unit in document order (lossless); coverage counts distinct refs so it does not affect the range.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "3 - Juz 7 - The cattle surah 6.docx",
+      "location": "section '68-69', (4:140)",
+      "description": "cross-surah quote: the 4:140 translation is printed in the source, with the bare ref '(4:140)' on the following line. Per §2 rule 6 it is stored as a commentary cross_ref, not an ayah unit, so it does not enter the coverage map.",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - JUZ 7 - Surah 5 Al Maidah.docx",
+      "location": "MY KEY TAKEAWAYS",
+      "description": "short recap: the Al Ma'idah recap ('MY KEY TAKEAWAYS') contains a single bold item ('Definition of Success') and no repeated (s:a) translations, unlike the Al-An'am recap. Recorded as-is.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "3 - Juz 7 - The cattle surah 6.docx",
+      "location": "front matter",
+      "description": "unknown-label front matter: bold labels 'Subject: Islamic Creed.', 'The Background of Makki Surahs', 'Makki Surah's', 'Introduction to sections:' do not match the known labels (Name/Period of Revelation/Subject and Topics/Historical Background/Theme and Subject Matter). Captured verbatim as LabeledUnits; 'Subject: Islamic Creed.' carries its value on the same line and 'Introduction to sections:' has empty text (its content is the section-title index in part.extras).",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - JUZ 7 - Surah 5 Al Maidah.docx",
+      "location": "section title vs quoted ayat",
+      "description": "section-title ranges are indicative, not exhaustive: e.g. '90-93' quotes only 5:90-91; '101 – 104' also quotes 5:105; '116 – 120' quotes 5:116,119,120. Interior gaps are the author's selection and are NOT anomalies (recorded for format revision only).",
+      "severity": "low"
+    }
+  ]
+}

@@ -148,7 +148,7 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
    Styling follows demos 06/07: the surah name is set like their h1, section
    headings like their h2.section, the juz banner like their juz-band. Only the
    look is ours — the wording and order are the author's. */
-.doc + .doc{margin-top:96px;padding-top:56px;border-top:1px solid var(--rule)}
+.doc + .doc{margin-top:72px;padding-top:32px;border-top:1px solid var(--rule)}
 .doc-source{font-family:var(--f-ui);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
             color:var(--ink-soft);margin:0 0 26px}
 .doc-juz{margin:72px 0 34px;padding:20px 0 16px;text-align:center;
@@ -160,12 +160,20 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .doc-surah{font-weight:400;font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.015em;
            margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--rule)}
 .doc-heading{font-size:15.5px;font-weight:600;letter-spacing:.04em;margin:44px 0 12px;color:var(--ink)}
-.doc-list{margin:0 0 26px;padding-left:26px}
+/* authors stack two headings back to back; keep the run from reading as a
+   blank line between them */
+.doc-heading + .doc-heading{margin-top:20px}
+.doc-list{margin:0 0 18px;padding-left:26px}
 .doc-list li{margin:0 0 8px;font-size:19px;color:#3a332a}
 .doc-list li::marker{color:var(--accent-soft)}
+/* paragraphs carry the author's own line breaks (column sketches, verse
+   groupings); keep them instead of collapsing the block into one run-on line */
+.doc p,.doc-list li,.doc-table td,.doc h1,.doc h2,.doc h3{white-space:pre-wrap}
 .doc p:not(.ar):not(.translation){margin:0 0 18px;color:#3a332a}
-.doc .ar{margin:26px 0;color:var(--emerald)}
-.doc .translation{font-size:20px;margin:0 0 22px;color:var(--ink)}
+/* verse text and its translation keep the same 18px rhythm as prose (the
+   global .ar margin applies) and the body font size, so the reading column
+   does not mix 19px prose with 20px translations */
+.doc .translation{margin:0 0 18px;color:var(--ink);font-size:19px}
 .doc .section:first-child{margin-top:0}
 /* tables the author wrote are rendered as tables */
 .doc-table-wrap{margin:34px 0;overflow-x:auto}
