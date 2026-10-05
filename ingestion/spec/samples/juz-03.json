@@ -1,0 +1,2385 @@
+{
+  "juz": {
+    "number": 3,
+    "folder": "Juz 3",
+    "arabic_header": "تِلْكَ ٱلْرُّسُلُ",
+    "arabic_header_translit": "Tilka ’r-Rusulu",
+    "arabic_header_meaning": "\"These are the Messengers\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 3\nتِلْكَ ٱلْرُّسُلُ\nTilka ’r-Rusulu\n\"These are the Messengers\"\nSurah 2 – Al-baqara\n(253: Till 2:286)\nSurah 3 – Al-Imran \n(3:1 till 3:91)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 2,
+        "name_en": "Al-baqara",
+        "from_ayah": 253,
+        "to_ayah": 286
+      },
+      {
+        "surah_number": 3,
+        "name_en": "Al-Imran",
+        "from_ayah": 1,
+        "to_ayah": 91
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "check": "FORMAT.md section 3",
+    "result": "fail",
+    "details": {
+      "captured_ayah_refs": {
+        "2": [
+          253,
+          254,
+          255,
+          256,
+          261,
+          262,
+          263,
+          264,
+          265,
+          267,
+          268,
+          271,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          281,
+          282,
+          285,
+          286
+        ],
+        "3": [
+          3,
+          7,
+          8,
+          14,
+          17,
+          19,
+          26,
+          28,
+          34,
+          35,
+          36,
+          37,
+          38,
+          43,
+          45,
+          46,
+          48,
+          49,
+          54,
+          55,
+          57,
+          59,
+          60,
+          62,
+          65,
+          67,
+          72,
+          75,
+          78,
+          79,
+          84,
+          85,
+          86,
+          87,
+          90
+        ]
+      },
+      "captured_outside_cp_range": [
+        {
+          "part": 3,
+          "ref": "(2:1)"
+        }
+      ],
+      "boundary_mismatches": [
+        {
+          "surah": 3,
+          "cp": [
+            1,
+            91
+          ],
+          "first_captured": 3,
+          "last_captured": 90,
+          "ok": false
+        }
+      ],
+      "boundary_all": [
+        {
+          "surah": 2,
+          "cp": [
+            253,
+            286
+          ],
+          "first_captured": 253,
+          "last_captured": 286,
+          "ok": true
+        },
+        {
+          "surah": 3,
+          "cp": [
+            1,
+            91
+          ],
+          "first_captured": 3,
+          "last_captured": 90,
+          "ok": false
+        }
+      ],
+      "parts_vs_cp_ranges": "part ranges set equal to the CP ranges (2:253-286, 3:1-91)",
+      "cp_surahs_all_have_parts": true,
+      "part_surahs_all_in_cp": true,
+      "note": "Surah 2 boundary passes (first captured 253, last captured 286). Surah 3 fails both boundaries: the body never quotes 3:1 (its first line is mislabelled '(2:1)') and never quotes 3:91 (last captured 3:90). Interior gaps are the author's selection and are NOT anomalies. Cross-surah material (e.g. 2:1 typo) is handled as an anomaly, not counted into the CP range."
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 2,
+      "name_en": "AL BAQARA (THE COW)",
+      "from_ayah": 253,
+      "to_ayah": 286,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - JUZ 3 Surah Baqara end.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 3",
+      "extras": [
+        {
+          "kind": "stray",
+          "text": "(Cont.)"
+        },
+        {
+          "kind": "section_index_intro",
+          "text": "Introduction to the sections:"
+        },
+        {
+          "kind": "section_index",
+          "text": "RANKS OF RASOOLS (253)\nSPENDING IN CHARITY (254)\nALLAH'S ATTRIBUTES AND \"AYAT-AL-KURSI\" (255)\nTHERE IS NO COMPULSION IN RELIGION AND WALI OF ALLAH VS WALI OF SHAITAN (256-257)\nCONFRONTATION OF IBRAHIM AND NAMRUD (258)\nEXAMPLE OF BRINGING DEAD TO LIFE (259)\nIBRAHIM'S QUESTION OF LIFE AFTER DEATH (260)\nPARABLE OF SPENDING IN CHARITY (261-263)\nWHAT MAKES CHARITY WORTHLESS (264)\nCHARITY VS SHOWING OFF (265-266)\nSPEND THE BEST PORTION OF YOUR WEALTH AND ALLAH'S PROMISE VS SHAITAN'S PROMISE (267-269)\nGIVING CHARITY IN PUBLIC AND PRIVATE AND WHO IS ELIGIBLE FOR CHARITY (270-273)\nREWARD FOR CHARITY (274)\nPROHIBITION OF USURY (275-276)\nTAKING USURY IS LIKE DECLARING WAR AGAINST ALLAH AND HIS RASOOL (277-281)\nALL BUSINESS DEALINGS MUST BE IN WRITING & WITNESSES ARE REQUIRED IN ALL MAJOR BUSINESS TRANSACTIONS (282)\nIF WRITING IS NOT POSSIBLE, TAKE A SECURITY DEPOSIT (283)\nALLAH WILL CALL TO ACCOUNT (284)\nTRUE BELIEF OF PROPHETS AND MUSLIMS AND BELIEVER'S SUPPLICATION (285-286)"
+        }
+      ],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "RANKS OF RASOOLS (253)",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(253)",
+                "text": "We favoured some of these messengers above others. God spoke to some; others He raised in rank; We gave Jesus, son of Mary, Our clear signs and strengthened him with the holy spirit. If God had so willed, their successors would not have fought each other after they had been brought clear signs. But they disagreed: some believed and some disbelieved. If God had so willed, they would not have fought each other, but God does what He will.",
+                "ref_surah": 2,
+                "from_ayah": 253,
+                "to_ayah": 253,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Allah SWT Honored Some Prophets Above Others"
+                },
+                {
+                  "kind": "prose",
+                  "text": "It is not up to us to decide which Prophet is better, for this is Allah SWT's decision. The creation is only required to submit to, obey and believe in Allah's decision. Belief in all Prophets in essential."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SPENDING IN CHARITY (254)",
+          "ord": 2,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(254)",
+                "text": "O Believers, spend of the wealth We have bestowed upon you (in Our way) before the Day comes when there shall be no buying and no selling: when neither friendship nor intercession will be of any avail. Those, who adopt the way of disbelief are indeed the wrongdoers. ''",
+                "ref_surah": 2,
+                "from_ayah": 254,
+                "to_ayah": 254,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Command to spend from what Allah SWT’s has given you. The instruction given here is that those who have adopted the cause of the true faith should undertake financial sacrifices for its sake."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S ATTRIBUTES AND \"AYAT-AL-KURSI\" (255)",
+          "ord": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(255)",
+                "text": "Ayat Al-Kursi has Ten Complete Arabic Sentences/Statements:\n\n1. Allah's statement:\nاللّهُ لَا إِلَـهَ إِلاَّ هُوَ\nAllah! None has the right to be worshipped but He,\nMentions that Allah is the One and Only Lord of all creation.\n\n2. Allah's statement:\nالْحَيُّ الْقَيُّومُ\nAl-Hayyul-Qayyum,\nTestifies that Allah is the Ever Living, Who never dies, Who sustains everyone and everything. All creation stands in need of Allah SWT and totally relies on Him, while He is the Most Rich, Who stands in need of nothing & no one.",
+                "ref_surah": 2,
+                "from_ayah": 255,
+                "to_ayah": 255,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: These two names of Allah SWT are so powerful that whoever makes dua with these names then it will be accepted. \n\n3. Allah's statement:\nلَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ\nNeither slumber nor sleep overtakes Him:\nMeans, no shortcoming, unawareness or ignorance ever touches Allah SWT. Rather, He is aware of, and controls what every soul earns, has perfect watch over everything, nothing escapes His knowledge, and no secret matter is secret to Him.\nAmong His perfect attributes, is the fact that He is never affected by slumber or sleep. Therefore, Allah's statement, \nلَا تَأْخُذُهُ سِنَةٌ\n(Neither slumber overtakes Him) indicates that no unawareness due to slumber ever overtakes Allah.\nAllah said afterwards, \nوَلَا نَوْمٌ\n(nor sleep), which is stronger than slumber.\n\n4. Allah's statement:\nلَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الَارْضِ\nTo Him belongs whatever is in the heavens and whatever is on the earth,\nIndicates that everyone is a servant for Allah SWT, a part of His kingdom and under His power and authority.\n\n5. Allah's statement, \nمَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ\nWho is he that can intercede with Him except with His permission,\nThese Ayat assert Allah's greatness, pride, and grace, and that no one dares to intercede with Him on behalf of anyone else, except by His permission.\n\n6. Allah's statement, \nيَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ\nHe knows what happens to them (His creatures) in this world, and what will happen to them in the Hereafter,\nThis refers to His perfect knowledge of all creation; its past, present and future."
+                },
+                {
+                  "kind": "prose",
+                  "text": "7. Allah's statement, \nوَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء\nAnd they will never compass anything of His Knowledge except that which He wills,\nAsserts the fact that no one attains any part of Allah's knowledge except what Allah conveys and allows."
+                },
+                {
+                  "kind": "prose",
+                  "text": "8. Allah's statement, \nوَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالَارْضَ\nHis Kursi extends over the heavens and the earth."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: Waki narrated in his Tafsir that Ibn Abbas said, \"Kursi is the footstool, to (Allah's) Throne. If the seven heavens and the seven earths were flattened and laid side by side, they would add up to the size of a ring in a desert, compared to the Kursi.\""
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Understand our worth and value. Pride does not befit us (mankind).\n\n9. Allah's statement, \nوَلَا يَوُودُهُ حِفْظُهُمَا\nAnd He feels no fatigue in guarding and preserving them,\nMeaning, it does not burden or cause Him fatigue to protect the heavens and earth and all that is in between them. Rather, this is an easy matter for Him.\n\n10. Allah's statement, \nوَهُوَ الْعَلِيُّ الْعَظِيمُ\nAnd He is the Most High, the Most Great."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THERE IS NO COMPULSION IN RELIGION (256)",
+          "ord": 4,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(256)",
+                "text": "There is no compulsion and coercion in regard to religion. The right thing has been made distinct from the wrong thing: now whoever rejects taghut and believes in Allah has taken a firm support that never gives way.",
+                "ref_surah": 2,
+                "from_ayah": 256,
+                "to_ayah": 256,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has given mankind the freedom of choice to decide and He does not force anyone to believe."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PARABLE OF SPENDING IN CHARITY (261)",
+          "ord": 5,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "مَثَلُ الَّذِيۡنَ يُنۡفِقُوۡنَ اَمۡوَالَهُمۡ فِىۡ سَبِيۡلِ اللّٰهِ...."
+              ],
+              "translation": {
+                "ref": "(261)",
+                "text": "Those who spend their wealth in God’s cause are like grains of corn that produce seven ears, each bearing a hundred grains. God gives multiple increase to whoever He wishes: He is limitless and all knowing.",
+                "ref_surah": 2,
+                "from_ayah": 261,
+                "to_ayah": 261,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Important to note that there are several ways to spend in the cause or way Allah SWT, for example, distributing food to the needy, giving to orphans and close relatives, charity (sadaqa), zakat (all mentioned in Surah Baqara thus far)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Within all these terminologies and perimeters there are basically two main avenues of spending in the way of Allah SWT to gain His love; (i) one is spending on the community at large including; close relatives, widows, needy, orphans etc., and (ii) spending specifically via one’s time, energy and money to make the word of God reign supreme."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here the latter is mentioned which is spending to perpetuate Islam via strengthening institutions of Islamic teaching, inviting people to deen (dawa), etc. This is what is meant in this Ayat by  فِىۡ سَبِيۡلِ اللّٰهِ."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Parable of those who give in the way of Allah SWT is like a single seed (one deed) that eventually reaps infinite amounts of grains (unlimited reward). Additionally, what is hinted here is that the reward for giving in the path of Allah SWT is realized in this world as well as the next, in sha Allah."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WHAT MAKES CHARITY WORTHLESS (262 - 264)",
+          "ord": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(262)",
+                "text": "Those who spend their wealth in the cause of Allah and do not follow their charity with reminders of their generosity or hurtful words—they will get their reward from their Lord, and there will be no fear for them, nor will they grieve.",
+                "ref_surah": 2,
+                "from_ayah": 262,
+                "to_ayah": 262,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Rules of spending: When spending in the path of Allah SWT: (i) Do not remind others of your charity, for example, “remember when I gave you”….etc., or (ii) or say hurtful things such as, “you should be working you useless sack of garbage”..etc."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(263)",
+                "text": "Kind words and forgiveness are better than charity followed by injury. And Allah is Self-Sufficient, Most Forbearing.",
+                "ref_surah": 2,
+                "from_ayah": 263,
+                "to_ayah": 263,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Charity followed by giving pain to the receiver is not acceptable."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: If someone does come to your door in need and you cannot help; you are only allowed to decline politely by asking for pardon and understanding, however, you are not allowed to scold or judge."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(264)",
+                "text": "You who believe, do not cancel out your charitable deeds with reminders and hurtful words, like someone who spends his wealth only to be seen by people, not believing in God and the Last Day. Such a person is like a rock with earth on it: heavy rain falls and leaves it completely bare. Such people get no rewards for their works: God does not guide the disbelievers.",
+                "ref_surah": 2,
+                "from_ayah": 264,
+                "to_ayah": 264,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Do not invalidate your charity by reminding the other, or saying unkind words or showing off while giving charity. Here a parable/example of a rock that is washed squeaky clean after rain, suggests that your charity is now worthless, with no reward coming."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "CHARITY REWARD (265)",
+          "ord": 7,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(265)",
+                "text": "And the example of those who donate their wealth, seeking Allah’s pleasure and believing the reward is certain, is that of a garden on a fertile hill: when heavy rain falls, it yields up twice its normal produce. If no heavy rain falls, a drizzle is sufficient. And Allah is All-Seeing of what you do.",
+                "ref_surah": 2,
+                "from_ayah": 265,
+                "to_ayah": 265,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT always provides a contrast and here is the reward for those who spend in Allah SWT’s way."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SPEND THE BEST PORTION OF YOUR WEALTH AND ALLAH'S PROMISE VS SHAITAN'S PROMISE (267-269)",
+          "ord": 8,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "يٰۤـاَيُّهَا الَّذِيۡنَ اٰمَنُوۡۤا اَنۡفِقُوۡا مِنۡ طَيِّبٰتِ مَا كَسَبۡتُمۡ…"
+              ],
+              "translation": {
+                "ref": "(267)",
+                "text": "You who believe, give charitably from the good things you have acquired and that We have produced for you from the earth. Do not give away the bad things that you yourself would only accept with your eyes closed: remember that God is self-sufficient, worthy of all praise.",
+                "ref_surah": 2,
+                "from_ayah": 267,
+                "to_ayah": 267,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "An important principle re: spending is being mentioned here that is, what kind of wealth to spend or donate. Donate from your pure (Tayyab طَيِّبٰتِ ) and halal things and when giving ensure that you don’t just give away garbage rather give things that you would like to receive."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(268)",
+                "text": "Satan threatens you with ˹the prospect of˺ poverty and bids you to the shameful deed ˹of stinginess˺, while Allah promises you forgiveness and ˹great˺ bounties from Him. And Allah is All-Bountiful, All-Knowing.",
+                "ref_surah": 2,
+                "from_ayah": 268,
+                "to_ayah": 268,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Do not get lured into Satan’s whispering of stinginess. Allah SWT is the One who gives and takes away. And Allah SWT loves those who spend in His way."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Satan first commands stinginess then the next time satan will command shamelessness; meaning if we follow satan’s footsteps he gains more and more control over us."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "GIVING CHARITY IN PUBLIC AND PRIVATE AND WHO IS ELIGIBLE FOR CHARITY (270-273)",
+          "ord": 9,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(271)",
+                "text": "To give charity publicly is good, but to give to the poor privately is better for you, and will absolve you of your sins. And Allah is All-Aware of what you do.",
+                "ref_surah": 2,
+                "from_ayah": 271,
+                "to_ayah": 271,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Charity given openly/publicly with the right intention is good as it might motivate others to follow suit, however, giving privately is even better."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note – Obligatory worship, such as, giving zakat, going to the mosque for namaz, hijab, etc. should be done publicly, however, things that are extra, such as, saying extra (nafl) namaz or giving charity should be done privately."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "لِلۡفُقَرَآءِ الَّذِيۡنَ اُحۡصِرُوۡا فِىۡ سَبِيۡلِ اللّٰهِ...."
+              ],
+              "translation": {
+                "ref": "(273)",
+                "text": "Those who are engaged so much in the cause of Allah that they cannot move about in the land to earn their livelihood and are, therefore, in straitened circumstances, specially deserve help. An ignorant person would suppose them to be well off because of their self-respect; you can know their real condition from their faces, for they are not the ones who would beg of people with importunity. And Allah will surely know whatever you will spend on them.",
+                "ref_surah": 2,
+                "from_ayah": 273,
+                "to_ayah": 273,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In Ayat (261) it is explained what is meant by  فِىۡ سَبِيۡلِ اللّٰهِ. Now further explanation has been provided regarding who to spend on in the way or cause of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The people referred to here are those who, because they dedicated themselves wholly to serving the religion of God, are unable to earn their livelihood. But they do not ask for help because of their self-respect."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the time of the Prophet there was a group of such volunteer workers, known as Ashab al-Suffah, consisting of about three or four hundred people who had forsaken their homes and gone to Madina. They remained at all times in the company, of the Prophet, devoted themselves to acquiring religious knowledge and imparting it to others. Since they were full-time workers and had no private resources to meet their needs, God pointed out to the Muslims that helping such people was the best way of 'spending in the way of Allah'."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "REWARD FOR CHARITY (274)",
+          "ord": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(274)",
+                "text": "Those who spend their wealth in charity day and night, secretly and openly—their reward is with their Lord, and there will be no fear for them, nor will they grieve.",
+                "ref_surah": 2,
+                "from_ayah": 274,
+                "to_ayah": 274,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "There are some who are constantly giving, day/night, secretly/openly, in their time of plenty or scarcity; meaning giving is ingrained in their essence and for such people their compensation is with their Raab."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Ironically, by their giving they are getting richer and richer."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lessons: *When you give, do it without expecting anything in return except from your Raab. *Do not ever remind anyone of your generosity/charity. *Do not show off. *Do not scold or say hurtful things. * Give from the good things you have acquired meaning don’t give things that you would not like to receive or don’t just give all your trash. * Give charity publicly and privately both. *Spending on one’s family is also considered charity. *Charity increases wealth, difficulties are averted, Allah’s help comes, Angles pray for us, and good deeds erase sins. *Be moderate in spending meaning do not be stingy but also do not be extravagant. * Remember there is no blessing in wealth when we don’t spend in the way of Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROHIBITION OF INTEREST (275-276)",
+          "ord": 11,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(275)",
+                "text": "Those who consume interest will stand ˹on Judgment Day˺ like those driven to madness by Satan’s touch. That is because they say, “Trade is no different than interest.” But Allah has permitted trading and forbidden interest. Whoever refrains—after having received warning from their Lord—may keep their previous gains, and their case is left to Allah. As for those who persist, it is they who will be the residents of the Fire. They will be there forever.",
+                "ref_surah": 2,
+                "from_ayah": 275,
+                "to_ayah": 275,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "ALLAH SWT HAS COMMANDED THAT INTEREST OR RIBA IS HARAM."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In Ayat (274) Allah SWT talks about those who spend day and night (to earn Heaven) now Allah SWT talks about passive income that one receives day and night via riba (to earn World). Thus, these people are constantly sinning eating, sleeping, etc. So how will any prayers be answered."
+                },
+                {
+                  "kind": "prose",
+                  "text": "People who consume riba or interest are comparable to crazy people."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Some say trade also increases income/capital and riba also increases income/capital, so why is one haram and one halal? Allah SWT does not go into the how and why etc., but has simply commanded us to not consume riba. As Believers we must hear and obey!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: There is no risk in interest but there is a risk in trade."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Definition of Riba or Interest: Any loan that draws a profit on it is interest or riba. The crime of riba is HUGE and punishment severe. There is no ambiguity in these Ayat’s so leave Riba/Interest now!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Muhammad (PBUH) told us to stay away from 7 major sins: (i) Shirk (ii) Magic (iii) Murder (iv) Riba (v) Consuming wealth of orphans (vi) Running away during battle (vii) accusing chaste women."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: The more knowledgeable you are the more you can justify interest. We as Muslims have to be convinced that our deen is the solution for our personal, collective and worldly issues because in fact Allah SWT’s Book has something to say about everything from world peace, economic corruption, inheritance, child support etc. etc.  We should explore solutions that our Raab has provided instead of submitting to modern world alternatives. Some should do research in finance so as to provide a solution to modern day interest. While others should study the Quran and Hadith to grasp best approaches for giving dawa so as to motivate our youth explosion (population).Etc."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(276)",
+                "text": "Allah deprives interest of all blessing and develops charity; and Allah does not like an ungrateful, sinful person.",
+                "ref_surah": 2,
+                "from_ayah": 276,
+                "to_ayah": 276,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has deprived riba/interest of any blessing while He elevates charity."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT does not like those who are ungrateful and sinful."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TAKING INTEREST IS LIKE DECLARING WAR AGAINST ALLAH AND HIS RASOOL (277-281)",
+          "ord": 12,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(277)",
+                "text": "Indeed, those who believe, do good, establish prayer, and pay alms-tax will receive their reward from their Lord, and there will be no fear for them, nor will they grieve.",
+                "ref_surah": 2,
+                "from_ayah": 277,
+                "to_ayah": 277,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS + PRAYER + ZAKAT = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Those who struggle in Allah SWT’s way by giving charity, eating halal and not consuming riba then Allah SWT appreciates it."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(278)",
+                "text": "O believers! Fear Allah, and give up outstanding interest if you are ˹true˺ believers.",
+                "ref_surah": 2,
+                "from_ayah": 278,
+                "to_ayah": 278,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMAND TO ABANDON RIBA OR INTEREST"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(279)",
+                "text": "but if you do not do so, then you are warned of the declaration of war against you by Allah and His Messenger. If, however, you repent even now (and forego interest), you are entitled to your principal; do no wrong, and no wrong will be done to you.",
+                "ref_surah": 2,
+                "from_ayah": 279,
+                "to_ayah": 279,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "If you do not give up riba then listen up!"
+                },
+                {
+                  "kind": "heading",
+                  "text": "ALLAH SWT AND HIS MESSENGER WILL WAGE WAR AGAINST YOU!"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(281)",
+                "text": "Beware of a Day when you will be returned to God: every soul will be paid in full for what it has earned, and no one will be wronged.",
+                "ref_surah": 2,
+                "from_ayah": 281,
+                "to_ayah": 281,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is the last Ayat revealed of the Quran."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALL BUSINESS DEALINGS MUST BE REDUCED TO WRITING AND WITNESSES ARE REQUIRED IN ALL MAJOR BUSINESS TRANSACTIONS (282)",
+          "ord": 13,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(2:282)",
+                "text": "O believers! When you contract a loan for a fixed period of time, commit it to writing. Let the scribe maintain justice between the parties. The scribe should not refuse to write as Allah has taught them to write. They will write what the debtor dictates, bearing Allah in mind and not defrauding the debt. If the debtor is incompetent, weak, or unable to dictate, let their guardian dictate for them with justice. Call upon two of your men to witness. If two men cannot be found, then one man and two women of your choice will witness—so if one of the women forgets the other may remind her. The witnesses must not refuse when they are summoned. You must not be against writing ˹contracts˺ for a fixed period—whether the sum is small or great. This is more just ˹for you˺ in the sight of Allah, and more convenient to establish evidence and remove doubts. However, if you conduct an immediate transaction among yourselves, then there is no need for you to record it, but call upon witnesses when a deal is finalized. Let no harm come to the scribe or witnesses. If you do, then you have gravely exceeded ˹your limits˺. Be mindful of Allah, for Allah ˹is the One Who˺ teaches you. And Allah has ˹perfect˺ knowledge of all things.",
+                "ref_surah": 2,
+                "from_ayah": 282,
+                "to_ayah": 282,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "AYAT UD DAIN (loan and debt)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Longest Ayat of the Quran that reveals the fundamentals and ethics of loan practices."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Islam is a holistic religion that teaches us about worship, manners, dealings with people, dealing with money etc."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Make sure the one writing the loan agreement (big or small loan) is fair and unbiased and a time limit has been determined regarding the return of the loan (needless to say the time can be extended or the loan can be written off as time passes)."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Scribe must be present. A scribe is someone who has the skill to write and should not refuse to do so."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The borrower of the money or debtor should dictate the terms so that he knows what he is getting into i.e. his obligations/responsibilities. If the borrower is unable to dictate due to age, being naive or unlettered then his/her guardian should dictate."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Two men or one man and two women should bear witnesses. These witnesses should be agreeable to both parties i.e borrower and loan giver."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "FYI – This rule of testimony of one man and two women is only in the case of dain or loan."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Again, just like the matter of riba this is Allah SWT’s commands so whether we agree or not is irrelevant."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "IF WRITING IS NOT POSSIBLE, TAKE A SECURITY DEPOSIT (283)",
+          "ord": 14,
+          "intro": [
+            "Last Ayat re: business ethics. (2:283)",
+            "If you cannot put the loan in writing then put a security deposit."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "TRUE BELIEF OF PROPHETS AND MUSLIMS AND BELIEVER'S SUPPLICATION (285-286)",
+          "ord": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(285)",
+                "text": "The Messenger has believed in the Guidance which has been sent down to him from his Lord, and those who believe in the Messenger have also sincerely accepted the same. They all believe in Allah, His Angels, His Books and Messengers. And they say, \"We do not discriminate against any of His Messengers. We have heard the Message and submitted to it. Our Lord, we look up to You for forgiveness, for to You we shall all return.\"",
+                "ref_surah": 2,
+                "from_ayah": 285,
+                "to_ayah": 285,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "list_item",
+                  "text": "The Messenger (PBUH) believes in what has been sent down to him from his Lord, and (so do) the believers."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Each one believes in Allah SWT, His Angels, His Books, and His Messengers."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "We make no distinction between His Messengers (but we follow the Prophet Muhammad PBUH)."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Believers say, we heard the instructions, O Lord, and we will submit/obey."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "A plea and supplication for Allah's forgiveness, mercy and kindness."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To You (Allah SWT) is our return."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: Whoever recites the last two Ayat’s in Surah Al-Baqara at night, they will suffice for him."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: When the Messenger of Allah (PBUH) went on the Isra journey, he ascended to the Sidrat Al-Muntaha in the sixth heaven, where he received these two treasures: Surah Al-Fatiha and the last Ayat in Surah Al-Baqara. \nNone will not read a letter of them, but that they will be granted its benefit."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(286)",
+                "text": "Allah does not burden any human being with a responsibility heavier than he can bear. Everyone will enjoy the fruit of the good that one has earned and shall suffer for the evil that one has committed. (O Believers, pray like this to Allah: \"Our Lord, take us not to task if we forget and lapse into error inadvertently. Lord! lay not on us the kind of burdens that You had lain on the people before us. Lord, lay not on us the kind of burden that we have not the strength to bear. Be kind to us, forgive us and show mercy to us. You are our Protector: help us against the disbelievers.\"",
+                "ref_surah": 2,
+                "from_ayah": 286,
+                "to_ayah": 286,
+                "ref_inferred": true,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "list_item",
+                  "text": "Allah SWT does not burden anyone beyond his scope meaning; man's answerability to God is limited by the extent of his ability."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Every man will be rewarded for the services he has rendered, none will be rewarded for services rendered by others. The same applies to punishment."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then Allah SWT directs His servants to supplicate to Him, all the while promising them that He will answer their supplication: (After each supplication Allah SWT says \"I did (accept your supplication).\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "رَبَّنَا لَا تُوَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا\n\"Our Lord, take us not to task if we forget and lapse into error inadvertently…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "meaning, \"If we forgot an obligation or fell into a prohibition, or made an error while ignorant of its ruling.\""
+                },
+                {
+                  "kind": "quote",
+                  "text": "رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا"
+                },
+                {
+                  "kind": "prose",
+                  "text": "…Lord! lay not on us the kind of burdens that You had lain on the people before us…"
+                },
+                {
+                  "kind": "quote",
+                  "text": "رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ"
+                },
+                {
+                  "kind": "prose",
+                  "text": "…Lord, lay not on us the kind of burden that we have not the strength to bear…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The prayer is that God should not subject us to the severe tests and terrible persecutions and hardships undergone by our predecessors i.e. Bani Israel. It is God's law that those who commit themselves to follow Truth and righteousness are subjected to severe tests and tribulations, and it is a Believer's duty to meet them with patience and fortitude. At the same time, the Believer should always pray that God may make it easy for him to follow the path of Truth and righteousness."
+                },
+                {
+                  "kind": "quote",
+                  "text": "وَاعْفُ عَنَّا"
+                },
+                {
+                  "kind": "prose",
+                  "text": "…Pardon us…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Our shortcomings and errors."
+                },
+                {
+                  "kind": "prose",
+                  "text": "وَاغْفِرْ لَنَا\n…And grant us forgiveness…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "So do not expose our errors and evil deeds to them."
+                },
+                {
+                  "kind": "prose",
+                  "text": "وَارْحَمْنَأ\n…Have mercy on us.."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In what will come next. Therefore, do not allow us to fall into another error."
+                },
+                {
+                  "kind": "prose",
+                  "text": "أنتَ مَوْلَانَا\n….You are our Mawla…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT, You are our supporter and helper, our trust and total reliance is in You. There is no power or strength except from You."
+                },
+                {
+                  "kind": "prose",
+                  "text": "فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ\n…And give us victory over the disbelieving people."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Give us victory and make us prevail above them (in this and the Hereafter) who rejected Your religion, denied Your Oneness, refused the Message of Your Prophet, worshipped other than You and associated others in Your worship. \n\nSay Ameen at the end."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT answered these pleas, \"I shall,\" in one narration and, \"I did,\" in another narration."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "SPENDING/CHARITY"
+            },
+            {
+              "kind": "translation",
+              "text": "(254) O Believers, spend of the wealth We have bestowed upon you (in Our way) before the Day comes when there shall be no buying and no selling: when neither friendship nor intercession will be of any avail. Those, who adopt the way of disbelief are indeed the wrongdoers.''"
+            },
+            {
+              "kind": "translation",
+              "text": "(261) Those who spend their wealth in God’s cause are like grains of corn that produce seven ears, each bearing a hundred grains. God gives multiple increase to whoever He wishes: He is limitless and all knowing."
+            },
+            {
+              "kind": "translation",
+              "text": "(267) You who believe, give charitably from the good things you have acquired and that We have produced for you from the earth. Do not give away the bad things that you yourself would only accept with your eyes closed: remember that God is self-sufficient, worthy of all praise."
+            },
+            {
+              "kind": "translation",
+              "text": "(271) To give charity publicly is good, but to give to the poor privately is better for you, and will absolve you of your sins. And Allah is All-Aware of what you do."
+            },
+            {
+              "kind": "translation",
+              "text": "(273) Those who are engaged so much in the cause of Allah that they cannot move about in the land to earn their livelihood and are, therefore, in straitened circumstances, specially deserve help. An ignorant person would suppose them to be well off because of their self-respect; you can know their real condition from their faces, for they are not the ones who would beg of people with importunity. And Allah will surely know whatever you will spend on them."
+            },
+            {
+              "kind": "translation",
+              "text": "(274) Those who spend their wealth in charity day and night, secretly and openly—their reward is with their Lord, and there will be no fear for them, nor will they grieve."
+            },
+            {
+              "kind": "heading",
+              "text": "WHAT MAKES CHARITY WORTHLESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(262) Those who spend their wealth in the cause of Allah and do not follow their charity with reminders of their generosity or hurtful words—they will get their reward from their Lord, and there will be no fear for them, nor will they grieve."
+            },
+            {
+              "kind": "translation",
+              "text": "(263) Kind words and forgiveness are better than charity followed by injury. And Allah is Self-Sufficient, Most Forbearing."
+            },
+            {
+              "kind": "translation",
+              "text": "(264) You who believe, do not cancel out your charitable deeds with reminders and hurtful words, like someone who spends his wealth only to be seen by people, not believing in God and the Last Day. Such a person is like a rock with earth on it: heavy rain falls and leaves it completely bare. Such people get no rewards for their works: God does not guide the disbelievers."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION OF RIBA/INTEREST"
+            },
+            {
+              "kind": "translation",
+              "text": "(275) Those who consume interest will stand ˹on Judgment Day˺ like those driven to madness by Satan’s touch. That is because they say, “Trade is no different than interest.” But Allah has permitted trading and forbidden interest. Whoever refrains—after having received warning from their Lord—may keep their previous gains, and their case is left to Allah. As for those who persist, it is they who will be the residents of the Fire. They will be there forever."
+            },
+            {
+              "kind": "translation",
+              "text": "(276) Allah deprives interest of all blessing and develops charity; and Allah does not like an ungrateful, sinful person."
+            },
+            {
+              "kind": "translation",
+              "text": "(277) Indeed, those who believe, do good, establish prayer, and pay alms-tax will receive their reward from their Lord, and there will be no fear for them, nor will they grieve."
+            },
+            {
+              "kind": "translation",
+              "text": "(278) O believers! Fear Allah, and give up outstanding interest if you are ˹true˺ believers."
+            },
+            {
+              "kind": "translation",
+              "text": "(279) but if you do not do so, then you are warned of the declaration of war against you by Allah and His Messenger. If, however, you repent even now (and forego interest), you are entitled to your principal; do no wrong, and no wrong will be done to you."
+            },
+            {
+              "kind": "heading",
+              "text": "ALL BUSINESS DEALINGS MUST BE REDUCED TO WRITING AND WITNESSES ARE REQUIRED IN ALL MAJOR BUSINESS TRANSACTIONS (282)"
+            },
+            {
+              "kind": "heading",
+              "text": "IF WRITING IS NOT POSSIBLE, TAKE A SECURITY DEPOSIT (283)"
+            },
+            {
+              "kind": "list_item",
+              "text": "Charity – Give and expect reward from Allah SWT (Reward)"
+            },
+            {
+              "kind": "list_item",
+              "text": "Best thing you can do with your money is spend it on the path/cause of Allah SWT."
+            },
+            {
+              "kind": "list_item",
+              "text": "Riba/Interest- Give and expect additional (Prohibited)"
+            },
+            {
+              "kind": "list_item",
+              "text": "Worst thing you can do with your money is riba."
+            },
+            {
+              "kind": "list_item",
+              "text": "Dain/Loan – Give and get back (loan or delayed payment like salary) (Permissible)"
+            },
+            {
+              "kind": "list_item",
+              "text": "Permissible business transactions or business ethics are discussed in the remaining Ayat’s."
+            },
+            {
+              "kind": "heading",
+              "text": "DUA’S"
+            },
+            {
+              "kind": "heading",
+              "text": "Learn and recite often:"
+            },
+            {
+              "kind": "list_item",
+              "text": "Last two Surah’s of Al-Baqara"
+            },
+            {
+              "kind": "list_item",
+              "text": "Ayat al Kursi"
+            },
+            {
+              "kind": "prose",
+              "text": "The Virtue of Ayat Al-Kursi \nThis is Ayat Al-Kursi and tremendous virtues have been associated with it, for the authentic Hadith describes it as `the greatest Ayah in the Book of Allah.' Allah's Greatest Name is in Ayat Al-Kursi."
+            },
+            {
+              "kind": "prose",
+              "text": "Allahu la ilaha illa Huwa, Al-Haiyul-Qaiyum La ta’khudhuhu sinatun wa la nawm, lahu ma fis-samawati wa ma fil-‘ard Man dhal-ladhi yashfa’u ‘indahu illa bi-idhnihi Ya’lamu ma baina aidihim wa ma khalfahum, wa la yuhituna bi shai’im-min ‘ilmihi illa bima sha’a Wasi’a kursiyuhus-samawati wal ard, wa la ya’uduhu hifdhuhuma Wa Huwal ‘Aliyul-Adheem."
+            },
+            {
+              "kind": "list_item",
+              "text": "Allah: there is no god but He, the Ever-Living, the Self- Sustaining and All-Sustaining. Neither slumber nor sleep overtake Him."
+            },
+            {
+              "kind": "list_item",
+              "text": "To Him belongs all that is in the heavens and on earth. Who is there that can intercede with Him except by His leave?"
+            },
+            {
+              "kind": "list_item",
+              "text": "He knows what was before them and what will be after them, while they encompass nothing of His knowledge except what He wills."
+            },
+            {
+              "kind": "list_item",
+              "text": "His Kursi (Kingdom) extends over the heavens and the earth, and the preservation of both does not weary Him, for He is the Most High, the Most Great."
+            },
+            {
+              "kind": "prose",
+              "text": "https://youtu.be/DVmdJtr5xZ4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 3,
+      "name_en": "AL IMRAN (THE FAMILY OF IMRAN)",
+      "from_ayah": 1,
+      "to_ayah": 91,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3- JUZ 3 Surah Al Imaran .docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 3",
+      "extras": [
+        {
+          "kind": "section_index_intro",
+          "text": "Introduction to the sections:"
+        },
+        {
+          "kind": "section_index",
+          "text": "IT IS ALLAH WHO HAS REVEALED TORAH, GOSPEL AND AL-QURAN (1-6)\nDECISIVE VS ALLEGORICAL VERSES AND SUPPLICATION OF THE BELIEVERS (7-9)\nWARNING TO THE UNBELIEVERS AND LESSON FROM THE BATTLE OF BADR (10-13)\nCOMFORTS OF THIS LIFE VS THE LIFE IN HEREAFTER (14-17)\nTESTIMONY OF ALLAH ABOUT HIMSELF AND THAT THE TRUE RELIGION IN THE SIGHT OF ALLAH IS AL-ISLAM (18-20)\nWARNING TO THE UNBELIEVERS AND FAITH OF THE JEWS AND CHRISTIANS (21-25)\nALLAH IS THE ONE WHO CONTROLS THE KINGDOM AND HONOR (26-27)\nPROHIBITION OF TAKING UNBELIEVERS AS PROTECTORS (28-30)\nORDER TO OBEY AND FOLLOW THE PROPHET (31-32)\nHIGH RANKING PROPHETS (33-34)\nBIRTH AND GROWTH OF MARYEM (MARY) (35-37)\nSUPPLICATION OF ZAKARIYA FOR HIS SON YAHYA (JOHN) (38-41)\nSTATUS OF MARYEM (MARY) AMONG THE WOMEN OF THE WORLD (42-44)\nNEWS OF ISA (JESUS) BIRTH (45-46)\nBIRTH OF ISA (JESUS) SON OF MARYEM AND MIRACLES GIVEN TO ISA (JESUS) (47-51)\nFOLLOWERS OF ISA (JESUS) WERE MUSLIMS (52-53)\nPLOT TO KILL ISA (JESUS) (54)\nALLAH'S PROMISE TO ISA (JESUS) (55-57)\nBIRTH OF ISA (JESUS) IS COMPARED TO THE CREATION OF ADAM AND \"MUBAHLA\" CALLING ALLAH'S DECISION IF ISA (JESUS) BIRTH IS DISPUTED (58-63)\nCALL FOR UNITY WITH JEWS AND CHRISTIANS ON WHAT IS COMMON BETWEEN THEM AND MUSLIMS AND RELIGION OF IBRAHIM WAS ISLAM AND MUSLIMS ARE THE FOLLOWERS OF IBRAHIM (64-71)\nHYPOCRITES AMONG JEWS AND CHRISTIANS (72-74)\nTHERE ARE SOME GOOD JEWS AND CHRISTIANS AND THERE ARE SOME BAD AND THEY CHEAT IN QUOTING THEIR HOLY BOOK (75-78)\nISA (JESUS) NEVER SAID TO WORSHIP HIM INSTEAD OF ALLAH (79-80)\nCOVENANT OF ALLAH WITH ALL THE PROPHETS CONCERNING THE LAST PROPHET MUHAMMAD PBUH (81-82)\nNO RELIGION IS ACCEPTABLE TO ALLAH OTHER THAN AL-ISLAM (83-85)\nCURSE OF ALLAH, THE ANGELS AND ALL MANKIND ON THE UNBELIEVERS AND FATE OF THE UNBELIEVERS WHO DIE AS UNBELIEVERS (86-91)\nCRITERIA FOR RIGHTEOUSNESS (92)\nLAWFUL AND UNLAWFUL FOOD FOR THE CHILDREN OF ISRAEL (93-95)\nFIRST HOUSE OF ALLAH ON EARTH (96-97)\nDISBELIEF OF THE JEWS AND CHRISTIANS AND DO NOT OBEY THE JEWS OR CHRISTIANS (98-101)\nLIVE ISLAM, DIE AS A MUSLIM, AND BE NOT DIVIDED AMON YOURSELVES (102-103)\nPUNISHMENT FOR THOSE WHO DIVIDE MUSLIMS INTO SECTS (104-109)\nMUSLIMS ARE THE BEST NATION EVER EVOLVED TO ENJOIN GOOD AND FORBID EVIL AND SOME RIGHTEOUS PEOPLE OF THE BOOK (110-115)\nHYPOCRITICAL CHARITY AND INTIMATE FRIENDSHIP SHOULD BE ONLY WITH THE BELIEVERS (116-120)\nLESSONS FROM THE BATTLE OF UHUD AND ALLAH'S HELP TO THE BELIEVERS AND PROPHET DOES NOT HAVE THE AUTHORITY TO PARDON THE SINNERS (121-129)\nPROHIBITION OF USURY AND ALLAH LOVES THE CHARITABLE PEOPLE (130-136)\nBELIEVERS ARE PROMISED TO HAVE UPPER HAND (137-141)\nNO PARADISE WITHOUT TRIAL (142-143)\nMUHAMMAD (PBUH) IS NO MORE THAN A RASOOL OF ALLAH (144-145)\nPROPHETS AND THEIR FOLLOWERS AND SUPPLICATION OF THE BELIEVERS (146-148)\nDO NOT FOLLOW THE UNBELIEVERS (149-151)\nRESULT OF DISOBEYING THE RASOOL (152-153)\nAFTER GRIEF ALLAH BESTOWED PEACE AND THERE IS NO ESCAPE FROM DEATH (154-155)\nLIFE AND DEATH IS FROM ALLAH (156-158)\nCONSULT BEFORE MAKING A DECISION, ONCE DECISION IS MADE THEN BE FIRM (159 )\nPUT YOUR TRUST IN ALLAH (160-161)\nDIGNITY OF RASOOL (162-164)\nLESSONS TO BE LEARNED FROM THE BATTLE OF UHUD AND THOSE WHO ARE SLAIN IN THE CAUSE OF ALLAH ARE NOT DEAD (165-171)\nCHARACTER OF THE BELIEVERS AT UHUD (172-175)\nPUNISHMENT FOR BARTERING BELIEF FOR UNBELIEF (176-178)\nADVERSE CONDITIONS ARE A TEST FROM ALLAH (179)\nPUNISHMENT FOR THE NIGGARDLY (180)\nJEWS INSULTED ALLAH AND UTTERED A LIE AGAINST HIM (181-184)\nEVERYONE HAS TO DIE (185)\nTEST OF THE BELIEVERS (186)\nPUNISHMENT FOR CLAIMING CREDIT FOR SOMETHING YOU HAVE NOT DONE (187-189)\nSIGNS FROM NATURE AND SUPPLICATION OF THE BELIEVERS (190-194)\nACCEPTANCE OF SUPPLICATION BY ALLAH (195)\nDO NOT BE DECEIVED BY THE UNBELIEVERS AND BE PATIENT AND EXCEL IN PATIENCE (196-200)"
+        }
+      ],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah takes its name from Ayat 33. It tells the story of ‘The family of Imran,’ the father of Maryam, the mother of Prophet Isa/Jesus (PBUH).",
+          "items": null
+        },
+        {
+          "label": "The Period of Revelation",
+          "text": "This Surah consists of four discourses:",
+          "items": [
+            {
+              "text": "The first discourse (Ayat 1-32) was probably revealed soon after the Battle of Badr."
+            },
+            {
+              "text": "The second discourse (Ayat 33-63) was revealed in 9 A. H. on the occasion of the visit of the deputation from the Christians of Najran."
+            },
+            {
+              "text": "The third discourse (Ayat 64-120) appears to have been revealed immediately after the first one."
+            },
+            {
+              "text": "The fourth discourse (Ayat 121-200) was revealed after the Battle of Uhd."
+            }
+          ]
+        },
+        {
+          "label": "Subject: Guidance",
+          "text": "This Surah is the sequel to Surah Al-Baqara and the invitation therein is continued to the people of the Book. In Al-Baqara the Jews were pointedly invited to accept the Guidance and in this Surah the Christians have particularly been invited to accept the Guidance of the Quran.\n\nThey are told that Prophet Muhammad (PBUH) taught the same way of life preached by their own Prophets; hence any deviation from it will be wrong even according to their own Scriptures.\n\nAt the same time, the Muslims have been instructed to carry out their obligations and spread the Divine Guidance as well as given additional instructions in continuation of those given in the preceding Surah.\n\nLastly, The Muslims have been warned to learn a lesson from the religious and moral degeneration of the former communities and refrain from following in their footsteps.\n\nSurah Baqara and Surah Al-Imran are together known as Az-zahrawain. Both the Surahs complement each other, quite unique in style and context, are mostly focused on in the case of Surah Baqara (Iman) and in the case of Surah Al Imran (Islam). Both start with the letters of the Arabic alphabet, called Huruf Muqatta’at. Ends with the most merciful supplications.\n\nAbu Umamah reported: The Messenger of Allah SWT, said, “Recite the Quran, for on the Day of Resurrection it will come as an intercessor for its reciters. Recite (Az-Zahrawain) the two illuminated chapters, Surah al-Baqara and Al Imrān, for on the Day of Resurrection they will come as two clouds, or two shades, or two flocks of birds pleading for those who recited them. Recite Surah al-Baqara as there is blessing in it, there is sorrow in leaving it, and the sorcerers cannot confront it.” (Source: Sahih Muslim)",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "1-6 IT IS ALLAH WHO HAS REVEALED TORAH, GOSPEL AND AL-QURAN",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "الٓمّٓۚ"
+              ],
+              "translation": {
+                "ref": "(2:1)",
+                "text": "Alif, Lam, Mim.",
+                "ref_surah": 2,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": "written '(2:1)'; the section is '1-6 ... of Al Imran' and the Arabic is الٓمّٓ (3:1) — the source wrote surah 2"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The names of letters of the Arabic alphabet that occur at the beginning of several surahs of the Quran are called ‘Huruf Muqatta’t’ or ‘Disjointed letters.’"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:3)",
+                "text": "He has revealed to you ˹O Prophet˺ the Book in truth, confirming what came before it, as He revealed the Torah and the Gospel",
+                "ref_surah": 3,
+                "from_ayah": 3,
+                "to_ayah": 3,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "7-9 DECISIVE VS ALLEGORICAL AYATS AND SUPPLICATION OF THE BELIEVERS",
+          "ord": 2,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:7)",
+                "text": "It is He Who has revealed the Book to you. Some of its verses are absolutely clear and lucid, and these are the core of the Book. Others are ambiguous. Those in whose hearts there is perversity, always go about the part which is ambiguous, seeking mischief and seeking to arrive at its meaning arbitrarily, although none knows their true meaning except Allah. On the contrary, those firmly rooted in knowledge say: 'We believe in it; it is all from our Lord alone.' No one derives true admonition from anything except the men of understanding.",
+                "ref_surah": 3,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Muhkamat & Mutashabihat Ayat"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Muhkam Ayat’s are clear, coherent and whose meaning is not liable to any ambiguity or vagueness, therefore, it is difficult to subject these Ayat to arbitrary interpretations. Thsese Ayat form the core or foundation of the Holy Book. The word muhkum is derived from hukumحكم  (order) and hikmat حكمت(wisdom)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "They embody admonition and instruction as well as the refutation of erroneous doctrines. They also contain the fundamental teachings relating to belief, worship, morality, mandatory duties along with rulings on limits. These are the Ayat’s which will guide the genuine seeker of Truth who turns to the Quran in order to find out what he ought and ought not to do."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Mutashabihat or 'Ambiguous' Ayat’s are those whose meaning may have some degree of vagueness or elusiveness, for example, parables mentioned in the Quran, matters of the unseen, such as, angels, heaven, seven skies, etc. The more one tries to determine the precise meaning of such Ayat, the more their ambiguities flourish, and the more one is confronted with choosing between several plausible interpretations. All this is likely to alienate one further away from the Truth instead of bringing one closer to it."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Example is: Surah Taha Ayat 5; “The Most Merciful is firm upon the throne.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The word Mutashabihat is derived from the word mushaabihat مشا بهت meaning similarity."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Question:  So then how can people believe in ambiguous Ayat’s when the contents of these cannot be grasped?\nAnswer: Those who seek the Truth will concentrate on the clear and lucid 'core' Ayat’s of the Quran instead of wasting time splitting hairs. It will be left to those who are either out to make mischief and mislead people to devote their attention re: the contents of the ambiguous or Mutashabihat Ayat’s."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "رَبَّنَا لَا تُزِغۡ قُلُوۡبَنَا بَعۡدَ اِذۡ هَدَيۡتَنَا ۚ"
+              ],
+              "translation": {
+                "ref": "(3:8)",
+                "text": "They pray to Allah: 'Our Lord! Do not let our hearts swerve towards crookedness after You have guided us to the right way, and. bestow upon us Your mercy. Surely You, only You, are the Munificent Giver!",
+                "ref_surah": 3,
+                "from_ayah": 8,
+                "to_ayah": 8,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Dua: \"O Allah, do not deviate our hearts from the guidance after You allowed us to acquire it.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Do not make us like those who have wickedness in their hearts and those who follow the Mutashabihat Ayat’s in the Quran. Rather, make us remain firmly on Your straight path and true religion.\""
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "14-17 COMFORTS OF THIS LIFE VS THE LIFE IN HEREAFTER",
+          "ord": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:14)",
+                "text": "The enjoyment of ˹worldly˺ desires—women, children, treasures of gold and silver, fine horses, cattle, and fertile land—has been made appealing to people. These are the pleasures of this worldly life, but with Allah is the finest destination.",
+                "ref_surah": 3,
+                "from_ayah": 14,
+                "to_ayah": 14,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT mentions the delights that He put in this life for people, such as women, children, and wealth – these are our basic animalistic instincts. One should recognize that these are worldly temptations and desires, therefore, one must control desires from becoming dominant over Allah SWT’s worship and obedience."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Important to note that Islam advocates self-control but not self-annihilation, thus, to dissociate/disconnect completely from the world is not allowed."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: If the son of Adam had two valleys of gold, he would want a third. But eventually his belly will be filled with dust."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Q. What is your achilleas heel or worldly pursuit that hinders in your worship and obedience of Allah SWT?"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Use the blessing/comforts of life to come closer to Allah SWT, i.e., comfortable homes, education, food in plentiful etc. Don’t get lost in the temporary comforts/pleasures of life."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:17)",
+                "text": "˹It is they˺ who are patient, sincere, obedient, and charitable, and who pray for forgiveness before dawn.",
+                "ref_surah": 3,
+                "from_ayah": 17,
+                "to_ayah": 17,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Such are the qualities of the successful: (i) Patience (ii) Sincerity/Truthful (iii) Obedience (iv) Charitable (v) Repenting (particularly at the time of tahajud which is just before dawn)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Sins may have consequences so repent often (esp. at tahajud time which is when Allah SWT comes down the lowest sky asking what His servant wants) and do not advertise your wrong actions or sins."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TRUE RELIGION IN THE SIGHT OF ALLAH IS ISLAM (18-20)",
+          "ord": 4,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:19)",
+                "text": "The true religion with Allah is Islam. The People of the Book adopted many different ways rather than follow the true way of Islam even after the knowledge of truth had reached them, and this merely to commit excesses against one another. Let him who refuses to follow the ordinances and directives of Allah know that Allah is swift in His reckoning.",
+                "ref_surah": 3,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In the sight of Allah SWT there is only one system of life and way of conduct that consists of man's acknowledging Allah SWT as his Lord and the sole object of man’s worship, obedience, devotion, and service. This mode of thought and action is known as Islam. Islam means to surrender or submit to Allah SWT in obedience. For a person to be guided they must submit completely!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, the religion of every Messenger of God and every Divine Book was none other than Islam (submission to God). The various religions which have spread among mankind are distortions of this true, original religion, and are the result of tampering due to coveting privileges, jealousies, and the hunger for power."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In his folly man thinks that he has the right to believe in and follow every doctrine that comes his way whether it be atheism or idolatry. Rather than following the guidance communicated by God through His Messengers some of mankind tries to devise ways of serving God according to his/her own thoughts/desires. In the sight of the Sovereign of the universe, however, all such attitudes amount to nothing short of rebellion against God."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WARNING TO THE UNBELIEVERS AND FAITH OF THE JEWS AND CHRISTIANS (21-25)",
+          "ord": 5,
+          "intro": [
+            "Creating innovations in religion, having false expectations that the fire of Hell will touch us only for a limited time etc. etc. This is a warning from Allah SWT to not get confident in sinning. Life is finite the Hereafter infinite so choose wisely."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "ALLAH IS THE ONE WHO CONTROLS THE KINGDOM AND HONOR (26-27)",
+          "ord": 6,
+          "intro": [
+            "قُلِ اللّٰهُمَّ مٰلِكَ الۡمُلۡكِ تُؤۡتِى الۡمُلۡكَ مَنۡ تَشَآءُ وَتَنۡزِعُ الۡمُلۡكَ مِمَّنۡ تَشَآءُ وَتُعِزُّ مَنۡ تَشَآءُ وَتُذِلُّ مَنۡ"
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "تَشَآءُ ؕ بِيَدِكَ الۡخَيۡرُؕ اِنَّكَ عَلٰى كُلِّ شَىۡءٍ قَدِيۡرٌ"
+              ],
+              "translation": {
+                "ref": "(3:26)",
+                "text": "Say, ˹O Prophet,˺ “O Allah! Lord over all authorities! You give authority to whoever You please and remove it from who You please; You honour whoever You please and disgrace who You please—all good is in Your Hands. Surely You ˹alone˺ are Most Capable of everything.",
+                "ref_surah": 3,
+                "from_ayah": 26,
+                "to_ayah": 26,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "A popular Ayat that is quoted by many.  Allah SWT has authority and power over everything and everyone. He gives kingdom and honor to whom He wants and humbles/disgraces whom He wants."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Etiquette of making dua is to first praise and thank your Raab before launching into requests. (As seen above)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROHIBITION OF TAKING UNBELIEVERS AS PROTECTORS (28-30)",
+          "ord": 7,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:28)",
+                "text": "The believers may not take the unbelievers for their allies in preference to those who believe. Whoever does this has nothing to do with Allah unless he does so in order to protect himself from their wrong-doing. Allah warns you to beware of Him for it is to Allah that you will return.",
+                "ref_surah": 3,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: “A group of Jews used to keep close company with a group of Helpers to try to make them renounce their religion. When this group of Helpers was told to: 'Stay away from these Jews and beware of keeping their company lest they drive you away from your religion'. The group of Helpers refused to stop seeing them or keep their company, and so Allah SWT revealed this Ayat warning the believers."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has prohibited His believing servants from taking disbelievers – instead of Believers -- as their close companions/allies with whom they develop deep and intimate friendships or rely on them as helpers/protectors/confidants."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Whoever does this will have no relationship with Allah SWT because logically how can you be close friends with those who disbelief in your Raab and therefore have a completely contradictory (and at times hostile) sensitivities and sensibilities. The mindset, goals, aspirations of such friendships will force us to lead a double life. Allah SWT wants to protect our Iman/faith."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Exception: Unless this is done in time of need/desperation. Remember you can have dealings, interactions friendships with non-believers in fact must always maintain proper respect and cordial relations with everyone however cannot have close, intimate bonds or alliances with them."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: A person is on the religion of his/her friends. Our company affects us."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ORDER TO OBEY AND FOLLOW THE PROPHET (31-32)",
+          "ord": 8,
+          "intro": [
+            "Allah's Love is Attained by Following the Messenger – because the Messengers show us what Allah SWT likes and dislikes.",
+            "Lesson: Follow/adopt the sunnah ways/habits from dressing, eating, entering the bathroom, leaving the house, sleeping etc. etc. because then every moment of one’s life can become worship, for example, if we follow the sunnah manner of sleeping the hours we sleep are regarded as ibadah or worship."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "HIGH RANKING PROPHETS (33-34)",
+          "ord": 9,
+          "intro": [
+            "Background: Here marks the beginning of the second discourse. The period of its revelation is about 9 A.H., when a delegation from the Christian republic of Najran visited the Prophet. \nWhen the Prophet annexed Mecca, deputations from all parts of the peninsula began to visit him. In this connection the three chiefs of Najran came to Madina accompanied by sixty people. As they were not prepared to go to war, the alternatives before them were either to embrace Islam or to live as dhimmis (protected non-Muslim subjects of the Islamic state). It was on this occasion that God revealed this discourse; it served as an invitation to the people of Najran to accept Islam."
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:34)",
+                "text": "From the very outset of the discourse it is mentioned that Adam, Nuh and the Prophets in the house of Ibrahim and Imran were all human beings -- none of them was God. Their merit lay in the fact that God selected or chose them to preach His religion and reform the world.",
+                "ref_surah": 3,
+                "from_ayah": 34,
+                "to_ayah": 34,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "FYI – Here Imran refers to the father of Musa (PBUH)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BIRTH AND GROWTH OF MARYAM (MARY) (35-37)",
+          "ord": 10,
+          "intro": [
+            "The Story of Maryam's Birth"
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:35)",
+                "text": "The wife of Imran mentioned in this Ayat is the mother of Maryam. She could not have children so she supplicated to Allah SWT to grant her offspring. Allah SWT accepted her supplication and she became pregnant. She vowed to dedicate her child for the worship and service of her Raab at Bayt Al-Maqdis (the Masjid in Jerusalem). Allah SWT accepted her dedication.",
+                "ref_surah": 3,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "FYI – Here Imran refers to the father of Maryam and grandfather of Prophet Isa/Jesus (PBUH)."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَاِنِّىۡۤ اُعِيۡذُهَا بِكَ وَذُرِّيَّتَهَا مِنَ الشَّيۡطٰنِ الرَّجِيۡمِ …."
+              ],
+              "translation": {
+                "ref": "(3:36)",
+                "text": "When she delivered, she said, “My Lord! I have given birth to a girl,”—and Allah fully knew what she had delivered—“and the male is not like the female. I have named her Mary, and I seek Your protection for her and her offspring from Satan, the accursed.”",
+                "ref_surah": 3,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The wife of Imran named her daughter Mary and made dua to Allah SWT to protect her and her offspring from satan."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Name your child quickly and remember to say this dua after delivery of a child."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Maryam Grows Up; Her Honor is with Allah"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:37)",
+                "text": "This section refers to that period of Maryam's life when she was admitted to the Temple of Jerusalem devoting all her time to remembering God.",
+                "ref_surah": 3,
+                "from_ayah": 37,
+                "to_ayah": 37,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Zakariyya whose care she was given in, was the husband of her maternal aunt (Khalo), and one of the guardians of the Temple. Every time he visited Maryam, he saw that she had food/provisions. When asked where all this came from, she said from her Raab."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SUPPLICATION OF ZAKARIYA FOR HIS SON YAHYA (JOHN) (38-41)",
+          "ord": 11,
+          "intro": [
+            "The sight of this pious young girl (Maryam) made Zakariyya yearn for a child just as virtuous and devout. When he saw that God sent food to her -- by His limitless power -- he felt hopeful that God might also bless him with a child despite his old age. By then, Zakariyya had become an old man, his bones feeble and his head full of gray hair and his wife was an old barren woman. Yet, he supplicated to Allah SWT and his supplication was answered with the good news of a son called John or Yahya."
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "قَالَ رَبِّ هَبۡ لِىۡ مِنۡ لَّدُنۡكَ ذُرِّيَّةً طَيِّبَةً  ۚ اِنَّكَ سَمِيۡعُ الدُّعَآءِ"
+              ],
+              "translation": {
+                "ref": "(3:38)",
+                "text": "",
+                "ref_surah": 3,
+                "from_ayah": 38,
+                "to_ayah": 38,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "رَبِّ هَبْ لِي مِن لَّدُنْكَ\nO my Lord! Grant me from Ladunka, (from You),\nذُرِّيَّةً طَيِّبَةً\nA good offspring, meaning, a righteous offspring,\nإِنَّكَ سَمِيعُ الدُّعَاء\nYou are indeed the All-Hearer of invocation."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lessons:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Talk to your Raab, in your heart, in whispers or openly but make that connection. (Wife of Imran)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "And when you see someone with a blessing do not become envious rather ask Allah SWT for blessings as well."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Make the dua of Zakariya when wanting to conceive."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "When you get good news (of pregnancy) then thank Allah SWT by doing zikr and glorifying Him day and night."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "When a child is born immediately recite Ayat ul Kursi and the quls for protection against satan."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Also remember the dua of Maryam’s mother seeking Allah SWT’s protection for the baby from satan."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(i) The birth of John or Yahya was a miracle (ii) similarly the birth of Isa/Jesus to Maryam was a miracle (iii) as was the pregnancy of Zakariya’s wife."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT only has to say “Be” and the thing is done."
+                },
+                {
+                  "kind": "heading",
+                  "text": "ETIQUETTE OF MAKING DUA:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "First praise your Raab and ask with full sincerity. Ask with Allah SWT’s names and attributes i.e. Al Razik (The Provider) and Al Hayyu Al Qayyum (The Ever living and the Sustainer of all)."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ask for the best i.e when asking for heaven ask for Jannat ul Firdows or ask for righteous children etc."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Then ask Allah SWT to give anything and everything from His bounty/blessing and mercy."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Zakariya saw something he wanted and his response was immediate. He made dua instead of being envious."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "After having made dua then accept (happily) whatever Allah SWT’s has decreed for us."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Be grateful and be thankful to Allah SWT in any and every situation. Always and in all ways."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "STATUS OF MARYAM (MARY) AMONG THE WOMEN OF THE WORLD (42-44)",
+          "ord": 12,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:43)",
+                "text": "The angels said to Mary: ‘Mary, God has chosen you and made you pure: He has truly chosen you above all women.",
+                "ref_surah": 3,
+                "from_ayah": 43,
+                "to_ayah": 43,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "NEWS OF ISA (JESUS) BIRTH (45-46)",
+          "ord": 13,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:45)",
+                "text": "˹Remember˺ when the angels proclaimed, “O Mary! Allah gives you good news of a Word from Him, his name will be the Messiah, Jesus, son of Mary; honoured in this world and the Hereafter, and he will be one of those nearest ˹to Allah˺.",
+                "ref_surah": 3,
+                "from_ayah": 45,
+                "to_ayah": 45,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Delivering the Good News to Maryam of `Isa's Birth"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(Remember) when the angels said: \"O Maryam! Allah gives you the glad tidings of a son who will come into existence with a word from Allah SWT, `Be', and he was.\nHis name will be Al-Masih, `Isa, the son of Maryam (because he did not have a father).\n`Isa was called \"Al-Masih\" (the Messiah) because when he touched (Mash) those afflicted with an illness, they would be healed by Allah's leave."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BIRTH OF ISA (JESUS) SON OF MARYAM AND MIRACLES GIVEN TO ISA (JESUS) (47-51)",
+          "ord": 14,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:46)",
+                "text": "And he will speak to people in ˹his˺ infancy and adulthood and will be one of the righteous.”",
+                "ref_surah": 3,
+                "from_ayah": 46,
+                "to_ayah": 46,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:48)",
+                "text": "And Allah will teach him writing and wisdom, the Torah and the Gospel,",
+                "ref_surah": 3,
+                "from_ayah": 48,
+                "to_ayah": 48,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:49)",
+                "text": "and he will be a Messenger to the Children of Israel.'' (And when he came to them he said): ''I have come to you with a sign from your Lord. I will make for you from clay the likeness of a bird and then I will breathe into it and by the leave of Allah it will become a bird. I will also heal the blind and the leper, and by the leave of Allah bring the dead to life. I will also inform you of what things you eat and what you treasure up in your houses. Surely this is a sign for you if you are true believers.",
+                "ref_surah": 3,
+                "from_ayah": 49,
+                "to_ayah": 49,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Miracles of Isa/Jesus are mentioned but again and again it is said “by the leave (permission) of Allah SWT)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: John or Yahya was a Nabi of Allah SWT and Nabi’s can be killed but Jesus or Isa was a Prophet of Allah SWT and Prophets cannot be killed therefore he was taken up alive by Allah SWT till a time when he will return to this earth once again."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Torah contained only commandments while Injil (Gospel) contains wisdom and no commandments."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PLOT TO KILL ISA (JESUS) (54)",
+          "ord": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:54)",
+                "text": "And the disbelievers made a plan ˹against Jesus˺, but Allah also planned—and Allah is the best of planners.",
+                "ref_surah": 3,
+                "from_ayah": 54,
+                "to_ayah": 54,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: Allah SWT states that the Children of Israel planned to kill `Isa by conspiring to defame him and crucify him.\nThey complained about him to the Roman king who was a disbeliever. They claimed that `Isa was a man who misguided people, discouraged them from obeying the king thus causing division, and separation between man and his own son. \nThe king became furious and sent his men to capture `Isa to torture and crucify him. When they surrounded `Isa's home and he thought that they would surely capture him, Allah SWT saved him from them, raising him up from the house to heaven.\nAllah SWT put the image of `Isa on the man who had betrayed Isa so, the unjust people captured and crucified him instead of Isa. Thus, Allah SWT deceived these people. He saved and raised His Prophet from them, leaving them in disarray in the darkness of their transgression, thinking that they had successfully achieved their goal."
+                },
+                {
+                  "kind": "prose",
+                  "text": "**Important to note that there is no mention of this in the Quran or Hadith rather this account has been taken from the library of the Pope and seems to be correct."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S PROMISE TO ISA (JESUS) (55-57)",
+          "ord": 16,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:55)",
+                "text": "˹Remember˺ when Allah said, “O Jesus! I will take you and raise you up to Myself. I will deliver you from those who disbelieve, and elevate your followers above the disbelievers until the Day of Judgment. Then to Me you will ˹all˺ return, and I will settle all your disputes.",
+                "ref_surah": 3,
+                "from_ayah": 55,
+                "to_ayah": 55,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Meaning of \"Take You\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT took Isa/Jesus (PBUH)’s body and soul in its entirety up to heaven."
+                },
+                {
+                  "kind": "prose",
+                  "text": "When we die our body remains but our soul is taken."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BIRTH OF ISA (JESUS) IS COMPARED TO THE CREATION OF ADAM AND \"MUBAHLA\" CALLING ALLAH'S DECISION IF ISA (JESUS) BIRTH IS DISPUTED (58-63)",
+          "ord": 17,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:57)",
+                "text": "And as for those who believe and do good, they will be rewarded in full. And Allah does not like the wrongdoers.”",
+                "ref_surah": 3,
+                "from_ayah": 57,
+                "to_ayah": 57,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS (PARADISE)"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:59)",
+                "text": "Indeed, the example of Jesus in the sight of Allah is like that of Adam. He created him from dust, then said to him, “Be!” And he was!",
+                "ref_surah": 3,
+                "from_ayah": 59,
+                "to_ayah": 59,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Similarities Between the Creation of Adam and the Creation of `Isa/Jesus\nAllah SWT creating Isa/Jesus without a father is the likeness of Adam, for Allah SWT created Adam without a father or a mother. He created him from dust, then (He) said: “Be!\" and he (Adam) was. \nTherefore, He Who created Adam without a father or a mother is able to create Isa/Jesus without a father. If the claim is made that Isa/Jesus is Allah SWT's son because he was created without a father, then the same claim befits Adam even more."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:60)",
+                "text": "This is the truth from your Lord, so do not be one of those who doubt.",
+                "ref_surah": 3,
+                "from_ayah": 60,
+                "to_ayah": 60,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:62)",
+                "text": "This is the true story. There is no God but Allah, and assuredly Allah is All-Mighty, All-Wise.",
+                "ref_surah": 3,
+                "from_ayah": 62,
+                "to_ayah": 62,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "CALL FOR UNITY WITH JEWS AND CHRISTIANS ON WHAT IS COMMON BETWEEN THEM AND MUSLIMS AND RELIGION OF IBRAHIM WAS ISLAM AND MUSLIMS ARE THE FOLLOWERS OF IBRAHIM (64-71)",
+          "ord": 18,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:65)",
+                "text": "O People of the Book! Why do you argue about Abraham, while the Torah and the Gospel were not revealed until long after him? Do you not understand?",
+                "ref_surah": 3,
+                "from_ayah": 65,
+                "to_ayah": 65,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: Muhammad bin Ishaq bin Yasar reported that Ibn Abbas said, \"The Christians of Najran and Jewish rabbis gathered before the Messenger of Allah SWT and disputed in front of him. The rabbis said, `Ibrahim was certainly Jewish.' The Christians said, `Certainly, Ibrahim was Christian.'\nSo Allah SWT revealed the above Ayat: ‘O people of the Book (Jews and Christians)! Why do you dispute about Ibrahim..’ meaning, ‘How is it that you, Jews, claim that Ibrahim was Jewish, although he lived before Allah SWT sent down the Torah to Musa!\nHow is it that you, Christians, claim that Ibrahim was Christian, although Christianity came after his time\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "Both Judaism and Christianity came into existence after the Torah and the Injil had been revealed; Ibrahim (PBUH) lived much earlier than that. Thus, it can easily be grasped that the religion of Ibrahim (PBUH) could not have been that of either Judaism or Christianity. If Ibrahim (PBUH) was on the right path and had attained salvation it is obvious that one need not follow either, Judaism or Christianity in order to be on the right path and to attain salvation."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "مَا كَانَ اِبۡرٰهِيۡمُ يَهُوۡدِيًّا وَّلَا نَصۡرَانِيًّا وَّ لٰكِنۡ كَانَ حَنِيۡفًا مُّسۡلِمًا ؕ وَمَا كَانَ مِنَ الۡمُشۡرِكِيۡ"
+              ],
+              "translation": {
+                "ref": "(3:67)",
+                "text": "Abraham was neither a Jew nor a Christian; he submitted in all uprightness and was not a polytheist.",
+                "ref_surah": 3,
+                "from_ayah": 67,
+                "to_ayah": 67,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Ibrahim (PBUH) was neither a Jew nor a Christian but a Hanifi which is a true monotheist and a Muslim which means to surrender and submit. حَنِيۡفًا مُّسۡلِمً"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The word hanif حَنِيۡفًا denotes someone who turns away from all other directions in order to follow one particular course. For Muslims the only direction is Allah SWT alone and exclusively."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HYPOCRITES AMONG JEWS AND CHRISTIANS (72-74)",
+          "ord": 19,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:72)",
+                "text": "A group among the People of the Book said ˹to one another˺, “Believe in what has been revealed to the believers in the morning and reject it in the evening, so they may abandon their faith.",
+                "ref_surah": 3,
+                "from_ayah": 72,
+                "to_ayah": 72,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: Al-Hasan and al-Suddi said: “Twelve rabbis from the Jews of Khaybar and the town of ‘Uraynah conspired with each other, saying: ‘Pretend to join the religion of Muhammad at the beginning of the day and declare your disbelief in it at the end of the day. Say: ‘We have looked in our Scriptures and consulted our scholars and found that Muhammad is not genuine; it is clear to us now that he is lying and that his religion is false’. If you do this, his Companions will doubt their religion. They will say: these are people of the Book and they are more knowledgeable than us. They will then abandon their religion and embrace yours’."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And so, Allah SWT revealed this Ayat, thus informing His Prophet Muhammad (PBUH) and the rest of the believers”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: It is a huge sin to Believe and then disbelieve/revert."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THERE ARE SOME GOOD JEWS AND CHRISTIANS AND THERE ARE SOME BAD AND THEY CHEAT IN QUOTING THEIR HOLY BOOK (75-78)",
+          "ord": 20,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(Ayat 3:75)",
+                "text": "",
+                "ref_surah": 3,
+                "from_ayah": 75,
+                "to_ayah": 75,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Important rule to keep in mind esp. as a person inviting others to religion is to acknowledge the good in people and communities. Do not generalize and stereotype an entire community based on the actions of a few i.e Muslim women are all belly dancers and men terrorists, or all Jews are miserly etc."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:78)",
+                "text": "And there is a party among them who twist their tongues while reciting the Book to make you think that it is part of the Book when in fact it is not. They say: ''It is from Allah'', when in fact it is not from Allah. They falsely fix a lie upon Allah, and do so wittingly.",
+                "ref_surah": 3,
+                "from_ayah": 78,
+                "to_ayah": 78,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "A group of people of the Book would deliberately distort words by mispronouncing them or hide or insert passages of the Book so as to change the intended meaning. Why? To cater to people’s desires (esp. the elite) so that they become happy with the deen by making wrong or haram things halal. In return the religious scholars safeguarded their power and monetary benefits."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: It is your obligation to learn the Quran so that no one can lead us astray. Learn a bit of basic Arabic so that soon the Quran can be read without other people interpretations, in sha Allah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Beware of scholars who interpret rulings very flexibly/freely making all things halal."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROPHETS NEVER SAID TO WORSHIP THEM INSTEAD OF ALLAH (79-80)",
+          "ord": 21,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:79)",
+                "text": "It is not appropriate for someone who Allah has blessed with the Scripture, wisdom, and prophethood to say to people, “Worship me instead of Allah.” Rather, he would say, “Be devoted to the worship of your Lord ˹alone˺”—in accordance with what these prophets read in the Scripture and what they taught.",
+                "ref_surah": 3,
+                "from_ayah": 79,
+                "to_ayah": 79,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The mission of the Prophets is the worship Allah SWT and call people to tauhid. It is not conceivable that a Prophet would call people worship him – thus commit shirk. This refutation is directed at all the false concepts that elevated either the Prophets or the angels to the level of deities."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "COVENANT OF ALLAH WITH ALL THE PROPHETS CONCERNING THE LAST PROPHET MUHAMMAD PBUH (81-82)",
+          "ord": 22,
+          "intro": [
+            "All Prophets took an oath before coming to earth that they would support and help the mission of the final Prophet (PBUH)."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "NO RELIGION IS ACCEPTABLE TO ALLAH OTHER THAN AL-ISLAM (83-85)",
+          "ord": 23,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:84)",
+                "text": "Say, ˹O Prophet,˺ “We believe in Allah and what has been revealed to us and what was revealed to Abraham, Ishmael, Isaac, Jacob, and his descendants; and what was given to Moses, Jesus, and other prophets from their Lord—we make no distinction between any of them, and to Him we ˹fully˺ submit.”",
+                "ref_surah": 3,
+                "from_ayah": 84,
+                "to_ayah": 84,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "We must believe and submit fully to Allah SWT and all his Prophets (making no distinction between them)."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:85)",
+                "text": "Whoever seeks a way other than Islam, it will never be accepted from them, and in the Hereafter they will be among the losers.",
+                "ref_surah": 3,
+                "from_ayah": 85,
+                "to_ayah": 85,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "And whoever seeks a way other than this way a submission (Islam), will find that it will not be accepted from him and in the Life to come he will be among the losers."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "CURSE OF ALLAH, THE ANGELS AND ALL MANKIND ON THE UNBELIEVERS AND FATE OF THE UNBELIEVERS WHO DIE AS UNBELIEVERS (86-91)",
+          "ord": 24,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:86)",
+                "text": "Why would God guide people who deny the truth, after they have believed and acknowledged that the Messenger is true, and after they have been shown clear proof? God does not guide evildoers:",
+                "ref_surah": 3,
+                "from_ayah": 86,
+                "to_ayah": 86,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:87)",
+                "text": "The recompense for their wrong-doing is that the curse of Allah and of the angels and of all men shall upon them.",
+                "ref_surah": 3,
+                "from_ayah": 87,
+                "to_ayah": 87,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:90)",
+                "text": "Indeed, if each of those who disbelieve then die as disbelievers were to offer a ransom of enough gold to fill the whole world, it would never be accepted from them. It is they who will suffer a painful punishment, and they will have no helpers.",
+                "ref_surah": 3,
+                "from_ayah": 90,
+                "to_ayah": 90,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "THE CURSE OF ALLAH SWT is on those who vacillate between belief and disbelief and die as disbelievers."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Guidance is never forced."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "CLEAR VS AMBIGUIOUS AYAT"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:7) It is He Who has revealed the Book to you. Some of its verses are absolutely clear and lucid, and these are the core of the Book. Others are ambiguous. Those in whose hearts there is perversity, always go about the part which is ambiguous, seeking mischief and seeking to arrive at its meaning arbitrarily, although none knows their true meaning except Allah. On the contrary, those firmly rooted in knowledge say: 'We believe in it; it is all from our Lord alone.' No one derives true admonition from anything except the men of understanding."
+            },
+            {
+              "kind": "prose",
+              "text": "When people say that the Quran is too hard to understand etc., remind them that the clear Ayat’s are simple, clear, direct and comprise of the key fundamentals or core of the Book. They contain all the commandments that help us lead the life of a good Muslim."
+            },
+            {
+              "kind": "prose",
+              "text": "Not complicated at all unless you want to make is such."
+            },
+            {
+              "kind": "heading",
+              "text": "CHARACTERISTICS OF A BELIEVER"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:17) ˹It is they˺ who are patient, sincere, obedient, and charitable, and who pray for forgiveness before dawn."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION OF TAKING UNBELIEVERS AS PROTECTORS"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:28) The believers may not take the unbelievers for their allies in preference to those who believe. Whoever does this has nothing to do with Allah unless he does so in order to protect himself from their wrong-doing. Allah warns you to beware of Him for it is to Allah that you will return."
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF SUCCESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:57) And as for those who believe and do good, they will be rewarded in full. And Allah does not like the wrongdoers.”"
+            },
+            {
+              "kind": "heading",
+              "text": "IMAN + GOOD DEEDS = SUCCESS (PARADISE)"
+            },
+            {
+              "kind": "heading",
+              "text": "THE CURSE OF ALLAH SWT"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:90) Indeed, if each of those who disbelieve then die as disbelievers were to offer a ransom of enough gold to fill the whole world, it would never be accepted from them. It is they who will suffer a painful punishment, and they will have no helpers."
+            },
+            {
+              "kind": "prose",
+              "text": "THE CURSE OF ALLAH SWT is on those who vacillate between belief and disbelief and die as disbelievers."
+            },
+            {
+              "kind": "prose",
+              "text": "THE SIMILARITIES BETWEEN THE CREATION OF ADAM AND THE CREATION OF `ISA/JESUS"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:59) Indeed, the example of Jesus in the sight of Allah is like that of Adam. He created him from dust, then said to him, “Be!” And he was!"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:67) Abraham was neither a Jew nor a Christian; he submitted in all uprightness and was not a polytheist."
+            },
+            {
+              "kind": "heading",
+              "text": "DUA’S"
+            },
+            {
+              "kind": "heading",
+              "text": "SUPPLICATION OF MARYAM AFTER THE BIRTH OF ISA/JESUS"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:36) When she delivered, she said, “My Lord! I have given birth to a girl,”—and Allah fully knew what she had delivered—“and the male is not like the female. I have named her Mary, and I seek Your protection for her and her offspring from Satan, the accursed.”"
+            },
+            {
+              "kind": "heading",
+              "text": "SUPPLICATION OF ZAKARIYA FOR HIS SON YAHYA (JOHN) (38)"
+            },
+            {
+              "kind": "arabic",
+              "text": "قَالَ رَبِّ هَبۡ لِىۡ مِنۡ لَّدُنۡكَ ذُرِّيَّةً طَيِّبَةً ۚ اِنَّكَ سَمِيۡعُ الدُّعَآءِ"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:38) Then and there Zachariah prayed to his Lord, saying, “My Lord! Grant me—by your grace—righteous offspring. You are certainly the Hearer of ˹all˺ prayers.”"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "section '1-6 IT IS ALLAH WHO HAS REVEALED TORAH, GOSPEL AND AL-QURAN', first unit",
+      "description": "source typo: the Al Imran opening verse (الٓمّٓ, 3:1) is written '(2:1)' on its translation line. Kept verbatim in translation.ref with ref_as_written; it lands outside the CP range as written. As a result 3:1 is never captured as a surah-3 ayah.",
+      "severity": "high"
+    },
+    {
+      "id": "a2",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "body end of Al Imran",
+      "description": "boundary mismatch: CP states Al-Imran 3:1 till 3:91. First captured surah-3 ayah is 3:3 (3:1 is mislabelled 2:1, see a1) and last captured is 3:90; 3:91 is never quoted in this docx (the file stops at 3:90; the surah continues in a later juz).",
+      "severity": "high"
+    },
+    {
+      "id": "a3",
+      "file": "2 - JUZ 3 Surah Baqara end.docx",
+      "location": "all translation lines",
+      "description": "format wrinkle: Al-Baqara body translations are written as bare ayah numbers ('(253)', '(254)', ...) with no surah prefix (only '(2:282)' carries it). translation.ref keeps the verbatim '(n)'; translation.ref_surah is inferred as 2 and ref_inferred is set true because the surah number is absent from the ref.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "2 - JUZ 3 Surah Baqara end.docx",
+      "location": "section-title index (part.extras)",
+      "description": "FORMAT section 2 rule 10: index titles 'CONFRONTATION OF IBRAHIM AND NAMRUD (258)', 'EXAMPLE OF BRINGING DEAD TO LIFE (259)', 'IBRAHIM'S QUESTION OF LIFE AFTER DEATH (260)' and 'ALLAH WILL CALL TO ACCOUNT (284)' are listed in the index but never re-headed in the body, so their ayat (never quoted) merge into the preceding section. Titles stay in part.extras.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "2 - JUZ 3 Surah Baqara end.docx",
+      "location": "index vs body headings",
+      "description": "index/body title drift: index reads 'THERE IS NO COMPULSION IN RELIGION AND WALI OF ALLAH VS WALI OF SHAITAN (256-257)' but the body heading is 'THERE IS NO COMPULSION IN RELIGION (256)'; 'PARABLE OF SPENDING IN CHARITY (261-263)' vs body '(261)'; 'WHAT MAKES CHARITY WORTHLESS (264)' vs body '(262 - 264)'; 'CHARITY VS SHOWING OFF (265-266)' vs body 'CHARITY REWARD (265)'; 'PROHIBITION OF USURY' vs body 'PROHIBITION OF INTEREST'; 'TAKING USURY...' vs body 'TAKING INTEREST...'; 'ALL BUSINESS DEALINGS MUST BE IN WRITING & ...' vs body '...MUST BE REDUCED TO WRITING AND ...'. Section titles kept as the body wrote them; index copy kept verbatim in part.extras.",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "section-title index (part.extras)",
+      "description": "FORMAT section 2 rule 10: index titles 'WARNING TO THE UNBELIEVERS AND LESSON FROM THE BATTLE OF BADR (10-13)' and 'FOLLOWERS OF ISA (JESUS) WERE MUSLIMS (52-53)' are listed in the index but never re-headed in the body; their (unquoted) ayat merge into the preceding section.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "section-title index (part.extras)",
+      "description": "the Al-Imran index lists the whole surah's sections, from (1-6) through (196-200), while this juz's docx only covers 3:1-3:90/91. Index titles for (92)-(200) belong to later juz; kept verbatim in part.extras, no sections created.",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - JUZ 3 Surah Baqara end.docx",
+      "location": "section 'ALLAH'S ATTRIBUTES AND \"AYAT-AL-KURSI\" (255)'",
+      "description": "format wrinkle: the '(255)' line is not a one-line translation but a long structured breakdown of Ayat al-Kursi's ten statements (numbered list with embedded Arabic quotes). It is kept verbatim in translation.text (lossless); the draft has no slot for a 'commentary-bearing (s:a) line'.",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "section (75-78) and section (38-41)",
+      "description": "format wrinkle: '(Ayat 3:75)' is a ref-only line with no translation text (unit kept with empty translation.text); and 3:38's translation text is absent from the body — its ref is appended to the end of the Arabic line and only the recap quotes the translation. Both are captured losslessly (ref embedded at the Arabic line was split to form the unit).",
+      "severity": "low"
+    },
+    {
+      "id": "a10",
+      "file": "3- JUZ 3 Surah Al Imaran .docx",
+      "location": "sections (21-25), (31-32), (81-82)",
+      "description": "three sections have a heading and commentary prose but no quoted ayah and no translation; modeled as sections with an intro and zero ayah_units (FORMAT section 1 allows empty sections). Al-Baqara section (283) is the same case.",
+      "severity": "low"
+    },
+    {
+      "id": "a11",
+      "file": "2 - JUZ 3 Surah Baqara end.docx",
+      "location": "part.extras / start of doc",
+      "description": "format gap: the docx opens with a '(Cont.)' chunk marker and a 'Introduction to the sections:' block listing the section titles. The draft has no dedicated fields for these; both are kept verbatim in part.extras (kind 'stray' / 'section_index_intro' / 'section_index').",
+      "severity": "low"
+    }
+  ]
+}

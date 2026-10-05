@@ -1,0 +1,2122 @@
+{
+  "juz": {
+    "number": 2,
+    "folder": "Juz 2",
+    "arabic_header": "سَيَقُولُ",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 2\nسَيَقُولُ\nSayaqūlu\n\"Will (they) say\"\nSurah 2 – Al-Baqara\n(2: 142 Till 2:252)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "coverage": [
+      {
+        "surah_number": 2,
+        "name_en": "Al-Baqara",
+        "from_ayah": 142,
+        "to_ayah": 252
+      }
+    ],
+    "extras": {
+      "transliteration": "Sayaqūlu",
+      "meaning": "\"Will (they) say\"",
+      "note": "extras on the juz record is a draft gap: the CP carries a transliteration ('Sayaqūlu') and a meaning ('\"Will (they) say\"') of the Arabic header that the draft juz record cannot hold; both are also verbatim inside cp_text.",
+      "coverage_check": {
+        "rule": "FORMAT.md section 3",
+        "result": "fail",
+        "detail": "Part range (2:142-2:252) equals the CP range and every captured ref other than the '(2:44)' typo falls inside it, but the captured content itself starts at 2:143 and ends at 2:245: ayah 2:142 (anomalies a1) and 2:246-2:252 (anomaly a2) are absent from this juz folder. The '(2:44)' typo also trips the outside-range check as written (anomaly a3)."
+      }
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 2,
+      "name_en": "Al-Baqara",
+      "from_ayah": 142,
+      "to_ayah": 252,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": true,
+      "source_file": "2 -JUZ 2.docx",
+      "ord": 1,
+      "front_matter": [
+        {
+          "label": "Bismillah",
+          "text": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ"
+        },
+        {
+          "label": "JUZ",
+          "text": "JUZ 2"
+        },
+        {
+          "label": "Surah heading",
+          "text": "SURAH 2 – AL BAQARA (THE COW)"
+        },
+        {
+          "label": "Continuation marker",
+          "text": "(Cont.)"
+        },
+        {
+          "label": "Introduction to the sections:",
+          "text": "QIBLA (DIRECTION IN PRAYERS) (142)\nORDER OF ALLAH TO CHANGE QIBLA (143)\nKA'BAH IN MAKKAH WAS MADE THE NEW QIBLA (144-147)\nORDER TO FACE TOWARDS KA'BAH AS QIBLA DURING SALAH (PRAYERS) (148-152)\nPRESCRIPTION TO SEEK ALLAH'S HELP (153)\nMARTYRS ARE NOT DEAD (154)\nALLAH WILL TEST THE BELIEVER'S BELIEF (155-157)\nSAFA AND MARWAH ARE THE SYMBOLS OF ALLAH (158)\nCURSE OF ALLAH, THE ANGELS AND ALL MANKIND IS ON THOSE WHO CONCEAL THE TRUTH (159-163)\nSIGNS FROM NATURE TO RECOGNIZE ALLAH (164)\nMUSHRIKIN WILL HAVE SEVERE PUNISHMENT (165)\nFOLLOWERS OF MISGUIDED LEADERS WILL REGRET ON THE DAY OF JUDGEMENT (167)\nDO NOT FOLLOW THE FOOTSTEPS OF SHAITAN (168-169)\nDO NOT PROFESS THE FAITH BLINDLY (170-171)\nPROHIBITED (HARAM) FOOD (172-173)\nTHOSE WHO HIDE THE TRUTH FOR WORLDLY GAIN SWALLOW NOTHING BUT FIRE (174-176)\nDEFINITION OF RIGHTEOUSNESS? (177)\nTHE ISLAMIC LAWS OF RETRIBUTION (178-179)\nCOMMANDMENT OF ALLAH TO MAKE A 'WILL' (180-182)\nOBLIGATION OF FASTING (183-184)\nREVELATION OF THE QURAN AND FASTING IN THE MONTH OF RAMADHAN (185)\nALLAH IS VERY CLOSE TO HIS DEVOTEES (186)\nNIGHTS OF THE FASTING MONTH AND TIMINGS OF FASTING (187)\nBRIBE IS A SIN (188)\nTHE MOON IS TO DETERMINE TIME PERIODS (189)\nORDER TO FIGHT FOR A JUST CAUSE (190-193)\nRETALIATION IN THE SACRED MONTHS (194)\nORDER TO GIVE CHARITY (195)\nHAJJ AND UMRAH (PILGRIMAGE TO MAKKAH) (196)\nRESTRICTIONS DURING HAJJ AND PERFORMANCE OF HAJJ (PILGRIMAGE) (197-203)\nHYPOCRISY VS TRUE BELIEF (204-207)\nBELIEVERS ENTER INTO ISLAM COMPLETELY (208-210)\nBELIEVERS WILL RANK OVER THE UNBELIEVERS (211-212)\nMANKIND WAS ONE NATION HAVING ONE RELIGION (213)\nWAY TO PARADISE PASSES THROUGH TRIALS (214))\nCHARITY AND FIGHTING (FOR JUST CAUSE) IS MADE OBLIGATORY (215-216)\nFIGHTING IN THE SACRED MONTH AND PUNISHMENT FOR \"MURTAD\"- WHO TURN BACK FROM ISLAM (217-218)\nDRINKING AND GAMBLING ARE SINFUL AND DEALINGS WITH ORPHANS (219-220)\nIT IS UNLAWFUL TO MARRY A MUSHRIK (221)\nQUESTION ABOUT MENSTRUATION (222-223)\nDO NOT MISUSE OATHS TAKEN IN THE NAME OF ALLAH (224-225)\nLIMITATION FOR RENOUNCING CONJUGAL RIGHTS (226-227)\nWAITING PERIOD AFTER DIVORCE (228)\nLAWS RELATING TO DIVORCE (229-230)\nTREATMENT TO THE DIVORCED WOMEN (231)\nTHERE IS NO RESTRICTION ON DIVORCEES TO REMARRY (232)\nREQUIREMENT OF BREAST-FEEDING BABIES AND WAITING PERIOD FOR WIDOWS (233-234)\nTHERE IS NO RESTRICTION ON THE REMARRIAGE OF WIDOWS (235)\nDOWRY AND DIVORCE (236-237)\nGUARDING THE SALAH (PRAYERS) (238-239)\nOBLIGATION OF EXECUTING THE \"LAST WILL AND TESTAMENT\" (240-242)\nTHERE IS NO ESCAPE FROM DEATH (243-244)\nSPENDING IN THE WAY OF ALLAH AND ISRAELITES DEMAND FOR A KING (245-246)\nALLAH APPOINTED TALUT TO BE THEIR KING (247-248)\nTEST OF ISRAELITES' BELIEF AND OBEDIENCE (249)\nVICTORY IS NOT BY NUMBERS AND PRAYER OF THE BELIEVERS FOR VICTORY (250-251)\nREAFFIRMING THE PROPHETHOOD OF MUHAMMAD (PBUH) (252)"
+        }
+      ],
+      "sections": [
+        {
+          "title": "143 ORDER OF ALLAH TO CHANGE QIBLAH",
+          "ord": 1,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:143",
+                "text": "And so We have made you ˹believers˺ an upright community so that you may be witnesses over humanity and that the Messenger may be a witness over you. We assigned your former direction of prayer only to distinguish those who would remain faithful to the Messenger from those who would lose faith. It was certainly a difficult test except for those ˹rightly˺ guided by Allah. And Allah would never discount your ˹previous acts of˺ faith. Surely Allah is Ever Gracious and Most Merciful to humanity."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is making us (Believers/Muslims) realize our new responsibility via the shift of the qibla. Islam and the Quran is now a trust/responsibility upon us and on the DoJ we will be questioned if we learnt and conveyed. The Prophet (PBUH) will either testify for us or against us."
+                },
+                {
+                  "kind": "quote",
+                  "text": "…..And so We have made you ˹believers˺ an upright community so that you may be witnesses over humanity and that the Messenger may be a witness over you…."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: On the DoJ Prophet Nuh (PBUH) will be asked by Allah SWT if he conveyed the message. Nuh (PBUH) will say “Yes.” But when his nation is asked if he conveyed the message they will say, “No warner come to us.” Then Allah SWT will ask Nuh (PBUH) as to who will bear witness in your (Nuh (PBUH)’s favour. Nuh will say, “Muhammad and his followers.” So, we (Muslims) will testify that he (Nuh PBUH) conveyed the message. Then Prophet Muhammad will bear witness over us. This is what is meant by the above statement of Allah. (Sahih al Bukhair 4487)"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "144-147 KA'BAH IN MAKKAH WAS MADE THE NEW QIBLA",
+          "ord": 2,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:144",
+                "text": "Indeed, We see you ˹O Prophet˺ turning your face towards heaven. Now We will make you turn towards a direction ˹of prayer˺ that will please you. So turn your face towards the Sacred Mosque ˹in Mecca˺—wherever you are, turn your faces towards it. Those who were given the Scripture certainly know this to be the truth from their Lord. And Allah is never unaware of what they do."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: When Prophet Muhammad arrived in Madina, he prayed facing Jerusalem for 16 to 17 months but he wished that he would be commanded to face the Ka’ba. Then Allah SWT revealed this Ayat."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: One of my favorites Ayat’s because it describes the status and cherished relationship between Allah SWT and His Prophet. Allah SWT is so near to us that He notices and appreciates even the smallest gesture in sha Allah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:146",
+                "text": "Those We have given the Scripture recognize this ˹Prophet˺ as they recognize their own children. Yet a group of them hides the truth knowingly."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Previous Scriptures (Torah and Injil) were very clear regarding the coming of Prophet Muhammad (PBUH) and even though religious scholars recognized the Prophet (PBUH) as clearly as they would recognize their own children, but due to pride and a hunger for retaining power, they refused to acknowledge this truth."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – In the Torah it is also written that the last Prophet (PBUH) would face Ka’ba for prayer."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "148-152 ORDER TO FACE TOWARDS KA'BAH AS QIBLA DURING SALAH (PRAYERS)",
+          "ord": 3,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:149",
+                "text": "Wherever you are ˹O Prophet˺, turn your face towards the Sacred Mosque. This is certainly the truth from your Lord. And Allah is never unaware of what you ˹all˺ do."
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:150",
+                "text": "Wherever you are ˹O Prophet˺, turn your face towards the Sacred Mosque. And wherever you ˹believers˺ are, face towards it, so that people will have no argument against you, except the wrongdoers among them. Do not fear them; fear Me, so that I may ˹continue to˺ perfect My favour upon you and so you may be ˹rightly˺"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "These are the second and third commands from Allah SWT to face Al-Masjid Al-Haram (the Sacred Mosque) from every part of the world (during prayer). This is for emphasis and seriousness of the matter. Don’t worry or fear people who might mock or make fun of the fact that you had to change the direction of the qibla – fear and obey only Allah SWT."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: First question we will be asked by Allah SWT on the DoJ is about our salah or prayer. Take the matter of prayer as well as the direction of qibla seriously."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "153 PRESCRIPTION TO SEEK ALLAH'S HELP",
+          "ord": 4,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:153",
+                "text": "You who believe, seek help/fortitude through patience and prayer, for God is with the patient."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Formula for what to do in a difficult situation; Have patience and perform prayer. Patience and prayer when performed consistently have a huge impact on one’s life. Allah SWT’s help is with such Muslims."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Essentials for success are salah/prayer and sabr/patience. Difficulties in life have a purpose; to bring us closer to our Creator, teach us, and help us repent."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH WILL TEST THE BELIEVER'S BELIEF (155-157)",
+          "ord": 5,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:155",
+                "text": "We will certainly test you with a touch of fear and famine and loss of property, life, and crops. Give good news to those who patiently endure—"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Surely and most definitely Allah SWT will test each one of us (Believers) or put us in situations where we encounter some test/trial including: (i) Fear (ii) Hunger (iii) Reduction in wealth (iv) Death/illness (v) and Profit and Loss."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Tests and trails are part and parcel of life. Our reaction is being assessed here. So, congratulate those who are patient."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith:  Amazing is the believer, for whatever Allah SWT decrees for him, it is better for him! \nIf he is tested with a bounty, he is grateful for it and this is better for him; \nand if he is afflicted with a hardship, he is patient with it and this is better for him."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: It is important to note that most of us (meaning a certain segment of society ) are not tested with difficultly rather our tests and trials come in the form of privilege, ease, comfort, health, wealth, free time, and opportunity. Reflect on how you are utilizing these gifts from Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "الَّذِيۡنَ اِذَآ اَصَابَتۡهُمۡ مُّصِيۡبَةٌ  ۙ قَالُوۡٓا اِنَّا لِلّٰهِ وَاِنَّـآ اِلَيۡهِ رٰجِعُوۡنَؕ"
+              ],
+              "translation": {
+                "ref": "2:156",
+                "text": "when a misfortune comes to them, they say, \"We are Allah''s and we shall certainly return to Him,''"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "'Saying' does not signify the mere making of a statement rather it means a statement which is accompanied by a deep conviction that everything happens by Allah’s decree and to Him is our ultimate return. This is a profound proclamation that embodies hope, submission, and acceptance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Calamity is not random; Hadith: Whatever strikes you was meant for you and whatever misses you was meant to miss you."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "159-163 CURSE OF ALLAH, THE ANGELS AND ALL MANKIND IS ON THOSE WHO CONCEAL THE TRUTH",
+          "ord": 6,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:159",
+                "text": "Indeed Allah curses, and the cursers, too, curse those who conceal the clear teachings and guidance We have sent down, after We have made these plain in the Book for the guidance of all mankind."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Concealing knowledge esp. of the deen is a major crime that results in the curse of Allah SWT, and His Angles. When Allah SWT gives someone the gift of knowledge then it carries with it a heavy responsibility (i) One must act upon the knowledge and (ii) Convey/teach others."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The biggest failure of the Jews was that they kept the teachings of the Book of God confined to a limited class of people, mainly the rabbis and professional theologians. They did not allow this knowledge to filter down to the Jewish masses let alone the non-Jewish peoples of the world. Moreover, in order to maintain their hold on the Jewish masses they lent their tacit approval to every corrupt deviation.\nThe Muslims are being cautioned to refrain from this kind of behavior as they are now duty-bound to do their utmost to radiate true guidance to all mankind."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "THE CURSE OF ALLAH SWT",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:161",
+                "text": "Those who adopted the way of disbelief and died as disbelievers, are accursed of Allah and of angels and of all mankind: they shall remain accursed forever."
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Disbelief and dying on disbelief is not something to be taken lightly. May Allah SWT keep us on Iman till our last breath. Ameen."
+                },
+                {
+                  "kind": "prose",
+                  "text": "We find that (i) Concealing the Truth (ii) and Rejecting the Truth both bring about the curse of Allah SWT."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "THE CURSE OF ALLAH SWT, ANGELS AND ALL MANKIND",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "164 SIGNS FROM NATURE TO RECOGNIZE ALLAH",
+          "ord": 7,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:164",
+                "text": "Indeed, in the creation of the heavens and the earth; the alternation of the day and the night; the ships that sail the sea for the benefit of humanity; the rain sent down by Allah from the skies, reviving the earth after its death; the scattering of all kinds of creatures throughout; the shifting of the winds; and the clouds drifting between the heavens and the earth—˹in all of this˺ are surely signs for people of understanding."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is encouraging us to reflect, think and appreciate His clear Ayat/signs, including but not limited to, the sky and earth, the seamless and gentle rotation of day and night, rain, wind, clouds and all of Gods creators. Now it is for us to contemplate as to who is in control of this perfection, wisdom, power and thus who should we worship??"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "165-167 MUSHRIKIN WILL HAVE SEVERE PUNISHMENT AND FOLLOWERS OF MISGUIDED LEADERS WILL REGRET ON THE DAY OF JUDGEMENT",
+          "ord": 8,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:166",
+                "text": "(In spite of such clear signs of the Oneness of Allah), there are people who set up equals and rivals with Allah and adore them with the adoration due to Allah. whereas the Believers adore Allah most ardently. Would that these transgressors could realize now what they will realize, when they will see the chastisement before them that power and authority wholly belong to Allah and that Allah is severe in punishment!"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT created everything on this earth and this entire universe, yet, amazingly some set up competitors/rivals besides Allah SWT; loving them like they should love Allah SWT.  This is because they have not given serious thought to Allah SWT, His attributes, His Creation etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Conversely, those who Believe after gaining knowledge and reflection are intense in their love for Allah SWT."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The rights, love and attributes of Allah SWT as our Creator and Master cannot be given/assigned to anyone or thing whether it be the pursuit of money, nationalism, your own desires, or individuals you love and idolize as you should Allah SWT. The punishment for Shirk is severe."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "170-171 DO NOT PROFESS THE FAITH BLINDLY",
+          "ord": 9,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:170",
+                "text": "When it is said to them, “Follow what Allah has revealed,” they reply, “No! We ˹only˺ follow what we found our forefathers practicing.” ˹Would they still do so,˺ even if their forefathers had ˹absolutely˺ no understanding or guidance?"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "We take a deep dive into our worldly matters, whether it is our job, education, clothes, hobbies etc., to try and understand what is best. However, with religion we blindly follow our forefathers like a herd to cattle. Do we even know if our forefathers were rightly guided? More often than not culture and tradition dictate how we practice religion as opposed to knowledge and understanding."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Use your mind and intellect when it comes to religion. Study for yourself!! This is the most important learning you will ever do. Assess: Who do you love/follow and why?"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "172-173 PROHIBITED (HARAM) FOOD",
+          "ord": 10,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:173",
+                "text": "Allah has only forbidden you to eat what dies of itself, and blood and swine flesh and what has been consecrated to any other name than of Allah. But one will incur no sin if, forced by absolute necessity, he eats of any of these forbidden things, provided he has no intention of transgressing the law and does not take more than what is absolutely indispensable: for Allah is very Forgiving and very Merciful."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has forbidden for you only (i) dead animals (ii) blood (iii) flesh of swine (iv) that which is slaughtered as a sacrifice for other than Allah SWT.\n\n(i) Dead animals are those that die before being slaughtered; whether they die by strangling, a violent blow, a headlong fall, the goring of horns or by being partly eaten by a wild animal.\nExceptions: Dead animals of the sea and locust are excluded from this ruling."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(ii) Flowing blood: Exceptions: Blood of or within the liver and the spleen."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(iii) Eating the meat of swine, whether slaughtered or not."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(iv) This applies to the flesh of an animal slaughtered in the name of anything and anyone other than God as well as to the food prepared as an offering to someone other than God.\n*The Prohibited is Allowed in Cases of Emergency"
+                },
+                {
+                  "kind": "prose",
+                  "text": "If one is forced by necessity without willful disobedience nor transgressing due limits, then there is no sin on him/her."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "174-176 THOSE WHO HIDE THE TRUTH FOR WORLDLY GAIN SWALLOW NOTHING BUT FIRE",
+          "ord": 11,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:174",
+                "text": "Indeed, those who hide Allah’s revelations, trading them for a fleeting gain consume nothing but fire into their bellies. Allah will neither speak to them on the Day of Judgment, nor will He purify them. And they will suffer a painful punishment."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Hiding the commands/rulings of Allah SWT is a crime and the punishment is the extreme anger of Allah SWT."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Once we gain knowledge then we cannot amend religion to suit our needs/desires/ societal norms and expectations."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Background: From the beginning to this point, Surah Al-Baqara is reaching (almost) its half-way mark. Until now, the message was addressed mostly to the deniers. The approach thus far is full of warning mostly given to the deniers of the message of the Quran; any reference to Muslims was only as a consequence.\n\nThe latter half of Surah Al-Baqara whereby the primary purpose is to educate Muslims in the principles of their religion and any address to non-Muslims is by implication only."
+                },
+                {
+                  "kind": "prose",
+                  "text": "From this point onwards, we find details regarding the basic principles re: attributes of birr or goodness (the essence of which is 'obedience') as well as many additional commands, including; Equal Retaliation, Will, Fasting, Jihad, Hajj, Spending, Menstruation,’ Ila’ Oath, Divorce, Marriage, Post-divorce waiting period for women ('Iddah ), Dower (Mahr),  Jihad and Infaq (spending) in the way of Allah and some aspects of buying and selling and witnessing."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The main themes intertwined in this latter half of Surah Al-Baqara; Muslims are being taught about their roles, responsibilities, relationships, worship, laws, halal, haram etc. (Sharia) coupled with the need to strive hard (Jihad) with one’s money and self for the cause of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The finale is good tidings and the promise of mercy and forgiveness."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "177 DEFINITION OF RIGHTEOUSNESS",
+          "ord": 12,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:177",
+                "text": "Righteousness/goodness is not in turning your faces towards the east or the west. Rather, the righteous are those who believe in Allah, the Last Day, the angels, the Books, and the prophets; who give charity out of their cherished wealth to relatives, orphans, the poor, ˹needy˺ travelers, beggars, and for freeing captives; who establish prayer, pay alms-tax, and keep the pledges they make; and who are patient in times of suffering, adversity, and in ˹the heat of˺ battle. It is they who are true ˹in faith˺, and it is they who are mindful ˹of Allah˺."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It is not just Birr (righteousness/goodness) that you turn your faces towards east and (or) west; but Birr (righteousness/goodness) is the one who believes in Allah SWT, the Last Day, the Angels, the Book, the Prophets....’ \n\nAs for the explanation of this Ayat, Allah SWT first commanded the believers to face Bayt Al-Maqdis and then to face the Ka`bah during the prayer. This change was difficult for some People of the Book and even for some Muslims. Then Allah SWT sent revelation which clarified the wisdom behind this command, that is, obedience to Allah SWT, adhering to His commands, facing wherever He commands facing, and implementing whatever He legislates -- that is the objective. We must adopt a holistic approach to piety in religion, external as well as internal."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Definition of true goodness/righteousness means: (i) Belief in Allah SWT and submission to Him (ii) Belief in the Last Day (iii) Angels (iv) The Books (v) Prophets. (= IMAN)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(vi) Spending in Allah SWT’s way (from what you love) on close relatives, orphans, those in need, travelers, those who ask, free human life."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(vii) Establishing Salah (purify soul)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(viii) Pay Zakat (purify money)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(ix)   Fulfill promises (With Allah SWT and mankind)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(x)    Steadfast/patient/consistency in distress, adversity and times of war."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Iman + Ethical Goodness + Religious Goodness = Birr (Holistic goodness)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Important to remember that true piety is submitting to Allah SWT the way he has prescribed. Therefore, we cannot invent or pick and choose what we think it goodness/righteousness or piety."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see:"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(2:115) The East and the West belong to Allah. To whichever direction you turn, you will be turning to Allah. Allah is All-Embracing, All-Knowing."
+                },
+                {
+                  "kind": "prose",
+                  "text": "God is neither eastern nor western. East and west, north and south, and indeed all places and directions are His, though He is not confined to any particular place or direction."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "AYAT UL AL-BIRR (GOODNESS, PIETY, RIGHTEOUSNESS)",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "ACTIONS (below)",
+                  "precedes_commentary_index": 2,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "First the rights/care of others: (Ethical Goodness)",
+                  "precedes_commentary_index": 2,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "Second the right of Allah SWT: (Religious Goodness)",
+                  "precedes_commentary_index": 3,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "178-179 THE ISLAMIC LAWS OF RETRIBUTION",
+          "ord": 13,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Legal ruling in the case of murder called the ‘Law of Qisas’ is mandatory in the case of intentional murder but not applicable in the case of an accident or mistake. But forgiveness by the injured party (meaning the heirs of the victim) is best, whether it is via financial compensation called ‘Diya’ in Islamic law or simply pardon the murderer."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Law of Qisas: (law of retaliation) retaliation in kind\", ‘eye for an eye, tooth for a tooth etc.’"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, this serious punishment prevents this serious crime."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see: Surah Nisa Ayat 92: The Ruling Concerning Killing a Believer by Mistake."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "180-182 COMMANDMENT OF ALLAH SWT TO MAKE A 'WILL'",
+          "ord": 14,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Ayat’s (2:180 and 181) re: a duty of every Believer to make a will were revealed before Surah Nisa’s laws of inheritance therefore have been abrogated. In Surah Nisa, Allah SWT Himself decides the shares for inheritors."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But two conditions regarding a will and inheritance are still mandatory:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Cannot increase the share of those who already inherit i.e. sons, daughters, etc."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Cannot gift more than 1/3 of the full amount."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: The Messenger of Allah (PBUH) said: “Allah has given each heir his fixed share. So, there is no will for a deserving heir.”"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:181",
+                "text": "But whoever changes the will after hearing it, the blame will only be on those who made the change. Indeed, Allah is All-Hearing, All-Knowing."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Beware!"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "185 REVELATION OF THE QURAN AND FASTING IN THE MONTH OF RAMADHAN",
+          "ord": 15,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:185",
+                "text": "Ramaḍân is the month in which the Quran was revealed as a guide for humanity with clear proofs of guidance and the standard ˹to distinguish between right and wrong˺. So whoever is present this month, let them fast. But whoever is ill or on a journey, then ˹let them fast˺ an equal number of days ˹after Ramaḍân˺. Allah intends ease for you, not hardship, so that you may complete the prescribed period and proclaim the greatness of Allah for guiding you, and perhaps you will be grateful."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Fasting or Sawm (Arabic term) is mandatory for all Muslims unless one is sick or traveling in which case one should Fast the same number of missed days later (within that one year)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Quran was revealed during the month of Ramadan on the night of laylat-al-qadr to the Prophet Muhammad (PBUH) by Angel Jibreel."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Empathy, Allah consciousness (taqwa), patience, closeness to our Raab are just a few of the benefits of Fasting."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The first two Ayat’s re: Fasting (2:183 and 184) are not about the month of Ramadan but the three or so Fasts the Prophet (PBUH) would keep every month. FYI: Initially, Muslims were given the option to Fast or give fidya (compensation) but then these Ayat’s were abrogated."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Now the fidyah (Expiation) for not Fasting is only for the old and the seriously or terminally ailing."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This world is not a place of play rather mankind is created to worship Allah SWT. Fasting during Ramadan (mandatory) then Fasting during Ashura, Haj, Muharram, as well as the three optional fasts every month, are repeated chances for us to be blessed and to repent."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Order to Fast and The Virtue of Ramadan and the Revelation of the Quran in it",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:187",
+                "text": "It has been made permissible for you to be intimate with your wives during the nights preceding the fast. Your spouses are a garment for you as you are for them. Allah knows that you were deceiving yourselves. So He has accepted your repentance and pardoned you. So now you may be intimate with them and seek what Allah has prescribed for you. ˹You may˺ eat and drink until you see the light of dawn breaking the darkness of night, then complete the fast until nightfall. Do not be intimate with your spouses while you are meditating in the mosques. These are the limits set by Allah, so do not exceed them. This is how Allah makes His revelations clear to people, so they may become mindful ˹of Him˺."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Fasting is from sunrise to sunset. Additionally, a husband and wife can have sexual relations when not Fasting. (Except when in I’tikaf in a mosque)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT tells us not exceed the set limits. For us to stay away from sin we have to understand what constitutes as sin and thus, we can only save ourselves with knowledge."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The ideal relationship between a husband and wife is described here which is a very close, intimate, protective, calming, necessary and beautifying bond. (Analogy of clothes is given)."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Manner and Rules of Fasting",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "190-193 ORDER TO FIGHT FOR A JUST CAUSE",
+          "ord": 16,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:190",
+                "text": "Fight in the cause of Allah ˹only˺ against those who wage war against you, but do not exceed the limits. Surely Allah does not like transgressors."
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:191",
+                "text": "Kill them wherever you come upon them and drive them out of the places from which they have driven you out. For persecution is far worse than killing. And do not fight them at the Sacred Mosque unless they attack you there. If they do so, then fight them—that is the reward of the disbelievers."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "REASON: These Ayat’s were revealed concerning the treaty of Hudaybiyyah. The Messenger of Allah (PBUH) and his Companions were barred from entering the Sacred House. He then signed a treaty with the idolaters which stipulated that he would go back to Madina and return the following year. Mecca would be vacated for him for three days during which he can circumambulate the Sacred House and do whatever he wished. The following year, the Messenger of Allah (PBUH)and his Companions got ready to perform the lesser pilgrimage (Ummrah) which they had missed but, at the same time, were afraid that Quraysh would not honour their treaty, bar them from the Sacred House and fight them. The Companions were apprehensive of fighting during the Sacred months and in the Sacred Precinct. And so Allah, revealed (Fight in the way of Allah against those who fight against you), i.e. the Quraysh”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Believers are given permission to fight. Rules of fighting have been prescribed by Allah SWT:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Fight for the casue/sake of Allah SWT;"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Fight those who fight you;"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Do not transgress limits; i.e., do not lie, cheat or kill non-combatants. (Allah’s help is with those who are just/honorable.)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Do not fight in Ka’ba. However, if someone commits aggression then in order to stop them you can fight."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "If they stop fighting then you too must cease. Allah SWT is Most Forgiving."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says religious persecution is worse than killing because one is alive and not able to live for what we were created i.e worship."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The purpose of fighting is to end fitna (leading a haram way of life) and or persecution of any kind including religious so as to ensure the worship Allah SWT. The real intent of the Ayat is to stress that force should be used but only when it is unavoidable and only to the extent that is absolutely necessary."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Throughout Meccan period there was a prohibition to fight as dawa or invitation to Islam was the priority. But now in Madina the priority was to establish a strong Islamic State therefore fighting and retaliation was permitted."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Many quote these Ayat’s to misrepresent Islam therefore it is important to understand the context as this does not mean kill any or all disbelievers, including, women, children, the elderly etc. Also see Surah Nisa."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Command to fight Those Who fight Muslims and killing Them wherever They are found",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "195 ORDER TO GIVE CHARITY",
+          "ord": 17,
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "وَاَنۡفِقُوۡا فِىۡ سَبِيۡلِ اللّٰهِ وَلَا تُلۡقُوۡا بِاَيۡدِيۡكُمۡ اِلَى التَّهۡلُكَةِ ۛۚ وَاَحۡسِنُوۡا  ۛۚ اِنَّ اللّٰهَ يُحِبُّ الۡمُحۡسِنِيۡنَ"
+              ],
+              "translation": {
+                "ref": "2:195",
+                "text": "Spend your wealth in the Way of Allah and do not cast yourselves into ruin with your own hands. Do all things gracefully, for Allah loves those who do all things with excellence"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Spend in the way of Allah SWT via your time, core competencies, money, etc., and spend on those whom Allah SWT has mentioned in Ayat (2:177) i.e. close relatives, orphans and others. Do not be stingy or refrain in this regard as that will result your own destruction meaning don’t waste your life as our purpose in life is worshiping and pleasing Allah SWT."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Why is it that we strive hard to excel in this world but in religion we are happy with just the bare minimum? Life is finite so spend part of your day in worship and remember to do more than just the basics."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "196 HAJJ AND UMRAH (PILGRIMAGE TO MAKKAH)",
+          "ord": 18,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Command to complete Hajj and Umrah after you have started i.e. after you have put on the Ihram."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If one is prevented i.e. sickness then one must stop and offer the sacrifice of an animal and for men shave their head, so as to come out of the state of Ihram."
+                },
+                {
+                  "kind": "prose",
+                  "text": "RESTRICTIONS DURING HAJ: (i) Husband and wife cannot have relations (ii) No sin or disobedience (iii) No arguments/disputes/fighting is allowed -- because when so many people are together there is a greater chance of sin i.e. backbiting, cheating, disagreements etc."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Once in a lifetime we all must complete Haj, that is, if one (i) has money (ii) physical ability (iii) free from responsibilities i.e small children, aging parents etc. Remember Haj is a glimse of the DoJ when we will be alone, all equal, and imploring our Raab for mercy."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Command to complete Hajj and Umrah",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            },
+            {
+              "arabic_lines": [
+                "وَمِنۡهُمۡ مَّنۡ يَّقُوۡلُ رَبَّنَآ اٰتِنَا فِى الدُّنۡيَا حَسَنَةً وَّفِى الۡاٰخِرَةِ حَسَنَةً وَّ قِنَا عَذَابَ النَّارِ"
+              ],
+              "translation": {
+                "ref": "2:201",
+                "text": "There are others who say: “Our Lord, grant us what is good in this world and what is good in the World to Come, and protect us from the chastisement of the Fire.”"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This dua should be read during Haj and, of course, afterwards as well."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not be greedy for this world only. Always ask Allah SWT for the best in the Hereafter as well."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Learn this Dua and recite often."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "204-207 HYPOCRISY VS TRUE BELIEF",
+          "ord": 19,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about al-Akhnas ibn Shurayq al-Thaqafi, an ally of Banu Zuhrah. He came to the Prophet (PBUH) in Madina, and pretended to be a Muslim. Upon leaving the Messenger of Allah (PBUH), he passed by a cultivated field and some asses which belonged to some Muslims. He burned the field and hamstrung the asses. Then Allah SWT revealed about him (And when he turneth away (from thee) his effort in the land is to make mischief therein and to destroy the crops and the cattle) [2:205]”.  HYPOCRITE"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about Suhayb bin Sinan Ar-Rumi. When Suhayb became a Muslim in Makkah and intended to migrate (to Madina), the people (Quraysh) prevented him from migrating with his money.\nThey said that if he forfeits his property, he is free to migrate. He abandoned his money and preferred to migrate, and Allah revealed this Ayat about him. [2:207]”. BELIEVER"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The characteristics of a hypocrite and a true Momin are being described here so that we may be mindful."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A hypocrite is one who is deceitful, duplicitous and two-faced. There is no conformity between his words and actions. Additionally, he lies, breaks promise, is quarrelsome and full of pride/arrogance."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:204 , 205 and 206",
+                "text": "in these Ayat’s the traits of a hypocrite  are being described whose talk is very sincere, enchanting and engaging but in actuality his words are nothing but hatred. In fact, due to their pride and ego they become even more stubborn in their disbelief not fearing Allah SWT nor the consequences of such talk."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Result: For such people Allah SWT has stipulated Hell!"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:207",
+                "text": "A Muslims existence is for the sole purpose of gaining the pleasure of Allah SWT. He does what he says and says what he does. Transparent, yet, not simplistic."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Result: And for such Muslims Allah SWT is very compassionate and gracious."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "208-210 BELIEVERS ENTER INTO ISLAM COMPLETELY",
+          "ord": 20,
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "وَلَا تَتَّبِعُوۡا خُطُوٰتِ الشَّيۡطٰنِؕ اِنَّهٗ لَـکُمۡ عَدُوٌّ مُّبِيۡنٌ ص يٰٓاَيُّهَا الَّذِيۡنَ اٰمَنُوا ادۡخُلُوۡا فِى السِّلۡمِ کَآفَّةً"
+              ],
+              "translation": {
+                "ref": "2:208",
+                "text": "Believers! Enter wholly into Islam and do not follow in the footsteps of Satan for he is your open enemy."
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (2:85)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about 'Abd Allah ibn Salam and his followers. This is because while they observed the laws of Islam, they were still observing the laws of Musa (PBUH). They observed the Sabbath and shunned the meat and milk of camels after they embraced Islam. Some Muslims reproached them for this but they defended themselves by saying that they could observe both. They justified their actions by saying that, 'The Torah is the Book of Allah, so let us observe its teachings'. Allah, SWT, then revealed this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "We as, Muslims, meaning those who submit 100% of our whole being to Allah SWT, are not allowed to pick and choose what and how we believe.  Thus, our outlook, intellectual pursuits, behavior, interactions with other people all should be completely subservient to Islam. Islam is a complete way of life therefore we cannot compartmentalize or silo our lives meaning one face with our friends and another at our Mosque. We must believe without reservations and exceptions."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: The Children of Israel believed and rejected according to their desires. Also see (2:85)."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Entering Islam in its Entirety is obligated",
+                  "precedes_commentary_index": 2,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "213 MANKIND WAS ONE NATION HAVING ONE RELIGION",
+          "ord": 21,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:213",
+                "text": "Humanity had once been one community ˹of believers before they lost faith˺. Then Allah raised prophets as deliverers of good news and as warners, and revealed to them the Scriptures in truth to judge among people regarding their disputes. And no one disputed the Scriptures except the very people who received them after clear proofs had come to them—out of jealousy. Then Allah, by His grace, has guided the believers to the truth regarding those disputes. And Allah guides whoever He wills to the Straight Path."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Humanity began in full light of the Truth with Allah SWT revealing the right way of life. Thereafter, the human race remained on the Right Way for some time and lived as one community. Later, however, people invented deviating ways. This did not happen because Truth had not been communicated to them. Rather the cause was that some people willfully sought to acquire privileges, benefits and advantages beyond their legitimate limits, and thus subjected others to injustices. Then to enable people to overcome this corruption Allah SWT sent His Prophets. These Prophets were not sent to establish separate religions or bring new religious communities into existence. Rather the purpose of the Prophets was to illuminate before people the Truth which they had allowed to be lost, and once again make them into one community."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: The urge to dominate is innate in man which leads to rebellion, deviation and disputes."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "214 WAY TO PARADISE PASSES THROUGH TRIALS",
+          "ord": 22,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:214",
+                "text": "Do you think you will be admitted into Paradise without being tested like those before you? They were afflicted with suffering and adversity and were so ˹violently˺ shaken that ˹even˺ the Messenger and the believers with him cried out, “When will Allah’s help come?” Indeed, Allah’s help is ˹always˺ near."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about the Battle of the Trench when Muslims were stricken with exhaustion, hardship, heat, fear, cold, tightness of living and all kinds of harm. When the Messenger of Allah (PBUH) and his Companions migrated to Medina, the Muslims lived under extreme duress because they migrated without their wealth and had left their houses and fortunes in the hands of the idolaters, preferring instead the good pleasure of Allah and His Messenger. Additionally, the Jews revealed their enmity to the Messenger of Allah (PBUH). Thus, we see trial upon trial."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In order to set their minds at rest, Allah SWT, revealed this Ayat:  (Or think ye that ye will enter paradise…)”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The point emphasized here is that the Prophets and their followers were confronted with severe resistance from those in rebellion against God. Still at grave risk to themselves they strove to establish the true religion over the false ways of life. Therefore, to follow this religion has never been easy; as it is not merely a matter of declaring one's faith and then sitting back in ease and comfort. On the contrary, the declaration of faith has always demanded sacrifices, suffering, adversity -- at times extreme."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But remember that for those striving hard in faith Allah SWT’s aid, succor, assistance, relief, comfort is aways near."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: One of my favorite Ayat’s. Similar to Ayat (2:144) we discover how close and accessible our Raab is. Then, it is up to us to call upon Him for help/comfort. And indeed, how unfortunate are we if we do not."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Victory only comes after succeeding in the Trials",
+                  "precedes_commentary_index": 2,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "215-216 CHARITY AND FIGHTING (FOR JUST CAUSE) IS MADE OBLIGATORY",
+          "ord": 23,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:215",
+                "text": "The people ask, \"What should we spend?\" Tell them, \"Whatever you spend, spend for your parents, your relatives, orphans, the needy and the traveler; and whatever good you do, Allah has knowledge of it."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat was revealed about voluntary charity/spending to earn Allah SWT’s pleasure and not about zakat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Important to note: anything that is useful, helpful, valuable whether it be property or money, a helping hand, advice, or a kind word, is all charity and good."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:216",
+                "text": "Fighting has been made obligatory upon you ˹believers˺, though you dislike it. Perhaps you dislike something which is good for you and like something which is bad for you. Allah knows and you do not know."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In this Ayat, Allah SWT made it obligatory or has decreed upon Muslims to fight in Jihad against the evil of the enemy who transgress against Islam. Muslims of Madina were now told to fight after years of being told to be patient in Mecca but when fighting was commanded they found it hard."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Life lesson: If Allah SWT has decreed something upon us then we must obey and subdue our own desires. Trust Allah SWT as He knows best what is good for us."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "219-220 DRINKING AND GAMBLING ARE SINFUL AND DEALINGS WITH ORPHANS",
+          "ord": 24,
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "يَسۡـئَلُوۡنَكَ عَنِ الۡخَمۡرِ وَالۡمَيۡسِرِ"
+              ],
+              "translation": {
+                "ref": "2:219",
+                "text": "They ask you about drinking and gambling. Say, \"There is great harm in both, though there is some benefit also for the people. But the harm of the sin thereof is far greater than their benefit. \""
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is the first injunction concerning intoxicants (drugs), alcoholic drinks and gambling and here the matter has been left merely as an expression of disapproval. This was a preliminary step designed to prepare the minds of people for the acceptance of complete prohibition."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Principle: Something haram can still have some benefits."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Benefits of alcohol may include, digestion food, sharpening the mind, bringing about a joyous sensation and financially benefiting from its sale.\nBenefits of earnings through gambling is that one uses to spend on his family and on himself."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Yet, these benefits are overshadowed by the clear harm i.e. the adverse effects on the mind and our religion."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(4:43) O believers! Do not approach prayer while intoxicated…"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(5:90) O believers! Intoxicants, gambling, idols, and drawing lots for decisions are all evil of Satan’s handiwork. So shun them so you may be successful."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(5:91) Satan’s plan is to stir up hostility and hatred between you with intoxicants and gambling and to prevent you from remembering Allah and praying. Will you not then abstain?"
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – الۡخَمۡر means covering (root same as khimar which is covering for a woman) and intoxicants covers the intellect and senses. This is a humiliating state. (Drinking)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "الۡمَيۡسِر is derived from the word يسر which is ease. Gambling is easy money. (Gambling)."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Gradual Prohibition of Alcoholic Drink and Gambling.",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "FURTHER RULINGS AND EVENTUAL BAN ON DRINKING AND GAMBLING:",
+                  "precedes_commentary_index": 4,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "221 IT IS UNLAWFUL TO MARRY A MUSHRIK",
+          "ord": 25,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:221",
+                "text": "Do not marry polytheistic women until they believe; for a believing slave-woman is better than a free polytheist, even though she may look pleasant to you. And do not marry your women to polytheistic men until they believe, for a believing slave-man is better than a free polytheist, even though he may look pleasant to you. They invite ˹you˺ to the Fire while Allah invites ˹you˺ to Paradise and forgiveness by His grace. He makes His revelations clear to the people so perhaps they will be mindful."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about Abu Marthad al-Ghanawi who sought the permission from the Prophet (PBUH), to marry 'Anaq’ who was a poor, fairly beautiful woman from Quraysh. But this woman was an idolatress whereas Marthad was Muslim. Marthad said to the Prophet (PBUH): 'O prophet of Allah! I like her!' Allah SWT then revealed this Ayat (Wed not idolatresses till they believe…)”."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A Mushrik or a Polytheist is one who associates, invokes or worships beings other than or with Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A Monotheist or Believer is one who believes there is only one God."
+                },
+                {
+                  "kind": "prose",
+                  "text": "These are the Ayat’s about marriage. Choose your spouse wisely as a spouse affects every aspect of your life including the Hereafter."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Command for men: Do not marry women who do shirk till they believe."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Command for women: Do not marry men who do shirk till they believe."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Marriage is a relationship which has deep social, moral and emotional implications. If established between a believer and a polytheist, this kind of relationship has many possible outcomes. On the one hand, it is possible that because of the influence of the believing spouse, the other partner, the family and the future generations may become receptive to Islamic beliefs and to the Islamic way of life. On the other hand, it is also possible that the spouse who is a polytheist may influence the thinking and mode of living of the believing spouse, the family and the future generations. Moreover, this relationship may promote within that family either a hodge-podge of Islam, or downright atheism, and or polytheism which may be adequate to non-Muslims, is in no way acceptable in Islam."
+                },
+                {
+                  "kind": "quote",
+                  "text": "(2:221) …They (Al-Mushrikun) invite you to the Fire while Allah invites (you) to Paradise and forgiveness by His leave…"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Meaning, associating and mingling with the disbelievers inculcates a love for this life and an indifference towards the Hereafter -- leading to the severest of repercussions. However, by following Allah SWT’s Laws, Commandments and Prohibitions one is saved from a painful punishment in the Hereafter."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Exception: A man can marry a mushrik women i.e. Jew or Christian, as Allah SWT excluded ‘women of the Scripture’ from this ruling. See below Ayat (5:5)"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Maidah Ayat 5\n(5:5) Today all good, pure foods have been made lawful for you. Similarly, the food of the People of the Book is permissible for you and yours is permissible for them. And ˹permissible for you in marriage˺ are chaste believing women as well as chaste women of those given the Scripture before you—as long as you pay them their dowries in wedlock, neither fornicating nor taking them as mistresses. And whoever rejects the faith, all their good deeds will be void ˹in this life˺ and in the Hereafter they will be among the losers."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: There is a hierarchy in marriage where a husband is in charge within a marriage, therefore, the allowance for men to marry Jewish and Christian women. However, the power dynamics in an Islamic marriage are such that a Muslim woman cannot marry anyone but a Muslim man."
+                },
+                {
+                  "kind": "prose",
+                  "text": "At the time of marriage there is equality as both the man and woman have equal rights to agree or say no to the union."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Prohibition of marrying Mushrik Men and Women",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "222-223 QUESTION ABOUT MENSTRUATION",
+          "ord": 26,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:222",
+                "text": "They ask about the monthly course. Say, \"It is a state of impurity; so keep apart from women during their monthly course and do not go near them until they are clean. When they have cleansed themselves, then you may go to them in the manner Allah has enjoined you.\" Most surely Allah loves those people who refrain from evil and keep themselves pure and clean."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The Jews used to banish women in their menstruation out of the house and refrain from eating, drinking and having sex with them. The Messenger of Allah (PBUH) was asked about this, and as a response Allah SWT, revealed this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Male companions of the Prophet (PBUH) asked about female issues. So, here we learn that it is important to ask (even regarding sensitive issues) so as to erase doubts. Allah SWT mentions all things clearly but does so in a very subtle and delicate manner."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The scholars agree that the woman is obliged to take a purifying bath before she is allowed to have sexual relations with her husband, after her monthly period ends."
+                },
+                {
+                  "kind": "prose",
+                  "text": "*A woman cannot pray, keep Fasts, do the tawaf of Ka’ba or have marital relations during her time of menstruation."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Relations with Menstruating Women is prohibited",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:223",
+                "text": "Your wives are like farmland for you, so approach them ˹consensually˺ as you please. And send forth something good for yourselves. Be mindful of Allah, and know that you will meet Him. And give good news to the believers."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Quran is clear but not explicit. The relationship between a husband and wife is compared to a farmer and his tilth. A farmer approaches his fertile field in an attentive, caring responsible manner. Similarly, a for a man marriage is a huge responsibility."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Be mindful of Allah SWT even in the most private/intimate matters/moments. A Believer never crosses set limits."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "226-227 LIMITATION FOR RENOUNCING CONJUGAL RIGHTS",
+          "ord": 27,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:226",
+                "text": "Those who take an oath to keep apart from their wives are given four months (for a final decision), Then if they resume their relations, Allah is Forgiving and Merciful."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The people of the pre-Islamic period used to forswear their wives for one year, two years and sometimes longer. Allah limited this period to four months, and any period less than four months is not considered a period of forswearing”. Said Sa'id ibn al-Musayyab: “Forswearing wives was of the harm inflicted on women during the pre-Islamic period. When a man did not want a woman and disliked that any other man marries her, he would simply swear never to approach her. He would thus leave her neither divorced nor married. Allah SWT therefore set a limited period of four months after which it becomes clear whether the man is the husband or not by revealing this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“Ila,” is a type of vow where a man swears not to sleep with his wife for a certain period, Arab men would take a vow of sexual abstinence. Then Allah SWT revealed this Ayat. The limit or period set for sexual abstinence is 4 months then either renew relations with your wife or divorce her, although, divorce does not happen automatically and a wife must ask for it. An Islamic marriage is not one that is starved of sexual intimacy."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Ila' and its Rulings",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "228 WAITING PERIOD AFTER DIVORCE",
+          "ord": 28,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:228",
+                "text": "Divorced women must wait three monthly cycles ˹before they can re-marry˺. It is not lawful for them to conceal what Allah has created in their wombs, if they ˹truly˺ believe in Allah and the Last Day. And their husbands reserve the right to take them back within that period if they desire reconciliation. Women have rights similar to those of men equitably, although men have a degree ˹of responsibility˺ above them. And Allah is Almighty, All-Wise."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat contains a command from Allah SWT that a divorced woman -- whose marriage was consummated and who still has menstruation periods -- should wait for three (menstrual) periods after the divorce and then remarry if she wishes. The reason for the wait is to reveal a pregnancy, if that is the case. This Ayat warns women against hiding the truth i.e. their pregnancy, as they alone know such facts about themselves."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, typically divorce happens in an emotional state and these months give both parties time to deliberate, reflect and possibly reconsider."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This injunction is applicable only when the husband has pronounced single or double divorce. In case of triple divorce, the husband ceases to have the right of revocation."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Iddah (Waiting Period) of the Divorced Woman",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "The Husband has the Right to take back his Divorced Wife during the Iddah (Waiting Period)",
+                  "precedes_commentary_index": 2,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "229-230 LAWS RELATING TO DIVORCE",
+          "ord": 29,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:229",
+                "text": "Divorce may be pronounced twice; then either the wife be kept honourably or parted with gracefully. And it is not lawful for you to take back anything out of what you have given them. There is, however, an exception to this; if you fear that they might not be able to keep within the limits imposed by Allah, there is no harm if both agree mutually that the wife should obtain divorce by giving something as compensation to the husband. These are the bounds set by Allah; therefore, do not violate them, for those who violate the bounds of AIIah are the tansgressors."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat aims at the reform of a serious evil that was rampant in the social life in pre-Islamic Arabia. According to the customary law of Arabia, a person was entitled to pronounce any number of divorces upon his wife. As a result, divorce was resorted to at the least provocation and annoyance. In addition, the husband often exercised his right to revoke the divorce he had pronounced with the result that the poor wife could neither live with him in happiness nor free herself to contract a fresh marriage with someone else."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here the Quran seeks to shut the door on this injustice. According to this Ayat, a man may pronounce revocable divorce upon his wife only twice. Should he pronounce divorce for the third time after revoking it twice, the wife will be permanently alienated from him."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The appropriate procedure for divorce, according to the Quran and Hadith, a man can pronounce one divorce. After the first divorce he may pronounce a second divorce. The husband retains the right to revoke the divorce at any time before the lapse of the period of waiting ('iddah) during the first two pronouncements of divorce  -- this is called Talaq Raji or Revocable Divorce."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If the husband, however, pronounces a third divorce then he has no right to revoke the divorce, and the spouses cannot recontract the marriage. Note: A husband cannot take back any gift or mahr that he gave at the time of marriage. FYI – A marriage in not complete till mahr is given or agreed upon."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In fact, he should ideally give her a parting gift and leave her with grace and goodness."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This manner of divorce gives people time to deliberate meaningfully and not get caught up in emotions."
+                },
+                {
+                  "kind": "prose",
+                  "text": "NOTE: The pronouncing of triple divorce at one time is a highly sinful act according to the Law, and the Prophet has strongly denounced it."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Khula: A woman can initiate a divorce. In Islamic law, a woman's securing the annulment of her marriage through the payment of some compensation to her husband is known as ‘khula.’ The divorce that comes into effect is irrevocable and brings separation into effect immediately. According to the majority of jurists the period of waiting under ‘khula' is the same as in divorce."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:230",
+                "text": "So if a husband divorces his wife ˹three times˺, then it is not lawful for him to remarry her until after she has married another man and then is divorced. Then it is permissible for them to reunite, as long as they feel they are able to maintain the limits of Allah. These are the limits set by Allah, which He makes clear for people of knowledge."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "If the man divorces his wife for the third time after he divorced her twice before, then she will no longer be allowed for marriage to him until she legally marries another man and has sexual relations. If she marries a man without consummating the marriage, she will not be eligible for her ex-husband."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then if she gets a divorce from her second husband, she can re-marry her first husband."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Curse on the Participants of Tahlil/Halalah \nThe aim of a divorced woman to re-marry must be that the man desires her and has the intention of having an extended married life with her. However, if the reason behind the second marriage is to make the woman eligible for her ex-husband again, then this is called ‘Tahlil’ or ‘Halalah’ that the Hadiths have cursed and criticized."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: Mutah Marriage: A marriage for a temporary period of time. Haram in Islam (although was initially allowed). In Islam the essence of marriage is peace, tranquility and having children but this cannot happen in a temporary agreement/contract. Also, once the agreed upon time period lapses in a mutah marriage then there is no need for divorce instead both parties just move on."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: Mutah marriage is recognized in Shia’s."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "note",
+                  "text": "paragraph 'The Curse on the Participants of Tahlil/Halalah...' combines a bold sub-heading and body prose in one Word paragraph; kept verbatim as one commentary item."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "231 TREATMENT TO THE DIVORCED WOMEN",
+          "ord": 30,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:231",
+                "text": "When you divorce women and they have ˹almost˺ reached the end of their waiting period, either retain them honourably or let them go honourably. But do not retain them ˹only˺ to harm them ˹or˺ to take advantage ˹of them˺. Whoever does that surely wrongs his own soul. Do not take Allah’s revelations lightly. Remember Allah’s favours upon you as well as the Book and wisdom He has sent down for your guidance. Be mindful of Allah, and know that Allah has ˹perfect˺ knowledge of all things."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is a command from Allah SWT to men, that is, when you divorce your wife with a reversible/revocable divorce, then treat her kindly. And when her term of Iddah (waiting period) nears its end, either take her back and live with her in kindness or release kindly, without disputing or fighting."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah consciousness or taqwa in mentioned many times during these Ayat’s of divorce so that both parties are mindful of the fact that Allah SWT is ever present and watching all transactions. Those who do injustice or abuse others are in fact doing injustice or abusing themselves as consequences of such a sin are seen in this world and the next."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: Whoever causes harm, then Allah SWT will harm him/her and whoever causes difficulty then Allah SWT will cause difficulty for him/her. (Tirmidhi 1940)"
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Being Kind to the Divorced Wife",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "232 THERE IS NO RESTRICTION ON DIVORCEE TO REMARRY",
+          "ord": 31,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:232",
+                "text": "When you have divorced women and they have reached the end of their waiting period, do not prevent them from re-marrying their ex-husbands if they come to an honourable agreement. This is enjoined on whoever has faith in Allah and the Last Day. This is purer and more dignifying for you. Allah knows and you do not know."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This Ayat was revealed about Jabir ibn ‘Abd Allah al-Ansari. He had a cousin whose husband divorced her one single divorce. When her waiting period elapsed, he came back, wanting to take her back. But Jabir refused, saying: ‘You have divorced our cousin and now you want to marry her a second time [this will not happen]’. The woman however wanted to go back to her husband because she accepted him, and so this Ayat was revealed about them. (Bukhari 4529)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is a directive to the relatives that they should not try to prevent the couple from re-marrying if they agree to do so and they can do so.  Marriage/Nikkah is the best, halal and purest state to be in so never prevent people from getting married, unless it is for a religious reason. \nFYI: Ideally, a woman should have a wali (guardian such as her father, brother, adult son, and so forth) to give her away in marriage."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Wali (Guardian) of the Divorced Woman should not prevent Her from going back to Her Husband",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "233 REQUIREMENT OF BREAST-FEEDING BABIES",
+          "ord": 32,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:233",
+                "text": "The (divorced) mothers shall suckle their children for two whole years, if the fathers desire the suckling to be completed. In that case the father of the child shall, in the fair known way, be responsible for their food and clothing. But none should be burdened with more than one can bear: neither the mother should be pressed unjustly (to accept unfair terms) just because she is the mother nor should the father be burdened just because he is the father. And the same responsibility for the maintenance of the mother devolves upon the father of the child and his heir. There is no harm if they wean the child by mutual consent and consultation. Moreover, there is no harm if you choose to give your children a suckle by a wet nurse, provided that you pay her fairly. Fear Allah and know it well that whatever you do is in the sight of Allah."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "A mother should/may breast-feed her child for two years (maximum). If divorce happens and there is an infant child then the husband has the right to ask his wife to breast-feed the baby for two years. The father of the child shall bear the cost of the mother's food and clothing on a reasonable basis during the period of breast-feeding (child support)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Both the parents should not harm each other or the child by trying to take revenge or be unfair."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Minor children stay with the mother but the father has a right to see them."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Five rulings: (i) Mothers to nurse babies (ii) Fathers to provide financially (iii) Children not used as weapons (iv) Mutually deicide on matters, i.e. weaning (v) Best interest of the child to be a priority."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Breast-feeding a child after two years is unanimously forbidden. Breast-feeding is the right of a child."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Suckling/Nursing Period is only Two Years",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "234 IDDAH OR WAITING PERIOD FOR WIDOWS",
+          "ord": 33,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:234",
+                "text": "As for those of you who die and leave widows behind, let them observe a waiting period of four months and ten days. When they have reached the end of this period, then you are not accountable for what they decide for themselves in a reasonable manner. And Allah is All-Aware of what you do."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "After the death of her husband a wife must observe a waiting period of four months and ten days (from the day the husband dies) and this means that she should refrain from marrying again but also from self-adornment. \nHence, we find categorical directives in the Hadith that a widow should neither wear colorful and showy dresses and jewelry, make use of henna, kohl, and perfumes, nor set her hair in an attractive style."
+                },
+                {
+                  "kind": "prose",
+                  "text": "There is disagreement, however, as to whether the widow may go out of her house during the waiting period. The founders of the four legal schools are of the opinion that during the waiting period a woman should stay in the house in which her husband died. During the daytime she may go out to do necessary errands, but her residence should be her own home."
+                },
+                {
+                  "kind": "prose",
+                  "text": "An iddah is a time for healing as well as disclosing pregnancy (if that is the case)."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: It is not lawful for a woman who believes in Allah and the Last Day to mourn for more than three days for any dead person except her husband, for whom she mourns for four months and ten days. (Two Sahihs)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Divorce: Three menstrual cycles."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Widow: Four months and ten days."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "The Iddah (Waiting Period) of the Widow",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "RULINGS ON IDDAH:",
+                  "precedes_commentary_index": 4,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "236-237 DOWRY AND DIVORCE",
+          "ord": 34,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": null,
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commands a husband to give his wife (whom he divorced before consummating the marriage) a gift of a reasonable amount, the rich according to his resources and the poor according to his resources, so as to compensate her for her loss."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And if a man divorces his wife after having touched them and dowry has already been appointed for them, then pay half of that."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Magnanimity in dealings is essential if human relationships are to remain sound and pleasant."
+                }
+              ],
+              "extras": [
+                {
+                  "kind": "subheading",
+                  "text": "Divorce and dowry before consummating the Marriage (2:236)",
+                  "precedes_commentary_index": 0,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                },
+                {
+                  "kind": "subheading",
+                  "text": "Divorce and dowry after consummating the Marriage (2:237)",
+                  "precedes_commentary_index": 1,
+                  "note": "sub-heading-looking line inside a section; the draft commentary kinds have no subheading kind, so it is parked in extras with its position"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "238-239 GUARDING THE SALAH (PRAYERS)",
+          "ord": 35,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:238",
+                "text": "Observe the ˹five obligatory˺ prayers—especially the middle prayer—and stand in true devotion to Allah."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Having mentioned laws/commands for the guidance of human society, Allah SWT now rounds off this address by emphasizing prayer that is performed correctly and on time, specifically the middle or Asr prayer is mentioned here. Often, we get caught up in work and life during the day but it is prayers which instills in man the fear of Allah SWT along with the feeling of humility, self-control, accountability, goodness, purity and the disposition to obey the decrees of Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:239",
+                "text": "Even if you are in danger, you must offer your Prayers anyhow on foot or on horseback. And when you have peace again, remember Allah in the manner He has taught you, which you did not know before."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Do noy leave your prayer! Allah SWT commands His servants to perform the prayer perfectly, He now mentions situations where one might not be able to perform the prayer perfectly, i.e. during battle and combat in which case you can pray while walking or on horseback."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The main lesson or point being that no matter what situation or predicament we CANNOT miss our prayer."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then after the difficulty has passed the prayer during the times of peace is performed as per norm."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI- The method of prayer is taught to us by Prophet Muhammad (PBUH) and Angel Jibril taught the Prophet how to pray."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Nisa Ayat 101"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(4:101) When you travel through the land, it is permissible for you to shorten the prayer—˹especially˺ if you fear an attack by the disbelievers. Indeed, the disbelievers are your sworn enemies."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The seriousness and importance of prayer has been est here as well. Even in times of battle we have not been given the allowance to not pray!! We have NO EXCUSE not to pray."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "244-245 SPENDING AND FIGHTING IN THE WAY OF ALLAH",
+          "ord": 36,
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:44",
+                "text": "Fight in the cause of Allah, and know that Allah is All-Hearing, All-Knowing."
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "2:245",
+                "text": "Who will lend to Allah a good loan which Allah will multiply many times over? It is Allah ˹alone˺ who decreases and increases ˹wealth˺. And to Him you will ˹all˺ be returned."
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Thus, from here begins a fresh discourse, in which Muslims are urged to struggle and make financial sacrifices for God's cause. Moreover, they have been warned to avoid those forms of corruption which eventually led the Children of Israel into decline and degeneration."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Quran is not a book of stories/fairy tales rather the purpose and value of relating historical events such as the story of Talut (Saul) and Jalut (Goliath) is not as a history lesson rather as an example from which to learn and take heed. The Muslims would soon have to fight in the Battle of Badr, therefore, Allah SWT is elucidating that one has to submit, and strive hard in the cause of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Life is not for comfort, ease and an over indulgence of Allah SWT’s blessings rather those who persevere with fortitude and girt in Allah SWT’s way, in sha Allah, they are the ones who will succeed."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "subheading",
+              "text": "COMMAND TO CHANGE THE DIRECTION OF THE QIBLA"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:144) …So turn your face towards the Sacred Mosque…"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:149) …˹O Prophet˺, turn your face towards the Sacred Mosque…"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:150) …˹O Prophet˺, turn your face towards the Sacred Mosque…"
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING THE PROHIBITION OF CERTAIN FOODS"
+            },
+            {
+              "kind": "prose",
+              "text": "Ayat (2:173): Allah SWT has forbidden for you only (i) dead animals (ii) blood (iii) flesh of swine (iv) that which is slaughtered as a sacrifice for other than Allah SWT."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND TO FAST DURING RAMADAN"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:185) Ramaḍân is the month in which the Quran was revealed as a guide for humanity with clear proofs of guidance and the standard ˹to distinguish between right and wrong˺. So whoever is present this month, let them fast. But whoever is ill or on a journey, then ˹let them fast˺ an equal number of days ˹after Ramaḍân˺. Allah intends ease for you, not hardship, so that you may complete the prescribed period and proclaim the greatness of Allah for guiding you, and perhaps you will be grateful."
+            },
+            {
+              "kind": "prose",
+              "text": "Fasting or Sawm (Arabic term) is mandatory for all Muslims."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND TO COMPLETE HAJJ AND UMRAH"
+            },
+            {
+              "kind": "prose",
+              "text": "Ayat (2:196) The Command to complete Hajj and Umrah."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND FOR BELIEVERS: ENTER INTO ISLAM COMPLETELY"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:208) Believers! Enter wholly into Islam and do not follow in the footsteps of Satan for he is your open enemy."
+            },
+            {
+              "kind": "prose",
+              "text": "Entering into Islam in its entirety is obligated."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING PROHIBITION OF DRINKING AND GAMBLING"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:219) They ask you about drinking and gambling. Say, \"There is great harm in both, though there is some benefit also for the people. But the harm of the sin thereof is far greater than their benefit. \""
+            },
+            {
+              "kind": "prose",
+              "text": "The gradual prohibition of alcoholic drink and gambling."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND FOR A BELIEVER TO ONLY MARRY A BELIEVER"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:221) Do not marry polytheistic women until they believe; for a believing slave-woman is better than a free polytheist, even though she may look pleasant to you. And do not marry your women to polytheistic men until they believe, for a believing slave-man is better than a free polytheist, even though he may look pleasant to you. They invite ˹you˺ to the Fire while Allah invites ˹you˺ to Paradise and forgiveness by His grace. He makes His revelations clear to the people so perhaps they will be mindful."
+            },
+            {
+              "kind": "prose",
+              "text": "The prohibition of marrying mushrik men and women."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING MENSTRATION"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:222) They ask about the monthly course. Say, \"It is a state of impurity; so keep apart from women during their monthly course and do not go near them until they are clean. When they have cleansed themselves, then you may go to them in the manner Allah has enjoined you.\" Most surely Allah loves those people who refrain from evil and keep themselves pure and clean."
+            },
+            {
+              "kind": "prose",
+              "text": "Relations with menstruating women is prohibited."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING THE LIMITATION FOR RENOUNCING CONJUGAL RIGHTS"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:226) Those who take an oath to keep apart from their wives are given four months (for a final decision), Then if they resume their relations, Allah is Forgiving and Merciful."
+            },
+            {
+              "kind": "prose",
+              "text": "“Ila,” is a type of vow where a man swears not to sleep with his wife for a certain period. The limit or period set for sexual abstinence is 4 months then either renew relations with your wife or divorce her."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND AND LAWS RELATING TO DIVORCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:229) Divorce may be pronounced twice; then either the wife be kept honourably or parted with gracefully. And it is not lawful for you to take back anything out of what you have given them. There is, however, an exception to this; if you fear that they might not be able to keep within the limits imposed by Allah, there is no harm if both agree mutually that the wife should obtain divorce by giving something as compensation to the husband. These are the bounds set by Allah; therefore, do not violate them, for those who violate the bounds of AIIah are the tansgressors."
+            },
+            {
+              "kind": "prose",
+              "text": "The correct way to divorce, according to the Quran and Hadith."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:230) So if a husband divorces his wife ˹three times˺, then it is not lawful for him to remarry her until after she has married another man and then is divorced. Then it is permissible for them to reunite, as long as they feel they are able to maintain the limits of Allah. These are the limits set by Allah, which He makes clear for people of knowledge."
+            },
+            {
+              "kind": "prose",
+              "text": "If the man divorces his wife for the third time after he divorced her twice before, then she will no longer be allowed for marriage to him until she legally marries another man and has sexual relations with him."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:231) When you divorce women and they have ˹almost˺ reached the end of their waiting period, either retain them honourably or let them go honourably. But do not retain them ˹only˺ to harm them ˹or˺ to take advantage ˹of them˺. Whoever does that surely wrongs his own soul. Do not take Allah’s revelations lightly. Remember Allah’s favours upon you as well as the Book and wisdom He has sent down for your guidance. Be mindful of Allah, and know that Allah has ˹perfect˺ knowledge of all things."
+            },
+            {
+              "kind": "prose",
+              "text": "Be honorable and kind to the divorced wife."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING IDDAH OR WAITING PERIOD"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:228) Divorced women must wait three monthly cycles ˹before they can re-marry˺. It is not lawful for them to conceal what Allah has created in their wombs, if they ˹truly˺ believe in Allah and the Last Day. And their husbands reserve the right to take them back within that period if they desire reconciliation. Women have rights similar to those of men equitably, although men have a degree ˹of responsibility˺ above them. And Allah is Almighty, All-Wise."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:234) As for those of you who die and leave widows behind, let them observe a waiting period of four months and ten days. When they have reached the end of this period, then you are not accountable for what they decide for themselves in a reasonable manner. And Allah is All-Aware of what you do."
+            },
+            {
+              "kind": "subheading",
+              "text": "RULINGS ON IDDAH:"
+            },
+            {
+              "kind": "list_item",
+              "text": "Divorce: Three menstrual cycles."
+            },
+            {
+              "kind": "list_item",
+              "text": "Widow: Four months and ten days."
+            },
+            {
+              "kind": "subheading",
+              "text": "COMMAND REGARDING DOWRY AND DIVORCE"
+            },
+            {
+              "kind": "subheading",
+              "text": "Divorce and dowry before consummating the Marriage"
+            },
+            {
+              "kind": "prose",
+              "text": "In Ayat (2:236), Allah SWT commands a husband to give his wife (whom he divorced before consummating the marriage) a gift of a reasonable amount, the rich according to his resources and the poor according to his resources, so as to compensate her for her loss."
+            },
+            {
+              "kind": "subheading",
+              "text": "Divorce and dowry after consummating the Marriage"
+            },
+            {
+              "kind": "prose",
+              "text": "In Ayat (2:237) it says that, if a man divorces his wife before having touched them, and dowry has already been appointed for them, then pay half of that."
+            },
+            {
+              "kind": "subheading",
+              "text": "SPENDING AND FIGHTING FOR THE CAUSE OF ALLAH SWT"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:190) Fight in the cause of Allah ˹only˺ against those who wage war against you, but do not exceed the limits. Surely Allah does not like transgressors."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:191) Kill them wherever you come upon them and drive them out of the places from which they have driven you out. For persecution is far worse than killing. And do not fight them at the Sacred Mosque unless they attack you there. If they do so, then fight them—that is the reward of the disbelievers."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:216) Fighting has been made obligatory upon you ˹believers˺, though you dislike it. Perhaps you dislike something which is good for you and like something which is bad for you. Allah knows and you do not know."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:44) Fight in the cause of Allah, and know that Allah is All-Hearing, All-Knowing."
+            },
+            {
+              "kind": "prose",
+              "text": "The Command to fight those who fight Muslims."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:195) Spend your wealth in the Way of Allah and do not cast yourselves into ruin with your own hands. Do all things gracefully, for Allah loves those who do all things with excellence"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:215) The people ask, \"What should we spend?\" Tell them, \"Whatever you spend, spend for your parents, your relatives, orphans, the needy and the traveler; and whatever good you do, Allah has knowledge of it."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:245) Who will lend to Allah a good loan which Allah will multiply many times over? It is Allah ˹alone˺ who decreases and increases ˹wealth˺. And to Him you will ˹all˺ be returned."
+            },
+            {
+              "kind": "prose",
+              "text": "Spend in the way of Allah SWT; from your time, core competencies, talents, money etc."
+            },
+            {
+              "kind": "subheading",
+              "text": "LEGAL RULING IN THE CASE OF MURDER"
+            },
+            {
+              "kind": "prose",
+              "text": "The ‘Law of Qisas’ is mandatory in the case of intentional murder but not applicable in the case of an accident or mistake. The Law of Qisas: (law of retaliation) retaliation in kind\", ‘eye for an eye, tooth for a tooth etc.’"
+            },
+            {
+              "kind": "prose",
+              "text": "But forgiveness by the injured party (meaning the heirs of the victim) is best, whether it is via blood money or just forgiveness."
+            },
+            {
+              "kind": "subheading",
+              "text": "FORMULA FOR WHAT TO DO IN DIFFICULT TIMES/SITUATIONS"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:153) You who believe, seek help/fortitude through patience and prayer, for God is with the patient."
+            },
+            {
+              "kind": "prose",
+              "text": "Essentials for success are patience and prayer. Difficulties in life have a purpose i.e., to bring us closer to our Creator, teach us, help us repent."
+            },
+            {
+              "kind": "subheading",
+              "text": "CURSE OF ALLAH SWT"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:159) Indeed Allah curses, and the cursers, too, curse those who conceal the clear teachings and guidance We have sent down, after We have made these plain in the Book for the guidance of all mankind."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:161) Those who adopted the way of disbelief and died as disbelievers, are accursed of Allah and of angels and of all mankind: they shall remain accursed for ever."
+            },
+            {
+              "kind": "translation",
+              "text": "(2:174) Indeed, those who hide Allah’s revelations, trading them for a fleeting gain consume nothing but fire into their bellies. Allah will neither speak to them on the Day of Judgment, nor will He purify them. And they will suffer a painful punishment"
+            },
+            {
+              "kind": "prose",
+              "text": "(i) Concealing/hiding the Truth (ii) and rejecting the Truth both bring about the curse of Allah SWT."
+            },
+            {
+              "kind": "subheading",
+              "text": "DEFINITION OF RIGHTEOUSNESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:177) Righteousness/goodness is not in turning your faces towards the east or the west. Rather, the righteous are those who believe in Allah, the Last Day, the angels, the Books, and the prophets; who give charity out of their cherished wealth to relatives, orphans, the poor, ˹needy˺ travelers, beggars, and for freeing captives; who establish prayer, pay alms-tax, and keep the pledges they make; and who are patient in times of suffering, adversity, and in ˹the heat of˺ battle. It is they who are true ˹in faith˺, and it is they who are mindful ˹of Allah˺."
+            },
+            {
+              "kind": "prose",
+              "text": "Iman + Ethical Goodness + Religious Goodness = Birr (Holistic goodness)."
+            },
+            {
+              "kind": "subheading",
+              "text": "HUSBAND AND WIFE RELATIONS"
+            },
+            {
+              "kind": "prose",
+              "text": "In Ayat (2:187): The ideal relationship between a husband and wife is described here which is a very close, intimate, protective, calming, necessary and beautifying bond. (Analogy of clothes is given)."
+            },
+            {
+              "kind": "prose",
+              "text": "In Ayat (2:223): The relationship between a husband and wife is compared to a farmer and his tilth. A farmer approaches his fertile field in an attentive, caring responsible manner. Similarly, a for a man marriage is a huge responsibility. Be mindful of Allah SWT even in the most private/intimate matters as there is good news for such people."
+            },
+            {
+              "kind": "prose",
+              "text": "Within a marriage Allah SWT has commanded the husband to always treat his wife with kindness, goodness, respect and honor and, of course, vice versa. The issue of divorce is mentioned in detail because often it is a time when emotions run high and cruelty or injustices are committed. Therefore, again the again, Allah SWT warns both parties not to cross the bounds set by Him as Allah SWT is watching and hearing everything."
+            },
+            {
+              "kind": "subheading",
+              "text": "THE CHARACTERISTICS OF A HYPOCRITE AND A TRUE MOMIN"
+            },
+            {
+              "kind": "prose",
+              "text": "(2:204 , 205 and 206) A hypocrite is: deceitful, duplicitous and two-faced. There is no conformity between his words and actions. Additionally, he lies, breaks promise, is quarrelsome and full of pride/arrogance. AVOID"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:207) A Muslims existence is for the sole purpose of gaining the pleasure of Allah SWT. He does what he says and says what he does. Transparent, yet, not simplistic. EMULATE."
+            },
+            {
+              "kind": "subheading",
+              "text": "DUA’s"
+            },
+            {
+              "kind": "arabic",
+              "text": "رَبَّنَآ اٰتِنَا فِى الدُّنۡيَا حَسَنَةً وَّفِى الۡاٰخِرَةِ حَسَنَةً وَّ قِنَا عَذَابَ النَّارِ"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:201) “Our Lord, grant us what is good in this world and what is good in the World to Come, and protect us from the chastisement of the Fire.”"
+            },
+            {
+              "kind": "arabic",
+              "text": "اِنَّا لِلّٰهِ وَاِنَّـآ اِلَيۡهِ رٰجِعُوۡنَؕ"
+            },
+            {
+              "kind": "translation",
+              "text": "(2:156) \"We are Allah''s and we shall certainly return to Him,''"
+            }
+          ]
+        }
+      ],
+      "extras": {
+        "heading_as_written": "SURAH 2 – AL BAQARA (THE COW) (Cont.)",
+        "note": "from_ayah/to_ayah follow the CP (2:142-2:252); the captured body actually starts at 2:143 and ends at 2:245 (see anomalies a1, a2). Surah Al-Baqara has 286 ayat, so it continues in Juz 3."
+      }
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 -JUZ 2.docx",
+      "location": "body, first section (ord 69)",
+      "severity": "high",
+      "description": "Coverage gap at the start: the CP starts the juz at 2:142 and the 'Introduction to the sections' list announces the topic 'QIBLA (DIRECTION IN PRAYERS) (142)', but the body contains no section, translation or commentary for ayah 2:142; the first quoted ayah is 2:143."
+    },
+    {
+      "id": "a2",
+      "file": "2 -JUZ 2.docx",
+      "location": "end of body (ords 564-574) before the recap",
+      "severity": "high",
+      "description": "Coverage gap at the end: the CP ends the juz at 2:252 and the intro list announces topics for 245-252 ('SPENDING IN THE WAY OF ALLAH AND ISRAELITES DEMAND FOR A KING (245-246)', 'ALLAH APPOINTED TALUT TO BE THEIR KING (247-248)', '(249)', '(250-251)', 'REAFFIRMING THE PROPHETHOOD OF MUHAMMAD (PBUH) (252)'), but the body's last quoted ayah is 2:245. Ayat 2:246-2:252 (the Talut/Talut story block) are absent from this juz folder."
+    },
+    {
+      "id": "a3",
+      "file": "2 -JUZ 2.docx",
+      "location": "ord 566 (section '244-245 SPENDING AND FIGHTING IN THE WAY OF ALLAH') and ord 701 (recap)",
+      "severity": "low",
+      "description": "Source typo: translation ref '(2:44)' appears where 2:244 is meant (section title says 244-245; recap item sits between (2:190)/(2:191)/(2:216) and (2:245)). Kept as written. As written it also trips the FORMAT.md section 3 'no captured ayah outside the range' check."
+    },
+    {
+      "id": "a4",
+      "file": "2 -JUZ 2.docx",
+      "location": "ord 108",
+      "severity": "low",
+      "description": "Section heading 'ALLAH WILL TEST THE BELIEVER'S BELIEF (155-157)' uses an inverted 'TITLE (n-n)' form; FORMAT.md rule 4 only recognizes 'GROUP n: TITLE' and 'n-m TITLE'. Modeled as a section with the raw title."
+    },
+    {
+      "id": "a5",
+      "file": "2 -JUZ 2.docx",
+      "location": "throughout body sections and recap",
+      "severity": "low",
+      "description": "Format gap: bold sub-heading lines inside sections (e.g. ord 129 'THE CURSE OF ALLAH SWT', ord 381 'The Gradual Prohibition of Alcoholic Drink and Gambling.') and inside the recap have no kind in the draft commentary/item model; kept in extras with position markers (body) and as kind='subheading' items (recap)."
+    },
+    {
+      "id": "a6",
+      "file": "2 -JUZ 2.docx",
+      "location": "recap 'MY KEY TAKEAWAYS' (ords 611-760)",
+      "severity": "low",
+      "description": "Format gap: draft Recap items are {text} only, but the recap alternates bold sub-headings, restated (s:a) translations, prose and two bare Arabic dua lines (ords 756, 759). A 'kind' was added per item for losslessness; the draft shape cannot distinguish these."
+    },
+    {
+      "id": "a7",
+      "file": "2 -JUZ 2.docx",
+      "location": "sections '178-179' (ord 216), '180-182' (ord 224), '196 HAJJ AND UMRAH' (ord 297), '204-207' (ord 315), '236-237' (ord 535)",
+      "severity": "low",
+      "description": "Format gap: these sections open with blocks of commentary that are not anchored by an (s:a) translation line (sections 178-179, 196, 236-237 have none at all). Modeled as translation-less ayah units (translation: null) with an extras note; the draft has no explicit slot for section preamble."
+    },
+    {
+      "id": "a8",
+      "file": "2 -JUZ 2.docx",
+      "location": "ord 324, section '204-207 HYPOCRISY VS TRUE BELIEF'",
+      "severity": "low",
+      "description": "Multi-ayah translation ref '(2:204 , 205 and 206)' does not fit the single surah:ayah ref model; kept verbatim as ref '2:204 , 205 and 206'."
+    },
+    {
+      "id": "a9",
+      "file": "2 -JUZ 2.docx",
+      "location": "ords 8-66 (front matter)",
+      "severity": "low",
+      "description": "Front matter here is not the classic Name/Period-of-Revelation prose: it is 'Introduction to the sections:' followed by a 57-item topic list with ayah ranges. The draft LabeledUnit (label + prose text) cannot hold a list; stored as one label with the items joined by newlines."
+    },
+    {
+      "id": "a10",
+      "file": "1 - JUZ 2 CP.docx",
+      "location": "ords 4 and 6",
+      "severity": "low",
+      "description": "The CP carries a transliteration ('Sayaqūlu') and meaning ('\"Will (they) say\"') of the juz's Arabic header; the draft juz record has only arabic_header. Kept in juz.extras (and verbatim in cp_text)."
+    },
+    {
+      "id": "a11",
+      "file": "2 -JUZ 2.docx",
+      "location": "section titles throughout",
+      "severity": "low",
+      "description": "Section titles state topic ranges wider than the ayat actually quoted (e.g. '148-152' quotes only 149-150; '165-167' quotes only 166; '219-220' quotes only 219). The source is selective by design; noted so the section 3 check is not misread as per-ayah completeness."
+    },
+    {
+      "id": "a12",
+      "file": "(format)",
+      "location": "juz record",
+      "severity": "low",
+      "description": "Format gap: the draft has no place to record the section 3 coverage-check outcome; recorded under juz.extras.coverage_check."
+    }
+  ]
+}
