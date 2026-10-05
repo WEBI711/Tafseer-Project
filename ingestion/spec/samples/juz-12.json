@@ -1,0 +1,2312 @@
+{
+  "juz": {
+    "number": 12,
+    "folder": "Juz 12",
+    "arabic_header": "يَعْتَذِرُونَ",
+    "arabic_header_translit": "Yaʿtazerūn",
+    "arabic_header_meaning": "\"Only the way (for blame)\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 12\nيَعْتَذِرُونَ\nYaʿtazerūn\n\"Only the way (for blame)\"\nSurah 11 – Hud \n(11:6 Till 11:123)\nSurah 12 – Yusuf\n(12:01 Till 12:52)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 11,
+        "name_en": "Hud",
+        "from_ayah": 6,
+        "to_ayah": 123
+      },
+      {
+        "surah_number": 12,
+        "name_en": "Yusuf",
+        "from_ayah": 1,
+        "to_ayah": 52
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "result": "fail",
+    "check": "FORMAT.md section 3",
+    "notes": "All captured ayat fall inside their CP ranges and every CP surah has a part (part ranges = CP ranges verbatim, one part per surah). Surah 12 boundary is exact: first captured 12:1 = CP from, last captured 12:52 = CP to. Surah 11 boundary FAILS at both ends: the CP states 11:6 till 11:123 but the body starts at 11:7 and its last captured ayah is 11:120 (last numbered unit 11:113); 11:6 and 11:121-11:123 are never quoted. Interior gaps are the author's selection and are NOT anomalies (surah 11, besides the boundaries reported as a1/a2: 8, 9, 12-14, 17, 20-21, 24, 26-35, 37-39, 41-49, 51, 53-55, 57-60, 63, 70-75, 77-80, 82-83, 92-93, 95, 99, 102-108, 110-112, 114-119; surah 12 missing 2-3, 6, 8, 10-11, 13-14, 16, 20, 22, 38-40, 44, 47-49, 51 — the 12:37-40 and 12:46-50 ranges are captured as summary units). The recap of the Hud part restates 11:3 (inside Juz 11, outside this CP range); recap items are end matter, not ayah captures, so this is not a coverage violation. Chunk-bookkeeping: the Hud part is a chunk (\"(Cont).\" in its surah heading, continues_from_prev_juz=true), the Yusuf part is a chunk that stops at the CP boundary (continues_in_next_juz=true); the Yusuf section-title index lists the whole surah (through 109-111) although this chunk stops at 52 — expected for a chunk doc per v4, not an anomaly. The Yusuf part has no recap (the CP-stated range 12:1-12:52 ends the chunk mid-surah; known expected finding, section 4). CP wrinkle: the Yusuf range is printed with a zero-padded ayah (\"12:01 Till 12:52\"); parsed as 1-52.",
+    "details": {
+      "captured_ayah_refs": {
+        "11": [
+          7,
+          10,
+          11,
+          15,
+          16,
+          18,
+          19,
+          22,
+          23,
+          25,
+          36,
+          40,
+          50,
+          52,
+          56,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          76,
+          81,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          94,
+          96,
+          97,
+          98,
+          100,
+          101,
+          109,
+          113,
+          120
+        ],
+        "12": [
+          1,
+          4,
+          5,
+          7,
+          9,
+          12,
+          15,
+          17,
+          18,
+          19,
+          21,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          52
+        ]
+      },
+      "captured_outside_cp_range": [],
+      "boundary_mismatches": [
+        {
+          "surah": 11,
+          "cp": [
+            6,
+            123
+          ],
+          "first_captured": 7,
+          "last_captured": 120
+        }
+      ],
+      "parts_vs_cp_ranges": "part ranges equal CP ranges (CP values used verbatim); one part per CP surah",
+      "cp_surahs_all_have_parts": true,
+      "part_surahs_all_in_cp": true
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 11,
+      "name_en": "HUD (Cont).",
+      "from_ayah": 6,
+      "to_ayah": 123,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - HUD .docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 12",
+      "chunk_marker": "Cont.",
+      "section_index": null,
+      "extras": [],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "SURAH 11 – HUD (Cont).",
+          "ord": 1,
+          "from_ayah": null,
+          "to_ayah": null,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:7",
+                "text": "He is the One Who created the heavens and the earth in six Days—and His Throne was upon the waters—in order to test which of you is best in deeds. And if you ˹O Prophet˺ say, “Surely you will ˹all˺ be raised up after death,” the disbelievers will certainly say, “That is nothing but pure magic!”",
+                "ref_surah": 11,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat 11, 22, 23, 46"
+                },
+                {
+                  "kind": "heading",
+                  "text": "WHAT IS OUR PURPOSE IN LIFE?"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat clearly articulates the reason or purpose of creation: Allah SWT created the heavens and the earth for the sake of mankind and He created mankind to test them by giving authority/power coupled with free will. Money, people, beauty, difficulties as well as ease in life -- these are all part of our test."
+                },
+                {
+                  "kind": "prose",
+                  "text": "What choices/decisions do we make in life? Who amongst us races towards doing good deeds? These are some of the factors that will determine our end. Passing this test is true success as it will result in Paradise, in sha Allah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "For without this basic purpose, the entire universe would be meaningless and useless."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We must have a firm belief/conviction in the Hereafter or we will make the wrong choices in life. Remember Iman is not forced on anyone by Allah SWT. It is a choice we must make willingly."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:10",
+                "text": "But if We give them a taste of prosperity after being touched with adversity, they say, “My ills are gone,” and become totally prideful and boastful,",
+                "ref_surah": 11,
+                "from_ayah": 10,
+                "to_ayah": 10,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Nature or phycology of man is being explained. In good times man wallows in joy/euphoria and in bad times sinks into the depths of depression thus vacillates between these extreme mood swings."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A Momin remains calm and steadfast in all situations confident in our trust in Allah SWT."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: By He in Whose Hand is my soul! No worry, calamity, distress, illness, or grief strikes a believer, even the prick of a thorn, except that Allah will expiate his sins for him because of it.\nHadith: By He in Whose Hand is my soul! Allah does not decree any matter for the believer except that it is good for him.\nIf any blessing befalls him, he is thankful (to Allah) and that is good for him.\nIf any harm comes to him, he is patient and that is also good for him. This is (a bounty) exclusively for the believer."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Characteristics Allah SWT Hates= Pride and Conceit."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:11",
+                "text": "except those who patiently endure and do good. It is they who will have forgiveness and a mighty reward.",
+                "ref_surah": 11,
+                "from_ayah": 11,
+                "to_ayah": 11,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "DEFINITION OF SUCCESS:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Characteristics Allah SWT Loves= Patience, Moderation and Good deeds."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:15",
+                "text": "Whoever desires ˹only˺ this worldly life and its luxuries, We will pay them in full for their deeds in this life—nothing will be left out.",
+                "ref_surah": 11,
+                "from_ayah": 15,
+                "to_ayah": 15,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:16",
+                "text": "It is they who will have nothing in the Hereafter except the Fire. Their efforts in this life will be fruitless and their deeds will be useless.",
+                "ref_surah": 11,
+                "from_ayah": 16,
+                "to_ayah": 16,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Some only strive for this life (with the you only live once attitude) and for them is their reward in this life, however, they will get no part of the Hereafter. The world is finite and limited so whatever they achieve in this life will be left behind, for example, a bodybuilders body that he/she put so much effort into will soon become dust."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Our main focus in life should be the Hereafter, i.e. reaching Paradise. When making dua one should ask for the best in this world and the next."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Best dua is Surah Baqarah Ayat 201."
+                },
+                {
+                  "kind": "quote",
+                  "text": "(2:201) Yet there are others who say, “Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.”"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:18",
+                "text": "Who does more wrong than those who fabricate lies against Allah? They will be brought before their Lord, and the witnesses will say, “These are the ones who lied against their Lord.” Surely Allah’s condemnation is upon the wrongdoers,",
+                "ref_surah": 11,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:19",
+                "text": "who hinder ˹others˺ from Allah’s Path, striving to make it ˹appear˺ crooked, and disbelieve in the Hereafter.",
+                "ref_surah": 11,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:22",
+                "text": "Without a doubt, they will be the worst losers in the Hereafter.",
+                "ref_surah": 11,
+                "from_ayah": 22,
+                "to_ayah": 22,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "DEFINITION OF THE WORST LOSERS:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT curse is on those who (i) invent or fabricate lies against Allah SWT and (ii) those who deter others from Islam."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Be very careful/cautious when talking about religion as it is not a topic/subject to be taken lightly. Never mock, joke, or invent aspects of religion nor be in the company of those who do."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:23",
+                "text": "Surely those who believe, do good, and humble themselves before their Lord will be the residents of Paradise. They will be there forever.",
+                "ref_surah": 11,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "DEFINITION OF SUCCESS:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Two very different characteristics are being mentioned in Ayat’s 18, 19 and 23. One group is arrogant, and contemptuous towards Allah SWT while the other is humble and surrenders/submits after hearing Allah SWT’s commands. REFLECT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:25",
+                "text": "We sent Noah to his people to say, ‘I have come to you to give a clear warning:",
+                "ref_surah": 11,
+                "from_ayah": 25,
+                "to_ayah": 25,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Story of Nuh begins:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Nuh preached for 950 years however only a few believed. The people of his nation called him a liar, a sorcerer and a mere mortal who had no wealth nor social status (both worldly measures of success)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Is our measure of success regarding people only based on worldly perceptions or thinking?"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:36",
+                "text": "And it was revealed to Noah, “None of your people will believe except those who already have. So do not be distressed by what they have been doing.",
+                "ref_surah": 11,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat states the divine law of respite. When the message of a Prophet has been conveyed to a people and is rejected, they are granted respite from punishment only as long as there is the possibility that some of them might accept it. But when there remains no such possibility and there is left nothing but evil element among them, Allah does not grant them any further respite."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:40",
+                "text": "And build the Ark under Our ˹watchful˺ Eyes and directions, and do not plead with Me for those who have done wrong, for they will surely be drowned.”",
+                "ref_surah": 11,
+                "from_ayah": 40,
+                "to_ayah": 40,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commanded and then taught Nuh how to construct/build a ship. Thus, we see that Allah SWT imparted religious as well as worldly knowledge to His Prophets."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is how Nuh and his followers survived while all-non-believers were drowned, including, Prophet Nuh’s son."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And Allah SWT tells Nuh not make any requests/dua for the non-believers as they will surely be drowned."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Take lesson from past nations as ultimate victory is for the righteous."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: No mercy or intersession will be shown to those who disbelieve (here even Prophet Nuh’s family was no exception). In the Hereafter Believers and non-believers will not be together. Blood relations do not continue in the Hereafter only the relationships of Iman will endure; therefore, a father and son may be separated."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Story of Nuh is revealed in detail in the Quran. So don’t rely on story books."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:50",
+                "text": "And to the people of ’Âd We sent their brother Hûd. He said, “O my people! Worship Allah. You have no god other than Him. You do nothing but fabricate lies ˹against Allah˺.",
+                "ref_surah": 11,
+                "from_ayah": 50,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat 18"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Now begins the story of the People of Ad and Prophet Hud."
+                },
+                {
+                  "kind": "prose",
+                  "text": "People of Hud were very strong and big. Famous for their architecture and impressive buildings."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:52",
+                "text": "And O my people! Seek your Lord’s forgiveness and turn to Him in repentance. He will shower you with rain in abundance, and add strength to your strength. So do not turn away, persisting in wickedness.”",
+                "ref_surah": 11,
+                "from_ayah": 52,
+                "to_ayah": 52,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat, 3, 61, 90"
+                },
+                {
+                  "kind": "prose",
+                  "text": "People of Ad told to seek forgiveness for past sins and then in the future do not repeat the sins by turning towards Allah SWT in repentance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Man’s biggest reason for turning away from Allah SWT is the fear that they will lose the world, for example, if we give up riba or interest we will become poor. Here Allah SWT says turn towards Him and He will shower you with abundance, in this world and the next in sha Allah. When faith becomes stronger your world becomes stronger as well."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FORMULA FOR GOOD PROVISION IN THIS WORLD: Ask Allah SWT for forgiveness and turn to Allah SWT in repentance."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: Narrated Abu Huraira:I heard Allah's Apostle saying.\" By Allah! I ask for forgiveness from Allah and turn to Him in repentance more than seventy times a day.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:56",
+                "text": "I have put my trust in Allah—my Lord and your Lord. There is no living creature that is not completely under His control. Surely my Lord’s Way is perfect justice.",
+                "ref_surah": 11,
+                "from_ayah": 56,
+                "to_ayah": 56,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Hud faced a lot of opposition and hostility from the people of Ad, who following in the footsteps of their ancestors, obstinately and aggressively denied the signs of Allah SWT. But Prophet Hud remained fearless, steadfast and confident in his convictions putting all his trust in Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT, as per His sunnah, saved Prophet Hud and his fellow believers and then destroyed the nation of Ad by a violent, screaming wind that blew consecutively for seven nights and eight days."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:61",
+                "text": "And to the people of Thamûd We sent their brother Ṣâliḥ. He said, “O my people! Worship Allah. You have no god other than Him. He ˹is the One Who˺ produced you from the earth and settled you on it. So seek His forgiveness and turn to Him in repentance. Surely my Lord is Ever Near, All-Responsive ˹to prayers˺.”",
+                "ref_surah": 11,
+                "from_ayah": 61,
+                "to_ayah": 61,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat, 3, 61, 90"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Now begins the story of the people of Thamud and Prophet Salih"
+                },
+                {
+                  "kind": "prose",
+                  "text": "After the people of Ad the people of Thamud are being mentioned. Prophet Salih was sent to remind this nation of all the favors Allah SWT had bestowed upon them."
+                },
+                {
+                  "kind": "quote",
+                  "text": "“…So seek His forgiveness and turn to Him in repentance. Surely my Lord is Ever Near, All-Responsive ˹to prayers˺.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This nation is being told to ask Allah SWT for forgiveness for the shirk they are committing with their false gods."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Salih is introducing Allah SWT as someone very close and very responsive as opposed to idols. In this concise sentence, the Quran has refuted a grave misunderstanding of the mushriks that is prevalent even today and continues to misled people into wrong beliefs. That is that people presume that Allah SWT lives far away and, therefore unapproachable similar to their own rulers on earth. And therefore, the only way to approach Allah SWT is via an intercessor similar to the intercessor to their rulers, who receive and present people’s requests and applications to their rulers, and then convey their answers to them. This misunderstanding and false presumption has created hosts of intercessors, incapacitating people so much so that they cannot perform by themselves any religious ceremony from birth to death.\n\nProphet Salih told this nation that, ‘Allah is near, so invoke His help directly without the help of any interceder. He answers prayers, so you can yourselves receive the answer to your prayer. Therefore, give up the folly of seeking interceders and setting them up as His partners, and address your prayers to Him directly Who is near and answers prayers.’"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (2:186)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "And when My servants ask you concerning Me, then (answer them), I am indeed Near (to them by My knowledge). I respond to the invocations of the supplicant when he calls on Me."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:62-68",
+                "text": "Summary: However, this nation refused to believe and obstinately/blindly carried on with the traditions of their forefathers. They arrogantly demanded a miracle from Prophet Salih in order to believe.",
+                "ref_surah": 11,
+                "from_ayah": 62,
+                "to_ayah": 68,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT showed them a miracle in the form of a she-camel, however, the people of Thamud killed the she-camel. Allah SWT punishment soon followed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Salih and his fellow believers were saved whereas all the non-believers were killed via a loud blast."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Doubt leads us to vacillate between conviction and disbelief.  This is man’s greatest fault that we follow the majority without thinking."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:69",
+                "text": "To Abraham Our messengers brought good news. They said, ‘Peace.’ He answered, ‘Peace,’ and without delay he brought in a roasted calf.",
+                "ref_surah": 11,
+                "from_ayah": 69,
+                "to_ayah": 69,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Now begins the story of Ibrahim and the nation of Lut:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Three Prophets are mentioned before Ibrahim i.e. (i) Nuh, (ii) Hud and (iii) Salih. Then three are mentioned after Ibrahim i.e., (i) Lut, (ii) Shuaib and (iii) Musa."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT sent angels, in the form of men, to Ibrahim and his wife, Sara, to give them the good news of the birth of their son (Ishaq) and grandson (Yaqub). FYI - According to the Bible Prophet Ibrahim (PBUH) was 100 years old at the time and Sara was 90 years. Ibrahim already had a son from his wife Hajra called Ismail."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, Ibrahim was informed that the nation of Lut would be destroyed. This nation, openly and freely, indulged in the sin of homosexuality, along with robbery and thievery. Not open to change the people of Lut blindly and willfully followed their forefathers."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Punishment for doing haram is that halal is not enjoyable anymore, i.e. whether it be homosexuality, zina or any other sin."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:76",
+                "text": "˹The angels said,˺ “O Abraham! Plead no more! Your Lord’s decree has already come, and they will certainly be afflicted with a punishment that cannot be averted!”",
+                "ref_surah": 11,
+                "from_ayah": 76,
+                "to_ayah": 76,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Ibrahim, as per the norm of all Prophets, was soft-hearted and pleaded leniency for the nation of Lut. However, Allah SWT’s decree had been established and the people of Lut were going to be destroyed."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:81",
+                "text": "They [the messengers] said, ‘Lot, we are your Lord’s messengers. They will not reach you. Leave with your household in the dead of night, and let none of you turn back. Only your wife will suffer the fate that befalls the others. Their appointed time is the morning: is the morning not near?’",
+                "ref_surah": 11,
+                "from_ayah": 81,
+                "to_ayah": 81,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Lut and those who Believed were saved. Then Allah SWT’s punishment for the nation of Lut came in the form of rain of rocks and clay stones killing the entire nation including the wife of Lut."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Nuh made dua for his son, Ibrahim for the nation of Lut to be saved, however, only those who believed were saved. Here we learn that even the dua/requests of Prophets made on behalf of their family members or nations are not accepted.  Salvation for a criminal is only possible if they themselves seek forgiveness from Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:84",
+                "text": "And to the people of Midian We sent their brother Shuaib. He said, “O my people! Worship Allah. You have no god other than Him. And do not give short measure and weight. I do see you in prosperity now, but I truly fear for you the torment of an overwhelming Day.",
+                "ref_surah": 11,
+                "from_ayah": 84,
+                "to_ayah": 84,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Now begins the story of Prophet Shuaib and the nation of Midian:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The nation of Midian committed shirk and, in their businesses they observed deceitful and dishonest practices -- despite having plenty."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:85",
+                "text": "O my people! Give full measure and weigh with justice. Do not defraud people of their property, nor go about spreading corruption in the land.",
+                "ref_surah": 11,
+                "from_ayah": 85,
+                "to_ayah": 85,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Shuaib told the people of Midian to be fair and honest in their business. And not defraud people by giving them incorrect measurement and weight."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:86",
+                "text": "What is left ˹as a lawful gain˺ by Allah is far better for you if you are ˹truly˺ believers. And I am not a keeper over you.”",
+                "ref_surah": 11,
+                "from_ayah": 86,
+                "to_ayah": 86,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This means that what one gains/profits from a successful/honest business dealing in which just/fair measure is given, is better for you than wrongfully taking the wealth of the people."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Be grateful for whatever halal provisions Allah SWT has provided. Allah SWT puts blessings in that."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Lawful and honestly earned provisions bring happiness and contentment. Unlawful provisions foster greed, discontentment and there is always the desire for more."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Remember when it comes to riskh or provisions what is most important is not the amount but if it is halal and not haram."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:87",
+                "text": "They said, ‘Shuaib, does your prayer tell you that we should abandon what our forefathers worshipped and refrain from doing whatever we please with our own property? Indeed you are a tolerant and sensible man.’",
+                "ref_surah": 11,
+                "from_ayah": 87,
+                "to_ayah": 87,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The people of Midian mocked Prophet Shuaib about his prayer, basically saying, ‘what does your religion (prayer) have to do with everyday life or transactions.’ Their main objection was that there should be no connection between religion and daily life because they found religion to be restrictive. They preferred to follow their forefather’s way and commit shirk as well as continue with dishonest business practices."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: In Islam there is no concept of a ‘sacred right of ownership’ rather we are mere trustees of whatever Allah SWT has bestowed on us. It is a loan from Allah SWT for a short while i.e. till we are alive. Only what we sent ahead in the form of charity is ours eternally."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Islam is a holistic way of life whereby one’s finances, speech, actions, clothing, food etc., all must coincide with Allah SWT’s commands."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:88",
+                "text": "He answered, ‘My people, can you not see? What if I am acting on clear evidence from my Lord? He Himself has given me good provision: I do not want to do what I am forbidding you to do, I only want to put things right as far as I can. I cannot succeed without God’s help: I trust in Him, and always turn to Him.",
+                "ref_surah": 11,
+                "from_ayah": 88,
+                "to_ayah": 88,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Shuaib gave his own example that Allah SWT has provided him with provision and he is living a good halal life without the need for cheating and dishonestly."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Trust in Allah SWT and turn towards Him only."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Intention is key. Once you decide to leave haram, whether it be riba etc., then Allah SWT help is a certainty. Success will be yours, in sha Allah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:89",
+                "text": "O my people! Do not let your opposition to me lead you to a fate similar to that of the people of Noah, or Hûd, or Ṣâliḥ. And the people of Lot are not far from you.",
+                "ref_surah": 11,
+                "from_ayah": 89,
+                "to_ayah": 89,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Take lesson from past nations and do not let your ultimate fate be the same disastrous one as the past nations."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Even if you an aversion to and personally dislike the courier/messenger/envoy, don’t let that deter you from appreciating/accepting the message. For example, if I had let others influence me about not attending Al-Huda (messenger) I would have not benefited from the most valuable experience and education (message) of my life."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:90",
+                "text": "So seek your Lord’s forgiveness and turn to Him in repentance. Surely my Lord is Most Merciful, All-Loving.”",
+                "ref_surah": 11,
+                "from_ayah": 90,
+                "to_ayah": 90,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat, 3, 61, 52"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Seek forgiveness from Allah SWT (for past sins) and then turn to Him in repentance (future). Allah SWT is accepting and deeply loving towards His slaves. Allah SWT does not reject the repenter’s plea no matter how grave or numerous the sins. This should give us all so much hope and joy."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:91",
+                "text": "They threatened, “O Shu’aib! We do not comprehend much of what you say, and surely we see you powerless among us. Were it not for your clan, we would have certainly stoned you, for you are nothing to us.”",
+                "ref_surah": 11,
+                "from_ayah": 91,
+                "to_ayah": 91,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "People of Midian say they did not understand what Prophet Shuaib is saying although the concepts were clear and basic i.e. be fair and honest in your business practices. The problem was not in the speech or communication rather these people were focused on this world. They were afraid of suffering financially despite having plenty."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Islam means fully submission. Desires and whims are for the Hereafter. Religion cannot be siloed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Prophet Shuaib was known as khutub-ul-ambiya meaning very clear in his khitab or speech."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Even today when we don’t want to follow an instruction, we put impediments in our understanding even though the Quran is clear and simple in its commands."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:94",
+                "text": "When Our command came, We saved Shu’aib and those who believed with him by a mercy from Us. And the ˹mighty˺ blast overtook the wrongdoers, so they fell lifeless in their homes,",
+                "ref_surah": 11,
+                "from_ayah": 94,
+                "to_ayah": 94,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The punishment of Allah SWT came in the form of an earthquake and loud blast. Prophet Shuaib and those who believed were saved."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:96",
+                "text": "Indeed, We sent Moses with Our signs and compelling proof",
+                "ref_surah": 11,
+                "from_ayah": 96,
+                "to_ayah": 96,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Now begins the story of Prophet Musa:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Musa was sent to the nation of Pharon with clear miracles and signs."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:97",
+                "text": "to Pharaoh and his nobles. But they obeyed the command of Pharaoh even though Pharaoh's command was not rightly-directed.",
+                "ref_surah": 11,
+                "from_ayah": 97,
+                "to_ayah": 97,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Pharon and his nation disbelieved and committed injustice (zulum) on the people of Bani Israel including killing their baby boys. Pharon convinced his people (nation) that he was their Lord so they should worship him and they obeyed his command even though Pharon’s command was not right/correct."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not blindly follow anyone. Not your leaders and not your forefathers. Think for yourself."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:98",
+                "text": "He shall stand at the head of his people on the Day of Resurrection, and will bring them down to the Fire. What a wretched destination to be led to!",
+                "ref_surah": 11,
+                "from_ayah": 98,
+                "to_ayah": 98,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Just like Pharon led his nation to injustice in this world, similarly, he will lead those who followed him blindly on the DoJ into Hellfire."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Whomever we follow today, in this world, will be the people we are close to on the DoJ. So be mindful of your role models and those whom you admire."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:100",
+                "text": "We relate to you [Muhammad] such accounts of earlier towns: some of them are still standing; some have been mown down;",
+                "ref_surah": 11,
+                "from_ayah": 100,
+                "to_ayah": 100,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:101",
+                "text": "We did not wrong them, rather they wronged themselves. The gods they invoked beside Allah were of no help at all when the command of your Lord came, and only contributed to their ruin.",
+                "ref_surah": 11,
+                "from_ayah": 101,
+                "to_ayah": 101,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has related the stories of the past so that we can take lesson. The fact is that they themselves brought this fate/doom upon themselves by following their false gods, whether it be actual deities, money, fame or doing zulum or injustice on ourselves by cheating others, committing zina etc."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Anyone or anything we give preference to Allah SWT is not worth it as they will lead us to destruction. Gradually and step by step we fall headlong into sin."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:109",
+                "text": "So do not be in doubt ˹O Prophet˺ about what those ˹pagans˺ worship. They worship nothing except what their forefathers worshipped before ˹them˺. And We will certainly give them their share ˹of punishment˺ in full, without any reduction.",
+                "ref_surah": 11,
+                "from_ayah": 109,
+                "to_ayah": 109,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Muhammad should be in no doubt about false gods and that maybe it is ok to worship them. Allah SWT says they are pure falsehood leading you to severe punishment. There is no tolerance for shirk."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not blindly follow your parents/family in their worship without thinking. Study and understand for yourself and your salvation."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "11:113",
+                "text": "And do not be inclined to the wrongdoers or you will be touched by the Fire. For then you would have no protectors other than Allah, nor would you be helped.",
+                "ref_surah": 11,
+                "from_ayah": 113,
+                "to_ayah": 113,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Muhammad, do not lean towards or agree with those who do wrong. At times we modify our beliefs and become very tolerant i.e., go with the flow in order to pls those who are more liberal or moderate regarding religious matters. Allah SWT says do not try to please such people (those who are more liberal in religion) as the fire will touch them and then also you."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Mushriqeen of Mecca proposed to the Prophet that sometimes they will follow him while other times he should follow them i.e., commit shirk. Here Allah SWT makes it very clear that there will be no compromise. If you vacillate between right and wrong you will not find a Protector and Helper in Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI—Keep in mind that when Allah SWT addresses the Prophet then by default we are being addressed."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "",
+                "text": "So [Muhammad], We have told you the stories of the prophets to make your heart firm and in these accounts truth has come to you, as well as lessons and reminders for the believers.",
+                "ref_surah": null,
+                "from_ayah": 120,
+                "to_ayah": 120,
+                "ref_inferred": true,
+                "ref_as_written": "no (s:a) ref printed in the source; context infers 11:120"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Surah contains the stories of the Prophets and how Allah saved them, and the believers along with them and how He destroyed the disbelievers. There has come to you (Muhammad) stories of truth and true events in this Surah."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "FORMULA FOR GOOD PROVISION IN THIS WORLD"
+            },
+            {
+              "kind": "heading",
+              "text": "ASK ALLAH SWT FOR FORGIVENESS AND TURN TO ALLAH SWT IN REPENTANCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:3) And seek your Lord’s forgiveness and turn to Him in repentance. He will grant you a good provision for an appointed term and graciously reward the doers of good. But if you turn away, then I truly fear for you the torment of a formidable Day."
+            },
+            {
+              "kind": "translation",
+              "text": "(11:52) And O my people! Seek your Lord’s forgiveness and turn to Him in repentance. He will shower you with rain in abundance, and add strength to your strength. So do not turn away, persisting in wickedness.”"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:61) And to the people of Thamûd We sent their brother Ṣâliḥ. He said, “O my people! Worship Allah. You have no god other than Him. He ˹is the One Who˺ produced you from the earth and settled you on it. So seek His forgiveness and turn to Him in repentance. Surely my Lord is Ever Near, All-Responsive ˹to prayers˺.”"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:90) So seek your Lord’s forgiveness and turn to Him in repentance. Surely my Lord is Most Merciful, All-Loving.”"
+            },
+            {
+              "kind": "heading",
+              "text": "WHAT IS OUR PURPOSE IN LIFE?"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:7) He is the One Who created the heavens and the earth in six Days—and His Throne was upon the waters—in order to test which of you is best in deeds. And if you ˹O Prophet˺ say, “Surely you will ˹all˺ be raised up after death,” the disbelievers will certainly say, “That is nothing but pure magic!”"
+            },
+            {
+              "kind": "prose",
+              "text": "DEFINITION OF THE WORST LOSERS: THOSE WHO LIVE ONLY FOR THIS WORLD AND THOSE WHO FABRICATE LIES AGAINST ALLAH SWT"
+            },
+            {
+              "kind": "prose",
+              "text": "CHARACTERISTICS ALLAH SWT HATES= PRIDE AND CONCEIT."
+            },
+            {
+              "kind": "translation",
+              "text": "(11:10) But if We give them a taste of prosperity after being touched with adversity, they say, “My ills are gone,” and become totally prideful and boastful,"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:15) Whoever desires ˹only˺ this worldly life and its luxuries, We will pay them in full for their deeds in this life—nothing will be left out."
+            },
+            {
+              "kind": "translation",
+              "text": "(11:16) It is they who will have nothing in the Hereafter except the Fire. Their efforts in this life will be fruitless and their deeds will be useless."
+            },
+            {
+              "kind": "translation",
+              "text": "(11:18) Who does more wrong than those who fabricate lies against Allah? They will be brought before their Lord, and the witnesses will say, “These are the ones who lied against their Lord.” Surely Allah’s condemnation is upon the wrongdoers,"
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF SUCCESS"
+            },
+            {
+              "kind": "prose",
+              "text": "Characteristics Allah SWT Loves= Patience, Moderation and Good deeds."
+            },
+            {
+              "kind": "translation",
+              "text": "(11:11) except those who patiently endure and do good. It is they who will have forgiveness and a mighty reward."
+            },
+            {
+              "kind": "prose",
+              "text": "IMAN + GOOD DEEDS = SUCCESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(11:23) Surely those who believe, do good, and humble themselves before their Lord will be the residents of Paradise. They will be there forever."
+            },
+            {
+              "kind": "heading",
+              "text": "IMAN + GOOD DEEDS = SUCCESS"
+            },
+            {
+              "kind": "prose",
+              "text": "Two very different characteristics are being mentioned in Ayat’s 18, 19 and 23. One group is arrogant, and contemptuous towards Allah SWT while the other is humble and surrenders/submits after hearing Allah SWT’s commands. REFLECT."
+            },
+            {
+              "kind": "prose",
+              "text": "Previous nations that were destroyed choose to blindly follow their forefathers instead of the Prophets."
+            },
+            {
+              "kind": "lesson",
+              "text": "Lesson: Whomever we follow today, in this world, will be the people we are close to on the DoJ. So be mindful of your role models and those whom you admire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 12,
+      "name_en": "YUSUF",
+      "from_ayah": 1,
+      "to_ayah": 52,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Yusuf.docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 12",
+      "chunk_marker": null,
+      "section_index": {
+        "header": null,
+        "titles": [
+          "AL-QURAN IS REVEALED IN THE ARABIC LANGUAGE (1-3)",
+          "STORY OF PROPHET YUSUF (JOSEPH) (4-6)",
+          "THERE ARE LESSONS IN THIS STORY FOR THE INQUIRERS (7-10)",
+          "STEPBROTHERS OF YUSUF ASKED THEIR FATHER TO SEND HIM WITH THEM ON A HUNTING TRIP AND THREW HIM IN A DARK WELL (11-15)",
+          "THEY TOLD THEIR FATHER THAT YUSUF WAS EATEN BY A WOLF (16-18)",
+          "ONE CARAVAN KIDNAPPED HIM, BROUGHT HIM TO EGYPT, AND SOLD HIM (19-20)",
+          "THE EGYPTIAN WHO BOUGHT HIM WAS A NICE MAN (21-22)",
+          "HIS MASTER'S WIFE TRIED TO SEDUCE HIM BUT ALLAH SAVED HIM (23-29)",
+          "WOMEN OF THE TOWN STARTED POINTING FINGERS AT HER, SHE INVITED THEM TO A BANQUET AND ASKED YUSUF TO APPEAR BEFORE THEM AND YUSUF WAS SENT TO PRISON (30-35)",
+          "TWO PRISON INMATES HAD DREAMS AND ASKED YUSUF FOR INTERPRETATION AND YUSUF'S ADDRESS TO HIS FELLOW INMATES (36-42)",
+          "KING OF EGYPT HAD A DREAM AND ASKED FOR ITS INTERPRETATION AND YUSUF'S INTERPRETATION OF THE KING'S DREAM (43-49)",
+          "KING OF EGYPT HEARD THE CASE OF YUSUF AND DECLARED HIM INNOCENT (50-52)",
+          "YUSUF'S APPOINTMENT AS KING'S CABINET MEMBER (53-57)",
+          "YUSUF'S BROTHERS CAME TO EGYPT TO GET FOOD AND GRAIN AND YUSUF ASKED THEM TO BRING BENJAMIN (YUSUF'S YOUNGER BROTHER) (58-62)",
+          "THEY ASKED THEIR FATHER TO SEND BENJAMIN WITH THEM IN ORDER TO GET MORE GRAIN AND YA'QOOB'S ADVICE TO HIS SONS (63-68)",
+          "YUSUF INTRODUCED HIMSELF TO HIS BROTHER AND PLOTTED TO RETAIN HIM AND BENJAMIN WAS ACCUSED OF STEALING SO THAT HE COULD BE RETAINED (69-79)",
+          "YUSUF'S BROTHERS WENT BACK AND TOLD THEIR FATHER ABOUT THE INCIDENT OF BENJAMIN'S STEALING AND RETENTION AND THEIR FATHER SENT THEM BACK (80-87)",
+          "THEY CAME TO YUSUF AND BEGGED FOR FOOD AND SOME CHARITY AND YUSUF DISCLOSED HIS IDENTITY AND HE FORGAVE HIS BROTHERS AND SENT FOR HIS FAMILY (88-93)",
+          "YA'QOOB GOT THE GOOD NEWS OF HIS SON YUSUF (94-98)",
+          "THUS HIS FAMILY RELOCATED FROM KEN'AND TO EGYPT AND YUSUF'S PRAYER TO LIVE AND DIE AS A MUSLIM (99-104)",
+          "MOST OF THE IGNORANT PEOPLE WHO BELIEVE IN ALLAH ALSO COMMIT SHIRK (105-108)",
+          "ALL RASOOLS WERE HUMAN BEINGS AND STORY OF YUSUF IS CONFIRMATION OF PREVIOUS SCRIPTURES (109-111)"
+        ]
+      },
+      "extras": [],
+      "front_matter": [
+        {
+          "label": "Name:",
+          "text": "The entire Surah is about one Prophet - Yusuf",
+          "items": null
+        },
+        {
+          "label": "When and Why Revealed? Ayat 102",
+          "text": "The subject matter of this Surah indicates that it was revealed during the last stage of the Holy Prophet's residence at Makkah, when the Quraish were considering the question of killing or exiling or imprisoning him. At that time some of the unbelievers put this question (probably at the instigation of the Jews) to test Prophet Muhammad: “Why did the Israelites go to Egypt?\"\nThis question was asked because they knew that their story was not known to the Arabs for there was no mention of it whatever in their traditions and the Holy Prophet had never even referred to it before. Therefore, they expected that he would not be able to give any satisfactory answer to this question or would first evade it, thus he would be totally exposed. But, contrary to their expectations, Allah SWT revealed the whole story of Prophet Yusuf then and there, and the Holy Prophet recited it on the spot.\nThis not only foiled the schemes of the Quraish but also administered a warning to them by aptly applying it to their case, as if to say, \"As you are behaving towards this Prophet, exactly in the same way the brothers of Prophet Yusuf behaved towards him; so you shall meet with the same end.\"",
+          "items": null
+        },
+        {
+          "label": "Topics of Discussion:",
+          "text": "Whatever Allah wills, He fulfills and man can never prevent nor change it from happening. This is Divine Decree. So we must surrender and submit with patience and steadfastness knowing that Allah is the best of all Planners.\nWhen the brothers of Prophet Yusuf threw him into the well, they believed that they got rid of him but in fact, they had paved the way for the Divine purpose of making him the ruler of Egypt, before whom they would have to humble themselves.\nLikewise, the wife of Aziz had sent Prophet Joseph to prison, thinking that she had inflicted her vengeance on him, but, in fact, she had provided for him the opportunity for becoming the ruler of Egypt and ultimately putting herself to shame by confessing her own sin publicly.\nSo even if the whole world is united to bring about the down fall of the one whom Allah willed to raise high, it will not succeed. On the other hand, if Allah willed the fall of one, no measure and no one can stop Him.",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "AL-QURAN IS A CLEAR BOOK REVEALED IN THE ARABIC LANGUAGE (1-3)",
+          "ord": 1,
+          "from_ayah": 1,
+          "to_ayah": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "الٓرتِلۡكَ اٰيٰتُ الۡكِتٰبِ الۡمُبِيۡن  الٓرٰ"
+              ],
+              "translation": {
+                "ref": "12:1",
+                "text": "Alif-Lãm-Ra. These are the Ayats of the clear Book.",
+                "ref_surah": 12,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "STORY OF PROPHET YUSUF (JOSEPH) (4-6)",
+          "ord": 2,
+          "from_ayah": 4,
+          "to_ayah": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:4",
+                "text": "˹Remember˺ when Joseph said to his father, “O my dear father! Indeed I dreamt of eleven stars, and the sun, and the moon—I saw them prostrating to me!”",
+                "ref_surah": 12,
+                "from_ayah": 4,
+                "to_ayah": 4,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Yusuf's Dream"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet Yusuf (Joseph) mentioned his dream to his father, Prophet Yaqub (Jacob), son of Prophet Ishaq (Isaac), son of Prophet Ibrahim (Abraham) (PBU them all)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In Yusuf's dream the eleven stars represent his brothers, who were eleven, and the sun and the moon represent his father and mother."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Yusuf's vision became a reality about forty years later, when Yusuf raised his parents to the throne while his brothers were before him, and they fell down before him prostrate. See Ayat 100 below:"
+                },
+                {
+                  "kind": "quote",
+                  "text": "Ayat 100: And he (Yusuf) said: \"O my father! This is the interpretation of my dream aforetime! My Lord has made it come true!\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:5",
+                "text": "He replied, “O my dear son! Do not relate your vision to your brothers, or they will devise a plot against you. Surely Satan is a sworn enemy to humankind.",
+                "ref_surah": 12,
+                "from_ayah": 5,
+                "to_ayah": 5,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Jacob (PBUH) had a genuine fear that Joseph’s ten step brothers would become even more envious of him. So, he warned his righteous son not to mention his dream to his brothers."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THERE ARE LESSONS IN THIS STORY FOR THE INQUIRERS (7-10)",
+          "ord": 3,
+          "from_ayah": 7,
+          "to_ayah": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:7",
+                "text": "Indeed, in the story of Joseph and his brothers there are lessons for all who ask.",
+                "ref_surah": 12,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says that there are Ayat or signs, lessons and wisdom to learn from the story of Yusuf and his brothers, for those who ask about their story and seek its knowledge."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:9",
+                "text": "[One of them said], ‘Kill Joseph or banish him to another land, and your father’s attention will be free to turn to you. After that you can be righteous.’",
+                "ref_surah": 12,
+                "from_ayah": 9,
+                "to_ayah": 9,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The jealous brothers devised a plot to either kill Yusuf or banish him to a distant land so that they could enjoy the love of their father."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The brothers of Prophet Joseph soothed their pricking consciences by saying that once they have completed the crime, they will repent and become good."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This is how satan makes bad look good. This is the deception of satan."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "STEPBROTHERS OF YUSUF ASKED THEIR FATHER TO SEND HIM WITH THEM ON A HUNTING TRIP AND THREW HIM IN A DARK WELL (11-15)",
+          "ord": 4,
+          "from_ayah": 11,
+          "to_ayah": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:12",
+                "text": "Send him out with us tomorrow so that he may enjoy himself and play. And we will really watch over him.”",
+                "ref_surah": 12,
+                "from_ayah": 12,
+                "to_ayah": 12,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Yusuf's Brothers ask for Their Father's Permission to take Yusuf with Them"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Yusuf's brothers devised a plan and agreed to throw him down a well."
+                },
+                {
+                  "kind": "prose",
+                  "text": "They asked their father to send Yusuf with them so that he can enjoy himself and play. The brothers promised to take care of, and ensure Yusuf’s safety."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Despite his hesitation the father reluctantly agreed to let Yusuf go with his brothers."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Always listen to your gut or instinct."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:15",
+                "text": "And so, when they took him away and decided to throw him into the bottom of the well, We inspired him: “˹One day˺ you will remind them of this deed of theirs while they are unaware ˹of who you are˺.”",
+                "ref_surah": 12,
+                "from_ayah": 15,
+                "to_ayah": 15,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Yusuf is thrown into a Well"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The brothers executed their plan and threw Yusuf into the well."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT sent a feeling of safety and comfort to Yusuf. (Ilham or inspiration similar to the mother of Prophet Musa putting him in the basket and then placing it in the river.)"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The brother’s sin is big which is cutting blood ties. As well as the sin of envy and jealousy."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THEY TOLD THEIR FATHER THAT YUSUF WAS EATEN BY A WOLF (16-18)",
+          "ord": 5,
+          "from_ayah": 16,
+          "to_ayah": 18,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:17",
+                "text": "They cried, “Our father! We went racing and left Joseph with our belongings, and a wolf devoured him! But you will not believe us, no matter how truthful we are.”",
+                "ref_surah": 12,
+                "from_ayah": 17,
+                "to_ayah": 17,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The brother’s returned home at night. They cried that while they were racing with one another, and had left Yusuf to guard their belongings, then a wolf devoured him. This is exactly what their father told them he feared for Yusuf and warned against."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:18",
+                "text": "And they brought his shirt, stained with false blood. He responded, “No! Your souls must have tempted you to do something ˹evil˺. So ˹I can only endure with˺ beautiful patience! It is Allah’s help that I seek to bear your claims.”",
+                "ref_surah": 12,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "As proof that Yusuf had been killed by a wolf attack the brothers brought back with them Yusuf’s blood-stained shirt (with some goat or rabbit blood) to show/convince their father. However, their father did not believe this story one bit, yet, he also knew that his sons will justify their actions so there was no point in talking or yelling at them etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – The shirt was completely intact without one tear."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So, this old and intelligent father exhibited a most appropriate and exceptional response that, “I can only endure with beautiful patience and I seek Allah SWT’s help to bear this pain.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The literal meaning of “beautiful patience” here implies a patience that enables one to endure all kinds of troubles and afflictions in a calm, self-possessed manner, without complaining, crying or weeping. “Sabr-e-Jamil.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI - Allah SWT forgive the brothers so He does not go into detail about what the brothers did. This is Allah SWT’s Mercy."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, In Islam we are not supposed to spread or investigate sin so the father did not ask for details."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Often people often lose their faith when a horrible tragedy occurs. While others increase in their faith."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ONE CARAVAN KIDNAPPED HIM, BROUGHT HIM TO EGYPT, AND SOLD HIM (19-20)",
+          "ord": 6,
+          "from_ayah": 19,
+          "to_ayah": 20,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:19",
+                "text": "And there came some travelers, and they sent their water-boy who let down his bucket into the well. He cried out, “Oh, what a great find! Here is a boy!” And they took him secretly ˹to be sold˺ as merchandise, but Allah is All-Knowing of what they did.",
+                "ref_surah": 12,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Yusuf is Rescued from the Well and sold as a Slave"
+                },
+                {
+                  "kind": "prose",
+                  "text": "A passing caravan found and rescued Yusuf from the well."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Nothing in a Believers life is a coincidence. Either it is to teach us a lesson or its Allah SWT’s help."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THE EGYPTIAN WHO BOUGHT HIM WAS A NICE MAN (21-22)",
+          "ord": 7,
+          "from_ayah": 21,
+          "to_ayah": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:21",
+                "text": "The man from Egypt who bought him said to his wife, “Take good care of him, perhaps he may be useful to us or we may adopt him as a son.” This is how We established Joseph in the land, so that We might teach him the interpretation of dreams. Allah’s Will always prevails, but most people do not know.",
+                "ref_surah": 12,
+                "from_ayah": 21,
+                "to_ayah": 21,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The man who purchased Yusuf was a high-ranking Minister in Egypt. So around the age of eighteen Yusuf went from Palestine to Egypt. Yusuf was kept well in the house."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT placed Yusuf in a new, unknown place, he was now a slave and far away from his father."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But the positive aspects were that Yusuf was removed from a house of jealous siblings, now living in an advanced city (as opposed to a semi-nomadic life of a shepherd in the desert). Thus, Allah SWT put him in a place and situation where he could learn, advance, become strong and independent. Thus, this was the training ground for his role as leader."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is how Allah SWT established Yusuf firmly."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Whatever Allah SWT decides for us is the best! Thus, it is important to accept and surrender that everything is all Allah SWT’s blessings."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HIS MASTER'S WIFE TRIED TO SEDUCE HIM BUT ALLAH SAVED HIM (23-29)",
+          "ord": 8,
+          "from_ayah": 23,
+          "to_ayah": 29,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:23",
+                "text": "And the lady, in whose house he lived, tried to seduce him. She locked the doors ˹firmly˺ and said, “Come to me!” He replied, “Allah is my refuge! It is ˹not right to betray˺ my master, who has taken good care of me. Indeed, the wrongdoers never succeed.”",
+                "ref_surah": 12,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Another test begins: This is the purpose of life for a believer i.e. to be tested."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT states that the wife of the Aziz of Egypt, in whose house Yusuf resided, tried to seduce Yusuf! She called him to do an evil act with her, because she loved him very much. Yusuf was very handsome, filled with manhood and beauty. She beautified herself for him then locked the doors and called him to her."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But he categorically refused and said: \"I seek refuge in Allah! Truly, he is my Rabb! He made my living in a great comfort!\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:24",
+                "text": "She advanced towards him, and he would have done likewise, had he not seen a sign from his Lord. This is how We kept evil and indecency away from him, for he was truly one of Our chosen servants.",
+                "ref_surah": 12,
+                "from_ayah": 24,
+                "to_ayah": 24,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "And indeed, she did desire him, and he would have inclined to her desire, had he not seen the evidence of his Lord."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“A sign or evidence from his Lord…” means inspiration from Allah SWT to rouse his conscience to the fact that it was not worthy of him to yield to this temptation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – What was the sign or evidence from Allah SWT has been left ambiguous and therefore we too should leave it as such."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The fitra of all humans but esp. a young man is not easy to keep at bay."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:25",
+                "text": "They raced for the door and she tore his shirt from the back, only to find her husband at the door. She cried, “What is the penalty for someone who tried to violate your wife, except imprisonment or a painful punishment?”",
+                "ref_surah": 12,
+                "from_ayah": 25,
+                "to_ayah": 25,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says that Yusuf and the wife of the Aziz raced to the door, Yusuf running away from her and she running after him to bring him back to the room. She caught up with him and held on to his shirt from the back, tearing it so terribly that it fell off Yusuf's back. Then both her husband at the front door. She immediately tried to exonerate herself and implicate Yusuf and asked that he be sent to prison as a punishment."
+                },
+                {
+                  "kind": "prose",
+                  "text": "She wanted revenge for Yusuf’s refusal."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:26",
+                "text": "Joseph responded, “It was she who tried to seduce me.” And a witness from her own family testified: “If his shirt is torn from the front, then she has told the truth and he is a liar.",
+                "ref_surah": 12,
+                "from_ayah": 26,
+                "to_ayah": 26,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Yusuf did not stand idle rather he declared the truth and exonerated himself from the betrayal she accused him of."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It appears that when the master of the house came on the scene, he was accompanied by a person of his wife’s household. When he heard the story of the incident, he made this proposal: As each of them accuses the other and there is no eye witness of what happened between the two, the matter should be decided by the help of the circumstantial evidence, by examining the condition of Joseph’s shirt. Obviously, this was a very reasonable way of deciding the matter."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:27",
+                "text": "But if it is torn from the back, then she has lied and he is truthful.”",
+                "ref_surah": 12,
+                "from_ayah": 27,
+                "to_ayah": 27,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "If Yusuf’s shirt is torn from the front, it means that Yusuf is the aggressor and she has struggled to defend her honor. But if the shirt is ripped from the back, it is obvious that he must have been running away from her and she must have been tugging from behind. The circumstantial evidence implied the latter. Additionally, there were no signs of any violence on the garments of the woman, for had Yusuf been the aggressor, there surely would have been some signs of violence on her garments."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This proved Yusuf’s innocence."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:28",
+                "text": "So when her husband saw that Joseph’s shirt was torn from the back, he said ˹to her˺, “This must be ˹an example˺ of the cunning of you ˹women˺! Indeed, your cunning is so shrewd!",
+                "ref_surah": 12,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This suggests that now her husband became certain that Yusuf was telling the truth and that his wife was lying."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:29",
+                "text": "O Joseph! Forget about this. And you ˹O wife˺! Seek forgiveness for your sin. It certainly has been your fault.”",
+                "ref_surah": 12,
+                "from_ayah": 29,
+                "to_ayah": 29,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Husband told Yusuf to ignore and pretend that this incident never happened and told his wife to apologize. He did not want to lose either person and he did not want this news to spread probably because he as afraid of how people would perceive him. But the news did spread."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: In this entire story Allah SWT never mentions what happened except in very vague terms. As Muslims we should not indulge in rumor mongering or trivializing sin by discussing it in detail. These days tabloids do just that."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Sabar is inaction in the face of action. When you want to scream in anger or cry hysterically you restrain yourself."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Women are the biggest fitnah or trial for men."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WOMEN OF THE TOWN STARTED POINTING FINGERS AT HER, SHE INVITED THEM TO A BANQUET AND ASKED YUSUF TO APPEAR BEFORE THEM AND YUSUF WAS SENT TO PRISON (30-35)",
+          "ord": 9,
+          "from_ayah": 30,
+          "to_ayah": 35,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:30",
+                "text": "Some women of the city gossiped, “The Chief Minister’s wife is trying to seduce her slave-boy. Love for him has plagued her heart. Indeed, we see that she is clearly mistaken.”",
+                "ref_surah": 12,
+                "from_ayah": 30,
+                "to_ayah": 30,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "But the news of what happened did spread around town and women were gossiping that the ‘Chief Minister’s wife,’ is trying to seduce her slave-boy whom she is very much in love with."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:31",
+                "text": "When she heard their malicious talk, she prepared a banquet and sent for them, giving each of them a knife. She said to Joseph, ‘Come out and show yourself to them!’ and when the women saw him, they were stunned by his beauty, and cut their hands, exclaiming, ‘Great God! He cannot be mortal! He must be a precious angel!’",
+                "ref_surah": 12,
+                "from_ayah": 31,
+                "to_ayah": 31,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When the Chief Minister’s wife, heard the women’s gossip and accusation, she decided to invited them to her house for a banquet. She prepared a sitting room with couches, pillows (to recline on) and food that required knives to cut, such as fruit. She gave each of her guests a knife and then called Yusuf to come out before them.\nEveryone was so astonished at what they saw and (in their astonishment) cut their hands. They started cutting their hands in amazement at his beauty, while thinking that they were cutting the fruit with their knives.\nOnly when they felt the pain, that they started screaming. She said to them, \"You did all this from one look at him, so how can I be blamed? \nThey said: \"How perfect is Allah! No man is this! This is none other than a noble angel!\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:32",
+                "text": "She said, “This is the one for whose love you criticized me! I did try to seduce him but he ˹firmly˺ refused. And if he does not do what I order him to, he will certainly be imprisoned and ˹fully˺ disgraced.”",
+                "ref_surah": 12,
+                "from_ayah": 32,
+                "to_ayah": 32,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "They said to her, \"We do not blame you anymore after the sight that we saw.\" They never saw anyone like Yusuf before. Thus, this was the moral condition or degradation of that society. \nAn authentic Hadith stated that the Messenger of Allah passed by Prophet Yusuf, during the Night of Isra' in the third heaven and commented, “He was given a half of all beauty and all the world the rest of the half.”"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:33",
+                "text": "Joseph prayed, “My Lord! I would rather be in jail than do what they invite me to. And if You do not turn their cunning away from me, I might yield to them and fall into ignorance.”",
+                "ref_surah": 12,
+                "from_ayah": 33,
+                "to_ayah": 33,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In order to grasp the full significance of this prayer of Prophet Yusuf, we must understand the circumstances in which he was placed at that time. A young man, in the prime of his life and by good fortune, has been placed in the house of one of the highest dignitaries of the most civilized country of the world at the time."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The lady of the house, in which he has to live day and night, falls passionately in love with him and begins to tempt and seduce him. Then the fame of his beauty spreads all over the capital and the other ladies of the town also become enamored of him. He is surrounded on all sides by hundreds of beautiful snares trying to entrap and catch him unaware. All sorts of devices are employed to excite his passions and entice him."
+                },
+                {
+                  "kind": "prose",
+                  "text": "However, this pious young man humbly invokes his Lord to protect him from the temptations of sin where he would rather prefer imprisonment to doing any sinful act."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So, we learn that Yusuf made a choice (prison). From a worldly perspective it is not a smart choice however remember that anything that happens in this world is temporary but its consequences are eternal."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:34",
+                "text": "So his Lord responded to him, turning their cunning away from him. Surely He is the All-Hearing, All-Knowing.",
+                "ref_surah": 12,
+                "from_ayah": 34,
+                "to_ayah": 34,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:35",
+                "text": "Then it occurred to them to cast Joseph into prison for a while even though they had seen clear signs (of Joseph's innocence and of the evil ways of their ladies).",
+                "ref_surah": 12,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "So, for the sake of public safety and peace in society Yusuf was imprisoned."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TWO PRISON INMATES HAD DREAMS AND ASKED YUSUF FOR INTERPRETATION AND YUSUF'S ADDRESS TO HIS FELLOW INMATES (36-42)",
+          "ord": 10,
+          "from_ayah": 36,
+          "to_ayah": 42,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:36",
+                "text": "And with Joseph two other slaves entered the prison. One of them said: \"I saw myself pressing wine in a dream\"; and the other said: \"I saw myself carrying bread on my head of which the birds were eating.\" Both said: \"Tell us what is its interpretation; for we consider you to be one of those who do good.\"",
+                "ref_surah": 12,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Two Jail Mates ask Yusuf to interpret their Dreams"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The fact that two prisoners confirmed his righteousness shows that Prophet Yusuf was held in high esteem. Clearly the events narrated in the previous Ayat’s had reached everyone -- inside and outside prison. People knew that Yusuf had not been found guilty of any crime or sin. In fact, he had proved himself to be a noble soul who had come out unscathed in the hardest test of his piety."
+                },
+                {
+                  "kind": "prose",
+                  "text": "One of them said: \"I saw myself (in a dream) pressing wine.\"\nThe other said: \" I saw myself (in a dream) carrying bread on my head and birds were eating from it.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:37-40",
+                "text": "Summary",
+                "ref_surah": 12,
+                "from_ayah": 37,
+                "to_ayah": 40,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Yusuf calls His Jail Mates to Tawhid before He interprets Their Dreams\nYusuf told the two men that he will tell them about the interpretation of the dreams before they become a reality."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then, taking advantage of their full attention he gave dawa."
+                },
+                {
+                  "kind": "prose",
+                  "text": "We too should be on the lookout for any and all such opportunities to bring people closer to Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This also teaches us the correct process or methodology for presenting the message. Prophet Yusuf does not begin with the rules and regulations of faith rather he begins with the most fundamental point that distinguishes a believer from a non-believer, that is, the distinction between Tauhid and shirk."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then he asks which is better, various gods or One Omnipotent Allah? They knew from their personal experience that it was much better to serve one master than a number of them."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:41",
+                "text": "Fellow prisoners, one of you will serve his master with wine; the other will be crucified and the birds will peck at his head. That is the end of the matter on which you asked my opinion.’",
+                "ref_surah": 12,
+                "from_ayah": 41,
+                "to_ayah": 41,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Interpretation of the Dreams"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The first prisoner who was pressing wine in his dream would be acquitted and restored back to his position whereas the other would be hanged/killed."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:42",
+                "text": "Joseph said to the one he knew would be saved, ‘Mention me to your master,’ but Satan made him forget to do this, and so Joseph remained in prison for a number of years.",
+                "ref_surah": 12,
+                "from_ayah": 42,
+                "to_ayah": 42,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The released inmate forgot and Yusuf had to spend several more years in prison."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The time of Yusuf’s release from prison and the circumstances surrounding it were decreed by Allah SWT and Yusuf trusted his Lord."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "KING OF EGYPT HAD A DREAM AND ASKED FOR ITS INTERPRETATION AND YUSUF'S INTERPRETATION OF THE KING'S DREAM (43-49)",
+          "ord": 11,
+          "from_ayah": 43,
+          "to_ayah": 49,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:43",
+                "text": "The king said, ‘I dreamed about seven fat cows being eaten by seven lean ones; seven green ears of corn and [seven] others withered. Counsellors, if you can interpret dreams, tell me the meaning of my dream.’",
+                "ref_surah": 12,
+                "from_ayah": 43,
+                "to_ayah": 43,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Dream of the King of Egypt"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Leaving the account of the years of imprisonment, now the story has been resumed from the time when Prophet Yusuf began to rise in worldly rank. The King of Egypt had a dream and Allah SWT made this the reason for Yusuf's release from prison, with his honor and reputation preserved."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The king was troubled and confused because of his dreams. So called upon all the wise men, and the soothsayers, and magicians of the land to interpret his dreams."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:45",
+                "text": "˹Finally, ˺ the surviving ex-prisoner remembered ˹Joseph˺ after a long time and said, “I will tell you it’s interpretation, so send me forth ˹to Joseph˺.”",
+                "ref_surah": 12,
+                "from_ayah": 45,
+                "to_ayah": 45,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Then the prisoner who had been set free told the king about Prophet Yusuf and how he had correctly interpreted his dream in prison. The man went see Yusuf, in prison, for the interpretation of the king’s dream."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note - Yusuf was not bitter or angry with the man for forgetting to let the king know about him. (See 12:42)."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:46 – 50",
+                "text": "Summary: Interpretation of the kings dream by Prophet Yusuf:",
+                "ref_surah": 12,
+                "from_ayah": 46,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "quote",
+                  "text": "(Yusuf) said: \"For seven consecutive years, you shall sow as usual, and you will receive the usual amount of rain and fertility.”\nNext, he recommended to leave the harvest in the ears, (all) except a little of which you may eat. Because after the seven years of plenty will be seven hard (drought) years. So, Yusuf provided the nation will 14 years of planning. Then after 14 years there will be abundant rain resulting in plentiful."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The king was impressed by Yusuf’s interpretation as well as planning or tactics for the future so he sent for him. But Yusuf first wanted to be exonerated of the false crimes he was accused of. Therefore, he asked for an inquiry regarding what had happened with the women who cut their hands."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "KING OF EGYPT HEARD THE CASE OF YUSUF AND DECLARED HIM INNOCENT (50-52)",
+          "ord": 12,
+          "from_ayah": 50,
+          "to_ayah": 52,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:50",
+                "text": "The king asked the women, ‘What happened when you tried to seduce Joseph?’ They said, ‘God forbid! We know nothing bad of him!’ and the governor’s wife said, ‘Now the truth is out: it was I who tried to seduce him– he is an honest man.’",
+                "ref_surah": 12,
+                "from_ayah": 50,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When the king asked the women about what happened they all proclaimed that Yusuf was completely innocent. The Chief Minster’s wife also finally confessed to her wrong doing."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Yusuf correctly interpreted the king’s dream when all the wise men, soothsayers had failed. Still, he refused to leave prison without an inquiry into the matter which had been the cause of his imprisonment."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, when he was fully exonerated of his crimes, his prestige became so high that the king and his courtiers declared that Yusuf was the only fit person to save the country from the coming calamity."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "12:52",
+                "text": "[Joseph said, ‘This was] for my master to know that I did not betray him behind his back: God does not guide the mischief of the treacherous.",
+                "ref_surah": 12,
+                "from_ayah": 52,
+                "to_ayah": 52,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It was very important that Yusuf establish his innocence because he was delivering Allah SWT’s message. Prophets must be truthful and trustworthy."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Characteristics that Allah SWT does not like: Mischief and Treachery."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": []
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 - HUD .docx",
+      "location": "body, first paragraph (ref \"(11:7)\")",
+      "description": "Boundary mismatch (start): CP states Surah 11 - Hud (11:6 Till 11:123), but the doc's first captured ayah is 11:7; 11:6 is never quoted. Cross-checked the folding folder: the Juz 11 Hud chunk quotes only 11:1 and 11:3, so 11:6 is quoted nowhere in the archive folders seen here. Part range kept at the CP values (6-123).",
+      "severity": "high"
+    },
+    {
+      "id": "a2",
+      "file": "2 - HUD .docx",
+      "location": "end of body, last unit before the recap",
+      "description": "Boundary mismatch (end): CP runs to 11:123, but the last captured ayah is 11:120 (an unnumbered translation line, ref inferred) and the last numbered unit is (11:113); 11:121-11:123 are never quoted.",
+      "severity": "high"
+    },
+    {
+      "id": "a3",
+      "file": "2 - HUD .docx",
+      "location": "surah heading line \"SURAH 11 - HUD (Cont).\"",
+      "description": "Format wrinkle: this chunk marker is printed inside the surah heading line as \"(Cont).\" (in Juz 6 and Juz 8 the marker is a separate bold line \"Cont.\"). Modelled as chunk_marker \"Cont.\" (FORMAT v4 pinned form) and name_en \"HUD (Cont).\" (the heading remainder after dropping the \"SURAH 11 - \" prefix), so the printed text survives verbatim in name_en.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "2 - HUD .docx",
+      "location": "whole document",
+      "description": "Format gap: the Hud doc has no front matter, no section-title index and no section headings at all (only ONE cross-ref line and no GROUP/n-m/range headings). Per rule 7 it was modelled as a single default section; the section title is the surah heading line verbatim (\"SURAH 11 - HUD (Cont).\"), the same handling as Juz 6 part 1. The doc's 20 ayah units therefore hang off one section.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "2 - HUD .docx",
+      "location": "commentary of unit (11:16), paragraph \"(2:201) ...\"; commentary of unit (11:61), \"(2:186)\" + its translation",
+      "description": "Format gap: the author quotes whole cross-surah ayat inside commentary with a printed (s:a) ref of the OTHER surah (\"(2:201) Yet there are others who say...\"). Commentary items are {kind,text} only, so the ref cannot be structured: the (2:201) line is kept as kind \"quote\" with the ref inline. Modelling it as an ayah unit instead would have tripped the section 3 \"no captured ayah outside the range\" check. Suggestion for v5: let commentary items carry an optional ref (or add a translation-shaped commentary kind).",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - HUD .docx",
+      "location": "paragraph \"WHAT IS OUR PURPOSE IN LIFE?\" (body); recap headings",
+      "description": "Format gap: sub-heading lines are not always bold. \"WHAT IS OUR PURPOSE IN LIFE?\" is 9pt all-caps but not bold, so rule 11's bold test misses it; kept as kind \"heading\" (it is the same heading that the recap prints bold). Plain-prose lines that read like sub-titles (\"The Story of Nuh begins:\", \"Now begins the story of Prophet Musa:\", \"FORMULA FOR GOOD PROVISION IN THIS WORLD: ...\") stay \"prose\".",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "3 - Yusuf.docx",
+      "location": "paragraphs 92, 100, 131, 220, 234, 246 (italic sub-headings); paragraph 225",
+      "description": "Format gap: the Yusuf doc marks 6 sub-headings with italics only (\"Yusuf's Brothers ask for Their Father's Permission...\", \"Yusuf is thrown into a Well\", \"Yusuf is Rescued from the Well and sold as a Slave\", \"Two Jail Mates ask Yusuf to interpret their Dreams\", \"The Interpretation of the Dreams\", \"The Dream of the King of Egypt\"), while rule 11 defines kind \"heading\" for bold lines. Modelled as \"heading\" (with one bold \"Yusuf's Dream\" that the rule does catch). Italic alone is not a reliable signal: paragraphs 122-123 are italic FYI asides (kept \"prose\"), and paragraph 225 (\"Yusuf calls His Jail Mates to Tawhid before He interprets Their Dreams\") is neither bold nor italic and is kept \"prose\" although it reads as a sub-title.",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - HUD .docx",
+      "location": "body, translation line before the recap (no (s:a) prefix)",
+      "description": "Format wrinkle: one full translation is printed with no (s:a) prefix (\"So [Muhammad], We have told you the stories of the prophets to make your heart firm...\"). It is contextually 11:120 (it follows the 11:113 block and the next paragraph is its exegesis). Stored as ref \"\", ref_surah null, from_ayah/to_ayah 120, ref_inferred true and ref_as_written \"no (s:a) ref printed in the source; context infers 11:120\".",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "2 - HUD .docx",
+      "location": "recap \"MY KEY TAKEAWAYS\"",
+      "description": "Format gap: the recap restates \"(11:3)\" - an ayah from Juz 11, outside this CP range. Recap items are {kind,text}, so the ref is only visible inside the text; recaps are end matter (not ayah captures), so section 3 is unaffected. Suggestion: give recap translation items the same typed translation object as ayah units.",
+      "severity": "low"
+    },
+    {
+      "id": "a10",
+      "file": "3 - Yusuf.docx",
+      "location": "section-title index (titles 1 and the body heading)",
+      "description": "Index/body title drift (rule 10, one low anomaly for the part): the index reads \"AL-QURAN IS REVEALED IN THE ARABIC LANGUAGE (1-3)\" while the body heading reads \"AL-QURAN IS A CLEAR BOOK REVEALED IN THE ARABIC LANGUAGE (1-3)\"; both forms kept verbatim (index title in section_index, body form as the Section title). All other index titles match the body headings exactly.",
+      "severity": "low"
+    },
+    {
+      "id": "a11",
+      "file": "3 - Yusuf.docx",
+      "location": "section 11 (title \"(43-49)\") units and section 12 unit (12:50)",
+      "description": "Format wrinkle: 12:50 is captured twice - inside the summary unit \"(12:46 - 50) Summary: Interpretation of the kings dream by Prophet Yusuf:\" and again as its own unit \"(12:50)\". The draft has no restatement/duplicate-ref rule (parse.py folds repeats into commentary). Also section 11's title range (43-49) is narrower than the units it holds (43, 45 and the 46-50 summary).",
+      "severity": "low"
+    },
+    {
+      "id": "a12",
+      "file": "3 - Yusuf.docx",
+      "location": "front matter, label \"When and Why Revealed? Ayat 102\"",
+      "description": "Unknown label: rule 3 lists Name / Period of Revelation / Subject and Topics / Historical Background / Theme and Subject Matter; this doc labels its second block \"When and Why Revealed? Ayat 102\" (with the range on the label line). Captured verbatim as a LabeledUnit.",
+      "severity": "low"
+    },
+    {
+      "id": "a13",
+      "file": "2 - HUD .docx and 3 - Yusuf.docx",
+      "location": "HUD paragraph \"Hadith: By He in Whose Hand...\" (4 lines); Yusuf paragraph \"(12:32)\" commentary",
+      "description": "Format gap: several paragraphs contain internal line breaks (soft returns) holding more than one logical line - HUD's hadith paragraph holds 4 lines (\"Hadith: ... / Hadith: ... / If any blessing befalls him... / If any harm comes to him...\"), and Yusuf's (12:32) commentary ends with an in-paragraph Hadith sentence (\"An authentic Hadith stated that...\"). Items are single {kind,text} entries, so the breaks are kept inside one text value; multiple hadith in one paragraph get kind \"hadith\" from the line-initial prefix only.",
+      "severity": "low"
+    },
+    {
+      "id": "a14",
+      "file": "1 - JUZ 12 CP.docx",
+      "location": "arabic header",
+      "description": "Source oddity: the cover page's Arabic header is يَعْتَذِرُونَ / \"Yaʿtazerūn\" / \"Only the way (for blame)\" - byte-identical to the Juz 11 cover page header (the Juz 11 opening, 9:93), not the Juz 12 opening (11:6). Kept verbatim; likely a copy-paste in the cover page.",
+      "severity": "low"
+    }
+  ]
+}

@@ -1,0 +1,2225 @@
+{
+  "juz": {
+    "number": 10,
+    "folder": "Juz 10 ",
+    "arabic_header": "وَٱعْلَمُوا",
+    "arabic_header_translit": "Wa-’aʿlamū",
+    "arabic_header_meaning": "\"And (you) know\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 10\nوَٱعْلَمُوا\nWa-’aʿlamū\n\"And (you) know\"\nSurah 8 – Al- Anfal\n(8:41 Till 8:75)\nSurah 9 – At-Tawbah\n(9:01 till 9:93)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 8,
+        "name_en": "Al- Anfal",
+        "from_ayah": 41,
+        "to_ayah": 75
+      },
+      {
+        "surah_number": 9,
+        "name_en": "At-Tawbah",
+        "from_ayah": 1,
+        "to_ayah": 93
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "result": "fail",
+    "notes": "Surah 8 (Al-Anfal, CP 8:41-8:75): every captured ayah falls inside the range; first captured 8:41 == CP from, last captured 8:75 == CP to. Boundary OK. Interior gaps (8:42-44, 8:48-49, 8:54, 8:59, 8:62, 8:64, 8:66-69, 8:71, 8:73) are the author's selection, NOT anomalies. Surah 9 (At-Tawbah, CP 9:1-9:93): every captured ayah falls inside the range; first captured 9:1 == CP from, but last captured 9:91 != CP to (9:92 and 9:93 are never quoted; the file ends mid-section at 9:91) -> boundary mismatch, high severity. Interior gaps are the author's selection. Note: the section titled 'THOSE WHO DO NOT PARTICIPATE IN JIHAD ARE HYPOCRITES (43-48)' carries the source typo ref '(9:38)' for the 9:43 ayah, so no captured ref falls inside 43-48 and 9:43 itself is never captured as a unit (see anomaly a12). The section-title index lists the whole surah (31 titles, through '(128-129)'); only the 23 titles inside this chunk's range (9:1-9:93) are re-headed in the body. Per FORMAT section 2 rule 10 the beyond-chunk titles are expected, not anomalies. Cross-surah references quoted inside commentary (6:93, 7:179, 3:103, 49:14, 49:15, 8:1, 8:2, 58:22, 20:131, 9:88, 9:20) and the recap restatements of 8:2/8:28/8:38/8:39 (outside this juz's CP range) are commentary/recap items, not captured ayah units. The CP writes the surah 9 start as '9:01'; parsed as from_ayah 1, raw form kept in cp_text.",
+    "details": {
+      "captured_ayah_refs": {
+        "8": [
+          41,
+          45,
+          46,
+          47,
+          50,
+          51,
+          52,
+          53,
+          55,
+          56,
+          57,
+          58,
+          60,
+          61,
+          63,
+          65,
+          70,
+          72,
+          74,
+          75
+        ],
+        "9": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          12,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          28,
+          30,
+          34,
+          36,
+          37,
+          38,
+          60,
+          67,
+          68,
+          71,
+          73,
+          74,
+          79,
+          81,
+          82,
+          84,
+          85,
+          86,
+          88,
+          89,
+          91
+        ]
+      },
+      "captured_outside_cp_range": [],
+      "boundary_mismatches": [
+        {
+          "surah": 9,
+          "cp": [
+            1,
+            93
+          ],
+          "first_captured": 1,
+          "last_captured": 91
+        }
+      ],
+      "cp_surahs_all_have_parts": true,
+      "part_surahs_all_in_cp": true,
+      "parts_vs_cp_ranges": "both parts use the CP range for their surah (8:41-75, 9:1-93)"
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 8,
+      "name_en": "AL ANFAL (THE SPOILS OF WAR)",
+      "from_ayah": 41,
+      "to_ayah": 75,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 10",
+      "chunk_marker": "(Cont.)",
+      "section_index": null,
+      "extras": [],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "41-44 RULES ABOUT THE DISTRIBUTION OF THE SPOILS OF WAR",
+          "ord": 1,
+          "from_ayah": 41,
+          "to_ayah": 44,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:41",
+                "text": "Know that whatever spoils you take, one-fifth is for Allah and the Messenger, his close relatives, orphans, the poor, and ˹needy˺ travelers, if you ˹truly˺ believe in Allah and what We revealed to Our servant on that decisive day when the two armies met ˹at Badr˺. And Allah is Most Capable of everything.",
+                "ref_surah": 8,
+                "from_ayah": 41,
+                "to_ayah": 41,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat lays down the law for distributing the spoils of war. Spoils of war, as mentioned earlier, essentially belong to God and His Messenger. As for the soldiers who fight, they are not the rightful owners of the spoils; whatever they do receive should be considered an extra reward from God rather than their legitimate right."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The prescribed rule is that the soldiers should deposit all the spoils with the ruler or the commander without making any effort to conceal anything."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Ruling: One-fifth of the spoils thus deposited are for the Allah SWT and the Prophet (PBUH) and for charitable purposes for those to whom charity is due and four-fifths would be distributed among the soldiers who had taken part in the fighting."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Since the Prophet (PBUH) devoted all his time to the cause of Islam, he was not in a position to earn his own living. Hence, some arrangement had to be made for the maintenance of the Prophet (PBUH) as well as for his family, and the relatives dependent upon him for financial support. Hence (one-fifth of the spoils of war) was specified for that purpose along with for the orphans, the needy, and the traveler."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the beginning of Surah, we learnt about the dispute between believers regarding war booty whereby some felt they deserved more than others. Then Allah SWT directed their attention to another topic, that is, who made them victorious? That is only Allah SWT. So don’t forget Allah SWT when you are successful and hastily turn towards worldly affairs."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is just one Ayat regarding war booty therefore clearly money and material wealth is not the issue or topic rather the real focus is that one should keep the taqwa and remembrance of Allah SWT strong and solid during all times whether good or bad."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, one can infer from this that issues or conflicts over money are but natural/normal to man."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ORDER OF ALLAH TO REMAIN FIRM DURING COMBAT AGAINST ENEMY (45-48)",
+          "ord": 2,
+          "from_ayah": 45,
+          "to_ayah": 48,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:45",
+                "text": "O believers! When you face an enemy, stand firm and remember Allah often so you may triumph.",
+                "ref_surah": 8,
+                "from_ayah": 45,
+                "to_ayah": 45,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT instructs His faithful servants in the manners of fighting and methods of courage when meeting the enemy in battle. Remain steadfast and patient in this difficult situation. And remember Allah SWT much because the zikr of Allah SWT brings peace to our hearts."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is the formula for triumph or success."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:46-7",
+                "text": "(Further instructions) Be obedient to Allah SWT and do not dispute with one another and remain patient/steadfast.",
+                "ref_surah": 8,
+                "from_ayah": 46,
+                "to_ayah": 47,
+                "ref_inferred": false,
+                "ref_as_written": "source writes '8:46-7' (shorthand for 8:46-47)"
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "VICTORY OF THE BELIEVERS AND THE PAINFUL DEATH OF THE UNBELIEVERS (49-52)",
+          "ord": 3,
+          "from_ayah": 49,
+          "to_ayah": 52,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:50",
+                "text": "If only you could see when the angels take the souls of the disbelievers, beating their faces and backs, ˹saying,˺ “Taste the torment of burning!",
+                "ref_surah": 8,
+                "from_ayah": 50,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Angels strike the Disbelievers upon capturing Their Souls\nAllah SWT says, ‘if you witnessed the angels capturing the souls of the disbelievers, you would witness a tremendous, terrible, momentous and awful matter.’\nAlthough this Ayat is describing the Battle of Badr, it is general in the case of every disbeliever. This is why Allah SWT did not make His statement here restrictive to the disbelievers at Badr."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (6:93)\nAnd if you could but see when the wrongdoers are in the agonies of death, while the angels are stretching forth their hands (saying):\"Deliver your souls!\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "The angels stretch their hands and beat the disbelievers by Allah's command, since their souls refuse to leave their bodies, so they are taken out by force. This occurs when the angels give them the news of torment and Allah's anger."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: When the angel of death attends the disbeliever at the time of death, he comes to him in a terrifying and disgusting shape, saying, \"Get out, O wicked soul, to fierce hot wind, boiling water and a shadow of black smoke.\"\nThe disbeliever's soul then scatters throughout his body, but the angels retrieve it, just as a needle is retrieved from wet wool. In this case, veins and nerve cells will be still attached to the soul."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:51",
+                "text": "This is ˹the reward˺ for what your hands have done. And Allah is never unjust to ˹His˺ servants.”",
+                "ref_surah": 8,
+                "from_ayah": 51,
+                "to_ayah": 51,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Meaning, this punishment is the recompense of the evil deeds that you have committed in the life of the world. This is your reckoning from Allah SWT for your deeds. Allah SWT does not commit even the slightest injustice."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "اِنَّ اللّٰهَ قَوِىٌّ شَدِيۡدُ الۡعِقَابِ …."
+              ],
+              "translation": {
+                "ref": "8:52",
+                "text": "Their fate is that of the people of Pharaoh and those before them—they all disbelieved in Allah’s signs, so Allah seized them for their sins. Indeed, Allah is All-Powerful, severe in punishment.",
+                "ref_surah": 8,
+                "from_ayah": 52,
+                "to_ayah": 52,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is a solid rule or sunnah of Allah SWT as mentioned over and over again via the nation of Pharon, the Mushriqeen of Mecca, and nation of Nuh, Lut and many others. Allah SWT gives blessings, yet, people deny and are ungrateful. Then Allah SWT takes away the blessings. So, fear Allah SWT’s punishment."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT is Most Merciful and Forgiving but we MUST also remember that Allah SWT is severe in punishment. Thus, a Momin vacillates between fear and hope when it comes to his Raab."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:53",
+                "text": "That is because Allah would not change a favor which He had bestowed upon a people until they change what is within themselves. And indeed, Allah is Hearing and Knowing.",
+                "ref_surah": 8,
+                "from_ayah": 53,
+                "to_ayah": 53,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT does not change the blessings that he has bestowed on a nation until they themselves change it. Pharon was given so much but he drowned in the end. Similarly, people of Mecca given so much but due to continuous ingratitude and sins their blessings were taken away."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah affirms His perfect justice and fairness in His decisions, for He decided that He will not change a bounty that He has granted someone, except on account of an evil that they committed."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When the blessings of health, wealth, family unity are taken away take a look within and access if you have been ungrateful or have sinned."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THE WORST OF ALL BEINGS IN THE SIGHT OF ALLAH (54)",
+          "ord": 4,
+          "from_ayah": 54,
+          "to_ayah": 54,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:55",
+                "text": "Indeed, the worst of all beings in the sight of Allah are those who persist in disbelief, never to have faith",
+                "ref_surah": 8,
+                "from_ayah": 55,
+                "to_ayah": 55,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The worst of beasts in the sight of Allah SWT are those who do not have Iman and instead prefer disbelief and the temporary enjoyments of this world. Thus, those who do not make use of their faculties of hearing, speaking and understanding, in the service of Allah SWT, and in fact misuse them to get more entrenched in this world."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Below Allah SWT compares such people to animals but even worse than animals. Disbelief and rejection are the worst in the sight of Allah SWT."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see 7:179"
+                },
+                {
+                  "kind": "quote",
+                  "text": "And We have certainly created for Hell many of the jinn and mankind. They have hearts with which they do not understand, they have eyes with which they do not see, and they have ears with which they do not hear. Those are like livestock; rather, they are more astray. It is they who are the heedless."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TREATIES MUST BE HONORED UNLESS BROKEN WITH PROPER NOTIFICATION (55-58)",
+          "ord": 5,
+          "from_ayah": 55,
+          "to_ayah": 58,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:56",
+                "text": "The ones with whom you made a treaty but then they break their pledge every time, and they do not fear Allah.",
+                "ref_surah": 8,
+                "from_ayah": 56,
+                "to_ayah": 56,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "These Ayat’s are re: the Jews living in Madina. The Prophet made a peace treaty with them so as to peacefully co-exist. However, the Jews repeatedly violated this treaty particularly during the Battel of Badr."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT states here that the worst moving creatures on the face of the earth are those who persist in disbelieve, who do not embrace the faith (8:55) and they break promises whenever they make a covenant, and they do not fear Allah SWT regarding their sins."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:57",
+                "text": "So if you, [O Muhammad], gain dominance over them in war, disperse by [means of] them those behind them that perhaps they will be reminded.",
+                "ref_surah": 8,
+                "from_ayah": 57,
+                "to_ayah": 57,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Ayat makes it lawful for Muslims to feel absolved of the obligations of a treaty with a people who, despite that alliance engage in hostile actions against the Muslims. So, when you encounter them “in a war” (because otherwise there is a peace treaty) then teach them such a lesson that it becomes a deterrent for others."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is at the individual level. Below is at the collective level."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:58",
+                "text": "And if you ˹O Prophet˺ see signs of betrayal by a people, respond by openly terminating your treaty with them. Surely Allah does not like those who betray.",
+                "ref_surah": 8,
+                "from_ayah": 58,
+                "to_ayah": 58,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Thus, if you fear betrayal then openly break the treaty. It is not lawful for Muslims to decide unilaterally that their treaty with an ally is annulled. Therefore, before embarking on any hostile action against disbelievers, Muslims are required to inform the other party that their treaty has been terminated. This step is necessary in order that both parties are clear about where things stand."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Guided by this principle, the Prophet (PBUH) laid down a basic rule of Islamic international law in the following words: 'Whoever is bound in treaty with a people may not dissolve it until either its term expires, or he flings it at them (i.e. publicly declares that it had been annulled).' The Prophet (PBUH) further elucidated 'Do not be treacherous even to him who is treacherous to you'"
+                },
+                {
+                  "kind": "prose",
+                  "text": "إِنَّ اللّهَ لَا يُحِبُّ الخَايِنِينَ… “Surely Allah does not like those who betray”. This means that Allah SWT does not like the treacherous. This includes treachery against the disbelievers.\nMu`awiyah was leading an army in Roman lands, at a time the bilateral peace treaty was valid. He wanted to go closer to their forces so that when the treaty of peace ended, he could invade them. An old man riding on his animal said, `Allahu Akbar (Allah is the Great), Allahu Akbar! Be honest and stay away from betrayal.'"
+                },
+                {
+                  "kind": "prose",
+                  "text": "To annul a treaty unilaterally and to launch an armed attack without any warning was common practice in the time of ancient jahiliyah (Ignorance). Recent world invasions suggest the same is true even today. Such actions are usually justified on the ground that a previous warning would have put the enemy on the alert and would have enabled him to put up even stiffer resistance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If such pleading can absolve people of their moral obligations, then every offence is justifiable including, theft, robbery, illegitimate sexual intercourse, homicide, or forgery etc. It is also amazing that acts which are deemed unlawful for individuals are deemed perfectly lawful when they are committed by nations.\n\nIt should also be pointed out that an unannounced attack. according to Islamic law, is lawful in one situation: when the ally has clearly violated the treaty and has blatantly indulged in hostile action. Only in such an eventuality it is not binding on Muslims to first declare the dissolution of the treaty."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ORDER TO REMAIN PREPARED FOR WAR AGAINST THE UNBELIEVERS AND MAKE PEACE IF ENEMY IS WILLING TO MAKE PEACE (59-64)",
+          "ord": 6,
+          "from_ayah": 59,
+          "to_ayah": 64,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:60",
+                "text": "Prepare against them what you ˹believers˺ can of ˹military˺ power and cavalry to deter Allah’s enemies and your enemies as well as other enemies unknown to you but known to Allah. Whatever you spend in the cause of Allah will be paid to you in full and you will not be wronged.",
+                "ref_surah": 8,
+                "from_ayah": 60,
+                "to_ayah": 60,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Muslims should be equipped with military resources and have a standing army in a state of preparedness, in order that it may be used when needed. Thus, never be caught off guard or unawares. Serve as a deterrent. So spend in the cause of Allah SWT and this is the best investment on can make in life as the reward is guaranteed many fold over."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The immediate occasion of this injunction was the weakness of cavalry and actions of war in the early fights of Islam. But the general meaning is that in every fight, physical, moral, or spiritual, arm yourself with the best defense against your enemy. Tawaqul or trust in Allah SWT means first making an effort/struggle and then placing trust in Allah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:61",
+                "text": "If the enemy is inclined towards peace, make peace with them. And put your trust in Allah. Indeed, He ˹alone˺ is the All-Hearing, All-Knowing.",
+                "ref_surah": 8,
+                "from_ayah": 61,
+                "to_ayah": 61,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to Facilitate Peace when the Enemy seeks a Peaceful Resolution"
+                },
+                {
+                  "kind": "prose",
+                  "text": "While we must always be ready to fight (whether intentional or by default) still we must also always be ready for peace --particularly if there is any inclination towards peace on the other side. There is no merit merely in a fight for itself rather only so as to establish the reign of peace, righteousness and Allah's Law."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“And put your trust in Allah. Indeed, He ˹alone˺ is the All-Hearing, All-Knowing,” meaning take their gesture for peace on face value and then leave the rest to Allah SWT as He alone Knows and Hears all."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not second guess others intentions or motives rather take people on their face value. Then place your trust in Allah SWT. If their intentions are insincere then Allah SWT will protect us in sha Allah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:63",
+                "text": "He brought their hearts together. Had you spent all the riches in the earth, you could not have united their hearts. But Allah has united them. Indeed, He is Almighty, All-Wise.",
+                "ref_surah": 8,
+                "from_ayah": 63,
+                "to_ayah": 63,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This refers to the strong bond of love, solidarity and brotherhood that developed among the Arabs who embraced Islam. This strong solidarity existed despite the fact that they came from a variety of tribes which had long-standing traditions of mutual enmity. Money cannot buy love and loyalty."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was a special favor of Allah SWT on the Muslims as only Allah SWT can join hearts."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Unity and gentleness of hearts is a gift from Allah SWT. Allah SWT puts harmony in the hearts of those who are obedient."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Imran Ayat 103"
+                },
+                {
+                  "kind": "quote",
+                  "text": "And hold firmly together to the rope of Allah and do not be divided. Remember Allah’s favour upon you when you were enemies, then He united your hearts, so you—by His grace—became brothers. And you were at the brink of a fiery pit and He saved you from it. This is how Allah makes His revelations clear to you, so that you may be ˹rightly˺ guided."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S PROMISE TO MAKE THE BELIEVERS VICTORIOUS OVER ARMIES TWO TO TEN TIMES LARGER IN QUANTITY THAN BELIEVERS (65-69)",
+          "ord": 7,
+          "from_ayah": 65,
+          "to_ayah": 69,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:65",
+                "text": "O Prophet, urge the believers to battle. If there are among you twenty [who are] steadfast, they will overcome two hundred. And if there are among you one hundred [who are] steadfast, they will overcome a thousand of those who have disbelieved because they are a people who do not understand.",
+                "ref_surah": 8,
+                "from_ayah": 65,
+                "to_ayah": 65,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet directed to encourage believers to fight despite difficulties because it is necessary. At this point fighting was not a command for Muslims rather it was still voluntary. At the Battle of Tabuk it became necessary to fight."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, a believer should be much more committed and dedicated to their cause because of their convictions, understanding and thus they will be able to overcome much stronger/powerful sources."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TREATMENT TO PRISONERS OF WAR WHO EMBRACE ISLAM (70-71)",
+          "ord": 8,
+          "from_ayah": 70,
+          "to_ayah": 71,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:70",
+                "text": "O Prophet! Tell the captives in your custody, “If Allah finds goodness in your hearts, He will give you better than what has been taken from you, and forgive you. For Allah is All-Forgiving, Most Merciful.”",
+                "ref_surah": 8,
+                "from_ayah": 70,
+                "to_ayah": 70,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "70 prisoners of war after the Battle of Badr."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is a consolation to the prisoners of war. In spite of their previous hostility, Allah SWT will forgive them if there was any good in their hearts, and confer upon them a far higher gift than anything they have ever lost. This gift in its highest sense would be the blessing of Islam, but even in a material sense, there was great good fortune awaiting them."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note how comprehensive is Allah's care. He encourages and strengthens the Muslims. He consoles the prisoners of war and promises them better things if there is any good in them at all. And He offers comfort to those who have left their homes in His Cause, and knits them into closer fellowship with those who helped and sympathized with them."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DUTIES AND OBLIGATIONS OF THE ISLAMIC STATE TOWARDS MUSLIMS LIVING IN A NON-MUSLIM COUNTRY (72-75)",
+          "ord": 9,
+          "from_ayah": 72,
+          "to_ayah": 75,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:72",
+                "text": "Those who believed, emigrated, and strived with their wealth and lives in the cause of Allah, as well as those who gave them shelter and help—they are truly guardians of one another. As for those who believed but did not emigrate, you have no obligations to them until they emigrate. But if they seek your help ˹against persecution˺ in faith, it is your obligation to help them, except against people bound with you in a treaty. Allah is All-Seeing of what you do.",
+                "ref_surah": 8,
+                "from_ayah": 72,
+                "to_ayah": 72,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Muhajirin and Al-Ansar are the Supporters of One Another\nHere Allah SWT mentions the types of believers, dividing them into the Muhajirin, who left their homes and estates, emigrating to give support to Allah SWT and His Messenger to establish His religion. They gave up their wealth and themselves in this cause."
+                },
+                {
+                  "kind": "prose",
+                  "text": "There is also the Ansar, the Muslims of Al-Madinah, who gave asylum to their Muhajirin brethren in their own homes and comforted them with their wealth. This is why Allah's Messenger forged ties of brotherhood between the Muhajirin and Ansar.\nThey used to inherit from each other, having more right to inheritance than the deceased man's relatives, until Allah abrogated that practice with the fixed share for near relatives."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Believers Who did not emigrate did not yet receive the Benefits of Wilayah\nThis is the third category of believers, those who believed, but did not perform Hijrah and instead remained in their areas. They do not have any share in the war booty or in the fifth (designated for Allah and His Messenger, the relatives of the Prophet, the orphans, the poor and the wayfarer), unless they attend battle.\n\nAllah commands, if these Bedouins, who did not perform Hijrah, ask you to aid them against their enemy, then aid them. It is incumbent on you to aid them in this case, because they are your brothers in Islam, unless they ask you to aid them against disbelievers with whom you have a fixed-term treaty of peace. In that case, do not betray your treaties or break your promises with those whom you have treaties of peace."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:74",
+                "text": "Those who believed, migrated, and struggled in the cause of Allah, and those who gave ˹them˺ shelter and help, they are the true believers. They will have forgiveness and an honourable provision.",
+                "ref_surah": 8,
+                "from_ayah": 74,
+                "to_ayah": 74,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (8:2)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "The true believers are those who, when Allah's name is mentioned, their hearts quake, and when His verses are recited to them their faith grows, and who put their trust in their Lord;"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, the second Ayat and the second last Ayat when compiled together provide a complete definition of a true believer."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Two groups are mentioned; (i) Muhajir and the (ii) Ansar. These people were part of a bigger mission which demanded that after accepting Iman at the individual level then they should immigrate (Muhajir) while others (Ansar) should provide shelter and protection to those who immigrated and both will propagate the cause of Islam."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Thus, we too should do hijra from disobedience to obedience and migrate from what Allah SWT has forbidden and head towards attaining complete Iman (Muhajir) and assist/help in the way of Allah SWT. Support/cooperate, do jihad and strive. We cannot sit comfortably at home rather sacrifice is required.  (Ansar)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Personal Iman or faith requires five pillars of Islam and zikr, etc. Thus, see below Iman at the individual level."
+                },
+                {
+                  "kind": "prose",
+                  "text": "When they hear the Ayat of Allah their Iman goes up and they trust in Allah SWT. (Ayat 2)"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (49:14)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "˹Some of˺ the nomadic Arabs say, “We believe.” Say, ˹O Prophet,˺ “You have not believed. But say, ‘We have submitted,’ for faith has not yet entered your hearts. But if you obey Allah and His Messenger ˹wholeheartedly˺, He will not discount anything from ˹the reward of˺ your deeds. Allah is truly All-Forgiving, Most Merciful.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here the nomadic Arabas are being told that you are not believers yet rather you are Muslims because you have submitted. However true belief or iman has not yet entered your hearts."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (49:15)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "The ˹true˺ believers are only those who believe in Allah and His Messenger—never doubting—and strive with their wealth and their lives in the cause of Allah. They are the ones true in faith."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, the comprehensive definition of a true believer is given. (i) Someone who has zero doubt meaning and 100% complete faith/Iman. (ii) One who strives or does jihad with their wealth and their lives for the cause of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In conclusion: All seven aspects of Iman make a true believer. That is the five pillars of faith as well as true iman and effort/striving/jihad."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: These days there is a divorce between Islamic activism and individual spirituality. Either one is striving to establishing schools, giving dawa etc., or you do your individual zikr etc., and that is it. These Surahs do not allow one to separate these traits of a true believer. One must be active at the individual as well as communal/societal level. Thus, struggle and salah/zikr must be balanced."
+                },
+                {
+                  "kind": "prose",
+                  "text": "One of the descriptions of the companions of the Prophet is that they would ride horses during the day meaning they were on a mission and they would pray at night meaning they would connect with Allah SWT during the night. Sacrifice, effort, dedication, commitment, hard work are needed at the individual level as well as at the collective level."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "8:75",
+                "text": "And those who later believed, migrated, and struggled alongside you, they are also with you. But only blood relatives are now entitled to inherit from one another, as ordained by Allah. Surely Allah has ˹full˺ knowledge of everything.",
+                "ref_surah": 8,
+                "from_ayah": 75,
+                "to_ayah": 75,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (8:1)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "They ask you concerning the spoils of war? Tell them: 'The spoils of war belong to Allah and the Messenger. So fear Allah, and set things right between you, and obey Allah and His Messenger if you are true believers."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Inheritance is for Designated Degrees of Relatives"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Previously the Muhajir and Ansar would inherit from each other. This Ayat abrogated inheriting from those with whom one had ties of treaties or brotherhood, as was the case in the beginning of Islam. Rather one can only inherit from blood relations as per the Shariah."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Beginning of Surah, the believers were disputing and arguing and now they are so united that Allah SWT must put limits of how much one can give those who are not related by blood."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF TRUE BELIEVERS"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:2) The ˹true˺ believers are only those whose hearts tremble at the remembrance of Allah, whose faith increases when His revelations are recited to them, and who put their trust in their Lord."
+            },
+            {
+              "kind": "translation",
+              "text": "(8:74) Those who believed, migrated, and struggled in the cause of Allah, and those who gave ˹them˺ shelter and help, they are the true believers. They will have forgiveness and an honourable provision."
+            },
+            {
+              "kind": "heading",
+              "text": "CHILDREN AND WEALTH ARE ONLY A TEST"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:28) And know that your wealth and your children are only a test and that with Allah is a great reward."
+            },
+            {
+              "kind": "heading",
+              "text": "UNBELIEVERS, WHO EMBRACE ISLAM, THEIR PAST IS FORGIVEN"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:38) Say to those who have disbelieved [that] if they cease, what has previously occurred will be forgiven for them. But if they return [to hostility] - then the precedent of the former [rebellious] peoples has already taken place."
+            },
+            {
+              "kind": "heading",
+              "text": "FIGHTING IN ISLAM"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:39) Fight against them until there is no more persecution—and ˹your˺ devotion will be entirely to Allah. But if they desist, then surely Allah is All-Seeing of what they do."
+            },
+            {
+              "kind": "cross_ref",
+              "text": "Also see Surah Al Baqarah Ayat 193"
+            },
+            {
+              "kind": "prose",
+              "text": "This is a repetition of the resolve, mentioned earlier in al-Baqarah 2: 193, for which Muslims are required to wage war. So as to establish a state of affairs wherein all obedience is rendered to Allah SWT alone. This alone is the purpose for which believers may, rather should, fight. Fighting for any other purpose is not lawful."
+            },
+            {
+              "kind": "heading",
+              "text": "PAINFUL DEATH OF THE UNBELIEVERS"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:50) If only you could see when the angels take the souls of the disbelievers, beating their faces and backs, ˹saying,˺ “Taste the torment of burning!"
+            },
+            {
+              "kind": "heading",
+              "text": "THE WORST OF BEASTS IN THE SIGHT OF ALLAH SWT ARE THOSE WHO DO NOT HAVE IMAN AND INSTEAD PREFER DISBELIEF AND THE TEMPORARY ENJOYMENTS OF THIS WORLD"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:55) Indeed, the worst of all beings in the sight of Allah are those who persist in disbelief, never to have faith"
+            },
+            {
+              "kind": "heading",
+              "text": "TREATIES MUST BE HONORED UNLESS BROKEN WITH PROPER NOTIFICATION"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:56) The ones with whom you made a treaty but then they break their pledge every time, and they do not fear Allah."
+            },
+            {
+              "kind": "prose",
+              "text": "Allah SWT states here that the worst moving creatures on the face of the earth are those who persist in disbelieve, who do not embrace the faith (8:55) and they break promises whenever they make a covenant, and they do not fear Allah SWT regarding their sins (8:56)."
+            },
+            {
+              "kind": "heading",
+              "text": "UNITY AND GENTLENESS OF HEARTS IS A GIFT FROM ALLAH SWT."
+            },
+            {
+              "kind": "translation",
+              "text": "(8:63) He brought their hearts together. Had you spent all the riches in the earth, you could not have united their hearts. But Allah has united them. Indeed, He is Almighty, All-Wise."
+            },
+            {
+              "kind": "heading",
+              "text": "INHERITANCE ONLY FOR BLOOD RELATIVES"
+            },
+            {
+              "kind": "translation",
+              "text": "(8:75) And those who later believed, migrated, and struggled alongside you, they are also with you. But only blood relatives are now entitled to inherit from one another, as ordained by Allah. Surely Allah has ˹full˺ knowledge of everything."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 9,
+      "name_en": "AT TAUBAH (THE REPENTANCE)",
+      "from_ayah": 1,
+      "to_ayah": 93,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Juz 10 Surah 9.docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 10",
+      "chunk_marker": null,
+      "section_index": {
+        "header": null,
+        "titles": [
+          "PROCLAMATION TO DISSOLVE THE \"TREATY OF HUDEYBIYAH\" ) 1-6(",
+          "COMMANDMENT OF ALLAH TO HONOR THE TREATY SO LONG AS THE UNBELIEVERS HONOR IT  )7-11(",
+          "IF THE UNBELIEVERS VIOLATE THE TREATY, THEN FIGHT AGAINST THEIR RINGLEADERS ) 12-16(",
+          "MUSHRIKIN ARE FORBIDDEN TO BE THE CARETAKERS OF MASAJID ) 17-18(",
+          "SERVICE TO PILGRIMS IS NOT EQUAL TO TRUE BELIEF IN ALLAH, THE LAST DAY, AND JIHAD ) 19-22(",
+          "DO NOT TAKE YOUR FATHERS AND BROTHERS AS YOUR FRIENDS IF THEY PREFER KUFR (UNBELIEF) OVER IMAN (BELIEF) ) 23-24(",
+          "ALLAH'S HELP IS WITH THE QUALITY AND NOT THE QUANTITY OF THE BELIEVERS ) 25-27(",
+          "PROHIBITION OF MUSHRIKIN FROM ENTERING MASJID-AL-HARAM ) 28-29(",
+          "MUSHRIK ARE THE JEWS AND CHRISTIANS WHO CALL AZRA AND JESUS THE SONS OF GOD (30-33)",
+          "DO NOT BE LIKE RABBIS AND PRIESTS WHO MISAPPROPRIATE THE WEALTH OF PEOPLE ( 34-35)",
+          "THE NUMBER OF MONTHS IN THE BOOK OF ALLAH IS 12, OF WHICH 4 ARE SACRED (36-37)",
+          "ALLAH'S ORDER TO BEAR ARMS AGAINST THE UNBELIEVERS, IF NECESSARY (38-42)",
+          "THOSE WHO DO NOT PARTICIPATE IN JIHAD ARE HYPOCRITES (43-48)",
+          "EXCUSES OF THE HYPOCRITES FOR NOT BEARING ARMS AGAINST THE UNBELIEVERS (49-59)",
+          "CATEGORIES FOR THE DISTRIBUTION OF ZAKAH (60)",
+          "ORDER OF ALLAH NOT TO MOLEST THE PROPHET (61-63)",
+          "PUNISHMENT FOR THOSE WHO MAKE FUN OF THE RELIGION (64-66)",
+          "HYPOCRITICAL ACTIONS AND THEIR PUNISHMENT (67-70)",
+          "BELIEVERS' ACTIONS AND THEIR REWARDS (71-72)",
+          "ALLAH'S ORDER TO MAKE JIHAD AGAINST HYPOCRITES AND UNBELIEVERS (73-74)",
+          "BEHAVIOR OF THE HYPOCRITES (75-80)",
+          "HYPOCRITES DID NOT JOIN THE WAR AGAINST THE UNBELIEVERS AND PROHIBITION OF OFFERING FUNERAL PRAYER FOR THE HYPOCRITES (81-89)",
+          "GENUINE EXEMPTIONS FROM THE BATTLEFRONT (90-93)",
+          "THOSE WHO MAKE EXCUSES TO AVOID SERVING IN ARMED STRUGGLE FOR THE CAUSE OF ALLAH WHEN NEEDED, ARE HYPOCRITES (94-99)",
+          "CATEGORIES OF HYPOCRITES AND COMMANDMENT FOR THE COLLECTION OF AZ-ZAKAH AND HYPOCRITES' MASJID FOR MISCHIEVOUS MOTIVES, CALLED \"MASJID-E-ZIRAR\" (100-110)",
+          "ALLAH HAS PURCHASED THE PERSONS AND WEALTH OF THE BELIEVERS IN LIEU OF GRANTING THEM THE PARADISE (111-112)",
+          "DO NOT SEEK FORGIVENESS FOR THE MUSHRIKIN (113-116)",
+          "ALLAH FORGAVE THOSE THREE WHO LAGGED BEHIND BUT WERE SINCERE (117-118)",
+          "BELIEVERS ARE THOSE WHO PREFER THE LIFE OF THE RASOOL OVER THEIR OWN AND REQUIREMENT OF OBTAINING UNDERSTANDING OF RELIGION (119-122)",
+          "QUR'ANIC VERSES DO INCREASE THE FAITH OF THE BELIEVERS (123-127)",
+          "CHARACTER OF PROPHET MUHAMMAD (PBUH) AND PRAYER TAUGHT BY ALLAH (128-129)"
+        ]
+      },
+      "extras": [],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah is known by two names -- At-Taubah and Al-Bara'at. It is called At-Taubah because it details the nature of taubah (repentance) and mentions the conditions of its acceptance (Ayat 102. 118). The second name Bara'at (Release) is taken from the first word of the Surah.",
+          "items": null
+        },
+        {
+          "label": "Omission of Bismillah",
+          "text": "This is the only Surah of the Quran to which Bismillah is not added because the Holy Prophet himself did not dictate it at the beginning of the Surah.",
+          "items": null
+        },
+        {
+          "label": "Discourses and Periods of Revelation",
+          "text": "This Surah comprises three discourses: -",
+          "items": [
+            {
+              "text": "The first discourse (Ayat 1-37), was revealed in Zil-Qa'adah A.H. 9 on the occasion of Haj when the Holy Prophet dispatched Hadrat Ali to follow Hadrat Abu Bakr, who had already left for Makkah as leader of the Pilgrims to the Ka'abah. He instructed Hadrat Ali to deliver the discourse before the representatives of the different clans of Arabia so as to inform them of the new policy towards the mushriks."
+            },
+            {
+              "text": "The second discourse (Ayat 38-72) was sent down in Rajab A.H. 9 when the Holy Prophet was engaged in making preparations for the Campaign, of Tabuk. In this discourse, the Believers were urged to take active part in Jihad, and the shirkers were severely rebuked for holding back their wealth and for hesitation to sacrifice their lives in the way of Allah because of their hypocrisy, weak faith or negligence."
+            },
+            {
+              "text": "The third discourse (Ayat 73-129) was revealed on his return from the Campaign of Tabuk. This discourse warns the hypocrites of their evil deeds and rebukes those Believers who had stayed behind in the Campaign of Tabuk. Then after taking them to task, Allah pardons those true Believers."
+            },
+            {
+              "text": "Chronologically, the first discourse should have come last; but being the most important of the three in regard to its subject matter, it was placed first in the order of compilation. (This is why it is one of the most difficult Surahs in the Quran as it discusses different events in different sections or rukus.)"
+            }
+          ]
+        },
+        {
+          "label": null,
+          "text": "Surah Taubah is an invitation to repentance. No matter what you have done ask forgiveness for your mistakes. Allah SWT does not demand perfection. But what is necessary is to apologize and worship. The sign of a Believer is that he constantly is seeking forgiveness – till his last breath.",
+          "items": null
+        },
+        {
+          "label": "Historical Background",
+          "text": "The series of events that have been discussed in this Surah took place after the Peace Treaty of Hudaibiyah. This Treaty allowed Islam to spread its influence in a comparatively peaceful atmosphere. After this Treaty, two events took place, which led to very important results:",
+          "items": [
+            {
+              "text": "Conquest of Arabia"
+            },
+            {
+              "text": "The first was the Conquest of Arabia. During a short period of two years."
+            },
+            {
+              "text": "The Quraish broke the Peace Treaty of Hudaibiyah. Nevertheless, the Holy Prophet took prompt action by invading and conqurng Makkah in the month of Ramadan in A. H. 8."
+            },
+            {
+              "text": "Campaign to Tabuk"
+            },
+            {
+              "text": "The Campaign to Tabuk was the result of conflict with the Roman Empire. The majority of Christians were under the influence of the Roman Empire. Contrary to all the principles of the commonly accepted international law, they killed fifteen members of the delegation."
+            },
+            {
+              "text": "These events convinced the Holy Prophet that a strong action should be taken in order to make the territory adjacent to the Roman Empire safe and secure for the Muslims. Accordingly, A. H. 8, he sent an army of three thousand towards the Syrian border."
+            },
+            {
+              "text": "When this army reached near Ma'an, the Muslims learned a huge army was heading. And the result of the encounter in which the Muslims were fighting against fearful odds (the ratio of the two armies was 1:33), as very favorable, for the enemy utterly failed to defeat them and thousands embraced Islam."
+            },
+            {
+              "text": "Caesar then began to make military preparations to avenge the insult he had suffered at M'utah."
+            },
+            {
+              "text": "The Holy Prophet decided to fight against the great power of the Caesar. The Campaign against the Roman Empire, -- which was one of the two greatest empires of the world of that period -- was made despite a famine in the country; the burning heat of the scorching summer season of Arabia and not enough money for equipment and conveyance."
+            },
+            {
+              "text": "That is why these lovers of Islam began to make enthusiastic preparations for the Campaign. In short, the occasion became the touchstone for discriminating a true believer from a hypocrite."
+            },
+            {
+              "text": "The Holy Prophet marched out towards Syria in Rajab A. H. 9, with thirty thousand fighters for the cause of Islam. The conditions in which the expedition was undertaken may be judged from the fact that the number of camels with them was so small that many of them were obliged to walk on foot and to wait for their turns for several had to ride at a time on each camel. To add to this, there was the burning heat of the desert and the acute shortage of water. But they were richly rewarded for their firm resolve and sincere adherence to the cause and for their perseverance in the face of those great difficulties and obstacles."
+            },
+            {
+              "text": "When they arrived at Tabuk, they learned that the Caesar and his allies had withdrawn their troops from the frontier and there was no enemy to fight with. Thus, they won a moral victory that increased their prestige manifold and, that too, without shedding a drop of blood."
+            },
+            {
+              "text": "The boundaries of the Islamic State were extended right up to the Roman Empire, and the majority of the Arab clans, who were being used by the Caesar against Arabia, became the allies of the Muslims against the Romans."
+            }
+          ]
+        },
+        {
+          "label": "Problems of the Period",
+          "text": "If we keep in view the preceding background, we can easily find out the problems that were confronting the Community at that time. They were:",
+          "items": [
+            {
+              "text": "to make the whole of Arabia a perfect Dar-ul-Islam,"
+            },
+            {
+              "text": "to extend the influence of Islam to the adjoining countries,"
+            },
+            {
+              "text": "to crush the mischiefs of the hypocrites, and"
+            },
+            {
+              "text": "to prepare the Muslims for Jihad against the non- Muslim world."
+            },
+            {
+              "text": "Now that the administration of the whole of Arabia had come in the hands of the Believers and in order to make it a Dar-ul-Islam the following measures were adopted:"
+            },
+            {
+              "text": "TREATIES:"
+            },
+            {
+              "text": "(Ayat. 1-3). A clear declaration was made that all the treaties with the mushriks were abolished and the Muslims would be released from the treaty obligations with them after a respite of four months. This declaration was necessary for uprooting completely the system of life based on shirk"
+            },
+            {
+              "text": "(Ayat. 12-18) A decree was issued that the guardianship of the Ka`abah, which held central position in all the affairs of Arabia, should be wrested from the mushriks and placed permanently in the hands of the Believers, that all the customs and practices of the shirk of the era of 'ignorance' should be forcibly abolished: that the mushriks should not be allowed even to come near the \"House\" (v. 28).."
+            },
+            {
+              "text": "(Ayat. 37). The evil practice of Nasi, by which they used to tamper with the sacred months in the days of 'ignorance', was forbidden as an act of kufr."
+            },
+            {
+              "text": "JIHAD"
+            },
+            {
+              "text": "In order to enable the Muslims to extend the influence of Islam outside Arabia, they were enjoined to crush with sword the non- Muslim powers and to force them to accept the sovereignty of the Islamic State. As the great Roman and Iranian Empires were the biggest hindrances in the way, a conflict with them was inevitable. The object of Jihad was not to coerce them to accept Islam they were free to accept or not to accept it-but to prevent them from thrusting forcibly their deviations upon others and the coming generations. The Muslims were enjoined to tolerate their misguidance only to the extent that they might have the freedom to remain misguided, if they chose to be so, provided that they paid Jizyah (Ayat. 29) as a sign of their subjugation to the Islamic State."
+            },
+            {
+              "text": "HYPOCRITES"
+            },
+            {
+              "text": "The third important problem was to crush the mischiefs of the hypocrites. Till now there was practically no pressure upon them but now the Muslims were enjoined to treat them openly as disbelievers (Ayat. 73). Accordingly, the Holy Prophet set on fire the house of Swailim, where the hypocrites used to gather for consultations in order to dissuade the people from joining the expedition to Tabuk. Likewise on his return from Tabuk, he ordered to pull down and burn the 'Mosque' that had been built to serve as a cover for the hypocrites for hatching plots against the true Believers."
+            },
+            {
+              "text": "There could be no greater internal danger to the Islamic Community than the weakness of faith, especially when they were going to engage in a' conflict with the whole non-Muslim world. That is why those people who had lagged behind in the Campaign to Tabuk or had shown the least negligence were severely taken to task, and were considered as hypocrites if they had no plausible excuse for not fulfilling that obligation. Moreover, a clear declaration was made that in future the sole criterion of a Muslim's faith shall be the exertions he makes for the uplift of the Word of Allah and the role he plays in the conflict between Islam and kufr. Therefore, if anyone will show any hesitation in sacrificing his life, money, time and energies, his faith shall not be regarded as genuine. (Ayat. 81-96)."
+            }
+          ]
+        },
+        {
+          "label": "Subject: Problems of Peace and War",
+          "text": "In continuation of Surah Al-Anfal, this Surah also deals with the problems of peace and war and bases the theme on the Tabuk Expedition.",
+          "items": null
+        },
+        {
+          "label": "Topics and their Interconnection",
+          "text": null,
+          "items": [
+            {
+              "text": "This portion deals with the sanctity of treaties and lays down principles, rules and regulations which must be kept in view before breaking them, in case the other party does not observe them sincerely. 1 - 12"
+            },
+            {
+              "text": "In this portion the Muslims have been urged to fight in the Way of Allah with the mushrik Arabs, the Jews and the Christians, who were duly warned of the consequences of their mischievous and inimical behavior. 13 - 37"
+            },
+            {
+              "text": "In this discourse, the Muslims have been told clearly and explicitly that they will inherit the rewards promised by Allah only if they take active part in the conflict with kufr, for that is the criterion which distinguishes true Muslims from hypocrites. Therefore, true Muslims should take active part in Jihad, without minding dangers, obstacles, difficulties, temptations and the like. 38 - 72"
+            },
+            {
+              "text": "This portion deals with the problems of hypocrites and lays down rules and regulations governing the treatment that should be meted out to them and points out their distinctive marks from true Muslims. 73 - 90"
+            },
+            {
+              "text": "This portion deals with the case of those who remained behind and did not accompany the Holy Prophet for Jihad to Tabuk. For this purpose, they have been separated in different categories, that is, the disabled, the sick, the indigent, the hypocrites, the believers who realized their guilt and punished themselves before the return of the Holy Prophet from Tabuk and those who confessed their error. Their cases have been dealt with in accordance with the nature and extent of their offense. 91 - 110"
+            },
+            {
+              "text": "In order to make their noble qualities look all the more conspicuous and dignified by contrast, the characteristics of the Believers have been mentioned, and they have been reassured that Allah, the Sovereign of the Universe, is their helper and guardian. Accordingly, because of their sincerity, He has forgiven the Three Believers who did not take part in the expedition. 111 - 118"
+            },
+            {
+              "text": "In the concluding portion, general instructions have been given to the Believers for their guidance. 119 - 127"
+            },
+            {
+              "text": "This is the conclusion: \"Follow the Messenger who is gentle and compassionate and your greatest well-wisher, and trust in Allah, the Lord of the Universe\". 128 – 129"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "PROCLAMATION TO DISSOLVE THE \"TREATY OF HUDEYBIYAH\" ) 1-6(",
+          "ord": 1,
+          "from_ayah": 1,
+          "to_ayah": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:1",
+                "text": "[This is a declaration of] disassociation, from Allah and His Messenger, to those with whom you had made a treaty among the polytheists.",
+                "ref_surah": 9,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "There is no Basmalah in the Beginning of This Surah\nThis Surah was one of the last Surahs to be revealed to the Messenger of Allah SWT.\nBackground: The first part of this Surah was revealed to the Messenger of Allah when he returned from the battle of Tabuk, during the Hajj season. The Prophet did not attend this Hajj because he knew that the idolators would still attend that Hajj and that they perform Tawaf around the House while naked. He disliked to associate with them and sent Abu Bakr As-Siddiq, may Allah be pleased with him, to lead Hajj that year, commanding him to inform the idolators that they would not be allowed to participate in Hajj after that season. Ali bin Abu Talib was sent to deliver this news to the idolators on behalf of the Messenger.\n\nAnnouncing the Disavowal of the Idolators"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is a declaration of disassociation by Allah SWT and His Prophet with the Mushriqeen. Any treaty is now canceled."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is because the Pagans and enemies of Islam frequently made treaties of mutual alliances with the Muslims. While the Muslims scrupulously observed their part, the Pagans blatantly violated their part again and again. Thus, it became imperative to denounce such treaties altogether. This was done with four months grace period or notice.  For those who faithfully observed their pledges, an opportunity was given to continue their alliance."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:2",
+                "text": "So travel freely, [O disbelievers], throughout the land [during] four months but know that you cannot cause failure to Allah and that Allah will disgrace the disbelievers.",
+                "ref_surah": 9,
+                "from_ayah": 2,
+                "to_ayah": 2,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "A four-month grace period was given. After that either embrace Islam or leave."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayah refers to idolators who had open-ended treaties. The terms of these treaties were restricted to four months only."
+                },
+                {
+                  "kind": "prose",
+                  "text": "As for those whose term of peace ended at a specific date later (than the four months), then their treaties would end when their terms ended, no matter how long afterwards, for Allah said,\n(So fulfill their treaty for them until the end of their term). (9:4)\n\n\"The Messenger of Allah sent Abu Bakr to lead the Hajj rituals on the ninth year (of Hijrah). He also sent Ali bin Abi Talib with thirty or forty Ayat from Bara'ah (At-Tawbah), and he recited them to the people, giving the idolators four months during which they freely move about in the land. He recited these Ayat on the day of Arafah (ninth of Dhul-Hijjah). The idolators were given twenty more days (till the end) of Dhul-Hijjah, Muharram, Safar, Rabi Al-Awwal and ten days from Rabi Ath-Thani.\nHe proclaimed to them in their camping areas, `No Mushrik will be allowed to perform Hajj after this year, nor a naked person to perform Tawaf around the House.\"'"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:5",
+                "text": "And when the sacred months have passed, then kill the polytheists wherever you find them and capture them and besiege them and sit in wait for them at every place of ambush. But if they should repent, establish prayer, and give zakah, let them [go] on their way. Indeed, Allah is Forgiving and Merciful.",
+                "ref_surah": 9,
+                "from_ayah": 5,
+                "to_ayah": 5,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is the Ayah of the Sword\nThe four months mentioned in this Ayat are the four-month grace period mentioned in the earlier Ayat (9:2)\n\nThese Ayats allowed fighting people unless and until, they embrace Islam and implement its rulings and obligations. This is because they would disturb the peace of the land and create fasad or chaos. Thus, when war becomes inevitable, it must be prosecuted with vigor meaning one cannot fight with kid gloves. The fighting may take the form of slaughter, or capture, or siege, or ambush and other stratagems."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But even then, there is room for repentance and amendment on the part of the guilty party. If they repent and perform the Salah, and give the Zakat, then leave free."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Allah often mentions the prayer and Zakat together as these are the most honorable acts that we perform."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Such Ayat’s can be easily misunderstood and misinterpreted. Understand the context!"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَاِنۡ اَحَدٌ مِّنَ الۡمُشۡرِكِيۡنَ اسۡتَجَارَكَ فَاَجِرۡهُ حَتّٰى يَسۡمَعَ كَلَامَ اللّٰهِ"
+              ],
+              "translation": {
+                "ref": "9:6",
+                "text": "And if anyone from the polytheists asks for your protection ˹O Prophet˺, grant it to them so they may hear the Word of Allah, then escort them to a place of safety, for they are a people who have no knowledge.",
+                "ref_surah": 9,
+                "from_ayah": 6,
+                "to_ayah": 6,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Idolators are granted Safe Passage if They seek It\nEven among the enemies of Islam there may be some individuals who may require protection. These are people who did not previously give any importance to Islam and what it signifies. Such people can be given asylum and an opportunity to hear the Word of Allah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If they accept the Word, they become Muslims. If they do not accept Islam they should be safely escorted to a place where they can be safe. Such persons only err through ignorance."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "COMMANDMENT OF ALLAH TO HONOR THE TREATY SO LONG AS THE UNBELIEVERS HONOR IT  (7-11(",
+          "ord": 2,
+          "from_ayah": 7,
+          "to_ayah": 11,
+          "intro": [
+            {
+              "kind": "prose",
+              "text": "Now the two rukus are prior to the conquest of Mecca and to pursued the Muslims to fight. 8th year"
+            }
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:7",
+                "text": "How can there be for the polytheists a treaty in the sight of Allah and with His Messenger, except for those with whom you made a treaty at al-Masjid al-Haram? So as long as they are upright toward you, be upright toward them. Indeed, Allah loves the righteous [who fear Him].",
+                "ref_surah": 9,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT mentions the wisdom in dissolving all obligations to the idolators and giving them a four-month period of safety."
+                },
+                {
+                  "kind": "prose",
+                  "text": "‘How can there be a covenant for the Mushrikin, while they persist in Shirk with Allah, and disbelief in Him and His Messenger, except those with whom you made a covenant near Al-Masjid Al-Haram, on the day of Hudaybiyyah.’\nSo long as they are true to you, stand you true to them, if they keep the terms of the treaties you conducted with them, including peace between you and them for ten years, then stand you true to them. Verily, Allah loves those who have Taqwa.\n\nThe Messenger of Allah SWT and the Muslims preserved the terms of the treaty with the people of Makkah from the month of Dhul-Qa`dah in the sixth year (of Hijrah), until the Quraysh broke it and helped their allies, Banu Bakr, against Khuza`ah, the allies of Allah's Messenger. Aided by the Quraysh, Banu Bakr killed some of Bani Khuza`ah in the Sacred Area! The Messenger of Allah SWT led a successful invasion in the month of Ramadan, of the eighth year."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Those among them who remained in disbelief and ran away from Allah's Messenger were sent promises of safe refuge for four months, during which they were allowed to move about freely."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "IF THE UNBELIEVERS VIOLATE THE TREATY, THEN FIGHT AGAINST THEIR RINGLEADERS ) 12-16(",
+          "ord": 3,
+          "from_ayah": 12,
+          "to_ayah": 16,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:12",
+                "text": "And if they break their oaths after their treaty and defame your religion, then fight the leaders of disbelief, for indeed, there are no oaths [sacred] to them; [fight them that] they might cease.",
+                "ref_surah": 9,
+                "from_ayah": 12,
+                "to_ayah": 12,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Oaths of the Leaders of Disbelief mean nothing to Them\nIf the idolators with whom you conducted peace treaties for an appointed term break (their oaths), meaning, terms of their treaties, and covenants and attack your religion...with disapproval and criticism, it is because of this that one who curses the Messenger, peace be upon him, or attacks the religion of Islam by way of criticism and disapproval, they are to be fought. then fight (you) against the leaders of disbelief -- for surely, their oaths are nothing to them -- so that they may stop. so that they may refrain from the disbelief, rebellion and the transgression they indulge in."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Not only did the enemies break their oaths shamelessly, but they even taunted the Muslims on their Faith and the \"simple-minded\" way in which they continued to respect their part of the treaty."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "MUSHRIKIN ARE FORBIDDEN TO BE THE CARETAKERS OF MASAJID ) 17-18(",
+          "ord": 4,
+          "from_ayah": 17,
+          "to_ayah": 18,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:17",
+                "text": "It is not for the polytheists to maintain the mosques of Allah while they openly profess disbelief. Their deeds are void, and they will be in the Fire forever.",
+                "ref_surah": 9,
+                "from_ayah": 17,
+                "to_ayah": 17,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "It is not for Idolators to maintain the Masjids of Allah"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Believers are the True Maintainers of the Masjids\nAllah SWT says that it is not fitting that those who associate others in worship with Allah SWT should maintain the Masjids of Allah that were built in His Name alone without partners.\nThe works of such people are in vain, because of their Shirk and in Fire shall they abide."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Before Islam the Pagans built, repaired, and maintained the Mosque, and celebrated Pagan ceremonies in it, including naked circumambulation round the Ka'bah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "When the Muslims were strong enough to retake Makkah (A. H. 8), they purified the Mosque and reestablished the worship of the true God."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then the question arose: should they be allowed to visit it and practice their unseemly Pagan rites? Obviously, this would be derogatory to the dignity and honor of the Mosque, and was forbidden."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was the specific context for this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The general deduction is clear. A house of Allah SWT is a place of sincere devotion, not a theatre for vulgar rites nor a source of worldly income. Only sincere Believers have a right of entry. Who the sincere Believers are, is explained in the next Ayat."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:18",
+                "text": "The mosques of Allah are only to be maintained by those who believe in Allah and the Last Day and establish prayer and give zakah and do not fear except Allah, for it is expected that those will be of the [rightly] guided.",
+                "ref_surah": 9,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Masjids of Allah SWT shall be maintained only by those who believe in Allah and the Last Day.\nPerform the Salah, and give the Zakat they fear only Allah, the Exalted, and none else, `It is they who are the successful ones in truth.'"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Sincere Believers are those who have faith in Allah and have a spirit of devotion not just isolated acts now and then. Moreover, they must not bow to worldly greed or ambition."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SERVICE TO PILGRIMS IS NOT EQUAL TO TRUE BELIEF IN ALLAH, THE LAST DAY, AND JIHAD ) 19-22(",
+          "ord": 5,
+          "from_ayah": 19,
+          "to_ayah": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:19",
+                "text": "Do you ˹pagans˺ consider providing the pilgrims with water and maintaining the Sacred Mosque as equal to believing in Allah and the Last Day and struggling in the cause of Allah? They are not equal in Allah’s sight. And Allah does not guide the wrongdoing people.",
+                "ref_surah": 9,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Providing Pilgrims with Water and maintaining the Sacred Masjid are not equal to Faith and Jihad\n\"The idolators used to boast and show off among the people because they claimed, they were the people and maintainers of Al-Masjid Al-Haram."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT mentioned their arrogance and rejection (of the faith), declared that faith and Jihad with the Prophet are better than the idolators' maintaining Al-Masjid Al-Haram and providing water for pilgrims. These actions -- maintaining and serving Allah's House -- will not benefit them with Allah because they associate others with Him.\nAllah says, `All these actions were performed while committing Shirk, and I do not accept the (good deeds) that are performed while in a state of Shirk.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:20",
+                "text": "Those who have believed, emigrated, and strived in the cause of Allah with their wealth and their lives are greater in rank in the sight of Allah. It is they who will triumph.",
+                "ref_surah": 9,
+                "from_ayah": 20,
+                "to_ayah": 20,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see 9:88)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Those who believed and emigrated and strove hard and fought in Allah's cause with their wealth and their lives, are far higher in degree with Allah. They are the successful ones."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here is a good description of Jihad. Mere brutal fighting is opposed to the whole spirit of Jihad, while the sincere scholar's pen, moving away from sin, a preacher's voice or wealthy man's contributions may be the most valuable forms of Jihad."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Definition of Success: Iman + striving hard with wealth and lives for Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:21",
+                "text": "Their Lord gives them good news of His mercy, pleasure, and Gardens with everlasting bliss,",
+                "ref_surah": 9,
+                "from_ayah": 21,
+                "to_ayah": 21,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DO NOT TAKE YOUR FATHERS AND BROTHERS AS YOUR FRIENDS IF THEY PREFER KUFR (UNBELIEF) OVER IMAN (BELIEF) ) 23-24(",
+          "ord": 6,
+          "from_ayah": 23,
+          "to_ayah": 24,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:23",
+                "text": "O believers! Do not take your parents and siblings as trusted allies if they choose disbelief over belief. And whoever of you does so, they are the ˹true˺ wrongdoers.",
+                "ref_surah": 9,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Prohibition of taking the Idolators as Supporters, even with Relatives\nAllah SWT prohibits taking your parents or siblings as your supporters, confidants or guardians if they choose disbelief instead of faith."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When discussing/addressing your problems/issues always keep deen as the upmost focus and not relationships i.e mother/father/sister/brother etc. Because if they are not sincere believers then their values/ideas/thoughts may lead you to take the wrong conclusions."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (58:22)\nYou will not find any people who believe in Allah and the Last Day, making friendship with those who oppose Allah and His Messenger.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:24",
+                "text": "Say, ˹O Prophet,˺ “If your parents and children and siblings and spouses and extended family and the wealth you have acquired and the trade you fear will decline and the homes you cherish—˹if all these˺ are more beloved to you than Allah and His Messenger and struggling in His Way, then wait until Allah brings about His Will. Allah does not guide the rebellious people.”",
+                "ref_surah": 9,
+                "from_ayah": 24,
+                "to_ayah": 24,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The following are the things that man cherishes the most in this world: (1) his parents, children, brothers and sisters (siblings), husbands or wives (spouses), and other close relatives, (2) wealth (3) commerce or means of profit and gain, or (4) our homes."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If any of these worldly desires are a hindrance in Allah's cause, meaning if we choose to love them more than Allah SWT and His Messenger and the struggle (jihad) for Allah SWT cause then Allah SWT will leave us bereft guidance: \"for Allah guides not the rebellious\"."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This concept was clearly illustrated in the case of the faithful companisions who obeyed the Prophet's call, left the comfort of their homes in Makkah and suffered exile in Madinah, gave up their trade and their possessions, strove and fought for Allah's cause, sometimes against their own families and or tribesmen who were enemies of Islam. They were the successful ones."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This should be an exercise in self-assessment. Allocation of time, resources, capabilities where are they being spent? What are you striving for Allah SWT or the world? Are the worldly desires subservient to our love and jihad for Allah SWT?"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S HELP IS WITH THE QUALITY AND NOT THE QUANTITY OF THE BELIEVERS ) 25-27)",
+          "ord": 7,
+          "from_ayah": 25,
+          "to_ayah": 27,
+          "intro": [
+            {
+              "kind": "prose",
+              "text": "This ruku is now connected with the first ruku."
+            }
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "PROHIBITION OF MUSHRIKIN FROM ENTERING MASJID-AL-HARAM ) 28-29(",
+          "ord": 8,
+          "from_ayah": 28,
+          "to_ayah": 29,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:28",
+                "text": "O believers! Indeed, the polytheists are ˹spiritually˺ impure, so they should not approach the Sacred Mosque after this year. If you fear poverty, Allah will enrich you out of His bounty, if He wills. Surely, Allah is All-Knowing, All-Wise.",
+                "ref_surah": 9,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Idolators are no longer allowed into Al-Masjid Al-Haram\nAfter the revelation of this Ayah, idolators were no longer allowed to go near the Masjid.\nThis Ayah was revealed in the ninth year of Hijrah. The Messenger of Allah sent Ali in the company of Abu Bakr that year to publicize to the idolators that no Mushrik will be allowed to perform Hajj after that year, nor a naked person allowed to perform Tawaf around the House.\nAllah SWT compensated them for the losses they incurred because they severed ties with idolators."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "MUSHRIK ARE THE JEWS AND CHRISTIANS WHO CALL AZRA AND JESUS THE SONS OF GOD (30-33)",
+          "ord": 9,
+          "from_ayah": 30,
+          "to_ayah": 33,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:30",
+                "text": "The Jews say, “Ezra is the son of Allah,” while the Christians say, “The Messiah is the son of Allah.” Such are their baseless assertions, only parroting the words of earlier disbelievers. May Allah condemn them! How can they be deluded ˹from the truth˺?",
+                "ref_surah": 9,
+                "from_ayah": 30,
+                "to_ayah": 30,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Fighting the Jews and Christians is legislated because They are Idolators and Disbelievers\nAnd the Jews say:\"Uzayr (Ezra) is the son of Allah,\" and the Christians say: \"The Messiah/Jesus is the son of Allah.\"\nAllah SWT encourages the believers to fight the disbelieving Jews and Christians, who uttered this terrible statement and utter lies against Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DO NOT BE LIKE RABBIS AND PRIESTS WHO MISAPPROPRIATE THE WEALTH OF PEOPLE ( 34-35)",
+          "ord": 10,
+          "from_ayah": 34,
+          "to_ayah": 35,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:34",
+                "text": "O believers! Indeed, many rabbis and monks consume people’s wealth wrongfully and hinder ˹others˺ from the Way of Allah. Give good news of a painful torment to those who hoard gold and silver and do not spend it in Allah’s cause.",
+                "ref_surah": 9,
+                "from_ayah": 34,
+                "to_ayah": 34,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayah warns against corrupt scholars and misguided worshippers\nPriests got rich by issuing indulgences and dispensations thus, they made their office a stepping stone to worldly power and possessions. Even the Monastic Order that took vows of poverty grew rich until their wealth became a scandal, even among their own nations."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Do not hoard gold and silver without giving proper zakat and spending in Allah SWT’s way."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THE NUMBER OF MONTHS IN THE BOOK OF ALLAH IS 12, OF WHICH 4 ARE SACRED (36-37)",
+          "ord": 11,
+          "from_ayah": 36,
+          "to_ayah": 37,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:36",
+                "text": "Indeed, the number of months with Allah is twelve [lunar] months in the register of Allah [from] the day He created the heavens and the earth; of these, four are sacred. That is the correct religion, so do not wrong yourselves during them. And fight against the disbelievers collectively as they fight against you collectively. And know that Allah is with the righteous [who fear Him]",
+                "ref_surah": 9,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:37",
+                "text": "Reallocating the sanctity of ˹these˺ months is an increase in disbelief, by which the disbelievers are led ˹far˺ astray. They adjust the sanctity one year and uphold it in another, only to maintain the number of months sanctified by Allah, violating the very months Allah has made sacred. Their evil deeds have been made appealing to them. And Allah does not guide the disbelieving people.",
+                "ref_surah": 9,
+                "from_ayah": 37,
+                "to_ayah": 37,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This and the following Ayat must be read together. These Ayat condemn the Pagan Arabs, who changed the long-established custom of observing four months in which fighting was forbidden. They arbitrarily changed, added or deducted months when it suited them so as to get an unfair advantage over the enemy."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The four Sacred Months, three in succession and one alone, so that the Hajj and Umrah are performed with ease.\n1. Dhul-Qadah, the month before the Hajj month, was made sacred because they refrained from fighting during that month.\n2. Dhul-Hijjah, the next month, was made sacred because it is the month of Hajj, during which they performed Hajj rituals.\n3. Muharram, which comes next, was made sacred so that they are able to go back to their areas in safety (after performing Hajj).\n4. Rajab, in the middle of the lunar year, was made sacred so that those coming from the farthest areas of Arabia are able to perform Umrah and visit the House and then go back to their areas safely."
+                },
+                {
+                  "kind": "prose",
+                  "text": "During these Sacred Months, sin or injustice is worse than sin or injustice in other months.\nLikewise, sins in the Sacred City are multiplied."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not change the rules or legislation of Allah SWT!"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S ORDER TO BEAR ARMS AGAINST THE UNBELIEVERS, IF NECESSARY (38-42)",
+          "ord": 12,
+          "from_ayah": 38,
+          "to_ayah": 42,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:38",
+                "text": "O believers! What is the matter with you that when you are asked to march forth in the cause of Allah, you cling firmly to ˹your˺ land? Do you prefer the life of this world over the Hereafter? The enjoyment of this worldly life is insignificant compared to that of the Hereafter.",
+                "ref_surah": 9,
+                "from_ayah": 38,
+                "to_ayah": 38,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Admonishing clinging to Life rather than rushing to perform Jihad"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The immediate reference is to the expedition to Tabuk (A.H. 9), for which see the Introduction to this Surah. But the lesson is perfectly general. When a call is made on behalf of a great cause, the fortunate ones are those who have the privilege of responding to the call. The unfortunate ones are those who are so engrossed in their parochial affairs that they turn a deaf ear to the appeal. They are suffering from a spiritual disease."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI - The people who hesitated to follow the call of Tabuk were deterred by (1) the heat of the summer, and (2) the fear of losing the fruit harvest, which was ripe for gathering."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: The life of this world, compared to the Hereafter, is just like when one of you dips his finger in the sea, let him contemplate how much of it his finger would carry the sea?"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THOSE WHO DO NOT PARTICIPATE IN JIHAD ARE HYPOCRITES (43-48)",
+          "ord": 13,
+          "from_ayah": 43,
+          "to_ayah": 48,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:38",
+                "text": "May Allah pardon you ˹O Prophet˺! Why did you give them permission ˹to stay behind˺ before those who told the truth were distinguished from those who were lying?",
+                "ref_surah": 9,
+                "from_ayah": 38,
+                "to_ayah": 38,
+                "ref_inferred": false,
+                "ref_as_written": "printed '(9:38)'; the section is (43-48) and the quoted translation is 9:43 ('May Allah pardon you...'); kept verbatim"
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Moderately criticizing the Prophet for allowing the Hypocrites to stay behind"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayah was revealed about the people who hesitated to follow the call of Tabuk and said, `Ask permission from the Messenger of Allah (to stay behind), and whether he agrees, or disagrees, remain behind!\"'\nAllah SWT says to the Prophet, `Why did you not refuse to give them permission to remain behind when they asked you, so that you know those who truly obey you and the liars, who were intent on remaining behind even if you do not give them permission to do so."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Although this is criticism it is of the softest kind as it is starting with forgiveness before criticism."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT tests us to sift through the true believers and the kafir."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "EXCUSES OF THE HYPOCRITES FOR NOT BEARING ARMS AGAINST THE UNBELIEVERS (49-59)",
+          "ord": 14,
+          "from_ayah": 49,
+          "to_ayah": 59,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "CATEGORIES FOR THE DISTRIBUTION OF ZAKAH (60)",
+          "ord": 15,
+          "from_ayah": 60,
+          "to_ayah": 60,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:60",
+                "text": "Zakah expenditures are only for the poor and for the needy and for those employed to collect [zakah] and for bringing hearts together [for Islam] and for freeing captives [or slaves] and for those in debt and for the cause of Allah and for the [stranded] traveler - an obligation [imposed] by Allah. And Allah is Knowing and Wise.",
+                "ref_surah": 9,
+                "from_ayah": 60,
+                "to_ayah": 60,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commands that zakat is only for the Fuqara and Al-Masakin and those employed to collect (the funds); and to attract the hearts of those who have been inclined (towards Islam); and to free the captives; and for those in debt; and for Allah's cause."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ORDER OF ALLAH NOT TO MOLEST THE PROPHET (61-63)",
+          "ord": 16,
+          "from_ayah": 61,
+          "to_ayah": 63,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "PUNISHMENT FOR THOSE WHO MAKE FUN OF THE RELIGION (64-66)",
+          "ord": 17,
+          "from_ayah": 64,
+          "to_ayah": 66,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "HYPOCRITICAL ACTIONS AND THEIR PUNISHMENT (67-70)",
+          "ord": 18,
+          "from_ayah": 67,
+          "to_ayah": 70,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:67",
+                "text": "The hypocrites, both men and women, are all alike: they encourage what is evil, forbid what is good, and withhold ˹what is in˺ their hands. They neglected Allah, so He neglected them. Surely the hypocrites are the rebellious.",
+                "ref_surah": 9,
+                "from_ayah": 67,
+                "to_ayah": 67,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Characteristics of Hypocrites"
+                },
+                {
+                  "kind": "prose",
+                  "text": "\"The Hypocrites . . . are all alike\"...means that although the forms of hypocrisy may vary, but they are all alike in that they understand each other's hypocrisy. They hold together.\nAllah SWT admonishes the hypocrites who enjoin evil, and forbid the good, and they close their hands, from spending in Allah's cause.\nThey have forgotten the remembrance of Allah, so He has forgotten them.\nFYI - The believers enjoin righteousness and forbid evil."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:68",
+                "text": "Allah has promised the hypocrite men and hypocrite women and the disbelievers the fire of Hell, wherein they will abide eternally. It is sufficient for them. And Allah has cursed them, and for them is an enduring punishment.",
+                "ref_surah": 9,
+                "from_ayah": 68,
+                "to_ayah": 68,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "\"Curse\" here as elsewhere, is the denial of Allah SWT’s Grace and Mercy, brought about by the rejection of Allah SWT. For them is the lasting torment."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BELIEVERS' ACTIONS AND THEIR REWARDS (71-72)",
+          "ord": 19,
+          "from_ayah": 71,
+          "to_ayah": 72,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:71",
+                "text": "The Believers, men and women, are protectors one of another: they enjoin what is just, and forbid what is evil: they observe regular prayers, practise regular charity, and obey Allah and His Messenger. On them will Allah pour His mercy: for Allah is Exalted in power, Wise.",
+                "ref_surah": 9,
+                "from_ayah": 71,
+                "to_ayah": 71,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Qualities of Faithful Believers\nAfter Allah SWT mentioned the evil characteristics of the hypocrites, He then mentioned the good qualities of the believers.\n(i) The believers, men and women, are supporters of one another; they help and aid each other.\nHadith: The example of the believers in the compassion and mercy they have for each other, is the example of one body: if a part of it falls ill, the rest of the body suffers with fever and sleeplessness.\n(ii) They enjoin good, and forbid evil.\n(iii) They perform the Salah, and give the Zakat.\n(iv) They obey Allah and His Messenger concerning what is commanded and refraining from what is prohibited.\n\nTherefore, Allah will give mercy to those who have these qualities.\nSurely, Allah is All-Mighty, All-Wise,"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH'S ORDER TO MAKE JIHAD AGAINST HYPOCRITES AND UNBELIEVERS (73-74)",
+          "ord": 20,
+          "from_ayah": 73,
+          "to_ayah": 74,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:73",
+                "text": "O Prophet! Strive against the unbelievers and the hypocrites, and be severe to them. Hell shall be their abode; what an evil destination!",
+                "ref_surah": 9,
+                "from_ayah": 73,
+                "to_ayah": 73,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Order for Jihad against the Disbelievers and Hypocrites\nAllah SWT commanded His Messenger to strive hard against the disbelievers and the hypocrites and to be harsh against them.\n\"Allah commanded the Prophet to fight the disbelievers with the sword, to strive against the hypocrites with the tongue and annulled lenient treatment of them.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:74",
+                "text": "They swear by Allah that they did not say [anything against the Prophet] while they had said the word of disbelief and disbelieved after their [pretense of] Islam and planned that which they were not to attain. And they were not resentful except [for the fact] that Allah and His Messenger had enriched them of His bounty. So if they repent, it is better for them; but if they turn away, Allah will punish them with a painful punishment in this world and the Hereafter. And there will not be for them on earth any protector or helper.",
+                "ref_surah": 9,
+                "from_ayah": 74,
+                "to_ayah": 74,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BEHAVIOR OF THE HYPOCRITES (75-80)",
+          "ord": 21,
+          "from_ayah": 75,
+          "to_ayah": 80,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:79",
+                "text": "He also knows (the rich that are niggardly) who taunt the believers that voluntarily give alms, they scoff at those who have nothing to give except what they earn through their hard toil. Allah scoffs at them in return. A grievous chastisement awaits them.",
+                "ref_surah": 9,
+                "from_ayah": 79,
+                "to_ayah": 79,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This refers to the conduct which the hypocrites showed on the occasion of the appeal of the Prophet (PBUH) for contributions towards the Tabuk expedition. The well-to-do hypocrites did not themselves make any contributions, but when the sincere Muslims came forward with generous contributions according to their means, they began to ridicule them. If a well-to-do Muslim made a handsome contribution, they would at once accuse him to be guilty of a showoff. On the other hand, if a poor Muslim contributed a paltry sum which he could hardly spare after sacrificing some of the barest necessities of his family, or contributing the small earnings obtained by hard work, they would at once ridicule, saying, “Lo! Here is the farthing that will help conquer the forts of the Roman Empire!”"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: A hypocrite doesn’t do good themselves and encourages others to not do good as well."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HYPOCRITES DID NOT JOIN THE WAR AGAINST THE UNBELIEVERS AND PROHIBITION OF OFFERING FUNERAL PRAYER FOR THE HYPOCRITES (81-89)",
+          "ord": 22,
+          "from_ayah": 81,
+          "to_ayah": 89,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:81",
+                "text": "Those ˹hypocrites˺ who remained behind rejoiced for doing so in defiance of the Messenger of Allah and hated ˹the prospect of˺ striving with their wealth and their lives in the cause of Allah. They said ˹to one another˺, “Do not march forth in the heat.” Say, ˹O Prophet,˺ “The Fire of Hell is far hotter!” If only they could comprehend!",
+                "ref_surah": 9,
+                "from_ayah": 81,
+                "to_ayah": 81,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:82",
+                "text": "So let them laugh a little—they will weep much as a reward for what they have committed.",
+                "ref_surah": 9,
+                "from_ayah": 82,
+                "to_ayah": 82,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "They may sneer or ridicule or rejoice now: that will be only for a little; much will they have to weep for afterwards."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:84",
+                "text": "And do not ever offer ˹funeral˺ prayers for any of their dead, nor stand by their grave ˹at burial˺, for they have lost faith in Allah and His Messenger and died rebellious.",
+                "ref_surah": 9,
+                "from_ayah": 84,
+                "to_ayah": 84,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Prohibition of Prayer for the Funeral of Hypocrites\nAllah SWT commands His Messenger to disown the hypocrites, to abstain from praying the funeral prayer when any of them dies, from standing next to his grave to seek Allah's forgiveness for them. This is because hypocrites disbelieved in Allah SWT and His Messenger and died as such."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: This ruling applies to all those who are known to be hypocrites, even though it was revealed about the specific case of Abdullah bin Ubayy bin Salul, the chief hypocrite."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:85",
+                "text": "So let not their wealth or their children impress you. Allah only intends to punish them through them in worldly life and that their souls should depart [at death] while they are disbelievers.",
+                "ref_surah": 9,
+                "from_ayah": 85,
+                "to_ayah": 85,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In reality Allah's plan is to punish them with these things in the life of this world."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (20:131)"
+                },
+                {
+                  "kind": "quote",
+                  "text": "And strain not your eyes in longing for the things We have given for enjoyment to various groups of them, the splendor of the life of this world, that We may test them thereby. But the provision (good reward in the Hereafter) of your Lord is better and more lasting."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:86",
+                "text": "And when a surah was revealed [enjoining them] to believe in Allah and to fight with His Messenger, those of wealth among them asked your permission [to stay back] and said, \"Leave us to be with them who sit [at home].\"",
+                "ref_surah": 9,
+                "from_ayah": 86,
+                "to_ayah": 86,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Admonishing Those Who did not join the Jihad\nAllah SWT chastises and admonishes those who stayed away from Jihad and refrained from performing it, even though they had the supplies, means and ability to join it. They asked the Messenger permission to stay behind, saying,\nthus accepting for themselves the shame of lagging behind with women, after the army had left. If war starts, such people are the most cowardice, but when it is safe, they are the most boastful among men."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:88",
+                "text": "But the Messenger and those who believed with him fought with their wealth and their lives. Those will have [all that is] good, and it is those who are the successful.",
+                "ref_surah": 9,
+                "from_ayah": 88,
+                "to_ayah": 88,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see 9:20)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Definition of Success: Iman + striving hard with wealth and lives for Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:89",
+                "text": "Allah has prepared for them Gardens under which rivers flow, to stay there forever. That is the ultimate triumph.",
+                "ref_surah": 9,
+                "from_ayah": 89,
+                "to_ayah": 89,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "GENUINE EXEMPTIONS FROM THE BATTLEFRONT (90-93)",
+          "ord": 23,
+          "from_ayah": 90,
+          "to_ayah": 93,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "9:91",
+                "text": "There is no blame on the weak, the sick, or those lacking the means ˹if they stay behind˺, as long as they are true to Allah and His Messenger. There is no blame on the good-doers. And Allah is All-Forgiving, Most Merciful.",
+                "ref_surah": 9,
+                "from_ayah": 91,
+                "to_ayah": 91,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Legitimate Excuses for staying away from Jihad"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Although active service or contributing resources is expected of every person who believes in the Cause, there are some who must necessarily be exempted without the least blame attached to them. Such as those who are weak in body on account of age, sex, infirmity, or illness. Personal service in their case is out of the question, but they could contribute towards expenses if they are able. But if they are too poor to afford such assistance, they are excused. But in all cases the motive must be sincere coupled with a desire to serve."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": []
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "document head, paragraph '(Cont.)'",
+      "description": "Chunk marker is printed '(Cont.)' with parentheses; FORMAT section 5 describes the field as the verbatim \"Cont.\" line. Stored verbatim as '(Cont.)' in part.chunk_marker (compare Juz 9's 'Cont.' which is printed without parentheses).",
+      "severity": "low"
+    },
+    {
+      "id": "a2",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "whole doc",
+      "description": "Chunk doc has no opening section-title index block; part.section_index is null.",
+      "severity": "low"
+    },
+    {
+      "id": "a3",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "section 'THE WORST OF ALL BEINGS IN THE SIGHT OF ALLAH (54)'",
+      "description": "Section title claims '(54)' but its only ayah unit is 8:55; 8:54 is never quoted. Either a title typo or an off-by-one in the author's range. Title kept verbatim; 8:54 is an interior gap, not a boundary failure.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "section (45-48), unit ref",
+      "description": "Ref printed '(8:46-7)' (shorthand for 8:46-47). Kept verbatim in translation.ref; normalized as from_ayah 46 / to_ayah 47 with the interpretation recorded in translation.ref_as_written.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "units 8:41 ('Ruling:'), 8:61-8:75 ('Note:')",
+      "description": "'Ruling:' and 'Note:' prefixed paragraphs have no matching commentary kind (prose|heading|lesson|hadith|list_item|cross_ref|quote) and are kept as prose. Format gap: labeled asides other than 'Lesson:'/'Hadith:' have no kind.",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "recap 'MY KEY TAKEAWAYS'",
+      "description": "Recap takeaway titles are bold topic lines, one of which ('THE WORST OF BEASTS ... THIS WORLD', 137 chars) exceeds the 90-char bold-heading rule of FORMAT section 2 rule 11. That rule is stated for commentary; all bold recap topic lines are stored as kind 'heading' for internal consistency.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "2 - Juz 10 - Surah Anfal Cont.docx",
+      "location": "recap translations",
+      "description": "The recap restates ayat 8:2, 8:28, 8:38 and 8:39 whose refs lie outside this juz's CP range (they belong to Juz 9). Stored as recap items kind 'translation' and deliberately NOT counted as captured ayah units, so coverage is unaffected.",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "front matter 'Omission of Bismillah' vs document head",
+      "description": "The docx prints a Bismillah line at the top although its own front matter states Surah 9 is the only surah to which Bismillah is not added. Kept verbatim in part.bismillah per FORMAT section 2 rule 2.",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "section-title index block (paras 89-119)",
+      "description": "The opening section-title index block has no header line; part.section_index.header is null.",
+      "severity": "low"
+    },
+    {
+      "id": "a10",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "index vs body titles 2 and 7",
+      "description": "Index/body drift: index reads '... HONOR IT  )7-11(' but the body heading is '... HONOR IT  (7-11('; index reads '... BELIEVERS ) 25-27(' but the body heading is '... BELIEVERS ) 25-27)'. Parenthesis typos in the source. Both forms kept verbatim (index copy in section_index.titles, body heading as section.title).",
+      "severity": "low"
+    },
+    {
+      "id": "a11",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "boundary ayat 9:92-9:93",
+      "description": "CP states Surah 9 covers 9:01 till 9:93, but the body's last captured ayah is 9:91 (the file stops there); 9:92 and 9:93 are never quoted. High-severity boundary mismatch.",
+      "severity": "high"
+    },
+    {
+      "id": "a12",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "section 'THOSE WHO DO NOT PARTICIPATE IN JIHAD ARE HYPOCRITES (43-48)', unit ref",
+      "description": "Source typo: the paragraph printed '(9:38)' for the ayah actually quoted, 9:43 ('May Allah pardon you ˹O Prophet˺! Why did you give them permission...'). Kept verbatim in translation.ref with the interpretation in translation.ref_as_written. Consequence: no captured ref falls inside section (43-48)'s range and 9:43 is never captured as an ayah unit; ref 9:38 is therefore captured twice. The typo is interior (not a boundary), so severity stays low per FORMAT section 4.",
+      "severity": "low"
+    },
+    {
+      "id": "a13",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "sections (49-59), (61-63), (64-66)",
+      "description": "Three section headings have no quoted ayah and no translation and no prose; modelled as sections with zero ayah_units (valid per FORMAT section 1). Section (25-27) likewise has no ayah units but carries one intro prose item.",
+      "severity": "low"
+    },
+    {
+      "id": "a14",
+      "file": "3 - Juz 10 Surah 9.docx",
+      "location": "front matter paras 28, 32, 60, 66, 69",
+      "description": "Bold sub-headings inside labeled front-matter units ('Conquest of Arabia', 'Campaign to Tabuk', 'TREATIES:', 'JIHAD', 'HYPOCRITES'). LabeledUnit.items entries are {text} only, so the heading kind of these lines is not recorded; they are kept in document order as items. Format gap.",
+      "severity": "low"
+    }
+  ]
+}

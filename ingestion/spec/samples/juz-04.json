@@ -1,0 +1,3087 @@
+{
+  "juz": {
+    "number": 4,
+    "folder": "JUZ 4",
+    "arabic_header": "لن تنالوا",
+    "arabic_header_translit": "Lan Tana Lu",
+    "arabic_header_meaning": "\"You will not get\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 4\nلن تنالوا\nLan Tana Lu\n\"You will not get\"\nSurah 3 – Al-Imran\n(3:92 Till 3:200)\nSurah 4 – An-Nisa\n(4:1 till 4:23)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 3,
+        "name_en": "Al-Imran",
+        "from_ayah": 92,
+        "to_ayah": 200
+      },
+      {
+        "surah_number": 4,
+        "name_en": "An-Nisa",
+        "from_ayah": 1,
+        "to_ayah": 23
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "result": "pass",
+    "notes": "All captured ayat fall inside the CP ranges; both parts' first/last captured ayahs equal their CP boundaries (3:92-3:200 and 4:1-4:23). Interior ayat the author chose not to quote (notably 3:93-95, 3:98, 3:100-101, 3:105-109, 3:111-117, 3:119-129, 3:131-133, 3:135, 3:137-138, 3:140-141, 3:143, 3:146, 3:148, 3:151, 3:153, 3:155, 3:157-158, 3:160-163, 3:168, 3:171, 3:174-177, 3:182-184, 3:187, 3:189; 4:20-21) are the author's selection, not anomalies per FORMAT.md section 3.",
+    "detail": {
+      "2 - Juz 3 Imran.docx": {
+        "cp_range": [
+          92,
+          200
+        ],
+        "captured_first": 92,
+        "captured_last": 200,
+        "captured_ayat": [
+          92,
+          96,
+          97,
+          99,
+          102,
+          103,
+          104,
+          110,
+          118,
+          130,
+          134,
+          136,
+          139,
+          142,
+          144,
+          145,
+          147,
+          149,
+          150,
+          152,
+          154,
+          156,
+          159,
+          164,
+          165,
+          166,
+          167,
+          169,
+          170,
+          172,
+          173,
+          178,
+          179,
+          180,
+          181,
+          185,
+          186,
+          188,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200
+        ],
+        "missing_interior_ayat": [
+          93,
+          94,
+          95,
+          98,
+          100,
+          101,
+          105,
+          106,
+          107,
+          108,
+          109,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          131,
+          132,
+          133,
+          135,
+          137,
+          138,
+          140,
+          141,
+          143,
+          146,
+          148,
+          151,
+          153,
+          155,
+          157,
+          158,
+          160,
+          161,
+          162,
+          163,
+          168,
+          171,
+          174,
+          175,
+          176,
+          177,
+          182,
+          183,
+          184,
+          187,
+          189
+        ]
+      },
+      "3 - Juz 4 - Nisa.docx": {
+        "cp_range": [
+          1,
+          23
+        ],
+        "captured_first": 1,
+        "captured_last": 23,
+        "captured_ayat": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          22,
+          23
+        ],
+        "missing_interior_ayat": [
+          20,
+          21
+        ]
+      }
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 3,
+      "name_en": "AL IMRAN (THE FAMILY OF IMRAN)",
+      "from_ayah": 92,
+      "to_ayah": 200,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - Juz 3 Imran.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 4",
+      "extras": [
+        {
+          "note": "section-title index (table of contents) repeated between front matter and the first section heading; not a Section per draft",
+          "stray_lines": [],
+          "section_index": [
+            "CRITERIA FOR RIGHTEOUSNESS (92)",
+            "LAWFUL AND UNLAWFUL FOOD FOR THE CHILDREN OF ISRAEL (93-95)",
+            "FIRST HOUSE OF ALLAH ON EARTH (96-97)",
+            "DISBELIEF OF THE JEWS AND CHRISTIANS AND DO NOT OBEY THE JEWS OR CHRISTIANS (98-101)",
+            "LIVE ISLAM, DIE AS A MUSLIM, AND BE NOT DIVIDED AMON YOURSELVES (102-103)",
+            "PUNISHMENT FOR THOSE WHO DIVIDE MUSLIMS INTO SECTS (104-109)",
+            "MUSLIMS ARE THE BEST NATION EVER EVOLVED TO ENJOIN GOOD AND FORBID EVIL AND SOME RIGHTEOUS PEOPLE OF THE BOOK (110-115)",
+            "HYPOCRITICAL CHARITY AND INTIMATE FRIENDSHIP SHOULD BE ONLY WITH THE BELIEVERS (116-120)",
+            "LESSONS FROM THE BATTLE OF UHUD AND ALLAH'S HELP TO THE BELIEVERS AND PROPHET DOES NOT HAVE THE AUTHORITY TO PARDON THE SINNERS (121-129)",
+            "PROHIBITION OF USURY AND ALLAH LOVES THE CHARITABLE PEOPLE (130-136)",
+            "BELIEVERS ARE PROMISED TO HAVE UPPER HAND (137-141)",
+            "NO PARADISE WITHOUT TRIAL (142-143)",
+            "MUHAMMAD (PBUH) IS NO MORE THAN A RASOOL OF ALLAH (144-145)",
+            "PROPHETS AND THEIR FOLLOWERS AND SUPPLICATION OF THE BELIEVERS (146-148)",
+            "DO NOT FOLLOW THE UNBELIEVERS (149-151)",
+            "RESULT OF DISOBEYING THE RASOOL (152-153)",
+            "AFTER GRIEF ALLAH BESTOWED PEACE AND THERE IS NO ESCAPE FROM DEATH (154-155)",
+            "LIFE AND DEATH IS FROM ALLAH (156-158)",
+            "CONSULT BEFORE MAKING A DECISION, ONCE DECISION IS MADE THEN BE FIRM (159 )",
+            "PUT YOUR TRUST IN ALLAH (160-161)",
+            "DIGNITY OF RASOOL (162-164)",
+            "LESSONS TO BE LEARNED FROM THE BATTLE OF UHUD AND THOSE WHO ARE SLAIN IN THE CAUSE OF ALLAH ARE NOT DEAD (165-171)",
+            "CHARACTER OF THE BELIEVERS AT UHUD (172-175)",
+            "PUNISHMENT FOR BARTERING BELIEF FOR UNBELIEF (176-178)",
+            "ADVERSE CONDITIONS ARE A TEST FROM ALLAH (179)",
+            "PUNISHMENT FOR THE NIGGARDLY (180)",
+            "JEWS INSULTED ALLAH AND UTTERED A LIE AGAINST HIM (181-184)",
+            "EVERYONE HAS TO DIE (185)",
+            "TEST OF THE BELIEVERS (186)",
+            "PUNISHMENT FOR CLAIMING CREDIT FOR SOMETHING YOU HAVE NOT DONE (187-189)",
+            "SIGNS FROM NATURE AND SUPPLICATION OF THE BELIEVERS (190-194)",
+            "ACCEPTANCE OF SUPPLICATION BY ALLAH (195)",
+            "DO NOT BE DECEIVED BY THE UNBELIEVERS AND BE PATIENT AND EXCEL IN PATIENCE (196-200)"
+          ]
+        }
+      ],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "CRITERIA FOR RIGHTEOUSNESS (92)",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:92)",
+                "text": "You shall not attain righteousness until you spend out of what you love (in the way of Allah). Allah knows whatever you spend.",
+                "ref_surah": 3,
+                "from_ayah": 92,
+                "to_ayah": 92,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Al Baqara Ayat ul Birr (2:177)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says no one (Believers or disbelievers) will not attain goodness/righteousness until you spend from the things you love, meaning not giving away your trash or left-over hand me downs instead give from things that are close to your heart. And spend from money that is earned in the halal manner."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Spending means assets, money but also time, energy, youth, capabilities etc."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LAWFUL AND UNLAWFUL FOOD FOR THE CHILDREN OF ISRAEL (93-95)",
+          "ord": 2,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "FIRST HOUSE OF ALLAH ON EARTH (96-97)",
+          "ord": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:96)",
+                "text": "The first House [of worship] to be established for people was the one at Mecca.*   It is a blessed place; a source of guidance for all people;",
+                "ref_surah": 3,
+                "from_ayah": 96,
+                "to_ayah": 96,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Kabah is the First House of Worship was built by Ibrahim Al-Khalil, whose religion the Jews and Christians claim they follow. `Al-Masjid Al-Haram (in Makkah) is the first masjid built on earth and then after 40 years a second is built `Al-Masjid Al-Aqsa (in Jerusalem).'"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Kabah is a place fully of safety, blessings and benefit."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:97)",
+                "text": "In it are clear signs and the standing-place of Abraham. Whoever enters it should be safe. Pilgrimage to this House is an obligation by Allah upon whoever is able among the people. And whoever disbelieves, then surely Allah is not in need of ˹any of His˺ creation.",
+                "ref_surah": 3,
+                "from_ayah": 97,
+                "to_ayah": 97,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Necessity of Performing Haj\nThis Ayah established the obligation of performing Haj."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Hasten to perform Haj. Make this as a key goal."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DISBELIEF OF THE JEWS AND CHRISTIANS AND DO NOT OBEY THE JEWS OR CHRISTIANS (98-101)",
+          "ord": 4,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:99)",
+                "text": "Say, “O People of the Book! Why do you turn the believers away from the Way of Allah—striving to make it ˹appear˺ crooked, while you are witnesses ˹to its truth˺? And Allah is never unaware of what you do.”",
+                "ref_surah": 3,
+                "from_ayah": 99,
+                "to_ayah": 99,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Why do some people knowingly want to create doubt and confusion by presenting the deen as crooked/twisted? Either by highlighting mutashabihat Ayat’s or distorting the meaning of Ayat’s by taking them out of context or presenting only one portion of the Ayat, for example, “Kill them where you find them.”"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LIVE ISLAM, DIE AS A MUSLIM, AND BE NOT DIVIDED AMONG YOURSELVES (102-103)",
+          "ord": 5,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "يٰۤـاَيُّهَا الَّذِيۡنَ اٰمَنُوۡا اتَّقُوا اللّٰهَ حَقَّ تُقٰتِهٖ وَلَا تَمُوۡتُنَّ اِلَّا وَاَنۡـتُمۡ مُّسۡلِمُوۡنَ"
+              ],
+              "translation": {
+                "ref": "(3:102)",
+                "text": "O believers! Be mindful of Allah in the way He deserves, and do not die except in ˹a state of full˺ submission ˹to Him˺.",
+                "ref_surah": 3,
+                "from_ayah": 102,
+                "to_ayah": 102,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Believers protect yourself from displeasing Allah SWT meaning have as much taqwa as you possibly can. And DO NOT DARE start the next journey (die) except that you are in a state of submission/obedience to Allah SWT – meaning always be in a state of submission/obedience in Islam. Don’t die an evil death or die in a state of sin."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The state in which we die is a good indication of what lies ahead or what Allah SWT has in store for us, for example some people die in the state of prostration during salah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here individual reform is being mentioned, i.e., attaining taqwa at the individual level."
+                },
+                {
+                  "kind": "prose",
+                  "text": "At the individual level: We must be well-informed re: Islamic 'adhab’ or mannerism, i.e., dealing with people (family, coworkers, teacher) as well as personal fiqh, that is, acts of worship i.e ruling on dress codes, how to invest, how to perform Haj etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Coupled with a serious education of Quran and Seerah with a lifelong process of reflection and study."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The reminder of death should make us live in a constant of caution."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:103)",
+                "text": "And hold firmly to the rope of Allah and do not be divided. Remember Allah’s favour upon you when you were enemies, then He united your hearts, so you—by His grace—became brothers. And you were at the brink of a fiery pit and He saved you from it. This is how Allah makes His revelations clear to you, so that you may be ˹rightly˺ guided.",
+                "ref_surah": 3,
+                "from_ayah": 103,
+                "to_ayah": 103,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Above Ayat (3:102) mentions goodness or taqwa at the individual level. Now goodness at the community level is being mentioned. FYI – The ratio regarding salah at the individual level vs. congregational prayer is 1 to 27 times the reward."
+                },
+                {
+                  "kind": "prose",
+                  "text": "As a community: We should (i) hold on to the Quran and Seerah for one synchronized unifying force (ii) in conjunction we need to be educated in contemporary sciences, history, politics etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "When we recognize how the Quran interacts with modern fields of knowledge then our deen comes alive and societies evolve into the best of communities."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says don’t cut yourself off into different factions. Islam united enemies into brothers."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT is the One who puts love and respect in the hearts of peoples. So ask Allah SWT for عز ت"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:104)",
+                "text": "Let there be a group among you who call ˹others˺ to goodness, encourage what is good, and forbid what is evil—it is they who will be successful.",
+                "ref_surah": 3,
+                "from_ayah": 104,
+                "to_ayah": 104,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Let there be a group of people, inviting all to what is good righteous; enjoining Al-Ma`ruf بِالۡمَعۡرُوۡفِ (all that Islam orders) and forbidding evil Al-Munkar الۡمُنۡكَر (all that Islam has forbidden) in the manner Allah SWT commanded.\nAnd it is they who are the successful."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Many people are doing good but according to their own thinking. Good should be done according to God’s laws."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Religion means wanting the best for everyone."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PUNISHMENT FOR THOSE WHO DIVIDE MUSLIMS INTO SECTS (105-109)",
+          "ord": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:103)",
+                "text": "And do not be like those who split ˹into sects˺ and differed after clear proofs had come to them. It is they who will suffer a tremendous punishment.",
+                "ref_surah": 3,
+                "from_ayah": 103,
+                "to_ayah": 103,
+                "ref_inferred": false,
+                "ref_as_written": "(3:103) as written; context (section 'PUNISHMENT FOR THOSE WHO DIVIDE MUSLIMS INTO SECTS (105-109)' and the quote 'do not be like those who split into sects') shows this is Ayah 3:105"
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We are neither Sunnis nor Shias rather we are Muslims."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "MUSLIMS ARE THE BEST NATION EVER EVOLVED TO ENJOIN GOOD AND FORBID EVIL AND SOME RIGHTEOUS PEOPLE OF THE BOOK (110-115",
+          "ord": 7,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:110)",
+                "text": "You are the best community ever raised for humanity—you encourage good بِالۡمَعۡرُوۡفِ forbid evil الۡمُنۡكَر and believe in Allah. Had the People of the Book believed, it would have been better for them. Some of them are faithful, but most are rebellious.",
+                "ref_surah": 3,
+                "from_ayah": 110,
+                "to_ayah": 110,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see 2:143"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Muslim Ummah enjoins Al-Ma`ruf  بِالۡمَعۡرُوۡفِ (all good that Islam has ordained) and forbid Al-Munkar الۡمُنۡكَر (all that Islam has forbidden), and believes in Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HYPOCRITICAL CHARITY AND INTIMATE FRIENDSHIP SHOULD BE ONLY WITH THE BELIEVERS (116-120)",
+          "ord": 8,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:118)",
+                "text": "O believers! Do not associate closely with those who would not miss a chance to harm you. Their only desire is to see you suffer. Their prejudice has become evident from what they say—and what their hearts hide is far worse. We have made Our revelations clear to you, if only you understood.",
+                "ref_surah": 3,
+                "from_ayah": 118,
+                "to_ayah": 118,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Prohibition of Taking Advisors From Among the Disbelievers"
+                },
+                {
+                  "kind": "prose",
+                  "text": "There were Jewish settlements around Madina and when people began to embrace Islam, they continued to maintain their old ties with them.  However, the hostility of the Jews towards the Prophet (PBUH) and towards his mission was far too intense to allow them to maintain a cordial relationship with anyone who had joined the new movement. Outwardly, the Jews maintained the same terms of friendship with the Ansar (Helpers) as before but at heart they had become their sworn enemies. They made the best use of this pretended friendship, and remained constantly on the look-out for opportunities to create schisms and dissensions in the Muslim body-politic, and to draw out the secrets of the Muslims and pass them on to their enemies. Here God warns the Muslims to note this hypocrisy and take the necessary precaution."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids His Believing servants from taking the anyone but other Believers as advisors, close confidants as they are always plotting to harm Muslims in this worldly life as well as to take them away from their Faith."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The shockingly callous and sacrilegious remarks by non-believers and hypocrites regarding Allah SWT and His Book can over time de-sensitize us and skew our thinking and decision-making. Thus, corrupt our thinking and mislead us. Keeping the right company is one of the best things we can do for ourselves and our Hereafter."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LESSONS FROM THE BATTLE OF UHUD AND ALLAH'S HELP TO THE BELIEVERS AND PROPHET DOES NOT HAVE THE AUTHORITY TO PARDON THE SINNERS (121-129)",
+          "ord": 9,
+          "intro": [
+            "These Ayat’s are now describing the Battle of Uhud",
+            "The idolators suffered many casualties at the battle of Badr and wanted revenge. Consequently, they mobilized their forces gathering three thousand soldiers and marched until they camped near Uhud facing Al-Madina. The Prophet asked the Muslims for advice, that is, if they should march to meet the disbelievers, or fortify themselves in Al-Madina.\nAbdullah bin Ubayy (the chief hypocrite) advised that they should remain in Al-Madina, however, some companions who did not attend the battle of Badr advised that the Muslims should go out to Uhud to meet the disbelievers.",
+            "The Messenger of Allah agreed to the consensus and marched with a thousand of his Companions. (Although Prophet was leaning towards staying in Madina – Here the lesson is once you take a decision then do not waver.) \nWhen they reached the Shawt area, Abdullah bin Ubayy went back to Al-Madinah with a third of the army (300 people), claiming he was angry the Prophet did not listen to his advice.",
+            "The Prophet advanced with the remaining seven hundred Muslims and lined up his troops at the foot of Mount Uhud (a distance of approximately four miles from Madina) in such a manner that the mountain was behind and the Quraysh army in front of them. There was only one mountain pass from where the Muslims could be subjected to a surprise attack.",
+            "The Prophet posted fifty archers there as to guards from that small opening, under the- command of 'Abd Allah b. Jubayr, instructing him neither to let anyone approach nor to move away from that spot.",
+            "Then the battle commenced. In the beginning the Muslims proved the better side but instead of maintaining their onslaught until they had assured complete victory, they were overcome by the temptation of booty and turned to collecting the spoils. When the archers, whom the Prophet had posted to repel the surprise attack of the enemy, saw that the enemy had retreated and people were collecting booty, they too joined the free-for-all.\n'Abd Allah b. Jubayr tried to persuade them not to leave their posts by reminding them of the Prophet's directive. Hardly anyone heeded him.",
+            "Khalid b. Walld, who was at that time an unbeliever and who commanded the Quraysh cavalry, seized this opportunity. He rode with his men around Mount Uhud and attacked the flank of the Muslim army through the pass. 'Abd Allah b. Jubayr's depleted forces tried unsuccessfully to resist the attack.\nThe fleeing soldiers of the enemy also returned and joined the attack from the front but by then it was too late and the scales of the battle turned against the Muslims. The suddenness of these attacks, from both the rear and the front, caused such confusion that many fled. Then the rumor spread that the Prophet, himself, had been martyred. This news shattered whatever presence of mind and courage the Companions had left. There remained no more than ten or twelve loyal persons around the injured and bleeding Prophet (PBUH) who had staked their lives for his sake. Defeat seemed inevitable. Fortunately, however, the Companions realized that the Prophet was still alive. They rallied around and led him to the safety of the mountain."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "PROHIBITION OF USURY AND ALLAH LOVES THE CHARITABLE PEOPLE (130-136)",
+          "ord": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:130)",
+                "text": "Believers! Do not swallow interest, doubled and redoubled, and be mindful of Allah so that you may attain true success.",
+                "ref_surah": 3,
+                "from_ayah": 130,
+                "to_ayah": 130,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see Surah Baqara 275 – 278)"
+                },
+                {
+                  "kind": "heading",
+                  "text": "DEFINITION OF SUCCESS = STAY CLEAR OF ANY FORM OF INTEREST OR USRY."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Interest (Riba) is Prohibited"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here Allah SWT has commanded us to reframe from usury (compound interest) which keeps man constantly absorbed in considering ways and means of amassing wealth."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The major cause for the setback suffered at Uhud was that precisely at the moment of their victory the Muslims succumbed to the desire for worldly possessions, and started collecting booty rather than completing their task of crushing the enemy."
+                },
+                {
+                  "kind": "prose",
+                  "text": "After the defeat at Uhud the Muslims hearts are more receptive and inclined towards being mindful of Allah SWT and what brings about success."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Riba or interest and compound interest is any profit that is accrued on a loan, for example, a $50 loan is returned at $55."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: Interesting Allah SWT used the word swallow bec. we use money for mainly food/sustenance and here we are swallowing/ingesting sin."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:134)",
+                "text": "who spend in the way of Allah both in plenty and hardship, who restrain their anger, and forgive others. Allah loves such good-doers.",
+                "ref_surah": 3,
+                "from_ayah": 134,
+                "to_ayah": 134,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "ALLAH SWT LOVES:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Those who spend in adversity and when there is plentiful, in health and illness etc., meaning being generous is a habit."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here we find that the prohibition of usury is followed by an emphasis on the virtue of voluntary spending both in times of prosperity and in hardship."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Those when they are angry control their anger and do act upon it. Rather, they even forgive those who hurt them."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Allah loves the Muhsinin (the good-doers). This good conduct is a type of Ihsan (excellence in the religion)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The existence of interest in a society breeds greed and selfishness among those who take interest. While at the same time, those who have to pay interest develop strong feelings of hatred, resentment, and jealousy.  Allah SWT tells the Believers that the characteristics developed through the spread of interest are the exact opposite of those one develops as a result of spending in the way of Allah SWT and it is through the latter that man can achieve God's forgiveness and Paradise."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:136)",
+                "text": "These are the ones who, when they commit any indecency and wrong against themselves, instantly remember Allah and implore forgiveness for their sins – for who will forgive sins save Allah? – and who do not wilfully persist in the wrong they did.",
+                "ref_surah": 3,
+                "from_ayah": 136,
+                "to_ayah": 136,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Sinning is in man’s DNA or part of his nature. What we do subsequent to committing is sin is what is most important. Immediately turn towards Allah SWT in repentance. Satan said he will persist to making people sin and Allah SWT has promised the repentor forgiveness. (But of course, we cannot persist in sinning)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We make mistakes. After the realization one should immediately ask for forgiveness and pray 2 rakat namaz."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BELIEVERS ARE PROMISED TO HAVE UPPER HAND (137-141)",
+          "ord": 11,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:139)",
+                "text": "Do not, then, either lose heart or grieve: for you shall surely gain the upper hand if you are true men of faith.",
+                "ref_surah": 3,
+                "from_ayah": 139,
+                "to_ayah": 139,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Once again, Muslims are being consoled re: the Battle of Uhud. The objective here is to impress upon Muslims that they should not waste their time and energy feeling sorry for mistakes made in the past. A Believer is always successful because even in loss he/she is rewarded for patience, injury, martyrdom etc. It’s a win/win."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "NO PARADISE WITHOUT TRIAL (142-143)",
+          "ord": 12,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:142)",
+                "text": "Did you think that you would enter Paradise even though Allah has not yet seen who among you strove hard in His way and remained steadfast?",
+                "ref_surah": 3,
+                "from_ayah": 142,
+                "to_ayah": 142,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara (2:214)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "To simply say we believe or have Iman is not enough rather Iman is that which settles in our heart and our actions."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT tests us by putting us in hardship to sort out the true believers from the hypocrites."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "MUHAMMAD (PBUH) IS NO MORE THAN A RASOOL OF ALLAH (144-145)",
+          "ord": 13,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:144)",
+                "text": "Muḥammad is no more than a messenger; other messengers have gone before him. If he were to die or to be killed, would you regress into disbelief? Those who do so will not harm Allah whatsoever. And Allah will reward those who are grateful.",
+                "ref_surah": 3,
+                "from_ayah": 144,
+                "to_ayah": 144,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT reprimands the Believers that the Prophet Muhammad is a human being and if he dies does not mean you turn away?"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:145)",
+                "text": "No soul can ever die without Allah’s Will at the destined time. Those who desire worldly gain, We will let them have it, and those who desire heavenly reward, We will grant it to them. And We will reward those who are grateful.",
+                "ref_surah": 3,
+                "from_ayah": 145,
+                "to_ayah": 145,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The time of death fixed for every one of us – it has been set in the womb of the mother."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Whoever desires immediate gratification and thus works for the sake of this wordily life only, then Allah SWT gives them (some) of this world, meaning whatever has been decreed for them. However, he/she will not have a share in the Hereafter. Conversely, whoever strives for the sake of the Hereafter, Allah SWT will give him a share in the Hereafter, along with what He decides for him in this (worldly) life, so it’s a win/win situation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In similar statements, Allah said,"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Whosoever desires (by his deeds) the reward of the Hereafter, We give him increase in his reward, and whosoever desires the reward of this world (by his deeds), We give him thereof (what is decreed for him), and he has no portion in the Hereafter. (42:20)"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SUPPLICATION OF THE BELIEVERS (146-148)",
+          "ord": 14,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:147)",
+                "text": "And all they said was this: ''Our Lord! Forgive us our sins, and our excesses, and set our feet firm, and aid us against those who deny the Truth.''",
+                "ref_surah": 3,
+                "from_ayah": 147,
+                "to_ayah": 147,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara end"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DO NOT FOLLOW THE UNBELIEVERS (149-151)",
+          "ord": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:149)",
+                "text": "O believers! If you yield to the disbelievers, they will drag you back to disbelief—and you will become losers.",
+                "ref_surah": 3,
+                "from_ayah": 149,
+                "to_ayah": 149,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "DEFINITION OF LOSERS= THOSE WHO REVERT TO DISBELIEF."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT wants us to succeed and thus is instructing us re: who to listen to. Keeping in mind Battel of Uhud specifically, but generally as well the Muslims are being instructed not to consult or follow any advice given by those who disbelieve. They will lure and tempt you into following an easy life but then you will be of the losers."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:150)",
+                "text": "But Allah is your Protector, and He is the best of helpers.",
+                "ref_surah": 3,
+                "from_ayah": 150,
+                "to_ayah": 150,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is our Protector, Provider and Helper."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: And thus, Allah SWT describes Himself to his creation. It is up to us to understand and appreciate our Raab. Turn to Allah SWT and ask Him, esp. at night (tahajud time)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "RESULT OF DISOBEYING THE RASOOL (152-153)",
+          "ord": 16,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:152-3)",
+                "text": "",
+                "ref_surah": 3,
+                "from_ayah": 152,
+                "to_ayah": 153,
+                "ref_inferred": false,
+                "ref_as_written": "range written as '3:152-3'"
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT kept his promise and initially Muslims were victorious in the Battle of Uhud, however, when the Muslims strayed from discipline during battle i.e., disobeyed the Rasool it was then that victory slipped away."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is saying that defeat was due to their own weakness i.e., disobedience, love of wealth and disputes."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT provides help/means/ease but we too must work hard and obey Allah SWT. FYI – Allah SWT tests us with failure/difficulties to purify us as well as so that we can identity our weakness and gain self-awareness. Comfort/ease makes one weak/soft."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "AFTER GRIEF ALLAH BESTOWED PEACE AND THERE IS NO ESCAPE FROM DEATH (154-155)",
+          "ord": 17,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:154)",
+                "text": "",
+                "ref_surah": 3,
+                "from_ayah": 154,
+                "to_ayah": 154,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "After so much stress and distress Allah SWT sent peace in the form of slumber. A strange phenomenon was then experienced by certain Muslim soldiers. Abu Talhah, who took part in the battle, states that the Muslims were seized by such drowsiness that their swords were slipping from their hands."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LIFE AND DEATH IS FROM ALLAH (156-158)",
+          "ord": 18,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:156)",
+                "text": "You who believe, do not be like those who disbelieved and said of their brothers who went out on a journey or a raid, ‘If only they had stayed with us they would not have died or been killed,’ for God will make such thoughts a source of anguish in their hearts. It is God who gives life and death; God sees everything you do.",
+                "ref_surah": 3,
+                "from_ayah": 156,
+                "to_ayah": 156,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "God's decree cannot be deferred.  Allah SWT is saying don’t be like those who lack faith in God’s decree and think that everything is dependent on their own scheming and effort."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And thus, they fall victim to perpetual remorse/sorrow with a never-ending cycle of reflection of how slightly different circumstance or slightly altered strategy might have led to an altogether different and wholesome result."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Background: Re: the Battle of Uhud hypocrites said if only some didn’t go to fight they would have been alive today."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The concept of “if only” is from satan. What has happened and will happen is because of Allah SWT --period and end of story. The “if only” is a kind of punishment for the disbelievers as they are in a constant state of حسر ه or regret, agony and distress."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "CONSULT BEFORE MAKING A DECISION, ONCE DECISION IS MADE THEN BE FIRM (159 )",
+          "ord": 19,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "PUT YOUR TRUST IN ALLAH (160-161)",
+          "ord": 20,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:159)",
+                "text": "It is out of Allah’s mercy that you ˹O Prophet˺ have been lenient with them. Had you been cruel or hard-hearted, they would have certainly abandoned you. So pardon them, ask Allah’s forgiveness for them, and consult with them in ˹conducting˺ matters. Once you make a decision, put your trust in Allah. Surely Allah loves those who trust in Him.",
+                "ref_surah": 3,
+                "from_ayah": 159,
+                "to_ayah": 159,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: Context is Battle of Uhud. The Prophet wanted to stay in Madina however majority wanted to go. Then they disobeyed the Prophets command to not move from their station."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Among the Qualities of Our Prophet Muhammad are Mercy and Kindness"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The extremely gentle nature of Muhammad (PBUH) endeared him to all, and it is counted as one of the Mercies of Allah SWT. One of the Prophet's titles is \"A Mercy to all Creation.\" At no time was this gentleness, this mercy, more valuable than after a disaster like that at Uhud. Had the Prophet's behavior been severe and harsh people would have scattered from around him."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Order for Consultation and to Abide by it"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Messenger of Allah used to ask his Companions for advice for battles and about various matters, to comfort their hearts, and so they actively implement the decision they reach."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Trust in Allah After Taking the Decision \nOnce you have conducted the required consultation and you then make a decision, put your trust in Allah SWT over your decision. Meaning do not second guess your decision and alter."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This is a practical guide regarding decision-making and leadership qualities: (i) Gentleness/leniency and kindness (ii) Forgiveness (iii) Consultation (from people who believe) but only in relevant matters (iv) Once decision is made then be certain/definite in your decision making and rely on Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Harshness, rebuking, laying blame leads to loneliness. Gentleness leads to love and mercy."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DIGNITY OF RASOOL (162-164)",
+          "ord": 21,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:164)",
+                "text": "God has been truly gracious to the believers in sending them a Messenger from among their own, to recite His revelations to them, to make them grow in purity, and to teach them the Scripture and wisdom– before that they were clearly astray.",
+                "ref_surah": 3,
+                "from_ayah": 164,
+                "to_ayah": 164,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Muhammad is a huge favor from Allah SWT to mankind so that he can teach/educate/conveys the meaning of the Quran and show us via actions."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LESSONS TO BE LEARNED FROM THE BATTLE OF UHUD AND THOSE WHO ARE SLAIN IN THE CAUSE OF ALLAH ARE NOT DEAD (165-171)",
+          "ord": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:165)",
+                "text": "Why do you [believers] say, when a calamity befalls you, even after you have inflicted twice as much damage [on your enemy], ‘How did this happen?’? [Prophet], say, ‘You brought it upon yourselves.’ God has power over everything:",
+                "ref_surah": 3,
+                "from_ayah": 165,
+                "to_ayah": 165,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The defeat at Uhud was the outcome of their own weaknesses and mistakes. They disobeyed the command that had been given them, they were lured by material wealth and they disputed and quarrelled among them-selves. After all this, was it still necessary to ask what caused the debacle?"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When a calamity or disaster strikes first look within."
+                },
+                {
+                  "kind": "prose",
+                  "text": "For anything to happen (I) Allah SWT has decreed it (ii) It happens with the permission of Allah SWT (iii) then creation happens. So, there are no coincides or accidents."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:166)",
+                "text": "What was suffered on the day the two armies met was by Allah’s Will, so that He might distinguish the ˹true˺ believers and expose the hypocrites.",
+                "ref_surah": 3,
+                "from_ayah": 166,
+                "to_ayah": 166,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT allows us to make choices and then recompensates accordingly."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:167)",
+                "text": "and expose the hypocrites. When it was said to them, “Come fight in the cause of Allah or ˹at least˺ defend yourselves,” they replied, “If we had known there was fighting, we would have definitely gone with you.” They were closer to disbelief than to belief on that day—for saying with their mouths what was not in their hearts. Allah is All-Knowing of what they hide.",
+                "ref_surah": 3,
+                "from_ayah": 167,
+                "to_ayah": 167,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Thus, Allah SWT exposes the reality of the hypocrites who say one thing when thinking another. They were saying what was not in their hearts (hypocrite’s). And Allah SWT has full knowledge of everything."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:169)",
+                "text": "Think not of those slain in the way of Allah as dead. Indeed they are living, and with their Lord they have their sustenance,",
+                "ref_surah": 3,
+                "from_ayah": 169,
+                "to_ayah": 169,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Those who died fighting in the cause of Allah SWT or in defense of religion Allah SWT says don’t think they are dead. They experience something different from others who die. They live in ‘barzakh’. Enjoy happiness. Allah SWT says they are alive and happy. Allah SWT changes our perception about death of the martyrs."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:170)",
+                "text": "rejoicing in Allah’s bounties and being delighted for those yet to join them. There will be no fear for them, nor will they grieve.",
+                "ref_surah": 3,
+                "from_ayah": 170,
+                "to_ayah": 170,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara Ayat 154 & 155"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Martyrs are given so much that they celebrate for themselves and are happy when they hear about their loved ones on earth who are on the right path and about to join them soon, in sha Allah."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "CHARACTER OF THE BELIEVERS AT UHUD (172-175)",
+          "ord": 23,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:172)",
+                "text": "Those who responded to God and the Messenger after suffering defeat, who do good and remain conscious of God, will have a great reward.",
+                "ref_surah": 3,
+                "from_ayah": 172,
+                "to_ayah": 172,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَّقَالُوۡا حَسۡبُنَا اللّٰهُ وَنِعۡمَ الۡوَكِيۡلُ .."
+              ],
+              "translation": {
+                "ref": "(3:173)",
+                "text": "Those who were warned, “Your enemies have mobilized their forces against you, so fear them,” the warning only made them grow stronger in faith and they replied, “Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”",
+                "ref_surah": 3,
+                "from_ayah": 173,
+                "to_ayah": 173,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When, after the Battle of Uhud, the Makkan polytheists had travelled far in their journey, they began to realize what a mistake they had made in allowing the opportunity to crush the power of Muhammad (PBUH) to slip out of their hands. At one place they halted and deliberated among themselves about launching a second attack on Madina. They failed, however, to muster sufficient courage and carried on to Makka."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet, for his part, also realized that they might attack once again. On the second day of Uhud, therefore, he gathered the Muslims and urged them to pursue the unbelievers. The true men of faith girded their loins and were prepared to lay down their lives at the behest of the Prophet. They accompanied him to Hamra' al-Asad, eight miles from Madina. This Ayat refers to these dedicated men."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI -- This was a test from Allah SWT and nothing bad happened meaning no battle or war took place."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The ideal character of a Momin is being described here: RIGHEOUSNESS + TAWAQUL = PARADISE"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PUNISHMENT FOR BARTERING BELIEF FOR UNBELIEF (176-178)",
+          "ord": 24,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:178)",
+                "text": "Those who disbelieve should not think that living longer is good for them. They are only given more time to increase in sin, and they will suffer a humiliating punishment.",
+                "ref_surah": 3,
+                "from_ayah": 178,
+                "to_ayah": 178,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (9:85) below"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Disbelievers should not think that postponing their punishment via death is good for them. Allah SWT postpones the punishment only so that they may increase in sinfulness. Allah SWT lets them gain worldly victory but they will have no share in the Hereafter. And for them is a disgraceful torment."
+                },
+                {
+                  "kind": "quote",
+                  "text": "(9:85) And let not their wealth or their children amaze you. Allah's plan is to punish them with these things in this world, and that their souls shall depart (die) while they are disbelievers."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ADVERSE CONDITIONS ARE A TEST FROM ALLAH (179)",
+          "ord": 25,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:179)",
+                "text": "Allah would not leave the believers in the condition you were in, until He distinguished the good from the evil ˹among you˺. Nor would Allah ˹directly˺ reveal to you the unseen, but He chooses whoever He wills as a messenger. So believe in Allah and His messengers. And if you are faithful and mindful ˹of Allah˺, you will receive a great reward.",
+                "ref_surah": 3,
+                "from_ayah": 179,
+                "to_ayah": 179,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Purge is necessary and that can only happen via test and trails in this world and thus making a clear distinction between the Believers from the disbelievers and hypocrites. Allah SWT will show/expose !!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "If a Believer adopts these two qualities: (I) IMAN + (II) TAQWA = SUCCESS."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Our actions publicize our state i.e. of Iman or Kufur (disbelief)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PUNISHMENT FOR THE STINGY/MISERLY (180)",
+          "ord": 26,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:180)",
+                "text": "And let not those who are stingy with that which Allah has bestowed on them of His bounty (wealth) think that it is good for them. Nay, it will be worse for them.",
+                "ref_surah": 3,
+                "from_ayah": 180,
+                "to_ayah": 180,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The miser should not think that collecting money will benefit him. Rather, it will harm him in his religion and worldly affairs. Allah SWT mentions the money that the miser hoarded shall be tied to their necks like a collar on the Day of Resurrection."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Charity does not reduce wealth. Ingratitude does reduce wealth."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "JEWS INSULTED ALLAH AND UTTERED A LIE AGAINST HIM (181-184)",
+          "ord": 27,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:181)",
+                "text": "Indeed, Allah has heard those ˹among the Jews˺ who said, “Allah is poor; we are rich!” We have certainly recorded their slurs and their killing of prophets unjustly. Then We will say, “Taste the torment of burning!",
+                "ref_surah": 3,
+                "from_ayah": 181,
+                "to_ayah": 181,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "A lot of anger from Allah SWT!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This statement was made by the Jews. On the revelation of the Quranic Ayat (2: 245): 'Who of you will lend Allah a goodly loan?'. The Jews began to ridicule it and said: 'Look, God has now gone bankrupt and has begun to beg of His creatures for loans.'"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT promised us that He will delay judgement and punishment till the DoJ, however, Allah SWT is Seeing and Hearing everything and there will be severe consequences. So, when talking about Allah SWT be very very thoughtful/cautious/conscious and always remembering that Allah SWT is our Master."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "EVERYONE HAS TO DIE (185)",
+          "ord": 28,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "كُلُّ نَفۡسٍ ذَآئِقَةُ الۡمَوۡتِؕ وَاِنَّمَا تُوَفَّوۡنَ اُجُوۡرَكُمۡ يَوۡمَ الۡقِيٰمَةِؕ فَمَنۡ زُحۡزِحَ عَنِ النَّارِ وَاُدۡخِلَ الۡجَـنَّةَ فَقَدۡ فَازَ ؕ وَمَا الۡحَيٰوةُ الدُّنۡيَاۤ اِلَّا مَتَاعُ الۡغُرُوۡ"
+              ],
+              "translation": {
+                "ref": "(3:185)",
+                "text": "Everyone is bound to taste death and you shall receive your full reward on the Day of Resurrection. Then, whoever is spared the Fire and is admitted to Paradise has indeed been successful. The life of this world is merely an illusory enjoyment.",
+                "ref_surah": 3,
+                "from_ayah": 185,
+                "to_ayah": 185,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT issues a general and encompassing statement that every living soul shall taste death. When this life comes to an end then on the Day of Resurrection Allah SWT will recompense His creation for their deeds, whether minor or major, many or few, big or small. Surely, Allah will not deal unjustly with anyone, even the weight of an atom."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is belittling the value of this life and degrading its importance. This life is short, and finite."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The Objective of life has been defined so keep your eye on the prize and understand that the end goal is not this life rather it is the Hereafter – Ture success is being: Saved from Hellfire and Enter Paradise."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TEST OF THE BELIEVERS (186)",
+          "ord": 29,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:186)",
+                "text": "You ˹believers˺ will surely be tested in your wealth and yourselves, and you will certainly hear many hurtful words from those who were given the Scripture before you and ˹from˺ the polytheists. But if you are patient and mindful ˹of Allah˺—surely this is a resolve to aspire to.",
+                "ref_surah": 3,
+                "from_ayah": 186,
+                "to_ayah": 186,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see below Surah Baqara Ayat 155"
+                },
+                {
+                  "kind": "quote",
+                  "text": "(2:155) And certainly, We shall test you with something of fear, hunger, loss of wealth, lives and fruits."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Believer shall be tested by his wealth, himself, his offspring and family. In good times a Believer is grateful and in bad times patient and grateful so in every state a Believer in grateful."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The believer shall be tested according to the degree of his faith, and when his faith gets stronger, the test get bigger."
+                },
+                {
+                  "kind": "heading",
+                  "text": "PATIENCE + TAQWA = SUCCESS"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PUNISHMENT FOR CLAIMING CREDIT FOR SOMETHING YOU HAVE NOT DONE (187-189)",
+          "ord": 30,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:188)",
+                "text": "Do not let those who rejoice in their misdeeds and love to take credit for what they have not done think they will escape torment. They will suffer a painful punishment.",
+                "ref_surah": 3,
+                "from_ayah": 188,
+                "to_ayah": 188,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Background: \"During the time of the Messenger of Allah, some hypocrite men, at the time of battle would remain behind and rejoice because they did not accompany the Prophet (PBUH). When the Messenger would come back, they would ask him to excuse them swearing to having some justification, and wanting to be praised for that which they did not do. So, Allah revealed this Ayat -- This was recorded by Al-Bukhari, Muslim, At-Tirmidhi and An-Nasa'i."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here is a warning about sinning and being happy about it. At times some boast about their sins. Never talk or boast about sins to anyone. Just be happy that Allah SWT has guided us to the right path – after we have sinned."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, some do not want to put in the sacrifice or effort warranted in religion rather they only want the praise and respect of being pious. Their entire focus is people and what people think. Such people are hypocirites and will suffer a punishment for their deceit."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SIGNS FROM NATURE AND SUPPLICATION OF THE BELIEVERS (190-194)",
+          "ord": 31,
+          "intro": [
+            "The Prophet (PBUH) would recite the last 10 Ayat’s of Surah Al-Imran during tahajud prayers and listen to them first thing in the morning."
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:190)",
+                "text": "Indeed, in the creation of the heavens and the earth and the alternation of the day and night there are signs for people of reason.",
+                "ref_surah": 3,
+                "from_ayah": 190,
+                "to_ayah": 190,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "If we want our Iman to be reenergized (i) Reflect upon the signs/Ayat’s of the Quran (ii) on nature and creation. These are things that are food/nourishment for the heart. And such people are the true intellectuals."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:191)",
+                "text": "˹They are˺ those who remember Allah while standing, sitting, and lying on their sides, and reflect on the creation of the heavens and the earth ˹and pray˺, “Our Lord! You have not created ˹all of˺ this without purpose. Glory be to You! Protect us from the torment of the Fire.",
+                "ref_surah": 3,
+                "from_ayah": 191,
+                "to_ayah": 191,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Baqara Ayat ul Ayat"
+                },
+                {
+                  "kind": "prose",
+                  "text": "When people look carefully at the order of the universe, it becomes clear that there is a wisdom and purpose behind all this. It is inconceivable that man who is endowed with moral consciousness, freedom of choice, reason and discretion, should not be held answerable for his deeds. This kind of reflection leads people to develop a strong conviction that the After-life is a reality."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Contemplate about why we are on this earth because surely there is more to life that eating, sleeping, going to work, having a family and then death."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:192)",
+                "text": "Our Lord! Indeed, those You commit to the Fire will be ˹completely˺ disgraced! And the wrongdoers will have no helpers.",
+                "ref_surah": 3,
+                "from_ayah": 192,
+                "to_ayah": 192,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "DUA: Our Lord whom You admit to the Fire, You have disgraced him; by humiliating and disgracing him before all people on the Day of Gathering. There is no escaping whatever fate You decided for them."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:193)",
+                "text": "Our Lord! We have heard the caller to ˹true˺ belief, ˹proclaiming, ‘Believe in your Lord ˹alone˺,’ so we believed. Our Lord! Forgive our sins, absolve us of our misdeeds, and allow us ˹each˺ to die as one of the virtuous.",
+                "ref_surah": 3,
+                "from_ayah": 193,
+                "to_ayah": 193,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "DUA: Our Lord, forgive us, then, our sins, and write off our evil deeds, and take us unto You with the righteous."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not die on disbelief."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:194)",
+                "text": "Our Lord! Grant us what You have promised us through Your messengers and do not put us to shame on Judgment Day—for certainly You never fail in Your promise.”",
+                "ref_surah": 3,
+                "from_ayah": 194,
+                "to_ayah": 194,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "DUA: And our Lord, give us what You have promised us through Your messengers, and do not put us to disgrace on the Day of Doom. Surely you do not go back on Your promise.\""
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ACCEPTANCE OF SUPPLICATION BY ALLAH (195)",
+          "ord": 32,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:195)",
+                "text": "So their Lord responded to them: “I will never deny any of you—male or female—the reward of your deeds. Both are equal in reward. Those who migrated or were expelled from their homes, and were persecuted for My sake and fought and ˹some˺ were martyred—I will certainly forgive their sins and admit them into Gardens under which rivers flow, as a reward from Allah. And with Allah is the finest reward!”",
+                "ref_surah": 3,
+                "from_ayah": 195,
+                "to_ayah": 195,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT immediately responded and accepted their supplication (mentioned above Ayat 194-5). Allah SWT says, \"Never will I allow to be lost the good work of any of you -- male or female equally. For leaving the land of shirk and migrating to the land of faith, leaving behind loved ones, brethren, friends and neighbors. And who fought and were killed (in My cause), surely, I will expiate from them their evil deeds and admit them into Gardens under which rivers flow, a reward from Allah, and with Allah is the best of rewards.”"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DO NOT BE DECEIVED BY THE UNBELIEVERS AND BE PATIENT AND EXCEL IN PATIENCE (196-200)",
+          "ord": 33,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:196)",
+                "text": "Do not be deceived by the prosperity of the disbelievers throughout the land.",
+                "ref_surah": 3,
+                "from_ayah": 196,
+                "to_ayah": 196,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Don’t be deceived by the affluence of the disbelievers. Although they may have physical comforts they are always deprived of true contentment and peace of mind."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:197)",
+                "text": "It is only a brief enjoyment. Then Hell will be their home—what an evil place to rest!",
+                "ref_surah": 3,
+                "from_ayah": 197,
+                "to_ayah": 197,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Life is finite and the Hereafter infinite. When you become serious about religion you will suffer as tests and trials become part of your life. You may feel left out of all the fun and enjoyment this world has to offer but Allah SWT says enjoyment of this life is short-lived."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:198)",
+                "text": "But those who are mindful of their Lord will be in Gardens under which rivers flow, to stay there forever—as an accommodation from Allah. And what is with Allah is best for the virtuous.",
+                "ref_surah": 3,
+                "from_ayah": 198,
+                "to_ayah": 198,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Heaven is eternal and the best abode. In Heaven you will stay as an esteemed guest eternally."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: For the Believer this world is a prison, meaning there is confinement, restrictions etc. Heaven = Freedom."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:199)",
+                "text": "Indeed, there are some among the People of the Book who truly believe in Allah and what has been revealed to you ˹believers˺ and what was revealed to them. They humble themselves before Allah—never trading Allah’s revelations for a fleeting gain. Their reward is with their Lord. Surely Allah is swift in reckoning.",
+                "ref_surah": 3,
+                "from_ayah": 199,
+                "to_ayah": 199,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT states that some of the People of the Book truly believe in Him and in what was sent down to Muhammad (PBUH), along with believing in the previously revealed Books/Scriptures, and they are obedient to Him and humble themselves before Allah SWT. They do not compromise on religion for worldly gains. They do not tamper or distort the text."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, all People of the Book are not the same."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(3:200)",
+                "text": "O believers! Patiently endure, persevere, stand on guard, and be mindful of Allah, so you may be successful.",
+                "ref_surah": 3,
+                "from_ayah": 200,
+                "to_ayah": 200,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "PATIENCE + TAQWA = SUCCESS"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "SPENDING OUT OF WHAT YOU LOVE"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:92) You shall not attain righteousness until you spend out of what you love (in the way of Allah). Allah knows whatever you spend."
+            },
+            {
+              "kind": "prose",
+              "text": "Also see Surah Al Baqara Ayat ul Birr (2:177)"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:134) who spend in the way of Allah both in plenty and hardship, who restrain their anger, and forgive others. Allah loves such good-doers."
+            },
+            {
+              "kind": "heading",
+              "text": "OBLIGATION OF PERFORMING HAJ"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:97) In it are clear signs and the standing-place of Abraham. Whoever enters it should be safe. Pilgrimage to this House is an obligation by Allah upon whoever is able among the people. And whoever disbelieves, then surely Allah is not in need of ˹any of His˺ creation."
+            },
+            {
+              "kind": "heading",
+              "text": "CALL TO GOODNESS AND FORBID EVIL"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:104) Let there be a group among you who call ˹others˺ to goodness, encourage what is good, and forbid what is evil—it is they who will be successful."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:110) You are the best community ever raised for humanity—you encourage good بِالۡمَعۡرُوۡفِ forbid evil الۡمُنۡكَر and believe in Allah. Had the People of the Book believed, it would have been better for them. Some of them are faithful, but most are rebellious."
+            },
+            {
+              "kind": "prose",
+              "text": "Also see 2:143"
+            },
+            {
+              "kind": "heading",
+              "text": "DO NOT DIE IN A STATE OF BELIEF"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:102) O believers! Be mindful of Allah in the way He deserves, and do not die except in ˹a state of full˺ submission ˹to Him˺."
+            },
+            {
+              "kind": "heading",
+              "text": "THE PROHIBITION OF TAKING ADVISORS FROM AMONG THE DISBELIEVERS (CHOOSE FRIENDS WISELY)"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:118) O believers! Do not associate closely with those who would not miss a chance to harm you. Their only desire is to see you suffer. Their prejudice has become evident from what they say—and what their hearts hide is far worse. We have made Our revelations clear to you, if only you understood."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:149) O believers! If you yield to the disbelievers, they will drag you back to disbelief—and you will become losers."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION OF RIBA/INTEREST"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:130) Believers! Do not swallow interest, doubled and redoubled, and be mindful of Allah so that you may attain true success."
+            },
+            {
+              "kind": "prose",
+              "text": "(Also see Surah Baqara 275 – 278)"
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF SUCCESS = STAY CLEAR OF ANY FORM OF INTEREST OR USRY."
+            },
+            {
+              "kind": "heading",
+              "text": "REPENTANCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:136) These are the ones who, when they commit any indecency and wrong against themselves, instantly remember Allah and implore forgiveness for their sins – for who will forgive sins save Allah? – and who do not willfully persist in the wrong they did."
+            },
+            {
+              "kind": "heading",
+              "text": "ROAD OF PARADISE"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:142) Did you think that you would enter Paradise even though Allah has not yet seen who among you strove hard in His way and remained steadfast?"
+            },
+            {
+              "kind": "prose",
+              "text": "Also see Surah Baqara (2:214)"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:186) You ˹believers˺ will surely be tested in your wealth and yourselves, and you will certainly hear many hurtful words from those who were given the Scripture before you and ˹from˺ the polytheists. But if you are patient and mindful ˹of Allah˺—surely this is a resolve to aspire to."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:191) ˹They are˺ those who remember Allah while standing, sitting, and lying on their sides, and reflect on the creation of the heavens and the earth ˹and pray˺, “Our Lord! You have not created ˹all of˺ this without purpose. Glory be to You! Protect us from the torment of the Fire."
+            },
+            {
+              "kind": "prose",
+              "text": "Also see Surah Baqara Ayat ul Ayat"
+            },
+            {
+              "kind": "heading",
+              "text": "ATTRIBUTES OF ALLAH SWT"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:150) But Allah is your Protector, and He is the best of helpers."
+            },
+            {
+              "kind": "heading",
+              "text": "CHARACTERISTICS OF HYPOCRITES"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:156) You who believe, do not be like those who disbelieved and said of their brothers who went out on a journey or a raid, ‘If only they had stayed with us they would not have died or been killed,’ for God will make such thoughts a source of anguish in their hearts. It is God who gives life and death; God sees everything you do."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:167) and expose the hypocrites. When it was said to them, “Come fight in the cause of Allah or ˹at least˺ defend yourselves,” they replied, “If we had known there was fighting, we would have definitely gone with you.” They were closer to disbelief than to belief on that day—for saying with their mouths what was not in their hearts. Allah is All-Knowing of what they hide."
+            },
+            {
+              "kind": "heading",
+              "text": "CHARACTERISTICS OF BELIEVER"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:200) O believers! Patiently endure, persevere, stand on guard, and be mindful of Allah, so you may be successful."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:172) Those who responded to God and the Messenger after suffering defeat, who do good and remain conscious of God, will have a great reward."
+            },
+            {
+              "kind": "translation",
+              "text": "(3:173) Those who were warned, “Your enemies have mobilized their forces against you, so fear them,” the warning only made them grow stronger in faith and they replied, “Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”"
+            },
+            {
+              "kind": "heading",
+              "text": "QUALITIES OF THE PROPHET AND DECISION-MAKING ADVICE"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:159) It is out of Allah’s mercy that you ˹O Prophet˺ have been lenient with them. Had you been cruel or hard-hearted, they would have certainly abandoned you. So pardon them, ask Allah’s forgiveness for them, and consult with them in ˹conducting˺ matters. Once you make a decision, put your trust in Allah. Surely Allah loves those who trust in Him."
+            },
+            {
+              "kind": "heading",
+              "text": "WHAT TO DO WHEN CLAMITY BEFALLS US"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:165) Why do you [believers] say, when a calamity befalls you, even after you have inflicted twice as much damage [on your enemy], ‘How did this happen?’? [Prophet], say, ‘You brought it upon yourselves.’ God has power over everything."
+            },
+            {
+              "kind": "heading",
+              "text": "BEWEARE OF HOW YOU DICSUSS/DEBATE ABOUT ALLAH SWT"
+            },
+            {
+              "kind": "heading",
+              "text": "A lot of anger from Allah SWT!"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:181) Indeed, Allah has heard those ˹among the Jews˺ who said, “Allah is poor; we are rich!” We have certainly recorded their slurs and their killing of prophets unjustly. Then We will say, “Taste the torment of burning!"
+            },
+            {
+              "kind": "heading",
+              "text": "MIGRATE FOR ISLAM"
+            },
+            {
+              "kind": "translation",
+              "text": "(3:195) So their Lord responded to them: “I will never deny any of you—male or female—the reward of your deeds. Both are equal in reward. Those who migrated or were expelled from their homes, and were persecuted for My sake and fought and ˹some˺ were martyred—I will certainly forgive their sins and admit them into Gardens under which rivers flow, as a reward from Allah. And with Allah is the finest reward!”"
+            },
+            {
+              "kind": "heading",
+              "text": "VIRTUOUS DEEDS WITHOUT FAITH IN ALLAH ARE WORTHLESS"
+            }
+          ]
+        },
+        {
+          "title": "Topics and their Interconnection",
+          "items": [
+            {
+              "kind": "prose",
+              "text": "In these introductory Ayats, the fundamental truths about Allah, Revelation and Life-after-death have been reiterated to serve as fitting preliminaries, leading to the main topics discussed in the Surah. 1 - 32"
+            },
+            {
+              "kind": "prose",
+              "text": "This discourse is particularly addressed to the Christians and invites them to accept Islam. It clears Jesus and his mother not only from the stigma maliciously set upon them by the Jews, but also refutes the erroneous Christian creed of the Divinity of Jesus which had been formulated because of his miraculous birth. For this purpose the instances of John the Baptist to a barren woman and an extremely aged man and that of Adam without father and mother have been cited to show that there is nothing in the birth of Jesus without a father to entitle him to Divinity. 33 - 65"
+            },
+            {
+              "kind": "prose",
+              "text": "In these verses the people of the Book, the Jews, have been invited to give up their sinister ways and accept the divine Guidance. At the same time the Muslims have been warned to be on their guard against their malicious intentions, erroneous ways and absurd objections. 66 - 101"
+            },
+            {
+              "kind": "prose",
+              "text": "The Muslims have been instructed to learn lessons from the history of the people of the Book and also to guard themselves against their machinations, and to prepare and train themselves to establish virtue and eradicate evil. 102 - 120"
+            },
+            {
+              "kind": "prose",
+              "text": "In this portion, a review of the Battle of Uhd has been mad to teach and reassure the Muslims that the machinations of their enemies could do them no harm, if they would practice restraint and fortitude and have fear of Allah. It has been pointed out that the set-back they had suffered was due to the lack of some moral qualities and the existence of some evils. Since the main cause of the defeat was the greed of the archers, guarding the pass, the taking of interest has been prohibited to eradicate this evil. 121 - 175"
+            },
+            {
+              "kind": "prose",
+              "text": "The main theme of the Ayats 109 - 120 has been resumed to reassure and encourage the Muslims against the dangerous plots of their enemies. 175 - 189"
+            },
+            {
+              "kind": "prose",
+              "text": "This is the conclusion of the Surah and is not directly connected with the Ayats immediately preceding it but with the theme of the Surah as a whole. 190 - 200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 4,
+      "name_en": "AN NISA (THE WOMEN)",
+      "from_ayah": 1,
+      "to_ayah": 23,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Juz 4 - Nisa.docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 4",
+      "extras": [
+        {
+          "note": "section-title index (table of contents) repeated between front matter and the first section heading; not a Section per draft",
+          "stray_lines": [
+            "Introduction to sections:"
+          ],
+          "section_index": [
+            "CREATION OF MANKIND (1)",
+            "PROPERTY OF THE ORPHANS (2)",
+            "RESTRICTIONS ON NUMBER OF WIVES (3)",
+            "OBLIGATION OF DOWRY (4)",
+            "DO NOT TRUST PROPERTY TO FEEBLEMINDED PEOPLE (5)",
+            "TRAIN THE ORPHANS TO MANAGE THEIR PROPERTIES (6)",
+            "LAWS OF INHERITANCE (7-10)",
+            "PRESCRIBED SHARES IN INHERITANCE (11)",
+            "INHERITANCE OF SPOUSE'S PROPERTY (12)",
+            "COMMANDMENT TO ABIDE BY THE LIMIT OF ALLAH (13-14)",
+            "INITIAL ORDER RELATING TO THE PUNISHMENT FOR WOMEN GUILTY O FORNICATION (15-16)",
+            "ACCEPTABLE VS UNACCEPTABLE REPENTANCE (17-18)",
+            "WOMEN SHOULD NOT BE TREATED AS A PART OF ESTATE (19)",
+            "DO NOT TAKE DOWRY BACK FROM WOMEN (20-21)",
+            "PROHIBITION FROM MARRING THE WIFE OF ONE'S FATHER (22)",
+            "WOMEN THAT ARE PROHIBITED FOR MARRIAGE-\"MAHRAM\" RELATIONS (23)",
+            "PROHIBITED AND PERMITTED MARRIAGES CONTINUED (24)",
+            "PERMISSION FOR MARRIAGE WITH SLAVE GIRLS (25)",
+            "ALLAH WISHES TO GUIDE AND FORGIVE (26-28)",
+            "RESPECT THE OWNERSHIP OF ONE ANOTHER'S PROPERTIES (29-30)",
+            "AVOID HEINOUS SINS AND DO NOT BE JEALOUS (31-32)",
+            "LAWS OF INHERITANCE ARE FIXED (33)",
+            "MEN ARE GIVEN AUTHORITY OVER WOMEN AND CORRECTIVE MEASURES FOR DISOBEDIENT WOMEN AND ARBITRATION IN FAMILY DISPUTES (34-35)",
+            "HUQUQ-AL-IBAD (RIGHTS OF OTHER HUMAN BEINGS) (36-38)",
+            "WITNESSES OF THE RASOOLS ON THE DAY OF JUDGEMENT (39-42)",
+            "PROHIBITION OF DRINKING LIQUOR-2ND ORDER AND TAYAMMUM-A SUBSTITUTE FOR ABLUTION (43)",
+            "BEHAVIOR OF THE PEOPLE OF THE BOOK (44-46)",
+            "INVITATION OF IMAN TO THE PEOPLE OF THE BOOK AND MUSHRIKIN WILL NOT BE FORGIVEN (47-50)",
+            "PEOPLE OF THE BOOK TEND TO TAKE SIDE OF SHAITAN (51-55)",
+            "FATE OF THE UNBELIEVERS AND THE BELIEVERS AND WHO SHOULD THE BELIEVERS OBEY? (56-59)",
+            "HYPOCRITES' ATTITUDE TOWARDS THE DECISION OF THE PROPHET (60-63)",
+            "ONE WHO DISPUTES THE DECISION OF THE PROPHET IS NOT A BELIEVER (64-68)",
+            "BELIEVERS WILL BE IN EXCELLENT COMPANY IN THE HEREAFTER (69-70)",
+            "BE PREPARED FOR ARMED CONFLICT (JIHAD) (71-74)",
+            "MAKE JIHAD TO HELP THE OPPRESSED (75-76)",
+            "FEAR ALLAH AND NOT THE PEOPLE AND THERE IS NO ESCAPE FROM DEATH (77-79)",
+            "OBEDIENCE OF THE RASOOL IS IN FACT THE OBEDIENCE OF ALLAH (80-81)",
+            "PROOF OF AL-QURAN BEING THE DIVINE REVELATION AND REPORT THE IMPORTANT NEWS TO RESPONSIBLE PERSONS (82-84)",
+            "RESPOND TO GREETINGS WITH EVEN BETTER GREETINGS (85-87)",
+            "FIGHT AGAINST HYPOCRISY AND HYPOCRITES (88-91)",
+            "PUNISHMENT FOR KILLING A BELIEVER AND LAWS OF BLOODWIT (92-93)",
+            "INVESTIGATE PROPERLY BEFORE JUMPING TO CONCLUSION (94)",
+            "RANKS OF MUJAHIDEEN OVER NON-MUJAHIDEEN (95-96)",
+            "OPPRESSED SHOULD MIGRATE IF POSSIBLE AND REWARD FOR MIGRATION IN THE CAUSE OF ALLAH (97-100)",
+            "SALAT-AL-QASR, SHORTENING OF SALAH DURING TRAVEL AND SALAH IN THE STATE OF WAR AND SALAH IS OBLIGATORY AT ITS PRESCRIBED TIMES (101-104)",
+            "ESTABLISH JUSTICE BASED ON DIVINE GUIDANCE AND WARNING AGAINST SLANDER AND AGAINST FALSELY CHARGING INNOCENTS (105-112)",
+            "ALLAH'S SPECIAL FAVORS TO THE PROPHET AND PROHIBITION OF SECRET COUNSEL AND ITS LIMITED EXCEPTION (113-115)",
+            "SHIRK IS AND UNFORGIVABLE SIN AND PLEDGE AND PROMISES OF SHAITAN (116-121)",
+            "PROMISE OF ALLAH-WHO CAN BE TRUER THAN ALLAH IN PROMISE? (122-124)",
+            "NO ONE IS BETTER THAN A MUSLIM (125-126)",
+            "ESTABLISHMENT OF JUSTICE FOR WOMEN (127-130)",
+            "HAVE FEAR OF ALLAH IN YOUR DEALINGS (131-134)",
+            "STAND FIRM FOR JUSTICE (135)",
+            "BELIEVERS ARE REQUIRED TO BELIEVE WHOLEHEARTEDLY AND BOYCOTT UN-ISLAMIC GATHERINGS AND HYPOCRITES HAVE DOUBLE STANDARDS (136-141)",
+            "CHARACTERISTICS OF HYPOCRITES AND THE ACTS OF HYPOCRISY AND HYPOCRITES WILL BE IN THE LOWEST DEPTHS OF HELLFIRE (142-147)",
+            "DO NOT UTTER EVIL WORDS AND DO NOT DRAW A LINE BETWEEN ALLAH AND HIS RASOOLS IN OBEDIENCE (148-152)",
+            "JEWS ARE HABITUAL SINNERS AND VIOLATORS OF ALLAH'S COMMANDMENTS AND JESUS WAS NEITHER KILLED NOR CRUCIFIED (153-159)",
+            "PUNISHMENT TO JEWS FOR THEIR INIQUITIES AND THEIR ONLY SALVATION IS TO BECOME MUSLIMS (160-162)",
+            "THIS QURAN CARRIES THE SAME MESSAGE AS WAS SENT TO NOAH, ABRAHAM, MOSES AND JESUS AND AL-QURAN'S AUTHENTICITY IS VERIFIED BY ALLAH HIMSELF (163-166)",
+            "BELIEVE IN THIS AUTHENTIC REVELATION IF YOU WANT TO ATTAIN FELICITY AND STOP SAYING \"TRINITY\" ALLAH IS THE ONE AND ONLY DEITY (167-171)",
+            "JESUS WAS A PROPHET AND WORSHIPPER OF ALLAH (172-173)",
+            "MANKIND IS ASKED TO BELIEVE IN THE MESSAGE OF AL-QURAN (174-175)",
+            "LEGAL DECISION RELATING TO THE INHERITANCE OF CHILDLESS PERSONS (176)"
+          ]
+        }
+      ],
+      "front_matter": [
+        {
+          "label": "Period of Revelation",
+          "text": "This Surah comprises of several discourses which were revealed on different occasions during the period ranging between the end of A.H. 3 and the end of A.H. 4 or the beginning of A.H. 5.",
+          "items": null
+        },
+        {
+          "label": "Subject",
+          "text": "Consolidation of the Islamic Community\n\nThe main object of this Surah is to instruct Muslims to unite so as to form a firm and strong society. This Surah mainly deals with the new moral, cultural, social, political and economic reforms to replace the pre-Islamic ways, along with the propagation of Islam in the face of bitter opposition by the mushrik Arabs, the Jewish clans.\n\nThis surah discusses family issues. Since seventy Muslim men were martyred in the Battle of Uhd, they left behind orphans and widows. Thus, there was a dire need for clear guidance on how to deal with this crisis. The surah lays out a series of laws concerning: the status of women, marriage, marital discord, inheritance, capital punishment for murder, the prohibition of praying under the influence of alcohol and the rights of orphans.\n\nThe peace and prosperity of family life depends on the chastity of the spouses so the Quran lays down serious penalties for adultery; an evil that can destroy the harmony and success of family life.\n\nEducation regarding moral character via the stability of family -- which is the nucleus of community – along with the importance of the propagation of Islam have all been stressed upon.\n\nAccordingly, detailed instructions have been given for the strengthening of the Islamic Community in continuation of those given in Al-Baqarah. Rules have been prescribed for marriage along with the rights of wife and husband. The status of women in the society has been determined and the declaration of the rights of orphans; additionally, laws and regulations have been laid down for the division of inheritance, and instructions have been given to reform economic affairs.",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "CREATION OF MANKIND (1)",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:1)",
+                "text": "O humanity! Be mindful of your Lord Who created you from a single soul, and from it He created its mate, and through both He spread countless men and women. And be mindful of Allah—in Whose Name you appeal to one another—and ˹honour˺ family ties. Surely Allah is ever Watchful over you.",
+                "ref_surah": 4,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to have Taqwa (twice), a Reminder about Creation (from Adam), and Being Kind to Relatives"
+                },
+                {
+                  "kind": "prose",
+                  "text": "What are the mutual rights of human beings, what are the principles on which a sound and stable family life can be established, justice and fairness in society, these are questions that will be discussed a little further on in this Surah, thus, an appropriate introduction. All the while keeping in mind that Allah SWT is watching and Ever Present."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – The Prophet (PBUH) recited this Ayat at the time of Khutbah-tun-Nikah to ensure both parties keep in mind that when no one is watching Allah SWT is Ever Present so be careful re: every word and action."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The other three Quranic Ayat’s used at the time of Nikkah are: Ayats: (3:102, 33:70-71)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: In Surah Baqara, the taqwa of Allah SWT has been mentioned repeatedly after many commandment because although laws and law enforcement is available the biggest deterrent should be the love and fear of our Raab (taqwa of Allah SWT)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROPERTY OF THE ORPHANS (2)",
+          "ord": 2,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:2)",
+                "text": "Give orphans their wealth ˹when they reach maturity˺, and do not exchange your worthless possessions for their valuables, nor cheat them by mixing their wealth with your own. For this would indeed be a great sin.",
+                "ref_surah": 4,
+                "from_ayah": 2,
+                "to_ayah": 2,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: Muqatil and al-Kalbi said: “This Ayat was revealed about a man from Ghatafan who had in his possession an abundant fortune which belonged to his orphaned nephew. When this orphan reached the age of puberty, and he asked for this fortune but his uncle refused to give it to him. As a result, they took their dispute to the Messenger of Allah (PBUH), and then this Ayat was revealed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "God directs the guardians of the orphans (one of the most venerable in society) to spend out of the latter's property while they are still minors, and to restore it to them when they attain majority/maturity. And do not exchange (your) bad things for (their) good ones. And do not mix assets."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "RESTRICTIONS ON NUMBER OF WIVES (3)",
+          "ord": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:3)",
+                "text": "If you fear you might fail to give orphan women their ˹due˺ rights ˹if you were to marry them˺, then marry other women of your choice—two, three, or four. But if you are afraid you will fail to maintain justice, then ˹content yourselves with˺ one or those ˹bondwomen˺ in your possession. This way you are less likely to commit injustice.",
+                "ref_surah": 4,
+                "from_ayah": 3,
+                "to_ayah": 3,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Al-Bukhari recorded that Aishah said, \"A man was taking care of a female orphan and he married her, although he did not desire to marry her. That girl's money was mixed with his, and he was keeping her portion from her. Then this Ayat was revealed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the previous Ayat, guardians were warned against defrauding or misappropriating the property orphans. Now they are warned against any attempt to marry orphaned girls (who are often even more vulnerable than orphan boys) under their guardianship hoping to get away by fixing a low dowry and or claiming their properties as additional benefit."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The permission for men to marry up to four women. But if they fear that they will not be able to deal justly/equitably (with them), then only one or what their right hands possesses."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see below:\n (4:129) You will never be able to do perfect justice between wives even if it is your ardent desire."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here, it has been made clear that love and the tilt of the heart are something out of man's control. But even this involuntary conduct has not been left totally unchecked. It means… If you love one of your wives more than the other, there is nothing you can do about it. But, total indifference and heedlessness towards the other wife/es is not permissible and is a great sin. So much so, that a person who sees the danger of his getting involved with this sin has been instructed not to marry more than one woman."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Time, money, provisions etc., should all be equitable between all wives."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Giving dowry is obligatory. (There is no English word that captures the defination or essence of the meaning of dowry/mehr in Islam)."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Before passing judgment or making comments pls remember that these commands are from Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Islam cares about man’s morality and the purity of society. It does not allow a situation to exist that is likely to lead to the weakening of moral values and the corruption of society i.e. short term relationships, affairs, children out of wedlock etc."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "OBLIGATION OF DOWRY (4)",
+          "ord": 4,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:4)",
+                "text": "Give women ˹you wed˺ their due dowries graciously. But if they waive some of it willingly, then you may enjoy it freely with a clear conscience.",
+                "ref_surah": 4,
+                "from_ayah": 4,
+                "to_ayah": 4,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is commanding! Do not marry unless you give your wife something that is her right/Mehr. Therefore, the man is required to pay a dowry to his wife. If then the wife gives her husband back part or all of that dowry with a good heart, her husband is allowed to take it, as it is lawful for him in this case."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "DO NOT TRUST PROPERTY TO FEEBLEMINDED PEOPLE (5)",
+          "ord": 5,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:5)",
+                "text": "Do not entrust the incapable ˹among your dependants˺ with your wealth which Allah has made a means of support for you—but feed and clothe them from it, and speak to them kindly.",
+                "ref_surah": 4,
+                "from_ayah": 5,
+                "to_ayah": 5,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT prohibited giving the unwise the freedom to do as they wish with wealth, which Allah has made as a means of support for people. \nThis Ayat covers a very wide spectrum of meaning. Thus, this ruling applies to being young, as young people are incapable of making wise decisions. It also applies in cases of insanity, erratic behavior and having a weak intellect or religious practice."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here we see that the right of personal property is not absolute and the community as a whole can intervene and thus prevent social and moral degradation as well as a wastage of valuable wealth."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "TRAIN THE ORPHANS TO MANAGE THEIR PROPERTIES (6)",
+          "ord": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:6)",
+                "text": "Test ˹the competence of˺ the orphans until they reach a marriageable age. Then if you feel they are capable of sound judgment, return their wealth to them. And do not consume it wastefully and hastily before they grow up ˹to demand it˺. If the guardian is well-off, they should not take compensation; but if the guardian is poor, let them take a reasonable provision. When you give orphans back their property, call in witnesses. And sufficient is Allah as a ˹vigilant˺ Reckoner.",
+                "ref_surah": 4,
+                "from_ayah": 6,
+                "to_ayah": 6,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Two conditions have been laid down for handing over the wealth and properties to orphans. The first, is the attainment of puberty, and the second is that of mental maturity - i.e. the capacity to manage their affairs in a sound and appropriate manner."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The guardian (who is poor) is entitled to fair and reasonable remuneration for his service. Moreover, the guardian is instructed that he should take a fixed and known amount by way of remuneration, that he should take it openly rather than secretly, and that he should keep an account of it."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commands the guardians of orphans to surrender the property of the orphans who become consenting adults, in the presence of witnesses, so that none denies the fact that monies was received."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Although, Allah SWT is sufficient as Witness, Reckoner and Watcher over their work with the orphans."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Test/teach your children re: life skills, emotional intelligence, sound judgement etc. as this is an obligation."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "LAWS OF INHERITANCE (7-10)",
+          "ord": 7,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:7)",
+                "text": "For men there is a share in what their parents and close relatives leave, and for women there is a share in what their parents and close relatives leave—whether it is little or much. ˹These are˺ obligatory shares.",
+                "ref_surah": 4,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: Aws ibn Thabit al-Ansari died and was survived by a wife whose name was Umm Kujjah and three daughters he had from her. Two men, who were the cousins and executors of will, took all his wealth and failed to give anything to his wife or daughters. This is because in the pre-Islamic period women and children, even if they were male, did not inherit anything, and only older man did. They used to say: ‘Only those who fight riding horses and capture booty are entitled to inherit’. Umm Kujjah went to the Messenger of Allah (PBUH), and said: ‘O Messenger of Allah! I am the widow of Aws ibn Malik and he has left me with daughters on whom I do not have anything to spend. Their father had left behind a considerable fortune which is now with Suwayd and ‘Arfajah who have failed to give me, or my daughters, anything when they are still under my care. They do not feed me or even care about them’."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Messenger of Allah (PBUH), summoned them, and in their defence they said: ‘O Messenger of Allah! Her children cannot ride a horse, withstand any responsibility or harm an enemy!’ The Messenger of Allah (PBUH), said: ‘Leave for now, I shall wait for what Allah relates to me concerning their matter’, and they left. Then Allah SWT revealed this Ayat”."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Necessity of Surrendering the Inheritance According to the Portions that Allah Ordained"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat embodies five Legal injunctions. First, that women as well as men are entitled to inheritance. Second, that inheritance, however meagre it might be, should be distributed. Third, that the law of inheritance is applicable to all kinds of property, tangible or intangible such as, copy rights, agricultural, industrial and so on. Fourth, it shows that the right of inheritance comes into force as soon as a person dies no matter the age or status of the heirs. Fifth, it implies the rule that immediate blood-relatives supersede those relations that are further removed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Heirs can forge, gift or purchase their share of the inheritance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Gifts should be given during one’s lifetime and must be distributed equally. They are not part of the distribution."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Regardless of like of dislikes, sinful or pious etc., legal heirs will inherit."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:8)",
+                "text": "If other relatives, orphans, or needy people are present at the distribution, give them something too, and speak kindly to them.",
+                "ref_surah": 4,
+                "from_ayah": 8,
+                "to_ayah": 8,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This directive is addressed to the heirs of the deceased. They are told not to be niggardly towards their relatives whether they be close or distant. Nor should they be niggardly towards either poor and needy members of the family or towards orphans who are present when the inheritance is distributed. Although they are not legally entitled to any share it is seemly for people to act magnanimously and give them something out of their inheritance, and especially to desist from making hurtful remarks."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:9)",
+                "text": "Let the guardians be as concerned ˹for the orphans˺ as they would if they were to ˹die and˺ leave ˹their own˺ helpless children behind. So let them be mindful of Allah and speak equitably.",
+                "ref_surah": 4,
+                "from_ayah": 9,
+                "to_ayah": 9,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "And let those (executors and guardians) of the will have the same fear in their minds as they would have for their own, if they had left weak offspring behind. So, let them have Taqwa of Allah SWT and speak truthfully."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:10)",
+                "text": "Indeed, those who unjustly consume orphans’ wealth ˹in fact˺ consume nothing but fire into their bellies. And they will be burned in a blazing Hell!",
+                "ref_surah": 4,
+                "from_ayah": 10,
+                "to_ayah": 10,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It is recorded in the Two Sahihs that Abu Hurayrah said that the Messenger of Allah said, Avoid the seven great destructive sins. The people asked, \"O Allah's Messenger! What are they?\""
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To join others in worship along with Allah SWT. (Shirk)."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Magic."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To kill the life which Allah SWT has forbidden except for a just cause."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To consume interest/riba."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To consume an orphan's property."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To turn your back to the enemy and flee from the battlefield at the time of fighting, and"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To accuse chaste women."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PRESCRIBED SHARES IN INHERITANCE (11)",
+          "ord": 8,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:11)",
+                "text": "Concerning your children, God commands you that a son should have the equivalent share of two daughters. If there are only daughters, two or more should share two-thirds of the inheritance, if one, she should have half. Parents inherit a sixth each if the deceased leaves children; if he leaves no children and his parents are his sole heirs, his mother has a third, unless he has brothers, in which case she has a sixth. [In all cases, the distribution comes] after payment of any bequests or debts. You cannot know which of your parents or your children is more beneficial to you: this is a law from God, and He is all knowing, all wise.",
+                "ref_surah": 4,
+                "from_ayah": 11,
+                "to_ayah": 11,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The above first 10 Ayat’s have categorically outlined laws and rights regarding the oppressed and vulnerable in society."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Now the next 4 Ayat’s (below) contain Islam’s entire rulings re: inheritance – Ayat ul Miras or Laws of Inheritance"
+                },
+                {
+                  "kind": "heading",
+                  "text": "THIS IS AN OBLIGATION/COMMANDMENT FROM ALLAH SWT – SHARES AND HEIRS ARE FIXED"
+                },
+                {
+                  "kind": "prose",
+                  "text": "First the Debts are Paid Off, then the Will, then the Fixed Inheritance"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "First rule re: inheritance, the share of the male (son) should be double that of the female (daughter)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(Since Islamic law imposes greater financial obligations on men in respect of family life and relieves women of a number of such obligations, justice demands that a woman's share in inheritance should be less than that of a man.) Also see Surah Nisa, Ayat 34."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "If the deceased leaves only daughters, and if there are two or more daughters then they will receive two-thirds of the inheritance, and the remaining one-third will go to the other heirs. If only one daughter she will get half."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(But if the deceased has only one son there is a consensus among jurists that in the absence of other heirs he is entitled to all the property and if the deceased has other heirs, he is entitled to the property left after their shares have been distributed.)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Each of the parents of the deceased (if the deceased has children) will receive one-sixth of the inheritance irrespective of whether the issue consists either only of daughters, only of sons, of both sons and daughters, or just one son or just one daughter. The remaining two-thirds will be distributed among the rest of the heirs."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "If the parents are the sole heirs of the deceased the mother will receive one third and the remaining two-thirds will go to the share of the father."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "In the case where the deceased also has brothers and sisters the share of the mother will be one-sixth rather than one-third."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The mention of bequest precedes the mention of debt, for although not everyone need be encumbered with debt it is necessary that everyone should make a bequest."
+                },
+                {
+                  "kind": "prose",
+                  "text": "As for legalities, there is consensus among Muslims that the payment of debts takes precedence over the payment of bequests, i.e. if the deceased owes a debt and also leaves a bequest, the debt will first be paid out of the inheritance, and only then will his bequest be fulfilled.\n\nSurah Baqara Ayat 182 mentions that man has the right to bequeath up to a maximum of one-third of his inheritance. The principle laid down in regard to bequest is that a man can give a portion of his inheritance either to a relative who is not legally entitled to any prescribed share in the inheritance or to others whom he considers deserving of help, e.g. either an orphaned grandson or grand-daughter, the widow of a son in financial distress, any brother, sister, brother's wife, nephew, and other relatives who seem to be in need of support etc. If there are no such relatives’ bequests can be made either to other needy people or for charitable purposes."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In short, the Law has fixed regulations for the distribution of two-thirds or more of one's inheritance, out of which the legal heirs are to receive their shares according to the regulations laid down by the Law of Allah SWT. A maximum of one-third of the inheritance has been left to the discretion of the person concerned, who can dispose of it by means of bequest."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "INHERITANCE OF SPOUSE'S PROPERTY (12)",
+          "ord": 9,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:12)",
+                "text": "You inherit half of what your wives leave, if they have no children; if they have children, you inherit a quarter. [In all cases, the distribution comes] after payment of any bequests or debts. If you have no children, your wives’ share is a quarter; if you have children, your wives get an eighth. [In all cases, the distribution comes] after payment of any bequests or debts. If a man or a woman dies leaving no children or parents,* but a single brother or sister, he or she should take one-sixth of the inheritance; if there are more siblings, they share one-third between them. [In all cases, the distribution comes] after payment of any bequests or debts, with no harm done to anyone: this is a commandment from God: God is all knowing and benign to all.",
+                "ref_surah": 4,
+                "from_ayah": 12,
+                "to_ayah": 12,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Share of the Spouses in the Inheritance"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The husband will get half of what his wife leaves behind if she dies and does not have a child. If she had children, the husband get one-fourth of what she leaves behind, after payment of inheritances that she may have bequeathed, or her debts."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Whether a man has one wife or several wives the share of the wife/wives is one-eighth of the inheritance when the deceased has children, and one-fourth when he has no children. The share of the wives, whether one-fourth or one-eighth, will be distributed equally among them."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The remaining five-sixths or two-thirds of the inheritance goes to the legal heirs, if any."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Kalalah refers to the man/woman who has neither descendants (children) nor ascendants (parents)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But has left a brother or a sister, then each one of the two gets a sixth; but if more than two, they share in a third."
+                },
+                {
+                  "kind": "prose",
+                  "text": "'Bequests which cause injury' are those that deprive deserving kin of their legitimate rights. Similarly, the debt which causes injury is the fake debt which one falsely admits to owing, and any other deception to which one resorts merely in order to deprive the rightful heirs of their shares in inheritance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This kind of injury has been declared to be a major sin."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is the commandment from Allah SWT!! Allah has given each his fixed due right. Therefore, there is no will for a rightful inheritor."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Once we die, we have no control so Allah SWT decides for us."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Read: Inheritance, Regulations and Explanations by Jabali."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "COMMANDMENT TO ABIDE BY THE LIMIT OF ALLAH (13-14)",
+          "ord": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:13)",
+                "text": "These are the bounds set by God: God will admit those who obey Him and His Messenger to Gardens graced with flowing streams, and there they will stay– that is the supreme triumph!",
+                "ref_surah": 4,
+                "from_ayah": 13,
+                "to_ayah": 13,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Warning Against Transgressing the Limits for Inheritance + Paradise for those who abide."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:14)",
+                "text": "But those who disobey God and His Messenger and overstep His limits will be consigned by God to the Fire, and there they will stay– a humiliating torment awaits them!",
+                "ref_surah": 4,
+                "from_ayah": 14,
+                "to_ayah": 14,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This is because they changed/disputed what Allah SWT has ordained. This is the behavior of those who do not agree with what Allah SWT has decided and divided, and this is why Allah SWT punishes them with humiliation in the eternal, painful torment."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "INITIAL ORDER RELATING TO THE PUNISHMENT FOR WOMEN GUILTY O FORNICATION (15-16)",
+          "ord": 11,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:15)",
+                "text": "As for those of your women who are guilty of immoral conduct, call upon four from amongst you to bear witness against them. And if four men do bear witness, confine those women to their houses until either death takes them away or Allah opens some way for them.",
+                "ref_surah": 4,
+                "from_ayah": 15,
+                "to_ayah": 15,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:16)",
+                "text": "Punish both of those among you who are guilty of this sin, then if they repent and mend their ways, leave them alone. For Allah is always ready to accept repentance. He is All-Compassionate.",
+                "ref_surah": 4,
+                "from_ayah": 16,
+                "to_ayah": 16,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In Ayat’s 15-16 we find the initial directives for the punishment for unlawful sexual intercourse. Later, this was abrogated and the command was revealed (Surah al-Nur 24: 2) which laid down that both the male and female guilty of zina should be given a hundred lashes."
+                },
+                {
+                  "kind": "prose",
+                  "text": "These above injunctions are of a preliminary nature since the people of Arabia were neither used to obeying the orders of any established government, the verdicts of any courts of law nor any legal code; it would therefore have been unwise to try to force acceptance of a penal code upon them so soon after the establishment of the Islamic state. In due course, the punishments for unlawful sexual intercourse, for slanderous accusations of unchastity against women, and for theft were laid down in their definitive form and served as the basis of that detailed penal code which was enforced by the Prophet (PBUH) and the Rightly-Guided Caliphs."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Madini Surahs in order of revelation are Surah Nisa, Azaab, Nur and Mayidah. These are the four big Surahs that discuss social order."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ACCEPTABLE VS UNACCEPTABLE REPENTANCE (17-18)",
+          "ord": 12,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:17)",
+                "text": "(And remember that) Allah's acceptance of repentance is only for those who commit evil out of ignorance and then soon repent. It is towards such persons that Allah turns graciously. Allah is All-Knowing, All-Wise.",
+                "ref_surah": 4,
+                "from_ayah": 17,
+                "to_ayah": 17,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:18)",
+                "text": "But of no avail is repentance of those who do evil until death approaches any one of them and then he says: ''Now I repent.'' Nor is the repentance of those who die in the state of unbelief of any avail to them. For them We have kept in readiness a painful chastisement.",
+                "ref_surah": 4,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Repentance is Accepted Until one Faces death"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Arabic word tawbah means 'to return, to come back'. A man's tawbah after he has sinned means that God's servant, who had turned away from his Master in disobedience, has repented, and returned to obedience and service. On the other hand, tawbah on the part of God means that the attention of the Master, which had turned away from His erring servant, has once again turned towards him. However, God makes it clear to His servants that tawbah is acceptable only from those who commit errors inadvertently and out of ignorance. Such persons will always find the door of God open for them whenever they turn to Him in repentance.\n\nBut this tawbah is not for those who pile sin upon sin throughout their lives in sheer indifference to God and who cry for pardon as soon as they see the angel of death approaching. The Prophet (PBUH) has warned against this attitude in the following words: 'God accepts the repentance of a slave until the gurgling (of death) begins.' (Tirmidhi, 'Da'wat', 98). For when the last leaf of a man's book of life has been turned, what opportunity remains for a man to return to righteous conduct?"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: As soon as you make a mistake and realize then immediately repent and say 2 rakat namaz for forgiveness bec no matter how big the sin Allah SWT accepts and forgives, in sha Allah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But remember that sinning and haram ways in abundance make it difficult to return to halal and lawful ways."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Never broadcast your sins and cover up others sins as then Allah SWT will cover your sins."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WOMEN SHOULD NOT BE TREATED AS A PART OF ESTATE (19)",
+          "ord": 13,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:19)",
+                "text": "O believers! It is not permissible for you to inherit women against their will or mistreat them to make them return some of the dowry ˹as a ransom for divorce˺—unless they are found guilty of adultery. Treat them fairly. If you happen to dislike them, you may hate something which Allah turns into a great blessing.",
+                "ref_surah": 4,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: Before, the practice was that when a man dies, his male relatives used to have the right to do whatever they wanted with his wife. If one of them wants, he would marry her, give her in marriage, or prevent her from marriage, for they had more right to her than her own family. Thereafter, this Ayat was revealed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In Islam a woman has the right to refuse to get married if she does not want to. And a woman must be treated honorably."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROHIBITION FROM MARRING THE WIFE OF ONE'S FATHER (22)",
+          "ord": 14,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:22)",
+                "text": "Do not marry former wives of your fathers—except what was done previously. It was indeed a shameful, despicable, and evil practice.",
+                "ref_surah": 4,
+                "from_ayah": 22,
+                "to_ayah": 22,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT prohibits marrying the women whom the father married, in honor and respect to the fathers, not allowing their children to have sexual relations with their wives after they die."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WOMEN THAT ARE PROHIBITED FOR MARRIAGE-\"MAHRAM\" RELATIONS (23)",
+          "ord": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:23)",
+                "text": "˹Also˺ forbidden to you for marriage are your mothers, your daughters, your sisters, your paternal and maternal aunts, your brother’s daughters, your sister’s daughters, your foster-mothers, your foster-sisters, your mothers-in-law, your stepdaughters under your guardianship if you have consummated marriage with their mothers—but if you have not, then you can marry them—nor the wives of your own sons, nor two sisters together at the same time—except what was done previously. Surely Allah is All-Forgiving, Most Merciful.",
+                "ref_surah": 4,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Women Never Eligible for One to Marry"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Forbidden to you (for marriage) are:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your mothers & (grand) and step mothers"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your daughters & (grand)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your sisters & (biological step sisters )"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your father's sisters, (phupi)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your mother's sisters, (khala)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your brother's daughters, (niece)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your sister's daughters, (niece)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Your foster mothers who suckled you, your foster milk suckling sisters,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Mother-in-Law and Stepdaughter"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Daughter-in-Law"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Two sisters in wedlock at the same time."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Aunt and niece cannot be co-wives together."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "MARRIAGE IN ISLAM"
+            },
+            {
+              "kind": "heading",
+              "text": "RESTRICTIONS ON NUMBER OF WIVES"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:3) If you fear you might fail to give orphan women their ˹due˺ rights ˹if you were to marry them˺, then marry other women of your choice—two, three, or four. But if you are afraid you will fail to maintain justice, then ˹content yourselves with˺ one or those ˹bondwomen˺ in your possession. This way you are less likely to commit injustice."
+            },
+            {
+              "kind": "heading",
+              "text": "OBLIGATION OF DOWRY"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:4) Give women ˹you wed˺ their due dowries graciously. But if they waive some of it willingly, then you may enjoy it freely with a clear conscience."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION FROM MARRING THE WIFE OF ONE'S FATHER"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:22) Do not marry former wives of your fathers—except what was done previously. It was indeed a shameful, despicable, and evil practice."
+            },
+            {
+              "kind": "heading",
+              "text": "WOMEN THAT ARE PROHIBITED FOR MARRIAGE-\"MAHRAM\" RELATIONS"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:23) ˹Also˺ forbidden to you for marriage are your mothers, your daughters, your sisters, your paternal and maternal aunts, your brother’s daughters, your sister’s daughters, your foster-mothers, your foster-sisters, your mothers-in-law, your stepdaughters under your guardianship if you have consummated marriage with their mothers—but if you have not, then you can marry them—nor the wives of your own sons, nor two sisters together at the same time—except what was done previously. Surely Allah is All-Forgiving, Most Merciful."
+            },
+            {
+              "kind": "heading",
+              "text": "PROPERTY OF THE ORPHANS"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:2) Give orphans their wealth ˹when they reach maturity˺, and do not exchange your worthless possessions for their valuables, nor cheat them by mixing their wealth with your own. For this would indeed be a great sin."
+            },
+            {
+              "kind": "translation",
+              "text": "(4:10) Indeed, those who unjustly consume orphans’ wealth ˹in fact˺ consume nothing but fire into their bellies. And they will be burned in a blazing Hell!"
+            },
+            {
+              "kind": "heading",
+              "text": "INHERITANCE"
+            },
+            {
+              "kind": "heading",
+              "text": "LAWS OF INHERITANCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:7) For men there is a share in what their parents and close relatives leave, and for women there is a share in what their parents and close relatives leave—whether it is little or much. ˹These are˺ obligatory shares."
+            },
+            {
+              "kind": "heading",
+              "text": "PRESCRIBED SHARES IN INHERITANCE"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:11) Concerning your children, God commands you that a son should have the equivalent share of two daughters. If there are only daughters, two or more should share two-thirds of the inheritance, if one, she should have half. Parents inherit a sixth each if the deceased leaves children; if he leaves no children and his parents are his sole heirs, his mother has a third, unless he has brothers, in which case she has a sixth. [In all cases, the distribution comes] after payment of any bequests or debts. You cannot know which of your parents or your children is more beneficial to you: this is a law from God, and He is all knowing, all wise."
+            },
+            {
+              "kind": "heading",
+              "text": "INHERITANCE OF SPOUSE'S PROPERTY"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:12) You inherit half of what your wives leave, if they have no children; if they have children, you inherit a quarter. [In all cases, the distribution comes] after payment of any bequests or debts. If you have no children, your wives’ share is a quarter; if you have children, your wives get an eighth. [In all cases, the distribution comes] after payment of any bequests or debts. If a man or a woman dies leaving no children or parents,* but a single brother or sister, he or she should take one-sixth of the inheritance; if there are more siblings, they share one-third between them. [In all cases, the distribution comes] after payment of any bequests or debts, with no harm done to anyone: this is a commandment from God: God is all knowing and benign to all."
+            },
+            {
+              "kind": "heading",
+              "text": "COMMANDMENT TO ABIDE BY THE LIMIT OF ALLAH"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:13) These are the bounds set by God: God will admit those who obey Him and His Messenger to Gardens graced with flowing streams, and there they will stay– that is the supreme triumph!"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:14) But those who disobey God and His Messenger and overstep His limits will be consigned by God to the Fire, and there they will stay– a humiliating torment awaits them!"
+            },
+            {
+              "kind": "heading",
+              "text": "WOMEN’S RIGHTS"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:19) O believers! It is not permissible for you to inherit women against their will or mistreat them to make them return some of the dowry ˹as a ransom for divorce˺—unless they are found guilty of adultery. Treat them fairly. If you happen to dislike them, you may hate something which Allah turns into a great blessing."
+            },
+            {
+              "kind": "heading",
+              "text": "PROHIBITION FROM MARRING THE WIFE OF ONE'S FATHER (22)"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:22) Do not marry former wives of your fathers—except what was done previously. It was indeed a shameful, despicable, and evil practice."
+            },
+            {
+              "kind": "heading",
+              "text": "WOMEN THAT ARE PROHIBITED FOR MARRIAGE-\"MAHRAM\" RELATIONS (23)"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:23) ˹Also˺ forbidden to you for marriage are your mothers, your daughters, your sisters, your paternal and maternal aunts, your brother’s daughters, your sister’s daughters, your foster-mothers, your foster-sisters, your mothers-in-law, your stepdaughters under your guardianship if you have consummated marriage with their mothers—but if you have not, then you can marry them—nor the wives of your own sons, nor two sisters together at the same time—except what was done previously. Surely Allah is All-Forgiving, Most Merciful."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section 'PUNISHMENT FOR THOSE WHO DIVIDE MUSLIMS INTO SECTS (105-109)', translation line",
+      "description": "source ref typo: the ayah is labelled '(3:103)' but 3:103 was already quoted in the preceding section; the text ('do not be like those who split into sects') is 3:105. Kept verbatim with ref_as_written; captured as written, so 3:103 appears twice.",
+      "severity": "low"
+    },
+    {
+      "id": "a2",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "index entry '...SECTS (104-109)' vs body heading '...SECTS (105-109)'",
+      "description": "section-title index says '(104-109)' but the body heading says '(105-109)'; the 3:104 unit therefore sits under the preceding section title '(102-103)'. Title stored verbatim as written in the body.",
+      "severity": "low"
+    },
+    {
+      "id": "a3",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section heading 'MUSLIMS ARE THE BEST NATION ... (110-115'",
+      "description": "body section heading omits the closing parenthesis: '(110-115' instead of '(110-115)'. Kept verbatim.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "index entry vs body heading for section (146-148)",
+      "description": "index title 'PROPHETS AND THEIR FOLLOWERS AND SUPPLICATION OF THE BELIEVERS (146-148)' vs body heading 'SUPPLICATION OF THE BELIEVERS (146-148)'. Body title kept verbatim.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "index entry 'PUNISHMENT FOR THE NIGGARDLY (180)' vs body heading 'PUNISHMENT FOR THE STINGY/MISERLY (180)'",
+      "description": "index and body word the same section differently. Body title kept verbatim.",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section (152-153), translation '(3:152-3)'",
+      "description": "ref range written '152-3'; normalized as from_ayah=152, to_ayah=153 with ref_as_written note.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "sections '...DECISION... BE FIRM (159 )' and 'PUT YOUR TRUST IN ALLAH (160-161)'",
+      "description": "the (159) section heading is immediately followed by the (160-161) heading with no content between, so the (3:159) unit is captured under the (160-161) section. Author's structure preserved; empty (159) section is valid per draft.",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section (102-103), paragraph after the (3:102) translation",
+      "description": "dangling cross-reference line 'Also see ' with no target (source text truncated). Captured verbatim as commentary kind cross_ref.",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "sections (176-178) and (186)",
+      "description": "cross-surah translations '(9:85)' and '(2:155)' are re-quoted inside another section's commentary; they are captured as commentary kind 'quote', not as ayah units, so the coverage set stays within the CP range.",
+      "severity": "low"
+    },
+    {
+      "id": "a10",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section (121-129)",
+      "description": "section has no ayah units; its narrative prose (including a bold lead line 'These Ayat's are now describing the Battle of Uhud') becomes Section.intro, which is a list of plain strings and cannot mark the bold line. Draft gap: intro cannot carry commentary kinds.",
+      "severity": "low"
+    },
+    {
+      "id": "a11",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "recaps",
+      "description": "recap item kinds (heading|prose|translation|arabic|list_item) have no cross_ref/lesson/hadith kind, so 'Also see ...' lines inside 'MY KEY TAKEAWAYS' are stored as kind prose (draft gap).",
+      "severity": "low"
+    },
+    {
+      "id": "a12",
+      "file": "3 - Juz 4 - Nisa.docx",
+      "location": "section-title index (opening block)",
+      "description": "the index lists the WHOLE surah An-Nisa (titles for Ayat 1 through 176), but this juz chunk's body ends at 4:23. 47 listed titles (4:20-21 and 4:24-176) never re-head in the body; they stay in part.extras. Per FORMAT.md rule 10 an index-only title is an anomaly; grouped here. Note 4:20-21 are inside the CP range but never quoted (interior selection gap, not a boundary anomaly). The chunk-index-lists-whole-surah behaviour differs from the Imran file, whose index matches its chunk exactly.",
+      "severity": "low"
+    },
+    {
+      "id": "a13",
+      "file": "3 - Juz 4 - Nisa.docx",
+      "location": "front matter label 'Subject: Consolidation of the Islamic Community'",
+      "description": "front-matter label is 'Subject' (a variant of the documented 'Subject and Topics'); captured as label 'Subject' with the inline title text as the first line of the unit text.",
+      "severity": "low"
+    },
+    {
+      "id": "a14",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "section 'VIRTUOUS DEEDS WITHOUT FAITH IN ALLAH ARE WORTHLESS' in MY KEY TAKEAWAYS",
+      "description": "the recap's last heading has no following items (only blank paragraphs before 'Topics and their Interconnection'); format represents it as a heading item with nothing after it, which is valid but means a heading can end a recap.",
+      "severity": "low"
+    },
+    {
+      "id": "a15",
+      "file": "2 - Juz 3 Imran.docx",
+      "location": "SurahPart.extras (section-title index)",
+      "description": "part-level extras is used as a single object {note, stray_lines, section_index}; the draft only names it a 'lossless catch-all array', so its concrete shape is not fixed by v3 (draft gap).",
+      "severity": "low"
+    }
+  ]
+}

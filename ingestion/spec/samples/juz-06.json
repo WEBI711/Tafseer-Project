@@ -1,0 +1,1621 @@
+{
+  "juz": {
+    "number": 6,
+    "folder": "JUZ 6",
+    "arabic_header": "لَا يُحِبُّ ٱللهُ",
+    "arabic_header_translit": "Lā yuḥibbu-’llāhu",
+    "arabic_header_meaning": "\"God does not like\"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 6\nلَا يُحِبُّ ٱللهُ\nLā yuḥibbu-’llāhu\n\"God does not like\"\nSurah 4 – An- NISA \n(4:148 Till 4:176)\nSurah 5 – Al Ma’idah\n(5:1 till 5:82)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 4,
+        "name_en": "An- NISA",
+        "from_ayah": 148,
+        "to_ayah": 176
+      },
+      {
+        "surah_number": 5,
+        "name_en": "Al Ma’idah",
+        "from_ayah": 1,
+        "to_ayah": 82
+      }
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "check": "FORMAT.md §3",
+    "result": "fail",
+    "details": {
+      "captured_ayah_refs": {
+        "4": [
+          148,
+          157,
+          158,
+          165,
+          171,
+          173,
+          176
+        ],
+        "5": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          32,
+          35,
+          44,
+          49,
+          51,
+          54,
+          55,
+          56,
+          57,
+          58,
+          67,
+          69,
+          72,
+          73,
+          75
+        ]
+      },
+      "captured_outside_cp_range": [],
+      "boundary_mismatches": [
+        {
+          "surah": 5,
+          "cp": [
+            1,
+            82
+          ],
+          "first_captured": 1,
+          "last_captured": 75
+        }
+      ],
+      "parts_vs_cp_ranges": "part ranges equal CP ranges for both surahs (CP values used verbatim)",
+      "cp_surahs_all_have_parts": true,
+      "part_surahs_all_in_cp": true,
+      "note": "Surah 4 boundary OK: first captured 4:148 = CP from, last captured 4:176 = CP to. Surah 5 boundary FAILS: CP 'till 5:82' but the body's last unit is (5:75); 5:76-5:82 are never quoted, so the CP's closing boundary ayat are missing. Interior gaps (the author quotes only selected ayat) are NOT anomalies."
+    }
+  },
+  "parts": [
+    {
+      "surah_number": 4,
+      "name_en": "AN NISA (THE WOMEN)",
+      "from_ayah": 148,
+      "to_ayah": 176,
+      "continues_from_prev_juz": true,
+      "continues_in_next_juz": false,
+      "source_file": "2 - JUZ 6 NIsa.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 6",
+      "extras": [
+        {
+          "kind": "continuation_marker",
+          "text": "Cont."
+        },
+        {
+          "kind": "end_matter",
+          "text": "End of first Manzil"
+        },
+        {
+          "kind": "end_matter",
+          "text": "Group of Surahs:"
+        },
+        {
+          "kind": "end_matter",
+          "text": "Mecca: Surah Fatiha"
+        },
+        {
+          "kind": "end_matter",
+          "text": "Madani: Surah Al Bakarah + Al Imaran"
+        },
+        {
+          "kind": "end_matter",
+          "text": "Madani: Surah Nisa + Mayida"
+        }
+      ],
+      "front_matter": [],
+      "sections": [
+        {
+          "title": "SURAH 4 – AN NISA (THE WOMEN)",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "لَا يُحِبُّ اللّٰهُ الۡجَـهۡرَ بِالسُّوۡٓءِ مِنَ الۡقَوۡلِ اِلَّا مَنۡ ظُلِمَ​ؕ وَكَانَ اللّٰهُ سَمِيۡعًا عَلِيۡمًا‏"
+              ],
+              "translation": {
+                "ref": "(4:148)",
+                "text": "Allah does not like speaking evil publicly unless one has been wronged. Allah is All-Hearing, All-Knowing.",
+                "ref_surah": 4,
+                "from_ayah": 148,
+                "to_ayah": 148,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "A universal social and ethical principle is stated here. Allah SWT does not like the broadcasting or propagation of evil deeds, such as, spreading and exposing scandals, thus making it part of public discourse or casual conversation. This is because it has an effect of desensitizing individuals and societies. Or swearing, yelling, shouting in anger, mocking, arguing, insulting, backbiting etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "There is an expectation to this rule: Those who have been violated or wronged."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Words uttered especially bad/evil have a powerful effect – they are forever out in the universe. Allah SWT seals hearts because of our words and actions so be careful."
+                },
+                {
+                  "kind": "prose",
+                  "text": "*Beware of the (baad) dua of the one who has been wronged because it is a dua that is accepted by Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:157)",
+                "text": "and for boasting, “We killed the Messiah, Jesus, son of Mary, the messenger of Allah.” But they neither killed nor crucified him—it was only made to appear so. Even those who argue for this ˹crucifixion˺ are in doubt. They have no knowledge whatsoever—only making assumptions. They certainly did not kill him.",
+                "ref_surah": 4,
+                "from_ayah": 157,
+                "to_ayah": 157,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Here the Jews claim they had killed Jesus – (this statement was made in mockery). Allah SWT clarifies that Jesus was neither killed nor crucified instead it was made to appear that way to them. Ibn Kathir says that a young volunteer was made to appear (resemble) as Jesus and Jesus was raised to the heavens. This whole situation was made to appear confusing, so both the Jews and the Christians were in doubt as to what happened. All their knowledge is based on conjecture and not truth."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“Even those who argue for this ˹crucifixion˺ are in doubt,” refers to the Christians. The Christians have dozens of different versions, rather than one universally agreed view, regarding the crucifixion of the Messiah. This in itself is an eloquent testimony that the Christians were doubtful about the actual event. (i) Some hold the view that the one who was crucified was someone other than Jesus. (ii) Others are of the opinion that the one who was crucified was certainly Jesus himself, but that he did not die on the cross and was still alive when brought down from it. (iii) Yet others believe that after his death the Messiah was resurrected physically and was subsequently taken up to heaven in physical form."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Had the truth been fully known and well-established so many divergent views could not have gained currency."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat concludes with certainty – “They certainly did not kill him.”"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Human conjecture and divine truth can be very different and contradictory at times."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:158)",
+                "text": "Rather, Allah raised him up to Himself. And Allah is Almighty, All-Wise.",
+                "ref_surah": 4,
+                "from_ayah": 158,
+                "to_ayah": 158,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat categorically states that Jesus was raised up to Allah SWT before he could be crucified, and that the belief of both the Jews and the Christians that Jesus died on the cross is based on a misconception."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Have correct Iman/faith. Do not make additions or subtractions in religion based on heresy."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Life lesson: Do not make assumptions. If we don’t know something don’t judge or make suppositions as they are most likely false."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:165)",
+                "text": "˹All were˺ messengers delivering good news and warnings so humanity should have no excuse before Allah after ˹the coming of˺ the messengers. And Allah is Almighty, All-Wise.",
+                "ref_surah": 4,
+                "from_ayah": 165,
+                "to_ayah": 165,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It is being emphasized that the essential function of all the Prophets was the same: (i) To announce good tidings of salvation to those who believe in the teachings revealed by God and mend their conduct accordingly, (ii) and To warn those who persist in false beliefs and evil ways that they will have to face dire consequences."
+                },
+                {
+                  "kind": "prose",
+                  "text": "God's purpose in sending the Prophets was to establish His plea against mankind. God did not want criminals to have any basis on which to plead that their actions were done in ignorance. Prophets were therefore sent to all parts of the world, and many Scriptures were revealed. These Prophets communicated knowledge of the Truth to large sections of people, and left behind Scriptures which have guided human beings in all ages. If anyone falls a prey to error, in spite of all this, the blame does not lie with God or the Prophets. The blame lies rather with those who have spurned God's message even after having received it, and with those who knew the Truth but failed to enlighten others."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: Similarly, the purpose of stories in the Quran is not entertainment rather it is an example to either follow or avoid."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Life is but a test. We have all the answers via our Prophets and Allah SWT’s Scriptures. This test has been made very simple. It is our actions and intentions that determine whether we pass or fail. Therefore, seeking knowledge is an obligation. There should be no disconnect between Actions عمل and Knowledge علم."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Twenty-Five Prophets Are Mentioned in the Quran."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Adam,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Idris,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Nuh (Noah),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Hud,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Salih,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ibrahim (Abraham),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Lut,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ismail (Ishmael),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ishaq (Isaac),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Yaqub (Jacob),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Yusuf (Joseph),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ayub (Job),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Shu`ayb,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Musa (Moses),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Yunus (Jonah),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Harun (Aaron),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Dawud (David),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Suleiman (Solomon),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Ilyas (Elias),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Al-Yasa (Elisha),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Zakariyya (Zachariya),"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Yahya (John) and"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Isa (Jesus), and their leader,"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Muhammad."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Several scholars of Tafsir also listed Dhul-Kifl among the Prophets."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI: There are other Prophets whom Allah SWT did not mention in the Quran."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:171)",
+                "text": "People of the Book! Do not exceed the limits in your religion, and attribute to Allah nothing except the truth. The Messiah, Jesus, son of Mary, was only a Messenger of Allah, and His command that He conveyed unto Mary, and a spirit from Him (which led to Mary's conception). So, believe in Allah and in His Messengers, and do not say: (Allah is a) trinity. Give up this assertion; it would be better for you. Allah is indeed just one God. Far be it from His glory that He should have a son. To Him belongs all that is in the heavens and in the earth. Allah is sufficient for a guardian.",
+                "ref_surah": 4,
+                "from_ayah": 171,
+                "to_ayah": 171,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Islam is all about moderation. A balancing act between the various roles and responsibilities we have been given i.e. mother, wife, sister etc. Therefore, we should not get obsessed with just one thing in deen, i.e. appearance, clothing, food etc. The face of religion then changes or morphs into something totally different."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is what happened with the Christians. They exceeded in their love for Jesus."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Jesus is a Messenger of Allah SWT and a human. Maryam gave birth by just the word “Be” from Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT categorically and clearly says: STOP the trinity!!  That is do not commit shirk!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT is Perfect and Alone -- and far above the allegation, neediness or deficiency of having a son."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Lecture by Zakir Naik: https://youtu.be/N4dtBFbdhxg"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:173)",
+                "text": "As for those who believe and do good, He will reward them in full and increase them out of His grace. But those who are too proud and arrogant, He will subject them to a painful punishment. And besides Allah they will find no protector or helper.",
+                "ref_surah": 4,
+                "from_ayah": 173,
+                "to_ayah": 173,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "PRIDE + ARROGANCE = FAILURE"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(4:176)",
+                "text": "They ask you ˹for a ruling, O Prophet˺. Say, “Allah gives you a ruling regarding those who die without children or parents.” If a man dies childless and leaves behind a sister, she will inherit one-half of his estate, whereas her brother will inherit all of her estate if she dies childless. If this person leaves behind two sisters, they together will inherit two-thirds of the estate. But if the deceased leaves male and female siblings, a male’s share will be equal to that of two females. Allah makes ˹this˺ clear to you so you do not go astray. And Allah has ˹perfect˺ knowledge of all things.",
+                "ref_surah": 4,
+                "from_ayah": 176,
+                "to_ayah": 176,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see Ayat 12)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Inheritance regarding a Kalala needed further clarification from people so Allah SWT sent this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": ""
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Surah is also called the Surah of Justice. Justice in society can only be established when there is justice within one’s homes. Thus, family law is mentioned in great detail."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Do not persist in sin by altering Allah SWT’s deen or commit injustice (that is not giving someone their due rights). Allah SWT makes easy for man whatever he/she chooses and He can change your heart/direction depending on your own desire."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Pray for (i) Iman and (ii) to stay away from ever committing zulm (injustice)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "ALLAH SWT DOES NOT LIKE THE BROADCASTING OR PROPAGATION OF EVIL DEEDS"
+            },
+            {
+              "kind": "arabic",
+              "text": "لَا يُحِبُّ اللّٰهُ الۡجَـهۡرَ بِالسُّوۡٓءِ مِنَ الۡقَوۡلِ اِلَّا مَنۡ ظُلِمَ​ؕ وَكَانَ اللّٰهُ سَمِيۡعًا عَلِيۡمًا‏"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:148) Allah does not like speaking evil publicly unless one has been wronged. Allah is All-Hearing, All-Knowing."
+            },
+            {
+              "kind": "prose",
+              "text": "A universal social and ethical principle is stated here. Allah SWT does not like the broadcasting or propagation of evil deeds, such as, spreading and exposing scandals, thus making it part of public discourse or casual conversation. This is because it has an effect of desensitizing individuals and societies. Or swearing, yelling, shouting in anger, mocking, arguing, insulting, backbiting etc."
+            },
+            {
+              "kind": "prose",
+              "text": "There is an expectation to this rule: Those who have been violated or wronged."
+            },
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF SUCCESS & DEFINITION OF FAILURE"
+            },
+            {
+              "kind": "translation",
+              "text": "(4:173) As for those who believe and do good, He will reward them in full and increase them out of His grace. But those who are too proud and arrogant, He will subject them to a painful punishment. And besides Allah they will find no protector or helper."
+            },
+            {
+              "kind": "prose",
+              "text": "IMAN + GOOD DEEDS = SUCCESS"
+            },
+            {
+              "kind": "prose",
+              "text": "PRIDE + ARROGANCE = FAILURE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 5,
+      "name_en": "AL MA’IDAH (THE TABLE SPREAD)",
+      "from_ayah": 1,
+      "to_ayah": 82,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Juz 6 - Al Maidah .docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 6",
+      "extras": [
+        {
+          "kind": "section_title_index_header",
+          "text": "Introduction to sections:"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "FULFIL YOUR OBLIGATIONS, PROMISES AND AGREEMENTS AND COOPERATE IN PIETY AND NOT IN TRANSGRESSION (1-2)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "HARAM-(FORBIDDEN) MEAT AND ISLAM IS DECLARED TO BE THE COMPLETE AND PERFECT DEEN (WAY OF LIFE) (3)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ALL GOOD AND CLEAN THINGS ARE MADE LAWFUL AND FOOD OF THE PEOPLE OF THE BOOK IS MADE LAWFUL AND MARRIAGE WITH THEIR WOMEN IS PERMITTED (4-5)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ORDER FOR MAKING WUDHU (ABLUTION) AND PERMISSION OF TAYAMMUM (6)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "STAND FOR TRUE WITNESS AND ESTABLISH JUSTICE AND PLOT OF JEWS TO KILL THE PROPHET AND HIS EMINENT COMPANIONS (7-11)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "SALAH AND ZAKAH WERE OBLIGATORY FOR JEWS AND JEWS HABIT OF BEING DECEITFUL (12-13)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "CHRISTIANS TOO HAVE NEGLECTED MOST OF THEIR BOOK AND JEWS AND CHRISTIANS ARE ASKED TO BECOME MUSLIMS (14-16)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "JESUS SON OF MARY IS NOT GOD OR SON OF GOD (17)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "FALSE CLAIM OF JEWS AND CHRISTIANS TO BE THE CHILDREN OF GOD AND INVITATION TO JEWS AND CHRISTIANS TO BECOME MUSLIMS (18-19)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "BEHAVIOR OF JEWS WITH THEIR OWN PROPHET MUSA (MOSES) AND CURSE OF ALLAH ON THE JEWS FOR 40 YEARS (20-26)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "STORY OF ADAM'S TWO SONS (ABEL AND CAIN) (27-31)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DECREE OF ALLAH REGARDING THE KILLING OF A HUMAN BEING (32)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PUNISHMENT OF WAGING WAR AGAINST ALLAH AND HIS RASOOL (33-34)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "JIHAD IS THE WAY TO SUCCESS AND NO RANSOM WILL SAVE THE UNBELIEVERS FROM THE PUNISHMENT (35-37)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PUNISHMENT FOR THEFT (38-40)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT PROVIDE LIP-SERVICE; BE TRUE BELIEVERS AND IF ALLAH INTENDS TO PUNISH, THE RASOOL CANNOT SAVE (41-43)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "LAWS OF TAURAT (TORAH) AND THOSE WHO DO NOT JUDGE BY THE LAWS OF ALLAH, THEY ARE UNBELIEVERS, THEY ARE WRONGDOERS (44-45)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THEY ARE TRANSGRESSORS (46-47)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DIVERSITY OF HUMAN RACE AND ESTABLISH JUSTICE BASED ON ALLAH'S REVELATIONS (48-50)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT TAKE JEWS OR CHRISTIANS AS YOUR PROTECTORS (51-53)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "YOUR PROTECTING FRIENDS ARE ALLAH, HIS RASOOL, AND YOUR FELLOW BELIEVERS (54-56)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT BEFRIEND THOSE PEOPLE WHO MAKE A MOCKERY OF YOUR RELIGION (57-60)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "JEWS DECEIVING BEHAVIOR AND JEWS SLANDER AGAINST ALLAH AND IF ONLY THE PEOPLE OF THE BOOK HAD BELIEVED, THEY COULD HAVE HAD THE BEST OF THE BOTH WORLDS (61-66)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "RASOOL'S MISSION IS TO DELIVER ALLAH'S MESSAGE (67-69)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "ATTITUDE OF JEWS TOWARDS RASOOLS (70-71)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "THOSE WHO SAY JESUS IS GOD ARE DISBELIEVERS (72-74)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "WHO WAS JESUS SON OF MARY? (75-77)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DISBELIEVERS AMONG THE CHILDREN OF ISRAEL WERE CURSED BY THE TONGUES OF DAVID AND JESUS AND CHRISTIANS ARE CLOSER TO MUSLIMS THAN THE JEWS AND PAGANS (78-82)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "GOOD CHRISTIANS RECOGNIZE THE TRUTH AND BECOME MUSLIMS (83-86)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT MAKE HALAL THINGS HARAM ON YOUR OWN AND KAFFARAH (PENALTY) FOR BREAKING THE OATH (87-89)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PROHIBITION OF INTOXICANTS (LIQUOR AND DRUGS) AND GAMBLING AND RASOOL'S DUTY IS ONLY TO PASS ON THE MESSAGE OF ALLAH (90-93)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "PROHIBITION OF HUNTING DURING HAJJ IHRAM (WEARING PILGRIM GARB) AND KAFFARAH (PENALTY) FOR HUNTING DURING HAJJ IHRAM (94-96)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "SACRED ELEMENTS OF HAJJ (97-100)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "DO NOT ASK QUESTIONS LIKE THE NATION OF MUSA (MOSES) AND SUPERSTITIONS ARE PROHIBITED IN ISLAM (101-104)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "LAST WILL AND TESTAMENT, AND TESTIMONY OF WITNESSES (105-108)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "FAVORS OF ALLAH UPON JESUS AND THE MIRACLES HE WAS GIVEN AND DISCIPLES OF JESUS ASKED FOR A TABLE SPREAD OF FOOD AS A MIRACLE (109-115)"
+        },
+        {
+          "kind": "section_title_index",
+          "text": "TESTIMONY OF JESUS ON THE DAY OF JUDGEMENT ABOUT THE CHRISTIANS (116-120)"
+        }
+      ],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah takes its' name “mai'dah” from Ayat 112.\nSurah also called, The Halal and The Haram. Nothing has been abrogated in this Surah.",
+          "items": null
+        },
+        {
+          "label": "Period of Revelation",
+          "text": "Revealed after the treaty of Hudaibiyah at the end of 6 A. H. or in the beginning of 7 A. H. That is why it deals with those problems that arose from this treaty.",
+          "items": null
+        },
+        {
+          "label": "Subject and Topics",
+          "text": "Consolidation of the Islamic Community\nIn continuation of Surah An-Nisa, the Muslims have been directed to observe and fulfill all their obligations, their rulers to guard against the corruption of power and to observe the Covenant of the Quran. Learn lessons from the failings of their predecessors.\nCommandments and instructions about the religious, cultural and political life of the Muslims\nDefinite rules and regulations have been laid down for what is lawful and unlawful in the matter of food, and self-imposed restrictions of the pre-Islamic age have been abolished. Permission has been given to take food with the people of the Book and to marry their women. Rules and regulations for the performance of Wudu (ablutions) and bath and purification and ablutions with dust or Tayammum have been prescribed. Punishment for rebellion, disturbance of peace and theft have been specified. Drinking and gambling have absolutely been made unlawful. Expiation for the breaking of oath has been laid down and a few more things have been added to the law of evidence.\nBeginning of the second Manzil.\nLast Surah of the Group of Maki and Madani Surahs. (i) Surah Fatiha – Maki (ii) Surah Baqara and Imran – Madani Group 1 (iii) Surah Nisa and Maidah Group 2.",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "1-2 FULFIL YOUR OBLIGATIONS, PROMISES AND AGREEMENTS AND COOPERATE IN PIETY AND NOT IN TRANSGRESSION",
+          "ord": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:1)",
+                "text": "You who believe, fulfil your obligations.  Livestock animals are lawful as food for you, with the exception of what is about to be announced to you. You are forbidden to kill game while you are on pilgrimage––God commands what He will,",
+                "ref_surah": 5,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see Ayat 7)"
+                },
+                {
+                  "kind": "heading",
+                  "text": "COMMANDS:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Abide by and fulfill all written & social contracts and promises."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Halal to eat all four-legged grazing, domesticated animals, such as, goats, cows, camels, sheep, ox, etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(This implies that the flesh of those animals which have canine teeth and are carnivorous is not permissible.)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Exceptions (haram foods) have already been mentioned is Surah Baqara Ayat 173, that is, dead animals, blood, pig, anything which was sacrificed for other than Allah SWT."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "There are many restrictions that one must observe while on pilgrimage. These restrictions also extend to both killing and hunting, and to leading anyone else to either kill or hunt an animal."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT has absolute authority to issue whatever command He might will. His creatures do not have the right to complain about any of these orders. Even though wisdom (hikmah) underlies the ordinances of God, a true believer does not obey them because he considers them either appropriate or conducive to his best interests. He obeys them simply because they are the ordinances of his Lord."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "3 HARAM-(FORBIDDEN) MEAT AND ISLAM IS DECLARED TO BE THE COMPLETE AND PERFECT DEEN (WAY OF LIFE)",
+          "ord": 2,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:3)",
+                "text": "Forbidden to you are (i) carrion, (ii) blood, (iii) the flesh of swine, (iv) the animal slaughtered in any name other than Allah's, (v) the animal which has either been strangled, killed by blows, has died of a fall, by goring or that devoured by a beast of prey - unless it be that which you yourselves might have slaughtered while it was still alive - and that which was slaughtered at the altars. – (vi) You are also forbidden to seek knowledge of your fate by divining arrows. All these are sinful acts. This day the unbelievers have fully despaired of your religion. Do not fear them; but fear Me. This day I have perfected for you your religion, and have bestowed upon you My bounty in full measure, and have been pleased to assign for you Islam as your religion. (Follow, then, the lawful and unlawful bounds enjoined upon you.) As for he who is driven by hunger, without being wilfully inclined to sin, surely Allah is All-Forgiving, All-Compassionate.",
+                "ref_surah": 5,
+                "from_ayah": 3,
+                "to_ayah": 3,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMANDS:"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Animals that are Unlawful or Forbidden to Eat."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Al-Maytah (dead animals)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids consuming an animal that dies before being properly slaughtered or hunted. So an animal that has died from strangulation, forceful blows, death by a fall, killed by another animal and that animal that has been slaughtered at the altar are all forbidden to eat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat makes it clear that the flesh of an animal becomes lawful only by slaughtering ritually, and that no other method of killing is valid. The words dhabh and dhakah belong to the technical terminology of Islam and denote slitting the throat so that the blood is completely drained from the animal's body. The disadvantage of killing an animal by either guillotine or strangulation/electrocution is that the greater part of the blood remains within the body, and at various places it sticks to the flesh and forms congealed lumps. If an animal is slaughtered by slitting the throat the blood is thoroughly drained out from all the veins and the flesh becomes fully cleansed of blood. We have just come across the injunction prohibiting the eating of blood. So only that flesh which has been purged of blood is declared lawful."
+                },
+                {
+                  "kind": "heading",
+                  "text": "Additionally, Allah SWT’s name must be mentioned at the time of slaughter."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Blood: Flowing blood"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Swine: Flesh, fat and or any part of a pig."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "And that which has been slaughtered as a sacrifice for other than Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Therefore, the animals on which a name other than Allah SWT was mentioned upon slaughtering is impermissible, because Allah SWT made it necessary to mention His Glorious Name upon slaughtering the animals, which He created."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The Prohibition of using any form of superstitious divination for decision-making, such as, fortune tellers, astronomy, etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "All these practices constitute disobedience, sin, misguidance, ignorance and, above all, Shirk. Allah SWT has commanded His believers to seek decisions from Him when they want to do something, by first worshipping Him and then asking Him for the best outcome concerning the matter they seek.\nThe Prophet (PBUH) taught us how to make Istikharah (asking Allah to guide one to the right action), in all matters."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Games of chance are also prohibited."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This includes all those transactions in which what one receives depends on chance and other purely accidental factors rather than payment or recompense for services rendered. This applies, for instance, to lotteries where the holder of an arbitrarily-drawn number receives a huge amount of money which has been obtained from thousands of other people."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI - Allah SWT has made the trade of alcohol, dead animals, pigs and idols illegal."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The 'perfection of religion' mentioned in this Ayat refers to Islam being a holistic and complete system that"
+                },
+                {
+                  "kind": "prose",
+                  "text": "contains all necessary guidance for mankind so that in no circumstances would one need to look for guidance to any extraneous source. \nThe bounty referred to in the statement: 'I have bestowed upon you My bounty in full measure', is the bounty of true guidance that is Islam."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "4-5 ALL GOOD AND CLEAN THINGS ARE MADE LAWFUL AND FOOD OF THE PEOPLE OF THE BOOK IS MADE LAWFUL AND MARRIAGE WITH THEIR WOMEN IS PERMITTED",
+          "ord": 3,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:4)",
+                "text": "They ask you, Prophet, what is lawful for them. Say, ‘All good things are lawful for you.’ [This includes] what you have taught your birds and beasts of prey to catch, teaching them as God has taught you, so eat what they catch for you, but first pronounce God’s name over it. Be mindful of God: He is swift to take account.",
+                "ref_surah": 5,
+                "from_ayah": 4,
+                "to_ayah": 4,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "There is a certain subtlety in how the question asked above is answered. Religious- minded people often fall into a prohibitionist mentality by tending to regard as unlawful everything not expressly declared as lawful. This makes them excessively fastidious and over-suspicious, and inclined to ask for a complete list of all that is lawful and permitted. The Quran's response to this question seems to be aimed, in the first place, at the reform of this mentality. The questioners want a list of what is lawful so they can treat everything else as prohibited, but the Quran provides them with a list of what is prohibited and then leaves them with the guiding principle that all 'clean things' are lawful. This means a complete reversal of the old religious outlook according to which everything that has not been declared lawful is considered prohibited. This liberated us from many unnecessary constraints. Henceforth, except for a few prohibitions, the lawful realm embraced virtually everything."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:5)",
+                "text": "This day all good things have been made lawful to you. The food of the People of the Book is permitted to you, and your food is permitted to them. And permitted to you are chaste women, be they either from among the believers or from among those who have received the Book before you, provided you become their protectors in wedlock after paying them their bridal-due, rather than go around committing fornication and taking them as secret-companions. The work of he who refuses to follow the way of faith will go waste, and he will be among the utter losers in the Hereafter.",
+                "ref_surah": 5,
+                "from_ayah": 5,
+                "to_ayah": 5,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMANDS:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "The food of the People of the Book includes the animals slaughtered by them – keeping in mind they too observe purity and cleanliness i.e. kosher food."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Muslims men may marry only Christians and Jews women, and of them only those who have been characterized as muhsanat (i.e. 'well-protected women')."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Thus, purity and cleanliness, halal and haram, in all aspects of life is a central or core theme in Islam."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "6 ORDER FOR MAKING WUDHU (ABLUTION) AND PERMISSION OF TAYAMMUM",
+          "ord": 4,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:6)",
+                "text": "Believers! When you stand up for Prayer (i) wash your faces and (ii) your hands up to the elbows, and (iii) wipe your heads, and (iv) wash your feet up to the ankles. And if you are in the state of ritual impurity, purify yourselves (by taking a bath). But if you are either ill, travelling, have satisfied a want of nature or have had contact with women and find no water then have recourse to clean earth and wipe your faces and your hands therewith. Allah does not want to lay any hardship upon you; rather He wants to purify you and complete His favours upon you so that you may give thanks.",
+                "ref_surah": 5,
+                "from_ayah": 6,
+                "to_ayah": 6,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMANDS:"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Order to Perform Wudu as a requirement to make salah"
+                },
+                {
+                  "kind": "prose",
+                  "text": "And the need to maintain the correct order."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Janabah (the state of major ritual impurity) - whether caused by the sexual act or merely by seminal discharge - renders it unlawful to perform the ritual Prayer and to touch the Quran for further details see Surah 4 Ayat 67-9."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Tayammum, that is making wudu with clean earth, is allowed but only in certain situations."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: When any of you performs Wudu properly and says, `I bear witness that there is no deity worthy of worship except Allah and that Muhammad is His servant and Messenger', the eight doors of Paradise will be opened for him so that he can enter from any door he wishes.\""
+                },
+                {
+                  "kind": "prose",
+                  "text": "https://myislam.org/how-to-do-wudu/"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "7-11 STAND FOR TRUE WITNESS AND ESTABLISH JUSTICE AND PLOT OF JEWS TO KILL THE PROPHET AND HIS EMINENT COMPANIONS",
+          "ord": 5,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:8)",
+                "text": "Believers! Be upright bearers of witness for Allah, and do not let the enmity of any people move you to deviate from justice. Act justly, that is nearer to God-fearing. And fear Allah. Surely Allah is well aware of what you do.",
+                "ref_surah": 5,
+                "from_ayah": 8,
+                "to_ayah": 8,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah 4 Ayat 135"
+                },
+                {
+                  "kind": "heading",
+                  "text": "COMMANDS:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Ayat commands: Do not let amenity or hatred for some people stop you from observing justice with them. Rather, be fair with every one, whether a friend or an enemy."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah 4 Ayat 135 calls for not being biased, regarding justice and fairness, when you are close with someone whereas here the opposite is mentioned."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The point is right is right – no matter who, what or where."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:9)",
+                "text": "Allah has promised those who believe and do righteous deeds forgiveness from sins and a great reward.",
+                "ref_surah": 5,
+                "from_ayah": 9,
+                "to_ayah": 9,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS/PARADISE"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:10)",
+                "text": "As for those who disbelieve and give the lie to Our signs, they are destined for the Blazing Flame.",
+                "ref_surah": 5,
+                "from_ayah": 10,
+                "to_ayah": 10,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "20-26 BEHAVIOR OF JEWS WITH THEIR OWN PROPHET MUSA (MOSES) AND CURSE OF ALLAH ON THE JEWS FOR 40 YEARS",
+          "ord": 6,
+          "intro": [
+            "The purpose of referring to this event becomes clear if we reflect upon the context. It seems to be to bring home to the Israelites that the punishment to which they would be subjected if they adopted a rebellious attitude towards Prophet Muhammad (PBUH) would be even more severe than the one to which they had been subjected in the time of Prophet Musa (PBUH).",
+            "Lesson: Don’t disregard Allah SWT commandments. One can get a glimpse of one’s ultimate fate depending on how Allah SWT treats us in this world. When we call upon Allah SWT does He respond. When we do something bad do we feel guilt and sadness and at times are there repercussions etc. So always reflect on why things are happening to you. Be tough on yourself. Reflect and question.",
+            "One’s spiritual condition now is how we will be physically later. (possibly)",
+            "Remember good opportunities are only provided a few times in life so grab that opportunity to do good, or learn etc."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "STORY OF ADAM'S TWO SONS (ABEL AND CAIN)",
+          "ord": 7,
+          "intro": [
+            "Allah SWT describes the consequence of envy/jealousy and injustice in the story of the two sons of Adam, Habil (Abel) and Qabil (Cain) where one brother killed the other. This was the first murder ever committed."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "DECREE OF ALLAH REGARDING THE KILLING OF A HUMAN BEING",
+          "ord": 8,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:32)",
+                "text": "That is why We ordained for the Children of Israel that whoever takes a life—unless as a punishment for murder or mischief in the land—it will be as if they killed all of humanity; and whoever saves a life, it will be as if they saved all of humanity. ˹Although˺ Our messengers already came to them with clear proofs, many of them still transgressed afterwards through the land.",
+                "ref_surah": 5,
+                "from_ayah": 32,
+                "to_ayah": 32,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "ISLAMIC LAW: Punishment for murder of an innocent person is life for a life. This was the first act of violence but the root cause is still basically the same today."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Two reasons that justify killing (i) Law of Qisas (ii) If someone is committing corruption/violence i.e. bombings, shootings, creating chaos and spreading terror, killing innocents etc."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says to murder one person is like you have killed the entire humankind. Similarly saving one life is like you have saved all of humankind. Thus, we are informed about the sanctity and sacredness of life. Murder is a very serious crime."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: A Muslim is someone from whose hands and tongue others are safe."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "33 – 34 PUNISHMENT OF WAGING WAR AGAINST ALLAH AND HIS RASOOL",
+          "ord": 9,
+          "intro": [
+            "This is only and can be only enforced in an Islamic State where Islamic Law (Shariah) is employed. The expression 'to wage war against Allah and His Messenger' denotes war against the righteous order established by the Islamic state. A state where peace, security and humanity prevail.",
+            "The real purpose is not the punishment rather it is to indicate that for any of those who live in the Islamic realm to attempt to overthrow the Islamic order is the worst kind of crime, for which any of the highly severe punishments may be imposed."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "35 - 37 JIHAD IS THE WAY TO SUCCESS AND NO RANSOM WILL SAVE THE UNBELIEVERS FROM THE PUNISHMENT",
+          "ord": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:35)",
+                "text": "O believers! Be mindful of Allah and seek what brings you closer to Him and struggle in His Way, so you may be successful.",
+                "ref_surah": 5,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "FORMULA FOR SUCCESS: Allah SWT is commanding us to (i) Taqwa + (ii) Wasilah, + and (iii) Jihad."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To have taqwa of Allah SWT means to have fear Him and be mindful and steer clear of the things that have been prohibited. (Here by default, we find a negative or defensive connotation meaning stay away from Allah SWT’s probations, His anger, sin, disobedience, etc.)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Then come closer to Him. Wasilah means to come close/r to Allah SWT, not just by avoiding what is prohibited rather by pro-actively seeking ways to find Allah SWT’s ‘qurb’ from qareeb. This can be done by performing our basic obligatory deeds such as, salah, reading and reciting the Quran, fasting, as well as doing zikr, good company, giving charity, etc."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Wasilah has been wrongly interpreted to mean get a Sheikh, Pir or someone who will bring you closer."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Urdu wasilah means a path or way towards something whereas in Arabic is means close."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "How to you come close to Allah SWT. By striving hard and struggling in His way. The English imperative 'strive hard' or ‘jihad’ does not do full justice to the actual word used in the Quran: jahidu. This Ayat directs the believer to engage in a ceaseless, multifrontal struggle, that is, from the accursed Satan, man’s own animalistic spirit that is defiant and unruly in its desires, the false religious/innovations, cultural and social systems, etc."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Our goal in life should be to attain the pleasure of Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "38 – 40 PUNISHMENT FOR THEFT",
+          "ord": 11,
+          "intro": [
+            "Reason: This was revealed about Tu‘mah ibn Ubayriq who stole an armour.",
+            "COMMAND",
+            "The Necessity of Cutting off the Hand of the Thief\nAllah SWT commands and decrees that the hand of the thief, whether male or female be cut off. Thus, create a system where there is no need from the fear of theft because the punishment is so full of wisdom to take lesson from or learn from. (ibrat). When guilt has been established then one punishment will serve as the best deterrence as it will leave hundreds of thousands in awe and fear.",
+            "The general opinion is that only one hand should be cut off for the first theft. the founders of the schools of Islamic Law exempted certain things from the application of this penal injunction The majority of scholars hold the opinion that petty thefts are exempt from this punishment, other exceptions include but are not limited to giving the thief the benefit of doubt.",
+            "Lesson: Usually the punishment fits the crime i.e. for murder is murder, for zina which is pleasure of the body lashes to the body are prescribed. For theft the hands are cut off."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "41 – 43 DO NOT PROVIDE LIP-SERVICE; BE TRUE BELIEVERS AND IF ALLAH INTENDS TO PUNISH, THE RASOOL CANNOT SAVE",
+          "ord": 12,
+          "intro": [],
+          "ayah_units": []
+        },
+        {
+          "title": "44 – 45 LAWS OF TAURAT (TORAH) AND THOSE WHO DO NOT JUDGE BY THE LAWS OF ALLAH, THEY ARE UNBELIEVERS, THEY ARE WRONGDOERS",
+          "ord": 13,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:44)",
+                "text": "Indeed, We revealed the Torah, containing guidance and light, by which the prophets, who submitted themselves to Allah, made judgments for Jews. So too did the rabbis and scholars judge according to Allah’s Book, with which they were entrusted and of which they were made keepers. So do not fear the people; fear Me! Nor trade my revelations for a fleeting gain. And those who do not judge by what Allah has revealed are ˹truly˺ the disbelievers.",
+                "ref_surah": 5,
+                "from_ayah": 44,
+                "to_ayah": 44,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The particular case referred to here was that of a woman belonging to a respectable family, who was found to be involved in an unlawful sexual relationship with a man. The punishment for this in the Torah was that both parties be stoned to death (see Deuteronomy 22: 23-4). But the Jews did not want to enforce this punishment. Hence, they deliberated among themselves and decided to put the case before the Prophet (PBUH), with the reservation that his judgement be accepted only if it was other than stoning."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet (PBUH) decided that the punishment should, in fact, be stoning. When the Jews declined to accept the judgement, the Prophet (PBUH) asked their rabbis what punishment had been prescribed for such a case in their religion. They replied that it was to strike the culprit with lashes, to blacken their face and to make them ride on a donkey. The Prophet (PBUH) asked them under oath if the Torah had indeed prescribed that as punishment for adultery committed by married men and women. They repeated the same false reply. However, one of them called Ibn Sawriya who, according to the Jews themselves, was the greatest living scholar of the Torah at that time, kept silent. The Prophet (PBUH) asked him to state on oath in the name of God, Who had emancipated them from Pharaoh and had given them the Law, whether the punishment for adultery provided for in the Torah was what they had mentioned. He replied: 'Had you not put me under such a heavy oath, I would not have volunteered the correct information. The fact is that the prescribed punishment for adultery is indeed stoning, but when adultery became common among us our rulers adopted the rule that when respectable people committed adultery, they were left unpunished, whereas when ordinary people were convicted, they were punished by stoning. Later on, when this caused resentment among the common people, we altered the law of the Torah and adopted the rule that adulterers and adulteresses would be lashed, their faces would be blackened, and they would be made to ride on donkeys, seated in a backward-looking position.' This left the Jews with nothing to say and the adulterer and adulteress were, in accordance with the order of the Prophet (peace be on him), stoned to death. (Ibn Kathir, Tafsir, vol. 3, pp. 574-5 - Ed.)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here a pointed reference is made to judges, scholars and jurisconsults who accept false evidence and invent reports in order to issue verdicts contrary to justice and in favor of either those who bribe them or with whom their illegitimate interests lie."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Jews were not full-fledged subjects of the Islamic state. They were not legally bound to place their disputes either before the Prophet (PBUH) for adjudication or before the judges appointed by him. But in cases where it appeared against their interests to have their disputes judged according to their own religious law they approached the Prophet (PBUH) in the hope that the Prophet might have a different ruling."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Reflect: are we following Allah SWT’s laws or finding ways around it."
+                },
+                {
+                  "kind": "prose",
+                  "text": "A hypocrite or Muafiq looks for convivence while a Believer will sacrifice."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "46 - 47 THEY ARE TRANSGRESSORS",
+          "ord": 14,
+          "intro": [
+            "Allah SWT sent the Torah, Injil/Gospel and the Quran (among Allah SWT’s scriptures) for guidance -- with the Quran being the last and final word. Those who, in disregard of God's commandments and Laws and pronounce judgements according to man-made laws are guilty of three major offences. Firstly, rejecting the commandments of God is equivalent to kufr (infidelity, unbelief). Second, his act is contrary to justice, for only the laws made by God are in complete accord with the dictates of justice. Any judgement in breach of God's injunctions amounts, therefore, to committing injustice (zulm). Third, when he enforces either his own or anyone else's law in disregard of the Laws of his Lord he steps out of the fold of subjection and obedience, and this constitutes fisq (transgression)."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "48 – 50 ESTABLISH JUSTICE BASED ON ALLAH'S REVELATIONS",
+          "ord": 15,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:49)",
+                "text": "And judge between them ˹O Prophet˺ by what Allah has revealed, and do not follow their desires. And beware, so they do not lure you away from some of what Allah has revealed to you. If they turn away ˹from Allah’s judgment˺, then know that it is Allah’s Will to repay them for some of their sins, and that many people are indeed rebellious.",
+                "ref_surah": 5,
+                "from_ayah": 49,
+                "to_ayah": 49,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: “A group of Jews which included Ka‘b ibn Asad, ‘Abd Allah ibn Suriya and Shas ibn Qays said to each other: ‘Let us go to Muhammad (PBUH) lest we seduce him from his religion’. When they went to him, they said: ‘O Muhammad, you know that we are the rabbis and nobles of the Jews, and if we were to follow you, the Jews will follow us without objection. We will believe in you and confirm your message in exchange for a favour: we have a dispute with some people and we want you to judge in our favour against them’. The Messenger of Allah, Allah bless him and give him peace, refused to do so, and Allah, exalted is He, revealed about them (… but beware of them so that they not lure yo …)”."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Whose laws and commandments are we following? Are we on the guard and steadfast regarding matters of religion? What we think is modern is actually pre-Islamic or ignorant ways i.e. getting drunk, wearing less, shunning daughters, etc."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "51 – 53 DO NOT TAKE JEWS OR CHRISTIANS AS YOUR PROTECTORS",
+          "ord": 16,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:51)",
+                "text": "Believers! Do not take the Jews and the Christians for your allies. They are the allies of each other. And among you he who takes them for allies, shall be regarded as one of them. Allah does not guide the wrong-doers.",
+                "ref_surah": 5,
+                "from_ayah": 51,
+                "to_ayah": 51,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "COMMAND"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Prohibition of Taking the Jews, Christians and Enemies of Islam as Friends/Allies."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The influence/sway of friends has a most powerful/influential effect in life. Choose wisely who you take as your confidant and advisor."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "54 – 56 YOUR PROTECTING FRIENDS ARE ALLAH, HIS RASOOL, AND YOUR FELLOW BELIEVERS",
+          "ord": 17,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:54)",
+                "text": "O believers! Whoever among you abandons their faith, Allah will replace them with others who love Him and are loved by Him. They will be humble with the believers but firm towards the disbelievers, struggling in the Way of Allah; fearing no blame from anyone. This is the favour of Allah. He grants it to whoever He wills. And Allah is All-Bountiful, All-Knowing.",
+                "ref_surah": 5,
+                "from_ayah": 54,
+                "to_ayah": 54,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat’s is very important for those who are striving hard in the way of Allah SWT but then get swayed/deterred."
+                },
+                {
+                  "kind": "prose",
+                  "text": "What we do is only and solely for our salvation and no favor to Allah SWT. We must always keep in mind that we are not indispensable and can quickly be replaced. So remain committed and remain humble."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "اِنَّمَا وَلِيُّكُمُ اللّٰهُ وَرَسُوۡلُهٗ وَالَّذِيۡنَ اٰمَنُوا الَّذِيۡنَ يُقِيۡمُوۡنَ الصَّلٰوةَ وَيُؤۡتُوۡنَ الزَّكٰوةَ وَهُمۡ رَاكِعُوۡنَ"
+              ],
+              "translation": {
+                "ref": "(5:55)",
+                "text": "Your true allies are God, His Messenger, and the believers– those who keep up the prayer, pay the prescribed alms, and bow down in worship.",
+                "ref_surah": 5,
+                "from_ayah": 55,
+                "to_ayah": 55,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:56)",
+                "text": "Whoever allies themselves with Allah, His Messenger, and fellow believers, then it is certainly Allah’s party that will prevail.",
+                "ref_surah": 5,
+                "from_ayah": 56,
+                "to_ayah": 56,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "FORMULA FOR SUCCESS IN THIS WORLD AND THE NEXT IN SHA ALLAH:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Rely only and solely on Allah SWT, His messenger and fellow Believers."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Remember your salah, pay zakat and charity and bow before Allah."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The fact that you love Allah SWT should be shown in how you deal with people. Be humble and good in your attitude. Not arrogant and headstrong which is what at times tends to happen."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Make Allah SWT you wali meaning your guardian, friend, ally, provider, etc."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "57 – 60 DO NOT BEFRIEND THOSE PEOPLE WHO MAKE A MOCKERY OF YOUR RELIGION (57-60)",
+          "ord": 18,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:57)",
+                "text": "You who believe, do not take as allies those who ridicule your religion and make fun of it– whether people who were given the Scripture before you, or disbelievers– and be mindful of God if you are true believers.",
+                "ref_surah": 5,
+                "from_ayah": 57,
+                "to_ayah": 57,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:58)",
+                "text": "And when you call for Prayer, they take it for a mockery and sport. That is because they are a people who do not understand.",
+                "ref_surah": 5,
+                "from_ayah": 58,
+                "to_ayah": 58,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "FORMULA FOR FAILURE IN THIS WORLD AND THE NEXT:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Choosing friends/allies who make a mockery of Allah SWT’s religion – joke about it. This is a serious matter with Allah SWT. He provides an example about the Azan. Azan is a serious call to prayer."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Never mock or joke about others. Often we develop the same condition that we made light of or mocked someone about."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "61-66 JEWS DECEIVING BEHAVIOR AND JEWS SLANDER AGAINST ALLAH AND IF ONLY THE PEOPLE OF THE BOOK HAD BELIEVED, THEY COULD HAVE HAD THE BEST OF THE BOTH WORLDS",
+          "ord": 19,
+          "intro": [
+            "Instead of recognizing their own mistakes and wrongs and then trying to make amends for them, the Jews reacted by launching a violent campaign of opposition against truth and righteousness. Their scholars were embedded and complicit in this campaign."
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "67 – 69 RASOOL'S MISSION IS TO DELIVER ALLAH'S MESSAGE",
+          "ord": 20,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:67)",
+                "text": "O Messenger! Convey everything revealed to you from your Lord. If you do not, then you have not delivered His message. Allah will ˹certainly˺ protect you from the people. Indeed, Allah does not guide the people who disbelieve.",
+                "ref_surah": 5,
+                "from_ayah": 67,
+                "to_ayah": 67,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "“Allah SWT will protect you from the people,”… means, you convey My Message and I will protect, aid and support you over your enemies and will grant you victory over them. Therefore, do not have any fear or sadness, for none of them will be able to touch you with harm."
+                },
+                {
+                  "kind": "prose",
+                  "text": "When you take deen seriously then Allah SWT will test you and satan will try and distract you."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We Muslims must not feel shy or conceal Allah SWT’s laws or commandments because they do not fit the standard of what is now western sensitivities. Be proud and truthful always. Be tactful as well."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:69)",
+                "text": "Indeed, the believers, Jews, Sabians and Christians—whoever ˹truly˺ believes in Allah and the Last Day and does good, there will be no fear for them, nor will they grieve.",
+                "ref_surah": 5,
+                "from_ayah": 69,
+                "to_ayah": 69,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Al-Baqarah Ayat 62 and 80"
+                },
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Both things are necessary to have to fear and no regret. Just like when we go to the airport, we must have both our passport and ticket. If we only have one it does not suffice."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: It is only and solely for Allah SWT to judge His creation."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THOSE WHO SAY JESUS IS GOD ARE DISBELIEVERS (72-74)",
+          "ord": 21,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:72)",
+                "text": "Those who say, “Allah is the Messiah, son of Mary,” have certainly fallen into disbelief. The Messiah ˹himself˺ said, “O Children of Israel! Worship Allah—my Lord and your Lord.” Whoever associates others with Allah ˹in worship˺ will surely be forbidden Paradise by Allah. Their home will be the Fire. And the wrongdoers will have no helpers.",
+                "ref_surah": 5,
+                "from_ayah": 72,
+                "to_ayah": 72,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Prophet Jesus or Isa only called to Tawhid. Do NOT ascribe partners to God."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "لَـقَدۡ كَفَرَ الَّذِيۡنَ قَالُوۡۤا اِنَّ اللّٰهَ ثَالِثُ ثَلٰثَةٍ​ ۘ وَمَا مِنۡ اِلٰهٍ اِلَّاۤ اِلٰـهٌ وَّاحِدٌ"
+              ],
+              "translation": {
+                "ref": "(5:73)",
+                "text": "Those who said: ‘’Allah is one of the Three’’, certainly they disbelieved, for there is no god save the One God. And if they do not give up this claim, all who have disbelieved among them shall be subjected to painful chastisement.",
+                "ref_surah": 5,
+                "from_ayah": 73,
+                "to_ayah": 73,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat was revealed about the false notion of the Trinity."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Whoever calls Prophet Jesus or Isa god is committing Shrik which is a grave crime."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "75 - 77 WHO WAS JESUS SON OF MARY?",
+          "ord": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "(5:75)",
+                "text": "The Messiah, son of Mary, was no more than a Messenger before whom many Messengers have passed away; and his mother adhered wholly to truthfulness, and they both ate food (as other mortals do). See how We make Our signs clear to them; and see where they are turning away!",
+                "ref_surah": 5,
+                "from_ayah": 75,
+                "to_ayah": 75,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In these few words the Christian doctrine of the divinity of Christ is repudiated. The nature of the Messiah is clear from the indications given here; he was merely a human being. He was born from the womb of a woman, who had a known genealogy, who possessed a physical body, who was subject to all the limitations of a human being and who had all the attributes characteristic of human beings. He slept, ate, felt the discomfort of heat and cold and was so human that he was even put to the test by Satan. How could any reasonable person believe that such a being was either God or a partner or associate of God in His godhead? But the Christians continue to insist on the divinity of the Messiah, whose life has been portrayed in their own Scriptures as that of a human. The fact of the matter is that they do not believe at all in the historical Messiah. They have woven a Messiah out of their imagination and have deified that imaginary being."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": []
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "3 - Juz 6 - Al Maidah .docx",
+      "location": "end of body, after (5:75)",
+      "description": "boundary mismatch: CP states Al Ma'idah 5:1 till 5:82, but the docx's last numbered unit is (5:75). Ayat 5:76-5:82 are never quoted; the CP's closing boundary ayat are missing. Part range kept equal to the CP (1-82) so the coverage equation holds.",
+      "severity": "high"
+    },
+    {
+      "id": "a2",
+      "file": "3 - Juz 6 - Al Maidah .docx",
+      "location": "body headings 'STORY OF ADAM'S TWO SONS (ABEL AND CAIN)', 'DECREE OF ALLAH REGARDING THE KILLING OF A HUMAN BEING'",
+      "description": "The section-title index prints these body headings with their ranges ('(27-31)', '(32)'), but in the body they appear without the range. §2 rule 4's section-heading patterns require the range, so these body headings do not match any pattern; they are sections here only because rule 10 says an index title that recurs in the body is a section heading. Draft should accept indexed body headings whose range was dropped in the body.",
+      "severity": "low"
+    },
+    {
+      "id": "a3",
+      "file": "both Maidah and Nisa content docx",
+      "location": "ayah-less sections (e.g. '20-26', '33-34', '38-40', '61-66', '46-47')",
+      "description": "Section holds only title/intro/ayah_units; intro is a list of plain prose strings. Sections with no ayah unit still contain bold headings ('COMMAND', 'COMMANDS:') and 'Lesson:' markers, which lose their kind/bold signal because Section has no commentary list or extras. Captured as intro strings.",
+      "severity": "low"
+    },
+    {
+      "id": "a4",
+      "file": "3 - Juz 6 - Al Maidah .docx",
+      "location": "Hadith line",
+      "description": "The hadith line is written 'Hadith: When any of you performs Wudu...' (sentence case). §2 rule 11 reserves kind 'hadith' for explicit 'HADITH:'-prefixed lines; captured as hadith per intent but the prefix case differs from the draft.",
+      "severity": "low"
+    },
+    {
+      "id": "a5",
+      "file": "2 - JUZ 6 NIsa.docx",
+      "location": "paragraph after the SURAH 4 heading",
+      "description": "A standalone bold line 'Cont.' marks that the surah chunk continues from the previous juz. No draft field exists for this marker (the boolean continues_from_prev_juz records the fact but not the author's line); captured verbatim in part.extras with kind continuation_marker.",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - JUZ 6 NIsa.docx",
+      "location": "end matter before the recap",
+      "description": "Lines 'End of first Manzil' and 'Group of Surahs:' (with three following lines) are end matter that is not a recap device ('BEAUTIFUL DIVISION…'/'MY KEY TAKEAWAYS'); no draft slot besides Recap, so captured verbatim in part.extras with kind end_matter.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "3 - Juz 6 - Al Maidah .docx",
+      "location": "'Introduction to sections:' block",
+      "description": "The section-title index header and its 37 title lines are captured in part.extras (kind section_title_index_header / section_title_index) per §2 rule 10. The index lists sections whose ranges extend to 109-115 and 116-120 that never appear in the body (body stops at 5:75); this is the same truncation as a1.",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - JUZ 6 NIsa.docx",
+      "location": "whole document",
+      "description": "The Nisa chunk contains no section headings at all (no GROUP / 'n-m TITLE' lines). Per §2 rule 7 the ayah units hang off a single default section titled by the surah heading; title recorded verbatim as 'SURAH 4 – AN NISA (THE WOMEN)'.",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "1 - JUZ 6.docx",
+      "location": "credits 'Resources used' line",
+      "description": "Credits line contains private-use glyphs (checkbox bullets from the author's Word font) kept verbatim; the draft gives no rule for font-glyph artifacts.",
+      "severity": "low"
+    }
+  ]
+}

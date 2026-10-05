@@ -1,0 +1,3826 @@
+{
+  "juz": {
+    "number": 15,
+    "folder": "Juz 15",
+    "arabic_header": "سُبْحَانَ ٱلَّذِى",
+    "arabic_header_translit": "Subḥāna ’lladhī",
+    "arabic_header_meaning": "\"Exalted is the One (God) is who \"",
+    "credits": "Curated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "cp_text": "JUZ 15\nسُبْحَانَ ٱلَّذِى\nSubḥāna ’lladhī\n\"Exalted is the One (God) is who \"\nSurah 17 – Al As Isar & Bani Israel \n(17:01 Till 17:99)\nSurah 18 – Al-Kahf  \n(18:01 Till 18:74)\nCurated by Saira Saeed Khan\nStudent Taleem al Quran English\nResources used:  Tafsir Ibn Kathir Sayyid Abul A’la Mawdudi, Dr Israr Ahmed  sister Taimiyyah Zubairs class lectures Quranhive.com\nFor feedback, questions or concerns email: ssk65@caa.columbia.edu",
+    "group_headers": [],
+    "coverage": [
+      {
+        "surah_number": 17,
+        "name_en": "Al As Isar & Bani Israel",
+        "from_ayah": 1,
+        "to_ayah": 99
+      },
+      {
+        "surah_number": 18,
+        "name_en": "Al-Kahf",
+        "from_ayah": 1,
+        "to_ayah": 74
+      }
+    ],
+    "cp_header_lines": [
+      "JUZ 15",
+      "سُبْحَانَ ٱلَّذِى",
+      "Subḥāna ’lladhī",
+      "\"Exalted is the One (God) is who \""
+    ],
+    "extras": []
+  },
+  "coverage_check": {
+    "result": "fail",
+    "notes": "Surah 17 captured ayat outside CP range 1-99: [101, 105, 106, 109, 111] Surah 17: captured 55 ayat (first 17:1, last 17:111); CP range 17:1-17:99. Surah 18: captured 51 ayat (first 18:1, last 18:74); CP range 18:1-18:74. Sum-of-parts' [from_ayah..to_ayah] equals each CP range (17:1-99, 18:1-74) for the stored part ranges, and every part's surah is listed in the CP. Boundary check: surah 18 first/last captured (18:1/18:74) equal the CP boundaries; surah 17's first captured 17:1 equals the CP start but its last captured 17:111 exceeds the CP end 17:99. Interior gaps (ayat the author did not quote) are the author's selection and are NOT anomalies."
+  },
+  "parts": [
+    {
+      "surah_number": 17,
+      "name_en": "AL ISRA (THE NIGHT JOURNEY), ALSO KNOWN AS SURAH BANI ISRAIL (THE CHILDREN OF ISRAEL)",
+      "from_ayah": 1,
+      "to_ayah": 99,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": false,
+      "source_file": "2 - Juz 15 Surah Isr.docx",
+      "ord": 1,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 15",
+      "chunk_marker": null,
+      "section_index": {
+        "header": null,
+        "titles": [
+          "ALLAH TOOK MUHAMMAD (PBUH) ON A TOUR OF THE UNIVERSE (1)",
+          "ALLAH FULFILLED THE PROPHECY MADE IN THE HOLY BOOK OF THE ISRAELITES THAT THEY WILL CREATE MISCHIEF IN THE LAND TWICE AND EACH TIME THEY WILL BE PUNISHED AND AL-QURAN GUIDES TO THE PERFECTLY STRAIGHT WAY (2-10)",
+          "THE BOOK OF HIS OWN DEEDS SHALL BE GIVEN TO EACH INDIVIDUAL ON THE DAY OF JUDGEMENT (11-14)",
+          "HE THAT SEEKS GUIDANCE DOES SO TO HIS OWN GOOD AND HE WHO GOES ASTRAY DOES SO TO HIS OWN LOSS (15-17)",
+          "HE THAT DESIRES THE TRANSITORY THINGS OF THIS LIFE IS GIVEN HERE, BUT IN THE HEREAFTER HE SHALL BE CONDEMNED TO HELL (18-22)",
+          "SOME COMMANDMENTS OF ALLAH FOR THE BELIEVERS INCLUDING PROPER BEHAVIOR WITH PARENTS, RELATIVES, AND THE COMMUNITY AT LARGE (23-30)",
+          "THE COMMANDMENTS CONTINUE (31-40)",
+          "IF THERE WERE OTHER GODS BESIDES ALLAH, THEY WOULD HAVE TRIED TO DETHRONE HIM (41-44)",
+          "BELIEF IN THE HEREAFTER IS NECESSARY TO UNDERSTAND AL-QURAN AND HEREAFTER IS LIFE AFTER DEATH (45-52)",
+          "BELIEVERS SHOULD SPEAK ONLY GOOD WORDS (53-55)",
+          "INVENTED GODS HAVE NO POWER TO RELIEVE YOU FROM ANY DISTRESS (56-57)",
+          "WHY THE SIGNS ARE NOT SENT TO MUHAMMAD (PBUH) LIKE PRIOR PROPHETS (58-60)",
+          "SHAITAN, HIS ENMITY WITH HUMAN BEINGS, AND HIS VOW TO SEDUCE THEM (61-65)",
+          "ALLAH HAS PROVIDED CONVEYANCE FOR YOU ON LAND AND SEA (66-70)",
+          "ACCOUNTABILITY OF EVERY COMMUNITY AND ITS LEADERS (71-72)",
+          "NO COMPROMISE IS ALLOWED IN MATTERS OF ISLAMIC LAW AND PRINCIPLES (73-77)",
+          "FIVE TIMES DAILY SALAH (PRAYERS) AND AND EXTRA PRAYER CALLED TAHAJJUD FOR THE HOLY PROPHET AND AL-QURAN IS A HEALING AND MERCY FOR THE BELIEVERS (78-84)",
+          "AR-RUH (SPIRIT) IS AT THE COMMAND OF ALLAH AND NO ONE CAN PRODUCE A QURAN LIKE THIS (85-88)",
+          "IN AL-QURAN ALLAH HAS USED DIFFERENT METHODS TO MAKE PEOPLE UNDERSTAND HIS MESSAGE (89-93)",
+          "ALLAH HAS SENT A HUMAN RASOOL TO HUMAN BEINGS; IF THE DWELLERS OF EARTH HAD BEEN ANGELS, ALLAH WOULD HAVE SENT AND ANGEL AS A RASOOL AND ONLY DISBELIEVERS CAN DOUBT LIFE AFTER DEATH (94-100)",
+          "MUSA WAS GIVEN NINE SIGNS; PEOPLE STILL DID NOT BELIEVE HIM (101-104)",
+          "AL-QURAN IS REVEALED IN TRUTH AND WITH THE TRUTH IT HAS COME DOW IN SECTIONS TO SUIT EACH OCCASION, FOR EASY DELIBERATION OFFER SALAH NEITHER TOO LOUD NOR TOO LOW A VOICE, ADOPT THE MIDDLE COURSE (105-111)"
+        ]
+      },
+      "extras": [],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah takes its name Al-Isra' (Night Journey) also known as Miraj is from Ayat 1.\nThe name (Bani Israel) from Ayat 4. But this name is merely a distinctive title like the names of many other Surahs and not a descriptive title. It is also called Al-Isra for the night journey of Prophet Muhammad (PBUH).",
+          "items": null
+        },
+        {
+          "label": "Period of Revelation",
+          "text": "The very first Ayat indicates that this Surah was revealed on the occasion of Mi`raj (Ascension). This event happened one year before Hijrah. Thus, this Surah was revealed in the last stage of Prophethood at Makkah.",
+          "items": null
+        },
+        {
+          "label": "Background",
+          "text": "After twelve years of preaching Tauhid by the Holy Prophet, Islam had spread to every corner of Arabia. Now the time had come for the Holy Prophet to emigrate from Makkah to Al- Madinah so as to gather together all the scattered Muslims and establish a state based on the principles of Islam.",
+          "items": null
+        },
+        {
+          "label": "Theme and Topics",
+          "text": "The disbelievers of Makkah are being told to take a lesson from the miserable end of the Israelites and other nations and mend their ways. Incidentally, the Israelites, with whom Islam was going to come in direct contact in the near future at Al-Madinah have also been warned that they should learn a lesson from the chastisements that have already been inflicted on them.\nThe Islamic System of life or a sort Manifesto of the intended Islamic state in Madina is also discussed.\nTauhid is stressed, that is, the total and complete dependance/trust/reliance on Allah SWT alone and exclusively.\nAdditionally, the Quran has been mentioned in this Surah probably more times than any other Surah.",
+          "items": null
+        },
+        {
+          "label": "AYAT-E- SAJDAH",
+          "text": "",
+          "items": [
+            {
+              "kind": "translation",
+              "text": "(17: 109) They fall down on their faces in tears, and it increases their (earnest) humility."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "ALLAH TOOK MUHAMMAD (PBUH) ON A TOUR OF THE UNIVERSE (1)",
+          "ord": 1,
+          "from_ayah": 1,
+          "to_ayah": 1,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:1",
+                "text": "Holy is He Who carried His servant by night from the Holy Mosque (in Makkah) to the farther Mosque (in Jerusalem) whose surroundings We have blessed that We might show him some of Our Signs. Indeed He alone is All-Hearing, All-Seeing.",
+                "ref_surah": 17,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Isra' (Night Journey)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The event referred to in this Ayat is known Miraj and Isra. According to authentic traditions, this took place a year before Hijrah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In this Ayat, the Quran mentions only a part of the Prophets journey, i.e. from Masjid-i-Haram to the Temple at Jerusalem. The purpose of this journey, as stated here, was that Allah SWT willed to show His servant certain realties via some of His signs so as to increase conviction after bearing witness with his own eyes. \nOne night the Angel Jibril took Prophet (PBUH) on al-Buraq from Masjid-i-Haram in Mecca to Masjid-i-Aqsa (the Temple in Jerusalem). There the Prophet (PBUH) offered his prayers along with the other Prophets. Then Angel Jibril took the Prophet (PBUH) towards the higher spheres. At last, he reached the Highest Place in the Heavens, and was received in audience by Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It was there that, besides other important instructions, the five daily Prayers were prescribed. Then he returned to the Temple and from there came back to Masjid-i-Haram. During this Journey, according to many traditions, Paradise and Hell were shown to the Prophet (PBUH)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH FULFILLED THE PROPHECY MADE IN THE HOLY BOOK OF THE ISRAELITES THAT THEY WILL CREATE MISCHIEF IN THE LAND TWICE AND EACH TIME THEY WILL BE PUNISHED AND AL-QURAN GUIDES TO THE PERFECTLY STRAIGHT WAY (2-10)",
+          "ord": 2,
+          "from_ayah": 2,
+          "to_ayah": 10,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:4",
+                "text": "And We warned the Children of Israel in the Scripture, “You will certainly cause corruption in the land twice, and you will become extremely arrogant.",
+                "ref_surah": 17,
+                "from_ayah": 4,
+                "to_ayah": 4,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "It was mentioned in the Torah that the Jews would spread Mischief twice"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT tells us that He made a declaration to the Children of Israel in the Torah that they would cause mischief on the earth twice, when after reaching the height of power they would become tyrants and extremely arrogant, shameless oppressors of people. Resulting in the wrath of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "To gain a better understanding of the history of the Jews pls read:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "(i)  Dr Israr’s Book: The Rise and Fall of the Muslim Ummah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "(ii) Dr Israr’s Book:"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:9",
+                "text": "Surely this Quran guides to what is most upright, and gives good news to the believers—who do good—that they will have a mighty reward.",
+                "ref_surah": 17,
+                "from_ayah": 9,
+                "to_ayah": 9,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Quran is a source of salvation and guide towards the right way or path leading to success (paradise)."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THE BOOK OF HIS OWN DEEDS SHALL BE GIVEN TO EACH INDIVIDUAL ON THE DAY OF JUDGEMENT (11-14)",
+          "ord": 3,
+          "from_ayah": 11,
+          "to_ayah": 14,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:11",
+                "text": "And man supplicates for evil as he supplicates for good, and man is ever hasty.",
+                "ref_surah": 17,
+                "from_ayah": 11,
+                "to_ayah": 11,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When we make dua we should ask Allah SWT’s to decision what is best for us. Leave all matters to Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If we ask for something particular then we don’t know if it is ultimately in our favour. For example, maybe we are praying for marriage to a certain person, in our haste to get married, but in reality, it is going to be a disaster for us. So, we are actually asking for evil thinking we are asking for good."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When making dua ask Allah SWT for the best in this world and the next. Meaning keep in more general as opposed to very specific in your request."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:14",
+                "text": "˹And it will be said,˺ “Read your record. You ˹alone˺ are sufficient this Day to take account of yourself.”",
+                "ref_surah": 17,
+                "from_ayah": 14,
+                "to_ayah": 14,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Our deeds and even our intentions will be displayed for us in multiple ways so that it becomes very clear to us where our ultimate destination is. We will not be able to dispute the decision due to its clarity."
+                },
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: Whoever wants to be happy upon seeing the Book of deeds then fill it with excessive zikr of istikfar."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Also, good deeds erase bad deeds."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Dua for ISTAGHFAR is “Subhan Allahi wa bihamdihi; Astaghfirullaha wa atubu ilaihi”(Allah is free from imperfection, and I begin with praising Him. I beg forgiveness from Allah and I turn to Him in repentance.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Read this 100 times a day for peace in this world and the next in sha Allah."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HE THAT SEEKS GUIDANCE DOES SO TO HIS OWN GOOD AND HE WHO GOES ASTRAY DOES SO TO HIS OWN LOSS (15-17)",
+          "ord": 4,
+          "from_ayah": 15,
+          "to_ayah": 17,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:15",
+                "text": "Whoever chooses to be guided, it is only for their own good. And whoever chooses to stray, it is only to their own loss. No soul burdened with sin will bear the burden of another. And We would\nnever punish ˹a people˺ until We have sent a messenger ˹to warn them˺.",
+                "ref_surah": 17,
+                "from_ayah": 15,
+                "to_ayah": 15,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Quran has placed great emphasis on the doctrine of personal responsibility. It means that, everyone is solely responsible for his conduct and is accountable to God as an individual. This doctrine has been emphasized over and over again so that a wise man should not act in imitation of another or justify his own conduct by similar deeds of others."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, Allah SWT says if you adopt the right/correct t way then you benefit yourself first and foremost. On the other hand, if you deviate from the right way then you are harming yourself first and foremost."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "HE THAT DESIRES THE TRANSITORY THINGS OF THIS LIFE IS GIVEN HERE, BUT IN THE HEREAFTER HE SHALL BE CONDEMNED TO HELL (18-22)",
+          "ord": 5,
+          "from_ayah": 18,
+          "to_ayah": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "مَنۡ كَانَ يُرِيۡدُ الۡعَاجِلَةَ عَجَّلۡنَا لَهٗ فِيۡهَا مَا نَشَآءُ لِمَنۡ نُّرِيۡدُ ثُمَّ جَعَلۡنَا لَهٗ جَهَنَّمَ"
+              ],
+              "translation": {
+                "ref": "17:18",
+                "text": "Whoever should desire the immediate - We hasten for him from it what We will to whom We intend. Then We have made for him Hell, which he will [enter to] burn, censured and banished.",
+                "ref_surah": 17,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Arabic word ‘ajilah’ الۡعَاجِلَةَ literally means something which can be had immediately. Here the Quran uses this term for “this world” or “worldly life”. It’s the opposite of “akhirat” (Hereafter) which the life of the next world after death."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The person who does not believe in the life of the Hereafter strives only for the successes and good things of this world. Consequently, such a person becomes a worshiper of this world and adopts wrong conduct, for he has no sense of personal responsibility and accountability to God and ultimately deserves the torment of Hell."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, whoever desires this world then Allah SWT gives them this world although not necessarily what they are stiving for. They will receive what Allah SWT has decreed for them.  So, we find that worldly benefits are not guaranteed however Hell is a certainty."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: In the Quran this topic has been discussed before and after however here is the peak/core of the dialogue."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Opt for delayed gratification and set your goals higher or greater results."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:19",
+                "text": "But whoever desires the Hereafter and strives for it accordingly, and is a ˹true˺ believer, it is they whose striving will be appreciated.",
+                "ref_surah": 17,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Then in direct contrast to the previous Ayat, Allah SWT describes the outcome of those whose are focused on the Hereafter and strives for it -- with the necessary effort required -- thus seeking it in the right way, as a believer. Then such are the ones whose striving shall be appreciated, (rewarded by Allah SWT)."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:20",
+                "text": "We provide both the former and the latter from the bounty of your Lord. And the bounty of your Lord can never be withheld.",
+                "ref_surah": 17,
+                "from_ayah": 20,
+                "to_ayah": 20,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT provides substance of this world to (i) those who strive for this world and to (ii) those who strive for the Hereafter. Allah SWT's favors are showered on all—the just and the unjust, the deserving and the undeserving. But there is a difference as explained in the two above Ayat’s. Note: No one else has the power to withhold and increase provisions."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT has given us all unique gifts and talents. Reflect on what we are seeking and what we are investing our time and energy in. Do not just strive for this world, children, career, etc. People fear that if we seek the Hereafter we will lose this world but indeed one simply gains and gains."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:21",
+                "text": "Look how We have favored [in provision] some of them over others. But the Hereafter is greater in degrees [of difference] and greater in distinction.",
+                "ref_surah": 17,
+                "from_ayah": 21,
+                "to_ayah": 21,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In this world some are rich and some are poor, and others are in between; some are beautiful, some are ugly and others are in between. In Paradise there are one hundred levels, and the distance between one level and another is like the distance between heaven and earth. \nThe people of the highest levels (of Paradise) will see the people of `Illiyin’ Hell as if they are looking at distant stars on the horizon."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So, the division of the Hereafter will be much greater and eternal. Here there are differences but firstly it is for a finite time and secondly it is not as vast."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:22",
+                "text": "Do not set up any other god with Allah lest you are rendered humiliated and helpless.",
+                "ref_surah": 17,
+                "from_ayah": 22,
+                "to_ayah": 22,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Do not associate Anything in the Worship of Allah SWT – DO NOT COMMIT SHIRK!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Shirk = Abandonment of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Tauhid = Allah SWT’s help and closeness."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SOME COMMANDMENTS OF ALLAH FOR THE BELIEVERS INCLUDING PROPER BEHAVIOR WITH PARENTS, RELATIVES, AND THE COMMUNITY AT LARGE (23-30)",
+          "ord": 6,
+          "from_ayah": 23,
+          "to_ayah": 30,
+          "intro": [
+            {
+              "kind": "heading",
+              "text": "THE QURANIC VERSION OF THE TEN COMMANDMENTS"
+            }
+          ],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:23",
+                "text": "For your Lord has decreed that you worship none but Him. And honour your parents. If one or both of them reach old age in your care, never say to them ˹even˺ ‘ugh,’ nor yell at them. Rather, address them respectfully.",
+                "ref_surah": 17,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to Worship Allah Alone and to be (ii) Dutiful to One's Parents"
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the following Ayat’s are some basic principles that form the manifesto for the new period at Al-Madinah where a new Islamic society were going to be established."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It prohibits the worship of anyone except Allah SWT. This was not merely an instruction confined to a religious doctrine and individual practice but it serves as the foundation for all ideological, moral, cultural economic and legal principles."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(Please also refer to Surah 6 Ayat 151-153)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The idea of worshipping Allah SWT is connected to the idea of honoring one's parents in many places in the Quran."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Doing good when parents become old is at times difficult but a Must. Also we must be good to both parents not just one."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Parents in old age:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Be careful of your language and tone. (Never hurt their feelings)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Do not scold or yell so that they feel intimated or scared of you. (God forbid)"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Say words that are good, kind, and gentle."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:24",
+                "text": "And lower to them the wing of humility out of mercy and say, \"My Lord, have mercy upon them as they brought me up [when I was] small.\"",
+                "ref_surah": 17,
+                "from_ayah": 24,
+                "to_ayah": 24,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The metaphor is that of a high-flying bird which lowers her wings out of tenderness to her offspring. There is a double aptness. (1) When the parent was strong and the child was helpless, parental affection was showered on the child: now the child is strong, and the parent is helpless, so he must show similar tender care on the parent? (2) But more: he must approach the matter with gentle humility; all the while keeping in mind the other’s station."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, not merely respect, but cherishing kindness, and humility to parents, are commanded: Parental love should be to us a type of divine love as nothing that we can do can ever really compensate for that which we have received. We cannot expect Allah SWT's forgiveness if we are rude or unkind to those who unselfishly brought us up."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Dua for parents: \"My Lord, have mercy upon them as they brought me up [when I was] small.\""
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:26",
+                "text": "And give the relative his right, and [also] the poor and the traveler, and do not spend wastefully.",
+                "ref_surah": 17,
+                "from_ayah": 26,
+                "to_ayah": 26,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Command to maintain the Ties of Kinship, give to the poor and traveler and the Prohibition of Extravagance"
+                },
+                {
+                  "kind": "prose",
+                  "text": "When Allah SWT mentions honoring one's parents, He follows this with the command to treat one's relatives well and to maintain the ties of kinship."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And give to the Miskin (poor), and to the traveler. FYI -- All charity, kindness, and help are conditioned by our own resources."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And then there is a prohibition on spending lavishly and extravagantly so as to show off."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT gives us provisions as a loan to see how we use them that is are we giving in charity or are we mainly just indulging ourselves and family."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Additionally, showing off one’s wealth increases the rift and animosity between the haves and have nots."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:28",
+                "text": "And if you [must] turn away from the needy awaiting mercy from your Lord which you expect, then speak to them a gentle word.",
+                "ref_surah": 17,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The above three instructions are meant to impress that a man should not reserve his earnings and his wealth exclusively for his own person. That he should also try and render the rights of his relatives, neighbors and other needy persons as well."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This attitude will help create the spirit of cooperation, generosity, sympathy and justice in the collective Islamic life. Thus, every relative will cooperate with the other and every rich person will help the needy in his neighborhood and a traveler would find himself an honorable guest among generous hosts. Thus, the responsivities and rights of human beings are interwoven."
+                },
+                {
+                  "kind": "prose",
+                  "text": "However, if you have to \"turn away\" or refuse someone in need then do not speak harshly to them. Refuse with the sort of kindness (not merely frigid politeness) which flows from pity and understanding."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: If you cannot give financially then at least give them a kind/encouraging word."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:29",
+                "text": "Do not be so tight-fisted, for you will be blameworthy; nor so open-handed, for you will end up in poverty.",
+                "ref_surah": 17,
+                "from_ayah": 29,
+                "to_ayah": 29,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Moderation in Spending"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commands moderation in living. He condemns miserliness/stinginess and forbids extravagance."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:30",
+                "text": "Indeed, your Lord extends provision for whom He wills and restricts [it]. Indeed He is ever, concerning His servants, Acquainted and Seeing.",
+                "ref_surah": 17,
+                "from_ayah": 30,
+                "to_ayah": 30,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT gives and restricts."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THE COMMANDMENTS CONTINUE (31-40)",
+          "ord": 7,
+          "from_ayah": 31,
+          "to_ayah": 40,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:31",
+                "text": "And do not kill your children for fear of poverty. We provide for them and for you. Indeed, their killing is ever a great sin.",
+                "ref_surah": 17,
+                "from_ayah": 31,
+                "to_ayah": 31,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Prohibition of killing Children"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The people of the past were habitually committing female infanticide nor did they allow girls to inherit. Even today infanticide (esp female) is not uncommon in some countries due to economic constraints. This crime against children's lives (abortion) is one of the greatest of sins. \n \n‘And kill not your children for fear of poverty,’ means in case you fear their up brining and expenses will make you poor. This is why Allah SWT mentions the children's provision first, ‘We shall provide for them as well as for you.’"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Killing or taking a life is a major sin including aborting an unborn child. FYI – Previous Ayat tells us not to be stingy."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَلَا تَقۡرَبُوا الزِّنٰٓى"
+              ],
+              "translation": {
+                "ref": "17:32",
+                "text": "Do not go near adultery. It is truly a shameful deed and an evil way.",
+                "ref_surah": 17,
+                "from_ayah": 32,
+                "to_ayah": 32,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to avoid Zina (Unlawful Sex) and Everything that leads to it"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids His servants from even coming close to the sin of adultery or zina let alone commit zina. Keep at a safe distance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT calls zina or unlawful sex or sex outside a marriage as Fahishah (immoral sin) and ‘it is evil as a road (or a way).\" Adultery is not only shameful in itself but it opens the road to many other evils. It destroys the basis of the family; it works against the interests of children born or to be born; it may cause hostilities, the loss of reputation, and also loosens permanently the bonds of society. Not only should it be avoided as a sin, but any approach or temptation should be avoided."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not go near or put yourself in a position of temptation or compromise as one step leads to another."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:33",
+                "text": "Nor take life - which Allah has made sacred - except for just cause. And if anyone is slain wrongfully, we have given his heir authority (to demand qisas or to forgive): but let him not exceed bounds in the matter of taking life; for he is helped (by the Law).",
+                "ref_surah": 17,
+                "from_ayah": 33,
+                "to_ayah": 33,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Prohibition of Unlawful Killing"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids killing for no legitimate reason.\nThe blood of a Muslim is not permissible (to be shed) except in three cases: an adulterer who is married, and a person who leaves his religion and deserts the Jama'ah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "On the subject of Qisas see (2:178). Here under strict limitations a life may be taken for a life, or forgiveness is an option or blood money can be given."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:34",
+                "text": "Do not come near the wealth of the orphan—unless intending to enhance it—until they attain maturity. Honour ˹your˺ pledges, for you will surely be accountable for them.",
+                "ref_surah": 17,
+                "from_ayah": 34,
+                "to_ayah": 34,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to handle the Orphan's Wealth properly and honor or keep your pledges"
+                },
+                {
+                  "kind": "prose",
+                  "text": "When the Islamic state was established, legal and administrative methods were adopted to safeguard the rights of orphans. Then this principle was extended to cover the cases of all those citizens who were unable to safeguard their own rights. Thus, this is not merely a moral instruction."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If an orphan's property is handled at all, it should be only to improve it, or to give him something better than he had before."
+                },
+                {
+                  "kind": "prose",
+                  "text": "‘Ashuddah,’ means the age when the orphan reaches his full maturity of strength and understanding."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Honor your pledges that is keep your word. Your word is your bond."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:35",
+                "text": "Give in full when you measure, and weigh with an even balance. That is fairest and best in the end.",
+                "ref_surah": 17,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Command to be Honest in Weights and Measures"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Honestly and fairness in dealings results in the blessings and barakh from Allah SWT in your riskh or provision. As opposed to having a lot ill begotten wealth that is nothing but ruin for you."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This instruction was not confined to individuals only but it was made one of the duties of the government to eradicate dishonesty in all commercial dealings and economic transactions."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:36",
+                "text": "Do not follow that of which you have no knowledge. Surely the hearing, the sight, the heart - each of these shall be called to account.",
+                "ref_surah": 17,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Do not speak without Knowledge"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids speaking without knowledge and only on the basis of suspicion, which is mere imagination and illusions.\nAccording to a Hadith: Beware of suspicion, for suspicion is the falsest of speech."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The meanings of “Do not follow that of which you have no knowledge” is very comprehensive. Both in individual and collective life, one should not follow mere guess work and presumption instead of knowledge."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Islamic moral code demands: Guard against suspicion and do not accuse any individual or group without proper investigation. In law, it is the concept of innocent before proven guilty."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In Islam we are encouraged to use inductive as opposed to deductive knowledge where we are urged to think, reflect, use our intellect. Stay clear of the occult science’s."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:37",
+                "text": "And do not walk on the earth arrogantly. Surely you can neither crack the earth nor stretch to the height of the mountains.",
+                "ref_surah": 17,
+                "from_ayah": 37,
+                "to_ayah": 37,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Condemnation of strutting"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT forbids His servants to strut and walk in a boastful manner that is walk on the earth with conceit, arrogance and pride."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:38",
+                "text": "The wickedness of each of that is hateful to your Lord.",
+                "ref_surah": 17,
+                "from_ayah": 38,
+                "to_ayah": 38,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "That is, Allah SWT disapproves of anything that has been prohibited or, in other words, He disapproves of disobedience to any of these commandments."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT clearly summarizes/outlines what He likes and dislikes. It is up to us to put in the effort to understand and then change/adjust accordingly."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – We meticulously keep in mind our children, spouse, friends, likes and dislikes then why are we not taking the time to recognize our Raab? Esp. when He as explained everything plainly and simply."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The beginning and the end of the commandments is with the concept of Tauhid."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "IF THERE WERE OTHER GODS BESIDES ALLAH, THEY WOULD HAVE TRIED TO DETHRONE HIM (41-44)",
+          "ord": 8,
+          "from_ayah": 41,
+          "to_ayah": 44,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:42",
+                "text": "Say, ˹O Prophet,˺ “Had there been other gods besides Him—as they claim—then they would have certainly sought a way to ˹challenge˺ the Lord of the Throne.”",
+                "ref_surah": 17,
+                "from_ayah": 42,
+                "to_ayah": 42,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "That is, (other gods) would have tried their best to become masters of the Throne. This is because if there had been more than one partners in Godhead, it would produce one of two results: (1) If they were all independent gods, it was not conceivable that they would agree and cooperate with one another in the management of the boundless universe and there could never be unanimity, uniformity and balanced proportion in its functioning. There would have been conflict at every step and everyone would have tried to dominate others in order to become its sole master. or (2) if one of them had been the supreme god and the others his obedient servants whom he had delegated some of his powers, then, according to the maxim “power corrupts”, they would never have been content with remaining obedient servants of the supreme god and would have conspired to become the supreme god themselves.\n\nWhereas the fact is that in this universe not even a grain of wheat or a blade of grass can grow unless and until everything in the earth and the heavens cooperate with one another for its production. Thus, the very nature and functioning of this universe will serve as a testament that there is One and only One Sovereign ruling over this universe, and there is absolutely no likelihood of anyone else to be a partner in this at any stage."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BELIEF IN THE HEREAFTER IS NECESSARY TO UNDERSTAND AL-QURAN AND HEREAFTER IS LIFE AFTER DEATH (45-52)",
+          "ord": 9,
+          "from_ayah": 45,
+          "to_ayah": 52,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:45",
+                "text": "When you ˹O Prophet˺ recite the Quran, We put a hidden barrier between you and those who do not believe in the Hereafter.",
+                "ref_surah": 17,
+                "from_ayah": 45,
+                "to_ayah": 45,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:46",
+                "text": "and We place a covering on their hearts so that they do not comprehend it, and We cause a heaviness in their ears; and when you mention your Lord, the Only True Lord, in the Quran, they turn their backs in aversion.",
+                "ref_surah": 17,
+                "from_ayah": 46,
+                "to_ayah": 46,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat is connected with the theme of tauhid."
+                },
+                {
+                  "kind": "prose",
+                  "text": "If a man does not believe in the Hereafter, he will never consider the message of the Quran worth his while but will hanker after this world and its joys. Naturally his ears will not listen to the message and it will never reach the depths of his heart."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT allows freedom of belief to practice shirk, atheism, disbelief with impunity and such practices do not appear to make any practical difference in this world. But, in fact, everyone shall be accountable and answerable after death in the next world."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "BELIEVERS SHOULD SPEAK ONLY GOOD WORDS (53-55)",
+          "ord": 10,
+          "from_ayah": 53,
+          "to_ayah": 55,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:53",
+                "text": "Tell My ˹believing˺ servants to say only what is best. Satan certainly seeks to sow discord among them. Satan is indeed a sworn enemy to humankind.",
+                "ref_surah": 17,
+                "from_ayah": 53,
+                "to_ayah": 53,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: This was revealed about ‘Umar ibn al-Khattab. An Arab man insulted him, and so Allah SWT commanded him to pardon him. The idolaters were in the habit of harming, verbally and physically, the Companions of the Messenger of Allah (PBUH). When they complained to the Messenger of Allah (PBUH), then Allah SWT revealed this Ayat."
+                },
+                {
+                  "kind": "heading",
+                  "text": "People should speak Good Words with Politeness"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT commands His believing servants that they should address one another in their conversations and discussions with the best, most dignified and politest of words, for if they do not do that, Shaytan will spread discord among them, and words will lead to actions resulting in conflicts and fights."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "INVENTED GODS HAVE NO POWER TO RELIEVE YOU FROM ANY DISTRESS (56-57)",
+          "ord": 11,
+          "from_ayah": 56,
+          "to_ayah": 57,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:56",
+                "text": "Tell them: \"Call upon those whom you fancy to be (your helpers) instead of Him! They have no power to remove any affliction from you, nor can they shift it (to any other).\"",
+                "ref_surah": 17,
+                "from_ayah": 56,
+                "to_ayah": 56,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The gods of the Idolators can neither benefit nor harm"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This warning helps to further explain the doctrine of Tauhid and negate shirk. According to this, shirk is not confined merely to falling prostrate before any other than Allah SWT but it is also shirk to pray to or invoke the help of any other than Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "For praying to or calling for help any other than Allah is in reality a kind of worship. Therefore, the one who invokes for help any other than Allah SWT is as much guilty of shirk as the worshiper of an idol."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Simultaneously, this Ayat also shows that, none other than Allah SWT, has any power to listen to prayers and relieve our trouble/problems."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Ask, pray to Allah SWT alone."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WHY THE SIGNS ARE NOT SENT TO MUHAMMAD (PBUH) LIKE PRIOR PROPHETS (58-60)",
+          "ord": 12,
+          "from_ayah": 58,
+          "to_ayah": 60,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:59",
+                "text": "And We refrain from sending the signs, only because the men of former generations treated them as false: We sent the she-camel to the Thamud to open their eyes, but they treated her wrongfully: We only send the Signs by way of terror (and warning from evil).",
+                "ref_surah": 17,
+                "from_ayah": 59,
+                "to_ayah": 59,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Reason: The people of Mecca kept asking the Prophet (PBUH), to turn al-Safa hill into gold and remove the mountains [surrounding Mecca] for them so that they can engage in agriculture."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Reason why Allah SWT did not send Signs or Miracles to Prophet Muhammad (PBUH)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Past generations treated Allah SWT’s signs and miracles with contempt or rebellion, and thus brought about their own downfall. An example is cited from the story of Thamud. A perfect she-camel was sent a sign to this nation, however, the nation of Thamud continued to denied and killed her.  So instead of the she-camel being a reason for their salvation in fact the she-camel was a cause of their destruction – as now their sin and rebellion was irrefutable."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Signs, Miracles, and Prophets are sent by Allah SWT as a warning, so as to strike terror into the hearts of evildoers and reclaim them to the right path. However, it is Allah SWT’s sunnah that after a sign or miracle has been shown and if people still persist in disbelieve then the punishment is immediate and intense."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SHAITAN, HIS ENMITY WITH HUMAN BEINGS, AND HIS VOW TO SEDUCE THEM (61-65)",
+          "ord": 13,
+          "from_ayah": 61,
+          "to_ayah": 65,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:61",
+                "text": "And ˹remember˺ when We said to the angels, “Prostrate before Adam,” so they all did—but not Iblîs, who protested, “Should I prostrate to the one You have created from mud?”",
+                "ref_surah": 17,
+                "from_ayah": 61,
+                "to_ayah": 61,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Story of Adam and Iblis"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Please also refer to Surah 2 Ayat’s 30-39; Surah 4 Ayat’s 117-122; Surah 7 Ayat’s 11- 25; Surah 14, Ayat’s 22; Surah 15 Ayat’s 26-43."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This story has been cited here to stress upon the disbelievers that their attitude of arrogance and indifference towards Allah SWT is exactly the same as was adopted by Satan. As a matter of fact, they were following Satan who is the confirmed/clear/declared enemy of mankind."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see: 7:12)",
+                  "ref": "7:12"
+                },
+                {
+                  "kind": "quote",
+                  "text": "He (Iblis) said: \"Shall I prostrate myself to one whom You created from clay!\"",
+                  "ref": "7:12"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Meaning I (Iblis) am better than he (Adam). You (Allah SWT) created me from fire, and You created him from clay. FYI – Iblis is a Jinn and not an angel."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Prostrate here is not of worshiping rather of greeting/honoring/respecting Adam."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Allah SWT puts us through tests to expose our realities/faults. Iblis was jealous (in his heart) therefore his truth was shown."
+                },
+                {
+                  "kind": "prose",
+                  "text": "By the end of our life our realities are exposed to all, whether we wish for it or not."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:62",
+                "text": "Adding, “Do you see this one you honoured above me? If you delay my end until the Day of Judgment, I will certainly take hold of his descendants, except for a few.”",
+                "ref_surah": 17,
+                "from_ayah": 62,
+                "to_ayah": 62,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:63",
+                "text": "Allah responded, “Be gone! Whoever of them follows you, Hell will surely be the reward for all of you—an ample reward.",
+                "ref_surah": 17,
+                "from_ayah": 63,
+                "to_ayah": 63,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When Iblis asked for respite.\nAllah SWT said: `Go, (I will give you respite).'"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see 38:80-81)",
+                  "ref": "38:80-81"
+                },
+                {
+                  "kind": "quote",
+                  "text": "Verily, you are of those allowed respite till the Day of the time appointed.",
+                  "ref": "38:80-81"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Satan and his troops are constantly poking or inciting man towards evil, i.e., “why did he speak to me like that?”, “you only live once so enjoy yourself,” etc. These thoughts come again and again like a child saying, “mama, mama, mama.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then Allah SWT warned Iblis and those who follow him that Hell will be their ultimate destination or reward."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:64",
+                "text": "And incite whoever you can of them with your voice, mobilize against them all your cavalry and infantry, manipulate them in their wealth and children, and make them promises.” But Satan promises them nothing but delusion.",
+                "ref_surah": 17,
+                "from_ayah": 64,
+                "to_ayah": 64,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The literal meaning is, that Iblis may sweep away those whom he finds superficial and weak minded."
+                },
+                {
+                  "kind": "prose",
+                  "text": "For example, some say that staying clear of riba will lead to poverty, or giving in charity will reduce wealth etc."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Beware of an unabated love for wealth and our children as they can be our biggest trial when it comes to making comprises in deen. When in fact if used properly wealth and children can be our biggest source of salvation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Read this dua before sex for a pious child – where satan will have no part, in sha Allah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "اِنَّ عِبَادِىۡ لَـيۡسَ لَـكَ عَلَيۡهِمۡ سُلۡطٰنٌ ؕ وَكَفٰى بِرَبِّكَ وَكِيۡلًا"
+              ],
+              "translation": {
+                "ref": "17:65",
+                "text": "Indeed, over My [believing] servants there is for you no authority. And sufficient is your Lord as Disposer of affairs.",
+                "ref_surah": 17,
+                "from_ayah": 65,
+                "to_ayah": 65,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This Ayat should be read along with the two preceding ones to complete their meaning. That is, that evil has no power except over those who yield to its solicitation/invitation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Meanings that Iblis: (1) will have no power to force mankind to follow his way. He may delude them by false counsel and false promises, but they have free will and choice to follow or not. (2) Iblis will not succeed in alluring"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT’s righteous individuals."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Thus, Evil has no authority over the sincere servants of Allah SWT, they should put their complete trust in Him. For He is All-Sufficient to carry out their affairs, and by His grace, to save them from all harm and danger."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT will guide them, protect them and help them to be safe from Iblis’s allurements."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH HAS HONORED MANKIND (66-70)",
+          "ord": 14,
+          "from_ayah": 66,
+          "to_ayah": 70,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:70",
+                "text": "We have honoured the sons of Adam; provided them with transport on land and sea; given them for sustenance things good and pure; and conferred on them special favours, above a great part of our creation.",
+                "ref_surah": 17,
+                "from_ayah": 70,
+                "to_ayah": 70,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Here the honor and distinction that Allah SWT has conferred on mankind is being emphasized so as to enforce the corresponding duties and responsibilities required of man."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then the height of folly and ignorance is that after having achieved such a high rank, man should bow down before any creature of Allah SWT instead of Allah SWT Himself?"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ACCOUNTABILITY OF EVERY COMMUNITY AND ITS LEADERS (71-72)",
+          "ord": 15,
+          "from_ayah": 71,
+          "to_ayah": 72,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:71",
+                "text": "One day We shall call together all human beings with their (respective) Imams: those who are given their record in their right hand will read it (with pleasure), and they will not be dealt with unjustly in the least.",
+                "ref_surah": 17,
+                "from_ayah": 71,
+                "to_ayah": 71,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Imams refers to those whom we follow in this world so beware to those whom we emulate as they will either lead us to ultimate success or failure."
+                },
+                {
+                  "kind": "prose",
+                  "text": "May we all receive our records in our right hands. Ameen."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "NO COMPROMISE IS ALLOWED IN MATTERS OF ISLAMIC LAW AND PRINCIPLES (73-77)",
+          "ord": 16,
+          "from_ayah": 73,
+          "to_ayah": 77,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:73",
+                "text": "(O Muhammad), they had all but tempted you away from what We have revealed to you that you may invent something else in Our Name. Had you done so, they would have taken you as their trusted friend.",
+                "ref_surah": 17,
+                "from_ayah": 73,
+                "to_ayah": 73,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In order to understand the significance of this Ayat, we should keep in mind that the disbelievers of Makkah were exerting their utmost effort to turn the Prophet (PBUH) away from his message of Tauhid, and to force him to make a compromise with shirk and the customs of ignorance. In order to achieve this end, they tempted him with greed, threats, false propaganda against him, persecuted him via economic pressure and social boycott. In short, they did all that could be done to defeat his resolve."
+                },
+                {
+                  "kind": "prose",
+                  "text": "They felt that the Quran was too rigid and uncompromising. They said change your religion just a little bit, touch our idols just a little bit and then we too will accept."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet was eager for peace."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:74",
+                "text": "Had We not made you steadfast, you probably would have inclined to them a little,",
+                "ref_surah": 17,
+                "from_ayah": 74,
+                "to_ayah": 74,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT tells us that in the matter of religion there can be NO COMPRIMISE! Not even the slightest change or inclination is acceptable. We have no right!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT strengthen the Prophet (PBUH) resolve. The Messenger (PBUH) is given special strength to resist such temptations."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – Same thing happened with Prophet Yusuf when Allah SWT provided him with special guidance."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:75",
+                "text": "Then [if you had], We would have made you taste double [punishment in] life and double [after] death. Then you would not find for yourself against Us a helper.",
+                "ref_surah": 17,
+                "from_ayah": 75,
+                "to_ayah": 75,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This implies two things: (1) No man, not even a Messenger of Allah SWT, can fight singlehanded against the deceitful methods of falsehood, unless he receives the succor and fortitude of Allah SWT. (2) If one compromises with falsehood after recognizing the truth, you might please some people but will incur the wrath of Allah SWT. For the Prophet of Allah, the punishment would be double due to his position."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "FIVE TIMES DAILY SALAH (PRAYERS) AND AND EXTRA PRAYER CALLED TAHAJJUD FOR THE HOLY PROPHET AND AL-QURAN IS A HEALING AND MERCY FOR THE BELIEVERS (78-84)",
+          "ord": 17,
+          "from_ayah": 78,
+          "to_ayah": 84,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:78",
+                "text": "Observe the prayer from the decline of the sun until the darkness of the night and the dawn prayer, for certainly the dawn prayer is witnessed ˹by angels˺.",
+                "ref_surah": 17,
+                "from_ayah": 78,
+                "to_ayah": 78,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to offer the Five Prayers at their appointed Times"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Perform the Salat from midday or when the sun crosses the meridian (when the sun begins to decline) until darkness of the night. This is understood to mean Zuhr, Asr, Maghrib and Isha.  And recite the Quran in the early dawn meaning Salat Al-Fajr."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It has been ordained that the first prayer is to be offered before the sunrise and the remaining four after the declining of the sun till the darkness of the night."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Meeting of the Angels at the Times of Fajr and Asr Prayers"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Abu Hurayrah (may Allah be pleased with him) said that the Prophet stated that the recitation of the Quran in the early dawn is witnessed by the angels of the night and the angels of the day.\nThe angels of the night and the angels of the day come amongst you in successive groups (in shifts). They meet at the morning prayer (Fajr) and at the Mid-afternoon prayer (Asr). Then one group ascends while the other stays."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then their Lord asks the group that ascends to Him, although He knows best about you, “How did you leave My servants!”\nThey say, “We came to them when they were praying and we left them when they were praying.”"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Though the angels witness each prayer and each good deed, the special mention of their being witnesses at the time of the recital of the Quran during the salatul-fajr gives it a particular importance. That is why the Prophet (PBUH) used to recite long passages from the Quran during the salatul-fajr."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The details of the timings of the prayers were reported in the Sunnah and deeds of the Prophet (PBUH)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Afterwards Angel Jibril was sent to the Prophet (PBUH) to define the limits of the timings of each prayer. The Prophet (PBUH) said: Jibril led me in the five prayers twice near the Kaabah. On the first day, he offered the Duhr prayer just after the declining of the sun, when the shadow of everything was the shortest. Then he offered the Asr prayer when the shadow of each thing was equal to its own length, then the Maghrib prayer at the time when one breaks hiss fast, and the Isha prayer was offered just at the time when twilight had disappeared, and Fajr prayer at the time when it becomes unlawful to eat and drink anything for the one who intends to observe a fast. The next day he offered the Dhuhr prayer at the time when the shadow of each thing became equal to its own length and the Asr prayer when the shadow had doubled. The Maghrib prayer was offered as on the previous day and the Isha prayer when one third of the night had passed away, and the Fajr prayer when light had spread all over. After this Jibril turned towards me and said: O Muhammad, these are the timings of salat of the Prophets and the right tunings are between these two extreme limits.\n\nThe Quran has also pointed to these five times of Salat on different occasions:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah 9 Verse Ayat 114\nAnd listen; establish salat at the two ends of the day and in the early parts of the night"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah 20 Ayat 130\nAnd glorify your Lord with His praise before the sunrise (Fajr) and before sunset (Maghrib) and then glorify Him during the night (Isha) and then at the ends of the day (Dhuhr and Asr)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah 30 Verse Ayats 17-18\nSo glorify Allah when it is evening for you (Maghrib), and when it is morning (Fajr). Praise is only for Him in the heavens and the earth and glorify him in the later part of the afternoon (Asr) and in the afternoon (Dhuhr)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Forbidden prayer times are: 1- From dawn until the sun has risen to the height of a spear; 2- When it is directly overhead at noon until it has passed its zenith; and 3- From ‘Asr prayer until the sun has set completely."
+                },
+                {
+                  "kind": "prose",
+                  "text": "There is great wisdom in this system of the timings of salat. One of these is to avoid the timings of the worship of the sun worshipers."
+                },
+                {
+                  "kind": "prose",
+                  "text": "That is why Islam has ordained that the Muslims should offer their two prayers during the day time after the sun has declined and the Fajr prayer before the sunrise. The Prophet (PBUH) is reported to have replied to a question to this effect: Offer your morning prayer, but refrain from it when the sun is about to rise until it has risen high. For the sun rises between the horns of Satan and the unbelievers fall prostrate before it at that time.\nThen after mentioning the Asr prayer, he said: After Asr prayer, refrain from any prayer until the sunset, for during that time the sun sets between the horns of Satan and the unbelievers fall prostrate before it.\n\nThe rising and the setting of the sun between the horns of Satan is symbolic expression that implies that both these times are used by Satan as temptations for the people. This is, as if to say: that Satan is so pleased with the worship of the unbelievers at the time of sunrise and sunset that he appears to carry the sun on his head as a mark of approval. This interpretation of the tradition is based on this remark of the Prophet (PBUH): The unbelievers fall prostrate before it."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:79",
+                "text": "And rise from sleep during the night as well- this is an additional Prayer for you. Possibly your Lord will raise you to an honored position.",
+                "ref_surah": 17,
+                "from_ayah": 79,
+                "to_ayah": 79,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to pray Tahajud"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The literal meaning of tahajjud is to rise up by breaking sleep. Therefore, it means: Rise up from sleep after the passing of a part of night and then offer your prayer."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Nafl literally means: Something done in addition to an obligatory duty. This shows that the tahajjud prayer is in addition to the five prescribed prayers."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“Will raise you to an honored position..”means you may attain such a high position in this world and in the next world."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Ishraq or Duha Namaz (Same namaz)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The first half of the morning, from after sunrise (after about 15 mins), will be the time to pray Salaah al-Ishraq, and the second half of the morning until Istiwaa us Shams (zenith) will be the time to pray Salaah ad-Duha."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Be in harmony and in sync with the universe. Wake up for fajr and use these best hours of the day. Worship Allah SWT as that is our fitra and that is why the universe was created. Conversely, initiating disharmony or chaos in this world is doing injustice or zulm in this world."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Remember we are all intertwined with each other so our vibrations of harmony or discord will resonate far and wide."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَقُلْ رَّبِّ اَدۡخِلۡنِىۡ مُدۡخَلَ صِدۡقٍ وَّ اَخۡرِجۡنِىۡ مُخۡرَجَ صِدۡقٍ وَّاجۡعَلْ لِّىۡ مِنۡ لَّدُنۡكَ سُلۡطٰنًا نَّصِيۡرًا"
+              ],
+              "translation": {
+                "ref": "17:80",
+                "text": "And say, “My Lord, cause me to enter a sound entrance and to exit a sound exit and grant me from Yourself a supporting authority.”",
+                "ref_surah": 17,
+                "from_ayah": 80,
+                "to_ayah": 80,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Command to emigrate"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Prophet (PBUH) was commanded to emigrate from Mecca to Madina and then Allah SWT revealed this Ayat."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Prophet (PBUH) was told to make this dua before the hijra to Madina.  Then in Madina the Muslims finally found peace, security, financial and political success."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This dua is for going to a new place such as, a new house, a new country, a new job etc., and it basically asks Allah SWT to help bring about a good entrance and a good exit, that is, to make the change a positive one."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Man proposes and God disposes. That is, man makes plans; however, the outcome or result depends on Allah SWT’s support and assistance."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Do not delay making this dua."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَقُلۡ جَآءَ الۡحَـقُّ وَزَهَقَ الۡبَاطِلُؕ اِنَّ الۡبَاطِلَ كَانَ زَهُوۡقًا"
+              ],
+              "translation": {
+                "ref": "17: 81",
+                "text": "And declare, “The truth has come and falsehood has vanished. Indeed, falsehood is bound to vanish.”",
+                "ref_surah": 17,
+                "from_ayah": 81,
+                "to_ayah": 81,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "From its nature falsehood must perish: for it is the opposite of Truth, and Truth must ever prevail."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "AR-RUH (SPIRIT) IS AT THE COMMAND OF ALLAH AND NO ONE CAN PRODUCE A QURAN LIKE THIS (85-88)",
+          "ord": 18,
+          "from_ayah": 85,
+          "to_ayah": 88,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 82",
+                "text": "We send down the Quran as a healing and mercy for the believers, but it only increases the wrongdoers in loss.",
+                "ref_surah": 17,
+                "from_ayah": 82,
+                "to_ayah": 82,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The Quran is for healing/cure for our body, mind and soul and a source of mercy from Allah SWT. The Quran takes away whatever is in our hearts of doubt, hypocrisy, Shirk, confusion and inclination towards falsehood. The Quran cures all of that."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Recite the Quran for shifa."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Use these as a cure: (i) Salah (ii) Sadqa/charity (iii) Quran. Along with conventional medicine."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 85",
+                "text": "They ask you ˹O Prophet˺ about the spirit. Say, “Its nature is known only to my Lord, and you ˹O humanity˺ have been given but little knowledge.”",
+                "ref_surah": 17,
+                "from_ayah": 85,
+                "to_ayah": 85,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 87",
+                "text": "had it not been for the mercy of your Lord. Indeed, His favour upon you is immense.",
+                "ref_surah": 17,
+                "from_ayah": 87,
+                "to_ayah": 87,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The fact that the Quran is in our lives is exclusively by the grace and mercy of Allah SWT. We have done nothing to deserve this. Allah SWT has bestowed upon us many blessings and favors including, health, wealth, family etc. However, and by far Allah SWT’s greatest kindness upon us is the Quran. This is Allah SWT’s speech!"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Hold on tight to this Huge favour of Allah SWT upon us by giving the Quran is due that is, (i) recitation, (ii) understanding (iii) obeying and (iv) conveying. (2:121 haqqah tilawatihi)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The days I spend with the Quran are in fact, the best days of my life."
+                },
+                {
+                  "kind": "prose",
+                  "text": "FYI – If someone forgets the Quran it is bec of something they did. So recite istakfar many times."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 88",
+                "text": "Say: “If the whole of mankind and Jinns were to gather together to produce the like of this Quran, they could not produce the like thereof, even if they backed up each other with help and support.",
+                "ref_surah": 17,
+                "from_ayah": 88,
+                "to_ayah": 88,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This challenge occurs at several other places in the Quran: Surah 2 Ayat 23; Surah 10, Ayats 38-39; Surah 40 Ayats 13-14; Surah 52 Ayats 33-34."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "IN AL-QURAN ALLAH HAS USED DIFFERENT METHODS TO MAKE PEOPLE UNDERSTAND HIS MESSAGE (89-93)",
+          "ord": 19,
+          "from_ayah": 89,
+          "to_ayah": 93,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 89",
+                "text": "We have explained things for people in this Quran in diverse ways to make them understand the Message, yet most people obstinately persist in unbelief.",
+                "ref_surah": 17,
+                "from_ayah": 89,
+                "to_ayah": 89,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "In the Quran everything is explained in detail by commands, examples, stories, etc. The very same concepts are repeated in a multitude of different ways so as to bring home the concepts, i.e., of tauhid, resurrection etc. But the majority refuse to believe."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Never follow the majority."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH HAS SENT A HUMAN RASOOL TO HUMAN BEINGS; IF THE DWELLERS OF EARTH HAD BEEN ANGELS, ALLAH WOULD HAVE SENT AND ANGEL AS A RASOOL AND ONLY DISBELIEVERS CAN DOUBT LIFE AFTER DEATH (94-100)",
+          "ord": 20,
+          "from_ayah": 94,
+          "to_ayah": 100,
+          "intro": [
+            {
+              "kind": "prose",
+              "text": "Summary: (17: 94-100)"
+            },
+            {
+              "kind": "prose",
+              "text": "Allah SWT sent human Messengers so that they can be a role model and relatable example for us."
+            },
+            {
+              "kind": "prose",
+              "text": "In terms of giving dawa (which is now our duty after the last Messenger) we should be relatable to our audience in the sense that we are not complete aliens to them. Always keeping in mind that relatability to ones audience does not mean emulating them or compromising on religion."
+            },
+            {
+              "kind": "prose",
+              "text": "Show interest and engage with people before giving dawa."
+            }
+          ],
+          "ayah_units": []
+        },
+        {
+          "title": "MUSA WAS GIVEN NINE SIGNS; PEOPLE STILL DID NOT BELIEVE HIM (101-104)",
+          "ord": 21,
+          "from_ayah": 101,
+          "to_ayah": 104,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 101",
+                "text": "And We had certainly given Moses nine evident signs, so ask the Children of Israel [about] when he came to them and Pharaoh said to him, “Indeed I think, O Moses, that you are affected by magic.”",
+                "ref_surah": 17,
+                "from_ayah": 101,
+                "to_ayah": 101,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It should be noted that this is the third answer to the demand of the disbelievers of Mecca for signs or miracles. In answer to this demand, they are being warned: Nine clear signs, like the ones you are demanding, were shown one after the other to Pharaoh yet he did not want to believe in Musa (PBUH); then when he arrogantly rejected the Prophet, even after seeing the signs, Allah SWT drowned him.\n\nThe nine signs mentioned here have also been mentioned in Surah 7, Ayat 133. These were: (1) The staff which turned into a monster snake. (2) Moses’ bright hand which shone like the sun. (3) The public defeat of the sorcery of the magicians. (4) Universal famine. (5) Storm. (6) Locusts. (7) Lice. (8) Frogs. (9) Rain of blood."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "AL-QURAN IS REVEALED IN TRUTH AND WITH THE TRUTH IT HAS COME DOW IN SECTIONS TO SUIT EACH OCCASION, FOR EASY DELIBERATION OFFER SALAH NEITHER TOO LOUD NOR TOO LOW A VOICE, ADOPT THE MIDDLE COURSE (105-111)",
+          "ord": 22,
+          "from_ayah": 105,
+          "to_ayah": 111,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 105",
+                "text": "We have sent down the Quran in truth, and with the truth it has come down. We have sent you ˹O Prophet˺ only as a deliverer of good news and a warner.",
+                "ref_surah": 17,
+                "from_ayah": 105,
+                "to_ayah": 105,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 106",
+                "text": "And [it is] a Quran which We have separated [by intervals] that you might recite it to the people over a prolonged period. And We have sent it down progressively.",
+                "ref_surah": 17,
+                "from_ayah": 106,
+                "to_ayah": 106,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah 16 Ayat 101-102"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Revelation of the Quran in Stages"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is an answer to the objection of why Allah SWT did not send down His message as a whole? Why is He sending it piecemeal?"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "To strengthen our hearts slowly and constantly."
+                },
+                {
+                  "kind": "list_item",
+                  "text": "As a guidance to answer questions, issues and circumstances."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17: 109",
+                "text": "They fall down on their faces in tears, and it increases their (earnest) humility.",
+                "ref_surah": 17,
+                "from_ayah": 109,
+                "to_ayah": 109,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "AYAT-E- SAJDAH"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Upon receiving/hearing the Quran believers fall down in submission."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "17:111",
+                "text": "And say, “All praise is for Allah, Who has never had ˹any˺ offspring; nor does He have a partner in ˹governing˺ the kingdom; nor is He pathetic, needing a protector. And revere Him immensely.”",
+                "ref_surah": 17,
+                "from_ayah": 111,
+                "to_ayah": 111,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Five attributes of Tauhid mentioned here: (i) All praise and shukur is only for Allah SWT (ii) He has no child, (iii) nor does He have any partners, (iv) nor is He dependent upon other beings to protect Him from harm and humiliation and (v) He is most revered!"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This Surah began with the glory and praises of Allah SWT and now it ends on the same note, concluding the argument. The next Surah takes up the same theme from another point of view, and opens with the same note, \"Praise be to Allah\"."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": [
+        {
+          "title": "MY KEY TAKEAWAYS",
+          "items": [
+            {
+              "kind": "heading",
+              "text": "DEFINITION OF SUCCESS"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:9) Surely this Quran guides to what is most upright, and gives good news to the believers—who do good—that they will have a mighty reward."
+            },
+            {
+              "kind": "heading",
+              "text": "IMAN + GOOD DEEDS = SUCCESS"
+            },
+            {
+              "kind": "heading",
+              "text": "STRIVE FOR THE HEREAFTER INSTEAD OF THIS WORLD"
+            },
+            {
+              "kind": "arabic",
+              "text": "مَنۡ كَانَ يُرِيۡدُ الۡعَاجِلَةَ عَجَّلۡنَا لَهٗ فِيۡهَا مَا نَشَآءُ لِمَنۡ نُّرِيۡدُ ثُمَّ جَعَلۡنَا لَهٗ جَهَنَّمَ"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:18) Whoever should desire the immediate - We hasten for him from it what We will to whom We intend. Then We have made for him Hell, which he will [enter to] burn, censured and banished."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:19) But whoever desires the Hereafter and strives for it accordingly, and is a ˹true˺ believer, it is they whose striving will be appreciated."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:20) We provide both the former and the latter from the bounty of your Lord. And the bounty of your Lord can never be withheld."
+            },
+            {
+              "kind": "heading",
+              "text": "TAUHID—DO NOT COMMIT SHIRK"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:22) Do not set up any other god with Allah lest you are rendered humiliated and helpless."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:42) Say, ˹O Prophet,˺ “Had there been other gods besides Him—as they claim—then they would have certainly sought a way to ˹challenge˺ the Lord of the Throne.”"
+            },
+            {
+              "kind": "heading",
+              "text": "THE QURANIC VERSION OF THE TEN COMMANDMENTS"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:23) For your Lord has decreed that you worship none but Him. And honour your parents. If one or both of them reach old age in your care, never say to them ˹even˺ ‘ugh,’ nor yell at them. Rather, address them respectfully."
+            },
+            {
+              "kind": "list_item",
+              "text": "Tauhid and Honor your parents."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:26) And give the relative his right, and [also] the poor and the traveler, and do not spend wastefully."
+            },
+            {
+              "kind": "list_item",
+              "text": "Rights of relatives, poor and the traveler. Do not spend wastefully."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:31) And do not kill your children for fear of poverty. We provide for them and for you. Indeed, their killing is ever a great sin."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not kill your children."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:32) Do not go near adultery. It is truly a shameful deed and an evil way."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not commit adultery."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:33) Nor take life - which Allah has made sacred - except for just cause. And if anyone is slain wrongfully, we have given his heir authority (to demand qisas or to forgive): but let him not exceed bounds in the matter of taking life; for he is helped (by the Law)."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not kill."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:34) Do not come near the wealth of the orphan—unless intending to enhance it—until they attain maturity. Honour ˹your˺ pledges, for you will surely be accountable for them."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not decrease or steal the wealth of an orphan."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:35) Give in full when you measure, and weigh with an even balance. That is fairest and best in the end."
+            },
+            {
+              "kind": "list_item",
+              "text": "Practice good business."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:36) Do not follow that of which you have no knowledge. Surely the hearing, the sight, the heart - each of these shall be called to account."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not make innovations in religion."
+            },
+            {
+              "kind": "translation",
+              "text": "(17:37) And do not walk on the earth arrogantly. Surely you can neither crack the earth nor stretch to the height of the mountains."
+            },
+            {
+              "kind": "list_item",
+              "text": "Do not be arrogant."
+            },
+            {
+              "kind": "heading",
+              "text": "BELIEVERS SHOULD SPEAK ONLY GOOD WORDS"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:53) Tell My ˹believing˺ servants to say only what is best. Satan certainly seeks to sow discord among them. Satan is indeed a sworn enemy to humankind."
+            },
+            {
+              "kind": "heading",
+              "text": "THE STORY OF ADAM AND IBLIS (Ayat 61 to 65)"
+            },
+            {
+              "kind": "heading",
+              "text": "TRIALS OF WEALTH AND CHILDREN"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:64) And incite whoever you can of them with your voice, mobilize against them all your cavalry and infantry, manipulate them in their wealth and children, and make them promises.” But Satan promises them nothing but delusion."
+            },
+            {
+              "kind": "heading",
+              "text": "THE COMMAND TO OFFER THE FIVE PRAYERS AT THEIR APPOINTED TIMES"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:78) Observe the prayer from the decline of the sun until the darkness of the night and the dawn prayer, for certainly the dawn prayer is witnessed ˹by angels˺."
+            },
+            {
+              "kind": "heading",
+              "text": "THE COMMAND TO PRAY TAHAJUD"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:79) And rise from sleep during the night as well- this is an additional Prayer for you. Possibly your Lord will raise you to an honored position."
+            },
+            {
+              "kind": "heading",
+              "text": "DESCRIPTION OF THE QURAN"
+            },
+            {
+              "kind": "translation",
+              "text": "(17: 82) We send down the Quran as a healing and mercy for the believers, but it only increases the wrongdoers in loss."
+            },
+            {
+              "kind": "heading",
+              "text": "DUA FOR ENTERING A NEW CITY OR PLACE"
+            },
+            {
+              "kind": "heading",
+              "text": "Also, the dua we read when we enter the Al-Huda building"
+            },
+            {
+              "kind": "arabic",
+              "text": "وَقُلْ رَّبِّ اَدۡخِلۡنِىۡ مُدۡخَلَ صِدۡقٍ وَّ اَخۡرِجۡنِىۡ مُخۡرَجَ صِدۡقٍ وَّاجۡعَلْ لِّىۡ مِنۡ لَّدُنۡكَ سُلۡطٰنًا نَّصِيۡرًا"
+            },
+            {
+              "kind": "translation",
+              "text": "(17:80) And say, “My Lord, cause me to enter a sound entrance and to exit a sound exit and grant me from Yourself a supporting authority.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "surah_number": 18,
+      "name_en": "AL KAHF",
+      "from_ayah": 1,
+      "to_ayah": 74,
+      "continues_from_prev_juz": false,
+      "continues_in_next_juz": true,
+      "source_file": "3 - Juz 15 surah kahf.docx",
+      "ord": 2,
+      "bismillah": "بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ",
+      "juz_banner": "JUZ 15",
+      "chunk_marker": null,
+      "section_index": {
+        "header": null,
+        "titles": [
+          "THOSE WHO SAY ALLAH HAS BEGOTTEN A SON ARE UTTERING A MONSTROUS LIE (1-6)",
+          "STORY OF THE COMPANIONS OF THE CAVE (7-12)",
+          "THEY WERE YOUNG MEN WHO DECLARED THE TRUTH ABOUT THE ONENESS OF ALLAH AND THEY HAD TO RUN AWAY AND TAKE REFUGE IN A CAVE (13-17)",
+          "THEY ARE IN A STATE OF SLEEP AND THEY WERE WAKEN UP BY ALLAH AFTER HUNDREDS OF YEAR (18-20)",
+          "THEIR IDENTITY WAS DISCLOSED TO RESOLVE THE DISPUTED ISSUE OF LIFE AFTER DEATH, WHAT A SHAME THAT INSTEAD OF GETTING THE POINT PEOPLE ARE DISPUTING ABOUT THEIR NUMBERS (21-22)",
+          "WHENEVER YOU PROMISE TO DO SOMETHING IN FUTURE, ALWAYS SAY, \"INSHA ALLAH (IF ALLAH WILLS)\"( 23-26)",
+          "NO ONE IS AUTHORIZED TO CHANGE THE WORD OF ALLAH AND PROCLAIM, \"TRUTH FROM ALLAH HAS COME, CHOICE IS YOURS, BELIEVE OR DISBELIEVE\" (27-31)",
+          "PARABLE OF A BELIEVER AND A DISBELIEVER (32-44)",
+          "SIMILITUDE OF WORLDLY LIFE AND ITS RELATIONSHIP WITH THE LIFE OF HEREAFTER (45-49)",
+          "FATE OF THOSE WHO FOLLOW THE SHAITAN AND COMMIT SHIRK (50-53)",
+          "ALLAH HAS GIVEN ALL KINDS OF EXAMPLES IN THE QURAN, SO THAT THE PEOPLE MAY UNDERSTAND HIS MESSAGE (54-59)",
+          "PROPHET MUSA TRAVELLED TO FIND KHIZER TO LEARN SOME OF THE KNOWLEDGE GIVEN TO HIM BY ALLAH ALMIGHTY AND KHIZER WARNED MUSA THAT HE WOULD NOT BE ABLE TO BEAR WITH HIM (60-70)",
+          "PROPHET MUSA COULD NOT RESIST QUESTIONING KHIZER WHEN HE MADE A HOLE IN BOAT, AND WHEN HE KILLED A BOY WITH NO APPARENT REASON (71-74)",
+          "STORY OF PROPHET MUSA AND KHIZER (75-82)",
+          "STORY OF KING ZUL-QARNAIN (83-101)",
+          "FATE OF THE MUSHRIKIN AND THE BELIEVERS ON THE DAY OF JUDGEMENT (102-108)",
+          "WORDS OF ALLAH ARE COUNTLESS AND CANNOT BE RECORDED (109)",
+          "MUHAMMAD IS BUT A HUMAN BEING LIKE YOU (110)"
+        ]
+      },
+      "extras": [],
+      "front_matter": [
+        {
+          "label": "Name",
+          "text": "This Surah takes its name from Ayat 9.",
+          "items": null
+        },
+        {
+          "label": "Period of Revelation",
+          "text": "This Surah was revealed in the third stage of Prophethood in Mecca which was from the 5th to the 10th year of Prophethood. What distinguishes this stage from the second and the fourth stages is this that during the second stage the Quraish mainly resorted to ridiculing, scoffing, threatening, tempting, raising objections and making false propaganda against the Holy Prophet and his followers in order to suppress the Islamic Movement.\nBut during the third stage they began intense persecution including a complete social and economic boycott. So much so that a large number of the Muslims had to emigrate from Arabia to Habash. However, in the tenth year of Prophethood and upon the death of Abu Talib and Hadrat Khadijah, the fourth stage began with such revere persecutions that forced the Holy Prophet and all his Companions to emigrate from Makkah.",
+          "items": null
+        },
+        {
+          "label": "Subject and Topics",
+          "text": "",
+          "items": [
+            {
+              "kind": "prose",
+              "text": "This Surah was sent down in answer to three questions that had been put to the Holy Prophet in order to test him. These were: (I) Who were \"the Sleepers of' the Cave\" (II) What is the real story of Khidr and (III) What do you know about Zul- Qarnain."
+            },
+            {
+              "kind": "prose",
+              "text": "These three questions and the stories involved the history of the Christians and the Jews, and were unknown in Hijaz. Thus, this was a test to see whether the Holy Prophet possessed any knowledge of the hidden and unseen things."
+            },
+            {
+              "kind": "list_item",
+              "text": "The story of the Sleepers of the Cave has also been used to warn the chiefs of Makkah who were persecuting the small newly formed Muslim Community. At the same time, the Holy Prophet has been instructed that he should in no case make a compromise with their persecutors nor should he consider them to be more important than his poor followers."
+            },
+            {
+              "kind": "list_item",
+              "text": "The story of Khidr and Musa conveys to us to have full faith in the wisdom of what is happening is with the will of Allah SWT. As the reality is hidden from us, we are often at a loss to understand the wisdom of what is happening, and sometimes (in our folly)  we question as to why?"
+            },
+            {
+              "kind": "list_item",
+              "text": "The same is true of the story of Zul-Qarnain for it also admonishes the questioners, as if to say, \"0 you vain chiefs of Makkah you should learn a lesson from Zul-Qarnain. Though he was a great ruler, a great conqueror and the owner of great resources, yet, he always surrendered to his Creator, whereas you are rebelling against Him even though you are insignificant chieftains in comparison with him."
+            },
+            {
+              "kind": "prose",
+              "text": "Different stories are being related so as to provide motivation and guidance that Allah SWT’s help is the with those who believe."
+            },
+            {
+              "kind": "prose",
+              "text": "What is Dajjal or the trial of Dajjal? And what is its relation or connection to this Surah."
+            }
+          ]
+        },
+        {
+          "label": null,
+          "text": "Recitation of Surah Kalf on Friday will bring Nur for the rest of the week. Reciting even the first 10 and last 10 Ayats serves as a protection from Dajjal.\nThe root dajala means to mix. The word dajala is used to mean deliberately confusing matters and being vague and ambiguous, The Dajjal is the one who speaks in vagaries, who tells many lies and deceives many people.\nThe word “Dajjal” became a title given to the lying, one-eyed, false messiah. Any one claiming to be a Prophet after Prophet Muhammad is a dajjal.\nThe Dajjal will die at the hands of the Messiah ‘Isa ibn Maryam (peace be upon him), as is indicated by the sahih ahadith.\nIn today’s world materialism is the Dajjal leaving them oblivious of the Hereafter and living for this world.",
+          "items": null
+        }
+      ],
+      "sections": [
+        {
+          "title": "THOSE WHO SAY ALLAH HAS BEGOTTEN A SON ARE UTTERING A MONSTROUS LIE (1-6)",
+          "ord": 1,
+          "from_ayah": 1,
+          "to_ayah": 6,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [
+                "اَ لۡحَمۡدُ لِلّٰهِ الَّذِىۡۤ اَنۡزَلَ عَلٰى عَبۡدِهِ الۡكِتٰبَ وَلَمۡ يَجۡعَلْ لَّهٗ عِوَجًا"
+              ],
+              "translation": {
+                "ref": "18:1",
+                "text": "Praise be to Allah Who has revealed to His servant the Book devoid of all crookedness;",
+                "ref_surah": 18,
+                "from_ayah": 1,
+                "to_ayah": 1,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The theme of the last Surah, that Allah SWT is worthy of all praise from His creatures, to whom He has granted a clear revelation, is continued in this Surah."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Surah Isar began with SA while this Surah begins with AH and ends with Allah ho Akbar."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Quran is balanced and straightforward and there is nothing convoluted or complicated that would cause hesitation in the mind of a truth loving person. The Quran is free from error, falsehood or lies. It promotes a balanced way of life."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The Quran changes one’s perspective and thinking whereby we are much more focused on the Hereafter."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:2",
+                "text": "(He hath made it) Straight (and Clear) in order that He may warn (the godless) of a terrible Punishment from Him, and that He may give Glad Tidings to the Believers who work righteous deeds, that they shall have a goodly Reward,",
+                "ref_surah": 18,
+                "from_ayah": 2,
+                "to_ayah": 2,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:4",
+                "text": "And to warn those who say, \"Allah has taken a son.\"",
+                "ref_surah": 18,
+                "from_ayah": 4,
+                "to_ayah": 4,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The warning is especially for those who attribute a child to Allah SWT. Not only is this belief false but it invalidates everything as it is shirk. The root cause of Dajjal is this very concept that completely warps religion."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We must inform others of this and not feel shy about it."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "STORY OF THE COMPANIONS OF THE CAVE (7-12)",
+          "ord": 2,
+          "from_ayah": 7,
+          "to_ayah": 12,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:7",
+                "text": "Indeed, We have made that which is on the earth adornment for it that We may test them [as to] which of them is best in deed.",
+                "ref_surah": 18,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This world's power, glory, wealth, position are but a fleeting show. Allah SWT uses it to test man to see whether he becomes a slave or seeker of this world (talib-e-dunya) or a slave or seeker of Allah SWT (talib-e-Akhirah)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Seek good company even force yourself if you have to. We will be tested throughout life and righteous company can be our source of salvation."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The real test is to live in this life that is not cut off from this world and live in it as a believer. Live on this earth as if we are a guest meaning don’t get lost in it despite having much of the world in the palm of our hands."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is the first sermon followed by the story of the people of the cave i.e. the nature of materialism and how we are not supposed to get locked up into the beauty of this world."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "اَمۡ حَسِبۡتَ اَنَّ اَصۡحٰبَ الۡـكَهۡفِ وَالرَّقِيۡمِۙ كَانُوۡا مِنۡ اٰيٰتِنَا عَجَبًا"
+              ],
+              "translation": {
+                "ref": "18:9",
+                "text": "Do you think that the people of the Cave and the Inscription were one of Our wondrous signs?",
+                "ref_surah": 18,
+                "from_ayah": 9,
+                "to_ayah": 9,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Here begins the Story of the Cave (this was in response to the questions asked to test the Prophet)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Quraysh sent a message to the Jewish rabbis in Al-Madinah to ask to test the Messenger of Allah SWT by asking him about these (i) young men, and about (ii) Dhul-Qarnayn (the man who traveled much) and (iii) about the Ruh."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This incident is not something amazing compared to Allah SWT’s power and ability, for example, the creation of the heavens and earth, the alternation of night and day and the subjugation of the sun, show that He is able to do whatever He wills."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:10",
+                "text": "˹Remember˺ when those youths took refuge in the cave, and said, “Our Lord! Grant us mercy from Yourself and guide us rightly through our ordeal.”",
+                "ref_surah": 18,
+                "from_ayah": 10,
+                "to_ayah": 10,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "These (about 7) youths believed in tauhid so they left the city of shirk. They turned to Allah SWT for help."
+                },
+                {
+                  "kind": "prose",
+                  "text": "It was said that when they called their king Decianus, to believe in Allah SWT, he refused and threatened them. The king gave them some time to think, hoping that they would return to their former religion.\nDuring that time they managed to escape and flee from persecution for the sake of their religion. This was a way that Allah SWT showed kindness/mercy to them, that is, these young men were determined to flee from their people, and Allah decreed that for them."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:11",
+                "text": "So We caused them to fall into a dead sleep in the cave for many years,",
+                "ref_surah": 18,
+                "from_ayah": 11,
+                "to_ayah": 11,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT helped them. He made them fall into a deep sleep for many years and thus they received relief from their distress. This was a recompense for their actions. Meaning they did not just provide lip service but actually left their homes in the city of shrik and then asked Allah SWT for help."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THEY WERE YOUNG MEN WHO DECLARED THE TRUTH ABOUT THE ONENESS OF ALLAH AND THEY HAD TO RUN AWAY AND TAKE REFUGE IN A CAVE (13-17)",
+          "ord": 3,
+          "from_ayah": 13,
+          "to_ayah": 17,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:13",
+                "text": "We relate to you ˹O Prophet˺ their story in truth. They were youths who truly believed in their Lord, and We increased them in guidance.",
+                "ref_surah": 18,
+                "from_ayah": 13,
+                "to_ayah": 13,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Story of the People of Al-Kahf"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The Arabic word Kahf literally means a vast cave. Now begins the essence of the story. \nThe priority of these young men was deen. They turned to Allah SWT for help and guidance."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Remember guidance comes when you desire and put in the effort. Guidance = desire + action."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:15",
+                "text": "˹Then they said to one another,˺ “These people of ours have taken gods besides Him. Why do they not produce a clear proof of them? Who then does more wrong than those who fabricate lies against Allah?",
+                "ref_surah": 18,
+                "from_ayah": 15,
+                "to_ayah": 15,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Fabricating a lie against Allah SWT by ascribing partners with Him is a huge mistake!"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18: 16",
+                "text": "Since you have distanced yourselves from them and what they worship besides Allah, take refuge in the cave. Your Lord will extend His mercy to you and accommodate you in your ordeal.”",
+                "ref_surah": 18,
+                "from_ayah": 16,
+                "to_ayah": 16,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "As the youth had distanced themselves from shirk and worshiped non besides Allah SWT subsequently Allah SWT extended His mercy upon them and concealed them from the people."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When you leave something for Allah SWT, for example, moving to an Islamic country, or making the afterlife a priority instead of this world, etc., then Allah SWT makes ease for you. But you must take the first step via some action with complete trust (tawaqul) in Allah SWT."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THEY ARE IN A STATE OF SLEEP AND THEY WERE WAKEN UP BY ALLAH AFTER HUNDREDS OF YEAR (18-20)",
+          "ord": 4,
+          "from_ayah": 18,
+          "to_ayah": 20,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18: 18",
+                "text": "And you would think them awake, while they were asleep. And We turned them to the right and to the left, while their dog stretched his forelegs at the entrance. If you had looked at them, you would have turned from them in flight and been filled by them with terror.",
+                "ref_surah": 18,
+                "from_ayah": 18,
+                "to_ayah": 18,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Their Sleep in the Cave"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT had so arranged their refuge that none dared go inside the cave and if someone could have looked at the seven young men from outside and seen them turning from one side to the other at intervals, he would have thought that they were not asleep but awake. A fierce dog was keeping watch at the entrance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was the reason why their refuge remained a secret to the outer world for such a long period."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: The cave was big, comfortable, airy, facing the right direction from the sun (never giving direct sunlight)."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the Quran a dog is mentioned. It is ok to keep (i) Hunting dogs (ii) Guard dogs. Other than that, the general rule is that it is not permissible to keep dogs as pets."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:19",
+                "text": "And so We awakened them so that they might question one another. One of them exclaimed, “How long have you remained ˹asleep˺?” Some replied, “Perhaps a day, or part of a day.” They said ˹to one another˺, “Your Lord knows best how long you have remained. So send one of you with these silver coins of yours to the city, and let him find which food is the purest, and then bring you provisions from it. Let him be ˹exceptionally˺ cautious, and do not let him give you away.",
+                "ref_surah": 18,
+                "from_ayah": 19,
+                "to_ayah": 19,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Their awakening and sending One of Themselves to buy Food"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says just as He caused the young men to sleep, He then resurrected their bodies with their hair and skin intact with nothing distorted or lacking in their form and appearance. This was why after three hundred and nine years of sleep the young men asked each other, “How long have you remained ˹asleep˺?” Some replied, “Perhaps a day, or part of a day?’ They had entered the cave at the beginning of the day, and when they woke up it was towards the end of the day."
+                },
+                {
+                  "kind": "prose",
+                  "text": "But they did not speculate much about this detail of how long they slept rather they turned their attention to more pressing matters, such as, their need for food and drink. So, with the Dirhams (silver coins) they brought from their homes, they sent one of the youths to buy Azka food. Azka means \"purest\" from the same root also comes the word Zakat, which makes one's wealth good and purifies it.\nThey tried to conceal him as much as possible so as not to attract attention towards him."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Always eat good, pure, tayyab and halal food."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:20",
+                "text": "For, indeed, if they find out about you, they will stone you ˹to death˺, or force you back into their faith, and then you will never succeed.”",
+                "ref_surah": 18,
+                "from_ayah": 20,
+                "to_ayah": 20,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "They are referring to the followers of Decianus, who would punish them with all kinds of torture until they reverted back to their former religion, or they died. They knew that returning to their (old) religion meant they would never attain success in this world or the Hereafter."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Iman + Good deeds (action) = Success"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "THEIR IDENTITY WAS DISCLOSED TO RESOLVE THE DISPUTED ISSUE OF LIFE AFTER DEATH, WHAT A SHAME THAT INSTEAD OF GETTING THE POINT PEOPLE ARE DISPUTING ABOUT THEIR NUMBERS (21-22)",
+          "ord": 5,
+          "from_ayah": 21,
+          "to_ayah": 22,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:22",
+                "text": "Some will say, “They were three, their dog was the fourth,” while others will say, “They were five, their dog was the sixth,” ˹only˺ guessing blindly. And others will say, “They were seven and their dog was the eighth.” Say, ˹O Prophet,˺ “My Lord knows best their ˹exact˺ number. Only a few people know as well.” So do not argue about them except with sure knowledge, nor consult any of those ˹who debate˺ about them.",
+                "ref_surah": 18,
+                "from_ayah": 22,
+                "to_ayah": 22,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "(Also see Ayat 26)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The controversy in later ages raged about the number of the Sleepers: were they three or five or seven? People speculated not from knowledge, but from conjecture. \nAllah SWT says there is no need to discuss matters without knowledge. If we are given knowledge of a matter, then we may talk about it, otherwise we should refrain. Remain silent."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Most believe that they were seven sleepers and one dog. However, Allah SWT clearly is not happy with speculation and or innovation. We should understand and appreciate the actual lesson from the story and not get distracted with nonsense speculation."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "WHENEVER YOU PROMISE TO DO SOMETHING IN FUTURE, ALWAYS SAY, \"INSHA ALLAH (IF ALLAH WILLS)\"( 23-26)",
+          "ord": 6,
+          "from_ayah": 23,
+          "to_ayah": 26,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18: 23",
+                "text": "And never say about anything: \"I shall certainly do this tomorrow\"",
+                "ref_surah": 18,
+                "from_ayah": 23,
+                "to_ayah": 23,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "الَّاۤ اَنۡ يَّشَآءَ اللّٰهُوَاذۡكُرْ رَّبَّكَ اِذَا نَسِيۡتَ وَقُلۡ عَسٰٓى اَنۡ يَّهۡدِيَنِ رَبِّىۡ لِاَقۡرَبَ مِنۡ هٰذَا رَشَدًا"
+              ],
+              "translation": {
+                "ref": "18:24",
+                "text": "without adding, “if Allah so wills!” But if you forget, then remember your Lord, and say, “I trust my Lord will guide me to what is more right than this.”",
+                "ref_surah": 18,
+                "from_ayah": 24,
+                "to_ayah": 24,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When the Prophet was asked about the story of the people of the Cave (as mentioned in the beginning of the Surah) he said, \"I will tell you tomorrow,” but did not say in sha Allah. Then revelation from Allah SWT was delayed for many days."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then Allah SWT shows His Messenger the correct etiquette when deciding to do something in the future; that is, always refer to the will of Allah SWT, as only He knows what was or is to happen."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So, when referring to something in the future always say:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "“if Allah so wills!”  “in sha Allah” .  اَنۡ يَّشَآءَ اللّٰه"
+                },
+                {
+                  "kind": "prose",
+                  "text": "If one forgets to say it but remembers it later, even a year later, the Sunnah is that one should say it at that time meaning as soon as one remembers."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This way we are leaving or transferring matters to Allah SWT. We don’t know if we will be able to fulfill our commitments only Allah SWT knows."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is now become part of the manner or custom of our society that instills the concept of tauhid in everything we do and say. For example, we see a beautiful flower we say MA that is, we are not praising the flower but rather the Creator. After eating say AH to thank Allah SWT and so on."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: MA, AH and in sha Allah found in this Surah."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:25",
+                "text": "They had remained in their cave for three hundred years, adding nine.",
+                "ref_surah": 18,
+                "from_ayah": 25,
+                "to_ayah": 25,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The young men slept in the cave for 309 years!"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "قُلِ اللّٰهُ اَعۡلَمُ"
+              ],
+              "translation": {
+                "ref": "18:26",
+                "text": "Say, ˹O Prophet,˺ “Allah knows best how long they stayed. With Him ˹alone˺ is ˹the knowledge of˺ the unseen of the heavens and the earth. How perfectly He hears and sees! They have no guardian besides Him, and He shares His command with none.”",
+                "ref_surah": 18,
+                "from_ayah": 26,
+                "to_ayah": 26,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "It is best to say, Allah knows best,” or ِ اللّٰهُ اَعۡلَمُ As only Allah SWT has all knowledge."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Understand what is important in Islam via the stories in the Quran. Ask relevant and meaningful questions and not do not get caught up in nonsense of how many were in the cave or for example, people ask questions like, “how does one pray five times on the north pole as it is light outside 24 hours?”"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "NO ONE IS AUTHORIZED TO CHANGE THE WORD OF ALLAH AND PROCLAIM, \"TRUTH FROM ALLAH HAS COME, CHOICE IS YOURS, BELIEVE OR DISBELIEVE\" (27-31)",
+          "ord": 7,
+          "from_ayah": 27,
+          "to_ayah": 31,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:28",
+                "text": "And patiently stick with those who call upon their Lord morning and evening, seeking His pleasure. Do not let your eyes look beyond them, desiring the luxuries of this worldly life. And do not obey those whose hearts We have made heedless of Our remembrance, who follow ˹only˺ their desires and whose state is ˹total˺ loss.",
+                "ref_surah": 18,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Definition of a Loser or Total Loss (Those who only follow their desires and get lost in this world)"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Although these words have also been addressed to the Prophet (PBUH), they are really meant for the chiefs of the Quraish. The chiefs of the Quraish would say to the Prophet (PBUH) that they considered it below their dignity to sit with such underprivileged/poor people as Bilal, Suhaib, Ammar, Khabbab, Ibn-Masud and the like who generally remained in his company, and that if he can send them away, then they would be willing to attend his meetings in order to learn about his message."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then Allah SWT revealed this Ayat. Keep yourself completely content with those who pray to their Lord morning and evening. Do not abandon these sincere but poor people so that the wealthy chiefs of the Quraish should come and sit near you."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was meant to warn the chiefs of the Quraish that their wealth and pomp of which they were so proud has no value at all in the sight of Allah SWT and His Messenger (PBUH). In fact these poor people are more worthy as they are sincere and always remember Allah SWT."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah 21 Ayat 31"
+                },
+                {
+                  "kind": "prose",
+                  "text": "The same was the attitude of the chiefs of Prophet Nuh’s (PBUH) people, who said: And we also see that none but the poorest and the shallowest of our people have become your followers. Upon this, Nuh (PBUH) replied: I am not going to drive away those who have believed in me."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Not keeping good company will be one of the greatest regrets for people on the DoJ."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:29",
+                "text": "And proclaim: \"This is the Truth from your Lord. Now let him who will, believe; and let him who will, disbelieve. We have prepared a Fire for the wrong-doers whose billowing folds encompass them. If they ask for water, they will be served with a drink like dregs of oil that will scald their faces. How dreadful a drink, and how evil an abode!",
+                "ref_surah": 18,
+                "from_ayah": 29,
+                "to_ayah": 29,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says the truth is clear and the choice is ours. Meaning that any compromise or give and take in religion is not an option. Take it or leave it."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Punishment for the disbelievers is described."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:30",
+                "text": "As for those who believe and do good, We certainly never deny the reward of those who are best in deeds.",
+                "ref_surah": 18,
+                "from_ayah": 30,
+                "to_ayah": 30,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "IMAN + GOOD DEEDS = SUCCESS"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Good deeds should be done with the intention and sincerity of pleasing Allah SWT and the sunnah way."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:31",
+                "text": "It is they who will have the Gardens of Eternity, with rivers flowing under their feet. There they will be adorned with bracelets of gold, and wear green garments of fine silk and rich brocade, reclining there on ˹canopied˺ couches. What a marvelous reward! And what a fabulous place to rest!",
+                "ref_surah": 18,
+                "from_ayah": 31,
+                "to_ayah": 31,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Here we find a detailed description of what we will find in Heaven in sha Allah."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Opt for delayed gratification and opt for Iman and doing good deeds."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PARABLE OF A BELIEVER AND A DISBELIEVER (32-44)",
+          "ord": 8,
+          "from_ayah": 32,
+          "to_ayah": 44,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:32",
+                "text": "Set forth to them the parable of two men: for one of them We provided two gardens of grape-vines and surrounded them with date palms; in between the two We placed corn-fields.",
+                "ref_surah": 18,
+                "from_ayah": 32,
+                "to_ayah": 32,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The main aspect in this story to understand is that shirk does not just refer to idol worship but also to the worship of materialism or money etc. This is the modern shirk – so to speak. People tend to place all faith and trust in material/money and forget Allah SWT. This is the shirk of our time as opposed to idol or sun worship. We are tested by our abundance and by the lack of it so understand the reality of wealth."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Ayat 28"
+                },
+                {
+                  "kind": "prose",
+                  "text": "In order to understand the significance of this parable/example we should keep in mind Ayat 28 (above) in which the wealthily, arrogant chiefs of Makkah were told that the poor companions of the Prophet (PBUH) would not be cast-off/rejected so as to please or accommodate them."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Example of the Rich Idolators and the Poor Muslims"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT then gives a parable/example of two men, one of whom Allah SWT gave two gardens of grapes, surrounded with palm trees and crops throughout. The trees and plants were abundantly fruitful, providing readily accessible, good quality produce every year without fail."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: We are being tested in this life with abundance as well as the lack of it."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:34",
+                "text": "And he had other resources ˹as well˺. So he boasted to a ˹poor˺ companion of his, while conversing with him, “I am greater than you in wealth and superior in manpower.",
+                "ref_surah": 18,
+                "from_ayah": 34,
+                "to_ayah": 34,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The wealthy man puffed up with pride due to his possessions, his income, and his large family assuming that it would last forever. Looking down on his companion who was less affluent."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:35",
+                "text": "And he entered his garden while he was unjust to himself. He said, \"I do not think that this will perish - ever.",
+                "ref_surah": 18,
+                "from_ayah": 35,
+                "to_ayah": 35,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "“And he entered his garden while he was unjust to himself,” meaning, in his disbelief, rebellion, arrogance and denial of the Hereafter."
+                },
+                {
+                  "kind": "prose",
+                  "text": "He said: \"I do not think this will ever perish.\" Thus, he was allowing himself to be deceived by the abundance of plants, fruits, trees, and the rivers flowing through the different parts of his gardens. He thought that it could never come to an end or be destroyed."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This was due to a weakness of his faith in Allah SWT, and because he was so enamored by this world and its adornments, and because he disbelieved in the Hereafter."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: It was not wealth that ruined him rather his overwhelming and all-consuming love of the material. When we receive worldly blessings, we feel invincible. This is the greatest deception."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Don’t over-estimate the value of materials goods, Allah SWT can take it away any time."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So if you have nothing, don’t think you have nothing, you still have Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "And if you have everything, don’t think you have everything, Allah can take all of that away unless you understand that you did not have anything to begin with."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:36",
+                "text": "nor do I think the Hour will ˹ever˺ come. And if in fact I am returned to my Lord, I will definitely get a far better outcome than ˹all˺ this.”",
+                "ref_surah": 18,
+                "from_ayah": 36,
+                "to_ayah": 36,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "That is, he said he did not think there is any life after death, but supposing there is then, he felt he shall fare even better in the Hereafter than in this world life, because his worldly prosperity is a clear proof that he is a favorite of God."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:37",
+                "text": "His ˹believing˺ companion replied, while conversing with him, “Do you disbelieve in the One Who created you from dust, then ˹developed you˺ from a sperm-drop, then formed you into a man?",
+                "ref_surah": 18,
+                "from_ayah": 37,
+                "to_ayah": 37,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Response of the Poor Believer"
+                },
+                {
+                  "kind": "prose",
+                  "text": "This shows that unbelief or kufr in Allah SWT is not confined to the denial of the existence of God, but also arrogance, pride, vanity and the denial of the Hereafter are also kufr."
+                },
+                {
+                  "kind": "prose",
+                  "text": "In fact, belief in Allah SWT demands not merely declaring His existence but also the acknowledgment of His Sovereignty, Mastery, and Rule."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Three stages of man's creation: first dust, or clay, then a sperm drop and then when the different elements were mixed in due proportion, and the soul was breathed into him, this fashioned man."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see 15:28-29, 30:20, 35:11, and 87:2",
+                  "ref": "15:28-29"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Reflect and understand our origin with is so base (dust, clay, clot of blood) as opposed to Allah SWT’s status and position. Never will we become arrogant ever again."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "وَلَوۡلَاۤ اِذۡ دَخَلۡتَ جَنَّتَكَ قُلۡتَ مَا شَآءَ اللّٰهُ ۙ لَا قُوَّةَ اِلَّا بِاللّٰهِ ۚ"
+              ],
+              "translation": {
+                "ref": "18:39",
+                "text": "If only you had said, upon entering your property, ‘This is what Allah has willed! There is no power except with Allah!’ Even though you see me inferior to you in wealth and offspring,",
+                "ref_surah": 18,
+                "from_ayah": 39,
+                "to_ayah": 39,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Whoever is pleased with anything from his wealth or his children then say:"
+                },
+                {
+                  "kind": "prose",
+                  "text": "“That which Allah wills! There is no power but with Allah!\"    َ مَا شَآءَ اللّٰهُ ۙ لَا قُوَّةَ اِلَّا بِاللّٰهِ"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Here the believer is telling the wealthy/arrogant man that, when he entered his garden and looked at it and liked it, why wouldn't he praise Allah SWT for the blessings of wealth and children that He has given to him and not to others! Why did he not say `That which Allah wills! There is no power but with Allah!\""
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: If someone is showing off then warn them or guide them."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:40",
+                "text": "perhaps my Lord will grant me ˹something˺ better than your garden, and send down upon your garden a thunderbolt from the sky, turning it into a barren waste.",
+                "ref_surah": 18,
+                "from_ayah": 40,
+                "to_ayah": 40,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The poor man is confident that Allah SWT can provide him with much abundance whenever He wants and take away the wealth of the affluent man whenever He wants."
+                },
+                {
+                  "kind": "prose",
+                  "text": "The specific punishment mentioned here was of thunderbolts and an earthquake is also implied, as it alters watercourses, diverts channels underground, throws up silt and sand, and covers large areas with ruin."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:42",
+                "text": "And so all his produce was ˹totally˺ ruined, so he started to wring his hands for all he had spent on it, while it had collapsed on its trellises. He cried, “Alas! I wish I had never associated anyone with my Lord ˹in worship˺!”",
+                "ref_surah": 18,
+                "from_ayah": 42,
+                "to_ayah": 42,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "The Evil Results of Kufr"
+                },
+                {
+                  "kind": "prose",
+                  "text": "\"Fruits\", \"spent\", \"twisting of the hands\", should all be understood in a wide metaphorical sense, as well as the literal sense. He had great income and possessions and through them he had great peace of mind and satisfaction, which now were all gone. He had invested a lot and trusted himself instead of Allah SWT."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Important to note there is no mention of any idol, deity, pir, or saint etc. Thus, the shirk mentioned here is the worship, reliance upon and complete trust upon materialism."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Maybe the poor persons feelings got hurt by what the wealthily man said. Never break or hurt the heart of anyone who is close to Allah SWT by unkind words or actions. Esp. words of pride or actions take due to a power position."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Haith: “Verily Allah said: ‘Whoever shows enmity to a pious worshiper of Mine, I declare war against him."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: The one who boasts about his power and possessions relying on creation, will be tested through them."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "SIMILITUDE OF WORLDLY LIFE AND ITS RELATIONSHIP WITH THE LIFE OF HEREAFTER (45-49)",
+          "ord": 9,
+          "from_ayah": 45,
+          "to_ayah": 49,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:44",
+                "text": "(Then he knew) that all power of protection rests with Allah, the True One. He is the best to reward, the best to determine the end of things.",
+                "ref_surah": 18,
+                "from_ayah": 44,
+                "to_ayah": 44,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Place your trust Allah SWT and not creation or yourself.  Allah SWT is our Wali. He is the best Provider and Planner."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: People have no control over their lives.  Wealth, family, children etc., all come to us from Allah SWT. So be grateful and trust Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:46",
+                "text": "Wealth and children are the adornment of this worldly life, but the everlasting good deeds are far better with your Lord in reward and in hope.",
+                "ref_surah": 18,
+                "from_ayah": 46,
+                "to_ayah": 46,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Wealth and children are the adornment or beautification for the life of this world"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Children and wealth are fleeting and useless worldly resources unless we spend our wealth in good things/charity and train our children to be righteous – then they will benefit us in this life and the next."
+                },
+                {
+                  "kind": "prose",
+                  "text": "However, much better than wealth and children are good righteous deeds because they are our permanent asset and thus will be the reason for our entry into Heaven, in sha Allah. So, place all hope and expectations in your good deeds as opposed to your wealth and children. Good deeds will be our source of salvation."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Turning towards Allah SWT and worshipping Him is better than keeping busy accumulating wealth and pleasing our children."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Third time adornment is mentioned in this Surah as this is the central theme of this Ayat."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:7",
+                "text": "Indeed, We have made that which is on the earth adornment for it that We may test them [as to] which of them is best in deed.",
+                "ref_surah": 18,
+                "from_ayah": 7,
+                "to_ayah": 7,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:28",
+                "text": "And patiently stick with those who call upon their Lord morning and evening, seeking His pleasure. Do not let your eyes look beyond them, desiring the luxuries/adornment of this worldly life. And do not obey those whose hearts We have made heedless of Our remembrance, who follow ˹only˺ their desires and whose state is ˹total˺ loss.",
+                "ref_surah": 18,
+                "from_ayah": 28,
+                "to_ayah": 28,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "hadith",
+                  "text": "Hadith: The good righteous deeds that last are the five daily prayers. The good righteous deeds that last are the zikr of:"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Subhan Allah (glory be to Allah)',"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Al-Hamdu Lillah (praise be to Allah)',"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "La ilaha illallah (there is none worthy of worship except Allah)', and"
+                },
+                {
+                  "kind": "list_item",
+                  "text": "Allahu Akbar (Allah is Most Great).'"
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (3:14)",
+                  "ref": "3:14"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Beautified for men is the love of things they covet; women, children, vaulted hoards of gold..."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see (64:15)",
+                  "ref": "64:15"
+                },
+                {
+                  "kind": "quote",
+                  "text": "Your wealth and your children are only a trial, whereas Allah! With Him is a great reward (Paradise).",
+                  "ref": "64:15"
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Don’t cling to the world with all its sorrows and joys as it is fleeting and temporary. Make children an investment for you by teaching them well. We will be presented before Allah SWT naked, empty handed and alone just as we entered this world."
+                },
+                {
+                  "kind": "heading",
+                  "text": "PLACE HOPE IN GOOD DEEDS = SUCCESS"
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "FATE OF THOSE WHO FOLLOW THE SHAITAN AND COMMIT SHIRK (50-53)",
+          "ord": 10,
+          "from_ayah": 50,
+          "to_ayah": 53,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:50",
+                "text": "And ˹remember˺ when We said to the angels, “Prostrate before Adam,” so they all did—but not Iblîs, who was one of the jinn, but he rebelled against the command of his Lord. Would you then take him and his descendants as patrons instead of Me, although they are your enemy? What an evil alternative for the wrongdoers ˹to choose˺!",
+                "ref_surah": 18,
+                "from_ayah": 50,
+                "to_ayah": 50,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "What a bad, miserable choice you have made by making satan your friend and guardian."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Mentioned here for the first time is the Iblis or satan was not an angel but a jinn."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:53",
+                "text": "The wicked will see the Fire and realize that they are bound to fall into it, and will find no way to avoid it.",
+                "ref_surah": 18,
+                "from_ayah": 53,
+                "to_ayah": 53,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "When the criminals shall see the Hell fire, they will realize that they cannot escape the inevitable. And in fact, this intense anxiety and distress due the anticipation and fear of Hell is in itself a real punishment."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "ALLAH HAS GIVEN ALL KINDS OF EXAMPLES IN THE QURAN, SO THAT THE PEOPLE MAY UNDERSTAND HIS MESSAGE (54-59)",
+          "ord": 11,
+          "from_ayah": 54,
+          "to_ayah": 59,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:54",
+                "text": "We have explained in detail in this Quran, for the benefit of mankind, every kind of similitude: but man is, in most things, contentious.",
+                "ref_surah": 18,
+                "from_ayah": 54,
+                "to_ayah": 54,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Bani Israel Ayat 89"
+                },
+                {
+                  "kind": "heading",
+                  "text": "Examples put forth in the Quran"
+                },
+                {
+                  "kind": "prose",
+                  "text": "In the Quran, Allah SWT has explained matters with examples and in different ways, so that the path of guidance is clear. Yet, man is very argumentative and in the habit of debate and stubbornness."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: When Iman enters one’s heart, he comes less argumentative and more accepting."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:57",
+                "text": "And who does more wrong than those who, when reminded of their Lord’s revelations, turn away from them and forget what their own hands have done? We have certainly cast veils over their hearts—leaving them unable to comprehend this ˹Quran˺—and deafness in their ears. And if you ˹O Prophet˺ invite them to ˹true˺ guidance, they will never be ˹rightly˺ guided.",
+                "ref_surah": 18,
+                "from_ayah": 57,
+                "to_ayah": 57,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "cross_ref",
+                  "text": "Also see Surah Bani Israel Ayat 36"
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Worst People are Those Who turn away after being reminded"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Allah SWT says the worst among mankind are those who after being reminded choose to ignore, not listen or pay attention to the Quran and its teachings."
+                },
+                {
+                  "kind": "prose",
+                  "text": "“Forget what their own hands have done,” meaning they forget their wrong actions and bad deeds. That is, if they are adopted Iman and repented in this world then they could have achieved total salvation. Instaed they choose to ignore and turn away for the Quran and its teachings."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Then for such people Allah SWT has set a seal or coverings over their hearts so that they will not understand this Quran and its clear Message. They will be deaf in an abstract way, to guidance."
+                },
+                {
+                  "kind": "prose",
+                  "text": "This is the fate of those who adopt the attitude of contention, dispute, wrangling and argument towards the caution of a well-wisher."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: This is the most awful fate and worst punishment. The gift of guidance is removed. Remember it is but natural for a human to sin so do not fear sin as we can seek/beg for repentance but DO fear when the Quran leaves one’s heart."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROPHET MUSA TRAVELLED TO FIND KHIZER TO LEARN SOME OF THE KNOWLEDGE GIVEN TO HIM BY ALLAH ALMIGHTY AND KHIZER WARNED MUSA THAT HE WOULD NOT BE ABLE TO BEAR WITH HIM (60-70)",
+          "ord": 12,
+          "from_ayah": 60,
+          "to_ayah": 70,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:60",
+                "text": "And ˹remember˺ when Moses said to his young assistant, “I will never give up until I reach the junction of the two seas, even if I travel for ages.”",
+                "ref_surah": 18,
+                "from_ayah": 60,
+                "to_ayah": 60,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The theme of crux of this story is that in this world although we may find something apparently bad or objectionable we do not understand the wisdom of Allah SWT behind this apparent wrong. So one should just leave things and the decree to the will of Allah SWT. Allah SWT decrees only khair or good for us but in our short-sightedness, we cannot see that. A Momin is happy with Allah’s rulings whatever it may be. Always continue to seek knowledge and do not get arrogant about the knowledge that Allah SWT has bestowed upon you as it is one of Allah SWT’s greatest blessings. Have sabr/patience."
+                },
+                {
+                  "kind": "cross_ref",
+                  "text": "Surah Al-Bakarah Ayat 216"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Fighting has been made obligatory upon you ˹believers˺, though you dislike it. Perhaps you dislike something which is good for you and like something which is bad for you. Allah knows and you do not know."
+                },
+                {
+                  "kind": "heading",
+                  "text": "The Story of Musa and Al-Khidr"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Musa was commanded by Allah SWT to travel to one of his servants who had knowledge which Musa had not been granted. This servant of Allah SWT was situated at the junction of the two seas."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:61",
+                "text": "But when they ˹finally˺ reached the point where the seas met, they forgot their ˹salted˺ fish, and it made its way into the sea, slipping away ˹wondrously˺.",
+                "ref_surah": 18,
+                "from_ayah": 61,
+                "to_ayah": 61,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Musa had been commanded to carry a salted fish with him, and it had been said to him that when you lose the fish, that will be a sign that you have reached the right place. So, they set out and traveled until they reached the junction of the two seas.\n\nThe dead fish came back to life and jumped into the sea creating a tunnel as it swam away. Both Musa and Yusha` were asleep however when the fish jumped out of the boat Yusha woke up and saw it swim away however he did not tell Musa about this."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:62",
+                "text": "When they had passed further, he said to his assistant, “Bring us our meal! We have certainly been exhausted by today’s journey.”",
+                "ref_surah": 18,
+                "from_ayah": 62,
+                "to_ayah": 62,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Musa forgot about the fish, and his attendant forgot to tell him of the fact that he had seen the fish escaping into the sea. Thus, we find that it was a blessing from Allah SWT to make Musa tired and hungry because only then did he realize that the fish was missing."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: At times illness, exhaustion etc., are a mercy from Allah SWT that we regroup and take a break."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:63",
+                "text": "He replied, “Do you remember when we rested by the rock? ˹That is when˺ I forgot the fish. None made me forget to mention this except Satan. And the fish made its way into the sea miraculously.”",
+                "ref_surah": 18,
+                "from_ayah": 63,
+                "to_ayah": 63,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "The servant truthfully confessed everything to Musa about the fish that is, how is swam away into the ocean."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:64",
+                "text": "Moses responded, “That is ˹exactly˺ what we were looking for.” So they returned, retracing their footsteps.",
+                "ref_surah": 18,
+                "from_ayah": 64,
+                "to_ayah": 64,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Musa then retraced his steps."
+                },
+                {
+                  "kind": "lesson",
+                  "text": "Lesson: Musa did not yell, insult or blame his servant. When we set goals then we are tested in many ways so as to assess our level of commitment. Being tolerant when others make a mistake is real sabr/patience."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:65",
+                "text": "There they found a servant of Ours, to whom We had granted mercy from Us and enlightened with knowledge of Our Own.",
+                "ref_surah": 18,
+                "from_ayah": 65,
+                "to_ayah": 65,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "This righteous servant was given special knowledge and mercy from Allah SWT."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:66",
+                "text": "Moses said to him, “May I follow you, provided that you teach me some of the right guidance you have been taught?”",
+                "ref_surah": 18,
+                "from_ayah": 66,
+                "to_ayah": 66,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "heading",
+                  "text": "Musa meeting with Al-Khidr and accompanying Him"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Musa asked if he could accompany Khidr and learn from him so that he may be guided and do righteous deeds."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:67",
+                "text": "He said, “You certainly cannot be patient ˹enough˺ with me.",
+                "ref_surah": 18,
+                "from_ayah": 67,
+                "to_ayah": 67,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Meaning that when Musa will see Khidr doing things that go against his law then Musa will not be able to restrain himself."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:68",
+                "text": "And how can you be patient with what is beyond your ˹realm of˺ knowledge?”",
+                "ref_surah": 18,
+                "from_ayah": 68,
+                "to_ayah": 68,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Al-Khir knew that Musa will criticize or even condemn him however, Al-Khir had knowledge of Allah's wisdom and the hidden interests which only he could see."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [
+                "قَالَ سَتَجِدُنِىۡۤ اِنۡ شَآءَ اللّٰهُ صَابِرًا وَّلَاۤ اَعۡصِىۡ لَكَ اَمۡرًا"
+              ],
+              "translation": {
+                "ref": "18:69",
+                "text": "Moses assured ˹him˺, “You will find me patient, Allah willing, and I will not disobey any of your orders.”",
+                "ref_surah": 18,
+                "from_ayah": 69,
+                "to_ayah": 69,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Musa adopts the correct attitude of the learner to the Teacher, and promises to obey all things, with the help of Allah SWT. The Teacher is doubtful but permits him to follow him on condition that he asks no questions about anything until the Teacher himself mentions it first."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:70",
+                "text": "He responded, “Then if you follow me, do not question me about anything until I ˹myself˺ clarify it for you.”",
+                "ref_surah": 18,
+                "from_ayah": 70,
+                "to_ayah": 70,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Al-Khidr sets one condition that do not ask me about anything till I tell you. Just observe and do not comment. Questions will be allowed till at the end so do not interpret before."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        },
+        {
+          "title": "PROPHET MUSA COULD NOT RESIST QUESTIONING KHIZER WHEN HE MADE A HOLE IN BOAT, AND WHEN HE KILLED A BOY WITH NO APPARENT REASON (71-74)",
+          "ord": 13,
+          "from_ayah": 71,
+          "to_ayah": 74,
+          "intro": [],
+          "ayah_units": [
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:71",
+                "text": "So they set out, but after they had boarded a ship, the man made a hole in it. Moses protested, “Have you done this to drown its people? You have certainly done a terrible thing!”",
+                "ref_surah": 18,
+                "from_ayah": 71,
+                "to_ayah": 71,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "list_item",
+                  "text": "Damaging the Boat"
+                },
+                {
+                  "kind": "prose",
+                  "text": "Al-Khidr had made the condition that Musa should not ask him about anything he found objectionable until he (Al-Khidr) himself initiated the discussion and offered an explanation. Allah SWT tells us that after having come to an agreement and reached an understanding, Musa and Al-Khidr set out."
+                },
+                {
+                  "kind": "prose",
+                  "text": "So, they went on board the ship. When the boat took was out to sea and they were far from the shore, Al-Khidr got up and damaged the boat, pulling out one of its planks.  Musa, could not restrain himself from being critical."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:72",
+                "text": "[Al-Khidh r] said, \"Did I not say that with me you would never be able to have patience?\"",
+                "ref_surah": 18,
+                "from_ayah": 72,
+                "to_ayah": 72,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Al-Khidr reminded Musa of their previously agreed terms/condition, that was, ‘do not denounce me because you do not know the full story, and there is a reason and purpose for what I do.’"
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:73",
+                "text": "Moses pleaded, “Excuse me for forgetting, and do not be hard on me.”",
+                "ref_surah": 18,
+                "from_ayah": 73,
+                "to_ayah": 73,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "prose",
+                  "text": "Musa immediately apologized and asked for pardon/leniency. He was not argumentative and suborn."
+                }
+              ],
+              "extras": []
+            },
+            {
+              "arabic_lines": [],
+              "translation": {
+                "ref": "18:74",
+                "text": "So they proceeded until they came across a boy, and the man killed him. Moses protested, “Have you killed an innocent soul, who killed no one? You have certainly done a horrible thing.”",
+                "ref_surah": 18,
+                "from_ayah": 74,
+                "to_ayah": 74,
+                "ref_inferred": false,
+                "ref_as_written": null
+              },
+              "commentary": [
+                {
+                  "kind": "list_item",
+                  "text": "The Story of killing the Boy"
+                },
+                {
+                  "kind": "prose",
+                  "text": "They continued after the first incident, till they met a boy, and he (Al Khidr) killed him.\nIt has been stated previously that this boy was playing with other boys in one of the towns, and that Al-Khidr deliberately singled him out. He was the finest and most handsome of them all, and Al-Khidr killed him. When Musa, saw that he denounced him even more fervently than in the first case, and said hastily: ‘Have you killed an innocent person?’ meaning, a young person who had not yet committed any sin or done anything wrong."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Note: Until a child reaches puberty his sins are not recorded. Only good deeds are recorded."
+                },
+                {
+                  "kind": "prose",
+                  "text": "Musa again apologized to Al-Khidr for his interruption and asked for pardon one last time."
+                }
+              ],
+              "extras": []
+            }
+          ]
+        }
+      ],
+      "recaps": []
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "a1",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "section index vs body heading, range 66-70",
+      "description": "title drift: index reads 'ALLAH HAS PROVIDED CONVEYANCE FOR YOU ON LAND AND SEA (66-70)' while body heading reads 'ALLAH HAS HONORED MANKIND (66-70)'; both kept verbatim",
+      "severity": "low"
+    },
+    {
+      "id": "a2",
+      "file": "3 - Juz 15 surah kahf.docx",
+      "location": "section-title index",
+      "description": "index lists 5 section title(s) with no body heading in this chunk (expected for a chunk doc per FORMAT rule 10): STORY OF PROPHET MUSA AND KHIZER (75-82) | STORY OF KING ZUL-QARNAIN (83-101) | FATE OF THE MUSHRIKIN AND THE BELIEVERS ON THE DAY OF JUDGEMENT (102-108) | WORDS OF ALLAH ARE COUNTLESS AND CANNOT BE RECORDED (109) | MUHAMMAD IS BUT A HUMAN BEING LIKE YOU (110)",
+      "severity": "low"
+    },
+    {
+      "id": "a3",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "body ayah translations",
+      "description": "coverage mismatch: 5 captured ayah(s) fall outside the CP range 17:1-17:99 ([101, 105, 106, 109, 111]). The CP range appears understated.",
+      "severity": "high"
+    },
+    {
+      "id": "a4",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "section 22 (last captured ayah)",
+      "description": "boundary check: last captured ayah 17:111 != CP end 17:99",
+      "severity": "high"
+    },
+    {
+      "id": "a5",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "front matter, 'AYAT-E- SAJDAH'",
+      "description": "format wrinkle: a front-matter 'topic' label sits before the section index and prints a (s:a) translation; captured as a LabeledUnit whose items carry kind 'translation'. The same label recurs as a commentary heading inside section 22 (17:109).",
+      "severity": "low"
+    },
+    {
+      "id": "a6",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "recap 'MY KEY TAKEAWAYS'",
+      "description": "format wrinkle: the bold line 'Also, the dua we read when we enter the Al-Huda building' (<=90 chars, no terminal period) is classified heading by FORMAT rule 11 though it reads as prose.",
+      "severity": "low"
+    },
+    {
+      "id": "a7",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "section 17, commentary of 17:78",
+      "description": "cross-references printed as 'Surah 9 Verse Ayat 114' / 'Surah 20 Ayat 130' / 'Surah 30 Verse Ayats 17-18' are not line-initial 'Also see' references, so per FORMAT rule 6 they stay kind prose (each is followed by its quoted translation on the next line).",
+      "severity": "low"
+    },
+    {
+      "id": "a8",
+      "file": "2 - Juz 15 Surah Isr.docx",
+      "location": "section 20 (94-100)",
+      "description": "format wrinkle: the section has no ayah units; its 'Summary: (17: 94-100)' range line is kept as a prose section-intro item (no 'summary' kind exists).",
+      "severity": "low"
+    },
+    {
+      "id": "a9",
+      "file": "3 - Juz 15 surah kahf.docx",
+      "location": "section 9, commentary of 18:46",
+      "description": "format gap: restated (s:a) translations of already-captured ayat 18:7 and 18:28 inside section 9 become duplicate AyahUnits because the commentary kind set has no 'translation' kind (only recaps do).",
+      "severity": "low"
+    },
+    {
+      "id": "a10",
+      "file": "3 - Juz 15 surah kahf.docx",
+      "location": "section 8, commentary of 18:42",
+      "description": "source typo: the hadith line is printed 'Haith:' (not 'Hadith:'), so it is kept as prose rather than kind hadith.",
+      "severity": "low"
+    },
+    {
+      "id": "a11",
+      "file": "1 - JUZ 15 CP .docx",
+      "location": "coverage map",
+      "description": "source: Surah 17 name is written 'Al As Isar & Bani Israel' (odd spacing) and its stated range '17:01 Till 17:99' understates the surah (it runs to 17:111). Kept verbatim.",
+      "severity": "high"
+    },
+    {
+      "id": "a12",
+      "file": "1 - JUZ 15 CP .docx",
+      "location": "cover-page header block",
+      "description": "v5 field cp_header_lines added: the cover-page header block (JUZ 15 / Arabic header / transliteration / English meaning) is stored ordered and verbatim; juz.extras is now empty.",
+      "severity": "low"
+    }
+  ]
+}
