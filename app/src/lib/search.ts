@@ -1,6 +1,7 @@
 import { query } from "./db";
 import { embed } from "./llm";
 import type {
+  DocDocument,
   AyahBlock,
   Citation,
   DocBlock,
@@ -27,67 +28,121 @@ const JUZ_AR = [
 
 /** Reader mode: one surah, sections -> ayat -> verbatim commentary. */
 export async function surahView(number: number): Promise<SurahView | null> {
-  const [s] = await query<{ id: number; number: number; name_en: string; juz: number }>(
-    `SELECT id, number, name_en,
-            COALESCE(
-              (SELECT min(juz) FROM section WHERE surah_id = surah.id AND juz IS NOT NULL),
-              (SELECT number FROM juz WHERE id = surah.juz_id),
-              juz_id
-            ) AS juz
-     FROM surah WHERE number = $1`,
+  // Derived from the per-juz structured tables (FORMAT.md v7): one document
+  // per surah part, blocks emitted from sections and ayah units — the same
+  // block kinds the Reader renders, now backed by the structured model.
+  type PartRow = {
+    id: number; source_file: string; juz: number; surah_number: number;
+    name_en: string; bismillah: string | null; chunk_marker: string | null;
+    from_ayah: number; to_ayah: number;
+  };
+  const parts = await query<PartRow>(
+    `SELECT p.id, p.source_file, j.number AS juz, p.surah_number, p.name_en,
+            p.bismillah, p.chunk_marker, p.from_ayah, p.to_ayah
+     FROM part p JOIN juz j ON j.id = p.juz_id
+     WHERE p.surah_number = $1 ORDER BY j.number, p.ord`,
     [number],
   );
-  if (!s) return null;
+  if (!parts.length) return null;
 
-  // The documents as written, in reading order (juz, then file), each file's
-  // blocks in their own order. Ordering by the file's juz — not by each block's
-  // juz — matters: the bismillah and banner sit before the "JUZ n" line, so
-  // their own juz is null and sorting on it would move them to the end.
-  // section_id is attached to section headings so the explorer can still jump
-  // to a section: the stored title is the tail of the heading paragraph.
-  const rows = await query<{
-    source_file: string;
-    juz: number | null;
-    ord: number;
-    kind: DocBlock["kind"];
-    text: string;
-    ref_surah: number | null;
-    ref_ayah: number | null;
-    section_id: number | null;
+  const sections = await query<{
+    part_id: number; id: number; ord: number; title: string | null; intro: { kind: string; text: string }[];
   }>(
-    `SELECT b.source_file, d.juz, b.ord, b.kind, b.text, b.ref_surah, b.ref_ayah,
-            sec.id AS section_id
-     FROM doc_block b
-     JOIN source_doc d ON d.source_file = b.source_file
-     LEFT JOIN LATERAL (
-       SELECT sc.id FROM section sc
-       WHERE b.kind = 'section_heading' AND sc.source_file = b.source_file
-         AND right(b.text, length(sc.title)) = sc.title
-       ORDER BY sc.ord LIMIT 1
-     ) sec ON true
-     WHERE b.surah_number = $1
-     ORDER BY d.juz, b.source_file, b.ord`,
+    `SELECT s.part_id, s.id, s.ord, s.title, s.intro
+     FROM section s JOIN part p ON p.id = s.part_id
+     WHERE p.surah_number = $1 ORDER BY j.number, p.ord, s.ord`.replace(
+      "WHERE p.surah_number", "JOIN juz j ON j.id = p.juz_id WHERE p.surah_number"),
     [number],
   );
 
-  const documents: SurahView["documents"] = [];
-  for (const r of rows) {
-    let doc = documents.find((d) => d.source_file === r.source_file);
-    if (!doc) {
-      doc = { source_file: r.source_file, juz: r.juz, blocks: [] };
-      documents.push(doc);
-    }
-    doc.blocks.push({
-      ord: r.ord,
-      kind: r.kind,
-      text: r.text,
-      ref_surah: r.ref_surah,
-      ref_ayah: r.ref_ayah,
-      section_id: r.section_id,
-    });
+  const units = await query<{
+    part_id: number; section_id: number; ord: number;
+    arabic_lines: string[]; translation: { ref: string; text: string; ref_surah: number | null } | null;
+  }>(
+    `SELECT s.part_id, s.id AS section_id, u.ord, u.arabic_lines, u.translation
+     FROM ayah_unit u
+     JOIN section s ON s.id = u.section_id
+     JOIN part p ON p.id = s.part_id
+     JOIN juz j ON j.id = p.juz_id
+     WHERE p.surah_number = $1 ORDER BY j.number, p.ord, s.ord, u.ord`,
+    [number],
+  );
+
+  const commentary = await query<{
+    section_id: number; unit_ord: number; ord: number; kind: string; text: string; ref: string | null;
+  }>(
+    `SELECT s.id AS section_id, u.ord AS unit_ord, ci.ord, ci.kind, ci.text, ci.ref
+     FROM commentary_item ci
+     JOIN ayah_unit u ON u.id = ci.ayah_unit_id
+     JOIN section s ON s.id = u.section_id
+     JOIN part p ON p.id = s.part_id
+     JOIN juz j ON j.id = p.juz_id
+     WHERE p.surah_number = $1 ORDER BY j.number, p.ord, s.ord, u.ord, ci.ord`,
+    [number],
+  );
+
+  const recaps = await query<{
+    part_id: number; id: number; ord: number; title: string | null; items: { kind: string; text: string }[];
+  }>(
+    `SELECT r.part_id, r.ord, r.title, r.items
+     FROM recap r JOIN part p ON p.id = r.part_id
+     JOIN juz j ON j.id = p.juz_id
+     WHERE p.surah_number = $1 ORDER BY j.number, p.ord, r.ord`,
+    [number],
+  );
+
+  const commByUnit = new Map<string, { kind: string; text: string; ref: string | null }[]>();
+  for (const c of commentary) {
+    const key = `${c.section_id}:${c.unit_ord}`;
+    const list = commByUnit.get(key) ?? [];
+    list.push({ kind: c.kind, text: c.text, ref: c.ref });
+    commByUnit.set(key, list);
+  }
+  const unitsBySection = new Map<number, typeof units>();
+  for (const u of units) {
+    const list = unitsBySection.get(u.section_id) ?? [];
+    list.push(u);
+    unitsBySection.set(u.section_id, list);
   }
 
-  return { number: s.number, name_en: s.name_en, juz: s.juz, documents };
+  const documents: DocDocument[] = parts.map((part) => {
+    const blocks: DocBlock[] = [];
+    const push = (b: Omit<DocBlock, "ord">) => blocks.push({ ...b, ord: blocks.length });
+    if (part.bismillah) push({ kind: "arabic", text: part.bismillah, ref_surah: null, ref_ayah: null, section_id: null });
+    push({ kind: "juz_header", text: `Juz ${part.juz}`, ref_surah: null, ref_ayah: null, section_id: null });
+    push({ kind: "surah_header", text: `Surah ${part.surah_number} – ${part.name_en}`, ref_surah: null, ref_ayah: null, section_id: null });
+    if (part.chunk_marker) push({ kind: "prose", text: part.chunk_marker, ref_surah: null, ref_ayah: null, section_id: null });
+    push({ kind: "prose", text: `Ayat ${part.from_ayah}–${part.to_ayah}`, ref_surah: null, ref_ayah: null, section_id: null });
+
+    for (const sec of sections.filter((s) => s.part_id === part.id)) {
+      if (sec.title) push({ kind: "section_heading", text: sec.title, ref_surah: null, ref_ayah: null, section_id: sec.id });
+      for (const it of sec.intro ?? []) push({ kind: it.kind === "heading" ? "heading" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+      for (const u of unitsBySection.get(0) ?? []) { /* unreachable, keeps types honest */ }
+      for (const u of units.filter((x) => x.section_id === sec.id)) {
+        for (const a of u.arabic_lines ?? []) push({ kind: "arabic", text: a, ref_surah: null, ref_ayah: null, section_id: null });
+        const t = u.translation;
+        if (t) {
+          const ayah = Number((t.ref.split(/[:\s]/)[1] ?? "").replace(/\D/g, "")) || null;
+          push({ kind: "translation", text: t.text, ref_surah: t.ref_surah, ref_ayah: ayah, section_id: null });
+        }
+        for (const c of commByUnit.get(`${sec.id}:${u.ord}`) ?? []) {
+          const kind: DocBlock["kind"] =
+            c.kind === "list_item" ? "list_item"
+            : c.kind === "heading" ? "heading"
+            : "prose";
+          push({ kind, text: c.ref ? `(${c.ref}) ${c.text}` : c.text, ref_surah: null, ref_ayah: null, section_id: null });
+        }
+      }
+    }
+    for (const r of recaps.filter((r) => r.part_id === part.id)) {
+      if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null });
+      for (const it of r.items ?? []) push({ kind: it.kind === "list_item" ? "list_item" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+    }
+    return { source_file: part.source_file, juz: part.juz, blocks };
+  });
+
+  const first = parts[0];
+  return { number, name_en: first.name_en ?? "", juz: first.juz, documents };
 }
 
 type Hit = {
@@ -103,7 +158,6 @@ type Hit = {
   score: number;
 };
 
-/** Hybrid retrieval: pgvector cosine + tsvector keyword, fused per ayah. */
 export async function retrieve(
   text: string,
   filters: Filters = {},
