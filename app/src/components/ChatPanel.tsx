@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Citation, Filters, ResponseDoc } from "@/lib/types";
-import { workLabel } from "./Workspace";
+import { workLabel, type RecentQuery } from "./Workspace";
 
 export type Message = {
   role: "q" | "a";
@@ -18,6 +18,9 @@ type Props = {
   messages: Message[];
   busy: boolean;
   currentDoc: ResponseDoc | null;
+  recent: RecentQuery[];
+  activeQueryId?: string;
+  onOpenRecent: (r: RecentQuery) => void;
   onAsk: (question: string) => void;
   onRefine: (filters: Filters) => void;
   onShowInReader: (docId: string) => void;
@@ -28,12 +31,16 @@ export default function ChatPanel({
   messages,
   busy,
   currentDoc,
+  recent,
+  activeQueryId,
+  onOpenRecent,
   onAsk,
   onRefine,
   onShowInReader,
   onCollapse,
 }: Props) {
   const [draft, setDraft] = useState("");
+  const [recentOpen, setRecentOpen] = useState(false);
   const last = messages[messages.length - 1];
   const showSuggestions = Boolean(last && last.role === "a" && !last.streaming && currentDoc);
 
@@ -57,6 +64,28 @@ export default function ChatPanel({
       </div>
 
       <div className="thread">
+        {recent.length > 0 && (
+          <>
+            <button
+              className="juz queries"
+              onClick={() => setRecentOpen((v) => !v)}
+              title={recentOpen ? "Hide recent queries" : "Show recent queries"}
+            >
+              <span className="caret">{recentOpen ? "▾" : "▸"}</span> Recent queries
+            </button>
+            {recentOpen &&
+              recent.map((r) => (
+              <button
+                key={r.id}
+                className={`item q${r.docId === activeQueryId ? " on" : ""}`}
+                onClick={() => onOpenRecent(r)}
+              >
+                <span>“{r.query}”</span>
+              </button>
+            ))}
+          </>
+        )}
+
         {messages.length === 0 && (
           <div className="a">
             <p>
