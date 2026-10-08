@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { RefObject } from "react";
-import type { DocBlock, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
+import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
 import { speakSupported, speakText, stopSpeaking } from "@/lib/speech";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
@@ -10,6 +10,7 @@ import CommentaryText from "./CommentaryText";
 type Props = {
   mode: "reader" | "query";
   surah: SurahView | null;
+  standalone: DocView | null;
   doc: ResponseDoc | null;
   ref: RefObject<HTMLElement | null>;
   tree: TreeSurah[];
@@ -20,6 +21,7 @@ type Props = {
 export default function Reader({
   mode,
   surah,
+  standalone,
   doc,
   ref,
   tree,
@@ -38,9 +40,11 @@ export default function Reader({
             </>
           ),
         }
-      : surah
-        ? { label: <>Juz {surah.juz} / Surah {surah.number} / <b>{surah.name_en}</b></> }
-        : { label: <>Reading</> };
+      : standalone
+        ? { label: <><b>{standalone.title}</b></> }
+        : surah
+          ? { label: <>Juz {surah.juz} / Surah {surah.number} / <b>{surah.name_en}</b></> }
+          : { label: <>Reading</> };
 
   return (
     <main className="main" ref={ref}>
@@ -59,7 +63,9 @@ export default function Reader({
       <div className="wrap">
         {mode === "query"
           ? doc && <ResponseDocument doc={doc} tree={tree} />
-          : surah && <SurahDocument surah={surah} />}
+          : standalone
+            ? <StandaloneDocument doc={standalone} />
+            : surah && <SurahDocument surah={surah} />}
       </div>
     </main>
   );
@@ -95,6 +101,14 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
 }
 
 /* ---------------- reader mode: the source document, block by block ---------------- */
+
+function StandaloneDocument({ doc }: { doc: DocView }) {
+  return (
+    <section className="doc">
+      <DocumentBody blocks={doc.blocks} />
+    </section>
+  );
+}
 
 function SurahDocument({ surah }: { surah: SurahView }) {
   const multi = surah.documents.length > 1;

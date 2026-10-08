@@ -1,22 +1,26 @@
 "use client";
 
-import type { TreeSurah } from "@/lib/types";
+import type { TreeDoc, TreeSurah } from "@/lib/types";
 
 type Props = {
   tree: TreeSurah[];
-  active: { surah?: number; sectionId?: number };
+  docs: TreeDoc[];
+  active: { surah?: number; sectionId?: number; doc?: string };
   expanded: Set<string>;
   onToggle: (key: string) => void;
   onOpenSurah: (number: number, juz: number, sectionId?: number) => void;
+  onOpenDoc: (sourceFile: string) => void;
   onCollapse: () => void;
 };
 
 export default function Explorer({
   tree,
+  docs,
   active,
   expanded,
   onToggle,
   onOpenSurah,
+  onOpenDoc,
   onCollapse,
 }: Props) {
   const juzGroups = tree.reduce<Record<number, TreeSurah[]>>((acc, s) => {
@@ -33,6 +37,17 @@ export default function Explorer({
         </button>
       </div>
       <div className="scroll">
+        {/* Standalone documents (e.g. the Introduction) sit above the juz tree */}
+        {docs.map((d) => (
+          <button
+            key={d.source_file}
+            className={`item${active.doc === d.source_file ? " on" : ""}`}
+            onClick={() => onOpenDoc(d.source_file)}
+          >
+            <span>{d.title}</span>
+          </button>
+        ))}
+
         {Object.entries(juzGroups).map(([juz, surahs]) => {
           const juzKey = `juz:${juz}`;
           const juzOpen = expanded.has(juzKey);

@@ -17,6 +17,20 @@ export type TreeSurah = {
   sections: TreeSection[];
 };
 
+/** A standalone (non-surah) source document, e.g. the Introduction. */
+export type TreeDoc = {
+  source_file: string;
+  title: string;
+};
+
+/** Reader payload for a standalone document: its blocks, as written. */
+export type DocView = {
+  source_file: string;
+  title: string;
+  juz: number | null;
+  blocks: DocBlock[];
+};
+
 export type CommentaryRow = {
   id: number;
   content: string;
@@ -92,6 +106,12 @@ export type ResponseDoc = {
   groups: ResponseGroup[];
   stats: { ayat: number; surahs: number; juz: number };
   cites: Citation[];
+};
+
+/** File-explorer payload: surah nodes under their juz, plus standalone docs. */
+export type Tree = {
+  surahs: TreeSurah[];
+  docs: TreeDoc[];
 };
 
 export type Filters = { surah?: number; juz?: number };

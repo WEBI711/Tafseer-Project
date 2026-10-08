@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import type { TreeSurah } from "./types";
+import type { DocBlock, DocView, TreeDoc, TreeSurah, Tree } from "./types";
 
 // DB is the contract between the Python ingestion and this app (PLAN.md).
 const pool = new Pool({
@@ -15,9 +15,9 @@ export async function query<T = Record<string, unknown>>(
   return res.rows as T[];
 }
 
-export type { TreeSurah };
+export type { TreeSurah, Tree };
 
-export async function tree(): Promise<TreeSurah[]> {
+export async function tree(): Promise<Tree> {
   // The tree mirrors the source layout: juz -> surah part -> sections, from
   // the per-juz structured tables (FORMAT.md v7). A surah recurs under each
   // juz whose folder holds a chunk of it.
@@ -66,5 +66,69 @@ export async function tree(): Promise<TreeSurah[]> {
       to_ayah: r.to_ayah,
     });
   }
-  return out;
+  // Standalone documents (no surah): title from the first heading, else the
+  // file name. Their home is doc_block with a NULL surah_number, but migration
+  // 007 dropped doc_block when the structured model landed — until a migration
+  // restores it (with the Introduction), keep the tree working with no docs.
+  const docs: TreeDoc[] = [];
+  if (await docBlockExists()) {
+    const docRows = await query<{ source_file: string; title: string | null }>(
+      `SELECT d.source_file,
+              (SELECT d2.text FROM doc_block d2
+               WHERE d2.source_file = d.source_file AND d2.surah_number IS NULL
+                 AND d2.kind IN ('heading', 'section_heading')
+               ORDER BY d2.ord LIMIT 1) AS title
+       FROM doc_block d
+       WHERE d.surah_number IS NULL
+       GROUP BY d.source_file
+       ORDER BY d.source_file`,
+    );
+    for (const r of docRows) {
+      docs.push({
+        source_file: r.source_file,
+        title: r.title ?? r.source_file.replace(/\.docx$/i, ""),
+      });
+    }
+  }
+  return { surahs: out, docs };
+}
+
+export async function documentView(sourceFile: string): Promise<DocView | null> {
+  if (!(await docBlockExists())) return null;
+  const rows = await query<{
+    source_file: string; juz: number | null; kind: string; text: string;
+    ref_surah: number | null; ref_ayah: number | null;
+  }>(
+    `SELECT source_file, juz, kind, text, ref_surah, ref_ayah
+     FROM doc_block
+     WHERE source_file = $1 AND surah_number IS NULL
+     ORDER BY ord`,
+    [sourceFile],
+  );
+  if (!rows.length) return null;
+  const heading = rows.find((r) => r.kind === "heading" || r.kind === "section_heading");
+  return {
+    source_file: rows[0].source_file,
+    title: heading?.text ?? rows[0].source_file.replace(/\.docx$/i, ""),
+    juz: rows[0].juz,
+    blocks: rows.map((r, i) => ({
+      ord: i,
+      kind: r.kind as DocBlock["kind"],
+      text: r.text,
+      ref_surah: r.ref_surah,
+      ref_ayah: r.ref_ayah,
+      section_id: null,
+    })),
+  };
+}
+
+// Helpers
+
+// Probe instead of assuming: doc_block was dropped by migration 007 and has
+// no replacement yet, so a missing table must degrade gracefully, not 500.
+async function docBlockExists(): Promise<boolean> {
+  const rows = await query<{ ok: boolean }>(
+    `SELECT to_regclass('doc_block') IS NOT NULL AS ok`,
+  );
+  return rows[0]?.ok === true;
 }
