@@ -20,7 +20,7 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);
      font-size:19px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow:hidden}
-.app{display:grid;grid-template-columns:268px 1fr 400px;height:100vh;
+.app{display:grid;grid-template-columns:268px 1fr 400px;height:100vh;height:100dvh;
      transition:grid-template-columns .25s ease}
 .app.left-hidden{grid-template-columns:0 1fr 400px}
 .app.right-hidden{grid-template-columns:268px 1fr 0}
@@ -256,6 +256,17 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .app.right-hidden .edge.right{display:flex}
 /* The demos hide the rails by collapsing their tracks to 0, which leaves the
    reading column empty when the panels are display:none — one full-width track
-   is what the reader needs on a narrow screen. */
-@media(max-width:1100px){.app{grid-template-columns:1fr}.side,.chat{display:none}
-  .edge.left,.edge.right{display:none}}
+   is what the reader needs on a narrow screen. Below that, the panels leave
+   the grid and slide in over the reader; the top-bar ☰/💬 buttons summon them
+   and each panel's own collapse button tucks it away. */
+@media(max-width:1100px){
+  .app{grid-template-columns:1fr}
+  .side,.chat{position:fixed;top:0;bottom:0;width:min(320px,85vw);z-index:20;
+              box-shadow:0 8px 40px rgba(42,36,28,.3);transition:transform .25s ease}
+  .side{left:0}
+  .chat{right:0}
+  .app.left-hidden .side{transform:translateX(-100%)}
+  .app.right-hidden .chat{transform:translateX(100%)}
+  .app .edge.left,.app .edge.right{display:none}
+  .wrap{padding:32px 20px 96px}
+}

@@ -50,6 +50,16 @@ export default function Workspace() {
   const [rightHidden, setRightHidden] = useState(false);
   const [expanded, setExpanded] = useState<Set<string>>(new Set(["juz:1"]));
 
+  // On phones the three columns cannot fit: the panels become off-canvas
+  // overlays, so start with both tucked away and let the top-bar buttons
+  // summon them.
+  useEffect(() => {
+    if (window.innerWidth <= 1100) {
+      setLeftHidden(true);
+      setRightHidden(true);
+    }
+  }, []);
+
   const docsRef = useRef(docs);
   docsRef.current = docs;
   const recentRef = useRef(recent);
