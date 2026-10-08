@@ -140,7 +140,7 @@ def build_search(embed: bool) -> dict:
             for (cid, _), vec in zip(embeddable, vectors):
                 if vec is None:
                     continue
-                cur.execute("UPDATE commentary SET embedding = %s WHERE id = %s", (vec, cid))
+                conn.execute("UPDATE commentary SET embedding = %s WHERE id = %s", (vec, cid))
                 done += 1
             conn.commit()
             stats["embedded"] = done
