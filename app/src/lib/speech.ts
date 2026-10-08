@@ -1,7 +1,8 @@
 /**
- * Voice helpers on top of the browser's Web Speech API — no server round-trip
- * and no extra dependency. `startDictation` transcribes microphone speech into
- * text for the chat composer; `speakText` reads text aloud. Both degrade to
+ * Voice helpers for the browser. `startDictation` transcribes microphone
+ * speech into text for the chat composer via the Web Speech API; `startSpeaking`
+ * reads text aloud through the server's TTS engine (see /api/tts), falling
+ * back to Web Speech when the engine is unreachable. Everything degrades to
  * no-ops when the browser lacks support (callers check the `*Supported`
  * helpers before rendering the UI).
  */
@@ -91,9 +92,10 @@ export type Speaker = {
 };
 
 /**
- * Reads a list of segments in document order. Long text is split into queued
- * utterances (browsers truncate very long ones), Arabic gets an `ar` voice
- * when the browser ships one. `onSegment` fires as each segment starts so
+ * Reads a list of segments in document order. Each chunk is synthesized by the
+ * server's TTS engine (Arabic voice for Arabic text, English otherwise) and
+ * played as audio; when the engine is unreachable the queue falls back to the
+ * browser's Web Speech voices. `onSegment` fires as each segment starts so
  * callers can highlight what is being read. Returns null when unsupported.
  */
 export function startSpeaking(
@@ -110,6 +112,45 @@ export function startSpeaking(
   let index = 0;
   let stopped = false;
   let rate = opts.rate ?? 1;
+  let serverUp = true;
+  let audio: HTMLAudioElement | null = null;
+  let objectUrl: string | null = null;
+
+  const advance = () => {
+    if (stopped) return;
+    index += 1;
+    speakNext();
+  };
+
+  // Natural voice: fetch one chunk from /api/tts and play it as audio.
+  const playFromServer = async (item: QueueItem) => {
+    const res = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: item.text, voice: item.lang, speed: rate }),
+    });
+    if (!res.ok) throw new Error(`tts ${res.status}`);
+    const blob = await res.blob();
+    if (stopped) return;
+    if (objectUrl) URL.revokeObjectURL(objectUrl);
+    objectUrl = URL.createObjectURL(blob);
+    audio = new Audio(objectUrl);
+    audio.onended = advance;
+    audio.onerror = advance;
+    await audio.play();
+  };
+
+  // Robotic fallback: the browser's own Web Speech voice.
+  const playFromWeb = (item: QueueItem) => {
+    const utterance = new SpeechSynthesisUtterance(item.text);
+    utterance.lang = item.lang;
+    utterance.rate = rate;
+    const voice = pickVoice(item.lang);
+    if (voice) utterance.voice = voice;
+    utterance.onend = advance;
+    utterance.onerror = advance;
+    window.speechSynthesis.speak(utterance);
+  };
 
   const speakNext = () => {
     if (stopped) return;
@@ -118,33 +159,35 @@ export function startSpeaking(
       opts.onEnd();
       return;
     }
-    const utterance = new SpeechSynthesisUtterance(item.text);
-    utterance.lang = item.lang;
-    utterance.rate = rate;
-    const voice = pickVoice(item.lang);
-    if (voice) utterance.voice = voice;
-    utterance.onend = () => {
-      if (!stopped) {
-        index += 1;
-        speakNext();
-      }
-    };
-    utterance.onerror = () => {
-      if (!stopped) {
-        index += 1;
-        speakNext();
-      }
-    };
     opts.onSegment?.(item.seg);
-    window.speechSynthesis.speak(utterance);
+    if (serverUp) {
+      playFromServer(item).catch(() => {
+        serverUp = false;
+        playFromWeb(item);
+      });
+    } else {
+      playFromWeb(item);
+    }
   };
 
   speakNext();
   return {
-    pause: () => window.speechSynthesis.pause(),
-    resume: () => window.speechSynthesis.resume(),
+    pause: () => {
+      if (audio) audio.pause();
+      else window.speechSynthesis.pause();
+    },
+    resume: () => {
+      if (audio) void audio.play();
+      else window.speechSynthesis.resume();
+    },
     stop: () => {
       stopped = true;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      if (audio) {
+        audio.onended = null;
+        audio.onerror = null;
+        audio.pause();
+      }
       // Chrome ignores cancel() while paused unless the queue is resumed first
       window.speechSynthesis.resume();
       window.speechSynthesis.cancel();
@@ -154,6 +197,9 @@ export function startSpeaking(
     },
   };
 }
+
+/** One queued chunk of a `startSpeaking` run. */
+type QueueItem = { text: string; lang: string; seg: number };
 
 /** Warms the voice list — Chrome populates it asynchronously after first use. */
 export function primeVoices(): void {
