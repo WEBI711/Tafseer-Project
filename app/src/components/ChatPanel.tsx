@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Citation, Filters, ResponseDoc } from "@/lib/types";
+import { dictationSupported, startDictation, type Dictation } from "@/lib/speech";
 import { workLabel, type RecentQuery } from "./Workspace";
 
 export type Message = {
@@ -42,14 +43,41 @@ export default function ChatPanel({
 }: Props) {
   const [draft, setDraft] = useState("");
   const [recentOpen, setRecentOpen] = useState(false);
+  const [listening, setListening] = useState(false);
+  // Speech exists only in the browser, so wait until after hydration before
+  // rendering the mic button — otherwise the server HTML won't match.
+  const [mounted, setMounted] = useState(false);
+  const dictationRef = useRef<Dictation | null>(null);
+
+  useEffect(() => setMounted(true), []);
+  useEffect(() => () => dictationRef.current?.stop(), []);
   const last = messages[messages.length - 1];
   const showSuggestions = Boolean(last && last.role === "a" && !last.streaming && currentDoc);
 
   const submit = () => {
     const q = draft.trim();
     if (!q || busy) return;
+    dictationRef.current?.stop();
     setDraft("");
     onAsk(q);
+  };
+
+  const toggleDictation = () => {
+    if (listening) {
+      dictationRef.current?.stop();
+      return;
+    }
+    const base = draft;
+    const session = startDictation({
+      onText: (text) => setDraft(base ? `${base} ${text}` : text),
+      onEnd: () => {
+        dictationRef.current = null;
+        setListening(false);
+      },
+    });
+    if (!session) return;
+    dictationRef.current = session;
+    setListening(true);
   };
 
   const topSurah = currentDoc?.groups[0];
@@ -192,6 +220,15 @@ export default function ChatPanel({
             onKeyDown={(e) => e.key === "Enter" && submit()}
             placeholder={currentDoc ? "Refine this, or ask something new…" : "Ask about the tafseer…"}
           />
+          {mounted && dictationSupported() && (
+            <button
+              className={`mic${listening ? " listening" : ""}`}
+              onClick={toggleDictation}
+              title={listening ? "Stop dictation" : "Speak your question"}
+            >
+              {listening ? "◼" : "🎙"}
+            </button>
+          )}
           <button onClick={submit} disabled={busy || !draft.trim()}>
             {busy ? "…" : "Send"}
           </button>

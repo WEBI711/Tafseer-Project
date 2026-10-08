@@ -224,6 +224,14 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
                  padding:9px 18px;font-family:var(--f-ui);font-size:11px;letter-spacing:.12em;
                  text-transform:uppercase;cursor:pointer}
 .composer button:disabled{opacity:.45;cursor:default}
+.composer button.mic{padding:9px 12px}
+.composer button.mic.listening{background:var(--emerald)}
+
+/* ---------- voice: read-aloud buttons ---------- */
+.icon-btn.speak{width:26px;height:26px;font-size:11px;opacity:.75}
+.icon-btn.speak.on{border-color:var(--emerald-soft);color:var(--emerald);opacity:1}
+.trans-row{display:flex;gap:10px;align-items:flex-start;margin:0 0 22px}
+.trans-row .translation{margin:0;flex:1;min-width:0}
 
 /* ---------- collapse rails ---------- */
 .edge{position:fixed;top:50%;transform:translateY(-50%);z-index:9;width:26px;height:64px;
