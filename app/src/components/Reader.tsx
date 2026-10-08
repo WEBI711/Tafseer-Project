@@ -46,7 +46,7 @@ export default function Reader({
     <main className="main" ref={ref}>
       <div className="top">
         <span className="crumb">{crumb.label}</span>
-        <span style={{ display: "flex", gap: 8 }}>
+        <span className="top-actions">
           <button className="icon-btn" onClick={onToggleLeft} title="Toggle explorer">
             ☰
           </button>

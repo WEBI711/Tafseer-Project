@@ -64,8 +64,7 @@ export default function Explorer({
                         }}
                       >
                         <span className="caret">▾</span>
-                        <span style={isActive ? { color: "var(--emerald)" } : undefined}>
-                          Surah {s.number}
+                        <span>Surah {s.number}
                           {s.continued ? " · continued" : ` · ${shortName(s.name_en)}`}
                         </span>
                         <small>{s.ayat}</small>

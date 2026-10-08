@@ -2,9 +2,19 @@
    response document uses exactly the agreed classes (.juz-band, .surah-head,
    .ayah, .vhead, .ref, .score, .vrow, .ayah-n, .ar, .translation, .commentary). */
 :root{
-  --paper:#f6f1e6; --paper-2:#efe8d9; --ink:#2a241c; --ink-soft:#5b5145;
+  --paper:#f6f1e6; --paper-2:#efe8d9; --paper-raise:#fbf8f0;
+  --paper-hover:rgba(255,255,255,.55); --paper-translucent:rgba(246,241,230,.94);
+  --ink:#2a241c; --ink-soft:#5b5145; --ink-body:#3a332a; --ink-faint:#a89a80;
+  --ink-placeholder:#b8a98d;
   --rule:#d8cdb8; --accent:#8a6a3b; --accent-soft:#c9b48c;
+  --accent-tint:rgba(201,180,140,.12); --accent-tint-hover:rgba(201,180,140,.18);
   --emerald:#3d6b5e; --emerald-soft:#c9d8d2;
+  --emerald-tint:rgba(201,216,210,.16); --emerald-tint-hover:rgba(201,216,210,.3);
+  --emerald-tint-select:rgba(201,216,210,.35); --emerald-tint-chip:rgba(201,216,210,.4);
+  /* spacing scale: the rhythm the three panels already share */
+  --sp-1:6px; --sp-2:8px; --sp-3:10px; --sp-4:12px; --sp-5:18px; --sp-6:22px;
+  /* buttons: one radius scale for every control */
+  --radius-sm:6px; --radius:8px; --radius-pill:999px;
   --f-body:"Newsreader",Georgia,serif; --f-ar:"Amiri",serif; --f-ui:"Inter",sans-serif;
 }
 *{box-sizing:border-box}
@@ -21,52 +31,54 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body)
       display:flex;flex-direction:column;min-width:0}
 .app.left-hidden .side{border-right-color:transparent}
 .side .head{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
-            justify-content:space-between;align-items:center;gap:10px;flex:none}
+            justify-content:space-between;align-items:center;gap:var(--sp-3);flex:none}
 .side .brand{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
 .side .scroll{overflow-y:auto;padding:6px 12px 24px}
-.juz{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
+.juz{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
      padding:16px 8px 6px;font-weight:600;font-family:var(--f-ui)}
 .juz.queries{color:var(--emerald)}
 button.juz.queries{background:0;border:0;text-align:left;width:100%;cursor:pointer;
-                  display:flex;align-items:center;gap:6px;
+                  display:flex;align-items:center;gap:var(--sp-1);
                   font-size:10px;letter-spacing:.2em;text-transform:uppercase;
                   font-weight:600;font-family:var(--f-ui)}
-.node .row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;
+.node .row{display:flex;align-items:center;gap:var(--sp-2);padding:8px 10px;border-radius:var(--radius-sm);
            font-size:15.5px;color:var(--ink-soft);cursor:pointer}
-.node .row:hover{background:rgba(255,255,255,.55)}
-.node .row small{margin-left:auto;color:#a89a80;font-size:11px;font-family:var(--f-ui);
+.node .row:hover{background:var(--paper-hover)}
+.node .row small{margin-left:auto;color:var(--ink-faint);font-size:11px;font-family:var(--f-ui);
                  font-variant-numeric:tabular-nums}
-.jt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89a80;
+.jt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
     font-weight:600;font-family:var(--f-ui)}
-.caret{width:12px;flex:none;font-family:var(--f-ui);font-size:9px;color:#a89a80;
+.caret{width:12px;flex:none;font-family:var(--f-ui);font-size:9px;color:var(--ink-faint);
        transition:transform .15s;text-align:center}
 .node.closed>.row .caret{transform:rotate(-90deg)}
+.node .row.on>span:not(.caret){color:var(--emerald)}
 .node.closed>.kids{display:none}
 .kids{margin-left:13px;border-left:1px solid var(--rule);padding-left:5px}
-.item{padding:8px 10px;border-radius:6px;font-size:15.5px;color:var(--ink-soft);display:flex;
-      justify-content:space-between;gap:8px;cursor:pointer;align-items:baseline;border:0;background:0;
+.item{padding:8px 10px;border-radius:var(--radius-sm);font-size:15.5px;color:var(--ink-soft);display:flex;
+      justify-content:space-between;gap:var(--sp-2);cursor:pointer;align-items:baseline;border:0;background:0;
       font-family:inherit;text-align:left;width:100%}
-.item:hover{background:rgba(255,255,255,.55)}
-.item small{color:#a89a80;font-size:11px;font-family:var(--f-ui);font-variant-numeric:tabular-nums}
+.item:hover{background:var(--paper-hover)}
+.item small{color:var(--ink-faint);font-size:11px;font-family:var(--f-ui);font-variant-numeric:tabular-nums}
 .item.sub{margin-left:18px;font-size:14.5px;padding-top:5px;padding-bottom:5px}
 .item.sub::before{content:"";width:5px;height:5px;border:1px solid var(--emerald-soft);
                   border-radius:50%;flex:none;align-self:center}
 .item.sub.on::before{background:var(--emerald);border-color:var(--emerald)}
-.item.on{color:var(--emerald);background:rgba(201,216,210,.35)}
+.item.on{color:var(--emerald);background:var(--emerald-tint-select)}
 .item.q{font-style:italic;font-size:14.5px}
-.hint{font-size:12.5px;color:#a89a80;padding:6px 10px;font-family:var(--f-ui)}
+.hint{font-size:12.5px;color:var(--ink-faint);padding:6px 10px;font-family:var(--f-ui)}
 
 /* ---------- reader (center) ---------- */
 .main{overflow-y:auto;min-width:0}
-.main .top{position:sticky;top:0;z-index:5;background:rgba(246,241,230,.94);backdrop-filter:blur(8px);
+.main .top{position:sticky;top:0;z-index:5;background:var(--paper-translucent);backdrop-filter:blur(8px);
            border-bottom:1px solid var(--rule);padding:12px 20px;display:flex;
-           justify-content:space-between;align-items:center;gap:12px}
+           justify-content:space-between;align-items:center;gap:var(--sp-4)}
 .crumb{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-family:var(--f-ui)}
 .crumb b{color:var(--emerald);font-weight:600}
-.crumb .count{color:#a89a80;letter-spacing:.06em;text-transform:none;margin-left:8px}
-.icon-btn{background:0;border:1px solid var(--rule);border-radius:7px;width:30px;height:30px;
+.crumb .count{color:var(--ink-faint);letter-spacing:.06em;text-transform:none;margin-left:8px}
+.icon-btn{background:0;border:1px solid var(--rule);border-radius:var(--radius-sm);width:30px;height:30px;
           color:var(--ink-soft);cursor:pointer;font-size:14px;line-height:1;flex:none;font-family:var(--f-ui)}
 .icon-btn:hover{border-color:var(--accent-soft);color:var(--accent)}
+.top-actions{display:flex;gap:var(--sp-2)}
 .wrap{max-width:760px;margin:0 auto;padding:48px 40px 120px}
 .kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--emerald);margin-bottom:26px;font-family:var(--f-ui)}
 h1{font-weight:400;font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.015em;margin:0 0 10px}
@@ -83,34 +95,34 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .orn span{font-family:var(--f-ar);font-size:18px;color:var(--emerald)}
 .juz-band{margin:88px 0 40px;padding:22px 0 18px;text-align:center;
           border-top:1px solid var(--emerald-soft);border-bottom:1px solid var(--emerald-soft);
-          background:linear-gradient(to bottom,rgba(201,216,210,.16),transparent)}
+          background:linear-gradient(to bottom,var(--emerald-tint),transparent)}
 .juz-band:first-of-type{margin-top:0}
 .juz-band .jl{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--emerald);
               font-weight:600;font-family:var(--f-ui)}
 .juz-band .jn{font-family:var(--f-ar);font-size:24px;margin-top:3px}
-.juz-band .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a89a80;
+.juz-band .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);
               font-family:var(--f-ui);margin-top:5px}
 .surah-head{margin:44px 0 6px;padding-top:20px;border-top:1px dashed var(--rule);
-            display:flex;align-items:baseline;gap:14px}
+            display:flex;align-items:baseline;gap:var(--sp-5)}
 .surah-head .sn{font-size:24px;font-weight:400}
 .surah-head .sar{font-family:var(--f-ar);font-size:20px;color:var(--emerald);direction:rtl}
-.surah-head .ss{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#a89a80;
+.surah-head .ss{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);
                 font-family:var(--f-ui);margin-left:auto}
 .ayah{margin:0 0 52px}
-.vrow{display:flex;align-items:center;gap:18px;min-width:0}
+.vrow{display:flex;align-items:center;gap:var(--sp-5);min-width:0}
 .vrow .ayah-n{margin:0}
 .vrow .ar{flex:1;min-width:0;margin:16px 0}
 .ayah .body{flex:1;min-width:0}
-.vhead{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-family:var(--f-ui)}
+.vhead{display:flex;align-items:center;gap:var(--sp-3);margin:0 0 8px;font-family:var(--f-ui)}
 .vhead .ref{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
-.score{font-size:10px;letter-spacing:.08em;color:var(--emerald);background:rgba(201,216,210,.4);
-       border:1px solid var(--emerald-soft);border-radius:999px;padding:2px 8px;font-variant-numeric:tabular-nums}
+.score{font-size:10px;letter-spacing:.08em;color:var(--emerald);background:var(--emerald-tint-chip);
+       border:1px solid var(--emerald-soft);border-radius:var(--radius-pill);padding:2px 8px;font-variant-numeric:tabular-nums}
 .ayah-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
         border:1px solid var(--emerald-soft);border-radius:50%;font-size:13px;color:var(--emerald);
         margin-right:12px;flex:none;font-variant-numeric:tabular-nums;font-family:var(--f-ui)}
 .ar{font-family:var(--f-ar);font-size:32px;line-height:2.1;direction:rtl;text-align:right;margin:16px 0;color:var(--emerald)}
 .translation{font-size:20px;margin:0 0 22px}
-.commentary p{margin:0 0 18px;color:#3a332a}
+.commentary p{margin:0 0 18px;color:var(--ink-body)}
 .commentary>:first-child::first-letter{float:left;font-family:var(--f-ar);font-size:58px;line-height:.86;
     padding:6px 12px 0 0;color:var(--accent)}
 /* A verse fragment quoted inside prose is Arabic, not an initial letter: it
@@ -128,7 +140,7 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .commentary>:first-child:has(p.no-drop)::first-letter{
     float:none;font-size:1em;line-height:inherit;padding:0;color:var(--emerald)}
 .src{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
-     color:#a89a80;margin:0 0 10px}
+     color:var(--ink-faint);margin:0 0 10px}
 .src.sec{margin:2px 0 0}
 /* commentary grouped in runs of one source file, labelled only when a passage
    changes hands (95% of ayat have a single source, so labels stay rare) */
@@ -141,8 +153,8 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
          color:var(--accent);font-family:var(--f-ui)}
 .endmark{margin:80px 0 0;text-align:center;color:var(--accent-soft);font-family:var(--f-ar);font-size:22px}
 .endmark small{display:block;font-family:var(--f-ui);font-size:10.5px;letter-spacing:.2em;
-               text-transform:uppercase;color:#a89a80;margin-top:6px}
-.empty{color:#a89a80;font-style:italic;padding:8px 0}
+               text-transform:uppercase;color:var(--ink-faint);margin-top:6px}
+.empty{color:var(--ink-faint);font-style:italic;padding:8px 0}
 
 /* ---------- source-document blocks (reader mode) ----------
    Styling follows demos 06/07: the surah name is set like their h1, section
@@ -153,7 +165,7 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
             color:var(--ink-soft);margin:0 0 26px}
 .doc-juz{margin:72px 0 34px;padding:20px 0 16px;text-align:center;
          border-top:1px solid var(--emerald-soft);border-bottom:1px solid var(--emerald-soft);
-         background:linear-gradient(to bottom,rgba(201,216,210,.16),transparent);
+         background:linear-gradient(to bottom,var(--emerald-tint),transparent);
          font-family:var(--f-ui);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;
          color:var(--emerald);font-weight:600}
 .doc:first-child .doc-juz{margin-top:0}
@@ -164,12 +176,12 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
    blank line between them */
 .doc-heading + .doc-heading{margin-top:20px}
 .doc-list{margin:0 0 18px;padding-left:26px}
-.doc-list li{margin:0 0 8px;font-size:19px;color:#3a332a}
+.doc-list li{margin:0 0 8px;font-size:19px;color:var(--ink-body)}
 .doc-list li::marker{color:var(--accent-soft)}
 /* paragraphs carry the author's own line breaks (column sketches, verse
    groupings); keep them instead of collapsing the block into one run-on line */
 .doc p,.doc-list li,.doc-table td,.doc h1,.doc h2,.doc h3{white-space:pre-wrap}
-.doc p:not(.ar):not(.translation){margin:0 0 18px;color:#3a332a}
+.doc p:not(.ar):not(.translation){margin:0 0 18px;color:var(--ink-body)}
 /* verse text and its translation keep the same 18px rhythm as prose (the
    global .ar margin applies) and the body font size, so the reading column
    does not mix 19px prose with 20px translations */
@@ -180,8 +192,8 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .doc-table{width:100%;border-collapse:collapse;font-size:16.5px}
 .doc-table th{font-family:var(--f-ui);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
               color:var(--accent);font-weight:600;text-align:left;padding:10px 12px;
-              border-bottom:1px solid var(--rule);background:rgba(201,180,140,.12)}
-.doc-table td{padding:10px 12px;border-bottom:1px solid var(--rule);color:#3a332a;vertical-align:top}
+              border-bottom:1px solid var(--rule);background:var(--accent-tint)}
+.doc-table td{padding:10px 12px;border-bottom:1px solid var(--rule);color:var(--ink-body);vertical-align:top}
 .doc-table tr:last-child td{border-bottom:0}
 
 /* ---------- chat (right) ---------- */
@@ -191,36 +203,36 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
 .chat .ch{padding:18px 20px 14px;border-bottom:1px solid var(--rule);display:flex;
           justify-content:space-between;align-items:center;flex:none}
 .chat .ch b{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.chat .ch span{font-size:11px;color:#a89a80;font-family:var(--f-ui);text-transform:uppercase;letter-spacing:.1em}
-.thread{flex:1;overflow-y:auto;padding:22px 22px 10px;display:flex;flex-direction:column;gap:26px}
+.chat .ch span{font-size:11px;color:var(--ink-faint);font-family:var(--f-ui);text-transform:uppercase;letter-spacing:.1em}
+.thread{flex:1;overflow-y:auto;padding:var(--sp-6) var(--sp-6) var(--sp-3);display:flex;flex-direction:column;gap:26px}
 .q{font-size:19px;font-style:italic;border-left:2px solid var(--accent-soft);padding-left:18px;color:var(--ink)}
 .q .rendered{display:inline-block;font-family:var(--f-ui);font-style:normal;font-size:10.5px;
              letter-spacing:.1em;text-transform:uppercase;color:var(--emerald);margin-left:10px;cursor:pointer;
              border:0;background:0;padding:0}
-.a p{margin:0 0 16px;color:#3a332a;font-size:16.5px;white-space:pre-wrap}
-.refine{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-soft);font-family:var(--f-ui);
-        background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:9px 13px;margin:0 0 14px}
+.a p{margin:0 0 16px;color:var(--ink-body);font-size:16.5px;white-space:pre-wrap}
+.refine{display:flex;align-items:center;gap:var(--sp-2);font-size:12.5px;color:var(--ink-soft);font-family:var(--f-ui);
+        background:var(--paper);border:1px solid var(--rule);border-radius:var(--radius);padding:9px 13px;margin:0 0 14px}
 .refine .dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);flex:none}
 .citeblock{background:var(--paper);border-left:2px solid var(--accent);padding:15px 18px;margin:0 0 12px;cursor:pointer}
-.citeblock:hover{background:#fbf8f0}
+.citeblock:hover{background:var(--paper-raise)}
 .citeblock b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
              color:var(--accent);margin-bottom:6px;font-weight:600;font-family:var(--f-ui)}
 .citeblock p{margin:0;font-size:15.5px;font-style:italic;color:var(--ink-soft)}
 .citeblock small{display:block;margin-top:8px;font-size:11.5px;font-style:normal;letter-spacing:.08em;
-                 text-transform:uppercase;color:#a89a80;font-family:var(--f-ui)}
-.suggest{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 0}
-.suggest button{background:0;border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px;
+                 text-transform:uppercase;color:var(--ink-faint);font-family:var(--f-ui)}
+.suggest{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:4px 0 0}
+.suggest button{background:0;border:1px solid var(--accent-soft);border-radius:var(--radius-pill);padding:5px 14px;
                 font-family:var(--f-body);font-size:14px;color:var(--accent);cursor:pointer}
-.suggest button:hover{background:rgba(201,180,140,.18)}
+.suggest button:hover{background:var(--accent-tint-hover)}
 .suggest button.refinebtn{border-color:var(--emerald-soft);color:var(--emerald)}
-.suggest button.refinebtn:hover{background:rgba(201,216,210,.3)}
+.suggest button.refinebtn:hover{background:var(--emerald-tint-hover)}
 .composer{border-top:1px solid var(--rule);padding:16px 18px;flex:none}
-.composer .box{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--rule);
-               border-radius:999px;padding:6px 6px 6px 18px}
+.composer .box{display:flex;gap:var(--sp-4);align-items:center;background:var(--paper);border:1px solid var(--rule);
+               border-radius:var(--radius-pill);padding:6px 6px 6px 18px}
 .composer input{flex:1;min-width:0;border:0;background:0;font-family:var(--f-body);font-size:16px;
                 color:var(--ink);outline:0}
-.composer input::placeholder{color:#b8a98d;font-style:italic}
-.composer button{background:var(--ink);color:var(--paper);border:0;border-radius:999px;
+.composer input::placeholder{color:var(--ink-placeholder);font-style:italic}
+.composer button{background:var(--ink);color:var(--paper);border:0;border-radius:var(--radius-pill);
                  padding:9px 18px;font-family:var(--f-ui);font-size:11px;letter-spacing:.12em;
                  text-transform:uppercase;cursor:pointer}
 .composer button:disabled{opacity:.45;cursor:default}
@@ -238,8 +250,8 @@ h2.section{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:va
       background:var(--paper-2);border:1px solid var(--rule);color:var(--ink-soft);cursor:pointer;
       font-size:14px;font-family:var(--f-ui);display:none;align-items:center;justify-content:center}
 .edge:hover{color:var(--accent)}
-.edge.left{left:0;border-radius:0 8px 8px 0;border-left:0}
-.edge.right{right:0;border-radius:8px 0 0 8px;border-right:0}
+.edge.left{left:0;border-radius:0 var(--radius) var(--radius) 0;border-left:0}
+.edge.right{right:0;border-radius:var(--radius) 0 0 var(--radius);border-right:0}
 .app.left-hidden .edge.left{display:flex}
 .app.right-hidden .edge.right{display:flex}
 /* The demos hide the rails by collapsing their tracks to 0, which leaves the
