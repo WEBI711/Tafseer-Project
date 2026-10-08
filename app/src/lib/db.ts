@@ -20,7 +20,9 @@ export type { TreeSurah, Tree };
 export async function tree(): Promise<Tree> {
   // The tree mirrors the source layout: juz -> surah part -> sections, from
   // the per-juz structured tables (FORMAT.md v7). A surah recurs under each
-  // juz whose folder holds a chunk of it.
+  // juz whose folder holds a chunk of it. Parts sort by surah reading order
+  // (number, then from_ayah), not the file-derived ord — juz 30's source
+  // files arrived out of sequence (#31).
   const rows = await query<{
     juz: number;
     number: number;
@@ -40,7 +42,7 @@ export async function tree(): Promise<Tree> {
      JOIN part p ON p.id = sec.part_id
      JOIN juz j ON j.id = p.juz_id
      WHERE sec.title IS NOT NULL AND sec.title NOT LIKE 'SURAH %'
-     ORDER BY j.number, p.ord, sec.ord`,
+     ORDER BY j.number, p.surah_number, p.from_ayah, sec.ord`,
   );
 
   const out: TreeSurah[] = [];
