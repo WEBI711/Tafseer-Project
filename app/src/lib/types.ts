@@ -7,6 +7,12 @@ export type TreeSection = {
   to_ayah: number | null;
 };
 
+/** A takeaway block ("MY KEY TAKEAWAYS" recap) at the end of one surah part. */
+export type TreeTakeaway = {
+  id: number;
+  title: string | null;
+};
+
 /** One surah as it appears under one juz (a surah recurs when it spans juz). */
 export type TreeSurah = {
   juz: number;
@@ -15,6 +21,7 @@ export type TreeSurah = {
   ayat: number;
   continued: boolean;
   sections: TreeSection[];
+  takeaways: TreeTakeaway[];
 };
 
 /** A standalone (non-surah) source document, e.g. the Introduction. */
@@ -58,6 +65,7 @@ export type DocBlock = {
   ref_surah: number | null;
   ref_ayah: number | null;
   section_id: number | null;
+  recap_id?: number | null;
 };
 
 /** One source docx, as it was written. */

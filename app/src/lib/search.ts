@@ -85,7 +85,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
   const recaps = await query<{
     part_id: number; id: number; ord: number; title: string | null; items: { kind: string; text: string }[];
   }>(
-    `SELECT r.part_id, r.ord, r.title, r.items
+    `SELECT r.id, r.part_id, r.ord, r.title, r.items
      FROM recap r JOIN part p ON p.id = r.part_id
      JOIN juz j ON j.id = p.juz_id
      WHERE p.surah_number = $1 ORDER BY j.number, p.ord, r.ord`,
@@ -133,7 +133,9 @@ export async function surahView(number: number): Promise<SurahView | null> {
       }
     }
     for (const r of recaps.filter((r) => r.part_id === part.id)) {
-      if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null });
+      // The recap id anchors the block so the Explorer's takeaways entry can
+      // scroll straight to it.
+      if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null, recap_id: r.id });
       for (const it of r.items ?? []) push({ kind: blockKind(it.kind), text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
     }
     return { source_file: part.source_file, juz: part.juz, blocks };

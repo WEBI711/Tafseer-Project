@@ -103,7 +103,7 @@ export default function Workspace() {
   }, []);
 
   const openSurah = useCallback(
-    async (number: number, juz: number, sectionId?: number) => {
+    async (number: number, juz: number, sectionId?: number, recapId?: number) => {
       const res = await fetch(`/api/surah/${number}`);
       if (!res.ok) return;
       const opened: SurahView = await res.json();
@@ -122,6 +122,10 @@ export default function Workspace() {
       if (sectionId) {
         window.setTimeout(() => {
           document.getElementById(`sec-${sectionId}`)?.scrollIntoView({ block: "start" });
+        }, 50);
+      } else if (recapId) {
+        window.setTimeout(() => {
+          document.getElementById(`recap-${recapId}`)?.scrollIntoView({ block: "start" });
         }, 50);
       } else {
         mainRef.current?.scrollTo({ top: 0 });

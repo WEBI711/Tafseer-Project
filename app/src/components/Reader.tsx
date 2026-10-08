@@ -198,11 +198,12 @@ function BlockView({
   docIndex: number;
 }) {
   const sectionAnchor = block.section_id ? `sec-${block.section_id}` : undefined;
+  const recapAnchor = block.recap_id ? `recap-${block.recap_id}` : undefined;
   const ayahAnchor =
     block.kind === "translation" && block.ref_ayah
       ? `ayah-${block.ref_surah}-${block.ref_ayah}`
       : undefined;
-  const id = sectionAnchor ?? ayahAnchor;
+  const id = sectionAnchor ?? recapAnchor ?? ayahAnchor;
   const meta = { "data-kind": block.kind, "data-ord": block.ord };
 
   switch (block.kind) {

@@ -8,7 +8,7 @@ type Props = {
   active: { surah?: number; sectionId?: number; doc?: string };
   expanded: Set<string>;
   onToggle: (key: string) => void;
-  onOpenSurah: (number: number, juz: number, sectionId?: number) => void;
+  onOpenSurah: (number: number, juz: number, sectionId?: number, recapId?: number) => void;
   onOpenDoc: (sourceFile: string) => void;
   onCollapse: () => void;
 };
@@ -105,6 +105,17 @@ export default function Explorer({
                                   }`
                                 : ""}
                             </small>
+                          </button>
+                        ))}
+                        {/* The author's takeaways live at the end of each part;
+                            they are read-only, straight from the source. */}
+                        {s.takeaways.map((t) => (
+                          <button
+                            key={t.id}
+                            className="item sub"
+                            onClick={() => onOpenSurah(s.number, s.juz, undefined, t.id)}
+                          >
+                            <span>★ {t.title ? titleCase(t.title) : "Key takeaways"}</span>
                           </button>
                         ))}
                       </div>

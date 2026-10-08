@@ -45,6 +45,22 @@ export async function tree(): Promise<Tree> {
      ORDER BY j.number, p.surah_number, p.from_ayah, sec.ord`,
   );
 
+  // Takeaways are the author's "MY KEY TAKEAWAYS" recaps, stored verbatim in
+  // recap (one per surah part). Content stays fixed — as written, not editable.
+  const takeaways = await query<{
+    juz: number;
+    number: number;
+    id: number;
+    title: string | null;
+  }>(
+    `SELECT j.number AS juz, p.surah_number AS number, r.id, r.title
+     FROM recap r
+     JOIN part p ON p.id = r.part_id
+     JOIN juz j ON j.id = p.juz_id
+     WHERE r.title IS NOT NULL AND r.title ILIKE 'my key tak%'
+     ORDER BY j.number, p.surah_number, p.from_ayah, r.ord`,
+  );
+
   const out: TreeSurah[] = [];
   const seen = new Set<number>();
   for (const r of rows) {
@@ -57,6 +73,7 @@ export async function tree(): Promise<Tree> {
         ayat: r.ayat,
         continued: seen.has(r.number),
         sections: [],
+        takeaways: [],
       };
       out.push(node);
     }
@@ -67,6 +84,11 @@ export async function tree(): Promise<Tree> {
       from_ayah: r.from_ayah,
       to_ayah: r.to_ayah,
     });
+  }
+  for (const t of takeaways) {
+    out
+      .find((n) => n.juz === t.juz && n.number === t.number)
+      ?.takeaways.push({ id: t.id, title: t.title });
   }
   // Standalone documents (no surah): title from the first heading, else the
   // file name. Their home is doc_block with a NULL surah_number, but migration
