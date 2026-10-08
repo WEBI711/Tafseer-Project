@@ -51,6 +51,9 @@ export default function Workspace() {
   const [leftHidden, setLeftHidden] = useState(false);
   const [rightHidden, setRightHidden] = useState(false);
   const [expanded, setExpanded] = useState<Set<string>>(new Set(["juz:1"]));
+  // Inline editing shows only when the server has a designated editor set up;
+  // the flag is public, the token is not.
+  const [editorEnabled, setEditorEnabled] = useState(false);
 
   // On phones the three columns cannot fit: the panels become off-canvas
   // overlays, so start with both tucked away and let the top-bar buttons
@@ -73,6 +76,10 @@ export default function Workspace() {
       .then((r) => r.json())
       .then(setTree)
       .catch(() => setTree({ surahs: [], docs: [] }));
+    fetch("/api/editor")
+      .then((r) => r.json())
+      .then((d) => setEditorEnabled(Boolean(d.enabled)))
+      .catch(() => setEditorEnabled(false));
     try {
       const saved = JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]");
       if (Array.isArray(saved)) {
@@ -316,6 +323,8 @@ export default function Workspace() {
         doc={currentDoc}
         ref={mainRef}
         tree={tree.surahs}
+        canEdit={editorEnabled}
+        onDocEdited={() => standalone && openDocument(standalone.source_file)}
         onToggleLeft={() => setLeftHidden((v) => !v)}
         onToggleRight={() => setRightHidden((v) => !v)}
       />

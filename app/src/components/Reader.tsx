@@ -6,6 +6,7 @@ import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib
 import { speakSupported, speakText, stopSpeaking } from "@/lib/speech";
 import Dictation, { useDictation, type SpeechSection } from "./Dictation";
 import { tidy } from "@/lib/text";
+import { editorToken, saveEditorToken } from "@/lib/editor";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
 
@@ -16,6 +17,8 @@ type Props = {
   doc: ResponseDoc | null;
   ref: RefObject<HTMLElement | null>;
   tree: TreeSurah[];
+  canEdit: boolean;
+  onDocEdited: () => void;
   onToggleLeft: () => void;
   onToggleRight: () => void;
 };
@@ -27,6 +30,8 @@ export default function Reader({
   doc,
   ref,
   tree,
+  canEdit,
+  onDocEdited,
   onToggleLeft,
   onToggleRight,
 }: Props) {
@@ -75,7 +80,7 @@ export default function Reader({
         ) : (
           <Dictation sections={sections}>
             {standalone
-              ? <StandaloneDocument doc={standalone} />
+              ? <StandaloneDocument doc={standalone} canEdit={canEdit} onDocEdited={onDocEdited} />
               : surah && <SurahDocument surah={surah} />}
           </Dictation>
         )}
@@ -115,10 +120,14 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
 
 /* ---------------- reader mode: the source document, block by block ---------------- */
 
-function StandaloneDocument({ doc }: { doc: DocView }) {
+function StandaloneDocument({ doc, canEdit, onDocEdited }: { doc: DocView; canEdit: boolean; onDocEdited: () => void }) {
   return (
     <section className="doc" id="doc-0">
-      <DocumentBody blocks={doc.blocks} docIndex={0} />
+      <DocumentBody
+        blocks={doc.blocks}
+        docIndex={0}
+        edit={canEdit ? { sourceFile: doc.source_file, onEdited: onDocEdited } : undefined}
+      />
     </section>
   );
 }
@@ -139,7 +148,15 @@ function SurahDocument({ surah }: { surah: SurahView }) {
   );
 }
 
-function DocumentBody({ blocks, docIndex }: { blocks: DocBlock[]; docIndex: number }) {
+function DocumentBody({
+  blocks,
+  docIndex,
+  edit,
+}: {
+  blocks: DocBlock[];
+  docIndex: number;
+  edit?: { sourceFile: string; onEdited: () => void };
+}) {
   const out: React.ReactNode[] = [];
   let list: DocBlock[] = [];
   // Arabic before the surah header is the document's opening (the bismillah):
@@ -166,13 +183,24 @@ function DocumentBody({ blocks, docIndex }: { blocks: DocBlock[]; docIndex: numb
       continue;
     }
     flushList();
-    out.push(
+    const blockView = (
       <BlockView
         block={b}
         opening={b.kind === "arabic" && !surahOpened}
         docIndex={docIndex}
         key={b.ord}
-      />,
+      />
+    );
+    // Tables store a JSON grid — raw-text editing would corrupt them, so only
+    // the plain text blocks get the inline editor.
+    out.push(
+      edit && b.kind !== "table" ? (
+        <EditableBlock block={b} sourceFile={edit.sourceFile} onEdited={edit.onEdited} key={b.ord}>
+          {blockView}
+        </EditableBlock>
+      ) : (
+        blockView
+      ),
     );
     if (b.kind === "surah_header") surahOpened = true;
     // section headings take the demo's ornamental rule underneath
@@ -318,6 +346,97 @@ function TableBlock({
           ))}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+/* ---------------- inline editing (designated editor only) ---------------- */
+
+/**
+ * Wraps a rendered block with a hover edit affordance. Saving PATCHes the
+ * server (which audits the change) and reports back so the Workspace refetches
+ * the document — every client shows the new text on its next fetch.
+ */
+function EditableBlock({
+  block,
+  sourceFile,
+  onEdited,
+  children,
+}: {
+  block: DocBlock;
+  sourceFile: string;
+  onEdited: () => void;
+  children: React.ReactNode;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState(block.text);
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    if (saving) return;
+    let token = editorToken();
+    if (!token) {
+      const asked = window.prompt("Editor token");
+      if (!asked) return;
+      token = asked;
+    }
+    setSaving(true);
+    try {
+      const res = await fetch(`/api/doc/${encodeURIComponent(sourceFile)}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", "x-editor-token": token },
+        body: JSON.stringify({ ord: block.ord, text: draft }),
+      });
+      if (res.ok) {
+        saveEditorToken(token);
+        setEditing(false);
+        onEdited();
+      } else if (res.status === 403) {
+        window.alert("That token was not accepted.");
+      } else {
+        const { error } = await res.json().catch(() => ({ error: "Save failed" }));
+        window.alert(error);
+      }
+    } catch {
+      window.alert("Save failed — is the server reachable?");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  if (editing) {
+    return (
+      <div className="edit-box">
+        <textarea
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          rows={Math.min(14, draft.split("\n").length + 2)}
+          autoFocus
+        />
+        <div className="edit-actions">
+          <button className="icon-btn" onClick={save} disabled={saving || !draft.trim()}>
+            {saving ? "…" : "Save"}
+          </button>
+          <button className="icon-btn" onClick={() => setEditing(false)} disabled={saving}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="editable">
+      {children}
+      <button
+        className="icon-btn edit-btn"
+        title="Edit this paragraph"
+        onClick={() => {
+          setDraft(block.text);
+          setEditing(true);
+        }}
+      >
+        ✏️
+      </button>
     </div>
   );
 }

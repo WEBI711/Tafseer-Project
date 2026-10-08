@@ -146,6 +146,35 @@ export async function documentView(sourceFile: string): Promise<DocView | null> 
   };
 }
 
+/**
+ * One saved edit by the designated editor: rewrites the block text and writes
+ * the before/after audit row in the same statement, so a change can never land
+ * unrecorded. doc_block_edit itself must exist (migration 009); a missing
+ * doc_block table is reported, not thrown, matching the read paths above.
+ */
+export async function updateDocBlock(
+  sourceFile: string,
+  ord: number,
+  text: string,
+  editor: string,
+): Promise<"ok" | "no-block" | "unavailable"> {
+  if (!(await docBlockExists())) return "unavailable";
+  const rows = await query<{ id: number }>(
+    `WITH target AS (
+       SELECT id, text FROM doc_block
+       WHERE source_file = $1 AND ord = $2 AND surah_number IS NULL
+       FOR UPDATE
+     ), upd AS (
+       UPDATE doc_block SET text = $3 WHERE id = (SELECT id FROM target) RETURNING id
+     )
+     INSERT INTO doc_block_edit (block_id, source_file, ord, editor, before_text, after_text)
+     SELECT id, $1, $2, $4, (SELECT text FROM target), $3 FROM upd
+     RETURNING id`,
+    [sourceFile, ord, text, editor],
+  );
+  return rows.length ? "ok" : "no-block";
+}
+
 // Helpers
 
 // Probe instead of assuming: doc_block was dropped by migration 007 and has
