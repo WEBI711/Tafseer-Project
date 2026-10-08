@@ -20,8 +20,6 @@ services:
     build: ./app
     image: tafseer-app
     container_name: tafseer-app
-    ports:
-      - "3000:3000"
     environment:
       DATABASE_URL: postgresql://tafseer:tafseer@db:5432/tafseer
       TAFSEER_LLM_KEY: ${TAFSEER_LLM_KEY:?set in a .env file next to docker-compose.yml}
