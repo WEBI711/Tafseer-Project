@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
 import { speakSupported, speakText, stopSpeaking } from "@/lib/speech";
+import Dictation, { useDictation, type SpeechSection } from "./Dictation";
 import { tidy } from "@/lib/text";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
@@ -47,6 +48,13 @@ export default function Reader({
           ? { label: <>Juz {surah.juz} / Surah {surah.number} / <b>{surah.name_en}</b></> }
           : { label: <>Reading</> };
 
+  // reader mode plays the whole work: one intro section per source document
+  // plus one per section heading, across every document in reading order
+  const sections = useMemo(
+    () => buildSpeechSections(standalone, surah),
+    [standalone, surah],
+  );
+
   return (
     <main className="main" ref={ref}>
       <div className="top">
@@ -62,11 +70,15 @@ export default function Reader({
       </div>
 
       <div className="wrap">
-        {mode === "query"
-          ? doc && <ResponseDocument doc={doc} tree={tree} />
-          : standalone
-            ? <StandaloneDocument doc={standalone} />
-            : surah && <SurahDocument surah={surah} />}
+        {mode === "query" ? (
+          doc && <ResponseDocument doc={doc} tree={tree} />
+        ) : (
+          <Dictation sections={sections}>
+            {standalone
+              ? <StandaloneDocument doc={standalone} />
+              : surah && <SurahDocument surah={surah} />}
+          </Dictation>
+        )}
       </div>
     </main>
   );
@@ -105,8 +117,8 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
 
 function StandaloneDocument({ doc }: { doc: DocView }) {
   return (
-    <section className="doc">
-      <DocumentBody blocks={doc.blocks} />
+    <section className="doc" id="doc-0">
+      <DocumentBody blocks={doc.blocks} docIndex={0} />
     </section>
   );
 }
@@ -120,14 +132,14 @@ function SurahDocument({ surah }: { surah: SurahView }) {
           {/* app chrome, not document text: keep attribution when a surah is
               covered by more than one source file */}
           {multi && <div className="doc-source">Source · {workLabel(doc.source_file)}</div>}
-          <DocumentBody blocks={doc.blocks} />
+          <DocumentBody blocks={doc.blocks} docIndex={i} />
         </section>
       ))}
     </>
   );
 }
 
-function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
+function DocumentBody({ blocks, docIndex }: { blocks: DocBlock[]; docIndex: number }) {
   const out: React.ReactNode[] = [];
   let list: DocBlock[] = [];
   // Arabic before the surah header is the document's opening (the bismillah):
@@ -154,7 +166,14 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
       continue;
     }
     flushList();
-    out.push(<BlockView block={b} opening={b.kind === "arabic" && !surahOpened} key={b.ord} />);
+    out.push(
+      <BlockView
+        block={b}
+        opening={b.kind === "arabic" && !surahOpened}
+        docIndex={docIndex}
+        key={b.ord}
+      />,
+    );
     if (b.kind === "surah_header") surahOpened = true;
     // section headings take the demo's ornamental rule underneath
     if (b.kind === "section_heading") {
@@ -169,7 +188,15 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
   return <>{out}</>;
 }
 
-function BlockView({ block, opening = false }: { block: DocBlock; opening?: boolean }) {
+function BlockView({
+  block,
+  opening = false,
+  docIndex,
+}: {
+  block: DocBlock;
+  opening?: boolean;
+  docIndex: number;
+}) {
   const sectionAnchor = block.section_id ? `sec-${block.section_id}` : undefined;
   const ayahAnchor =
     block.kind === "translation" && block.ref_ayah
@@ -188,18 +215,21 @@ function BlockView({ block, opening = false }: { block: DocBlock; opening?: bool
     case "surah_header":
       return (
         <h1 className="doc-surah" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h1>
       );
     case "section_heading":
       return (
         <h2 className="section" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h2>
       );
     case "heading":
       return (
         <h3 className="doc-heading" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h3>
       );
@@ -397,15 +427,19 @@ function SpeakButton({ text }: { text: string }) {
   // rendering the button — otherwise the server HTML won't match.
   const [mounted, setMounted] = useState(false);
   const [speaking, setSpeaking] = useState(false);
+  const dictation = useDictation();
   useEffect(() => setMounted(true), []);
   useEffect(() => () => stopSpeaking(), []);
 
   const toggle = () => {
     if (speaking) {
-      stopSpeaking();
+      // a running section and a per-verse button share one synthesizer
+      if (dictation?.playing) dictation.stop();
+      else stopSpeaking();
       setSpeaking(false);
       return;
     }
+    if (dictation?.playing) dictation.stop();
     speakText(text, () => setSpeaking(false));
     setSpeaking(true);
   };
@@ -478,4 +512,91 @@ function AyahBlock({
       </div>
     </div>
   );
+}
+
+/* ---------------- section dictation ---------------- */
+
+/**
+ * Play control for the section a block starts (surah header starts the
+ * document's intro, a section heading starts its section). Renders nothing on
+ * blocks that do not start a section — the Reader hands over the section list.
+ */
+function SpeakSectionButton({ docIndex, ord }: { docIndex: number; ord: number }) {
+  // Speech exists only in the browser, so wait until after hydration before
+  // rendering the button — otherwise the server HTML won't match.
+  const [mounted, setMounted] = useState(false);
+  const dictation = useDictation();
+  useEffect(() => setMounted(true), []);
+  if (!mounted || !dictation) return null;
+
+  const startsSection = dictation.sections.some(
+    (s) => s.docIndex === docIndex && s.firstOrd === ord,
+  );
+  if (!startsSection) return null;
+  const active =
+    dictation.playing &&
+    dictation.activeSection?.docIndex === docIndex &&
+    dictation.activeSection?.firstOrd === ord;
+
+  return (
+    <button
+      className={`icon-btn speak speak-start${active ? " on" : ""}`}
+      onClick={() => (active ? dictation.stop() : dictation.playFrom(docIndex, ord))}
+      title={active ? "Stop reading aloud" : "Read this section aloud"}
+    >
+      {active ? "⏹" : "🔊"}
+    </button>
+  );
+}
+
+/* ---------------- section dictation helpers ---------------- */
+
+/** A section starts at each section heading; blocks before the first heading
+ *  form the document's intro, played from the surah/document header. */
+function splitSections(
+  blocks: DocBlock[],
+): { headingOrd: number | null; blocks: DocBlock[] }[] {
+  const sections: { headingOrd: number | null; blocks: DocBlock[] }[] = [
+    { headingOrd: null, blocks: [] },
+  ];
+  for (const b of blocks) {
+    if (b.kind === "section_heading") sections.push({ headingOrd: b.ord, blocks: [b] });
+    else sections[sections.length - 1].blocks.push(b);
+  }
+  return sections.filter((s) => s.blocks.length > 0);
+}
+
+/** Tables store a JSON grid — flatten the cells so nothing is left unread. */
+function speakableText(block: DocBlock): string {
+  if (block.kind !== "table") return block.text;
+  try {
+    const rows: unknown = JSON.parse(block.text);
+    if (Array.isArray(rows)) return rows.flat().map(String).join(". ");
+  } catch {
+    // not a grid — read the raw text
+  }
+  return block.text;
+}
+
+/** Arabic blocks get an `ar` voice when the browser ships one. */
+function blockLang(block: DocBlock): string {
+  return block.kind === "arabic" ? "ar" : "en";
+}
+
+function buildSpeechSections(
+  standalone: DocView | null,
+  surah: SurahView | null,
+): SpeechSection[] {
+  if (standalone) return sectionsFromDoc(standalone.blocks, 0);
+  if (!surah) return [];
+  return surah.documents.flatMap((doc, docIndex) => sectionsFromDoc(doc.blocks, docIndex));
+}
+
+function sectionsFromDoc(blocks: DocBlock[], docIndex: number): SpeechSection[] {
+  return splitSections(blocks).map((s) => ({
+    docIndex,
+    headingOrd: s.headingOrd,
+    firstOrd: s.blocks[0].ord,
+    blocks: s.blocks.map((b) => ({ ord: b.ord, text: speakableText(b), lang: blockLang(b) })),
+  }));
 }
