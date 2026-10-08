@@ -75,7 +75,13 @@ export default function Explorer({
                       <div
                         className={`row${isActive ? " on" : ""}`}
                         onClick={() => {
-                          onToggle(surahKey);
+                          // Collapsing the active surah should stay collapsed,
+                          // so don't re-open it in the reader on this click.
+                          if (surahOpen && isActive) {
+                            onToggle(surahKey);
+                            return;
+                          }
+                          if (!surahOpen) onToggle(surahKey);
                           onOpenSurah(s.number);
                         }}
                       >
