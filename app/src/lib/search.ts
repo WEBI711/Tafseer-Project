@@ -167,14 +167,13 @@ export async function retrieve(
   const rows = await query<Omit<Hit, "score"> & { vsim: number; krank: number }>(
     `SELECT c.content, c.source_file, c.juz AS cjuz,
             a.number AS ayah_number, s.number AS surah_number, s.name_en,
-            sec.title AS section_title,
+            a.section_title,
             a.text_ar, a.translation,
             1 - (c.embedding <=> $1::vector) AS vsim,
             ts_rank_cd(c.tsv, plainto_tsquery('english', $2)) AS krank
      FROM commentary c
      LEFT JOIN ayah a ON a.id = c.ayah_id
      JOIN surah s ON s.id = c.surah_id
-     LEFT JOIN section sec ON sec.id = a.section_id
      WHERE c.embedding IS NOT NULL
        AND ($3::int IS NULL OR s.number = $3)
        AND ($4::int IS NULL OR c.juz = $4)
@@ -320,11 +319,10 @@ export async function buildDoc(
   const rows = await query<Omit<Hit, "score" | "ayah_number"> & { ayah_number: number }>(
     `SELECT c.content, c.source_file, c.juz AS cjuz,
             a.number AS ayah_number, s.number AS surah_number, s.name_en,
-            sec.title AS section_title, a.text_ar, a.translation
+            a.section_title, a.text_ar, a.translation
      FROM commentary c
      JOIN ayah a ON a.id = c.ayah_id
      JOIN surah s ON s.id = c.surah_id
-     LEFT JOIN section sec ON sec.id = a.section_id
      WHERE ${ors.join(" OR ")}
      ORDER BY s.number, a.number, c.ord`,
     params,
