@@ -56,5 +56,12 @@ CREATE INDEX IF NOT EXISTS commentary_tsv_idx ON commentary USING gin (tsv);
 
 -- Browsable tree lookups
 CREATE INDEX IF NOT EXISTS ayah_surah_idx   ON ayah (surah_id, number);
-CREATE INDEX IF NOT EXISTS section_surah_idx ON section (surah_id, ord);
+-- The structured model (007) rebuilt `section` without surah_id; index only
+-- when the old shape is present.
+DO $$ BEGIN
+  IF EXISTS (SELECT 1 FROM information_schema.columns
+             WHERE table_name = 'section' AND column_name = 'surah_id') THEN
+    CREATE INDEX IF NOT EXISTS section_surah_idx ON section (surah_id, ord);
+  END IF;
+END $$;
 CREATE INDEX IF NOT EXISTS commentary_ayah_idx ON commentary (ayah_id, ord);
