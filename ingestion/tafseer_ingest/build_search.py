@@ -132,10 +132,12 @@ def build_search(embed: bool) -> dict:
         conn.commit()
 
         if embed and pending:
-            texts = [t for _, t in pending]
+            # The gateway rejects empty strings; those rows stay keyword-less.
+            embeddable = [(cid, t) for cid, t in pending if t.strip()]
+            texts = [t for _, t in embeddable]
             vectors = embed_texts(texts)
             done = 0
-            for (cid, _), vec in zip(pending, vectors):
+            for (cid, _), vec in zip(embeddable, vectors):
                 if vec is None:
                     continue
                 cur.execute("UPDATE commentary SET embedding = %s WHERE id = %s", (vec, cid))
