@@ -49,7 +49,11 @@ export type DocBlock = {
     | "arabic"
     | "translation"
     | "table"
-    | "prose";
+    | "prose"
+    | "lesson"
+    | "hadith"
+    | "cross_ref"
+    | "quote";
   text: string;
   ref_surah: number | null;
   ref_ayah: number | null;

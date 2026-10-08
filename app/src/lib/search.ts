@@ -1,5 +1,6 @@
 import { query } from "./db";
 import { embed } from "./llm";
+import { tidy } from "./text";
 import type {
   DocDocument,
   AyahBlock,
@@ -107,7 +108,8 @@ export async function surahView(number: number): Promise<SurahView | null> {
 
   const documents: DocDocument[] = parts.map((part) => {
     const blocks: DocBlock[] = [];
-    const push = (b: Omit<DocBlock, "ord">) => blocks.push({ ...b, ord: blocks.length });
+    const push = (b: Omit<DocBlock, "ord">) =>
+      blocks.push({ ...b, text: tidy(b.text), ord: blocks.length });
     if (part.bismillah) push({ kind: "arabic", text: part.bismillah, ref_surah: null, ref_ayah: null, section_id: null });
     push({ kind: "juz_header", text: `Juz ${part.juz}`, ref_surah: null, ref_ayah: null, section_id: null });
     push({ kind: "surah_header", text: `Surah ${part.surah_number} – ${part.name_en}`, ref_surah: null, ref_ayah: null, section_id: null });
@@ -116,7 +118,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
 
     for (const sec of sections.filter((s) => s.part_id === part.id)) {
       if (sec.title) push({ kind: "section_heading", text: sec.title, ref_surah: null, ref_ayah: null, section_id: sec.id });
-      for (const it of sec.intro ?? []) push({ kind: it.kind === "heading" ? "heading" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+      for (const it of sec.intro ?? []) push({ kind: blockKind(it.kind), text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
       for (const u of unitsBySection.get(0) ?? []) { /* unreachable, keeps types honest */ }
       for (const u of units.filter((x) => x.section_id === sec.id)) {
         for (const a of u.arabic_lines ?? []) push({ kind: "arabic", text: a, ref_surah: null, ref_ayah: null, section_id: null });
@@ -126,23 +128,32 @@ export async function surahView(number: number): Promise<SurahView | null> {
           push({ kind: "translation", text: t.text, ref_surah: t.ref_surah, ref_ayah: ayah, section_id: null });
         }
         for (const c of commByUnit.get(`${sec.id}:${u.ord}`) ?? []) {
-          const kind: DocBlock["kind"] =
-            c.kind === "list_item" ? "list_item"
-            : c.kind === "heading" ? "heading"
-            : "prose";
-          push({ kind, text: c.ref ? `(${c.ref}) ${c.text}` : c.text, ref_surah: null, ref_ayah: null, section_id: null });
+          push({ kind: blockKind(c.kind), text: c.ref ? `(${c.ref}) ${c.text}` : c.text, ref_surah: null, ref_ayah: null, section_id: null });
         }
       }
     }
     for (const r of recaps.filter((r) => r.part_id === part.id)) {
       if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null });
-      for (const it of r.items ?? []) push({ kind: it.kind === "list_item" ? "list_item" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+      for (const it of r.items ?? []) push({ kind: blockKind(it.kind), text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
     }
     return { source_file: part.source_file, juz: part.juz, blocks };
   });
 
   const first = parts[0];
   return { number, name_en: first.name_en ?? "", juz: first.juz, documents };
+}
+
+/**
+ * Commentary items are stored with fine-grained kinds (lesson, hadith, quote,
+ * cross_ref…). The ones the reader styles distinctly pass through; anything
+ * else falls back to prose.
+ */
+const BLOCK_KINDS: DocBlock["kind"][] = [
+  "heading", "list_item", "arabic", "translation", "lesson", "hadith", "cross_ref", "quote",
+];
+
+function blockKind(kind: string): DocBlock["kind"] {
+  return (BLOCK_KINDS as string[]).includes(kind) ? (kind as DocBlock["kind"]) : "prose";
 }
 
 type Hit = {

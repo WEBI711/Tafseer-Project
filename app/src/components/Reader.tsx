@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { RefObject } from "react";
 import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
 import { speakSupported, speakText, stopSpeaking } from "@/lib/speech";
+import { tidy } from "@/lib/text";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
 
@@ -129,6 +130,9 @@ function SurahDocument({ surah }: { surah: SurahView }) {
 function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
   const out: React.ReactNode[] = [];
   let list: DocBlock[] = [];
+  // Arabic before the surah header is the document's opening (the bismillah):
+  // it is set centred, not like the right-aligned verse text that follows.
+  let surahOpened = false;
 
   const flushList = () => {
     if (list.length === 0) return;
@@ -150,7 +154,8 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
       continue;
     }
     flushList();
-    out.push(<BlockView block={b} key={b.ord} />);
+    out.push(<BlockView block={b} opening={b.kind === "arabic" && !surahOpened} key={b.ord} />);
+    if (b.kind === "surah_header") surahOpened = true;
     // section headings take the demo's ornamental rule underneath
     if (b.kind === "section_heading") {
       out.push(
@@ -164,7 +169,7 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
   return <>{out}</>;
 }
 
-function BlockView({ block }: { block: DocBlock }) {
+function BlockView({ block, opening = false }: { block: DocBlock; opening?: boolean }) {
   const sectionAnchor = block.section_id ? `sec-${block.section_id}` : undefined;
   const ayahAnchor =
     block.kind === "translation" && block.ref_ayah
@@ -200,9 +205,26 @@ function BlockView({ block }: { block: DocBlock }) {
       );
     case "arabic":
       return (
-        <p className="ar" dir="rtl" id={id} {...meta}>
+        <p className={opening ? "ar ar-open" : "ar"} dir="rtl" id={id} {...meta}>
           {block.text}
         </p>
+      );
+    // call-outs the author sets off from the running text: lessons and hadith
+    // render as boxed notes, re-quoted ayat and cross-references as pull quotes
+    case "lesson":
+    case "hadith":
+      return (
+        <div className="note" id={id} {...meta}>
+          <h4>{block.kind === "lesson" ? "Lesson" : "Hadith"}</h4>
+          <p>{block.text}</p>
+        </div>
+      );
+    case "quote":
+    case "cross_ref":
+      return (
+        <div className="pull" id={id} {...meta}>
+          <CommentaryText content={block.text} className="pull-lead" />
+        </div>
       );
     case "translation":
       return (
@@ -442,12 +464,12 @@ function AyahBlock({
             never borrowed from a neighbour. */}
         {text_ar && (
           <p className="ar" dir="rtl">
-            {text_ar}
+            {tidy(text_ar)}
           </p>
         )}
       </div>
       <div className="body">
-        {translation && <p className="translation">{translation}</p>}
+        {translation && <p className="translation">{tidy(translation)}</p>}
         {commentary.length > 0 && (
           <div className="commentary">
             <CommentaryRows rows={commentary} labelRuns={labelRuns} />
