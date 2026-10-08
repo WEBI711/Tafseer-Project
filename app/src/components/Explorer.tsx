@@ -7,7 +7,7 @@ type Props = {
   active: { surah?: number; sectionId?: number };
   expanded: Set<string>;
   onToggle: (key: string) => void;
-  onOpenSurah: (number: number, sectionId?: number) => void;
+  onOpenSurah: (number: number, juz: number, sectionId?: number) => void;
   onCollapse: () => void;
 };
 
@@ -45,7 +45,9 @@ export default function Explorer({
               </div>
               <div className="kids">
                 {surahs.map((s) => {
-                  const surahKey = `surah:${s.number}`;
+                  // Per-juz key: the same surah can span several juz, and each
+                  // part must expand independently.
+                  const surahKey = `surah:${juz}:${s.number}`;
                   const surahOpen = expanded.has(surahKey);
                   const isActive = active.surah === s.number;
                   return (
@@ -60,7 +62,7 @@ export default function Explorer({
                             return;
                           }
                           if (!surahOpen) onToggle(surahKey);
-                          onOpenSurah(s.number);
+                          onOpenSurah(s.number, s.juz);
                         }}
                       >
                         <span className="caret">▾</span>
@@ -76,7 +78,7 @@ export default function Explorer({
                             className={`item sub${
                               active.sectionId === sec.id ? " on" : ""
                             }`}
-                            onClick={() => onOpenSurah(s.number, sec.id)}
+                            onClick={() => onOpenSurah(s.number, s.juz, sec.id)}
                           >
                             <span>{titleCase(sec.title)}</span>
                             <small>

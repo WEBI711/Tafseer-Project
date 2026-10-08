@@ -91,7 +91,7 @@ export default function Workspace() {
   }, []);
 
   const openSurah = useCallback(
-    async (number: number, sectionId?: number) => {
+    async (number: number, juz: number, sectionId?: number) => {
       const res = await fetch(`/api/surah/${number}`);
       if (!res.ok) return;
       const opened: SurahView = await res.json();
@@ -100,9 +100,10 @@ export default function Workspace() {
       setActive({ surah: number, sectionId });
       setExpanded((prev) => {
         const next = new Set(prev);
-        const juz = opened.juz;
-        if (juz) next.add(`juz:${juz}`);
-        next.add(`surah:${number}`);
+        // Expansion keys are per-juz so a surah that spans juz only opens the
+        // part that was clicked, leaving continuation nodes elsewhere closed.
+        next.add(`juz:${juz}`);
+        next.add(`surah:${juz}:${number}`);
         return next;
       });
       if (sectionId) {
