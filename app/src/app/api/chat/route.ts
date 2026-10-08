@@ -1,74 +1,43 @@
-import { answer } from "@/lib/agent";
-import { search } from "@/lib/search";
+import { AGENT_SERVER_URL } from "@/lib/agent-server";
 
 export const dynamic = "force-dynamic";
 
 /**
- * Agent endpoint. Emits SSE:
- *   event: doc   -> the response document to render in the reader
- *   event: delta -> answer text chunks
- *   event: done  -> end of stream
- *   event: error
+ * Agent endpoint. Bridges to the pi-durable agent server and relays its SSE:
+ *   event: session -> { conversationId } (first event; store it client-side)
+ *   event: delta   -> answer text chunks
+ *   event: tool    -> a tool started running
+ *   event: doc     -> the agent rendered a document for the reader
+ *   event: done / error
  */
 export async function POST(req: Request) {
-  const { query, surah, juz, refine } = (await req.json()) as {
+  const { query, conversationId } = (await req.json()) as {
     query?: string;
-    surah?: number;
-    juz?: number;
-    refine?: boolean;
+    conversationId?: string;
   };
-
-  const encoder = new TextEncoder();
-  const send = (event: string, data: unknown) =>
-    encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
 
   if (!query?.trim()) {
     return new Response(JSON.stringify({ error: "query required" }), { status: 400 });
   }
 
-  const stream = new ReadableStream({
-    async start(controller) {
-      try {
-        // Retrieval feeds both the rendered document and the agent context.
-        const doc = await search(query.trim(), { surah, juz });
-        controller.enqueue(send("doc", { doc, refine: Boolean(refine) }));
+  const upstream = await fetch(`${AGENT_SERVER_URL}/ask`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query: query.trim(), conversationId }),
+  }).catch(() => undefined);
 
-        const hits = doc.groups.flatMap((g) =>
-          g.ayat.flatMap((a) =>
-            a.commentary.map((c) => ({
-              content: c.content,
-              source_file: c.source_file,
-              cjuz: g.juz,
-              ayah_number: a.number,
-              surah_number: g.surah,
-              name_en: g.name_en,
-              section_title: a.section_title,
-              text_ar: a.text_ar,
-              translation: a.translation,
-              score: c.score,
-            })),
-          ),
-        );
+  if (!upstream?.ok || !upstream.body) {
+    return new Response(
+      `event: error\ndata: ${JSON.stringify({ message: "The agent server is unreachable." })}\n\n`,
+      { headers: SSE_HEADERS },
+    );
+  }
 
-        for await (const delta of answer(query.trim(), hits)) {
-          controller.enqueue(send("delta", { text: delta }));
-        }
-        controller.enqueue(send("done", {}));
-      } catch (err) {
-        controller.enqueue(
-          send("error", { message: err instanceof Error ? err.message : String(err) }),
-        );
-      } finally {
-        controller.close();
-      }
-    },
-  });
-
-  return new Response(stream, {
-    headers: {
-      "Content-Type": "text/event-stream",
-      "Cache-Control": "no-cache, no-transform",
-      Connection: "keep-alive",
-    },
-  });
+  return new Response(upstream.body, { headers: SSE_HEADERS });
 }
+
+const SSE_HEADERS = {
+  "Content-Type": "text/event-stream",
+  "Cache-Control": "no-cache, no-transform",
+  Connection: "keep-alive",
+};

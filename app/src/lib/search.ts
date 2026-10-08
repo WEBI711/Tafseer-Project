@@ -225,9 +225,21 @@ export async function search(
     }
   }
 
+  return groupIntoDoc(
+    kept.filter((r): r is Hit & { ayah_number: number } => r.ayah_number !== null),
+    text,
+    limitAyat,
+  );
+}
+
+/** Groups ranked hits into the response document: juz -> surah -> ayah, full commentary. */
+export function groupIntoDoc(
+  hits: (Hit & { ayah_number: number })[],
+  query: string,
+  limitAyat = 14,
+): ResponseDoc {
   const byAyah = new Map<string, AyahBlock & { surah: number; cjuz: number; name_en: string }>();
-  for (const r of [...kept].sort((a, b) => b.score - a.score)) {
-    if (r.ayah_number === null) continue; // surah-level notes are not ayah matches
+  for (const r of [...hits].sort((a, b) => b.score - a.score)) {
     const key = `${r.surah_number}:${r.ayah_number}`;
     let hit = byAyah.get(key);
     if (!hit) {
@@ -269,9 +281,9 @@ export async function search(
     g.ayat.push(block);
   }
 
-  const top = [...kept].sort((a, b) => b.score - a.score).slice(0, 3);
+  const top = [...hits].sort((a, b) => b.score - a.score).slice(0, 3);
   return {
-    query: text,
+    query,
     groups,
     stats: {
       ayat: ordered.length,
@@ -289,3 +301,34 @@ export async function search(
 }
 
 export type { Hit };
+
+/**
+ * Response document for the agent's render tool: full verbatim commentary for
+ * the chosen ayat, in canonical order. Score is 1 (the agent picked them).
+ */
+export async function buildDoc(
+  refs: { surah: number; ayah: number }[],
+  title: string,
+): Promise<ResponseDoc | null> {
+  if (!refs.length) return null;
+  const params: number[] = [];
+  const ors = refs.map((r) => {
+    params.push(r.surah, r.ayah);
+    const i = params.length;
+    return `(s.number = $${i - 1} AND a.number = $${i})`;
+  });
+  const rows = await query<Omit<Hit, "score" | "ayah_number"> & { ayah_number: number }>(
+    `SELECT c.content, c.source_file, c.juz AS cjuz,
+            a.number AS ayah_number, s.number AS surah_number, s.name_en,
+            sec.title AS section_title, a.text_ar, a.translation
+     FROM commentary c
+     JOIN ayah a ON a.id = c.ayah_id
+     JOIN surah s ON s.id = c.surah_id
+     LEFT JOIN section sec ON sec.id = a.section_id
+     WHERE ${ors.join(" OR ")}
+     ORDER BY s.number, a.number, c.ord`,
+    params,
+  );
+  if (!rows.length) return null;
+  return groupIntoDoc(rows.map((r) => ({ ...r, score: 1 })), title);
+}
