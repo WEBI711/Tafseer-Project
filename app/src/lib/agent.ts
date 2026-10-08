@@ -1,4 +1,4 @@
-import { CHAT_MODEL, client } from "./llm";
+import { CHAT_MODEL, getClient } from "./llm";
 import type { Hit } from "./search";
 
 const SYSTEM = `You are the tafseer study companion of a Quran commentary app.
@@ -24,7 +24,7 @@ function context(hits: Hit[], max = 8): string {
 
 /** Streams the grounded answer token by token. */
 export async function* answer(question: string, hits: Hit[]): AsyncGenerator<string> {
-  const stream = await client.chat.completions.create({
+  const stream = await getClient().chat.completions.create({
     model: CHAT_MODEL,
     stream: true,
     messages: [
