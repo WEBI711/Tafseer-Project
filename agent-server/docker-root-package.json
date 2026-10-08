@@ -1,0 +1,8 @@
+{
+  "name": "tafseer-agent-image-root",
+  "private": true,
+  "dependencies": {
+    "openai": "^7.30.1",
+    "pg": "^8.23.1"
+  }
+}

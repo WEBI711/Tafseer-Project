@@ -15,6 +15,23 @@ import ChatPanel, { type Message } from "./ChatPanel";
 export type RecentQuery = { id: string; query: string; docId: string };
 
 const RECENT_KEY = "tafseer.recent";
+const CONVERSATION_KEY = "tafseer.conversation";
+
+/** The durable conversation id this browser talks to; empty until the agent mints one. */
+function conversationId(): string | undefined {
+  try {
+    return localStorage.getItem(CONVERSATION_KEY) || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function toolLabel(name: string, args?: Record<string, unknown>): string {
+  if (name === "search_corpus") return "Searching the corpus…";
+  if (name === "get_surah") return `Reading Surah ${args?.number ?? ""}…`;
+  if (name === "render_results") return "Rendering the passages…";
+  return "Working…";
+}
 
 export default function Workspace() {
   const [tree, setTree] = useState<TreeSurah[]>([]);
@@ -125,7 +142,7 @@ export default function Workspace() {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ query: q, refine: opts.refine, ...opts.filters }),
+          body: JSON.stringify({ query: q, conversationId: conversationId() }),
         });
         if (!res.body) throw new Error("no stream");
 
@@ -146,7 +163,15 @@ export default function Workspace() {
             if (!event || !dataRaw) continue;
             const data = JSON.parse(dataRaw);
 
-            if (event === "doc") {
+            if (event === "session") {
+              try {
+                localStorage.setItem(CONVERSATION_KEY, String(data.conversationId));
+              } catch {
+                /* private mode — the conversation just starts fresh each load */
+              }
+            } else if (event === "tool") {
+              patchLast((msg) => ({ ...msg, tool: toolLabel(data.name, data.args) }));
+            } else if (event === "doc") {
               const doc: ResponseDoc = data.doc;
               docId = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
               setDocs((d) => ({ ...d, [docId]: doc }));
@@ -173,7 +198,7 @@ export default function Workspace() {
                 persist(next, { ...docsRef.current, [docId]: doc });
               }
             } else if (event === "delta") {
-              patchLast((msg) => ({ ...msg, text: msg.text + data.text }));
+              patchLast((msg) => ({ ...msg, text: msg.text + data.text, tool: undefined }));
             } else if (event === "done") {
               patchLast((msg) => ({ ...msg, streaming: false }));
             } else if (event === "error") {

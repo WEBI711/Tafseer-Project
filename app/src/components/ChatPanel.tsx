@@ -9,6 +9,7 @@ export type Message = {
   text: string;
   streaming?: boolean;
   refine?: boolean;
+  tool?: string;
   cites?: Citation[];
   docId?: string;
   docQuery?: string;
@@ -90,8 +91,8 @@ export default function ChatPanel({
           <div className="a">
             <p>
               Ask about anything in the corpus — a theme, a ruling, a word. The
-              answer searches every surah and renders the matching ayat, with the
-              commentary around each verse intact, in the reader.
+              agent searches the tafseer itself, answers in conversation, and
+              shows you the passages it used on request.
             </p>
             <div className="suggest">
               {[
@@ -127,7 +128,7 @@ export default function ChatPanel({
                   </div>
                 )}
                 {m.text && <p>{m.text}</p>}
-                {m.streaming && <p className="empty">Consulting the corpus…</p>}
+                {m.streaming && <p className="empty">{m.tool ?? "Thinking…"}</p>}
                 {!m.streaming &&
                   (m.cites ?? []).slice(0, 3).map((c, ci) => (
                     <div
