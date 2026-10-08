@@ -280,7 +280,18 @@ export function groupIntoDoc(
     g.ayat.push(block);
   }
 
-  const top = [...hits].sort((a, b) => b.score - a.score).slice(0, 3);
+  // Citation cards should point at distinct passages: the best excerpt of
+  // each of the top three ayat, in relevance order (order preserved for equal
+  // scores, so the agent's own ref order carries through in buildDoc).
+  const top: Hit[] = [];
+  const citedAyah = new Set<string>();
+  for (const r of [...hits].sort((a, b) => b.score - a.score)) {
+    const k = `${r.surah_number}:${r.ayah_number}`;
+    if (citedAyah.has(k)) continue;
+    citedAyah.add(k);
+    top.push(r);
+    if (top.length === 3) break;
+  }
   return {
     query,
     groups,
@@ -328,5 +339,14 @@ export async function buildDoc(
     params,
   );
   if (!rows.length) return null;
-  return groupIntoDoc(rows.map((r) => ({ ...r, score: 1 })), title);
+  // Reorder the rows into the agent's ref order before grouping: display stays
+  // canonical (groupIntoDoc re-sorts), but the citation cards then follow the
+  // agent's own priority instead of the DB's canonical first three.
+  const rank = new Map(refs.map((r, i) => [`${r.surah}:${r.ayah}`, i]));
+  const ordered = [...rows].sort(
+    (a, b) =>
+      (rank.get(`${a.surah_number}:${a.ayah_number}`) ?? Infinity) -
+      (rank.get(`${b.surah_number}:${b.ayah_number}`) ?? Infinity),
+  );
+  return groupIntoDoc(ordered.map((r) => ({ ...r, score: 1 })), title);
 }
