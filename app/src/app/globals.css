@@ -279,7 +279,11 @@ p.pull-lead.ar-lead .ar-inline{font-size:1em;color:var(--ink-body)}
             box-shadow:0 4px 18px rgba(42,36,28,.14);backdrop-filter:blur(6px)}
 .speech-bar.on{border-color:var(--emerald-soft)}
 .speech-bar .icon-btn{width:26px;height:26px;font-size:11px}
+.speech-bar .icon-btn:disabled{opacity:.5;cursor:default}
 .speech-hint{letter-spacing:.18em;text-transform:uppercase;font-size:10px;color:var(--ink-faint)}
+.spin{display:inline-block;width:11px;height:11px;border:2px solid var(--emerald-soft);
+      border-top-color:var(--emerald);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 .speech-opt{display:flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
 .speech-opt input{accent-color:var(--emerald)}
 .speech-rate{display:flex;align-items:center;gap:6px}

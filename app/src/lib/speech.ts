@@ -96,11 +96,20 @@ export type Speaker = {
  * server's TTS engine (Arabic voice for Arabic text, English otherwise) and
  * played as audio; when the engine is unreachable the queue falls back to the
  * browser's Web Speech voices. `onSegment` fires as each segment starts so
- * callers can highlight what is being read. Returns null when unsupported.
+ * callers can highlight what is being read. Synthesis can take a while on a
+ * cold cache, so `onLoading` reports when a chunk is being fetched (the caller
+ * shows a spinner) and `onFail` fires just before the Web Speech fallback.
+ * Returns null when unsupported.
  */
 export function startSpeaking(
   segments: SpeechSegment[],
-  opts: { rate?: number; onSegment?: (index: number) => void; onEnd: () => void },
+  opts: {
+    rate?: number;
+    onSegment?: (index: number) => void;
+    onLoading?: (loading: boolean) => void;
+    onFail?: () => void;
+    onEnd: () => void;
+  },
 ): Speaker | null {
   if (!speakSupported()) {
     opts.onEnd();
@@ -115,6 +124,9 @@ export function startSpeaking(
   let serverUp = true;
   let audio: HTMLAudioElement | null = null;
   let objectUrl: string | null = null;
+  /** Next chunks already being fetched while the current one plays. */
+  const prefetched = new Map<number, Promise<Blob>>();
+  const controllers = new Set<AbortController>();
 
   const advance = () => {
     if (stopped) return;
@@ -122,22 +134,36 @@ export function startSpeaking(
     speakNext();
   };
 
-  // Natural voice: fetch one chunk from /api/tts and play it as audio.
+  // Natural voice: fetch one chunk from /api/tts and play it as audio. The
+  // fetch is awaited with no timeout — synthesis can take a while on a cold
+  // cache — so callers get `onLoading` to show a spinner meanwhile.
   const playFromServer = async (item: QueueItem) => {
-    const res = await fetch("/api/tts", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: item.text, voice: item.lang, speed: rate }),
-    });
-    if (!res.ok) throw new Error(`tts ${res.status}`);
-    const blob = await res.blob();
-    if (stopped) return;
-    if (objectUrl) URL.revokeObjectURL(objectUrl);
-    objectUrl = URL.createObjectURL(blob);
-    audio = new Audio(objectUrl);
-    audio.onended = advance;
-    audio.onerror = advance;
-    await audio.play();
+    opts.onLoading?.(true);
+    try {
+      const pending = prefetched.get(index) ?? fetchChunk(item, rate, controllers);
+      prefetched.delete(index);
+      const blob = await pending;
+      if (stopped) return;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      objectUrl = URL.createObjectURL(blob);
+      audio = new Audio(objectUrl);
+      audio.onended = advance;
+      audio.onerror = advance;
+      await audio.play();
+      opts.onLoading?.(false);
+      // Start the next chunk's fetch now so it is ready when this one ends.
+      // Stored raw: fetchChunk already marks the promise handled, and the
+      // await in playFromServer reports the failure when the chunk is reached.
+      const next = queue[index + 1];
+      if (next && !prefetched.has(index + 1)) {
+        prefetched.set(index + 1, fetchChunk(next, rate, controllers));
+      }
+    } catch (err) {
+      if (stopped) return;
+      opts.onLoading?.(false);
+      opts.onFail?.();
+      throw err;
+    }
   };
 
   // Robotic fallback: the browser's own Web Speech voice.
@@ -182,6 +208,9 @@ export function startSpeaking(
     },
     stop: () => {
       stopped = true;
+      // abort any in-flight synthesis fetch so stop is instant while loading
+      controllers.forEach((c) => c.abort());
+      controllers.clear();
       if (objectUrl) URL.revokeObjectURL(objectUrl);
       if (audio) {
         audio.onended = null;
@@ -210,6 +239,44 @@ export function primeVoices(): void {
 
 /** Longest utterance we queue; browsers silently truncate beyond this. */
 const MAX_CHUNK = 200;
+
+/** In-flight/recent TTS blobs shared between speakers so keep-reading's next
+ *  section starts without a silent gap while the server is cold. */
+const ttsCache = new Map<string, Promise<Blob>>();
+const TTS_CACHE_MAX = 8;
+
+/** Fetches one chunk from /api/tts, deduplicating via the shared cache. The
+ *  controller set lets the owning speaker abort its own in-flight fetches. */
+function fetchChunk(
+  item: QueueItem,
+  rate: number,
+  controllers: Set<AbortController>,
+): Promise<Blob> {
+  const key = `${item.lang}\n${rate}\n${item.text}`;
+  const hit = ttsCache.get(key);
+  if (hit) return hit;
+  const controller = new AbortController();
+  controllers.add(controller);
+  const pending = fetch("/api/tts", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text: item.text, voice: item.lang, speed: rate }),
+    signal: controller.signal,
+  }).then((res) => {
+    if (!res.ok) throw new Error(`tts ${res.status}`);
+    return res.blob();
+  });
+  ttsCache.set(key, pending);
+  while (ttsCache.size > TTS_CACHE_MAX) {
+    ttsCache.delete(ttsCache.keys().next().value as string);
+  }
+  // one handled chain: drop failed blobs from the cache and always release
+  // the controller from the speaker's abort set
+  pending
+    .catch(() => ttsCache.delete(key))
+    .then(() => controllers.delete(controller));
+  return pending;
+}
 
 /** Splits long text at sentence marks, falling back to word boundaries. */
 function chunkText(text: string, max = MAX_CHUNK): string[] {

@@ -46,6 +46,10 @@ type DictationApi = {
   activeSection: SpeechSection | null;
   playing: boolean;
   paused: boolean;
+  /** True while a chunk is being fetched from /api/tts (before audio starts). */
+  loading: boolean;
+  /** Briefly true when the server voice failed and Web Speech took over. */
+  failed: boolean;
   togglePause: () => void;
   stop: () => void;
   rate: number;
@@ -78,6 +82,8 @@ export default function Dictation({
   const [mounted, setMounted] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [paused, setPaused] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [activeSection, setActiveSection] = useState<SpeechSection | null>(null);
   const [rate, setRateState] = useState(1);
   const [keepReading, setKeepReadingState] = useState(true);
@@ -133,6 +139,8 @@ export default function Dictation({
     setActiveSection(null);
     setPlaying(false);
     setPaused(false);
+    setLoading(false);
+    setFailed(false);
     clearHighlight();
   }, [clearHighlight]);
 
@@ -148,6 +156,8 @@ export default function Dictation({
       speakerRef.current = null;
       setPlaying(true);
       setPaused(false);
+      setLoading(true);
+      setFailed(false);
       setActiveSection(section);
       // one segment per block; the heading block itself is muted when the
       // reader turns headings off (intro sections have no heading to mute)
@@ -161,6 +171,11 @@ export default function Dictation({
         onSegment: (bi) => {
           const block = section.blocks[skipHeading ? bi + 1 : bi];
           if (block) highlight(block, section.docIndex);
+        },
+        onLoading: (v) => setLoading(v),
+        onFail: () => {
+          setLoading(false);
+          setFailed(true);
         },
         onEnd: () => {
           ended = true;
@@ -205,6 +220,13 @@ export default function Dictation({
   // playback never survives navigation to another document or unmount
   useEffect(() => stop(), [sections, stop]);
 
+  // the failure hint is momentary — the Web Speech fallback keeps playing
+  useEffect(() => {
+    if (!failed) return;
+    const t = setTimeout(() => setFailed(false), 4000);
+    return () => clearTimeout(t);
+  }, [failed]);
+
   const setRate = useCallback((r: number) => {
     setRateState(r);
     speakerRef.current?.setRate(r);
@@ -233,6 +255,8 @@ export default function Dictation({
     activeSection,
     playing,
     paused,
+    loading,
+    failed,
     togglePause,
     stop,
     rate,
@@ -254,12 +278,22 @@ export default function Dictation({
       <div className={`speech-bar${playing ? " on" : ""}`}>
         {playing ? (
           <>
-            <button className="icon-btn" onClick={togglePause} title={paused ? "Resume" : "Pause"}>
+            <button
+              className="icon-btn"
+              onClick={togglePause}
+              disabled={loading}
+              title={paused ? "Resume" : "Pause"}
+            >
               {paused ? "▶" : "⏸"}
             </button>
             <button className="icon-btn" onClick={stop} title="Stop">
               ⏹
             </button>
+            {(loading || failed) && (
+              <span className="speech-hint">
+                {loading ? "generating audio…" : "audio failed — tap to retry"}
+              </span>
+            )}
           </>
         ) : (
           <span className="speech-hint">Read aloud</span>

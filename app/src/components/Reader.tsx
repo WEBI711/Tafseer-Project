@@ -657,14 +657,17 @@ function SpeakSectionButton({ docIndex, ord }: { docIndex: number; ord: number }
     dictation.playing &&
     dictation.activeSection?.docIndex === docIndex &&
     dictation.activeSection?.firstOrd === ord;
+  const loading = active && dictation.loading;
 
   return (
     <button
       className={`icon-btn speak speak-start${active ? " on" : ""}`}
       onClick={() => (active ? dictation.stop() : dictation.playFrom(docIndex, ord))}
-      title={active ? "Stop reading aloud" : "Read this section aloud"}
+      title={
+        loading ? "Generating audio…" : active ? "Stop reading aloud" : "Read this section aloud"
+      }
     >
-      {active ? "⏹" : "🔊"}
+      {loading ? <span className="spin" aria-hidden /> : active ? "⏹" : "🔊"}
     </button>
   );
 }
