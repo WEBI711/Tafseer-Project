@@ -11,7 +11,7 @@
 import { tree } from "./db";
 import { surahView } from "./search";
 import { chunkText, speakableText, speechLang } from "./speech";
-import { cacheKey, isCached, synthesize } from "./tts";
+import { cacheKey, isCached, modelFor, synthesize } from "./tts";
 
 /** Progress snapshot for /api/tts/pregen. */
 export type PregenStatus = {
@@ -110,7 +110,7 @@ async function run(): Promise<void> {
 async function renderChunk(chunk: string, voice: string): Promise<void> {
   state.done += 1;
   // Rate 1 is the default playback rate — the warm case worth pre-rendering.
-  if (await isCached(cacheKey(chunk, voice, 1))) {
+  if (await isCached(cacheKey(chunk, voice, 1, modelFor(voice)))) {
     state.cached += 1;
     return;
   }

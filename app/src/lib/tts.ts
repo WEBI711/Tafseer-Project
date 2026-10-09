@@ -7,9 +7,9 @@ import path from "node:path";
  * The engine exposes an OpenAI-compatible endpoint: POST {base}/v1/audio/speech
  * with `Authorization: Bearer $OMNIVOICE_API_KEY` and body
  * `{ model, voice, input, speed }`, answering with audio/mpeg.
- * The engine runs the fast CPU model (sherpa-onnx VITS, vits-mms ara+en) per
- * its server-side config; the model id is passed through so it can be switched
- * there without touching this file. Returns null when the engine is
+ * The server runs two engines (English: kittentts, Arabic: sherpa-onnx), so
+ * the model id is picked per language from the voice hint and can be
+ * overridden per language via env vars. Returns null when the engine is
  * unreachable so callers can fall back.
  */
 
@@ -19,8 +19,13 @@ export const TTS_URL =
   process.env.OMNIVOICE_BASE_URL ??
   "http://omnivoice-studio:3900";
 
-/** Model id the engine serves; `TAFSEER_TTS_MODEL` overrides it. */
-export const TTS_MODEL = process.env.TAFSEER_TTS_MODEL ?? "vits-mms-ara-eng";
+/** Model id per language: `TAFSEER_TTS_MODEL_AR`/`_EN` override the defaults. */
+export function modelFor(voice: string): string {
+  return voice === "ar"
+    ? (process.env.TAFSEER_TTS_MODEL_AR ?? "sherpa-onnx")
+    : (process.env.TAFSEER_TTS_MODEL_EN ?? "tts-1");
+}
+
 const TTS_API_KEY = process.env.OMNIVOICE_API_KEY ?? "";
 
 /**
@@ -33,9 +38,9 @@ const CACHE_DIR = process.env.TAFSEER_TTS_CACHE_DIR;
 /** One synthesized utterance. */
 export type TtsAudio = { contentType: string; bytes: ArrayBuffer };
 
-/** Cache key: hash(text + voice + rate) — the same key the durable cache uses. */
-export function cacheKey(text: string, voice: string, speed: number): string {
-  return createHash("sha256").update(`${voice}|${speed}|${text}`).digest("hex");
+/** Cache key: hash(text + voice + rate + model) — the same key the durable cache uses. */
+export function cacheKey(text: string, voice: string, speed: number, model: string): string {
+  return createHash("sha256").update(`${voice}|${speed}|${model}|${text}`).digest("hex");
 }
 
 /** True when the audio for `key` is already in the cache (no bytes read). */
@@ -60,7 +65,8 @@ export async function synthesize(
   speed: number,
   opts: { background?: boolean } = {},
 ): Promise<TtsAudio | null> {
-  const key = cacheKey(text, voice, speed);
+  const model = modelFor(voice);
+  const key = cacheKey(text, voice, speed, model);
   const hit = await cacheGet(key);
   if (hit) return hit;
 
@@ -74,7 +80,7 @@ export async function synthesize(
         "Content-Type": "application/json",
         Authorization: `Bearer ${TTS_API_KEY}`,
       },
-      body: JSON.stringify({ model: TTS_MODEL, voice, input: text, speed }),
+      body: JSON.stringify({ model, voice, input: text, speed }),
     }).catch((err) => {
       console.error(`tts: engine unreachable at ${TTS_URL}:`, err);
       return undefined;
