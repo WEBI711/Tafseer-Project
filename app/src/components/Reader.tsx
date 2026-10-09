@@ -3,7 +3,13 @@
 import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
 import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
-import { speakSupported, speakText, stopSpeaking } from "@/lib/speech";
+import {
+  speakableText,
+  speakSupported,
+  speakText,
+  speechLang,
+  stopSpeaking,
+} from "@/lib/speech";
 import Dictation, { useDictation, type SpeechSection } from "./Dictation";
 import { tidy } from "@/lib/text";
 import { editorToken, saveEditorToken } from "@/lib/editor";
@@ -689,23 +695,6 @@ function splitSections(
   return sections.filter((s) => s.blocks.length > 0);
 }
 
-/** Tables store a JSON grid — flatten the cells so nothing is left unread. */
-function speakableText(block: DocBlock): string {
-  if (block.kind !== "table") return block.text;
-  try {
-    const rows: unknown = JSON.parse(block.text);
-    if (Array.isArray(rows)) return rows.flat().map(String).join(". ");
-  } catch {
-    // not a grid — read the raw text
-  }
-  return block.text;
-}
-
-/** Arabic blocks get an `ar` voice when the browser ships one. */
-function blockLang(block: DocBlock): string {
-  return block.kind === "arabic" ? "ar" : "en";
-}
-
 function buildSpeechSections(
   standalone: DocView | null,
   surah: SurahView | null,
@@ -720,6 +709,6 @@ function sectionsFromDoc(blocks: DocBlock[], docIndex: number): SpeechSection[] 
     docIndex,
     headingOrd: s.headingOrd,
     firstOrd: s.blocks[0].ord,
-    blocks: s.blocks.map((b) => ({ ord: b.ord, text: speakableText(b), lang: blockLang(b) })),
+    blocks: s.blocks.map((b) => ({ ord: b.ord, text: speakableText(b), lang: speechLang(b.kind) })),
   }));
 }

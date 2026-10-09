@@ -237,6 +237,25 @@ export function primeVoices(): void {
 
 /* ---------------- helpers ---------------- */
 
+/** Tables store a JSON grid — flatten the cells so nothing is left unread.
+ *  Lives here (not in the Reader) so the server's pre-generation queue speaks
+ *  exactly the same text — and therefore hits the same cache keys. */
+export function speakableText(block: { kind: string; text: string }): string {
+  if (block.kind !== "table") return block.text;
+  try {
+    const rows: unknown = JSON.parse(block.text);
+    if (Array.isArray(rows)) return rows.flat().map(String).join(". ");
+  } catch {
+    // not a grid — read the raw text
+  }
+  return block.text;
+}
+
+/** Voice hint for a block: Arabic blocks get `ar`, everything else `en`. */
+export function speechLang(kind: string): string {
+  return kind === "arabic" ? "ar" : "en";
+}
+
 /** Longest utterance we queue; browsers silently truncate beyond this. */
 const MAX_CHUNK = 200;
 
@@ -278,8 +297,9 @@ function fetchChunk(
   return pending;
 }
 
-/** Splits long text at sentence marks, falling back to word boundaries. */
-function chunkText(text: string, max = MAX_CHUNK): string[] {
+/** Splits long text at sentence marks, falling back to word boundaries.
+ *  Exported for the server's pre-generation queue so cache keys match. */
+export function chunkText(text: string, max = MAX_CHUNK): string[] {
   const chunks: string[] = [];
   let rest = text.trim();
   while (rest.length > max) {
