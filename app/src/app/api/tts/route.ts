@@ -24,6 +24,9 @@ export async function POST(req: Request) {
     speed && speed > 0 ? speed : 1,
   );
   if (!audio) {
+    console.error(
+      `tts: synthesis failed for /api/tts (voice=${voice ?? "en"}); falling back to client-side Web Speech`,
+    );
     return new Response(JSON.stringify({ error: "tts engine unreachable" }), { status: 502 });
   }
 

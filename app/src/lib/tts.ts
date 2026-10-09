@@ -1,14 +1,19 @@
 import { createHash } from "node:crypto";
 
 /**
- * Server-side bridge to the TTS engine that reads the reader aloud. The engine
- * runs on the host itself (outside docker-compose), listens on localhost only,
- * and needs no API keys — the only configuration is its URL via env var.
- * POSTs `{ text, voice, speed }` and gets the synthesized audio back.
+ * Server-side bridge to the VoiceStudio TTS engine that reads the reader aloud.
+ * The engine exposes an OpenAI-compatible endpoint: POST {base}/v1/audio/speech
+ * with `Authorization: Bearer $OMNIVOICE_API_KEY` and body
+ * `{ model: "tts-1", voice, input, speed }`, answering with audio/mpeg.
+ * Returns null when the engine is unreachable so callers can fall back.
  */
 
 /** Engine URL; `voice` is a language hint ("ar" / "en"), `speed` a rate multiplier. */
-export const TTS_URL = process.env.TAFSEER_TTS_URL ?? "http://127.0.0.1:3900";
+export const TTS_URL =
+  process.env.TAFSEER_TTS_URL ??
+  process.env.OMNIVOICE_BASE_URL ??
+  "http://omnivoice-studio:3900";
+const TTS_API_KEY = process.env.OMNIVOICE_API_KEY ?? "";
 
 /** One synthesized utterance. */
 export type TtsAudio = { contentType: string; bytes: ArrayBuffer };
@@ -17,8 +22,7 @@ export type TtsAudio = { contentType: string; bytes: ArrayBuffer };
 const cache = new Map<string, TtsAudio>();
 const MAX_CACHE_ENTRIES = 200;
 
-/** Synthesizes one chunk via the engine, serving repeats from the cache.
- *  Returns null when the engine is unreachable so callers can fall back. */
+/** Synthesizes one chunk via the engine, serving repeats from the cache. */
 export async function synthesize(
   text: string,
   voice: string,
@@ -28,12 +32,24 @@ export async function synthesize(
   const hit = cache.get(key);
   if (hit) return hit;
 
-  const upstream = await fetch(`${TTS_URL}/tts`, {
+  const upstream = await fetch(`${TTS_URL}/v1/audio/speech`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text, voice, speed }),
-  }).catch(() => undefined);
-  if (!upstream?.ok) return null;
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${TTS_API_KEY}`,
+    },
+    body: JSON.stringify({ model: "tts-1", voice, input: text, speed }),
+  }).catch((err) => {
+    console.error(`tts: engine unreachable at ${TTS_URL}:`, err);
+    return undefined;
+  });
+  if (!upstream) return null;
+  if (!upstream.ok) {
+    console.error(
+      `tts: engine returned ${upstream.status} ${upstream.statusText} for POST ${TTS_URL}/v1/audio/speech`,
+    );
+    return null;
+  }
 
   const audio: TtsAudio = {
     contentType: upstream.headers.get("content-type") ?? "audio/mpeg",
