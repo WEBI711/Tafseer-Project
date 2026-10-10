@@ -306,13 +306,15 @@ p.pull-lead.ar-lead .ar-inline{font-size:1em;color:var(--ink-body)}
    the grid and slide in over the reader; the top-bar ☰/💬 buttons summon them
    and each panel's own collapse button tucks it away. */
 @media(max-width:1100px){
-  .app{grid-template-columns:1fr}
+  /* must out-specify .app.left-hidden.right-hidden (0,3,0) or the 0 1fr 0
+     template survives and the reading column collapses to 0px on phones */
+  .app,.app.left-hidden,.app.right-hidden,.app.left-hidden.right-hidden{grid-template-columns:1fr}
   .side,.chat{position:fixed;top:0;bottom:0;width:min(320px,85vw);z-index:20;
               box-shadow:0 8px 40px rgba(42,36,28,.3);transition:transform .25s ease}
   .side{left:0}
   .chat{right:0}
   .app.left-hidden .side{transform:translateX(-100%)}
   .app.right-hidden .chat{transform:translateX(100%)}
-  .app .edge.left,.app .edge.right{display:none}
+  .app.left-hidden .edge.left,.app.right-hidden .edge.right{display:none}
   .wrap{padding:32px 20px 96px}
 }
