@@ -7,6 +7,12 @@ export type TreeSection = {
   to_ayah: number | null;
 };
 
+/** A takeaway block ("MY KEY TAKEAWAYS" recap) at the end of one surah part. */
+export type TreeTakeaway = {
+  id: number;
+  title: string | null;
+};
+
 /** One surah as it appears under one juz (a surah recurs when it spans juz). */
 export type TreeSurah = {
   juz: number;
@@ -15,6 +21,21 @@ export type TreeSurah = {
   ayat: number;
   continued: boolean;
   sections: TreeSection[];
+  takeaways: TreeTakeaway[];
+};
+
+/** A standalone (non-surah) source document, e.g. the Introduction. */
+export type TreeDoc = {
+  source_file: string;
+  title: string;
+};
+
+/** Reader payload for a standalone document: its blocks, as written. */
+export type DocView = {
+  source_file: string;
+  title: string;
+  juz: number | null;
+  blocks: DocBlock[];
 };
 
 export type CommentaryRow = {
@@ -35,11 +56,16 @@ export type DocBlock = {
     | "arabic"
     | "translation"
     | "table"
-    | "prose";
+    | "prose"
+    | "lesson"
+    | "hadith"
+    | "cross_ref"
+    | "quote";
   text: string;
   ref_surah: number | null;
   ref_ayah: number | null;
   section_id: number | null;
+  recap_id?: number | null;
 };
 
 /** One source docx, as it was written. */
@@ -92,6 +118,12 @@ export type ResponseDoc = {
   groups: ResponseGroup[];
   stats: { ayat: number; surahs: number; juz: number };
   cites: Citation[];
+};
+
+/** File-explorer payload: surah nodes under their juz, plus standalone docs. */
+export type Tree = {
+  surahs: TreeSurah[];
+  docs: TreeDoc[];
 };
 
 export type Filters = { surah?: number; juz?: number };

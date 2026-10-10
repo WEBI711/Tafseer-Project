@@ -1,5 +1,6 @@
 import { query } from "./db";
 import { embed } from "./llm";
+import { tidy } from "./text";
 import type {
   DocDocument,
   AyahBlock,
@@ -84,7 +85,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
   const recaps = await query<{
     part_id: number; id: number; ord: number; title: string | null; items: { kind: string; text: string }[];
   }>(
-    `SELECT r.part_id, r.ord, r.title, r.items
+    `SELECT r.id, r.part_id, r.ord, r.title, r.items
      FROM recap r JOIN part p ON p.id = r.part_id
      JOIN juz j ON j.id = p.juz_id
      WHERE p.surah_number = $1 ORDER BY j.number, p.ord, r.ord`,
@@ -107,7 +108,8 @@ export async function surahView(number: number): Promise<SurahView | null> {
 
   const documents: DocDocument[] = parts.map((part) => {
     const blocks: DocBlock[] = [];
-    const push = (b: Omit<DocBlock, "ord">) => blocks.push({ ...b, ord: blocks.length });
+    const push = (b: Omit<DocBlock, "ord">) =>
+      blocks.push({ ...b, text: tidy(b.text), ord: blocks.length });
     if (part.bismillah) push({ kind: "arabic", text: part.bismillah, ref_surah: null, ref_ayah: null, section_id: null });
     push({ kind: "juz_header", text: `Juz ${part.juz}`, ref_surah: null, ref_ayah: null, section_id: null });
     push({ kind: "surah_header", text: `Surah ${part.surah_number} – ${part.name_en}`, ref_surah: null, ref_ayah: null, section_id: null });
@@ -116,7 +118,7 @@ export async function surahView(number: number): Promise<SurahView | null> {
 
     for (const sec of sections.filter((s) => s.part_id === part.id)) {
       if (sec.title) push({ kind: "section_heading", text: sec.title, ref_surah: null, ref_ayah: null, section_id: sec.id });
-      for (const it of sec.intro ?? []) push({ kind: it.kind === "heading" ? "heading" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+      for (const it of sec.intro ?? []) push({ kind: blockKind(it.kind), text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
       for (const u of unitsBySection.get(0) ?? []) { /* unreachable, keeps types honest */ }
       for (const u of units.filter((x) => x.section_id === sec.id)) {
         for (const a of u.arabic_lines ?? []) push({ kind: "arabic", text: a, ref_surah: null, ref_ayah: null, section_id: null });
@@ -126,23 +128,34 @@ export async function surahView(number: number): Promise<SurahView | null> {
           push({ kind: "translation", text: t.text, ref_surah: t.ref_surah, ref_ayah: ayah, section_id: null });
         }
         for (const c of commByUnit.get(`${sec.id}:${u.ord}`) ?? []) {
-          const kind: DocBlock["kind"] =
-            c.kind === "list_item" ? "list_item"
-            : c.kind === "heading" ? "heading"
-            : "prose";
-          push({ kind, text: c.ref ? `(${c.ref}) ${c.text}` : c.text, ref_surah: null, ref_ayah: null, section_id: null });
+          push({ kind: blockKind(c.kind), text: c.ref ? `(${c.ref}) ${c.text}` : c.text, ref_surah: null, ref_ayah: null, section_id: null });
         }
       }
     }
     for (const r of recaps.filter((r) => r.part_id === part.id)) {
-      if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null });
-      for (const it of r.items ?? []) push({ kind: it.kind === "list_item" ? "list_item" : "prose", text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
+      // The recap id anchors the block so the Explorer's takeaways entry can
+      // scroll straight to it.
+      if (r.title) push({ kind: "heading", text: r.title, ref_surah: null, ref_ayah: null, section_id: null, recap_id: r.id });
+      for (const it of r.items ?? []) push({ kind: blockKind(it.kind), text: it.text, ref_surah: null, ref_ayah: null, section_id: null });
     }
     return { source_file: part.source_file, juz: part.juz, blocks };
   });
 
   const first = parts[0];
   return { number, name_en: first.name_en ?? "", juz: first.juz, documents };
+}
+
+/**
+ * Commentary items are stored with fine-grained kinds (lesson, hadith, quote,
+ * cross_ref…). The ones the reader styles distinctly pass through; anything
+ * else falls back to prose.
+ */
+const BLOCK_KINDS: DocBlock["kind"][] = [
+  "heading", "list_item", "arabic", "translation", "lesson", "hadith", "cross_ref", "quote",
+];
+
+function blockKind(kind: string): DocBlock["kind"] {
+  return (BLOCK_KINDS as string[]).includes(kind) ? (kind as DocBlock["kind"]) : "prose";
 }
 
 type Hit = {
@@ -280,7 +293,18 @@ export function groupIntoDoc(
     g.ayat.push(block);
   }
 
-  const top = [...hits].sort((a, b) => b.score - a.score).slice(0, 3);
+  // Citation cards should point at distinct passages: the best excerpt of
+  // each of the top three ayat, in relevance order (order preserved for equal
+  // scores, so the agent's own ref order carries through in buildDoc).
+  const top: Hit[] = [];
+  const citedAyah = new Set<string>();
+  for (const r of [...hits].sort((a, b) => b.score - a.score)) {
+    const k = `${r.surah_number}:${r.ayah_number}`;
+    if (citedAyah.has(k)) continue;
+    citedAyah.add(k);
+    top.push(r);
+    if (top.length === 3) break;
+  }
   return {
     query,
     groups,
@@ -328,5 +352,14 @@ export async function buildDoc(
     params,
   );
   if (!rows.length) return null;
-  return groupIntoDoc(rows.map((r) => ({ ...r, score: 1 })), title);
+  // Reorder the rows into the agent's ref order before grouping: display stays
+  // canonical (groupIntoDoc re-sorts), but the citation cards then follow the
+  // agent's own priority instead of the DB's canonical first three.
+  const rank = new Map(refs.map((r, i) => [`${r.surah}:${r.ayah}`, i]));
+  const ordered = [...rows].sort(
+    (a, b) =>
+      (rank.get(`${a.surah_number}:${a.ayah_number}`) ?? Infinity) -
+      (rank.get(`${b.surah_number}:${b.ayah_number}`) ?? Infinity),
+  );
+  return groupIntoDoc(ordered.map((r) => ({ ...r, score: 1 })), title);
 }
