@@ -3,10 +3,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type {
   Citation,
+  DocView,
   Filters,
   ResponseDoc,
   SurahView,
-  TreeSurah,
+  Tree,
 } from "@/lib/types";
 import Explorer from "./Explorer";
 import Reader from "./Reader";
@@ -34,14 +35,15 @@ function toolLabel(name: string, args?: Record<string, unknown>): string {
 }
 
 export default function Workspace() {
-  const [tree, setTree] = useState<TreeSurah[]>([]);
+  const [tree, setTree] = useState<Tree>({ surahs: [], docs: [] });
   const [surah, setSurah] = useState<SurahView | null>(null);
+  const [standalone, setStandalone] = useState<DocView | null>(null);
   // What the reader is showing. Tracked explicitly: inferring it from the last
   // chat message left the reader blank when a saved query was opened directly.
   const [view, setView] = useState<{ kind: "reader" } | { kind: "query"; docId: string }>(
     { kind: "reader" },
   );
-  const [active, setActive] = useState<{ surah?: number; sectionId?: number }>({});
+  const [active, setActive] = useState<{ surah?: number; sectionId?: number; doc?: string }>({});
   const [recent, setRecent] = useState<RecentQuery[]>([]);
   const [docs, setDocs] = useState<Record<string, ResponseDoc>>({});
   const [messages, setMessages] = useState<Message[]>([]);
@@ -49,6 +51,19 @@ export default function Workspace() {
   const [leftHidden, setLeftHidden] = useState(false);
   const [rightHidden, setRightHidden] = useState(false);
   const [expanded, setExpanded] = useState<Set<string>>(new Set(["juz:1"]));
+  // Inline editing shows only when the server has a designated editor set up;
+  // the flag is public, the token is not.
+  const [editorEnabled, setEditorEnabled] = useState(false);
+
+  // On phones the three columns cannot fit: the panels become off-canvas
+  // overlays, so start with both tucked away and let the top-bar buttons
+  // summon them.
+  useEffect(() => {
+    if (window.innerWidth <= 1100) {
+      setLeftHidden(true);
+      setRightHidden(true);
+    }
+  }, []);
 
   const docsRef = useRef(docs);
   docsRef.current = docs;
@@ -60,7 +75,11 @@ export default function Workspace() {
     fetch("/api/tree")
       .then((r) => r.json())
       .then(setTree)
-      .catch(() => setTree([]));
+      .catch(() => setTree({ surahs: [], docs: [] }));
+    fetch("/api/editor")
+      .then((r) => r.json())
+      .then((d) => setEditorEnabled(Boolean(d.enabled)))
+      .catch(() => setEditorEnabled(false));
     try {
       const saved = JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]");
       if (Array.isArray(saved)) {
@@ -91,23 +110,29 @@ export default function Workspace() {
   }, []);
 
   const openSurah = useCallback(
-    async (number: number, sectionId?: number) => {
+    async (number: number, juz: number, sectionId?: number, recapId?: number) => {
       const res = await fetch(`/api/surah/${number}`);
       if (!res.ok) return;
       const opened: SurahView = await res.json();
       setSurah(opened);
+      setStandalone(null);
       setView({ kind: "reader" });
       setActive({ surah: number, sectionId });
       setExpanded((prev) => {
         const next = new Set(prev);
-        const juz = opened.juz;
-        if (juz) next.add(`juz:${juz}`);
-        next.add(`surah:${number}`);
+        // Expansion keys are per-juz so a surah that spans juz only opens the
+        // part that was clicked, leaving continuation nodes elsewhere closed.
+        next.add(`juz:${juz}`);
+        next.add(`surah:${juz}:${number}`);
         return next;
       });
       if (sectionId) {
         window.setTimeout(() => {
           document.getElementById(`sec-${sectionId}`)?.scrollIntoView({ block: "start" });
+        }, 50);
+      } else if (recapId) {
+        window.setTimeout(() => {
+          document.getElementById(`recap-${recapId}`)?.scrollIntoView({ block: "start" });
         }, 50);
       } else {
         mainRef.current?.scrollTo({ top: 0 });
@@ -115,6 +140,17 @@ export default function Workspace() {
     },
     [],
   );
+
+  const openDocument = useCallback(async (sourceFile: string) => {
+    const res = await fetch(`/api/doc/${encodeURIComponent(sourceFile)}`);
+    if (!res.ok) return;
+    const opened: DocView = await res.json();
+    setStandalone(opened);
+    setSurah(null);
+    setView({ kind: "reader" });
+    setActive({ doc: sourceFile });
+    mainRef.current?.scrollTo({ top: 0 });
+  }, []);
 
   const openDoc = useCallback((docId: string) => {
     if (!docsRef.current[docId]) return;
@@ -264,7 +300,8 @@ export default function Workspace() {
   return (
     <div className={`app${leftHidden ? " left-hidden" : ""}${rightHidden ? " right-hidden" : ""}`}>
       <Explorer
-        tree={tree}
+        tree={tree.surahs}
+        docs={tree.docs}
         active={view.kind === "reader" ? active : {}}
         expanded={expanded}
         onToggle={(key) =>
@@ -275,15 +312,19 @@ export default function Workspace() {
           })
         }
         onOpenSurah={openSurah}
+        onOpenDoc={openDocument}
         onCollapse={() => setLeftHidden(true)}
       />
 
       <Reader
         mode={view.kind === "query" ? "query" : "reader"}
         surah={surah}
+        standalone={standalone}
         doc={currentDoc}
         ref={mainRef}
-        tree={tree}
+        tree={tree.surahs}
+        canEdit={editorEnabled}
+        onDocEdited={() => standalone && openDocument(standalone.source_file)}
         onToggleLeft={() => setLeftHidden((v) => !v)}
         onToggleRight={() => setRightHidden((v) => !v)}
       />

@@ -10,6 +10,8 @@
  * "LAWS OF INHERITANCE (7-10)") also carry `no-drop`, because the theme's drop
  * cap is meant for prose openings and mangles a heading.
  */
+import { tidy } from "@/lib/text";
+
 const LATIN_RE = /[A-Za-z]/;
 const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]/;
 const LABEL_RE = /^[A-Z0-9][A-Z0-9\s'’.,&()/\-–—:]{9,}/;
@@ -27,17 +29,18 @@ export default function CommentaryText({
   dataKind?: string;
   dataOrd?: number;
 }) {
-  const i = content.search(LATIN_RE);
-  const head = i === -1 ? content : content.slice(0, i);
-  const rest = i === -1 ? "" : content.slice(i);
+  const text = tidy(content);
+  const i = text.search(LATIN_RE);
+  const head = i === -1 ? text : text.slice(0, i);
+  const rest = i === -1 ? "" : text.slice(i);
 
-  const isLabel = content.length < 110 || LABEL_RE.test(content);
+  const isLabel = text.length < 110 || LABEL_RE.test(text);
   const classes = [className, isLabel ? "no-drop" : ""].filter(Boolean).join(" ");
 
   if (!ARABIC_RE.test(head)) {
     return (
       <p className={classes || undefined} id={id} data-kind={dataKind} data-ord={dataOrd}>
-        {content}
+        {text}
       </p>
     );
   }

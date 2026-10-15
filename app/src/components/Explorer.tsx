@@ -1,22 +1,26 @@
 "use client";
 
-import type { TreeSurah } from "@/lib/types";
+import type { TreeDoc, TreeSurah } from "@/lib/types";
 
 type Props = {
   tree: TreeSurah[];
-  active: { surah?: number; sectionId?: number };
+  docs: TreeDoc[];
+  active: { surah?: number; sectionId?: number; doc?: string };
   expanded: Set<string>;
   onToggle: (key: string) => void;
-  onOpenSurah: (number: number, sectionId?: number) => void;
+  onOpenSurah: (number: number, juz: number, sectionId?: number, recapId?: number) => void;
+  onOpenDoc: (sourceFile: string) => void;
   onCollapse: () => void;
 };
 
 export default function Explorer({
   tree,
+  docs,
   active,
   expanded,
   onToggle,
   onOpenSurah,
+  onOpenDoc,
   onCollapse,
 }: Props) {
   const juzGroups = tree.reduce<Record<number, TreeSurah[]>>((acc, s) => {
@@ -33,6 +37,17 @@ export default function Explorer({
         </button>
       </div>
       <div className="scroll">
+        {/* Standalone documents (e.g. the Introduction) sit above the juz tree */}
+        {docs.map((d) => (
+          <button
+            key={d.source_file}
+            className={`item${active.doc === d.source_file ? " on" : ""}`}
+            onClick={() => onOpenDoc(d.source_file)}
+          >
+            <span>{d.title}</span>
+          </button>
+        ))}
+
         {Object.entries(juzGroups).map(([juz, surahs]) => {
           const juzKey = `juz:${juz}`;
           const juzOpen = expanded.has(juzKey);
@@ -45,7 +60,9 @@ export default function Explorer({
               </div>
               <div className="kids">
                 {surahs.map((s) => {
-                  const surahKey = `surah:${s.number}`;
+                  // Per-juz key: the same surah can span several juz, and each
+                  // part must expand independently.
+                  const surahKey = `surah:${juz}:${s.number}`;
                   const surahOpen = expanded.has(surahKey);
                   const isActive = active.surah === s.number;
                   return (
@@ -60,12 +77,11 @@ export default function Explorer({
                             return;
                           }
                           if (!surahOpen) onToggle(surahKey);
-                          onOpenSurah(s.number);
+                          onOpenSurah(s.number, s.juz);
                         }}
                       >
                         <span className="caret">▾</span>
-                        <span style={isActive ? { color: "var(--emerald)" } : undefined}>
-                          Surah {s.number}
+                        <span>Surah {s.number}
                           {s.continued ? " · continued" : ` · ${shortName(s.name_en)}`}
                         </span>
                         <small>{s.ayat}</small>
@@ -77,7 +93,7 @@ export default function Explorer({
                             className={`item sub${
                               active.sectionId === sec.id ? " on" : ""
                             }`}
-                            onClick={() => onOpenSurah(s.number, sec.id)}
+                            onClick={() => onOpenSurah(s.number, s.juz, sec.id)}
                           >
                             <span>{titleCase(sec.title)}</span>
                             <small>
@@ -89,6 +105,17 @@ export default function Explorer({
                                   }`
                                 : ""}
                             </small>
+                          </button>
+                        ))}
+                        {/* The author's takeaways live at the end of each part;
+                            they are read-only, straight from the source. */}
+                        {s.takeaways.map((t) => (
+                          <button
+                            key={t.id}
+                            className="item sub"
+                            onClick={() => onOpenSurah(s.number, s.juz, undefined, t.id)}
+                          >
+                            <span>★ {t.title ? titleCase(t.title) : "Key takeaways"}</span>
                           </button>
                         ))}
                       </div>

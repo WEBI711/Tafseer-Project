@@ -63,7 +63,11 @@ def load_juz(conn: psycopg.Connection, inst: dict) -> dict:
                 (juz_id, cov["surah_number"], cov["name_en"],
                  cov["from_ayah"], cov["to_ayah"]))
 
-        for part in inst["parts"]:
+        # Stored ord must match reading order, not source-file order: juz 30's
+        # files arrived out of sequence (#31). Ascending (surah, from_ayah) is
+        # correct for every juz — continued surahs still sort within their juz.
+        parts = sorted(inst["parts"], key=lambda p: (p["surah_number"], p["from_ayah"]))
+        for ord_, part in enumerate(parts, start=1):
             cur.execute(
                 """INSERT INTO part (juz_id, surah_number, name_en, from_ayah, to_ayah,
                      continues_from_prev_juz, continues_in_next_juz, source_file, ord,
@@ -71,7 +75,7 @@ def load_juz(conn: psycopg.Connection, inst: dict) -> dict:
                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) RETURNING id""",
                 (juz_id, part["surah_number"], part["name_en"], part["from_ayah"],
                  part["to_ayah"], part["continues_from_prev_juz"],
-                 part["continues_in_next_juz"], part["source_file"], part["ord"],
+                 part["continues_in_next_juz"], part["source_file"], ord_,
                  part["bismillah"], part["juz_banner"], part["chunk_marker"],
                  json.dumps(part.get("section_index")),
                  json.dumps(part.get("extras") or [])))

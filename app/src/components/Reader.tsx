@@ -1,16 +1,30 @@
 "use client";
 
+import { useEffect, useMemo, useState } from "react";
 import type { RefObject } from "react";
-import type { DocBlock, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
+import type { DocBlock, DocView, ResponseDoc, SurahView, TreeSurah } from "@/lib/types";
+import {
+  speakableText,
+  speakSupported,
+  speakText,
+  speechLang,
+  stopSpeaking,
+} from "@/lib/speech";
+import Dictation, { useDictation, type SpeechSection } from "./Dictation";
+import { tidy } from "@/lib/text";
+import { editorToken, saveEditorToken } from "@/lib/editor";
 import { workLabel } from "./Workspace";
 import CommentaryText from "./CommentaryText";
 
 type Props = {
   mode: "reader" | "query";
   surah: SurahView | null;
+  standalone: DocView | null;
   doc: ResponseDoc | null;
   ref: RefObject<HTMLElement | null>;
   tree: TreeSurah[];
+  canEdit: boolean;
+  onDocEdited: () => void;
   onToggleLeft: () => void;
   onToggleRight: () => void;
 };
@@ -18,9 +32,12 @@ type Props = {
 export default function Reader({
   mode,
   surah,
+  standalone,
   doc,
   ref,
   tree,
+  canEdit,
+  onDocEdited,
   onToggleLeft,
   onToggleRight,
 }: Props) {
@@ -36,15 +53,24 @@ export default function Reader({
             </>
           ),
         }
-      : surah
-        ? { label: <>Juz {surah.juz} / Surah {surah.number} / <b>{surah.name_en}</b></> }
-        : { label: <>Reading</> };
+      : standalone
+        ? { label: <><b>{standalone.title}</b></> }
+        : surah
+          ? { label: <>Juz {surah.juz} / Surah {surah.number} / <b>{surah.name_en}</b></> }
+          : { label: <>Reading</> };
+
+  // reader mode plays the whole work: one intro section per source document
+  // plus one per section heading, across every document in reading order
+  const sections = useMemo(
+    () => buildSpeechSections(standalone, surah),
+    [standalone, surah],
+  );
 
   return (
     <main className="main" ref={ref}>
       <div className="top">
         <span className="crumb">{crumb.label}</span>
-        <span style={{ display: "flex", gap: 8 }}>
+        <span className="top-actions">
           <button className="icon-btn" onClick={onToggleLeft} title="Toggle explorer">
             ☰
           </button>
@@ -55,9 +81,15 @@ export default function Reader({
       </div>
 
       <div className="wrap">
-        {mode === "query"
-          ? doc && <ResponseDocument doc={doc} tree={tree} />
-          : surah && <SurahDocument surah={surah} />}
+        {mode === "query" ? (
+          doc && <ResponseDocument doc={doc} tree={tree} />
+        ) : (
+          <Dictation sections={sections}>
+            {standalone
+              ? <StandaloneDocument doc={standalone} canEdit={canEdit} onDocEdited={onDocEdited} />
+              : surah && <SurahDocument surah={surah} />}
+          </Dictation>
+        )}
       </div>
     </main>
   );
@@ -94,6 +126,18 @@ function CommentaryRows({ rows, labelRuns }: { rows: Row[]; labelRuns?: boolean 
 
 /* ---------------- reader mode: the source document, block by block ---------------- */
 
+function StandaloneDocument({ doc, canEdit, onDocEdited }: { doc: DocView; canEdit: boolean; onDocEdited: () => void }) {
+  return (
+    <section className="doc" id="doc-0">
+      <DocumentBody
+        blocks={doc.blocks}
+        docIndex={0}
+        edit={canEdit ? { sourceFile: doc.source_file, onEdited: onDocEdited } : undefined}
+      />
+    </section>
+  );
+}
+
 function SurahDocument({ surah }: { surah: SurahView }) {
   const multi = surah.documents.length > 1;
   return (
@@ -103,16 +147,27 @@ function SurahDocument({ surah }: { surah: SurahView }) {
           {/* app chrome, not document text: keep attribution when a surah is
               covered by more than one source file */}
           {multi && <div className="doc-source">Source · {workLabel(doc.source_file)}</div>}
-          <DocumentBody blocks={doc.blocks} />
+          <DocumentBody blocks={doc.blocks} docIndex={i} />
         </section>
       ))}
     </>
   );
 }
 
-function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
+function DocumentBody({
+  blocks,
+  docIndex,
+  edit,
+}: {
+  blocks: DocBlock[];
+  docIndex: number;
+  edit?: { sourceFile: string; onEdited: () => void };
+}) {
   const out: React.ReactNode[] = [];
   let list: DocBlock[] = [];
+  // Arabic before the surah header is the document's opening (the bismillah):
+  // it is set centred, not like the right-aligned verse text that follows.
+  let surahOpened = false;
 
   const flushList = () => {
     if (list.length === 0) return;
@@ -134,7 +189,26 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
       continue;
     }
     flushList();
-    out.push(<BlockView block={b} key={b.ord} />);
+    const blockView = (
+      <BlockView
+        block={b}
+        opening={b.kind === "arabic" && !surahOpened}
+        docIndex={docIndex}
+        key={b.ord}
+      />
+    );
+    // Tables store a JSON grid — raw-text editing would corrupt them, so only
+    // the plain text blocks get the inline editor.
+    out.push(
+      edit && b.kind !== "table" ? (
+        <EditableBlock block={b} sourceFile={edit.sourceFile} onEdited={edit.onEdited} key={b.ord}>
+          {blockView}
+        </EditableBlock>
+      ) : (
+        blockView
+      ),
+    );
+    if (b.kind === "surah_header") surahOpened = true;
     // section headings take the demo's ornamental rule underneath
     if (b.kind === "section_heading") {
       out.push(
@@ -148,13 +222,22 @@ function DocumentBody({ blocks }: { blocks: DocBlock[] }) {
   return <>{out}</>;
 }
 
-function BlockView({ block }: { block: DocBlock }) {
+function BlockView({
+  block,
+  opening = false,
+  docIndex,
+}: {
+  block: DocBlock;
+  opening?: boolean;
+  docIndex: number;
+}) {
   const sectionAnchor = block.section_id ? `sec-${block.section_id}` : undefined;
+  const recapAnchor = block.recap_id ? `recap-${block.recap_id}` : undefined;
   const ayahAnchor =
     block.kind === "translation" && block.ref_ayah
       ? `ayah-${block.ref_surah}-${block.ref_ayah}`
       : undefined;
-  const id = sectionAnchor ?? ayahAnchor;
+  const id = sectionAnchor ?? recapAnchor ?? ayahAnchor;
   const meta = { "data-kind": block.kind, "data-ord": block.ord };
 
   switch (block.kind) {
@@ -167,32 +250,53 @@ function BlockView({ block }: { block: DocBlock }) {
     case "surah_header":
       return (
         <h1 className="doc-surah" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h1>
       );
     case "section_heading":
       return (
         <h2 className="section" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h2>
       );
     case "heading":
       return (
         <h3 className="doc-heading" id={id} {...meta}>
+          <SpeakSectionButton docIndex={docIndex} ord={block.ord} />
           {block.text}
         </h3>
       );
     case "arabic":
       return (
-        <p className="ar" dir="rtl" id={id} {...meta}>
+        <p className={opening ? "ar ar-open" : "ar"} dir="rtl" id={id} {...meta}>
           {block.text}
         </p>
       );
+    // call-outs the author sets off from the running text: lessons and hadith
+    // render as boxed notes, re-quoted ayat and cross-references as pull quotes
+    case "lesson":
+    case "hadith":
+      return (
+        <div className="note" id={id} {...meta}>
+          <h4>{block.kind === "lesson" ? "Lesson" : "Hadith"}</h4>
+          <p>{block.text}</p>
+        </div>
+      );
+    case "quote":
+    case "cross_ref":
+      return (
+        <div className="pull" id={id} {...meta}>
+          <CommentaryText content={block.text} className="pull-lead" />
+        </div>
+      );
     case "translation":
       return (
-        <p className="translation" id={id} {...meta}>
-          {block.text}
-        </p>
+        <div className="trans-row" id={id} {...meta}>
+          <SpeakButton text={block.text} />
+          <p className="translation">{block.text}</p>
+        </div>
       );
     case "table":
       return <TableBlock block={block} id={id} meta={meta} />;
@@ -248,6 +352,97 @@ function TableBlock({
           ))}
         </tbody>
       </table>
+    </div>
+  );
+}
+
+/* ---------------- inline editing (designated editor only) ---------------- */
+
+/**
+ * Wraps a rendered block with a hover edit affordance. Saving PATCHes the
+ * server (which audits the change) and reports back so the Workspace refetches
+ * the document — every client shows the new text on its next fetch.
+ */
+function EditableBlock({
+  block,
+  sourceFile,
+  onEdited,
+  children,
+}: {
+  block: DocBlock;
+  sourceFile: string;
+  onEdited: () => void;
+  children: React.ReactNode;
+}) {
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState(block.text);
+  const [saving, setSaving] = useState(false);
+
+  const save = async () => {
+    if (saving) return;
+    let token = editorToken();
+    if (!token) {
+      const asked = window.prompt("Editor token");
+      if (!asked) return;
+      token = asked;
+    }
+    setSaving(true);
+    try {
+      const res = await fetch(`/api/doc/${encodeURIComponent(sourceFile)}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", "x-editor-token": token },
+        body: JSON.stringify({ ord: block.ord, text: draft }),
+      });
+      if (res.ok) {
+        saveEditorToken(token);
+        setEditing(false);
+        onEdited();
+      } else if (res.status === 403) {
+        window.alert("That token was not accepted.");
+      } else {
+        const { error } = await res.json().catch(() => ({ error: "Save failed" }));
+        window.alert(error);
+      }
+    } catch {
+      window.alert("Save failed — is the server reachable?");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  if (editing) {
+    return (
+      <div className="edit-box">
+        <textarea
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          rows={Math.min(14, draft.split("\n").length + 2)}
+          autoFocus
+        />
+        <div className="edit-actions">
+          <button className="icon-btn" onClick={save} disabled={saving || !draft.trim()}>
+            {saving ? "…" : "Save"}
+          </button>
+          <button className="icon-btn" onClick={() => setEditing(false)} disabled={saving}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="editable">
+      {children}
+      <button
+        className="icon-btn edit-btn"
+        title="Edit this paragraph"
+        onClick={() => {
+          setDraft(block.text);
+          setEditing(true);
+        }}
+      >
+        ✏️
+      </button>
     </div>
   );
 }
@@ -351,6 +546,43 @@ function ResponseDocument({ doc, tree }: { doc: ResponseDoc; tree: TreeSurah[] }
   );
 }
 
+/* ---------------- read-aloud (TTS) ---------------- */
+
+function SpeakButton({ text }: { text: string }) {
+  // Speech exists only in the browser, so wait until after hydration before
+  // rendering the button — otherwise the server HTML won't match.
+  const [mounted, setMounted] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
+  const dictation = useDictation();
+  useEffect(() => setMounted(true), []);
+  useEffect(() => () => stopSpeaking(), []);
+
+  const toggle = () => {
+    if (speaking) {
+      // a running section and a per-verse button share one synthesizer
+      if (dictation?.playing) dictation.stop();
+      else stopSpeaking();
+      setSpeaking(false);
+      return;
+    }
+    if (dictation?.playing) dictation.stop();
+    speakText(text, () => setSpeaking(false));
+    setSpeaking(true);
+  };
+
+  if (!mounted || !speakSupported()) return null;
+
+  return (
+    <button
+      className={`icon-btn speak${speaking ? " on" : ""}`}
+      onClick={toggle}
+      title={speaking ? "Stop reading aloud" : "Read aloud"}
+    >
+      {speaking ? "⏹" : "🔊"}
+    </button>
+  );
+}
+
 /* ---------------- shared ayah block ---------------- */
 
 function AyahBlock({
@@ -379,6 +611,11 @@ function AyahBlock({
         <div className="vhead">
           <span className="ref">{ref_}</span>
           {score !== undefined && <span className="score">{score.toFixed(2)}</span>}
+          <SpeakButton
+            text={[translation, ...commentary.map((r) => r.content)]
+              .filter(Boolean)
+              .join(" ")}
+          />
         </div>
       )}
       <div className="vrow">
@@ -387,12 +624,12 @@ function AyahBlock({
             never borrowed from a neighbour. */}
         {text_ar && (
           <p className="ar" dir="rtl">
-            {text_ar}
+            {tidy(text_ar)}
           </p>
         )}
       </div>
       <div className="body">
-        {translation && <p className="translation">{translation}</p>}
+        {translation && <p className="translation">{tidy(translation)}</p>}
         {commentary.length > 0 && (
           <div className="commentary">
             <CommentaryRows rows={commentary} labelRuns={labelRuns} />
@@ -401,4 +638,77 @@ function AyahBlock({
       </div>
     </div>
   );
+}
+
+/* ---------------- section dictation ---------------- */
+
+/**
+ * Play control for the section a block starts (surah header starts the
+ * document's intro, a section heading starts its section). Renders nothing on
+ * blocks that do not start a section — the Reader hands over the section list.
+ */
+function SpeakSectionButton({ docIndex, ord }: { docIndex: number; ord: number }) {
+  // Speech exists only in the browser, so wait until after hydration before
+  // rendering the button — otherwise the server HTML won't match.
+  const [mounted, setMounted] = useState(false);
+  const dictation = useDictation();
+  useEffect(() => setMounted(true), []);
+  if (!mounted || !dictation) return null;
+
+  const startsSection = dictation.sections.some(
+    (s) => s.docIndex === docIndex && s.firstOrd === ord,
+  );
+  if (!startsSection) return null;
+  const active =
+    dictation.playing &&
+    dictation.activeSection?.docIndex === docIndex &&
+    dictation.activeSection?.firstOrd === ord;
+  const loading = active && dictation.loading;
+
+  return (
+    <button
+      className={`icon-btn speak speak-start${active ? " on" : ""}`}
+      onClick={() => (active ? dictation.stop() : dictation.playFrom(docIndex, ord))}
+      title={
+        loading ? "Generating audio…" : active ? "Stop reading aloud" : "Read this section aloud"
+      }
+    >
+      {loading ? <span className="spin" aria-hidden /> : active ? "⏹" : "🔊"}
+    </button>
+  );
+}
+
+/* ---------------- section dictation helpers ---------------- */
+
+/** A section starts at each section heading; blocks before the first heading
+ *  form the document's intro, played from the surah/document header. */
+function splitSections(
+  blocks: DocBlock[],
+): { headingOrd: number | null; blocks: DocBlock[] }[] {
+  const sections: { headingOrd: number | null; blocks: DocBlock[] }[] = [
+    { headingOrd: null, blocks: [] },
+  ];
+  for (const b of blocks) {
+    if (b.kind === "section_heading") sections.push({ headingOrd: b.ord, blocks: [b] });
+    else sections[sections.length - 1].blocks.push(b);
+  }
+  return sections.filter((s) => s.blocks.length > 0);
+}
+
+function buildSpeechSections(
+  standalone: DocView | null,
+  surah: SurahView | null,
+): SpeechSection[] {
+  if (standalone) return sectionsFromDoc(standalone.blocks, 0);
+  if (!surah) return [];
+  return surah.documents.flatMap((doc, docIndex) => sectionsFromDoc(doc.blocks, docIndex));
+}
+
+function sectionsFromDoc(blocks: DocBlock[], docIndex: number): SpeechSection[] {
+  return splitSections(blocks).map((s) => ({
+    docIndex,
+    headingOrd: s.headingOrd,
+    firstOrd: s.blocks[0].ord,
+    blocks: s.blocks.map((b) => ({ ord: b.ord, text: speakableText(b), lang: speechLang(b.kind) })),
+  }));
 }
