@@ -3,9 +3,8 @@ import { synthesize } from "@/lib/tts";
 export const dynamic = "force-dynamic";
 
 /**
- * Read-aloud endpoint for the dictation bar. Bridges to the TTS engine on the
- * host (localhost only, no API keys, config in env vars) and returns the
- * synthesized audio for one chunk: `{ text, voice, speed }`.
+ * Read-aloud endpoint for the dictation bar. Returns the synthesized MP3
+ * audio for one chunk: `{ text, voice, speed }` (see lib/tts.ts).
  */
 export async function POST(req: Request) {
   const { text, voice, speed } = (await req.json()) as {

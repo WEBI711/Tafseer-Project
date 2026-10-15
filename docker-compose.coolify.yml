@@ -27,16 +27,10 @@ services:
       TAFSEER_EMBED_MODEL: ${TAFSEER_EMBED_MODEL:-openai/text-embedding-3-small}
       TAFSEER_CHAT_MODEL: ${TAFSEER_CHAT_MODEL:-glm-5.3-flash}
       TAFSEER_TTS_CACHE_DIR: /tts-cache
-      OMNIVOICE_BASE_URL: ${OMNIVOICE_BASE_URL:-http://omnivoice-studio:3900}
-      OMNIVOICE_API_KEY: ${OMNIVOICE_API_KEY}
       EDITOR_TOKEN: ${EDITOR_TOKEN}
       EDITOR_NAME: ${EDITOR_NAME}
     volumes:
       - ttscache:/tts-cache
-    networks:
-      - default
-      # VoiceStudio (omnivoice-studio) runs in its own compose project.
-      - voicestudio
     depends_on:
       db:
         condition: service_healthy
@@ -56,11 +50,6 @@ services:
     depends_on:
       db:
         condition: service_healthy
-
-networks:
-  voicestudio:
-    name: deploy_default
-    external: true
 
 volumes:
   pgdata:

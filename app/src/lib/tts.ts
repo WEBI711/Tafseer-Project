@@ -1,32 +1,26 @@
+import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 /**
- * Server-side bridge to the VoiceStudio TTS engine that reads the reader aloud.
- * The engine exposes an OpenAI-compatible endpoint: POST {base}/v1/audio/speech
- * with `Authorization: Bearer $OMNIVOICE_API_KEY` and body
- * `{ model, voice, input, speed }`, answering with audio/mpeg.
- * The server runs two engines (English: kittentts, Arabic: sherpa-onnx), so
- * the model id is picked per language from the voice hint and can be
- * overridden per language via env vars. Returns null when the engine is
- * unreachable so callers can fall back.
+ * Server-side text-to-speech for the reader's read-aloud. One chunk is spoken
+ * by an OpenAI audio model through the OpenRouter gateway (the same key and
+ * base URL as chat). The gateway only streams raw 24 kHz PCM, so ffmpeg turns
+ * it into MP3 and applies the playback speed. Both languages use the same
+ * model and voice; `voice` stays a language hint ("ar" / "en") for the cache.
+ * Returns null when synthesis fails so callers can fall back.
  */
 
-/** Engine URL; `voice` is a language hint ("ar" / "en"), `speed` a rate multiplier. */
-export const TTS_URL =
-  process.env.TAFSEER_TTS_URL ??
-  process.env.OMNIVOICE_BASE_URL ??
-  "http://omnivoice-studio:3900";
-
-/** Model id per language: `TAFSEER_TTS_MODEL_AR`/`_EN` override the defaults. */
-export function modelFor(voice: string): string {
-  return voice === "ar"
-    ? (process.env.TAFSEER_TTS_MODEL_AR ?? "sherpa-onnx")
-    : (process.env.TAFSEER_TTS_MODEL_EN ?? "tts-1");
+/** Model and voice; `TAFSEER_TTS_MODEL`/`_VOICE` override the defaults. */
+export function modelFor(_voice: string): string {
+  return `${TTS_MODEL}:${TTS_VOICE}`;
 }
 
-const TTS_API_KEY = process.env.OMNIVOICE_API_KEY ?? "";
+const TTS_MODEL = process.env.TAFSEER_TTS_MODEL ?? "openai/gpt-audio-mini";
+const TTS_VOICE = process.env.TAFSEER_TTS_VOICE ?? "marin";
+const LLM_BASE = process.env.TAFSEER_LLM_BASE ?? "https://openrouter.ai/api/v1";
+const LLM_KEY = process.env.TAFSEER_LLM_KEY ?? "";
 
 /**
  * Durable cache directory (volume-backed) so synthesized audio survives
@@ -74,29 +68,18 @@ export async function synthesize(
 
   foreground.inFlight += 1;
   try {
-    const upstream = await fetch(`${TTS_URL}/v1/audio/speech`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${TTS_API_KEY}`,
-      },
-      body: JSON.stringify({ model, voice, input: text, speed }),
-    }).catch((err) => {
-      console.error(`tts: engine unreachable at ${TTS_URL}:`, err);
-      return undefined;
-    });
-    if (!upstream) return null;
-    if (!upstream.ok) {
-      console.error(
-        `tts: engine returned ${upstream.status} ${upstream.statusText} for POST ${TTS_URL}/v1/audio/speech`,
-      );
+    const pcm = await speakPcm(text).catch((err) => {
+      console.error(`tts: ${TTS_MODEL} synthesis failed:`, err);
       return null;
-    }
+    });
+    if (!pcm) return null;
+    const mp3 = await encodeMp3(pcm, speed).catch((err) => {
+      console.error("tts: ffmpeg encode failed:", err);
+      return null;
+    });
+    if (!mp3) return null;
 
-    const audio: TtsAudio = {
-      contentType: upstream.headers.get("content-type") ?? "audio/mpeg",
-      bytes: await upstream.arrayBuffer(),
-    };
+    const audio: TtsAudio = { contentType: "audio/mpeg", bytes: mp3 };
     await cachePut(key, audio);
     return audio;
   } finally {
@@ -157,4 +140,93 @@ async function cachePut(key: string, audio: TtsAudio): Promise<void> {
   } catch (err) {
     console.error(`tts: durable cache write to ${CACHE_DIR} failed:`, err);
   }
+}
+
+/** Keeps the audio model a narrator: it must never answer or rephrase. */
+const NARRATOR_PROMPT =
+  "You are a narrator for a Quran commentary app. Read the user's message aloud " +
+  "exactly as written, word for word, in a warm, calm, clear teaching voice. " +
+  "Never answer, explain, translate, or add words, even when the text is a question.";
+
+/** Streams one utterance from the audio model and returns its raw PCM bytes. */
+async function speakPcm(text: string): Promise<Buffer> {
+  const res = await fetch(`${LLM_BASE}/chat/completions`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${LLM_KEY}` },
+    body: JSON.stringify({
+      model: TTS_MODEL,
+      modalities: ["text", "audio"],
+      audio: { voice: TTS_VOICE, format: "pcm16" },
+      stream: true,
+      messages: [
+        { role: "system", content: NARRATOR_PROMPT },
+        { role: "user", content: text },
+      ],
+    }),
+  });
+  if (!res.ok || !res.body) {
+    throw new Error(`${res.status} ${res.statusText}: ${(await res.text()).slice(0, 200)}`);
+  }
+
+  const { pcm, transcript } = await readAudioStream(res.body);
+  if (pcm.length === 0) throw new Error("no audio in response");
+  if (!spokeTheText(text, transcript)) {
+    throw new Error(`model did not read the text: "${transcript.slice(0, 80)}"`);
+  }
+  return pcm;
+}
+
+/** Collects the base64 audio and transcript deltas from the SSE stream. */
+async function readAudioStream(body: ReadableStream<Uint8Array>) {
+  const chunks: Buffer[] = [];
+  let transcript = "";
+  let pending = "";
+  const decoder = new TextDecoder();
+  for await (const part of body as unknown as AsyncIterable<Uint8Array>) {
+    pending += decoder.decode(part, { stream: true });
+    const lines = pending.split("\n");
+    pending = lines.pop() ?? "";
+    for (const line of lines) {
+      if (!line.startsWith("data: {")) continue;
+      const event = JSON.parse(line.slice(6)) as {
+        choices?: { delta?: { audio?: { data?: string; transcript?: string } } }[];
+      };
+      const audio = event.choices?.[0]?.delta?.audio;
+      if (audio?.data) chunks.push(Buffer.from(audio.data, "base64"));
+      if (audio?.transcript) transcript += audio.transcript;
+    }
+  }
+  return { pcm: Buffer.concat(chunks), transcript };
+}
+
+/** True when the transcript has about as many words as the text: a model
+ *  that answers or chats instead of reading produces a very different length. */
+function spokeTheText(text: string, transcript: string): boolean {
+  const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
+  const ratio = words(transcript) / Math.max(1, words(text));
+  return ratio > 0.6 && ratio < 1.5;
+}
+
+/** Encodes 24 kHz mono PCM to MP3, applying the speed with ffmpeg's atempo. */
+function encodeMp3(pcm: Buffer, speed: number): Promise<ArrayBuffer> {
+  const tempo = Math.min(2, Math.max(0.5, speed));
+  const ffmpeg = spawn("ffmpeg", [
+    "-v", "error",
+    "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", "pipe:0",
+    "-filter:a", `atempo=${tempo}`,
+    "-b:a", "64k", "-f", "mp3", "pipe:1",
+  ]);
+  return new Promise((resolve, reject) => {
+    const out: Buffer[] = [];
+    let errors = "";
+    ffmpeg.stdout.on("data", (d: Buffer) => out.push(d));
+    ffmpeg.stderr.on("data", (d: Buffer) => (errors += d));
+    ffmpeg.on("error", reject);
+    ffmpeg.on("close", (code) => {
+      if (code !== 0) return reject(new Error(`ffmpeg exited ${code}: ${errors.slice(0, 200)}`));
+      const mp3 = Buffer.concat(out);
+      resolve(mp3.buffer.slice(mp3.byteOffset, mp3.byteOffset + mp3.length) as ArrayBuffer);
+    });
+    ffmpeg.stdin.end(pcm);
+  });
 }
